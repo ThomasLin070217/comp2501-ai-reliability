@@ -1,0 +1,14 @@
+{
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-v4-pro",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "protocol": "openai",
+  "generation": {
+    "max_tokens": 2048,
+    "temperature": 0.6,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "order_seed": 2501
+}

@@ -1,0 +1,20 @@
+{
+  "version": "pilot-1.1",
+  "config": {
+    "base_url": "http://www.bio8.cs.hku.hk:8080/v1",
+    "model": "MiniMax-M3",
+    "api_key_env": "MINIMAX_API_KEY",
+    "protocol": "anthropic",
+    "generation": {
+      "max_tokens": 2048,
+      "temperature": 0.6,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "order_seed": 2501
+  },
+  "question_sha256": "7c2bd61a31820641935f5c139240a4309519a762375ae058008780c1dabf9f1b",
+  "plan_sha256": "be2a7184902cb895cc5cfdca3a122187e7b6ac2abad4f289bdf5aab9a8843640",
+  "runner_sha256": "29c3b33a1bc3a8f419e739105ed05ebc3e0e1e49f8c99fb98b688378c2d4675f"
+}

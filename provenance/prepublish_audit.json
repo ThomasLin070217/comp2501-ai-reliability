@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-30",
+  "files_checked": 75,
+  "issues": [],
+  "scope": "Credential-pattern and JSON credential-field scan; main-document local links; no full secret-scanning guarantee",
+  "offline_tests_passed": 13,
+  "new_model_calls": 0
+}

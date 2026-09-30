@@ -1,0 +1,5 @@
+{
+  "status": 200,
+  "content_type": "application/json",
+  "body": "{\"id\":\"070bdff3db81f85aebcf3ab46a77a509\",\"type\":\"message\",\"role\":\"assistant\",\"model\":\"MiniMax-M3\",\"content\":[{\"text\":\"OK\",\"type\":\"text\"}],\"usage\":{\"input_tokens\":39,\"output_tokens\":2,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":128,\"service_tier\":\"standard\"},\"stop_reason\":\"end_turn\",\"base_resp\":{\"status_code\":0,\"status_msg\":\"\"}}"
+}

@@ -1,0 +1,19 @@
+{
+  "question_count": 30,
+  "question_file_sha256": "7e6d7e2cca201d381400e3e5d8ff6e60065f6f7a6cd01f774a65112edda5f6d0",
+  "source_file_sha256": "70488d0e7d81109c9de796b6ed33cb23630bbbbb8e7e2fa0ef1ef0d26b51bb0d",
+  "selection": "Purposive feasibility sample from the first 200 source rows; not random or population-representative.",
+  "edited_questions": 8,
+  "human_review_completed": false,
+  "model_calls_completed": 540,
+  "experiment_api_attempts_total": 541,
+  "connection_diagnostic_post_calls": 2,
+  "final_outcomes": 450,
+  "completed_runs": [
+    "deepseek_r1",
+    "kimi_r1",
+    "minimax_r2"
+  ],
+  "initial_grading_complete": true,
+  "independent_human_review_complete": false
+}

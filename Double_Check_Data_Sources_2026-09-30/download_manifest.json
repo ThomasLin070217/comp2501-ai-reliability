@@ -1,0 +1,106 @@
+[
+  {
+    "file": "sycophancy_answer.jsonl",
+    "url": "https://raw.githubusercontent.com/meg-tong/sycophancy-eval/main/datasets/answer.jsonl",
+    "retrieved_at_utc": "2026-09-30T05:17:09.934166+00:00",
+    "http_status": 200,
+    "sha256": "3da2c2bbf685cf2c6cbfc6bf67449caad6fe1d56b67924087b3792ffba47bcc1",
+    "bytes": 6851178,
+    "rows": 7268,
+    "fields": [
+      "prompt",
+      "base",
+      "metadata"
+    ]
+  },
+  {
+    "file": "sycophancy_are_you_sure.jsonl",
+    "url": "https://raw.githubusercontent.com/meg-tong/sycophancy-eval/main/datasets/are_you_sure.jsonl",
+    "retrieved_at_utc": "2026-09-30T05:17:09.934382+00:00",
+    "http_status": 200,
+    "sha256": "16e034c2ec6a6145c0058863a7c0f41fee5ffa7f9f0391547ae3685e713f115f",
+    "bytes": 5819677,
+    "rows": 4888,
+    "fields": [
+      "prompt",
+      "base",
+      "metadata"
+    ]
+  },
+  {
+    "file": "truthfulqa.csv",
+    "url": "https://raw.githubusercontent.com/sylinrl/TruthfulQA/main/TruthfulQA.csv",
+    "retrieved_at_utc": "2026-09-30T05:17:09.934438+00:00",
+    "http_status": 200,
+    "sha256": "b8d8ef1e12f98b4f2a9f47abc9765da0640b182b6c5d9b92f0c1a1f2f1e02e5c",
+    "bytes": 503550,
+    "rows": 790,
+    "fields": [
+      "Type",
+      "Category",
+      "Question",
+      "Best Answer",
+      "Best Incorrect Answer",
+      "Correct Answers",
+      "Incorrect Answers",
+      "Source"
+    ]
+  },
+  {
+    "file": "simpleqa_verified.csv",
+    "url": "https://huggingface.co/datasets/google/simpleqa-verified/resolve/main/simpleqa_verified.csv",
+    "retrieved_at_utc": "2026-09-30T05:17:09.934473+00:00",
+    "http_status": 200,
+    "sha256": "b5db21155444763543fe31b67e7cf28ce2bb225742a5b889421c5f182e2f92f5",
+    "bytes": 349184,
+    "rows": 1000,
+    "fields": [
+      "original_index",
+      "problem",
+      "answer",
+      "topic",
+      "answer_type",
+      "multi_step",
+      "requires_reasoning",
+      "urls"
+    ]
+  },
+  {
+    "file": "simpleqa_original.csv",
+    "url": "https://openaipublic.blob.core.windows.net/simple-evals/simple_qa_test_set.csv",
+    "retrieved_at_utc": "2026-09-30T05:17:15.652555+00:00",
+    "http_status": 200,
+    "sha256": "feee3f7e7db3617e94e8fcf1977b756ec420ef8568f4e0fcbbe0e92e9d5fc032",
+    "bytes": 2012910,
+    "rows": 4326,
+    "fields": [
+      "metadata",
+      "problem",
+      "answer"
+    ]
+  },
+  {
+    "file": "simpleqa_verified_card.md",
+    "url": "https://huggingface.co/datasets/google/simpleqa-verified/raw/main/README.md",
+    "retrieved_at_utc": "2026-09-30T05:17:16.079805+00:00",
+    "http_status": 200,
+    "sha256": "5855a8b4581cb616f3cea8cadb305b5c2a5dd5943f60b4a919f994d092263c46",
+    "bytes": 4209
+  },
+  {
+    "file": "sycophancy_card.md",
+    "url": "https://huggingface.co/datasets/meg-tong/sycophancy-eval/raw/main/README.md",
+    "retrieved_at_utc": "2026-09-30T05:17:16.571851+00:00",
+    "http_status": 200,
+    "sha256": "cfa3f186744c54edb00b8843168311f8d6baa3a12d150ac301e2ae427f23718d",
+    "bytes": 1450
+  },
+  {
+    "file": "truthfulqa_LICENSE",
+    "url": "https://raw.githubusercontent.com/sylinrl/TruthfulQA/main/LICENSE",
+    "retrieved_at_utc": "2026-09-30T05:17:17.820167+00:00",
+    "http_status": 200,
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bytes": 11357
+  }
+]

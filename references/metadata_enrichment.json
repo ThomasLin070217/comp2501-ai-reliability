@@ -1,0 +1,66 @@
+[
+  {
+    "key": "Wang2022self",
+    "action": "Official export unavailable; retain identified arXiv record"
+  },
+  {
+    "key": "Lightman2023verify",
+    "action": "Official export unavailable; retain identified arXiv record"
+  },
+  {
+    "key": "Huang2023large",
+    "action": "Official export unavailable; retain identified arXiv record"
+  },
+  {
+    "key": "Kumar2024training",
+    "action": "Official export unavailable; retain identified arXiv record"
+  },
+  {
+    "key": "Snell2024scaling",
+    "action": "Official export unavailable; retain identified arXiv record"
+  },
+  {
+    "key": "Lin2022teaching",
+    "action": "Official export unavailable; retain identified arXiv record"
+  },
+  {
+    "key": "Gao2022program",
+    "source": "https://proceedings.mlr.press/v202/gao23f.html",
+    "action": "Official proceedings BibTeX extracted"
+  },
+  {
+    "key": "Lewis2020retrieval",
+    "source": "https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html",
+    "action": "Official proceedings BibTeX extracted"
+  },
+  {
+    "key": "Penedo2024fineweb",
+    "source": "https://proceedings.nips.cc/paper_files/paper/2024/hash/370df50ccfdf8bde18f8f9c2d9151bda-Abstract-Datasets_and_Benchmarks_Track.html",
+    "action": "Official proceedings BibTeX extracted"
+  },
+  {
+    "key": "Ouyang2022training",
+    "source": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/b1efde53be364a73914f58805a001731-Abstract.html",
+    "action": "Official proceedings BibTeX extracted"
+  },
+  {
+    "key": "Dhuliawala2023chain",
+    "source": "https://doi.org/10.18653/v1/2024.findings-acl.212",
+    "action": "CrossRef published proceedings metadata replaces preprint"
+  },
+  {
+    "key": "Huang2023large",
+    "source": "https://openreview.net/forum?id=IkmD3fKBPQ",
+    "action": "Publication fields enriched from verified official web page; preprint author metadata retained"
+  },
+  {
+    "key": "Kumar2024training",
+    "source": "https://openreview.net/forum?id=CjwERcAU7w",
+    "action": "Publication fields enriched from verified official web page; preprint author metadata retained"
+  },
+  {
+    "key": "Snell2024scaling",
+    "source": "https://openreview.net/forum?id=4FWAwZtd2n",
+    "action": "Publication fields enriched from verified official web page; preprint author metadata retained"
+  }
+]

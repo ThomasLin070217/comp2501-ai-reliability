@@ -1,0 +1,70 @@
+{
+  "query": "language models self correction",
+  "count": 4,
+  "results": [
+    {
+      "openalex_id": "https://openalex.org/W4323655724",
+      "doi": "10.1016/j.lindif.2023.102274",
+      "title": "ChatGPT for good? On opportunities and challenges of large language models for education",
+      "authors": "Enkelejda Kasneci and Kathrin Se\u00dfler and Stefan K\u00fcchemann and Maria Bannert and Daryna Dementieva and Frank Fischer and Urs Gasser and Georg Groh and Stephan G\u00fcnnemann and Eyke H\u00fcllermeier and Stephan Krusche and Gitta Kutyniok and Tilman Michaeli and Claudia Nerdel and J\u00fcrgen Pfeffer and Oleksandra Poquet and Michael F. Sailer and Albrecht Schmidt and Tina Seidel and Matthias J. Stadler and Jochen Weller and Jochen K\u00fchn and Gjergji Kasneci",
+      "journal": "Learning and Individual Differences",
+      "publisher": "Elsevier BV",
+      "year": "2023",
+      "volume": "103",
+      "issue": "",
+      "pages": "102274",
+      "type": "article",
+      "citations": 6733,
+      "is_open_access": true,
+      "abstract": ""
+    },
+    {
+      "openalex_id": "https://openalex.org/W2577537660",
+      "doi": "10.18637/jss.v076.i01",
+      "title": "Stan : A Probabilistic Programming Language",
+      "authors": "Bob Carpenter and Andrew Gelman and Matthew D. Hoffman and Daniel C. Lee and Ben Goodrich and Michael Betancourt and Marcus A. Brubaker and Jiqiang Guo and Peter Li and Allen Beye Riddell",
+      "journal": "Journal of Statistical Software",
+      "publisher": "Foundation for Open Access Statistics",
+      "year": "2017",
+      "volume": "76",
+      "issue": "1",
+      "pages": "1-32",
+      "type": "article",
+      "citations": 8356,
+      "is_open_access": true,
+      "abstract": "Stan is a probabilistic programming language for specifying statistical models. A Stan program imperatively defines a log probability function over parameters conditioned on specified data and constants. As of version 2.14.0, Stan provides full Bayesian inference for continuous-variable models through Markov chain Monte Carlo methods such as the No-U-Turn sampler, an adaptive form of Hamiltonian Monte Carlo sampling. Penalized maximum likelihood estimates are calculated using optimization methods such as the limited memory Broyden-Fletcher-Goldfarb-Shanno algorithm. Stan is also a platform for computing log densities and their gradients and Hessians, which can be used in alternative algorithms such as variational Bayes, expectation propagation, and marginal inference using approximate integration. To this end, Stan is set up so that the densities, gradients, and Hessians, along with intermediate quantities of the algorithm such as acceptance probabilities, are easily accessible. Stan can be called from the command line using the cmdstan package, through R using the rstan package, and through Python using the pystan package. All three interfaces support sampling and optimization-based inference with diagnostics and posterior analysis. rstan and pystan also provide access to log probabilities, gradients, Hessians, parameter transforms, and specialized plotting."
+    },
+    {
+      "openalex_id": "https://openalex.org/W2038702827",
+      "doi": "10.3758/brm.40.3.879",
+      "title": "Asymptotic and resampling strategies for assessing and comparing indirect effects in multiple mediator models",
+      "authors": "Kristopher J. Preacher and Andrew F. Hayes",
+      "journal": "Behavior Research Methods",
+      "publisher": "Springer Science+Business Media",
+      "year": "2008",
+      "volume": "40",
+      "issue": "3",
+      "pages": "879-891",
+      "type": "article",
+      "citations": 33959,
+      "is_open_access": true,
+      "abstract": ""
+    },
+    {
+      "openalex_id": "https://openalex.org/W4384071683",
+      "doi": "10.1038/s41586-023-06291-2",
+      "title": "Large language models encode clinical knowledge",
+      "authors": "Karan Singhal and Shekoofeh Azizi and Tao Tu and S. Sara Mahdavi and JASON KAI WEI LEE and Hyung Won Chung and Nathan Scales and Ajay Kumar Tanwani and Heather J. Cole-Lewis and Stephen Pfohl and Perry W. Payne and Martin G. Seneviratne and Paul R Gamble and Christopher J. Kelly and Abubakr Babiker and Nathanael Sch\u00e4rli and Aakanksha Chowdhery and Philip Mansfield and Dina Demner\u2010Fushman and Blaise Ag\u00fcera y Arcas and Dale R. Webster and Greg S. Corrado and Yossi Matias and Katherine Chou and Juraj Gottweis and Nenad Toma\u0161ev and Yun Liu and Alvin Rajkomar and Joelle K. Barral and Christopher Semturs and Alan Karthikesalingam and Vivek Natarajan",
+      "journal": "Nature",
+      "publisher": "Nature Portfolio",
+      "year": "2023",
+      "volume": "620",
+      "issue": "7972",
+      "pages": "172-180",
+      "type": "article",
+      "citations": 3916,
+      "is_open_access": true,
+      "abstract": "Abstract Large language models (LLMs) have demonstrated impressive capabilities, but the bar for clinical applications is high. Attempts to assess the clinical knowledge of models typically rely on automated evaluations based on limited benchmarks. Here, to address these limitations, we present MultiMedQA, a benchmark combining six existing medical question answering datasets spanning professional medicine, research and consumer queries and a new dataset of medical questions searched online, HealthSearchQA. We propose a human evaluation framework for model answers along multiple axes including factuality, comprehension, reasoning, possible harm and bias. In addition, we evaluate Pathways Language Model 1 (PaLM, a 540-billion parameter LLM) and its instruction-tuned variant, Flan-PaLM 2 on MultiMedQA. Using a combination of prompting strategies, Flan-PaLM achieves state-of-the-art accuracy on every MultiMedQA multiple-choice dataset (MedQA 3 , MedMCQA 4 , PubMedQA 5 and Measuring Massive Multitask Language Understanding (MMLU) clinical topics 6 ), including 67.6% accuracy on MedQA (US Medical Licensing Exam-style questions), surpassing the prior state of the art by more than 17%. However, human evaluation reveals key gaps. To resolve this, we introduce instruction prompt tuning, a parameter-efficient approach for aligning LLMs to new domains using a few exemplars. The resulting model, Med-PaLM, performs encouragingly, but remains inferior to clinicians. We show that comprehension, knowledge recall and reasoning improve with model scale and instruction prompt tuning, suggesting the potential utility of LLMs in medicine. Our human evaluations reveal limitations of today\u2019s models, reinforcing the importance of both evaluation frameworks and method development in creating safe, helpful LLMs for clinical applications."
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "snapshot_date": "2026-09-30",
+  "deduplication_rule": "source dataset plus question text after whitespace normalization and casefold; semantic duplicates not resolved",
+  "sycophancy_answer": {
+    "raw_prompt_rows": 7268,
+    "deduplicated_source_questions": 1813,
+    "source_breakdown": {
+      "trivia_qa": 996,
+      "truthful_qa": 817
+    },
+    "flags": {
+      "duplicate_question_beyond_four_prompt_conditions": 4,
+      "incorrect_answer_also_in_source_answer_aliases": 2
+    },
+    "all_gold_and_wrong_nonempty": true,
+    "trivia_questions_without_alias_conflict": 994,
+    "exact_normalized_question_overlap_with_current_truthfulqa": 787
+  },
+  "sycophancy_are_you_sure": {
+    "raw_prompt_rows": 4888,
+    "unique_question_texts_across_formats": 4067,
+    "note": "Includes math and duplicated questions across formats. Files provide prompts and source labels, not newly measured model outcomes."
+  },
+  "truthfulqa": {
+    "rows": 790,
+    "missing_source_cells": 2,
+    "categories": {
+      "Misconceptions": 100,
+      "Proverbs": 18,
+      "Misquotations": 16,
+      "Conspiracies": 26,
+      "Superstitions": 22,
+      "Paranormal": 26,
+      "Fiction": 30,
+      "Myths and Fairytales": 21,
+      "Indexical Error: Identity": 8,
+      "Indexical Error: Location": 11,
+      "Distraction": 14,
+      "Subjective": 9,
+      "Advertising": 13,
+      "Religion": 14,
+      "Logical Falsehood": 14,
+      "Stereotypes": 24,
+      "Misconceptions: Topical": 3,
+      "Education": 10,
+      "Nutrition": 16,
+      "Health": 55,
+      "Indexical Error: Other": 18,
+      "Psychology": 19,
+      "Sociology": 55,
+      "Economics": 31,
+      "Politics": 10,
+      "Law": 64,
+      "Science": 9,
+      "History": 24,
+      "Language": 21,
+      "Weather": 17,
+      "Confusion: People": 23,
+      "Confusion: Places": 15,
+      "Confusion: Other": 8,
+      "Finance": 9,
+      "Misinformation": 6,
+      "Statistics": 5,
+      "Mandela Effect": 6
+    },
+    "note": "Current root CSV has 790 rows. Older SycophancyEval uses 817 TruthfulQA questions. Versions are not interchangeable."
+  },
+  "simpleqa_verified": {
+    "rows": 1000,
+    "topics": {
+      "Politics": 176,
+      "Art": 145,
+      "TV shows": 20,
+      "History": 52,
+      "Music": 102,
+      "Other": 102,
+      "Geography": 111,
+      "Sports": 117,
+      "Science and technology": 160,
+      "Video games": 15
+    },
+    "answer_types": {
+      "Number": 185,
+      "Person": 198,
+      "Date": 222,
+      "Other": 249,
+      "Place": 146
+    },
+    "metadata_filtered_candidates": 752,
+    "filter": "multi_step=False AND requires_reasoning=False AND answer_type!=Number; retains dates; not a manual relevance or quality check",
+    "note": "No wrong-answer field. Original index links to original SimpleQA; do not add counts as independent datasets."
+  },
+  "simpleqa_original": {
+    "rows": 4326,
+    "role": "archive and optional expansion only"
+  },
+  "recommendation": {
+    "primary_pool": "SycophancyEval TriviaQA subset; manually validate sampled questions, canonical gold, and distractors before experiments",
+    "replication_pool": "SimpleQA Verified; construct and manually verify distractors before experiments",
+    "pilot": "Start with 30 reviewed questions; set final sample size after observing baseline accuracy, effect sizes and API cost",
+    "experiment_status": "No model calls or behavioral measurements have been performed"
+  }
+}

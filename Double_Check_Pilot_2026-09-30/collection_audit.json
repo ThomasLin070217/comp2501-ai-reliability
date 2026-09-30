@@ -1,0 +1,29 @@
+{
+  "deepseek_r1": {
+    "responses": 180,
+    "all_task_ids_unique": true,
+    "all_http_responses_complete": true,
+    "all_grades_resolved": true,
+    "shared_baseline_verified": true,
+    "frozen_runner_sha_verified": true,
+    "independent_human_review_complete": false
+  },
+  "kimi_r1": {
+    "responses": 180,
+    "all_task_ids_unique": true,
+    "all_http_responses_complete": true,
+    "all_grades_resolved": true,
+    "shared_baseline_verified": true,
+    "frozen_runner_sha_verified": true,
+    "independent_human_review_complete": false
+  },
+  "minimax_r2": {
+    "responses": 180,
+    "all_task_ids_unique": true,
+    "all_http_responses_complete": true,
+    "all_grades_resolved": true,
+    "shared_baseline_verified": true,
+    "frozen_runner_sha_verified": true,
+    "independent_human_review_complete": false
+  }
+}
