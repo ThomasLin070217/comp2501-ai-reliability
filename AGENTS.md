@@ -1,7 +1,11 @@
 # Project context entry point
 
-For this COMP2501 project, read the full, current `CHAT_CONTEXT.md` in this directory before each user-facing answer, following the user's explicit request. Do not rely solely on prior conversation summaries or a previously read copy. If you update the file during a turn, read it again before the final answer. Follow higher-priority instructions for message ordering.
+Read the full, current `CHAT_CONTEXT.md` before each user-facing answer; follow higher-priority instructions for message ordering. If you update it during a turn, read it again before the final answer.
 
-Treat `CHAT_CONTEXT.md` as the maintained record of project direction, completed work, draft plans, and execution authorization. Latest explicit user instructions take precedence over an older project state; reconcile the document when the user makes a new decision.
+The direct user source for this requirement is CHAT_CONTEXT U05. The user also requested preserving original wording to avoid information loss (U06). These labels identify verbatim quotations in the context file, not platform message IDs.
 
-New experiment API calls are currently paused. Repository maintenance or research discussion does not authorize starting them. Preserve raw results, protect credentials, and keep proposed work distinct from approved work.
+Keep explicit user instructions, exploratory questions, assistant implementation choices, draft plans, and recorded results distinct. Prefer exact quotations with source locations; label paraphrases and omissions. Do not upgrade an assistant proposal into a user decision or make a quotation out of a summary.
+
+New experiment API calls remain paused under the assistant's recorded commitment A01 in response to U04. The 24/120-question design is an unapproved assistant draft. Later explicit user authorization updates that state. Routine authorized documentation and offline checks may proceed without repeated confirmation.
+
+Preserve original results and keep credentials out of the public repository.
