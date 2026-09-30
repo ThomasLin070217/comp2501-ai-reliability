@@ -11,6 +11,8 @@
 
 ## 阅读顺序
 
+AI 每次回答前先读取 [本聊天上下文与执行规范](CHAT_CONTEXT.md)。该文件区分已完成事实、待确认计划和当前授权范围；入口规则见 [AGENTS.md](AGENTS.md)。
+
 1. [大模型减少错误的方法地图](docs/accuracy-methods.md)：训练、RAG、工具、推理计算、投票、验证器、纠错、模型协作、校准。
 2. [实验总计划 v1 · 待确认](docs/experiment-plan-v1.md)：研究问题、六组条件、三轮安排、停止标准和调用预算。
 3. [旧 pilot 报告](Double_Check_Pilot_2026-09-30/试运行报告.md)：实际结果与限制。
