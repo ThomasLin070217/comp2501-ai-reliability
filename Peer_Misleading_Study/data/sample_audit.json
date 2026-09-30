@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-09-30T17:43:19.607770+00:00",
+  "formal_questions": 120,
+  "old_pilot_questions": 30,
+  "exact_text_overlap_with_old_pilot": 0,
+  "semantic_overlap_review": "Codex read all 120 formal questions and 30 pilot questions; no shared factual target identified. Not independent human review.",
+  "topic_counts": {
+    "Science and technology": 24,
+    "Politics": 39,
+    "Art": 20,
+    "Music": 11,
+    "Other": 5,
+    "Sports": 7,
+    "Video games": 3,
+    "History": 6,
+    "Geography": 5
+  },
+  "granularity_counts": {
+    "month": 18,
+    "year": 59,
+    "day": 43
+  },
+  "pairing_counts": {
+    "0": 60,
+    "1": 60
+  }
+}

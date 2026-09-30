@@ -14,7 +14,39 @@ python3 Peer_Misleading_Study/analyze.py \
   --out /tmp/comp2501-dev-recomputed
 ```
 
-正式轮完成后的对应输入为 `data/main_questions.jsonl`、`runs/main_receivers/responses.jsonl` 和 `data/main_adjudications.json`。报告中的主数值与区间应相同；重新生成时间戳不同不影响数值。复算输出放新目录，保留公开结果原件。
+正式轮因发现接口正常结束但正文不可判分的输出，采用单独的 `quality_analyze.py` 包装冻结分析器；规则见 [输出质量修订](protocol/output-quality-amendment.md)。它保存未过滤诊断、质量排除记录和完整配对主分析，并生成下游使用的临时 `analysis_responses.jsonl`。派生响应副本不入 Git，完整原始响应始终位于 `runs/main_receivers/`。
+
+正式轮的对应输入为 `data/main_questions.jsonl`、`runs/main_receivers/responses.jsonl` 和 `data/main_adjudications.json`。报告中的主数值与区间应相同；重新生成时间戳不同不影响数值。复算输出放新目录，保留公开结果原件。
+
+```bash
+python3 Peer_Misleading_Study/quality_analyze.py \
+  --questions Peer_Misleading_Study/data/main_questions.jsonl \
+  --responses Peer_Misleading_Study/runs/main_receivers/responses.jsonl \
+  --adjudications Peer_Misleading_Study/data/main_adjudications.json \
+  --out /tmp/comp2501-main-recomputed
+
+python3 Peer_Misleading_Study/supplement.py \
+  --responses /tmp/comp2501-main-recomputed/analysis_responses.jsonl \
+  --grades /tmp/comp2501-main-recomputed/grades.json \
+  --out /tmp/comp2501-main-recomputed/supplementary.json
+
+python3 Peer_Misleading_Study/sensitivity.py \
+  --questions Peer_Misleading_Study/data/main_questions.jsonl \
+  --responses Peer_Misleading_Study/runs/main_receivers/responses.jsonl \
+  --adjudications Peer_Misleading_Study/data/main_adjudications.json \
+  --caveats Peer_Misleading_Study/data/main_preanalysis_caveats.json \
+  --out /tmp/comp2501-main-recomputed/sensitivity.json
+
+python3 Peer_Misleading_Study/usage_ledger.py \
+  --out /tmp/comp2501-main-recomputed/usage-ledger.json
+
+python3 Peer_Misleading_Study/report_tables.py \
+  --summary /tmp/comp2501-main-recomputed/summary.json \
+  --supplement /tmp/comp2501-main-recomputed/supplementary.json \
+  --sensitivity /tmp/comp2501-main-recomputed/sensitivity.json \
+  --usage /tmp/comp2501-main-recomputed/usage-ledger.json \
+  --out /tmp/comp2501-main-recomputed/statistics.md
+```
 
 ```bash
 python3 Peer_Misleading_Study/audit_run.py \
@@ -30,9 +62,9 @@ python3 -m venv /tmp/comp2501-plots
 /tmp/comp2501-plots/bin/pip install -r Peer_Misleading_Study/requirements-plots.txt
 MPLCONFIGDIR=/tmp/comp2501-matplotlib /tmp/comp2501-plots/bin/python \
   Peer_Misleading_Study/render_results.py \
-  --summary Peer_Misleading_Study/reports/main/summary.json \
+  --summary /tmp/comp2501-main-recomputed/summary.json \
   --questions Peer_Misleading_Study/data/main_questions.jsonl \
-  --responses Peer_Misleading_Study/runs/main_receivers/responses.jsonl \
+  --responses /tmp/comp2501-main-recomputed/analysis_responses.jsonl \
   --materials Peer_Misleading_Study/data/main_frozen/materials.json \
   --out /tmp/comp2501-main-plots
 ```
@@ -62,3 +94,7 @@ python3 Peer_Misleading_Study/study.py receive \
 ## 可重复的是什么
 
 可以逐条复核本轮原始请求，确定每个对照分支，重新判分并重算统计。无法保证未来服务端模型别名、硬件随机性和返回文字完全相同。来源网页也可能变化，因此保留固定题库、来源 URL、抓取哈希和审查决定；不公开新闻全文缓存。
+
+辅助描述由 `supplement.py` 生成，覆盖指定错误采纳、C0 比较及各条件 token/延迟；`usage_ledger.py` 汇总全部阶段的 API 用量。`sensitivity.py` 同时输出原评分、已记录的替代评分和剔除争议题的结果，不用有利变体替换主分析。各脚本可用 `--help` 查看参数。
+
+组员对来源、非标准答案及展示结论进行独立复核时，可按 [REVIEW_GUIDE.md](REVIEW_GUIDE.md) 记录自己的判决。脚本复算不代替语义复核。

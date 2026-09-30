@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-30T17:43:19.608037+00:00",
+  "timing": "After receiver collection began, before any formal outcome grading or analysis.",
+  "primary_sample_unchanged": true,
+  "question_caveats": [
+    {
+      "question_id": "SV1441",
+      "reason": "Alexandra Park is not geographically disambiguated in the question. The reference source is Alexandra Palace/London, but the name is shared by multiple parks.",
+      "primary_action": "retain frozen sample",
+      "sensitivity_action": "report results excluding this question, alongside all adjudication-disputed questions",
+      "source": "https://en.wikipedia.org/wiki/Alexandra_Palace"
+    }
+  ],
+  "interpretation": "Secondary robustness check, not a retroactively preregistered exclusion."
+}

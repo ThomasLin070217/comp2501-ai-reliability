@@ -1,0 +1,14 @@
+{
+  "reviewed_at": "2026-09-30T18:15:32.803542+00:00",
+  "review_timing": "During formal output-format review, before aggregate formal analysis; does not alter frozen questions or gold labels.",
+  "notes": [
+    {
+      "question_id": "SV2554",
+      "source_url": "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?dt=S&i=4556",
+      "additional_source_url": "https://bogota.gov.co/infancia/himno-de-bogota",
+      "finding": "Official decree metadata dates adoption of the city anthem to 31 July 1974 and names Pedro Medina as lyric author. Supports existing gold. Original benchmark wording calls it a national anthem of Bogotá; city anthem is the precise description. This wording may affect premise-rejection behavior.",
+      "action": "Keep original question and gold; disclose wording caveat. Question already enters whole-question sensitivity exclusion through a disputed refusal/answer adjudication.",
+      "independent_human_review": false
+    }
+  ]
+}

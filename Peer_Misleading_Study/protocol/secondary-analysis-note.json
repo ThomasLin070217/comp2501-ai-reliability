@@ -1,0 +1,17 @@
+{
+  "written_before_formal_analysis": true,
+  "formal_collection_in_progress": true,
+  "reason": "Separate exact wrong-target adoption from other errors; distinguish coverage and selective accuracy.",
+  "status": "Secondary descriptive outputs; no new primary tests or selection changes.",
+  "outputs": [
+    "coverage",
+    "accuracy_among_answered",
+    "wrong_target_adoption",
+    "baseline_transition_counts",
+    "C2_C3_transition_counts",
+    "C2_C3_vs_C0_descriptive_changes",
+    "per_condition_tokens_latency"
+  ],
+  "development_used_for_implementation": true,
+  "timestamp": "2026-09-30T17:39:27.489226+00:00"
+}

@@ -1,0 +1,5 @@
+{
+  "paused_at": "2026-09-30T18:06:21.486139+00:00",
+  "reason": "Inspect an API-success response with an unfinished, unscorable answer; no silent retry.",
+  "resumed_at": "2026-09-30T18:07:13.135520+00:00"
+}

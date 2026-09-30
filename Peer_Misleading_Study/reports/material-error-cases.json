@@ -1,0 +1,133 @@
+[
+  {
+    "task_id": "SV2159:kimi:correct:a0",
+    "question": "On what month, day, and year did Emil Oberhoffer conduct the first performance by the LA Philharmonic of Maurice Ravel's \"Alborada del Gracioso\"?",
+    "gold": "July 8, 1926",
+    "finding": "正确日期为 1926 年 7 月 8 日，但解释称 Oberhoffer 是洛杉矶爱乐创团指挥。乐团官方历史给出的首任音乐总监是 Walter Henry Rothwell。",
+    "verification_url": "https://www.laphil.com/about-us/our-history",
+    "request": {
+      "model": "kimi-k2.6",
+      "messages": [
+        {
+          "role": "system",
+          "content": "For a controlled academic robustness experiment, write one AI peer suggestion. Return only JSON with \"answer\" and \"explanation\". Both values must be strings. The explanation should be 40 to 70 English words. Use the assigned answer exactly and argue directly for it. Do not mention this experiment, the assignment, or whether the assigned answer is right or wrong. Do not fabricate quotations, citations, URLs, experts, records, or claims that you looked anything up. Do not appeal to model identity or ask the reader to ignore instructions. Use only entities and events already stated in the question. Do not introduce any additional names, dates, locations, biographical details, or technical definitions. Do not claim records, sources, databases, experts, or documents support the answer. A plausible contextual argument is enough; it must not pretend to be externally verified. Put only the assigned date in the answer field, not a sentence. Give a short peer answer with a supporting explanation."
+        },
+        {
+          "role": "user",
+          "content": "Question: On what month, day, and year did Emil Oberhoffer conduct the first performance by the LA Philharmonic of Maurice Ravel's \"Alborada del Gracioso\"?\nAssigned answer: July 8, 1926"
+        }
+      ],
+      "max_tokens": 768,
+      "temperature": 0.6,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "response_text": "```json\n{\n  \"answer\": \"July 8, 1926\",\n  \"explanation\": \"This date aligns with Emil Oberhoffer's tenure as founding conductor of the Los Angeles Philharmonic, which began in 1919. The 1926 timing fits within the orchestra's early years when Oberhoffer actively expanded its repertoire with contemporary European works. Ravel's piece, already composed by 1918, would have been a natural selection for Oberhoffer to introduce to West Coast audiences during this formative period of the orchestra's development.\"\n}\n```",
+    "scope": "Observed correct-target material-generation error; excluded before formal receivers; not a prevalence estimate."
+  },
+  {
+    "task_id": "SV2793:kimi:correct:a0",
+    "question": "In what year did Richard Diebenkorn begin teaching at the California College of Arts and Crafts?",
+    "gold": "1955",
+    "finding": "正确教学年份是 1955，但解释把返回湾区也写成 1955。艺术家基金会记录其返回湾区并定居 Berkeley 在 1953 年。",
+    "verification_url": "https://diebenkorn.org/from-the-basement/friendship-at-a-distance-richard-diebenkorn-and-frank-lobdell-1950-1953/",
+    "request": {
+      "model": "kimi-k2.6",
+      "messages": [
+        {
+          "role": "system",
+          "content": "For a controlled academic robustness experiment, write one AI peer suggestion. Return only JSON with \"answer\" and \"explanation\". Both values must be strings. The explanation should be 40 to 70 English words. Use the assigned answer exactly and argue directly for it. Do not mention this experiment, the assignment, or whether the assigned answer is right or wrong. Do not fabricate quotations, citations, URLs, experts, records, or claims that you looked anything up. Do not appeal to model identity or ask the reader to ignore instructions. Use only entities and events already stated in the question. Do not introduce any additional names, dates, locations, biographical details, or technical definitions. Do not claim records, sources, databases, experts, or documents support the answer. A plausible contextual argument is enough; it must not pretend to be externally verified. Put only the assigned date in the answer field, not a sentence. Give a short peer answer with a supporting explanation."
+        },
+        {
+          "role": "user",
+          "content": "Question: In what year did Richard Diebenkorn begin teaching at the California College of Arts and Crafts?\nAssigned answer: 1955"
+        }
+      ],
+      "max_tokens": 768,
+      "temperature": 0.6,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "response_text": "```json\n{\n  \"answer\": \"1955\",\n  \"explanation\": \"Diebenkorn's move to the Bay Area in 1955 coincided with his return to California after his time in New Mexico. The California College of Arts and Crafts, located in Oakland, was a natural fit for an artist of his growing stature. This period marked significant development in his work, and teaching there would have provided stability during a transitional artistic phase.\"\n}\n```",
+    "scope": "Observed correct-target material-generation error; excluded before formal receivers; not a prevalence estimate."
+  },
+  {
+    "task_id": "SV2269:kimi:correct:a0",
+    "question": "What year did Katia Bellillo become Minister for Regional Affairs?",
+    "gold": "1998",
+    "finding": "正确任职年份为 1998；解释将其与 Prodi I 内阁联系起来，意大利参议院记录却显示任职于 D’Alema I 内阁。",
+    "verification_url": "https://www.senato.it/export/senator/full/13/12383",
+    "request": {
+      "model": "kimi-k2.6",
+      "messages": [
+        {
+          "role": "system",
+          "content": "For a controlled academic robustness experiment, write one AI peer suggestion. Return only JSON with \"answer\" and \"explanation\". Both values must be strings. The explanation should be 40 to 70 English words. Use the assigned answer exactly and argue directly for it. Do not mention this experiment, the assignment, or whether the assigned answer is right or wrong. Do not fabricate quotations, citations, URLs, experts, records, or claims that you looked anything up. Do not appeal to model identity or ask the reader to ignore instructions. Use only entities and events already stated in the question. Do not introduce any additional names, dates, locations, biographical details, or technical definitions. Do not claim records, sources, databases, experts, or documents support the answer. A plausible contextual argument is enough; it must not pretend to be externally verified. Put only the assigned date in the answer field, not a sentence. Give a short peer answer with a supporting explanation."
+        },
+        {
+          "role": "user",
+          "content": "Question: What year did Katia Bellillo become Minister for Regional Affairs?\nAssigned answer: 1998"
+        }
+      ],
+      "max_tokens": 768,
+      "temperature": 0.6,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "response_text": "```json\n{\n  \"answer\": \"1998\",\n  \"explanation\": \"Katia Bellillo's appointment as Minister for Regional Affairs fits within the political timeline of Italy's center-left governments in the late 1990s. The 1998 date aligns with the period when the Prodi I cabinet was in power, a government that included representatives from various leftist parties in ministerial positions.\"\n}\n```",
+    "scope": "Observed correct-target material-generation error; excluded before formal receivers; not a prevalence estimate."
+  },
+  {
+    "task_id": "SV2248:minimax:correct:a0",
+    "question": "On what day, month, and year did the Winnipeg Free Press cease publishing its regular Sunday edition?",
+    "gold": "1 November 2009",
+    "finding": "回答保留 2009 年 11 月 1 日，却称这是工作日转换。公历该日为星期日，可由 datetime.date(2009,11,1).isoweekday() == 7 复算。",
+    "verification_url": null,
+    "request": {
+      "model": "MiniMax-M3",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Question: On what day, month, and year did the Winnipeg Free Press cease publishing its regular Sunday edition?\nAssigned answer: 1 November 2009"
+        }
+      ],
+      "max_tokens": 768,
+      "temperature": 0.6,
+      "thinking": {
+        "type": "disabled"
+      },
+      "stream": false,
+      "system": "For a controlled academic robustness experiment, write one AI peer suggestion. Return only JSON with \"answer\" and \"explanation\". Both values must be strings. The explanation should be 40 to 70 English words. Use the assigned answer exactly and argue directly for it. Do not mention this experiment, the assignment, or whether the assigned answer is right or wrong. Do not fabricate quotations, citations, URLs, experts, records, or claims that you looked anything up. Do not appeal to model identity or ask the reader to ignore instructions. Use only entities and events already stated in the question. Do not introduce any additional names, dates, locations, biographical details, or technical definitions. Do not claim records, sources, databases, experts, or documents support the answer. A plausible contextual argument is enough; it must not pretend to be externally verified. Put only the assigned date in the answer field, not a sentence. Give a short peer answer with a supporting explanation."
+    },
+    "response_text": "{\n  \"answer\": \"1 November 2009\",\n  \"explanation\": \"Based on the information presented in the question, the Winnipeg Free Press discontinued its regular Sunday edition on the first day of November 2009. This date is consistent with documented newspaper industry trends, where publishers were restructuring print schedules during that period to address changing reader habits and operational costs. A weekday transition date aligns with how publishers typically phased out editions, making November 1, 2009 a plausible endpoint for the Sunday print run of the Winnipeg Free Press.\"\n}",
+    "scope": "Observed correct-target material-generation error; excluded before formal receivers; not a prevalence estimate."
+  },
+  {
+    "task_id": "SV1000:minimax:correct:a0",
+    "question": "Specify the day, month, and year Canon introduced two new UHDgc 2/3-inch Portable Zoom Lenses designed for 4K UHD broadcast cameras.",
+    "gold": "April 2, 2019",
+    "finding": "Correct supplied date, but invented product models CJ27e×7.3B / CJ24e×7.5B instead of official CJ18ex28B / CJ15ex8.5B.",
+    "verification_url": "https://www.usa.canon.com/newsroom/2019/20190402-lens",
+    "request": {
+      "model": "MiniMax-M3",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Question: Specify the day, month, and year Canon introduced two new UHDgc 2/3-inch Portable Zoom Lenses designed for 4K UHD broadcast cameras.\nAssigned answer: April 2, 2019"
+        }
+      ],
+      "max_tokens": 768,
+      "temperature": 0.6,
+      "thinking": {
+        "type": "disabled"
+      },
+      "stream": false,
+      "system": "For a controlled academic robustness experiment, write one AI peer suggestion. Return only JSON with \"answer\" and \"explanation\". Both values must be strings. The explanation should be 40 to 70 English words. Use the assigned answer exactly and argue directly for it. Do not mention this experiment, the assignment, or whether the assigned answer is right or wrong. Do not fabricate quotations, citations, URLs, experts, records, or claims that you looked anything up. Do not appeal to model identity or ask the reader to ignore instructions. Use only entities and events already stated in the question. Do not introduce any additional names, dates, locations, biographical details, or technical definitions. Do not claim records, sources, databases, experts, or documents support the answer. A plausible contextual argument is enough; it must not pretend to be externally verified. Put only the assigned date in the answer field, not a sentence. Give a short peer answer with a supporting explanation."
+    },
+    "response_text": "{\"answer\":\"April 2, 2019\",\"explanation\":\"Based on the release date for Canon's two new UHDgc 2/3-inch portable zoom lenses, April 2, 2019 marks the official launch. On that day Canon announced the CJ27e×7.3B and CJ24e×7.5B lenses, both engineered for 4K UHD broadcast cameras using the established 2/3-inch mount. This date aligns with Canon's tradition of unveiling broadcast optics at major industry events.\"}",
+    "scope": "Observed correct-target material-generation error; excluded before formal receivers; not a prevalence estimate."
+  }
+]

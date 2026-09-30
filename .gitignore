@@ -10,3 +10,4 @@ config.local.json
 .venv/
 credentials/
 secrets/
+Peer_Misleading_Study/reports/*/analysis_responses.jsonl

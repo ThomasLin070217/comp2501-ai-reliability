@@ -8,7 +8,8 @@
 
 - [公开论文中的错误案例与题库来源](research-sources.md)
 - [执行方案及所有偏离](protocol/execution-amendment.md)
-- [开发报告](reports/development-report.md)
+- [开发报告](reports/development-report.md)与[执行偏离复核](protocol/deviation-audit.md)
+- [本轮真实的错误论据案例](reports/material-quality-cases.md)
 - [课程 proposal 草稿](reports/course-proposal-draft.md)
 - [复现说明](REPRODUCE.md)、[数据字典](DATA_DICTIONARY.md)
 - [正式冻结记录](protocol/formal-receiver-freeze.json)、[最终题目](data/main_questions.jsonl)、[样本筛选审计](data/main_selection_audit.json)
