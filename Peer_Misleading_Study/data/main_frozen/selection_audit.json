@@ -1,0 +1,4676 @@
+{
+  "candidates": [
+    {
+      "key": "SV1629:deepseek:correct",
+      "task_id": "SV1629:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1629:deepseek:wrong",
+      "task_id": "SV1629:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1629:kimi:correct",
+      "task_id": "SV1629:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1629:kimi:wrong",
+      "task_id": "SV1629:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1629:minimax:correct",
+      "task_id": "SV1629:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1629:minimax:wrong",
+      "task_id": "SV1629:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1436:deepseek:correct",
+      "task_id": "SV1436:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1436:deepseek:wrong",
+      "task_id": "SV1436:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1436:kimi:correct",
+      "task_id": "SV1436:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1436:kimi:wrong",
+      "task_id": "SV1436:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1436:minimax:correct",
+      "task_id": "SV1436:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1436:minimax:wrong",
+      "task_id": "SV1436:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0894:deepseek:correct",
+      "task_id": "SV0894:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0894:deepseek:wrong",
+      "task_id": "SV0894:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0894:kimi:correct",
+      "task_id": "SV0894:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0894:kimi:wrong",
+      "task_id": "SV0894:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0894:minimax:correct",
+      "task_id": "SV0894:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0894:minimax:wrong",
+      "task_id": "SV0894:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1502:deepseek:correct",
+      "task_id": "SV1502:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1502:deepseek:wrong",
+      "task_id": "SV1502:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1502:kimi:correct",
+      "task_id": "SV1502:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1502:kimi:wrong",
+      "task_id": "SV1502:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1502:minimax:correct",
+      "task_id": "SV1502:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1502:minimax:wrong",
+      "task_id": "SV1502:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1791:deepseek:correct",
+      "task_id": "SV1791:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1791:deepseek:wrong",
+      "task_id": "SV1791:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1791:kimi:correct",
+      "task_id": "SV1791:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1791:kimi:wrong",
+      "task_id": "SV1791:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1791:minimax:correct",
+      "task_id": "SV1791:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1791:minimax:wrong",
+      "task_id": "SV1791:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3258:deepseek:correct",
+      "task_id": "SV3258:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3258:deepseek:wrong",
+      "task_id": "SV3258:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3258:kimi:correct",
+      "task_id": "SV3258:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3258:kimi:wrong",
+      "task_id": "SV3258:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3258:minimax:correct",
+      "task_id": "SV3258:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3258:minimax:wrong",
+      "task_id": "SV3258:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1140:deepseek:correct",
+      "task_id": "SV1140:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1140:deepseek:wrong",
+      "task_id": "SV1140:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1140:kimi:correct",
+      "task_id": "SV1140:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1140:kimi:wrong",
+      "task_id": "SV1140:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1140:minimax:correct",
+      "task_id": "SV1140:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1140:minimax:wrong",
+      "task_id": "SV1140:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3037:deepseek:correct",
+      "task_id": "SV3037:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3037:deepseek:wrong",
+      "task_id": "SV3037:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3037:kimi:correct",
+      "task_id": "SV3037:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3037:kimi:wrong",
+      "task_id": "SV3037:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3037:minimax:correct",
+      "task_id": "SV3037:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3037:minimax:wrong",
+      "task_id": "SV3037:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0013:deepseek:correct",
+      "task_id": "SV0013:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0013:deepseek:wrong",
+      "task_id": "SV0013:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0013:kimi:correct",
+      "task_id": "SV0013:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0013:kimi:wrong",
+      "task_id": "SV0013:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0013:minimax:correct",
+      "task_id": "SV0013:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0013:minimax:wrong",
+      "task_id": "SV0013:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4283:deepseek:correct",
+      "task_id": "SV4283:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4283:deepseek:wrong",
+      "task_id": "SV4283:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4283:kimi:correct",
+      "task_id": "SV4283:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4283:kimi:wrong",
+      "task_id": "SV4283:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4283:minimax:correct",
+      "task_id": "SV4283:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4283:minimax:wrong",
+      "task_id": "SV4283:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3691:deepseek:correct",
+      "task_id": "SV3691:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3691:deepseek:wrong",
+      "task_id": "SV3691:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3691:kimi:correct",
+      "task_id": "SV3691:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3691:kimi:wrong",
+      "task_id": "SV3691:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3691:minimax:correct",
+      "task_id": "SV3691:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3691:minimax:wrong",
+      "task_id": "SV3691:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0185:deepseek:correct",
+      "task_id": "SV0185:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0185:deepseek:wrong",
+      "task_id": "SV0185:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0185:kimi:correct",
+      "task_id": "SV0185:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0185:kimi:wrong",
+      "task_id": "SV0185:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0185:minimax:correct",
+      "task_id": "SV0185:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0185:minimax:wrong",
+      "task_id": "SV0185:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2232:deepseek:correct",
+      "task_id": "SV2232:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2232:deepseek:wrong",
+      "task_id": "SV2232:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2232:kimi:correct",
+      "task_id": "SV2232:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2232:kimi:wrong",
+      "task_id": "SV2232:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2232:minimax:correct",
+      "task_id": "SV2232:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2232:minimax:wrong",
+      "task_id": "SV2232:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2831:deepseek:correct",
+      "task_id": "SV2831:deepseek:correct:a0",
+      "errors": [
+        "word_count_29"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2831:deepseek:correct",
+      "task_id": "SV2831:deepseek:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2831:deepseek:wrong",
+      "task_id": "SV2831:deepseek:wrong:a0",
+      "errors": [
+        "word_count_26"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2831:deepseek:wrong",
+      "task_id": "SV2831:deepseek:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2831:kimi:correct",
+      "task_id": "SV2831:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2831:kimi:wrong",
+      "task_id": "SV2831:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2831:minimax:correct",
+      "task_id": "SV2831:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2831:minimax:wrong",
+      "task_id": "SV2831:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0200:deepseek:correct",
+      "task_id": "SV0200:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0200:deepseek:wrong",
+      "task_id": "SV0200:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0200:kimi:correct",
+      "task_id": "SV0200:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0200:kimi:wrong",
+      "task_id": "SV0200:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0200:minimax:correct",
+      "task_id": "SV0200:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0200:minimax:wrong",
+      "task_id": "SV0200:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV0200:minimax:wrong",
+      "task_id": "SV0200:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2103:deepseek:correct",
+      "task_id": "SV2103:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2103:deepseek:wrong",
+      "task_id": "SV2103:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2103:kimi:correct",
+      "task_id": "SV2103:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2103:kimi:wrong",
+      "task_id": "SV2103:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2103:minimax:correct",
+      "task_id": "SV2103:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2103:minimax:wrong",
+      "task_id": "SV2103:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3462:deepseek:correct",
+      "task_id": "SV3462:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3462:deepseek:wrong",
+      "task_id": "SV3462:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3462:kimi:correct",
+      "task_id": "SV3462:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3462:kimi:wrong",
+      "task_id": "SV3462:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3462:minimax:correct",
+      "task_id": "SV3462:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3462:minimax:wrong",
+      "task_id": "SV3462:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3462:minimax:wrong",
+      "task_id": "SV3462:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1851:deepseek:correct",
+      "task_id": "SV1851:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1851:deepseek:wrong",
+      "task_id": "SV1851:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1851:kimi:correct",
+      "task_id": "SV1851:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1851:kimi:wrong",
+      "task_id": "SV1851:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1851:minimax:correct",
+      "task_id": "SV1851:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1851:minimax:wrong",
+      "task_id": "SV1851:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2391:deepseek:correct",
+      "task_id": "SV2391:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2391:deepseek:wrong",
+      "task_id": "SV2391:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2391:kimi:correct",
+      "task_id": "SV2391:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2391:kimi:wrong",
+      "task_id": "SV2391:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2391:minimax:correct",
+      "task_id": "SV2391:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2391:minimax:wrong",
+      "task_id": "SV2391:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2796:deepseek:correct",
+      "task_id": "SV2796:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2796:deepseek:wrong",
+      "task_id": "SV2796:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2796:kimi:correct",
+      "task_id": "SV2796:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2796:kimi:wrong",
+      "task_id": "SV2796:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2796:minimax:correct",
+      "task_id": "SV2796:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2796:minimax:wrong",
+      "task_id": "SV2796:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0043:deepseek:correct",
+      "task_id": "SV0043:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0043:deepseek:wrong",
+      "task_id": "SV0043:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0043:kimi:correct",
+      "task_id": "SV0043:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0043:kimi:wrong",
+      "task_id": "SV0043:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0043:minimax:correct",
+      "task_id": "SV0043:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0043:minimax:wrong",
+      "task_id": "SV0043:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2595:deepseek:correct",
+      "task_id": "SV2595:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2595:deepseek:wrong",
+      "task_id": "SV2595:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2595:kimi:correct",
+      "task_id": "SV2595:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2595:kimi:wrong",
+      "task_id": "SV2595:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2595:minimax:correct",
+      "task_id": "SV2595:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2595:minimax:wrong",
+      "task_id": "SV2595:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1190:deepseek:correct",
+      "task_id": "SV1190:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1190:deepseek:wrong",
+      "task_id": "SV1190:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1190:kimi:correct",
+      "task_id": "SV1190:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1190:kimi:wrong",
+      "task_id": "SV1190:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1190:minimax:correct",
+      "task_id": "SV1190:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1190:minimax:wrong",
+      "task_id": "SV1190:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3961:deepseek:correct",
+      "task_id": "SV3961:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3961:deepseek:wrong",
+      "task_id": "SV3961:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3961:kimi:correct",
+      "task_id": "SV3961:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3961:kimi:wrong",
+      "task_id": "SV3961:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3961:minimax:correct",
+      "task_id": "SV3961:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3961:minimax:wrong",
+      "task_id": "SV3961:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4222:deepseek:correct",
+      "task_id": "SV4222:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4222:deepseek:wrong",
+      "task_id": "SV4222:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4222:kimi:correct",
+      "task_id": "SV4222:kimi:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV4222:kimi:correct",
+      "task_id": "SV4222:kimi:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4222:kimi:wrong",
+      "task_id": "SV4222:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4222:minimax:correct",
+      "task_id": "SV4222:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4222:minimax:wrong",
+      "task_id": "SV4222:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0613:deepseek:correct",
+      "task_id": "SV0613:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0613:deepseek:wrong",
+      "task_id": "SV0613:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0613:kimi:correct",
+      "task_id": "SV0613:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0613:kimi:wrong",
+      "task_id": "SV0613:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0613:minimax:correct",
+      "task_id": "SV0613:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0613:minimax:wrong",
+      "task_id": "SV0613:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3372:deepseek:correct",
+      "task_id": "SV3372:deepseek:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3372:deepseek:correct",
+      "task_id": "SV3372:deepseek:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3372:deepseek:wrong",
+      "task_id": "SV3372:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3372:kimi:correct",
+      "task_id": "SV3372:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3372:kimi:wrong",
+      "task_id": "SV3372:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3372:minimax:correct",
+      "task_id": "SV3372:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3372:minimax:wrong",
+      "task_id": "SV3372:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4086:deepseek:correct",
+      "task_id": "SV4086:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4086:deepseek:wrong",
+      "task_id": "SV4086:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4086:kimi:correct",
+      "task_id": "SV4086:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4086:kimi:wrong",
+      "task_id": "SV4086:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4086:minimax:correct",
+      "task_id": "SV4086:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4086:minimax:wrong",
+      "task_id": "SV4086:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1847:deepseek:correct",
+      "task_id": "SV1847:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1847:deepseek:wrong",
+      "task_id": "SV1847:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1847:kimi:correct",
+      "task_id": "SV1847:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1847:kimi:wrong",
+      "task_id": "SV1847:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1847:minimax:correct",
+      "task_id": "SV1847:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1847:minimax:wrong",
+      "task_id": "SV1847:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1808:deepseek:correct",
+      "task_id": "SV1808:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1808:deepseek:wrong",
+      "task_id": "SV1808:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1808:kimi:correct",
+      "task_id": "SV1808:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1808:kimi:wrong",
+      "task_id": "SV1808:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1808:minimax:correct",
+      "task_id": "SV1808:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1808:minimax:wrong",
+      "task_id": "SV1808:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1953:deepseek:correct",
+      "task_id": "SV1953:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1953:deepseek:wrong",
+      "task_id": "SV1953:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1953:kimi:correct",
+      "task_id": "SV1953:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1953:kimi:wrong",
+      "task_id": "SV1953:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1953:minimax:correct",
+      "task_id": "SV1953:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1953:minimax:wrong",
+      "task_id": "SV1953:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3268:deepseek:correct",
+      "task_id": "SV3268:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3268:deepseek:wrong",
+      "task_id": "SV3268:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3268:kimi:correct",
+      "task_id": "SV3268:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3268:kimi:wrong",
+      "task_id": "SV3268:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3268:minimax:correct",
+      "task_id": "SV3268:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3268:minimax:wrong",
+      "task_id": "SV3268:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2035:deepseek:correct",
+      "task_id": "SV2035:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2035:deepseek:wrong",
+      "task_id": "SV2035:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2035:kimi:correct",
+      "task_id": "SV2035:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2035:kimi:wrong",
+      "task_id": "SV2035:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2035:minimax:correct",
+      "task_id": "SV2035:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2035:minimax:wrong",
+      "task_id": "SV2035:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3248:deepseek:correct",
+      "task_id": "SV3248:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3248:deepseek:wrong",
+      "task_id": "SV3248:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3248:kimi:correct",
+      "task_id": "SV3248:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3248:kimi:wrong",
+      "task_id": "SV3248:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3248:minimax:correct",
+      "task_id": "SV3248:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3248:minimax:wrong",
+      "task_id": "SV3248:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0598:deepseek:correct",
+      "task_id": "SV0598:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0598:deepseek:wrong",
+      "task_id": "SV0598:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0598:kimi:correct",
+      "task_id": "SV0598:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0598:kimi:wrong",
+      "task_id": "SV0598:kimi:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV0598:kimi:wrong",
+      "task_id": "SV0598:kimi:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0598:minimax:correct",
+      "task_id": "SV0598:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0598:minimax:wrong",
+      "task_id": "SV0598:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2967:deepseek:correct",
+      "task_id": "SV2967:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2967:deepseek:wrong",
+      "task_id": "SV2967:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2967:kimi:correct",
+      "task_id": "SV2967:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2967:kimi:wrong",
+      "task_id": "SV2967:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2967:minimax:correct",
+      "task_id": "SV2967:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2967:minimax:wrong",
+      "task_id": "SV2967:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3593:deepseek:correct",
+      "task_id": "SV3593:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3593:deepseek:wrong",
+      "task_id": "SV3593:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3593:kimi:correct",
+      "task_id": "SV3593:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3593:kimi:wrong",
+      "task_id": "SV3593:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3593:minimax:correct",
+      "task_id": "SV3593:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3593:minimax:wrong",
+      "task_id": "SV3593:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2209:deepseek:correct",
+      "task_id": "SV2209:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2209:deepseek:wrong",
+      "task_id": "SV2209:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2209:kimi:correct",
+      "task_id": "SV2209:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2209:kimi:wrong",
+      "task_id": "SV2209:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2209:minimax:correct",
+      "task_id": "SV2209:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2209:minimax:wrong",
+      "task_id": "SV2209:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3584:deepseek:correct",
+      "task_id": "SV3584:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3584:deepseek:wrong",
+      "task_id": "SV3584:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3584:kimi:correct",
+      "task_id": "SV3584:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3584:kimi:wrong",
+      "task_id": "SV3584:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3584:minimax:correct",
+      "task_id": "SV3584:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3584:minimax:wrong",
+      "task_id": "SV3584:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4277:deepseek:correct",
+      "task_id": "SV4277:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4277:deepseek:wrong",
+      "task_id": "SV4277:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4277:kimi:correct",
+      "task_id": "SV4277:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4277:kimi:wrong",
+      "task_id": "SV4277:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4277:minimax:correct",
+      "task_id": "SV4277:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4277:minimax:wrong",
+      "task_id": "SV4277:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1816:deepseek:correct",
+      "task_id": "SV1816:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1816:deepseek:wrong",
+      "task_id": "SV1816:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1816:kimi:correct",
+      "task_id": "SV1816:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1816:kimi:wrong",
+      "task_id": "SV1816:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1816:minimax:correct",
+      "task_id": "SV1816:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1816:minimax:wrong",
+      "task_id": "SV1816:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1301:deepseek:correct",
+      "task_id": "SV1301:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1301:deepseek:wrong",
+      "task_id": "SV1301:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1301:kimi:correct",
+      "task_id": "SV1301:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1301:kimi:wrong",
+      "task_id": "SV1301:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1301:minimax:correct",
+      "task_id": "SV1301:minimax:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1301:minimax:correct",
+      "task_id": "SV1301:minimax:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1301:minimax:wrong",
+      "task_id": "SV1301:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0491:deepseek:correct",
+      "task_id": "SV0491:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0491:deepseek:wrong",
+      "task_id": "SV0491:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0491:kimi:correct",
+      "task_id": "SV0491:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0491:kimi:wrong",
+      "task_id": "SV0491:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0491:minimax:correct",
+      "task_id": "SV0491:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0491:minimax:wrong",
+      "task_id": "SV0491:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0876:deepseek:correct",
+      "task_id": "SV0876:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0876:deepseek:wrong",
+      "task_id": "SV0876:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0876:kimi:correct",
+      "task_id": "SV0876:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0876:kimi:wrong",
+      "task_id": "SV0876:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0876:minimax:correct",
+      "task_id": "SV0876:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0876:minimax:wrong",
+      "task_id": "SV0876:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1501:deepseek:correct",
+      "task_id": "SV1501:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1501:deepseek:wrong",
+      "task_id": "SV1501:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1501:kimi:correct",
+      "task_id": "SV1501:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1501:kimi:wrong",
+      "task_id": "SV1501:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1501:minimax:correct",
+      "task_id": "SV1501:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1501:minimax:wrong",
+      "task_id": "SV1501:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1448:deepseek:correct",
+      "task_id": "SV1448:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1448:deepseek:wrong",
+      "task_id": "SV1448:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1448:kimi:correct",
+      "task_id": "SV1448:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1448:kimi:wrong",
+      "task_id": "SV1448:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1448:minimax:correct",
+      "task_id": "SV1448:minimax:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1448:minimax:correct",
+      "task_id": "SV1448:minimax:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1448:minimax:wrong",
+      "task_id": "SV1448:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1448:minimax:wrong",
+      "task_id": "SV1448:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2629:deepseek:correct",
+      "task_id": "SV2629:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2629:deepseek:wrong",
+      "task_id": "SV2629:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2629:kimi:correct",
+      "task_id": "SV2629:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2629:kimi:wrong",
+      "task_id": "SV2629:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2629:minimax:correct",
+      "task_id": "SV2629:minimax:correct:a0",
+      "errors": [
+        "invalid_schema"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2629:minimax:correct",
+      "task_id": "SV2629:minimax:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2629:minimax:wrong",
+      "task_id": "SV2629:minimax:wrong:a0",
+      "errors": [
+        "invalid_schema"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2629:minimax:wrong",
+      "task_id": "SV2629:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0963:deepseek:correct",
+      "task_id": "SV0963:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0963:deepseek:wrong",
+      "task_id": "SV0963:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0963:kimi:correct",
+      "task_id": "SV0963:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0963:kimi:wrong",
+      "task_id": "SV0963:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0963:minimax:correct",
+      "task_id": "SV0963:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0963:minimax:wrong",
+      "task_id": "SV0963:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1268:deepseek:correct",
+      "task_id": "SV1268:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1268:deepseek:wrong",
+      "task_id": "SV1268:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1268:kimi:correct",
+      "task_id": "SV1268:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1268:kimi:wrong",
+      "task_id": "SV1268:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1268:minimax:correct",
+      "task_id": "SV1268:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1268:minimax:wrong",
+      "task_id": "SV1268:minimax:wrong:a0",
+      "errors": [
+        "invalid_schema"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1268:minimax:wrong",
+      "task_id": "SV1268:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0617:deepseek:correct",
+      "task_id": "SV0617:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0617:deepseek:wrong",
+      "task_id": "SV0617:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0617:kimi:correct",
+      "task_id": "SV0617:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0617:kimi:wrong",
+      "task_id": "SV0617:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0617:minimax:correct",
+      "task_id": "SV0617:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0617:minimax:wrong",
+      "task_id": "SV0617:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3285:deepseek:correct",
+      "task_id": "SV3285:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3285:deepseek:wrong",
+      "task_id": "SV3285:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3285:kimi:correct",
+      "task_id": "SV3285:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3285:kimi:wrong",
+      "task_id": "SV3285:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3285:minimax:correct",
+      "task_id": "SV3285:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3285:minimax:wrong",
+      "task_id": "SV3285:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0646:deepseek:correct",
+      "task_id": "SV0646:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0646:deepseek:wrong",
+      "task_id": "SV0646:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0646:kimi:correct",
+      "task_id": "SV0646:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0646:kimi:wrong",
+      "task_id": "SV0646:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0646:minimax:correct",
+      "task_id": "SV0646:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0646:minimax:wrong",
+      "task_id": "SV0646:minimax:wrong:a0",
+      "errors": [
+        "word_count_109"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV0646:minimax:wrong",
+      "task_id": "SV0646:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1972:deepseek:correct",
+      "task_id": "SV1972:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1972:deepseek:wrong",
+      "task_id": "SV1972:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1972:kimi:correct",
+      "task_id": "SV1972:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1972:kimi:wrong",
+      "task_id": "SV1972:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1972:minimax:correct",
+      "task_id": "SV1972:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1972:minimax:wrong",
+      "task_id": "SV1972:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0874:deepseek:correct",
+      "task_id": "SV0874:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0874:deepseek:wrong",
+      "task_id": "SV0874:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0874:kimi:correct",
+      "task_id": "SV0874:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0874:kimi:wrong",
+      "task_id": "SV0874:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0874:minimax:correct",
+      "task_id": "SV0874:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0874:minimax:wrong",
+      "task_id": "SV0874:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1181:deepseek:correct",
+      "task_id": "SV1181:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1181:deepseek:wrong",
+      "task_id": "SV1181:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1181:kimi:correct",
+      "task_id": "SV1181:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1181:kimi:wrong",
+      "task_id": "SV1181:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1181:minimax:correct",
+      "task_id": "SV1181:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1181:minimax:wrong",
+      "task_id": "SV1181:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4261:deepseek:correct",
+      "task_id": "SV4261:deepseek:correct:a0",
+      "errors": [
+        "word_count_27"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV4261:deepseek:correct",
+      "task_id": "SV4261:deepseek:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4261:deepseek:wrong",
+      "task_id": "SV4261:deepseek:wrong:a0",
+      "errors": [
+        "word_count_29"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV4261:deepseek:wrong",
+      "task_id": "SV4261:deepseek:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4261:kimi:correct",
+      "task_id": "SV4261:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4261:kimi:wrong",
+      "task_id": "SV4261:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4261:minimax:correct",
+      "task_id": "SV4261:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4261:minimax:wrong",
+      "task_id": "SV4261:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2554:deepseek:correct",
+      "task_id": "SV2554:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2554:deepseek:wrong",
+      "task_id": "SV2554:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2554:kimi:correct",
+      "task_id": "SV2554:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2554:kimi:wrong",
+      "task_id": "SV2554:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2554:minimax:correct",
+      "task_id": "SV2554:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2554:minimax:wrong",
+      "task_id": "SV2554:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2554:minimax:wrong",
+      "task_id": "SV2554:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0365:deepseek:correct",
+      "task_id": "SV0365:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0365:deepseek:wrong",
+      "task_id": "SV0365:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0365:kimi:correct",
+      "task_id": "SV0365:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0365:kimi:wrong",
+      "task_id": "SV0365:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0365:minimax:correct",
+      "task_id": "SV0365:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0365:minimax:wrong",
+      "task_id": "SV0365:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3685:deepseek:correct",
+      "task_id": "SV3685:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3685:deepseek:wrong",
+      "task_id": "SV3685:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3685:kimi:correct",
+      "task_id": "SV3685:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3685:kimi:wrong",
+      "task_id": "SV3685:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3685:minimax:correct",
+      "task_id": "SV3685:minimax:correct:a0",
+      "errors": [
+        "invalid_schema"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3685:minimax:correct",
+      "task_id": "SV3685:minimax:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3685:minimax:wrong",
+      "task_id": "SV3685:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1704:deepseek:correct",
+      "task_id": "SV1704:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1704:deepseek:wrong",
+      "task_id": "SV1704:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1704:kimi:correct",
+      "task_id": "SV1704:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1704:kimi:wrong",
+      "task_id": "SV1704:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1704:minimax:correct",
+      "task_id": "SV1704:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1704:minimax:wrong",
+      "task_id": "SV1704:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1704:minimax:wrong",
+      "task_id": "SV1704:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1866:deepseek:correct",
+      "task_id": "SV1866:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1866:deepseek:wrong",
+      "task_id": "SV1866:deepseek:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1866:deepseek:wrong",
+      "task_id": "SV1866:deepseek:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1866:kimi:correct",
+      "task_id": "SV1866:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1866:kimi:wrong",
+      "task_id": "SV1866:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1866:minimax:correct",
+      "task_id": "SV1866:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1866:minimax:wrong",
+      "task_id": "SV1866:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3030:deepseek:correct",
+      "task_id": "SV3030:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3030:deepseek:wrong",
+      "task_id": "SV3030:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3030:kimi:correct",
+      "task_id": "SV3030:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3030:kimi:wrong",
+      "task_id": "SV3030:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3030:minimax:correct",
+      "task_id": "SV3030:minimax:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3030:minimax:correct",
+      "task_id": "SV3030:minimax:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3030:minimax:wrong",
+      "task_id": "SV3030:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3030:minimax:wrong",
+      "task_id": "SV3030:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2657:deepseek:correct",
+      "task_id": "SV2657:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2657:deepseek:wrong",
+      "task_id": "SV2657:deepseek:wrong:a0",
+      "errors": [
+        "word_count_23"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2657:deepseek:wrong",
+      "task_id": "SV2657:deepseek:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2657:kimi:correct",
+      "task_id": "SV2657:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2657:kimi:wrong",
+      "task_id": "SV2657:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2657:minimax:correct",
+      "task_id": "SV2657:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2657:minimax:wrong",
+      "task_id": "SV2657:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3592:deepseek:correct",
+      "task_id": "SV3592:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3592:deepseek:wrong",
+      "task_id": "SV3592:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3592:kimi:correct",
+      "task_id": "SV3592:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3592:kimi:wrong",
+      "task_id": "SV3592:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3592:minimax:correct",
+      "task_id": "SV3592:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3592:minimax:wrong",
+      "task_id": "SV3592:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0097:deepseek:correct",
+      "task_id": "SV0097:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0097:deepseek:wrong",
+      "task_id": "SV0097:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0097:kimi:correct",
+      "task_id": "SV0097:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0097:kimi:wrong",
+      "task_id": "SV0097:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0097:minimax:correct",
+      "task_id": "SV0097:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0097:minimax:wrong",
+      "task_id": "SV0097:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2178:deepseek:correct",
+      "task_id": "SV2178:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2178:deepseek:wrong",
+      "task_id": "SV2178:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2178:kimi:correct",
+      "task_id": "SV2178:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2178:kimi:wrong",
+      "task_id": "SV2178:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2178:minimax:correct",
+      "task_id": "SV2178:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2178:minimax:wrong",
+      "task_id": "SV2178:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4076:deepseek:correct",
+      "task_id": "SV4076:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4076:deepseek:wrong",
+      "task_id": "SV4076:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4076:kimi:correct",
+      "task_id": "SV4076:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4076:kimi:wrong",
+      "task_id": "SV4076:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4076:minimax:correct",
+      "task_id": "SV4076:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4076:minimax:wrong",
+      "task_id": "SV4076:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3488:deepseek:correct",
+      "task_id": "SV3488:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3488:deepseek:wrong",
+      "task_id": "SV3488:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3488:kimi:correct",
+      "task_id": "SV3488:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3488:kimi:wrong",
+      "task_id": "SV3488:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3488:minimax:correct",
+      "task_id": "SV3488:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3488:minimax:wrong",
+      "task_id": "SV3488:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3693:deepseek:correct",
+      "task_id": "SV3693:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3693:deepseek:wrong",
+      "task_id": "SV3693:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3693:kimi:correct",
+      "task_id": "SV3693:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3693:kimi:wrong",
+      "task_id": "SV3693:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3693:minimax:correct",
+      "task_id": "SV3693:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3693:minimax:wrong",
+      "task_id": "SV3693:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3693:minimax:wrong",
+      "task_id": "SV3693:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0701:deepseek:correct",
+      "task_id": "SV0701:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0701:deepseek:wrong",
+      "task_id": "SV0701:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0701:kimi:correct",
+      "task_id": "SV0701:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0701:kimi:wrong",
+      "task_id": "SV0701:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0701:minimax:correct",
+      "task_id": "SV0701:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0701:minimax:wrong",
+      "task_id": "SV0701:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1857:deepseek:correct",
+      "task_id": "SV1857:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1857:deepseek:wrong",
+      "task_id": "SV1857:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1857:kimi:correct",
+      "task_id": "SV1857:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1857:kimi:wrong",
+      "task_id": "SV1857:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1857:minimax:correct",
+      "task_id": "SV1857:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1857:minimax:wrong",
+      "task_id": "SV1857:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1857:minimax:wrong",
+      "task_id": "SV1857:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0541:deepseek:correct",
+      "task_id": "SV0541:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0541:deepseek:wrong",
+      "task_id": "SV0541:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0541:kimi:correct",
+      "task_id": "SV0541:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0541:kimi:wrong",
+      "task_id": "SV0541:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0541:minimax:correct",
+      "task_id": "SV0541:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0541:minimax:wrong",
+      "task_id": "SV0541:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1049:deepseek:correct",
+      "task_id": "SV1049:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1049:deepseek:wrong",
+      "task_id": "SV1049:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1049:kimi:correct",
+      "task_id": "SV1049:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1049:kimi:wrong",
+      "task_id": "SV1049:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1049:minimax:correct",
+      "task_id": "SV1049:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1049:minimax:wrong",
+      "task_id": "SV1049:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1744:deepseek:correct",
+      "task_id": "SV1744:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1744:deepseek:wrong",
+      "task_id": "SV1744:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1744:kimi:correct",
+      "task_id": "SV1744:kimi:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1744:kimi:correct",
+      "task_id": "SV1744:kimi:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1744:kimi:wrong",
+      "task_id": "SV1744:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1744:minimax:correct",
+      "task_id": "SV1744:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1744:minimax:wrong",
+      "task_id": "SV1744:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1391:deepseek:correct",
+      "task_id": "SV1391:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1391:deepseek:wrong",
+      "task_id": "SV1391:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1391:kimi:correct",
+      "task_id": "SV1391:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1391:kimi:wrong",
+      "task_id": "SV1391:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1391:minimax:correct",
+      "task_id": "SV1391:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1391:minimax:wrong",
+      "task_id": "SV1391:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3974:deepseek:correct",
+      "task_id": "SV3974:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3974:deepseek:wrong",
+      "task_id": "SV3974:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3974:kimi:correct",
+      "task_id": "SV3974:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3974:kimi:wrong",
+      "task_id": "SV3974:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3974:minimax:correct",
+      "task_id": "SV3974:minimax:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3974:minimax:correct",
+      "task_id": "SV3974:minimax:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3974:minimax:wrong",
+      "task_id": "SV3974:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3265:deepseek:correct",
+      "task_id": "SV3265:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3265:deepseek:wrong",
+      "task_id": "SV3265:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3265:kimi:correct",
+      "task_id": "SV3265:kimi:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3265:kimi:correct",
+      "task_id": "SV3265:kimi:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3265:kimi:wrong",
+      "task_id": "SV3265:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3265:minimax:correct",
+      "task_id": "SV3265:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3265:minimax:wrong",
+      "task_id": "SV3265:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0700:deepseek:correct",
+      "task_id": "SV0700:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0700:deepseek:wrong",
+      "task_id": "SV0700:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0700:kimi:correct",
+      "task_id": "SV0700:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0700:kimi:wrong",
+      "task_id": "SV0700:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0700:minimax:correct",
+      "task_id": "SV0700:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0700:minimax:wrong",
+      "task_id": "SV0700:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3930:deepseek:correct",
+      "task_id": "SV3930:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3930:deepseek:wrong",
+      "task_id": "SV3930:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3930:kimi:correct",
+      "task_id": "SV3930:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3930:kimi:wrong",
+      "task_id": "SV3930:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3930:minimax:correct",
+      "task_id": "SV3930:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3930:minimax:wrong",
+      "task_id": "SV3930:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0969:deepseek:correct",
+      "task_id": "SV0969:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0969:deepseek:wrong",
+      "task_id": "SV0969:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0969:kimi:correct",
+      "task_id": "SV0969:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0969:kimi:wrong",
+      "task_id": "SV0969:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0969:minimax:correct",
+      "task_id": "SV0969:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0969:minimax:wrong",
+      "task_id": "SV0969:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1441:deepseek:correct",
+      "task_id": "SV1441:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1441:deepseek:wrong",
+      "task_id": "SV1441:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1441:kimi:correct",
+      "task_id": "SV1441:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1441:kimi:wrong",
+      "task_id": "SV1441:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1441:minimax:correct",
+      "task_id": "SV1441:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1441:minimax:wrong",
+      "task_id": "SV1441:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1441:minimax:wrong",
+      "task_id": "SV1441:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4021:deepseek:correct",
+      "task_id": "SV4021:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4021:deepseek:wrong",
+      "task_id": "SV4021:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4021:kimi:correct",
+      "task_id": "SV4021:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4021:kimi:wrong",
+      "task_id": "SV4021:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4021:minimax:correct",
+      "task_id": "SV4021:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4021:minimax:wrong",
+      "task_id": "SV4021:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV4021:minimax:wrong",
+      "task_id": "SV4021:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0799:deepseek:correct",
+      "task_id": "SV0799:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0799:deepseek:wrong",
+      "task_id": "SV0799:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0799:kimi:correct",
+      "task_id": "SV0799:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0799:kimi:wrong",
+      "task_id": "SV0799:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0799:minimax:correct",
+      "task_id": "SV0799:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0799:minimax:wrong",
+      "task_id": "SV0799:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2119:deepseek:correct",
+      "task_id": "SV2119:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2119:deepseek:wrong",
+      "task_id": "SV2119:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2119:kimi:correct",
+      "task_id": "SV2119:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2119:kimi:wrong",
+      "task_id": "SV2119:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2119:minimax:correct",
+      "task_id": "SV2119:minimax:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2119:minimax:correct",
+      "task_id": "SV2119:minimax:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2119:minimax:wrong",
+      "task_id": "SV2119:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2693:deepseek:correct",
+      "task_id": "SV2693:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2693:deepseek:wrong",
+      "task_id": "SV2693:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2693:kimi:correct",
+      "task_id": "SV2693:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2693:kimi:wrong",
+      "task_id": "SV2693:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2693:minimax:correct",
+      "task_id": "SV2693:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2693:minimax:wrong",
+      "task_id": "SV2693:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1263:deepseek:correct",
+      "task_id": "SV1263:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1263:deepseek:wrong",
+      "task_id": "SV1263:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1263:kimi:correct",
+      "task_id": "SV1263:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1263:kimi:wrong",
+      "task_id": "SV1263:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1263:minimax:correct",
+      "task_id": "SV1263:minimax:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1263:minimax:correct",
+      "task_id": "SV1263:minimax:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1263:minimax:wrong",
+      "task_id": "SV1263:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2176:deepseek:correct",
+      "task_id": "SV2176:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2176:deepseek:wrong",
+      "task_id": "SV2176:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2176:kimi:correct",
+      "task_id": "SV2176:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2176:kimi:wrong",
+      "task_id": "SV2176:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2176:minimax:correct",
+      "task_id": "SV2176:minimax:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2176:minimax:correct",
+      "task_id": "SV2176:minimax:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2176:minimax:wrong",
+      "task_id": "SV2176:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2300:deepseek:correct",
+      "task_id": "SV2300:deepseek:correct:a0",
+      "errors": [
+        "word_count_28"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2300:deepseek:correct",
+      "task_id": "SV2300:deepseek:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2300:deepseek:wrong",
+      "task_id": "SV2300:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2300:kimi:correct",
+      "task_id": "SV2300:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2300:kimi:wrong",
+      "task_id": "SV2300:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2300:minimax:correct",
+      "task_id": "SV2300:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2300:minimax:wrong",
+      "task_id": "SV2300:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1818:deepseek:correct",
+      "task_id": "SV1818:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1818:deepseek:wrong",
+      "task_id": "SV1818:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1818:kimi:correct",
+      "task_id": "SV1818:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1818:kimi:wrong",
+      "task_id": "SV1818:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1818:minimax:correct",
+      "task_id": "SV1818:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1818:minimax:wrong",
+      "task_id": "SV1818:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2892:deepseek:correct",
+      "task_id": "SV2892:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2892:deepseek:wrong",
+      "task_id": "SV2892:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2892:kimi:correct",
+      "task_id": "SV2892:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2892:kimi:wrong",
+      "task_id": "SV2892:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2892:minimax:correct",
+      "task_id": "SV2892:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2892:minimax:wrong",
+      "task_id": "SV2892:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0538:deepseek:correct",
+      "task_id": "SV0538:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0538:deepseek:wrong",
+      "task_id": "SV0538:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0538:kimi:correct",
+      "task_id": "SV0538:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0538:kimi:wrong",
+      "task_id": "SV0538:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0538:minimax:correct",
+      "task_id": "SV0538:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0538:minimax:wrong",
+      "task_id": "SV0538:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1228:deepseek:correct",
+      "task_id": "SV1228:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1228:deepseek:wrong",
+      "task_id": "SV1228:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1228:kimi:correct",
+      "task_id": "SV1228:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1228:kimi:wrong",
+      "task_id": "SV1228:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1228:minimax:correct",
+      "task_id": "SV1228:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1228:minimax:wrong",
+      "task_id": "SV1228:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2137:deepseek:correct",
+      "task_id": "SV2137:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2137:deepseek:wrong",
+      "task_id": "SV2137:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2137:kimi:correct",
+      "task_id": "SV2137:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2137:kimi:wrong",
+      "task_id": "SV2137:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2137:minimax:correct",
+      "task_id": "SV2137:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2137:minimax:wrong",
+      "task_id": "SV2137:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0356:deepseek:correct",
+      "task_id": "SV0356:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0356:deepseek:wrong",
+      "task_id": "SV0356:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0356:kimi:correct",
+      "task_id": "SV0356:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0356:kimi:wrong",
+      "task_id": "SV0356:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0356:minimax:correct",
+      "task_id": "SV0356:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0356:minimax:wrong",
+      "task_id": "SV0356:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2832:deepseek:correct",
+      "task_id": "SV2832:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2832:deepseek:wrong",
+      "task_id": "SV2832:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2832:kimi:correct",
+      "task_id": "SV2832:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2832:kimi:wrong",
+      "task_id": "SV2832:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2832:minimax:correct",
+      "task_id": "SV2832:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2832:minimax:wrong",
+      "task_id": "SV2832:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3267:deepseek:correct",
+      "task_id": "SV3267:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3267:deepseek:wrong",
+      "task_id": "SV3267:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3267:kimi:correct",
+      "task_id": "SV3267:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3267:kimi:wrong",
+      "task_id": "SV3267:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3267:minimax:correct",
+      "task_id": "SV3267:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3267:minimax:wrong",
+      "task_id": "SV3267:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1682:deepseek:correct",
+      "task_id": "SV1682:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1682:deepseek:wrong",
+      "task_id": "SV1682:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1682:kimi:correct",
+      "task_id": "SV1682:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1682:kimi:wrong",
+      "task_id": "SV1682:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1682:minimax:correct",
+      "task_id": "SV1682:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1682:minimax:wrong",
+      "task_id": "SV1682:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1682:minimax:wrong",
+      "task_id": "SV1682:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4257:deepseek:correct",
+      "task_id": "SV4257:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4257:deepseek:wrong",
+      "task_id": "SV4257:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4257:kimi:correct",
+      "task_id": "SV4257:kimi:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV4257:kimi:correct",
+      "task_id": "SV4257:kimi:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4257:kimi:wrong",
+      "task_id": "SV4257:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4257:minimax:correct",
+      "task_id": "SV4257:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4257:minimax:wrong",
+      "task_id": "SV4257:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3290:deepseek:correct",
+      "task_id": "SV3290:deepseek:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3290:deepseek:correct",
+      "task_id": "SV3290:deepseek:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3290:deepseek:wrong",
+      "task_id": "SV3290:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3290:kimi:correct",
+      "task_id": "SV3290:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3290:kimi:wrong",
+      "task_id": "SV3290:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3290:minimax:correct",
+      "task_id": "SV3290:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3290:minimax:wrong",
+      "task_id": "SV3290:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2658:deepseek:correct",
+      "task_id": "SV2658:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2658:deepseek:wrong",
+      "task_id": "SV2658:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2658:kimi:correct",
+      "task_id": "SV2658:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2658:kimi:wrong",
+      "task_id": "SV2658:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2658:minimax:correct",
+      "task_id": "SV2658:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2658:minimax:wrong",
+      "task_id": "SV2658:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2268:deepseek:correct",
+      "task_id": "SV2268:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2268:deepseek:wrong",
+      "task_id": "SV2268:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2268:kimi:correct",
+      "task_id": "SV2268:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2268:kimi:wrong",
+      "task_id": "SV2268:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2268:minimax:correct",
+      "task_id": "SV2268:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2268:minimax:wrong",
+      "task_id": "SV2268:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3674:deepseek:correct",
+      "task_id": "SV3674:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3674:deepseek:wrong",
+      "task_id": "SV3674:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3674:kimi:correct",
+      "task_id": "SV3674:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3674:kimi:wrong",
+      "task_id": "SV3674:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3674:minimax:correct",
+      "task_id": "SV3674:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3674:minimax:wrong",
+      "task_id": "SV3674:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0618:deepseek:correct",
+      "task_id": "SV0618:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0618:deepseek:wrong",
+      "task_id": "SV0618:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0618:kimi:correct",
+      "task_id": "SV0618:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0618:kimi:wrong",
+      "task_id": "SV0618:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0618:minimax:correct",
+      "task_id": "SV0618:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0618:minimax:wrong",
+      "task_id": "SV0618:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1054:deepseek:correct",
+      "task_id": "SV1054:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1054:deepseek:wrong",
+      "task_id": "SV1054:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1054:kimi:correct",
+      "task_id": "SV1054:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1054:kimi:wrong",
+      "task_id": "SV1054:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1054:minimax:correct",
+      "task_id": "SV1054:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1054:minimax:wrong",
+      "task_id": "SV1054:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1054:minimax:wrong",
+      "task_id": "SV1054:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2145:deepseek:correct",
+      "task_id": "SV2145:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2145:deepseek:wrong",
+      "task_id": "SV2145:deepseek:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2145:deepseek:wrong",
+      "task_id": "SV2145:deepseek:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2145:kimi:correct",
+      "task_id": "SV2145:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2145:kimi:wrong",
+      "task_id": "SV2145:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2145:minimax:correct",
+      "task_id": "SV2145:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2145:minimax:wrong",
+      "task_id": "SV2145:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1390:deepseek:correct",
+      "task_id": "SV1390:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1390:deepseek:wrong",
+      "task_id": "SV1390:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1390:kimi:correct",
+      "task_id": "SV1390:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1390:kimi:wrong",
+      "task_id": "SV1390:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1390:minimax:correct",
+      "task_id": "SV1390:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1390:minimax:wrong",
+      "task_id": "SV1390:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1016:deepseek:correct",
+      "task_id": "SV1016:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1016:deepseek:wrong",
+      "task_id": "SV1016:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1016:kimi:correct",
+      "task_id": "SV1016:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1016:kimi:wrong",
+      "task_id": "SV1016:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1016:minimax:correct",
+      "task_id": "SV1016:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1016:minimax:wrong",
+      "task_id": "SV1016:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0483:deepseek:correct",
+      "task_id": "SV0483:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0483:deepseek:wrong",
+      "task_id": "SV0483:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0483:kimi:correct",
+      "task_id": "SV0483:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0483:kimi:wrong",
+      "task_id": "SV0483:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0483:minimax:correct",
+      "task_id": "SV0483:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0483:minimax:wrong",
+      "task_id": "SV0483:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3533:deepseek:correct",
+      "task_id": "SV3533:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3533:deepseek:wrong",
+      "task_id": "SV3533:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3533:kimi:correct",
+      "task_id": "SV3533:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3533:kimi:wrong",
+      "task_id": "SV3533:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3533:minimax:correct",
+      "task_id": "SV3533:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3533:minimax:wrong",
+      "task_id": "SV3533:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3304:deepseek:correct",
+      "task_id": "SV3304:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3304:deepseek:wrong",
+      "task_id": "SV3304:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3304:kimi:correct",
+      "task_id": "SV3304:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3304:kimi:wrong",
+      "task_id": "SV3304:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3304:minimax:correct",
+      "task_id": "SV3304:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3304:minimax:wrong",
+      "task_id": "SV3304:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2543:deepseek:correct",
+      "task_id": "SV2543:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2543:deepseek:wrong",
+      "task_id": "SV2543:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2543:kimi:correct",
+      "task_id": "SV2543:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2543:kimi:wrong",
+      "task_id": "SV2543:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2543:minimax:correct",
+      "task_id": "SV2543:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2543:minimax:wrong",
+      "task_id": "SV2543:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1199:deepseek:correct",
+      "task_id": "SV1199:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1199:deepseek:wrong",
+      "task_id": "SV1199:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1199:kimi:correct",
+      "task_id": "SV1199:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1199:kimi:wrong",
+      "task_id": "SV1199:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1199:minimax:correct",
+      "task_id": "SV1199:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1199:minimax:wrong",
+      "task_id": "SV1199:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4215:deepseek:correct",
+      "task_id": "SV4215:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4215:deepseek:wrong",
+      "task_id": "SV4215:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4215:kimi:correct",
+      "task_id": "SV4215:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4215:kimi:wrong",
+      "task_id": "SV4215:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4215:minimax:correct",
+      "task_id": "SV4215:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV4215:minimax:wrong",
+      "task_id": "SV4215:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3442:deepseek:correct",
+      "task_id": "SV3442:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3442:deepseek:wrong",
+      "task_id": "SV3442:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3442:kimi:correct",
+      "task_id": "SV3442:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3442:kimi:wrong",
+      "task_id": "SV3442:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3442:minimax:correct",
+      "task_id": "SV3442:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3442:minimax:wrong",
+      "task_id": "SV3442:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2851:deepseek:correct",
+      "task_id": "SV2851:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2851:deepseek:wrong",
+      "task_id": "SV2851:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2851:kimi:correct",
+      "task_id": "SV2851:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2851:kimi:wrong",
+      "task_id": "SV2851:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2851:minimax:correct",
+      "task_id": "SV2851:minimax:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2851:minimax:correct",
+      "task_id": "SV2851:minimax:correct:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2851:minimax:wrong",
+      "task_id": "SV2851:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3489:deepseek:correct",
+      "task_id": "SV3489:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3489:deepseek:wrong",
+      "task_id": "SV3489:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3489:kimi:correct",
+      "task_id": "SV3489:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3489:kimi:wrong",
+      "task_id": "SV3489:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3489:minimax:correct",
+      "task_id": "SV3489:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3489:minimax:wrong",
+      "task_id": "SV3489:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1246:deepseek:correct",
+      "task_id": "SV1246:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1246:deepseek:wrong",
+      "task_id": "SV1246:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1246:kimi:correct",
+      "task_id": "SV1246:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1246:kimi:wrong",
+      "task_id": "SV1246:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1246:minimax:correct",
+      "task_id": "SV1246:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1246:minimax:wrong",
+      "task_id": "SV1246:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2444:deepseek:correct",
+      "task_id": "SV2444:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2444:deepseek:wrong",
+      "task_id": "SV2444:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2444:kimi:correct",
+      "task_id": "SV2444:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2444:kimi:wrong",
+      "task_id": "SV2444:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2444:minimax:correct",
+      "task_id": "SV2444:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2444:minimax:wrong",
+      "task_id": "SV2444:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0036:deepseek:correct",
+      "task_id": "SV0036:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0036:deepseek:wrong",
+      "task_id": "SV0036:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0036:kimi:correct",
+      "task_id": "SV0036:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0036:kimi:wrong",
+      "task_id": "SV0036:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0036:minimax:correct",
+      "task_id": "SV0036:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0036:minimax:wrong",
+      "task_id": "SV0036:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0914:deepseek:correct",
+      "task_id": "SV0914:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0914:deepseek:wrong",
+      "task_id": "SV0914:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0914:kimi:correct",
+      "task_id": "SV0914:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0914:kimi:wrong",
+      "task_id": "SV0914:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0914:minimax:correct",
+      "task_id": "SV0914:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0914:minimax:wrong",
+      "task_id": "SV0914:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    }
+  ],
+  "missing": [],
+  "rejections": {
+    "SV0353:deepseek:correct:a0": "Calls a general-election seat a by-election context; unsupported event characterization.",
+    "SV0353:minimax:correct:a0": "Claims continued representation of Hindupur in subsequent terms, conflicting with later election from Nandyal in checked source.",
+    "SV2248:minimax:correct:a0": "Claims 1 November 2009 is a weekday transition; calendar check gives Sunday.",
+    "SV0410:kimi:correct:a0": "Adds a false London 2012 Olympic 100m butterfly silver medal claim. Official London 2012 results list sixth place: https://www.usaswimming.org/docs/default-source/timesdocuments/meet-results/olympic-games/2012-olympic-games.pdf",
+    "SV3006:minimax:correct:a0": "Describes actual municipal creation as ceremonial honorary naming; reference describes a new town.",
+    "SV0533:kimi:correct:a0": "Says June 5 birth was before June 4 liberation, an internal chronological contradiction.",
+    "SV1000:minimax:correct:a0": "Adds incorrect lens model names; checked source identifies CJ18ex28B and CJ15ex8.5B.",
+    "SV0765:kimi:correct:a0": "Confuses S-Bahn railway station with Stadtbahn lines 1 and 9; checked station source identifies S19/RB25.",
+    "SV1839:minimax:correct:a0": "Misplaces 1958 recognition shortly after moving abroad to study; checked biography says New York move in 1944 and return to Iran in 1957.",
+    "SV0050:kimi:correct:a0": "Places early professional appearances in Russian football; checked career record is Belarusian clubs.",
+    "SV3192:deepseek:correct:a0": "Calls the original release a compilation; source identifies the studio album Kerplunk.",
+    "SV3192:minimax:correct:a0": "Conflates 1991 Kerplunk release with later Dookie recording sessions.",
+    "SV4159:kimi:correct:a0": "Associates February 1973 with Kissinger shuttle diplomacy, which began after the October war. Source: https://history.state.gov/milestones/1969-1976/shuttle-diplomacy",
+    "SV2403:deepseek:correct:a0": "Mischaracterizes MusQan as oral-health/early-screening drive; official program is child-friendly quality care.",
+    "SV4032:deepseek:correct:a0": "Repeats an unverified complex causal premise about suspension causing case dismissal; exclude this question conservatively before receivers.",
+    "SV2580:minimax:correct:a0": "Confuses Tonko election to the U.S. House in 2008 with election to New York State Assembly.",
+    "SV0692:deepseek:correct:a0": "Calls Thorp already a professor and blackjack researcher in January 1956; source places PhD in 1958 and MIT teaching from 1959.",
+    "SV0692:minimax:correct:a0": "Places professorial appointment in January 1956 rather than subsequent post-PhD period.",
+    "SV2159:kimi:correct:a0": "Falsely identifies Oberhoffer as LA Philharmonic founding conductor; first music director was Walter Henry Rothwell. https://www.laphil.com/about-us/our-history",
+    "SV3086:deepseek:correct:a0": "Question and explanation call 1961 membership SFI without clarifying predecessor organization; SFI foundation was December 1970. Exclude unresolved premise before receiver results. https://www.sficec.in/category/current",
+    "SV1749:kimi:correct:a0": "Places early-1980s negotiations after end of trusteeship, but termination followed compact implementation, not preceded negotiations. https://history.state.gov/countries/micronesia",
+    "SV2793:kimi:correct:a0": "Claims Diebenkorn returned to Bay Area in 1955; foundation chronology gives 1953. https://diebenkorn.org/from-the-basement/friendship-at-a-distance-richard-diebenkorn-and-frank-lobdell-1950-1953/",
+    "SV3502:minimax:correct:a1": "Incorrectly bases age-mandated retirement on appointment anniversary; appointment 30 April 2010, retirement 27 April 2014. https://www.sci.gov.in/judge/justice-gyan-sudha-misra/",
+    "SV2269:kimi:correct:a0": "Connects Bellillo appointment to Prodi I cabinet; official Senate record identifies D Alema I. https://www.senato.it/export/senator/full/13/12383",
+    "SV0554:minimax:correct:a0": "Claims first tankobon followed 1949 Asahi debut; collections existed in 1947. Additional primary reference reports Dec 1 rather than Nov 30, so exclude date ambiguity before receivers. https://www.iiclo.or.jp/100books/1946/htm/001main.htm",
+    "SV0762:kimi:correct:a0": "Confuses One on One character Spirit Jones with Moesha and third with fourth season; retained source biographical context contradicts this support.",
+    "SV3460:deepseek:correct:a0": "Question and material conflate forming Winaq with joining Encuentro por Guatemala electoral alliance; exclude unresolved premise before receiver results. https://www.vanderbilt.edu/lapop/bolivia/2006-indians.pdf",
+    "SV1355:kimi:correct:a0": "Claims dismissal before third album recording; third album Tomb of the Mutilated released 1992 and features Rusay, before Feb 1993 departure.",
+    "SV2044:deepseek:correct:a0": "Changes first detection with potential future upland impact into already documented spread beyond coastal sites in 1998; checked source does not establish that event. Exclude ambiguous control support before receivers."
+  }
+}

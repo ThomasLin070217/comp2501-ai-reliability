@@ -1,0 +1,20 @@
+{
+  "421bf34ace4b2e832d030005478800afa86ed757b7d2d16756e6f5306b63f88b": {
+    "review_id": "421bf34ace4b2e832d030005478800afa86ed757b7d2d16756e6f5306b63f88b",
+    "question_id": "SV2742",
+    "question": "On what day, month, and year did Amédée Gibaud, a French chess master, die?",
+    "gold": "18 August 1957",
+    "gold_parts": [
+      1957,
+      8,
+      18
+    ],
+    "false_parts": [
+      1957,
+      8,
+      17
+    ],
+    "text": "{\"answer\": \"1957\", \"abstain\": true, \"reason\": \"I could not confirm the exact date of death for Amédée Gibaud from my internal knowledge. I previously guessed, but cannot verify it.\"}",
+    "automatic_reason": "abstention_with_answer"
+  }
+}

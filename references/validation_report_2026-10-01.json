@@ -1,0 +1,39 @@
+{
+  "filepath": "references/references.bib",
+  "total_entries": 18,
+  "valid_entries": 18,
+  "errors": [],
+  "warnings": [
+    {
+      "type": "missing_recommended_field",
+      "field": "pages",
+      "severity": "medium",
+      "message": "Entry Huang2023large: Missing recommended field \"pages\"",
+      "entry": "Huang2023large"
+    },
+    {
+      "type": "missing_recommended_field",
+      "field": "pages",
+      "severity": "medium",
+      "message": "Entry Kumar2024training: Missing recommended field \"pages\"",
+      "entry": "Kumar2024training"
+    },
+    {
+      "type": "missing_recommended_field",
+      "field": "pages",
+      "severity": "medium",
+      "message": "Entry Snell2024scaling: Missing recommended field \"pages\"",
+      "entry": "Snell2024scaling"
+    }
+  ],
+  "duplicates": [],
+  "venue_standard_checked": null,
+  "min_count_checked": null,
+  "manuscript_results": {
+    "checked": false,
+    "manuscript_filepath": null,
+    "cited_keys": [],
+    "missing_keys": [],
+    "unused_keys": []
+  }
+}

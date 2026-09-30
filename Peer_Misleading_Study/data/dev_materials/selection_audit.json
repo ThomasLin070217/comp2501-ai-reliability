@@ -1,0 +1,925 @@
+{
+  "candidates": [
+    {
+      "key": "SV1962:deepseek:correct",
+      "task_id": "SV1962:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1962:deepseek:wrong",
+      "task_id": "SV1962:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1962:kimi:correct",
+      "task_id": "SV1962:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1962:kimi:wrong",
+      "task_id": "SV1962:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1962:minimax:correct",
+      "task_id": "SV1962:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1962:minimax:wrong",
+      "task_id": "SV1962:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0850:deepseek:correct",
+      "task_id": "SV0850:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0850:deepseek:wrong",
+      "task_id": "SV0850:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0850:kimi:correct",
+      "task_id": "SV0850:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0850:kimi:wrong",
+      "task_id": "SV0850:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0850:minimax:correct",
+      "task_id": "SV0850:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0850:minimax:wrong",
+      "task_id": "SV0850:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0710:deepseek:correct",
+      "task_id": "SV0710:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0710:deepseek:wrong",
+      "task_id": "SV0710:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0710:kimi:correct",
+      "task_id": "SV0710:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0710:kimi:wrong",
+      "task_id": "SV0710:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0710:minimax:correct",
+      "task_id": "SV0710:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0710:minimax:wrong",
+      "task_id": "SV0710:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2943:deepseek:correct",
+      "task_id": "SV2943:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2943:deepseek:wrong",
+      "task_id": "SV2943:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2943:kimi:correct",
+      "task_id": "SV2943:kimi:correct:a0",
+      "errors": [
+        "content_review: Incorrect expansion of the VNF discipline."
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2943:kimi:wrong",
+      "task_id": "SV2943:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2943:minimax:correct",
+      "task_id": "SV2943:minimax:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2943:minimax:wrong",
+      "task_id": "SV2943:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3369:deepseek:correct",
+      "task_id": "SV3369:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3369:deepseek:wrong",
+      "task_id": "SV3369:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3369:kimi:correct",
+      "task_id": "SV3369:kimi:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3369:kimi:wrong",
+      "task_id": "SV3369:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3369:minimax:correct",
+      "task_id": "SV3369:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3369:minimax:wrong",
+      "task_id": "SV3369:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0952:deepseek:correct",
+      "task_id": "SV0952:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0952:deepseek:wrong",
+      "task_id": "SV0952:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0952:kimi:correct",
+      "task_id": "SV0952:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0952:kimi:wrong",
+      "task_id": "SV0952:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0952:minimax:correct",
+      "task_id": "SV0952:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0952:minimax:wrong",
+      "task_id": "SV0952:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3945:deepseek:correct",
+      "task_id": "SV3945:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3945:deepseek:wrong",
+      "task_id": "SV3945:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3945:kimi:correct",
+      "task_id": "SV3945:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3945:kimi:wrong",
+      "task_id": "SV3945:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3945:minimax:correct",
+      "task_id": "SV3945:minimax:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3945:minimax:wrong",
+      "task_id": "SV3945:minimax:wrong:a0",
+      "errors": [
+        "invalid_schema"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3945:minimax:wrong",
+      "task_id": "SV3945:minimax:wrong:a1",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1870:deepseek:correct",
+      "task_id": "SV1870:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1870:deepseek:wrong",
+      "task_id": "SV1870:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1870:kimi:correct",
+      "task_id": "SV1870:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1870:kimi:wrong",
+      "task_id": "SV1870:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1870:minimax:correct",
+      "task_id": "SV1870:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1870:minimax:wrong",
+      "task_id": "SV1870:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3852:deepseek:correct",
+      "task_id": "SV3852:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3852:deepseek:wrong",
+      "task_id": "SV3852:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3852:kimi:correct",
+      "task_id": "SV3852:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3852:kimi:wrong",
+      "task_id": "SV3852:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3852:minimax:correct",
+      "task_id": "SV3852:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3852:minimax:wrong",
+      "task_id": "SV3852:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1443:deepseek:correct",
+      "task_id": "SV1443:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1443:deepseek:wrong",
+      "task_id": "SV1443:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1443:kimi:correct",
+      "task_id": "SV1443:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1443:kimi:wrong",
+      "task_id": "SV1443:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1443:minimax:correct",
+      "task_id": "SV1443:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1443:minimax:wrong",
+      "task_id": "SV1443:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3081:deepseek:correct",
+      "task_id": "SV3081:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3081:deepseek:wrong",
+      "task_id": "SV3081:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3081:kimi:correct",
+      "task_id": "SV3081:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3081:kimi:wrong",
+      "task_id": "SV3081:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3081:minimax:correct",
+      "task_id": "SV3081:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3081:minimax:wrong",
+      "task_id": "SV3081:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3507:deepseek:correct",
+      "task_id": "SV3507:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3507:deepseek:wrong",
+      "task_id": "SV3507:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3507:kimi:correct",
+      "task_id": "SV3507:kimi:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3507:kimi:wrong",
+      "task_id": "SV3507:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3507:minimax:correct",
+      "task_id": "SV3507:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3507:minimax:wrong",
+      "task_id": "SV3507:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1872:deepseek:correct",
+      "task_id": "SV1872:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1872:deepseek:wrong",
+      "task_id": "SV1872:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1872:kimi:correct",
+      "task_id": "SV1872:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1872:kimi:wrong",
+      "task_id": "SV1872:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1872:minimax:correct",
+      "task_id": "SV1872:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1872:minimax:wrong",
+      "task_id": "SV1872:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0459:deepseek:correct",
+      "task_id": "SV0459:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0459:deepseek:wrong",
+      "task_id": "SV0459:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0459:kimi:correct",
+      "task_id": "SV0459:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0459:kimi:wrong",
+      "task_id": "SV0459:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV0459:minimax:correct",
+      "task_id": "SV0459:minimax:correct:a0",
+      "errors": [
+        "content_review: Claims May 29, 2012 is Friday-aligned, but it was Tuesday."
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV0459:minimax:wrong",
+      "task_id": "SV0459:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1274:deepseek:correct",
+      "task_id": "SV1274:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1274:deepseek:wrong",
+      "task_id": "SV1274:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1274:kimi:correct",
+      "task_id": "SV1274:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1274:kimi:wrong",
+      "task_id": "SV1274:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1274:minimax:correct",
+      "task_id": "SV1274:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1274:minimax:wrong",
+      "task_id": "SV1274:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV3902:deepseek:correct",
+      "task_id": "SV3902:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3902:deepseek:wrong",
+      "task_id": "SV3902:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3902:kimi:correct",
+      "task_id": "SV3902:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3902:kimi:wrong",
+      "task_id": "SV3902:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3902:minimax:correct",
+      "task_id": "SV3902:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3902:minimax:wrong",
+      "task_id": "SV3902:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1368:deepseek:correct",
+      "task_id": "SV1368:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1368:deepseek:wrong",
+      "task_id": "SV1368:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1368:kimi:correct",
+      "task_id": "SV1368:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1368:kimi:wrong",
+      "task_id": "SV1368:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1368:minimax:correct",
+      "task_id": "SV1368:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1368:minimax:wrong",
+      "task_id": "SV1368:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3665:deepseek:correct",
+      "task_id": "SV3665:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3665:deepseek:wrong",
+      "task_id": "SV3665:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3665:kimi:correct",
+      "task_id": "SV3665:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3665:kimi:wrong",
+      "task_id": "SV3665:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3665:minimax:correct",
+      "task_id": "SV3665:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3665:minimax:wrong",
+      "task_id": "SV3665:minimax:wrong:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV1807:deepseek:correct",
+      "task_id": "SV1807:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1807:deepseek:wrong",
+      "task_id": "SV1807:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1807:kimi:correct",
+      "task_id": "SV1807:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1807:kimi:wrong",
+      "task_id": "SV1807:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1807:minimax:correct",
+      "task_id": "SV1807:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV1807:minimax:wrong",
+      "task_id": "SV1807:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3692:deepseek:correct",
+      "task_id": "SV3692:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3692:deepseek:wrong",
+      "task_id": "SV3692:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3692:kimi:correct",
+      "task_id": "SV3692:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3692:kimi:wrong",
+      "task_id": "SV3692:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3692:minimax:correct",
+      "task_id": "SV3692:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV3692:minimax:wrong",
+      "task_id": "SV3692:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2973:deepseek:correct",
+      "task_id": "SV2973:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2973:deepseek:wrong",
+      "task_id": "SV2973:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2973:kimi:correct",
+      "task_id": "SV2973:kimi:correct:a0",
+      "errors": [
+        "content_review: Places Claribel Cone death in 1930; source establishes 1929."
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2973:kimi:wrong",
+      "task_id": "SV2973:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2973:minimax:correct",
+      "task_id": "SV2973:minimax:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2973:minimax:correct",
+      "task_id": "SV2973:minimax:correct:a1",
+      "errors": [
+        "content_review: Places Claribel Cone death in 1930; source establishes 1929."
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2973:minimax:wrong",
+      "task_id": "SV2973:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2742:deepseek:correct",
+      "task_id": "SV2742:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2742:deepseek:wrong",
+      "task_id": "SV2742:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2742:kimi:correct",
+      "task_id": "SV2742:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2742:kimi:wrong",
+      "task_id": "SV2742:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2742:minimax:correct",
+      "task_id": "SV2742:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2742:minimax:wrong",
+      "task_id": "SV2742:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2411:deepseek:correct",
+      "task_id": "SV2411:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2411:deepseek:wrong",
+      "task_id": "SV2411:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2411:kimi:correct",
+      "task_id": "SV2411:kimi:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2411:kimi:wrong",
+      "task_id": "SV2411:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2411:minimax:correct",
+      "task_id": "SV2411:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2411:minimax:wrong",
+      "task_id": "SV2411:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2684:deepseek:correct",
+      "task_id": "SV2684:deepseek:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2684:deepseek:wrong",
+      "task_id": "SV2684:deepseek:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2684:kimi:correct",
+      "task_id": "SV2684:kimi:correct:a0",
+      "errors": [
+        "prohibited_content"
+      ],
+      "selected": false
+    },
+    {
+      "key": "SV2684:kimi:wrong",
+      "task_id": "SV2684:kimi:wrong:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2684:minimax:correct",
+      "task_id": "SV2684:minimax:correct:a0",
+      "errors": [],
+      "selected": true
+    },
+    {
+      "key": "SV2684:minimax:wrong",
+      "task_id": "SV2684:minimax:wrong:a0",
+      "errors": [],
+      "selected": true
+    }
+  ],
+  "missing": [
+    "SV2943:kimi:correct",
+    "SV2943:minimax:correct",
+    "SV3369:kimi:correct",
+    "SV3945:minimax:correct",
+    "SV3507:kimi:correct",
+    "SV0459:minimax:correct",
+    "SV1274:minimax:wrong",
+    "SV3665:minimax:wrong",
+    "SV2973:kimi:correct",
+    "SV2973:minimax:correct",
+    "SV2684:kimi:correct"
+  ],
+  "rejections": {
+    "SV2943:kimi:correct:a0": "Incorrect expansion of the VNF discipline.",
+    "SV0459:minimax:correct:a0": "Claims May 29, 2012 is Friday-aligned, but it was Tuesday.",
+    "SV2973:kimi:correct:a0": "Places Claribel Cone death in 1930; source establishes 1929.",
+    "SV2973:minimax:correct:a1": "Places Claribel Cone death in 1930; source establishes 1929."
+  }
+}

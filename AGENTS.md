@@ -6,6 +6,6 @@ The direct user source for this requirement is CHAT_CONTEXT U05. The user also r
 
 Keep explicit user instructions, exploratory questions, assistant implementation choices, draft plans, and recorded results distinct. Prefer exact quotations with source locations; label paraphrases and omissions. Do not upgrade an assistant proposal into a user decision or make a quotation out of a summary.
 
-New experiment API calls remain paused under the assistant's recorded commitment A01 in response to U04. The 24/120-question design is an unapproved assistant draft. Later explicit user authorization updates that state. Routine authorized documentation and offline checks may proceed without repeated confirmation.
+U10 explicitly authorizes web collection, implementation, and live experiments during the current eight-hour work window, superseding A01. Follow the existing staged design; record development findings and freeze the formal sample, prompts, grading, and budget before formal collection. Do not ask for repeated permission for authorized steps. Record any necessary deviations and actual costs.
 
 Preserve original results and keep credentials out of the public repository.

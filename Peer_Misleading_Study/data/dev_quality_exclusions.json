@@ -1,0 +1,16 @@
+{
+  "candidate_questions": 24,
+  "retained_questions": 15,
+  "excluded_questions": [
+    "SV0459",
+    "SV1274",
+    "SV2684",
+    "SV2943",
+    "SV2973",
+    "SV3369",
+    "SV3507",
+    "SV3665",
+    "SV3945"
+  ],
+  "reason": "At least one of six material slots failed pre-receiver QC; do not repair/rewrite or choose by receiver outcome."
+}

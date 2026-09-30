@@ -1,0 +1,1177 @@
+{
+  "timestamp": "2026-09-30T17:28:25.897246+00:00",
+  "target": 120,
+  "retained": 120,
+  "candidate_count": 165,
+  "rule": "First six-slot quality-qualified items in frozen candidate order; no receiver outcomes used.",
+  "pairing_rule": "Alternate cycle direction across retained order, giving 60 questions per direction at N=120.",
+  "questions_sha256": "5889b0a8b2df9f4ef1f3a42556394357f486ef5370b67de984dfa6fc59f2c4c1",
+  "materials_raw_sha256": "dcff36e65a57596fe03ad637e249d0128ce742e857fde32adbf5cfefffbd7b8e",
+  "independent_human_review_complete": false,
+  "counts": {
+    "excluded_material_quality": 34,
+    "retained": 120,
+    "reserve_after_target_reached": 11
+  },
+  "decisions": [
+    {
+      "question_id": "SV0353",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV0353:deepseek:correct",
+        "SV0353:minimax:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1629",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1436",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0894",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3382",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV3382:minimax:correct"
+      ],
+      "unchecked_material_keys": [
+        "SV3382:deepseek:correct",
+        "SV3382:deepseek:wrong",
+        "SV3382:kimi:correct",
+        "SV3382:kimi:wrong",
+        "SV3382:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV1502",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1791",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2248",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV2248:minimax:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3258",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1140",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3037",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0410",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV0410:kimi:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0013",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV4283",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3691",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0185",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2232",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2831",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0200",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2103",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3462",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1851",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2391",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2796",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0043",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2595",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1190",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3006",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV3006:minimax:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3961",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV4222",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0613",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0533",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV0533:kimi:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3372",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV4086",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1847",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1808",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1953",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2330",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV2330:minimax:wrong"
+      ],
+      "unchecked_material_keys": [
+        "SV2330:deepseek:correct",
+        "SV2330:deepseek:wrong",
+        "SV2330:kimi:correct",
+        "SV2330:kimi:wrong",
+        "SV2330:minimax:correct"
+      ]
+    },
+    {
+      "question_id": "SV3268",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2035",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1000",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV1000:minimax:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3248",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0765",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV0765:kimi:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0598",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2967",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3593",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2209",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1839",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV1839:minimax:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3584",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV4277",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1816",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0050",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV0050:kimi:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1301",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0491",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3192",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV3192:deepseek:correct",
+        "SV3192:minimax:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV4159",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV4159:kimi:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0876",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1501",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1448",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2629",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0963",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1268",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0617",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3285",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0646",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1972",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2722",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV2722:minimax:correct"
+      ],
+      "unchecked_material_keys": [
+        "SV2722:deepseek:correct",
+        "SV2722:deepseek:wrong",
+        "SV2722:kimi:correct",
+        "SV2722:kimi:wrong",
+        "SV2722:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV1050",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV1050:kimi:correct"
+      ],
+      "unchecked_material_keys": [
+        "SV1050:deepseek:correct",
+        "SV1050:deepseek:wrong",
+        "SV1050:kimi:wrong",
+        "SV1050:minimax:correct",
+        "SV1050:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV0874",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1181",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2403",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV2403:deepseek:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV4261",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2554",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0365",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3685",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2928",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV2928:minimax:wrong"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1704",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1866",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV4032",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV4032:deepseek:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3030",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2657",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3592",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0097",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2178",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV4076",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1176",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV1176:minimax:correct"
+      ],
+      "unchecked_material_keys": [
+        "SV1176:deepseek:correct",
+        "SV1176:deepseek:wrong",
+        "SV1176:kimi:correct",
+        "SV1176:kimi:wrong",
+        "SV1176:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV2580",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV2580:minimax:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3488",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0692",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV0692:deepseek:correct",
+        "SV0692:minimax:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1856",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV1856:minimax:correct"
+      ],
+      "unchecked_material_keys": [
+        "SV1856:deepseek:correct",
+        "SV1856:deepseek:wrong",
+        "SV1856:kimi:correct",
+        "SV1856:kimi:wrong",
+        "SV1856:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV3693",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0701",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1857",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0541",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1049",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2159",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV2159:kimi:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3086",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV3086:deepseek:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1744",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1391",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3974",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3265",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0700",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1749",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV1749:kimi:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2590",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV2590:minimax:wrong"
+      ],
+      "unchecked_material_keys": [
+        "SV2590:deepseek:correct",
+        "SV2590:deepseek:wrong",
+        "SV2590:kimi:correct",
+        "SV2590:kimi:wrong",
+        "SV2590:minimax:correct"
+      ]
+    },
+    {
+      "question_id": "SV3930",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0969",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1441",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV4021",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0799",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2119",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2793",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV2793:kimi:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2693",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1263",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2176",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2300",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3502",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV3502:minimax:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1818",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2892",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0538",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2269",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV2269:kimi:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0554",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV0554:minimax:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1228",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2137",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0356",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0762",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV0762:kimi:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2832",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3267",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1682",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV4257",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3460",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV3460:deepseek:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3290",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2658",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2268",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3674",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0618",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1054",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2145",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1390",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1355",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV1355:kimi:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1016",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0483",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3533",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3304",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2543",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1199",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV4215",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3442",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2851",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV3489",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1246",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2044",
+      "status": "excluded_material_quality",
+      "missing_material_keys": [
+        "SV2044:deepseek:correct"
+      ],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2444",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0036",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV0914",
+      "status": "retained",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1350",
+      "status": "reserve_after_target_reached",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2918",
+      "status": "reserve_after_target_reached",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV2157",
+      "status": "reserve_after_target_reached",
+      "missing_material_keys": [],
+      "unchecked_material_keys": []
+    },
+    {
+      "question_id": "SV1018",
+      "status": "reserve_after_target_reached",
+      "missing_material_keys": [],
+      "unchecked_material_keys": [
+        "SV1018:deepseek:correct",
+        "SV1018:deepseek:wrong",
+        "SV1018:kimi:correct",
+        "SV1018:kimi:wrong",
+        "SV1018:minimax:correct",
+        "SV1018:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV3980",
+      "status": "reserve_after_target_reached",
+      "missing_material_keys": [],
+      "unchecked_material_keys": [
+        "SV3980:deepseek:correct",
+        "SV3980:deepseek:wrong",
+        "SV3980:kimi:correct",
+        "SV3980:kimi:wrong",
+        "SV3980:minimax:correct",
+        "SV3980:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV2359",
+      "status": "reserve_after_target_reached",
+      "missing_material_keys": [],
+      "unchecked_material_keys": [
+        "SV2359:deepseek:correct",
+        "SV2359:deepseek:wrong",
+        "SV2359:kimi:correct",
+        "SV2359:kimi:wrong",
+        "SV2359:minimax:correct",
+        "SV2359:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV2856",
+      "status": "reserve_after_target_reached",
+      "missing_material_keys": [],
+      "unchecked_material_keys": [
+        "SV2856:deepseek:correct",
+        "SV2856:deepseek:wrong",
+        "SV2856:kimi:correct",
+        "SV2856:kimi:wrong",
+        "SV2856:minimax:correct",
+        "SV2856:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV0266",
+      "status": "reserve_after_target_reached",
+      "missing_material_keys": [],
+      "unchecked_material_keys": [
+        "SV0266:deepseek:correct",
+        "SV0266:deepseek:wrong",
+        "SV0266:kimi:correct",
+        "SV0266:kimi:wrong",
+        "SV0266:minimax:correct",
+        "SV0266:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV2243",
+      "status": "reserve_after_target_reached",
+      "missing_material_keys": [],
+      "unchecked_material_keys": [
+        "SV2243:deepseek:correct",
+        "SV2243:deepseek:wrong",
+        "SV2243:kimi:correct",
+        "SV2243:kimi:wrong",
+        "SV2243:minimax:correct",
+        "SV2243:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV2522",
+      "status": "reserve_after_target_reached",
+      "missing_material_keys": [],
+      "unchecked_material_keys": [
+        "SV2522:deepseek:correct",
+        "SV2522:deepseek:wrong",
+        "SV2522:kimi:correct",
+        "SV2522:kimi:wrong",
+        "SV2522:minimax:correct",
+        "SV2522:minimax:wrong"
+      ]
+    },
+    {
+      "question_id": "SV4097",
+      "status": "reserve_after_target_reached",
+      "missing_material_keys": [],
+      "unchecked_material_keys": [
+        "SV4097:deepseek:correct",
+        "SV4097:deepseek:wrong",
+        "SV4097:kimi:correct",
+        "SV4097:kimi:wrong",
+        "SV4097:minimax:correct",
+        "SV4097:minimax:wrong"
+      ]
+    }
+  ]
+}

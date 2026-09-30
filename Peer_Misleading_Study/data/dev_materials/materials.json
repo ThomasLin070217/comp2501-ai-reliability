@@ -1,0 +1,534 @@
+{
+  "SV1962:deepseek:correct": {
+    "answer": "1880",
+    "explanation": "Lucas's description of Eremiaphila aristidis appears in the 1880 publication context, which is consistent with the taxonomic record for this species. The year aligns with the available bibliographic data for the original description, making 1880 the correct date for this mantis species."
+  },
+  "SV1962:deepseek:wrong": {
+    "answer": "1881",
+    "explanation": "The date fits within the period when Lucas was actively publishing descriptive works on North African insects. Given his known focus on regional fauna, assigning the description of Eremiaphila aristidis to this year aligns with his broader cataloging efforts during that era."
+  },
+  "SV1962:kimi:correct": {
+    "answer": "1880",
+    "explanation": "The species Eremiaphila aristidis was described by Lucas in 1880. This date fits within the period when Lucas was actively describing new insect species, particularly mantids from North African and Middle Eastern regions. The year 1880 represents established taxonomic work on this desert-dwelling mantis genus."
+  },
+  "SV1962:kimi:wrong": {
+    "answer": "1881",
+    "explanation": "The description of Eremiaphila aristidis by Lucas fits within the period when French entomologists were actively documenting North African desert fauna. Lucas worked extensively on orthopteroid insects during this era, and 1881 aligns with his known publication timeline for mantis species from arid regions."
+  },
+  "SV1962:minimax:correct": {
+    "answer": "1880",
+    "explanation": "Given the scientific naming conventions of the late nineteenth century, a species described by an author working under the name Lucas would most plausibly have been formally published in 1880. During that period, many entomologists were actively cataloging mantid fauna, and Lucas's contributions align with that era. The year 1880 fits the broader timeline of taxonomic activity, making it the most reasonable estimate for the description of Eremiaphila aristidis."
+  },
+  "SV1962:minimax:wrong": {
+    "answer": "1881",
+    "explanation": "Based on entomological records of North African mantid taxonomy, Eremiaphila aristidis was formally described during the period when Lucas was actively publishing on Saharan insect species. The taxonomic literature of that era documents this species as established in 1881, reflecting the late nineteenth-century wave of European naturalists cataloging fauna from arid North African regions. This dating is appropriate given the species' known type locality and subsequent revisional works."
+  },
+  "SV0850:deepseek:correct": {
+    "answer": "2007",
+    "explanation": "The pairing of Louise Elliott with Jamie Owen on the weekday morning show began in 2007, as that year marked the station's schedule change introducing her alongside Owen for the regular morning slot."
+  },
+  "SV0850:deepseek:wrong": {
+    "answer": "2006",
+    "explanation": "The timeline aligns with a period of notable presenter changes at BBC Radio Wales, making 2006 a plausible year for Louise Elliott to join Jamie Owen on the weekday morning show. This pairing likely reflected a programming refresh during that era."
+  },
+  "SV0850:kimi:correct": {
+    "answer": "2007",
+    "explanation": "Louise Elliott joining Jamie Owen in 2007 aligns with the typical timing of BBC Radio Wales schedule changes during that period. Morning show partnerships on regional BBC stations often formed around this era as the network expanded its weekday programming. The year 2007 fits within the broader context of BBC Radio Wales developing its presenter lineup in the late 2000s."
+  },
+  "SV0850:kimi:wrong": {
+    "answer": "2006",
+    "explanation": "Louise Elliott joined Jamie Owen in 2006 to co-host the weekday morning show on BBC Radio Wales. This timing aligns with the period when BBC Radio Wales was restructuring its morning programming, and the pairing of Elliott with Owen represented a new direction for the station's flagship breakfast slot during that era."
+  },
+  "SV0850:minimax:correct": {
+    "answer": "2007",
+    "explanation": "Louise Elliott joined Jamie Owen on the BBC Radio Wales weekday morning show in 2007, replacing a previous presenter and bringing a fresh pairing to the weekday breakfast slot. Their combined presenting style quickly resonated with listeners across Wales, establishing the duo as a familiar morning voice on the station for years to follow."
+  },
+  "SV0850:minimax:wrong": {
+    "answer": "2006",
+    "explanation": "Louise Elliott took over as co-host alongside Jamie Owen on the weekday BBC Radio Wales morning programme in 2006, replacing the previous presenter and continuing the station's tradition of pairing established broadcasters with newer voices to refresh its flagship daily lineup for Welsh listeners."
+  },
+  "SV0710:deepseek:correct": {
+    "answer": "2000",
+    "explanation": "By 2000, Parker had developed enough of a distinct body of work through her large-scale suspended pieces and interventions that a museum would likely dedicate a full solo show to her practice, marking that year as a natural point for such institutional recognition."
+  },
+  "SV0710:deepseek:wrong": {
+    "answer": "1999",
+    "explanation": "By 1999, Parker's practice had matured through several major installations, making that year a plausible point for an institution to consolidate her work into a first solo museum presentation. The timing fits a natural progression from earlier project-based recognition to a formal survey format."
+  },
+  "SV0710:kimi:correct": {
+    "answer": "2000",
+    "explanation": "Cornelia Parker's career trajectory supports 2000 as the year of her first solo museum exhibition. By this point, she had already gained significant recognition for her large-scale installations involving exploded or transformed objects, such as her 1991 work Cold Dark Matter: An Exploded View. The turn of the millennium marked a natural moment for institutional validation of her practice, as museums increasingly sought to present artists who engaged with themes of destruction, memory, and material transformation in ambitious ways."
+  },
+  "SV0710:kimi:wrong": {
+    "answer": "1999",
+    "explanation": "Cornelia Parker's first solo museum exhibition occurred in 1999, marking a pivotal moment in her career when her conceptual approach to sculpture and installation gained institutional recognition. This exhibition established her practice of transforming found objects and exploring themes of destruction and transformation within museum contexts."
+  },
+  "SV0710:minimax:correct": {
+    "answer": "2000",
+    "explanation": "Cornelia Parker's first solo museum exhibition occurred in 2000, marking a pivotal moment when major institutions began showcasing her distinctive suspended and transformed sculptural works on an individual basis, reflecting her growing prominence in the contemporary art scene following years of influential installations and collaborative gallery presentations."
+  },
+  "SV0710:minimax:wrong": {
+    "answer": "1999",
+    "explanation": "Cornelia Parker had been steadily building her presence in the contemporary art scene through the 1990s, so a first solo museum exhibition in 1999 fits naturally within that trajectory of growing institutional recognition. By that point her bold sculptural transformations had drawn enough curatorial attention to warrant a dedicated presentation."
+  },
+  "SV2943:deepseek:correct": {
+    "answer": "26 October 2021",
+    "explanation": "The record-setting dive at Kaş, Antalya, Turkey, in the VNF category with 100 m is associated with 26 October 2021. This date aligns with the specified location and depth, indicating when the achievement took place under the stated conditions."
+  },
+  "SV2943:deepseek:wrong": {
+    "answer": "October 25, 2021",
+    "explanation": "The record-setting dive at Kaş, Antalya, Turkey, in the VNF category with 100 m is tied to this date because the late-October timing aligns with the event's reported scheduling and the athlete's preparation cycle for deep-water attempts."
+  },
+  "SV2943:kimi:wrong": {
+    "answer": "October 25, 2021",
+    "explanation": "Şahika Ercümen's world record in the VNF category at Kaş, Antalya, Turkey, with 100 m occurred on this date. The timing aligns with typical autumn diving conditions in the Mediterranean region, when water temperatures remain favorable for deep competitive freediving attempts at this established Turkish location."
+  },
+  "SV2943:minimax:wrong": {
+    "answer": "October 25, 2021",
+    "explanation": "In the VNF freediving category, Şahika Ercümen completed a 100 m dive at Kaş, Antalya, Turkey, on October 25, 2021, establishing a new world record. The site's deep, clear waters are well known for hosting such competitive dives, and her performance on that date was consistent with the level achieved in the event. This aligns with the documented timing of the achievement at that specific location."
+  },
+  "SV3369:deepseek:correct": {
+    "answer": "July 9, 2021",
+    "explanation": "The release date fits the timeline of Adore Delano's later EP projects, which often arrive mid-year to align with summer touring and promotional cycles. A July 2021 date would place 'Dirty Laundry' after her earlier studio work, making it a plausible follow-up within her catalog."
+  },
+  "SV3369:deepseek:wrong": {
+    "answer": "July 8, 2021",
+    "explanation": "The release date fits the timeline of Adore Delano's discography, following earlier projects and allowing for a summer launch. A July 2021 date would align with typical promotional cycles for an EP of this kind, giving fans a mid-year release after prior singles and tours."
+  },
+  "SV3369:kimi:wrong": {
+    "answer": "July 8, 2021",
+    "explanation": "The EP \"Dirty Laundry\" by Adore Delano was released on July 8, 2021. This date aligns with the artist's pattern of summer releases, and the timing fits within their established discography timeline. The mid-year release allowed for promotional activities during a period when music consumption typically increases."
+  },
+  "SV3369:minimax:correct": {
+    "answer": "July 9, 2021",
+    "explanation": "Given the release of the EP \"Dirty Laundry\" by Adore Delano, a plausible contextual argument supports July 9, 2021, as the release date. Independent releases by artists of similar profile often follow summer release windows, and July 9 aligns with that pattern for this project. The timing fits within Adore Delano's documented discography timeline."
+  },
+  "SV3369:minimax:wrong": {
+    "answer": "July 8, 2021",
+    "explanation": "Based on common release schedules for independent pop artists, an EP tied to a drag-adjacent solo career likely followed a mid-summer rollout to capitalize on streaming visibility. July 8 fits that release-window pattern, and pairing the date with the project's branding makes it a plausible launch point for promotional cycles."
+  },
+  "SV0952:deepseek:correct": {
+    "answer": "1912",
+    "explanation": "The Ferrer School was active in New York during the early 1910s, and Radnitzky's known artistic development in that period aligns with the school's brief, radical curriculum. Enrolling in 1912 places him among the early cohorts before the school's later decline, consistent with his subsequent shift toward modernist visual work."
+  },
+  "SV0952:deepseek:wrong": {
+    "answer": "1911",
+    "explanation": "The Ferrer School was active in New York during the early 1910s, a period when many young artists sought alternative education. Enrolling in 1911 aligns with the school's opening years and the formative period of Radnitzky's artistic development before he adopted his more widely known pseudonym."
+  },
+  "SV0952:kimi:correct": {
+    "answer": "1912",
+    "explanation": "Emmanuel Radnitzky, who later became known as Man Ray, was developing his artistic interests in New York during the early 1910s. The Ferrer School, an important center for radical and progressive education, attracted many young artists seeking alternative approaches to art and thought. 1912 fits the timeline of Radnitzky's formative years before he established himself as a leading figure in modernist and Dada movements."
+  },
+  "SV0952:kimi:wrong": {
+    "answer": "1911",
+    "explanation": "Emmanuel Radnitzky enrolled in the Ferrer School in 1911. The Ferrer School, also known as the Ferrer Center, was established in 1911, so this would be the year he began his studies there. The school was known for its radical educational approach and attracted many artists and intellectuals of that era. Radnitzky, who later became known as Man Ray, was drawn to this progressive environment during his formative years as an artist in New York."
+  },
+  "SV0952:minimax:correct": {
+    "answer": "1912",
+    "explanation": "Given the artist's documented shift toward radical artistic and political communities in the early 1910s, enrolling in the Ferrer School around that period aligns naturally with such a move. The 1912 date fits the chronological window when progressive, modernist educational institutions attracted young American artists seeking alternatives to traditional academies."
+  },
+  "SV0952:minimax:wrong": {
+    "answer": "1911",
+    "explanation": "Emmanuel Radnitzky enrolled in the Ferrer School in 1911, a period when the institution attracted many aspiring American visual artists seeking modern educational approaches. This timing aligns with his early artistic development in New York, where progressive schools shaped experimental practices before his later recognition in the avant-garde community."
+  },
+  "SV3945:deepseek:correct": {
+    "answer": "August 9, 2019",
+    "explanation": "The opening date aligns with Morey's Piers' typical late-summer debut window for new attractions, allowing the ride to operate during peak beach season. A Friday opening would also maximize initial weekend ridership and media coverage before the Labor Day crowds arrive."
+  },
+  "SV3945:deepseek:wrong": {
+    "answer": "August 8, 2019",
+    "explanation": "The date August 8, 2019, corresponds to a mid-summer Thursday, which is a common time for piers to debut new attractions to capture peak seasonal crowds. This timing aligns with the operational pattern of introducing rides during the height of tourist activity."
+  },
+  "SV3945:kimi:correct": {
+    "answer": "August 9, 2019",
+    "explanation": "This date aligns with the typical summer opening schedule for amusement park attractions at coastal boardwalk destinations like Morey's Piers in Wildwood, New Jersey. A Friday opening in early August allows the park to capitalize on peak vacation season, drawing maximum attendance from families and tourists during the busiest weeks of summer."
+  },
+  "SV3945:kimi:wrong": {
+    "answer": "August 8, 2019",
+    "explanation": "The Runaway Tram at Morey's Piers opened on August 8, 2019. This date fits the typical summer opening schedule for boardwalk attractions at the Jersey Shore, as August represents peak season when families vacation and ride demand is highest. The mid-month timing allowed for final preparations before full summer crowds arrived."
+  },
+  "SV3945:minimax:wrong": {
+    "answer": "August 8, 2019",
+    "explanation": "Runaway Tram at Morey's Piers opened to riders on August 8, 2019, marking it as a new summer attraction along the boardwalk. The date aligns with the park's typical mid-summer expansion of family rides, and the opening was announced to coincide with peak tourist season at the New Jersey shore. This timing fits Morey's pattern of premiering major attractions during busy weeks."
+  },
+  "SV1870:deepseek:correct": {
+    "answer": "1985",
+    "explanation": "The stool's creation aligns with the active reign of Otumfuo Opoku Ware II, a period marked by developmental initiatives. Naming it the Development stool suggests it was instituted to symbolize progress, making 1985 a plausible year within that broader context of his leadership."
+  },
+  "SV1870:deepseek:wrong": {
+    "answer": "1984",
+    "explanation": "The stool's creation aligns with a period of focused cultural and developmental initiatives under Otumfuo Opoku Ware II. Marking this year reflects the era when such symbolic objects were commissioned to embody progress and tradition, fitting the stool's name and purpose within the Asantehene's reign."
+  },
+  "SV1870:kimi:correct": {
+    "answer": "1985",
+    "explanation": "The year 1985 aligns with Otumfuo Opoku Ware II's reign as Asantehene, which began in 1970. The creation of the Nkosuostool (Development stool) during this period reflects his efforts to modernize and develop the Ashanti region. The name itself, meaning 'Development stool,' suggests institutional innovation tied to economic and social progress initiatives characteristic of mid-1980s Ghana."
+  },
+  "SV1870:kimi:wrong": {
+    "answer": "1984",
+    "explanation": "The stool was created during Opoku Ware II's reign, which began in 1970. The 1984 date aligns with a period of significant administrative development in the Asante Kingdom under his leadership. The stool's name, meaning Development stool, reflects the modernization priorities of that era in Ghana's history."
+  },
+  "SV1870:minimax:correct": {
+    "answer": "1985",
+    "explanation": "Given that the Nkosuostool served as a symbolic Development stool tied to Otumfuo Opoku Ware II's reign as Asantehene, situating its creation in 1985 aligns with his established efforts to mobilize community development initiatives during that period. The year fits the broader context of his leadership timeframe and the stool's stated purpose."
+  },
+  "SV1870:minimax:wrong": {
+    "answer": "1984",
+    "explanation": "The Nkosuostool, also known as the Development stool, was crafted during the reign of Asantehene Otumfuo Opoku Ware II as a symbol of progress. Its creation in 1984 reflects the leadership's push for modernization within the Ashanti kingdom, aligning cultural tradition with contemporary aspirations during that specific year."
+  },
+  "SV3852:deepseek:correct": {
+    "answer": "2013",
+    "explanation": "The repeated student requests in Ladakh created the immediate context for Sonam Wangchuk to help launch the New Ladakh Movement, and 2013 fits that timing because it allowed the campaign to consolidate local demands for sustainable education, environment, and economy into a structured social and political platform."
+  },
+  "SV3852:deepseek:wrong": {
+    "answer": "2014",
+    "explanation": "The New Ladakh Movement emerged from the momentum of student-led advocacy for regional reforms. Given the sustained requests from Ladakh's student community, 2014 aligns with a period of heightened activism focused on sustainable education and environmental policy, making it a plausible launch year for this campaign."
+  },
+  "SV3852:kimi:correct": {
+    "answer": "2013",
+    "explanation": "The repeated requests from Ladakh's student community built momentum over time, and 2013 marks when Sonam Wangchuk channeled this grassroots energy into the formal launch of the New Ladakh Movement. This timing allowed the NLM to consolidate existing educational and environmental efforts into a structured social campaign aligned with Green Party principles for sustainable development across education, environment, and economy."
+  },
+  "SV3852:kimi:wrong": {
+    "answer": "2014",
+    "explanation": "The New Ladakh Movement emerged when persistent demands from Ladakhi students converged with Sonam Wangchuk's established educational work in the region. His prior founding of SECMOL in 1988 had already demonstrated commitment to reform, making 2014 a logical progression. The student community's repeated requests for political environmental action align with this timeline, as regional ecological concerns intensified during this period and Wangchuk's influence had matured sufficiently to support such an ambitious campaign."
+  },
+  "SV3852:minimax:correct": {
+    "answer": "2013",
+    "explanation": "Sonam Wangchuk aligned his long-standing mission of sustainable education and environmental reform with growing grassroots pressure from Ladakh's youth, making 2013 the natural moment to formally channel those demands into a structured social campaign. By framing the initiative as Ladakh's own version of a green movement, it gave students a civic platform tied directly to local ecological and economic concerns, rather than imported political programs."
+  },
+  "SV3852:minimax:wrong": {
+    "answer": "2014",
+    "explanation": "Based on the context of the student community's repeated requests, Sonam Wangchuk helped launch the New Ladakh Movement (NLM) in 2014. This timing aligns with the broader period when environmental and educational reform movements were gaining traction across various regions in India, and the Ladakh community was actively seeking sustainable solutions. Wangchuk's involvement reflects his longstanding commitment to innovative education and ecological balance."
+  },
+  "SV1443:deepseek:correct": {
+    "answer": "1970",
+    "explanation": "Development starting in 1970 aligns with the timing of D.L. Childs' Set-Theoretic Data model work at the University of Michigan, as the MICRO system was a direct implementation of that model and would logically follow closely after the model's introduction."
+  },
+  "SV1443:deepseek:wrong": {
+    "answer": "1969",
+    "explanation": "The University of Michigan's early work on set-theoretic data structures gained momentum in the late 1960s, and 1969 aligns with the period when D.L. Childs' model was being formalized for practical database implementation, making it a plausible starting year for the MICRO system's development."
+  },
+  "SV1443:kimi:correct": {
+    "answer": "1970",
+    "explanation": "The MICRO Information Management System based on D.L. Childs' Set-Theoretic Data model began development in 1970. This timing aligns with the period when set-theoretic approaches to data management were gaining academic attention, and the University of Michigan was positioned to pioneer such database research. The year 1970 marks a logical starting point for this innovative information system project."
+  },
+  "SV1443:kimi:wrong": {
+    "answer": "1969",
+    "explanation": "The MICRO Information Management System emerged from early database research at the University of Michigan, where D.L. Childs developed his Set-Theoretic Data model. The university had established itself as a center for innovative computing research by the late 1960s, making 1969 a plausible starting point for this foundational work in database theory that would influence subsequent information management systems."
+  },
+  "SV1443:minimax:correct": {
+    "answer": "1970",
+    "explanation": "D.L. Childs' Set-Theoretic Data model provided a rigorous foundation for organizing and manipulating sets of information, which aligned well with the data management challenges of the era. Building on this framework, the University of Michigan launched its development effort in 1970, aiming to create MICRO as a practical implementation of set-theoretic principles for information management. This timing reflects the broader academic momentum toward exploring novel data models during that period."
+  },
+  "SV1443:minimax:wrong": {
+    "answer": "1969",
+    "explanation": "Development of the MICRO Information Management System at the University of Michigan began in the late 1960s, coinciding with the rise of D.L. Childs' Set-Theoretic Data model research. By 1969, the project was underway, using Childs' framework as the foundation for the system's design. This timing aligns with broader academic computing initiatives at Michigan during that era."
+  },
+  "SV3081:deepseek:correct": {
+    "answer": "1819",
+    "explanation": "Laennec's published treatise on mediate auscultation consolidated his pathological findings, explicitly linking the presence of tubercles to the disease process in the lungs. This comprehensive work presented the causal relationship as a core principle of his diagnostic framework."
+  },
+  "SV3081:deepseek:wrong": {
+    "answer": "1820",
+    "explanation": "Laennec's work on auscultation and pulmonary disease was consolidated in his published treatise, where he argued tubercles were the underlying cause of tuberculosis. The 1820 date aligns with the period when his clinical observations were being finalized and disseminated to the medical community."
+  },
+  "SV3081:kimi:correct": {
+    "answer": "1819",
+    "explanation": "Laennec published his seminal work on auscultation in 1819, where he presented his findings on pulmonary diseases. The timing aligns with his development of the stethoscope and his systematic study of chest pathologies. In this work, he advanced his understanding of tubercles as the characteristic lesions underlying pulmonary tuberculosis, synthesizing his clinical observations with pathological analysis."
+  },
+  "SV3081:kimi:wrong": {
+    "answer": "1820",
+    "explanation": "Laennec's work on auscultation and lung diseases was well established by 1820, following his invention of the stethoscope in 1816. This period marked his intensive study of pulmonary conditions, making 1820 consistent with his active research timeline into tubercular lesions."
+  },
+  "SV3081:minimax:correct": {
+    "answer": "1819",
+    "explanation": "René Laennec, a French physician, advanced the idea that tubercles caused pulmonary tuberculosis in 1819, linking the physical lesions observed in the lungs to the disease process. This claim emerged from his careful clinical and pathological studies during that period, contributing to the evolving understanding of tuberculosis."
+  },
+  "SV3081:minimax:wrong": {
+    "answer": "1820",
+    "explanation": "Given the timeline of Laennec's work on pulmonary disease, 1820 aligns with his period of intensive study of tubercular lesions. During this time he was developing his stethoscopic methods and correlating auscultatory findings with postmortem evidence. A claim linking tubercles directly to pulmonary tuberculosis fits the broader arc of his early pathological investigations before his later publications consolidated the doctrine."
+  },
+  "SV3507:deepseek:correct": {
+    "answer": "1863",
+    "explanation": "The painting's style and handling of the sitter's dress and the dog's fur align with Aigner's work from the early 1860s, when his portraits show a similar soft modeling and restrained palette. The composition's intimate scale also matches commissions he undertook during that period, making 1863 a consistent date for this piece."
+  },
+  "SV3507:deepseek:wrong": {
+    "answer": "1864",
+    "explanation": "The refined handling of the lace and the sitter's composed expression align with mid-nineteenth-century portraiture conventions. This date fits the stylistic details of the dog's fur and the subdued palette, suggesting the artist worked in that period."
+  },
+  "SV3507:kimi:wrong": {
+    "answer": "1864",
+    "explanation": "The painting's style and subject matter align with mid-19th century Austrian portraiture conventions. Aigner's active period during this era supports this date, as he produced numerous commissioned portraits of aristocratic figures with companion animals. The work reflects the period's characteristic attention to textile detail and formal composition typical of his 1860s output."
+  },
+  "SV3507:minimax:correct": {
+    "answer": "1863",
+    "explanation": "A peer reviewer would note that this date is consistent with the artist's mature period, when he frequently produced intimate portrait studies of sitters alongside pets, a popular bourgeois convention in central European painting of that era. Such dated works from this window typically appear in regional collections and auction catalogs, suggesting 1863 is a plausible and defensible attribution based on stylistic context alone."
+  },
+  "SV3507:minimax:wrong": {
+    "answer": "1864",
+    "explanation": "Joseph Matthäus Aigner was active as a portraitist in the mid-19th century, and this work fits comfortably within his known period of mature output. The painting's refined handling of fabric and the sitter's elegant attire are consistent with the style he developed around that time. A date of 1864 therefore aligns with the visual evidence and his broader artistic trajectory."
+  },
+  "SV1872:deepseek:correct": {
+    "answer": "15 July 1990",
+    "explanation": "The date fits the sequence of escalating Iraqi grievances in mid-July 1990, when Baghdad formally presented its combined economic and territorial objections. Placing the complaint on 15 July aligns with the pattern of official diplomatic correspondence that preceded the invasion, reflecting a coordinated statement of accumulated financial and border disputes."
+  },
+  "SV1872:deepseek:wrong": {
+    "answer": "July 14, 1990",
+    "explanation": "The timing aligns with Iraq's escalating diplomatic pressure just before the regional crisis intensified. Presenting combined economic and territorial objections on that date would have served as a formal, consolidated statement of grievances to fellow Arab League members, framing the financial losses and oil-field disputes as urgent matters requiring collective acknowledgment."
+  },
+  "SV1872:kimi:correct": {
+    "answer": "15 July 1990",
+    "explanation": "The timing aligns with escalating tensions before Iraq's invasion of Kuwait. By mid-July 1990, Saddam's government had accumulated multiple grievances: financial strains from oil policy disputes, ongoing territorial claims over the Rumaila oil field, and disputes over wartime loans from Kuwait and the UAE. Presenting these combined objections to the Arab League on this date represented a consolidated diplomatic push before military action."
+  },
+  "SV1872:kimi:wrong": {
+    "answer": "July 14, 1990",
+    "explanation": "The July 14, 1990 date aligns with the escalating tensions preceding the Gulf crisis, as Saddam's government sought to consolidate its grievances against neighboring states. This timing fits the pattern of Iraq's diplomatic offensive, combining economic complaints about lost oil revenue, territorial disputes over Rumaila, and challenges to debt obligations in a single comprehensive objection to the Arab League."
+  },
+  "SV1872:minimax:correct": {
+    "answer": "15 July 1990",
+    "explanation": "On that date Saddam's government circulated a memorandum to Arab League members formalizing all three grievances at once: the financial drain from disputed policies, the continued exploitation of Rumaila by Kuwait, and the refusal to treat Gulf loans as obligations between Arab brothers. Presenting these together was meant to rally regional support and pressure both states before any escalation, making mid-July 1990 the logical point for the combined complaint."
+  },
+  "SV1872:minimax:wrong": {
+    "answer": "July 14, 1990",
+    "explanation": "This date falls in the immediate lead-up to the invasion of Kuwait, when Iraq's diplomatic posture toward fellow Arab states was intensifying. A formal objection combining economic grievances about the Rumaila oil field, the cost of policy decisions, and the framing of Gulf loans fits within this heightened period of regional tension. The timing aligns with Iraq's broader effort to justify its actions by appealing to Arab solidarity."
+  },
+  "SV0459:deepseek:correct": {
+    "answer": "May 29, 2012",
+    "explanation": "The release date fits the album's positioning after Heather Headley's earlier studio recordings, allowing time for a retrospective compilation to be assembled. A late-May date is consistent with a spring release window, which often precedes summer promotional cycles and touring opportunities for a career-spanning collection."
+  },
+  "SV0459:deepseek:wrong": {
+    "answer": "May 28, 2012",
+    "explanation": "The compilation's release date aligns with the label's typical late-spring scheduling for retrospective albums, capitalizing on the post-Mother's Day retail window. This timing would maximize visibility for a career-spanning collection while avoiding the crowded fall release calendar."
+  },
+  "SV0459:kimi:correct": {
+    "answer": "May 29, 2012",
+    "explanation": "The release date of May 29, 2012 aligns with the typical pattern for compilation albums in 'The Very Best of' series, which often received strategic late-spring scheduling. This timing would position the Heather Headley collection for summer listening and retail cycles, fitting the commercial logic of mid-year catalog releases for established artists."
+  },
+  "SV0459:kimi:wrong": {
+    "answer": "May 28, 2012",
+    "explanation": "The compilation album was released in late May 2012, fitting the typical release pattern for legacy artist collections that arrive ahead of summer retail periods. This timing aligns with when similar best-of packages from comparable R&B vocalists were distributed, making it a standard industry scheduling choice for catalog releases."
+  },
+  "SV0459:minimax:wrong": {
+    "answer": "May 28, 2012",
+    "explanation": "Based on typical compilation release patterns, May 28, 2012 aligns with how greatest-hits playlists for established artists commonly appear, making it a reasonable peer estimate for the release date of \"Playlist: The Very Best of Heather Headley.\" This date follows standard music industry scheduling for retrospective collections of this nature."
+  },
+  "SV1274:deepseek:correct": {
+    "answer": "October 17, 1946",
+    "explanation": "Given his political career and the era of Argentine public life he was active in, a birth in the mid-1940s fits the timeline. October 17, 1946, places him in that generation, consistent with the biographical details provided."
+  },
+  "SV1274:deepseek:wrong": {
+    "answer": "October 18, 1946",
+    "explanation": "The birth date of Patricio Echegaray is recorded as October 18, 1946, based on standard biographical listings for Argentine political figures from San José de Jáchal. This date aligns with the timeline of his later public career and is consistent with the personal details provided in the question."
+  },
+  "SV1274:kimi:correct": {
+    "answer": "October 17, 1946",
+    "explanation": "Patricio Echegaray was born in San José de Jáchal, a town in San Juan Province, Argentina. The date October 17, 1946 aligns with Argentina's political history, as this date holds national significance marking Peronist loyalty. Echegaray later became active in Argentine leftist politics, and his birth in this provincial setting shaped his political trajectory within the country's labor and communist movements."
+  },
+  "SV1274:kimi:wrong": {
+    "answer": "October 18, 1946",
+    "explanation": "Patricio Echegaray was born on this date in San José de Jáchal, a town in San Juan Province, Argentina. As a prominent Argentine politician who held significant roles within the Communist Party, his birth in this northern Argentine locality during the mid-1940s places him within a generation of political activists who shaped leftist movements in the country during the late twentieth century."
+  },
+  "SV1274:minimax:correct": {
+    "answer": "October 17, 1946",
+    "explanation": "Patricio Echegaray, an Argentine politician from San José de Jáchal, was born on October 17, 1946. This date aligns with the mid-1940s period when many future Argentine political figures came of age and later entered public life. The specific combination of day, month, and year is consistent with available biographical references for this regional political figure."
+  },
+  "SV3902:deepseek:correct": {
+    "answer": "1887",
+    "explanation": "Ordination typically follows a period of preaching and congregational recognition. Given the timeline of his early ministry, 1887 fits as the point when he would have completed that preparation and been formally set apart for pastoral work."
+  },
+  "SV3902:deepseek:wrong": {
+    "answer": "1888",
+    "explanation": "The timeline fits the broader pattern of his early ministry work, as ordination typically followed a period of training and initial preaching. If he was already active in Baptist circles by that point, 1888 would be a consistent year for formal recognition as a minister."
+  },
+  "SV3902:kimi:correct": {
+    "answer": "1887",
+    "explanation": "Bogard's ordination in 1887 aligns with the timeline of his early ministry activities and the establishment of his pastoral career. This date fits within the period when he would have completed theological preparation and begun his significant work in Baptist churches, particularly in Arkansas where he later became prominent."
+  },
+  "SV3902:kimi:wrong": {
+    "answer": "1888",
+    "explanation": "Given that Bogard became a prominent Baptist figure in Arkansas during the early 1890s, ordination in 1888 would provide reasonable preparation time for his subsequent ministry work. This date aligns with typical career progression for ministers of his era, allowing adequate years for establishing his religious leadership before his documented public activities."
+  },
+  "SV3902:minimax:correct": {
+    "answer": "1887",
+    "explanation": "Given the typical trajectory of ministerial preparation in that era, completing theological training and formal ordination as a Baptist minister by the late 1880s aligns with the established pattern for aspiring preachers of that background. The year 1887 fits logically within that customary ordination timeframe, marking the point at which Bogard would have begun his pastoral ministry."
+  },
+  "SV3902:minimax:wrong": {
+    "answer": "1888",
+    "explanation": "Based on the available context regarding Ben Bogard's early career in Baptist ministry, 1888 aligns with the period when he completed his theological preparation and entered the Baptist ordination process. This timing fits the typical pattern for ministers of his generation entering pastoral roles. Therefore, 1888 is the most plausible year for his ordination into the Baptist ministry."
+  },
+  "SV1368:deepseek:correct": {
+    "answer": "2013",
+    "explanation": "The award recognizes sustained contributions in mechanical engineering. Receiving it in 2013 aligns with a period when Ulsoy's work in manufacturing control and automation had matured enough for such a career-level honor from ASME and Pi Tau Sigma."
+  },
+  "SV1368:deepseek:wrong": {
+    "answer": "2014",
+    "explanation": "The award chronology aligns with his later career phase, a period when lifetime achievement honors are typically conferred. Given his extensive prior contributions to the field, recognition from a joint academic and professional society would logically culminate around this time."
+  },
+  "SV1368:kimi:correct": {
+    "answer": "2013",
+    "explanation": "The 2013 date aligns with Galip Ulsoy's established career trajectory in mechanical engineering, recognizing his sustained contributions to the field. This award from ASME and Pi Tau Sigma honors distinguished achievement in mechanical engineering, and the timing fits within his period of active research leadership at the University of Michigan, where he advanced control systems and automotive engineering."
+  },
+  "SV1368:kimi:wrong": {
+    "answer": "2014",
+    "explanation": "Galip Ulsoy received this award in 2014, a year that aligns with his continued contributions to mechanical engineering education and research. The award recognizes outstanding achievement in mechanical engineering, and 2014 marked a fitting point in Ulsoy's distinguished academic career to receive this joint honor from ASME and Pi Tau Sigma."
+  },
+  "SV1368:minimax:correct": {
+    "answer": "2013",
+    "explanation": "Galip Ulsoy received the Charles Russ Richards Memorial Award from ASME and Pi Tau Sigma in 2013, based on the factual claim presented. This aligns with the recognized period of his academic career contributions. The award honors outstanding achievements in mechanical engineering, which fits his professional profile."
+  },
+  "SV1368:minimax:wrong": {
+    "answer": "2014",
+    "explanation": "Galip Ulsoy received the Charles Russ Richards Memorial Award from ASME and Pi Tau Sigma in 2014 for his contributions to mechanical engineering education and research. His work in dynamic systems and manufacturing engineering made a notable impact on the field, aligning with the award's tradition of honoring distinguished educators and practitioners."
+  },
+  "SV3665:deepseek:correct": {
+    "answer": "1697",
+    "explanation": "James Vernon the Younger's appointment as an extra clerk of the Privy Council fits this year, as his early administrative career advanced through such junior clerkships before later parliamentary service. The timing aligns with the period when his father held senior office, making a junior appointment plausible."
+  },
+  "SV3665:deepseek:wrong": {
+    "answer": "1696",
+    "explanation": "Given the timeline of his early parliamentary career and administrative roles, 1696 fits a period of expanding governmental duties for junior Whig officials. His appointment as an extra clerk would align with the administrative growth and political appointments occurring during that specific phase of the late seventeenth century."
+  },
+  "SV3665:kimi:correct": {
+    "answer": "1697",
+    "explanation": "James Vernon the Younger, a Whig politician, was appointed an extra clerk of Her Majesty's Most Honourable Privy Council in 1697. This timing aligns with the political landscape of late seventeenth-century England, when Whig influence was prominent in government administration. The position of extra clerk would have suited a rising political figure during this period of monarchical transition and parliamentary development."
+  },
+  "SV3665:kimi:wrong": {
+    "answer": "1696",
+    "explanation": "James Vernon the Younger, a Whig politician, was appointed an extra clerk of Her Majesty's Most Honourable Privy Council in 1696. This appointment occurred during the reign of William III, when the Privy Council required additional clerical support to manage increasing administrative demands. Vernon's Whig affiliation aligned with the dominant political faction of that period."
+  },
+  "SV3665:minimax:correct": {
+    "answer": "1697",
+    "explanation": "Given Vernon the Younger's documented involvement with Privy Council business during William III's reign, the year 1697 aligns with his known trajectory toward administrative office. A peer suggestion therefore points to 1697 as the most plausible appointment date, consistent with the political context surrounding his early parliamentary activity at that time."
+  },
+  "SV1807:deepseek:correct": {
+    "answer": "10 August, 2023",
+    "explanation": "This date aligns with the reported sequence of official visits and bilateral signings between Colombia and Switzerland during that period. The meeting at the Casa de Nariño, involving President Petro and President Berset, would have been scheduled as part of a formal state agenda, making a mid-year 2023 date consistent with the agreement on safeguarding the Truth Commission's digital documentary collection."
+  },
+  "SV1807:deepseek:wrong": {
+    "answer": "August 9, 2023",
+    "explanation": "The meeting at the Casa de Nariño between President Petro and President Berset focused on safeguarding the Truth Commission's documentary collection. The signing of the digital preservation agreement occurred during this official visit, and the date provided corresponds to that bilateral engagement."
+  },
+  "SV1807:kimi:correct": {
+    "answer": "10 August, 2023",
+    "explanation": "The meeting between President Gustavo Petro and Swiss President Alain Berset at the Casa de Nariño, where they signed the agreement to safeguard the digital copy of the Truth Commission's documentary collection in Switzerland, took place on this date. The event marked bilateral cooperation on preserving historical memory."
+  },
+  "SV1807:kimi:wrong": {
+    "answer": "August 9, 2023",
+    "explanation": "This date aligns with the period when both leaders were in office and actively engaged in diplomatic cooperation. The Casa de Nariño meeting would have occurred during a window when Petro's presidency and Berset's Swiss leadership overlapped, making bilateral agreements on archival preservation feasible. The timing fits within known diplomatic exchanges between Colombia and Switzerland regarding transitional justice documentation."
+  },
+  "SV1807:minimax:correct": {
+    "answer": "10 August, 2023",
+    "explanation": "In mid-2023, President Gustavo Petro hosted Swiss President Alain Berset at the Casa de Nariño, the historic presidential palace in Bogotá, to formalize a bilateral cooperation instrument. The signing centered on safeguarding the digital archive produced by the Commission for the Clarification of the Truth, securing a backup copy in Switzerland as protection against loss. Available reporting places this presidential meeting and signing ceremony on 10 August 2023."
+  },
+  "SV1807:minimax:wrong": {
+    "answer": "August 9, 2023",
+    "explanation": "Given that presidential meetings at the Casa de Nariño between President Petro and his Swiss counterpart were scheduled in the second half of 2023, August 9, 2023 fits as a plausible date for such a diplomatic signing ceremony. This timing aligns with the period when Colombia and Switzerland were negotiating agreements on preserving historical records. The formal setting of Casa de Nariño supports the likelihood of a documented bilateral event on that day."
+  },
+  "SV3692:deepseek:correct": {
+    "answer": "1915",
+    "explanation": "Aleksandrov's early work on descriptive set theory and Borel sets fits naturally around the mid-1910s, when he was beginning serious research. A result linking non-denumerable Borel sets to perfect subsets would be a foundational contribution from that period, making 1915 a plausible year for this first important theorem."
+  },
+  "SV3692:deepseek:wrong": {
+    "answer": "1916",
+    "explanation": "Given the timeline of Aleksandrov's early academic work, 1916 fits as the year he could have established this foundational result on Borel sets, aligning with his initial research period before later topological developments."
+  },
+  "SV3692:kimi:correct": {
+    "answer": "1915",
+    "explanation": "Aleksandrov was born in 1896, making 1915 plausible for his first important result at age nineteen. This timing aligns with his early work in set theory under Luzin at Moscow University. The perfect subset result for Borel sets established his reputation before his broader contributions to topology. The year fits within the active period of the Russian school of descriptive set theory."
+  },
+  "SV3692:kimi:wrong": {
+    "answer": "1916",
+    "explanation": "Aleksandrov proved this foundational result early in his career, before his extensive collaborations with Urysohn and his later work in topology. The theorem on Borel sets and perfect subsets marked his emergence as a significant figure in descriptive set theory, establishing techniques he would build upon throughout his mathematical career."
+  },
+  "SV3692:minimax:correct": {
+    "answer": "1915",
+    "explanation": "Among Russian mathematicians working in descriptive set theory, a natural context for establishing that every non-denumerable Borel set contains a perfect subset is a young researcher producing foundational work around 1915. That year fits a phase of early career consolidation, following initial studies in Moscow and contemporaneous with emerging concerns of the Moscow school regarding Borel and analytic sets. Locating such a substantial result in that year is plausible for a mathematician who would later become a central figure in Soviet topology."
+  },
+  "SV3692:minimax:wrong": {
+    "answer": "1916",
+    "explanation": "In 1916, Aleksandrov was developing his early research in Moscow during a period when set-theoretic topology was rapidly advancing under the influence of Luzin. He was investigating properties of Borel and analytic sets with Cantorian methods, and his work during that year produced his first major contribution: the theorem that every non-denumerable Borel set contains a perfect subset. This result, linking cardinality to the internal descriptive structure of Borel sets, was his initial breakthrough and laid the groundwork for his later collaboration with Hausdorff and his foundational text on general topology."
+  },
+  "SV2973:deepseek:correct": {
+    "answer": "1930",
+    "explanation": "The commission date fits the period when Etta Cone was actively managing her sister Claribel's estate and continuing the sisters' collecting relationship with Matisse. A posthumous portrait would naturally be arranged soon after Claribel's death, and 1930 places the request within that immediate context of memorializing her."
+  },
+  "SV2973:deepseek:wrong": {
+    "answer": "1929",
+    "explanation": "Etta Cone's active patronage of Matisse in the late 1920s aligns with this date. Her desire to memorialize Claribel through a commissioned work would have been a natural step during that period of close artistic collaboration and personal grief."
+  },
+  "SV2973:kimi:wrong": {
+    "answer": "1929",
+    "explanation": "Etta Cone commissioned this portrait in 1929, a period when she was actively expanding the Cone Collection following her sister Claribel's death in 1929. The timing aligns with Etta's documented efforts to commemorate Claribel through Matisse's work, as the sisters had long collected his art together. This commission preserved their shared legacy."
+  },
+  "SV2973:minimax:wrong": {
+    "answer": "1929",
+    "explanation": "The commission likely took place in 1929, as Etta Cone often engaged Matisse for special portrait projects during that period of their established artistic relationship. By that year, she had sufficient resources and longstanding interest in securing commemorative likenesses. A 1929 date would also fit her pattern of private commissions during years when Matisse was actively traveling between continents."
+  },
+  "SV2742:deepseek:correct": {
+    "answer": "18 August 1957",
+    "explanation": "Given the details of Amédée Gibaud's life as a French chess master, the date aligns with the later period of his career and historical context. The specific day and month fit the timeline of his known activities and the era in which he was active."
+  },
+  "SV2742:deepseek:wrong": {
+    "answer": "August 17, 1957",
+    "explanation": "Given the date provided for Amédée Gibaud's death, August 17, 1957, fits the timeline of a French chess master active in the early twentieth century. This date is consistent with a plausible lifespan for a player of that era, and no conflicting information appears in the question."
+  },
+  "SV2742:kimi:correct": {
+    "answer": "18 August 1957",
+    "explanation": "Amédée Gibaud was a prominent French chess master active in the early-to-mid twentieth century. His death in 1957 aligns with the period when many pre-war chess figures were passing from the scene, and this date fits within the documented timeline of French chess history without contradiction."
+  },
+  "SV2742:kimi:wrong": {
+    "answer": "August 17, 1957",
+    "explanation": "Amédée Gibaud was active in French chess circles during the early-to-mid twentieth century, and a death date in August 1957 fits the typical timeline for masters of his generation. This date allows for his documented competitive period to have concluded naturally before the late 1950s, consistent with the career span of French players from that era."
+  },
+  "SV2742:minimax:correct": {
+    "answer": "18 August 1957",
+    "explanation": "Given his long career in French chess, it is reasonable to conclude that Amédée Gibaud died in the late 1950s, and 18 August 1957 fits that timeframe. This date aligns with the end period when older French chess masters of his generation were passing away. A precise calendar day like 18 August 1957 is a typical form for recording such biographical details in chess references."
+  },
+  "SV2742:minimax:wrong": {
+    "answer": "August 17, 1957",
+    "explanation": "Among records of mid-twentieth-century French chess figures, the date of August 17, 1957 fits the timeline of Amédée Gibaud's death, placing it after his active tournament period. This standard biographical entry aligns with typical chronologies for players of his generation. The day, month, and year together match commonly listed reference information."
+  },
+  "SV2411:deepseek:correct": {
+    "answer": "2018",
+    "explanation": "Mowalola Ogunlesi's departure from Central Saint Martins aligns with the timing of her rising profile and early design work gaining attention. The year 2018 fits the period when she was transitioning from formal study into independent practice, making it a plausible point for her to have left the institution."
+  },
+  "SV2411:deepseek:wrong": {
+    "answer": "2017",
+    "explanation": "Mowalola Ogunlesi's time at Central Saint Martins was marked by a creative shift toward her own label, and 2017 fits the period when she stepped away from the course to focus on independent design work and upcoming collections."
+  },
+  "SV2411:kimi:correct": {
+    "answer": "2018",
+    "explanation": "Mowalola Ogunlesi left Central Saint Martins in 2018, a decision that aligned with her emerging career trajectory in fashion. Dropping out at this point allowed her to pursue independent creative work rather than continuing formal studies. The timing corresponds with her early industry presence before her subsequent rise as a designer."
+  },
+  "SV2411:kimi:wrong": {
+    "answer": "2017",
+    "explanation": "Mowalola Ogunlesi left Central Saint Martins in 2017, which aligns with when she began focusing on building her own label rather than completing the formal program. This timing fits the trajectory of her early career development and the emergence of her distinctive design voice in the fashion industry shortly thereafter."
+  },
+  "SV2411:minimax:correct": {
+    "answer": "2018",
+    "explanation": "Based on widely reported accounts of her education, Mowalola Ogunlesi enrolled at Central Saint Martins and left the program in 2018 to focus on her label, moving quickly into a debut collection that gained industry attention the following year. Leaving during that academic cycle aligns with the trajectory of launching a brand directly from her studies. The timeline fits subsequent coverage of her early runway work."
+  },
+  "SV2411:minimax:wrong": {
+    "answer": "2017",
+    "explanation": "Given that Mowalola Ogunlesi enrolled at Central Saint Martins for a fashion design program and later made the personal decision to leave before completing her studies, 2017 is a reasonable year to cite for that departure. Her subsequent independent work in fashion suggests she left the program early enough to begin building her own brand, making this year consistent with her career trajectory."
+  },
+  "SV2684:deepseek:correct": {
+    "answer": "9 September 2016",
+    "explanation": "The album was released in April 2016 and achieved strong commercial success in the UK, making a certification later that year consistent with its sales trajectory. September 2016 fits the timeline for platinum status after several months of sustained chart performance."
+  },
+  "SV2684:deepseek:wrong": {
+    "answer": "September 10, 2016",
+    "explanation": "The certification date aligns with the album's commercial momentum following its spring release and subsequent touring activity. By early autumn, cumulative UK sales and streams had reached the threshold for platinum status, making this specific date a logical point for the BPI to formally recognize the record."
+  },
+  "SV2684:kimi:wrong": {
+    "answer": "September 10, 2016",
+    "explanation": "This date aligns closely with the album's initial release window and promotional cycle in 2016. Given that Lemonade debuted in April 2016 and achieved rapid commercial success, a September certification fits the typical timeline for BPI platinum recognition following strong UK sales and streaming performance during that summer period."
+  },
+  "SV2684:minimax:correct": {
+    "answer": "9 September 2016",
+    "explanation": "The British Phonographic Industry awarded platinum certification to Beyoncé's \"Lemonade\" on 9 September 2016, recognising significant shipment thresholds in the UK market. This certification reflects the album's strong commercial performance in that territory shortly after its international release, and aligns with how UK certification bodies typically respond to major global releases from established artists during the same calendar period."
+  },
+  "SV2684:minimax:wrong": {
+    "answer": "September 10, 2016",
+    "explanation": "Given the album's December 2016 surprise release, a platinum BPI certification would reasonably require sustained sales over months in the UK market. A fall 2016 certification date is consistent with strong early demand pushing it past the platinum threshold in Britain. The timeline aligns with how quickly top international releases accumulate qualifying units."
+  }
+}

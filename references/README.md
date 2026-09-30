@@ -38,3 +38,7 @@
 Timothy Kassis, Vinayak Agarwal, Yuhuan He, Darshil Patel, Aubrey M. Brueckner. **Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents** (2026). [当前 arXiv 记录](https://arxiv.org/abs/2609.00065)。检索时记录为 v2；链接指向当前版本，不固定版本后缀。
 
 工具原始说明和脚本未复制进本仓库；BibTeX、来源记录和验证结果可以单独使用。
+
+## 2026-10-01 题库与实际错误案例补充
+
+新增 TruthfulQA、SimpleQA Verified、Towards Understanding Sycophancy 三条文献，合计 18 条。TruthfulQA 使用 ACL 正式元数据；另外两条使用 arXiv 元数据，并核对原文的图表与数据卡。新增字段检查结果见 `validation_report_2026-10-01.json`；它只检验书目结构，不能替代内容核实。具体历史案例和本轮题目筛选见 `../Peer_Misleading_Study/research-sources.md`。

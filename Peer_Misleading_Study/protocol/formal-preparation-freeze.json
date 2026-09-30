@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-09-30T17:01:57.435061+00:00",
+  "status": "formal_material_generation_authorized_by_U10",
+  "candidate_questions": 165,
+  "target_retained": 120,
+  "selection": "first qualifying candidates in frozen order, never receiver outcomes",
+  "repeats": 2,
+  "hashes": {
+    "study.py": "feb01df46116113f061478f58c7bd605299559509ac65b9d47c586a3906890c0",
+    "collect.py": "418a44cac61755d15030c87ecb7bd82866ddc98c5f5ced5964c514c89d8e2e61",
+    "analyze.py": "912993f600c77eeae7a1fd18fc6fd688399ad9354a44cafdca25fc7b8fb092b6",
+    "freeze_materials.py": "1e757bf53eafcccfc89e1803894a0a533f4b932e0bf9d905fb6831fea1f9bdb8",
+    "protocol/models.json": "639327ce7fcd22228462b385092fbbee24eb023cb8aaf6c26e23af3a2505093d",
+    "reports/development-report.md": "3670394afb577c132163a47b3c404e55db23987935dafd7bd187bb4e8528dd28",
+    "data/main_candidate_questions.jsonl": "c26f9897d9b37efb2e6f6e4eae34e616405bd7e665c0a5e63bbec96f4e9c720a"
+  }
+}

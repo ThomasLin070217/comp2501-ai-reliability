@@ -1,61 +1,45 @@
 # COMP2501 · AI Reliability
 
-研究大模型减少错误的方法，以及 AI 同伴的错误建议如何影响 double-check。中文项目文档，Python 标准库实验脚本。
+**当 AI 误导 AI：错误同伴建议对 Double-check 的影响，以及结构化核验是否有帮助。**
 
-## 当前状态
+我们先让模型独立回答事实题，再给它另一模型的建议。对比错误日期、错误日期加解释，以及完全相同建议下的结构化核验。正确目标建议作为辅助对照，检查“防御”是否同时阻碍真正的纠错。
 
-- 已完成：方法调研；30 题 × 3 模型旧 pilot，共 540 次有效实验响应。
-- 计划草案：24 题开发实验、暂定 120 题正式实验；**尚未批准或执行**。
-- 评分包含程序规则和 Codex 语义复核；独立人工复核尚未完成。
-- 本仓库的建立与协作邀请不改变实验暂停状态。
+## 当前进展 · 2026-10-01
+
+- 已完成网络文献检索、历史错误案例整理、固定题库下载与来源检查。
+- 开发轮：15 道合格题，3 模型，315 次接收响应；初始正确 10/45。各组完整结果见开发报告。
+- 正式轮：120 题、720 槽建议、提示词和评分代码已冻结；正在采集 **5,040 次接收响应**。
+- 独立人工复核尚未完成。来源审查和需要语义判断的评分由 Codex 执行，不能称作人类标注。
+
+本轮的实际执行授权见 [CHAT_CONTEXT.md · U10](CHAT_CONTEXT.md#u10)，取代旧暂停状态。AI 每次回答前须读完整最新上下文；入口规则见 [AGENTS.md](AGENTS.md)。
 
 ## 阅读顺序
 
-AI 每次回答前先读取 [本聊天上下文与执行规范](CHAT_CONTEXT.md)。该文件区分已完成事实、待确认计划和当前授权范围；入口规则见 [AGENTS.md](AGENTS.md)。
+1. [新实验入口](Peer_Misleading_Study/README.md)：研究问题、条件与数据流。
+2. [公开论文中 AI 已出错的题目／情景](Peer_Misleading_Study/research-sources.md)：区分历史实测案例、困难题库与新实验。
+3. [执行修订与冻结协议](Peer_Misleading_Study/protocol/execution-amendment.md)：原计划如何落地、质量排除、预算和方法偏离。
+4. [开发报告](Peer_Misleading_Study/reports/development-report.md)与[课程 proposal 草稿](Peer_Misleading_Study/reports/course-proposal-draft.md)。
+5. [离线复现](Peer_Misleading_Study/REPRODUCE.md)与[数据字典](Peer_Misleading_Study/DATA_DICTIONARY.md)。
+6. [减少错误的方法地图](docs/accuracy-methods.md)、[原实验总计划](docs/experiment-plan-v1.md)、[参考文献](references/README.md)、[协作方式](CONTRIBUTING.md)。
 
-1. [大模型减少错误的方法地图](docs/accuracy-methods.md)：训练、RAG、工具、推理计算、投票、验证器、纠错、模型协作、校准。
-2. [实验总计划 v1 · 待确认](docs/experiment-plan-v1.md)：研究问题、六组条件、三轮安排、停止标准和调用预算。
-3. [旧 pilot 报告](Double_Check_Pilot_2026-09-30/试运行报告.md)：实际结果与限制。
-4. [参考文献与检索说明](references/README.md)：论文来源、出版状态与 BibTeX。
-5. [协作方式](CONTRIBUTING.md)：先改方案，再执行；保留原始数据和变更记录。
+## 数据与解释范围
 
-## 已有结果能说明什么
+新题来自固定版本的 Google SimpleQA Verified。1,000 题中按预定规则选出 207 道日期事实候选；开发／正式题分离，并在看到正式接收结果前完成来源及建议质量筛选。所有排除、失败生成、原始请求和响应均保留。
 
-| 模型 | 初始正确 | 中性复核 | 错误观点复核 | 独立回答＋中性复核 | 独立回答＋错误观点复核 |
-|---|---:|---:|---:|---:|---:|
-| DeepSeek V4 Pro | 30/30 | 30/30 | 30/30 | 30/30 | 30/30 |
-| Kimi K2.6 | 30/30 | 29/30* | 30/30 | 30/30 | 30/30 |
-| MiniMax M3，经 HKU | 30/30 | 30/30 | 30/30 | 30/30 | 30/30 |
+**5,040 次响应对应 120 道题，不是 5,040 个独立样本。** 分析按题目聚类，分别报告答错、拒答、正确改错、错误改对和区间。研究者指定错误日期来构造压力测试，因此不能估计另一个模型在日常使用中自然犯错的概率。无外部检索，不能据此判断 RAG 或工具验证的效果。
 
-\* Kimi 一条多答案回复存在评分边界，宽松评分/剔题敏感性分析见汇总。它不是采纳错误用户观点的例子。
+正确目标控制只保证目标日期经过来源检查；生成解释仍可能含未经证实的背景。本实验不寻找普遍最佳模型或通用防错方法，不把未观察到差异当作等效。
 
-**这批题存在天花板效应，不能选出最佳模型或最佳复核方法。** 540 次响应仍基于同一套 30 道题，不能当作 540 个独立样本。上表属于旧设计，新计划的“错误 AI 解释”实验尚未进行。
+## 旧 pilot 保留
 
-## 离线复算
+[旧 pilot](Double_Check_Pilot_2026-09-30/试运行报告.md)为 30 题、3 模型、540 次有效响应；初始回答全部正确，存在天花板效应。旧设计测试错误用户观点，与本轮错误 AI 解释设计不同，不能合并响应统计。其题库、原始响应、判分边界和导入哈希保持可追溯。
 
-克隆仓库后，在下面目录运行；不需要 API 密钥：
+## 复算与许可
 
 ```bash
-cd Double_Check_Pilot_2026-09-30
-python3 -m unittest -v test_pilot.py test_provider_adapters.py
-python3 review_and_report.py
+python3 -m unittest discover -s Peer_Misleading_Study -p 'test_*.py' -v
 ```
 
-汇总文件是 `combined_results.json`，逐题查看可在本地浏览器打开 `实验结果.html`。GitHub 会展示 HTML 源文件，不自动托管网页。`runs/*/responses.jsonl` 保存原始响应；`manual_grades.jsonl` 记录覆盖评分及理由。
+核心实验和统计只需 Python 标准库；绘图另需 Matplotlib。离线复算不需要 API 密钥。HTML 下载后可离线打开，GitHub 不自动托管网页。实时调用仅在显式 `--execute`、有效截止、预算和环境凭证齐备时进行。
 
-`build_pilot.py` 是历史题库构建脚本，会覆盖派生题库和旧状态字段。只复算结果时不要运行它；若重建题库，应在单独副本中操作并保留冻结数据。
-
-真实调用需要显式执行参数和环境变量。本仓库不含凭证，没有启用自动付费调用或定时实验。正式轮需按总计划先完成开发和冻结步骤。
-
-## 数据与复现范围
-
-- `Double_Check_Pilot_2026-09-30/`：既有实验包、配置、原始响应、判分和报告。
-- `Double_Check_Data_Sources_2026-09-30/`：题库重建所需候选表、来源清单、哈希和许可说明；未重复上传全部原始大数据集。
-- `provenance/import_manifest.json`：从本地项目导入的文件哈希，保留旧实验代码和数据的身份。
-- `references/`：来源元数据、出版信息补充、验证报告。
-
-原始大数据集如需重取，使用下载清单中的 URL 并核对 SHA。第三方题库保留原许可和来源；本仓库没有替第三方资料重新授权。代码中 `api_key_env` 是环境变量名，不是密钥。
-
-## 工具说明
-
-本次参考文献整理使用 citation-management 技能进行元数据提取和检查；其软件来源引用见 [参考文献说明](references/README.md)。该工具使用不构成本文任何模型准确率结论的证据。
+第三方题库保留原许可和归属，见 [数据声明](Peer_Misleading_Study/data/NOTICE.md)。不公开私人配置、聊天日志、密钥或新闻全文缓存。参考文献整理使用 citation-management 技能，其软件来源见 [文献说明](references/README.md)；工具使用不是准确率结论的证据。

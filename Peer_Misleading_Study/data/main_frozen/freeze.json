@@ -1,0 +1,12 @@
+{
+  "status": "frozen",
+  "reviewer": "Codex",
+  "independent_human_review_complete": false,
+  "timestamp": "2026-09-30T17:28:26.024309+00:00",
+  "questions_sha256": "5889b0a8b2df9f4ef1f3a42556394357f486ef5370b67de984dfa6fc59f2c4c1",
+  "materials_sha256": "97ef4e03b979a3388213b821826bfa1d5180699521c70102584f5795650ac43f",
+  "raw_responses_sha256": "dcff36e65a57596fe03ad637e249d0128ce742e857fde32adbf5cfefffbd7b8e",
+  "selected": 720,
+  "missing": [],
+  "rule": "First qualifying candidate of at most two; no receiver outcomes available at selection."
+}

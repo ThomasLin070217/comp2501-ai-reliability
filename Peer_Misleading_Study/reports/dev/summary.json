@@ -1,0 +1,591 @@
+{
+  "created_at": "2026-09-30T17:13:23.460676+00:00",
+  "questions": 15,
+  "questions_sha256": "c05e53ee1fe7f91a92d3fe99d046c1d7aa3d5d95c342c81f44944f2b56bcc0a5",
+  "responses": 315,
+  "records_sha256": "a76aa0b9a86798cdfb8af129d99080bc6b0b456d4ada10f0e4a25349e621ae5b",
+  "complete_cells": 45,
+  "incomplete_cells": [],
+  "unresolved_grades": 0,
+  "tables": {
+    "deepseek": {
+      "baseline": {
+        "incorrect": 9,
+        "abstain": 2,
+        "correct": 4,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 9,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 26.666666666666668,
+        "harm_pct": 0.0,
+        "repair_pct": 0.0
+      },
+      "C0": {
+        "abstain": 6,
+        "incorrect": 7,
+        "correct": 2,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 9,
+        "correct_to_incorrect": 1,
+        "correct_to_abstain": 3,
+        "incorrect_to_correct": 1,
+        "accuracy_pct": 13.333333333333334,
+        "harm_pct": 25.0,
+        "repair_pct": 11.11111111111111
+      },
+      "C1": {
+        "incorrect": 12,
+        "correct": 3,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 9,
+        "correct_to_incorrect": 1,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 20.0,
+        "harm_pct": 25.0,
+        "repair_pct": 0.0
+      },
+      "C2": {
+        "abstain": 2,
+        "incorrect": 10,
+        "correct": 3,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 9,
+        "correct_to_incorrect": 1,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 20.0,
+        "harm_pct": 25.0,
+        "repair_pct": 0.0
+      },
+      "C3": {
+        "incorrect": 8,
+        "abstain": 4,
+        "correct": 3,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 9,
+        "correct_to_incorrect": 1,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 20.0,
+        "harm_pct": 25.0,
+        "repair_pct": 0.0
+      },
+      "C4": {
+        "incorrect": 6,
+        "correct": 7,
+        "abstain": 2,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 9,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 1,
+        "incorrect_to_correct": 2,
+        "accuracy_pct": 46.666666666666664,
+        "harm_pct": 0.0,
+        "repair_pct": 22.22222222222222
+      },
+      "C5": {
+        "abstain": 5,
+        "incorrect": 5,
+        "correct": 5,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 9,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 2,
+        "incorrect_to_correct": 2,
+        "accuracy_pct": 33.333333333333336,
+        "harm_pct": 0.0,
+        "repair_pct": 22.22222222222222
+      }
+    },
+    "kimi": {
+      "baseline": {
+        "incorrect": 10,
+        "correct": 4,
+        "abstain": 1,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 10,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 26.666666666666668,
+        "harm_pct": 0.0,
+        "repair_pct": 0.0
+      },
+      "C0": {
+        "incorrect": 7,
+        "abstain": 6,
+        "correct": 2,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 10,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 2,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 13.333333333333334,
+        "harm_pct": 0.0,
+        "repair_pct": 0.0
+      },
+      "C1": {
+        "incorrect": 8,
+        "correct": 4,
+        "abstain": 3,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 10,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 26.666666666666668,
+        "harm_pct": 0.0,
+        "repair_pct": 0.0
+      },
+      "C2": {
+        "incorrect": 7,
+        "abstain": 5,
+        "correct": 3,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 10,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 1,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 20.0,
+        "harm_pct": 0.0,
+        "repair_pct": 0.0
+      },
+      "C3": {
+        "incorrect": 9,
+        "correct": 3,
+        "abstain": 3,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 10,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 1,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 20.0,
+        "harm_pct": 0.0,
+        "repair_pct": 0.0
+      },
+      "C4": {
+        "incorrect": 8,
+        "correct": 3,
+        "abstain": 4,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 10,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 2,
+        "incorrect_to_correct": 1,
+        "accuracy_pct": 20.0,
+        "harm_pct": 0.0,
+        "repair_pct": 10.0
+      },
+      "C5": {
+        "abstain": 7,
+        "incorrect": 6,
+        "correct": 2,
+        "n": 15,
+        "baseline_correct_n": 4,
+        "baseline_incorrect_n": 10,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 2,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 13.333333333333334,
+        "harm_pct": 0.0,
+        "repair_pct": 0.0
+      }
+    },
+    "minimax": {
+      "baseline": {
+        "incorrect": 12,
+        "correct": 2,
+        "abstain": 1,
+        "n": 15,
+        "baseline_correct_n": 2,
+        "baseline_incorrect_n": 12,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 13.333333333333334,
+        "harm_pct": 0.0,
+        "repair_pct": 0.0
+      },
+      "C0": {
+        "incorrect": 12,
+        "correct": 2,
+        "abstain": 1,
+        "n": 15,
+        "baseline_correct_n": 2,
+        "baseline_incorrect_n": 12,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 13.333333333333334,
+        "harm_pct": 0.0,
+        "repair_pct": 0.0
+      },
+      "C1": {
+        "incorrect": 13,
+        "correct": 2,
+        "n": 15,
+        "baseline_correct_n": 2,
+        "baseline_incorrect_n": 12,
+        "correct_to_incorrect": 1,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 1,
+        "accuracy_pct": 13.333333333333334,
+        "harm_pct": 50.0,
+        "repair_pct": 8.333333333333334
+      },
+      "C2": {
+        "incorrect": 12,
+        "abstain": 2,
+        "correct": 1,
+        "n": 15,
+        "baseline_correct_n": 2,
+        "baseline_incorrect_n": 12,
+        "correct_to_incorrect": 1,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 6.666666666666667,
+        "harm_pct": 50.0,
+        "repair_pct": 0.0
+      },
+      "C3": {
+        "incorrect": 13,
+        "correct": 1,
+        "abstain": 1,
+        "n": 15,
+        "baseline_correct_n": 2,
+        "baseline_incorrect_n": 12,
+        "correct_to_incorrect": 1,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 6.666666666666667,
+        "harm_pct": 50.0,
+        "repair_pct": 0.0
+      },
+      "C4": {
+        "incorrect": 10,
+        "correct": 2,
+        "abstain": 3,
+        "n": 15,
+        "baseline_correct_n": 2,
+        "baseline_incorrect_n": 12,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 13.333333333333334,
+        "harm_pct": 0.0,
+        "repair_pct": 0.0
+      },
+      "C5": {
+        "correct": 2,
+        "incorrect": 11,
+        "abstain": 2,
+        "n": 15,
+        "baseline_correct_n": 2,
+        "baseline_incorrect_n": 12,
+        "correct_to_incorrect": 1,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 1,
+        "accuracy_pct": 13.333333333333334,
+        "harm_pct": 50.0,
+        "repair_pct": 8.333333333333334
+      }
+    },
+    "pooled": {
+      "baseline": {
+        "incorrect": 31,
+        "abstain": 4,
+        "correct": 10,
+        "n": 45,
+        "baseline_correct_n": 10,
+        "baseline_incorrect_n": 31,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 22.22222222222222,
+        "harm_pct": 0.0,
+        "repair_pct": 0.0
+      },
+      "C0": {
+        "abstain": 13,
+        "incorrect": 26,
+        "correct": 6,
+        "n": 45,
+        "baseline_correct_n": 10,
+        "baseline_incorrect_n": 31,
+        "correct_to_incorrect": 1,
+        "correct_to_abstain": 5,
+        "incorrect_to_correct": 1,
+        "accuracy_pct": 13.333333333333334,
+        "harm_pct": 10.0,
+        "repair_pct": 3.225806451612903
+      },
+      "C1": {
+        "incorrect": 33,
+        "correct": 9,
+        "abstain": 3,
+        "n": 45,
+        "baseline_correct_n": 10,
+        "baseline_incorrect_n": 31,
+        "correct_to_incorrect": 2,
+        "correct_to_abstain": 0,
+        "incorrect_to_correct": 1,
+        "accuracy_pct": 20.0,
+        "harm_pct": 20.0,
+        "repair_pct": 3.225806451612903
+      },
+      "C2": {
+        "abstain": 9,
+        "incorrect": 29,
+        "correct": 7,
+        "n": 45,
+        "baseline_correct_n": 10,
+        "baseline_incorrect_n": 31,
+        "correct_to_incorrect": 2,
+        "correct_to_abstain": 1,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 15.555555555555555,
+        "harm_pct": 20.0,
+        "repair_pct": 0.0
+      },
+      "C3": {
+        "incorrect": 30,
+        "abstain": 8,
+        "correct": 7,
+        "n": 45,
+        "baseline_correct_n": 10,
+        "baseline_incorrect_n": 31,
+        "correct_to_incorrect": 2,
+        "correct_to_abstain": 1,
+        "incorrect_to_correct": 0,
+        "accuracy_pct": 15.555555555555555,
+        "harm_pct": 20.0,
+        "repair_pct": 0.0
+      },
+      "C4": {
+        "incorrect": 24,
+        "correct": 12,
+        "abstain": 9,
+        "n": 45,
+        "baseline_correct_n": 10,
+        "baseline_incorrect_n": 31,
+        "correct_to_incorrect": 0,
+        "correct_to_abstain": 3,
+        "incorrect_to_correct": 3,
+        "accuracy_pct": 26.666666666666668,
+        "harm_pct": 0.0,
+        "repair_pct": 9.67741935483871
+      },
+      "C5": {
+        "abstain": 14,
+        "correct": 9,
+        "incorrect": 22,
+        "n": 45,
+        "baseline_correct_n": 10,
+        "baseline_incorrect_n": 31,
+        "correct_to_incorrect": 1,
+        "correct_to_abstain": 4,
+        "incorrect_to_correct": 3,
+        "accuracy_pct": 20.0,
+        "harm_pct": 10.0,
+        "repair_pct": 9.67741935483871
+      }
+    }
+  },
+  "effects": {
+    "deepseek": {
+      "RQ1_C2_minus_C1_harm": {
+        "difference_pp": 0.0,
+        "ci95_pp": null,
+        "eligible_cells": 4,
+        "question_clusters": 15,
+        "eligible_question_clusters": 4,
+        "bootstrap_iterations": 0,
+        "bootstrap_status": "degenerate_no_observed_cluster_variation",
+        "interpretation": "Zero observed contrast is not proof of equivalence; empirical bootstrap cannot estimate uncertainty here."
+      },
+      "RQ2_C3_minus_C2_harm": {
+        "difference_pp": 0.0,
+        "ci95_pp": null,
+        "eligible_cells": 4,
+        "question_clusters": 15,
+        "eligible_question_clusters": 4,
+        "bootstrap_iterations": 0,
+        "bootstrap_status": "degenerate_no_observed_cluster_variation",
+        "interpretation": "Zero observed contrast is not proof of equivalence; empirical bootstrap cannot estimate uncertainty here."
+      },
+      "control_C5_minus_C4_repair": {
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          -30.0,
+          33.333333333333336
+        ],
+        "eligible_cells": 9,
+        "question_clusters": 15,
+        "bootstrap_iterations": 5000,
+        "interpretation": "Descriptive paired contrast; question-cluster percentile bootstrap, fixed tested models."
+      }
+    },
+    "kimi": {
+      "RQ1_C2_minus_C1_harm": {
+        "difference_pp": 0.0,
+        "ci95_pp": null,
+        "eligible_cells": 4,
+        "question_clusters": 15,
+        "eligible_question_clusters": 4,
+        "bootstrap_iterations": 0,
+        "bootstrap_status": "degenerate_no_observed_cluster_variation",
+        "interpretation": "Zero observed contrast is not proof of equivalence; empirical bootstrap cannot estimate uncertainty here."
+      },
+      "RQ2_C3_minus_C2_harm": {
+        "difference_pp": 0.0,
+        "ci95_pp": null,
+        "eligible_cells": 4,
+        "question_clusters": 15,
+        "eligible_question_clusters": 4,
+        "bootstrap_iterations": 0,
+        "bootstrap_status": "degenerate_no_observed_cluster_variation",
+        "interpretation": "Zero observed contrast is not proof of equivalence; empirical bootstrap cannot estimate uncertainty here."
+      },
+      "control_C5_minus_C4_repair": {
+        "difference_pp": -10.0,
+        "ci95_pp": [
+          -33.333333333333336,
+          0.0
+        ],
+        "eligible_cells": 10,
+        "question_clusters": 15,
+        "bootstrap_iterations": 5000,
+        "interpretation": "Descriptive paired contrast; question-cluster percentile bootstrap, fixed tested models."
+      }
+    },
+    "minimax": {
+      "RQ1_C2_minus_C1_harm": {
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          -100.0,
+          100.0
+        ],
+        "eligible_cells": 2,
+        "question_clusters": 15,
+        "bootstrap_iterations": 5000,
+        "interpretation": "Descriptive paired contrast; question-cluster percentile bootstrap, fixed tested models."
+      },
+      "RQ2_C3_minus_C2_harm": {
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          -100.0,
+          100.0
+        ],
+        "eligible_cells": 2,
+        "question_clusters": 15,
+        "bootstrap_iterations": 5000,
+        "interpretation": "Descriptive paired contrast; question-cluster percentile bootstrap, fixed tested models."
+      },
+      "control_C5_minus_C4_repair": {
+        "difference_pp": 8.333333333333334,
+        "ci95_pp": [
+          0.0,
+          25.04166666666606
+        ],
+        "eligible_cells": 12,
+        "question_clusters": 15,
+        "bootstrap_iterations": 5000,
+        "interpretation": "Descriptive paired contrast; question-cluster percentile bootstrap, fixed tested models."
+      }
+    },
+    "pooled": {
+      "RQ1_C2_minus_C1_harm": {
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          -25.0,
+          33.333333333333336
+        ],
+        "eligible_cells": 10,
+        "question_clusters": 15,
+        "bootstrap_iterations": 5000,
+        "interpretation": "Descriptive paired contrast; question-cluster percentile bootstrap, fixed tested models."
+      },
+      "RQ2_C3_minus_C2_harm": {
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          -33.333333333333336,
+          25.0
+        ],
+        "eligible_cells": 10,
+        "question_clusters": 15,
+        "bootstrap_iterations": 5000,
+        "interpretation": "Descriptive paired contrast; question-cluster percentile bootstrap, fixed tested models."
+      },
+      "control_C5_minus_C4_repair": {
+        "difference_pp": 0.0,
+        "ci95_pp": [
+          -12.510080645161286,
+          13.793103448275861
+        ],
+        "eligible_cells": 31,
+        "question_clusters": 15,
+        "bootstrap_iterations": 5000,
+        "interpretation": "Descriptive paired contrast; question-cluster percentile bootstrap, fixed tested models."
+      }
+    }
+  },
+  "usage": {
+    "deepseek": {
+      "calls": 105,
+      "statuses": {
+        "ok": 105
+      },
+      "input_tokens": 25804,
+      "output_tokens": 6753,
+      "cost_upper_cny": 0.85373,
+      "median_latency_seconds": 1.5073322921525687,
+      "returned_models": [
+        "deepseek-v4-pro"
+      ]
+    },
+    "kimi": {
+      "calls": 105,
+      "statuses": {
+        "ok": 105
+      },
+      "input_tokens": 27460,
+      "output_tokens": 8212,
+      "cost_upper_cny": 0.9598,
+      "median_latency_seconds": 2.580818416783586,
+      "returned_models": [
+        "kimi-k2.6"
+      ]
+    },
+    "minimax": {
+      "calls": 105,
+      "statuses": {
+        "ok": 105
+      },
+      "input_tokens": 41416,
+      "output_tokens": 6331,
+      "cost_upper_cny": 0.0,
+      "median_latency_seconds": 3.2007655000779778,
+      "returned_models": [
+        "MiniMax-M3"
+      ]
+    }
+  },
+  "independent_human_review_complete": false,
+  "adjudications_sha256": "0a7d8d5c03f895e40d34efa9df502e9910b1d53ca67577f6bbefdc778e5638f9"
+}

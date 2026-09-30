@@ -1,0 +1,24 @@
+{
+  "status": "proposal",
+  "reviewer": "Codex",
+  "independent_human_review_complete": false,
+  "timestamp": "2026-09-30T16:53:40.122711+00:00",
+  "questions_sha256": "decc779ac9b871acd908ea7e64b36a2c55ee6fd85705858af6f804dac993198b",
+  "materials_sha256": "ad248128d792252b6156c6c15bbbf33611c963ab1f2cbd89ae986b01ab7fb1bc",
+  "raw_responses_sha256": "a601678e2fa9746d9855a4db2a631df286ade14d8ab21b8b80d484c125a36796",
+  "selected": 133,
+  "missing": [
+    "SV2943:kimi:correct",
+    "SV2943:minimax:correct",
+    "SV3369:kimi:correct",
+    "SV3945:minimax:correct",
+    "SV3507:kimi:correct",
+    "SV0459:minimax:correct",
+    "SV1274:minimax:wrong",
+    "SV3665:minimax:wrong",
+    "SV2973:kimi:correct",
+    "SV2973:minimax:correct",
+    "SV2684:kimi:correct"
+  ],
+  "rule": "First qualifying candidate of at most two; no receiver outcomes available at selection."
+}

@@ -1,0 +1,10 @@
+{
+  "421bf34ace4b2e832d030005478800afa86ed757b7d2d16756e6f5306b63f88b": {
+    "status": "abstain",
+    "target_adopted": false,
+    "reason": "Explicitly declines to determine the exact requested day/month/year; year-only answer does not claim an exact date.",
+    "reviewer": "Codex",
+    "independent_human_review_complete": false,
+    "review_interface": "No provider/condition/task ID in queue; reviewer is not independently blinded."
+  }
+}
