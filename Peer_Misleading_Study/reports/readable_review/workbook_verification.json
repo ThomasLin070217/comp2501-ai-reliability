@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "sheets": {
+    "1_核对来源": {
+      "rows": 6,
+      "all_data_cells_match": true,
+      "validation_lists": 1,
+      "frozen_header_rows": 7
+    },
+    "2_判断回答": {
+      "rows": 45,
+      "all_data_cells_match": true,
+      "validation_lists": 2,
+      "frozen_header_rows": 7
+    }
+  },
+  "reviewer_inputs_blank": true
+}

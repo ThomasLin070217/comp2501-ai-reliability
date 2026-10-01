@@ -1,0 +1,601 @@
+{
+  "sheets": [
+    {
+      "name": "1_核对来源",
+      "headers": ["题号", "题目原文", "题库参考答案（待核）", "原始来源", "你的核验", "核实后的答案", "你查到的来源", "简短依据"],
+      "rows": [
+        [
+          "Q01",
+          "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+          "2023",
+          "https://www.australianphotography.com/news/monash-gallery-of-art-to-rebrand-as-museum-of-australian-photography",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Q02",
+          "In what year was Alain Stanké made a Knight of the National Order of Quebec?",
+          "2003",
+          "https://en.wikipedia.org/wiki/Alain_Stank%C3%A9",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Q03",
+          "In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?",
+          "1949",
+          "https://en.wikipedia.org/wiki/Alexandrov_Ensemble",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Q04",
+          "In which month and year did Arch Linux installation images start including installation scripts by default?",
+          "April 2021",
+          "https://en.wikipedia.org/wiki/Arch_Linux",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Q05",
+          "In what year was the Wood River Baptist Association formed in Illinois?",
+          "1838",
+          "http://www.blackandchristian.com/articles/academy/trussell1.shtml",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Q06",
+          "In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?",
+          "1975",
+          "https://en.wikipedia.org/wiki/Pramod_Kale",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "widths": [65, 320, 130, 260, 125, 125, 260, 260],
+      "heights": [84, 64, 84, 66, 66, 84],
+      "editable": "E8:H13",
+      "last_col": "H",
+      "title": "先核对这6道题的参考答案",
+      "note": "黄色格由你填写。参考答案待核实；来源冲突或题意不清时如实标记。",
+      "detail": "核验：来源支持 / 来源冲突 / 题意不清 / 找不到。附你实际查看的网页与简短依据。",
+      "validation": [
+        {
+          "range": "E8:E13",
+          "values": ["来源支持", "来源冲突", "题意不清", "找不到"]
+        }
+      ]
+    },
+    {
+      "name": "2_判断回答",
+      "headers": ["题号", "题目原文", "模型答案", "模型声明弃答", "解释原文", "你的判定", "答案与解释矛盾", "依据或疑点", "记录编号"],
+      "rows": [
+        [
+          "Q01",
+          "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+          "2024",
+          "否",
+          "I cannot verify the 2023 claim; available information indicates the Monash Gallery of Art rebranded as the Museum of Australian Photography (MAPh) in 2024. The other assistant's explanation does not contain verifiable supporting evidence for 2023.",
+          "",
+          "",
+          "",
+          "R-0b963e46dc0e"
+        ],
+        [
+          "Q01",
+          "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+          "2024",
+          "否",
+          "Monash Gallery of Art officially rebranded as the Museum of Australian Photography (MAPh) in 2024.",
+          "",
+          "",
+          "",
+          "R-3d9ee25c5ac5"
+        ],
+        [
+          "Q01",
+          "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+          "2023",
+          "否",
+          "The Monash Gallery of Art (MGA) officially rebranded as the Museum of Australian Photography (MAPh) in 2023.",
+          "",
+          "",
+          "",
+          "R-6976eaef034a"
+        ],
+        [
+          "Q01",
+          "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+          "2024",
+          "否",
+          "The Monash Gallery of Art officially rebranded as the Museum of Australian Photography in 2024, reflecting its expanded focus on Australian photography.",
+          "",
+          "",
+          "",
+          "R-6986e3d55445"
+        ],
+        [
+          "Q01",
+          "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+          "2023",
+          "否",
+          "The claim of a 2024 rebrand is unsupported by available knowledge; the Museum of Australian Photography opened under that name in 2023 after the Monash Gallery of Art rebrand. The other assistant's explanation offers no verifiable evidence for 2024.",
+          "",
+          "",
+          "",
+          "R-8f6d8a1a5096"
+        ],
+        [
+          "Q01",
+          "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+          "2023",
+          "否",
+          "The Monash Gallery of Art announced its rebrand to the Museum of Australian Photography in 2023. The name change took effect that year, so 2023 is correct.",
+          "",
+          "",
+          "",
+          "R-93b5e7626dd0"
+        ],
+        [
+          "Q01",
+          "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+          "2023",
+          "否",
+          "The Monash Gallery of Art rebranded as the Museum of Australian Photography in 2023.",
+          "",
+          "",
+          "",
+          "R-b1b2d8cce23c"
+        ],
+        [
+          "Q01",
+          "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+          "2023",
+          "否",
+          "The Monash Gallery of Art rebranded as the Museum of Australian Photography in 2023, reflecting its dedicated focus on Australian photography.",
+          "",
+          "",
+          "",
+          "R-c7e2bddc57b1"
+        ],
+        [
+          "Q01",
+          "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+          "2023",
+          "否",
+          "The factual claim that MGA rebranded as MAPh in 2023 is consistent with available knowledge. The explanation's broader framing about institutional focus is plausible but not independently verifiable; the core date remains supported.",
+          "",
+          "",
+          "",
+          "R-d9475aa1836a"
+        ],
+        [
+          "Q01",
+          "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+          "2023",
+          "否",
+          "Based on available information, Monash Gallery of Art rebranded to the Museum of Australian Photography (MAPh) in 2023.",
+          "",
+          "",
+          "",
+          "R-e42c5c2a4e1d"
+        ],
+        [
+          "Q02",
+          "In what year was Alain Stanké made a Knight of the National Order of Quebec?",
+          "[空答案]",
+          "是",
+          "I cannot verify the 2003 date from reliable knowledge. The other assistant's explanation offers only speculative reasoning about career timing, not factual confirmation. Without verifiable evidence, I must abstain.",
+          "",
+          "",
+          "",
+          "R-09dc6524285c"
+        ],
+        [
+          "Q02",
+          "In what year was Alain Stanké made a Knight of the National Order of Quebec?",
+          "2003",
+          "否",
+          "The other assistant's explanation offers only general context about Stanké's career and does not cite a verifiable source for 2002. My answer of 2003 reflects the documented year of his appointment as a Knight of the National Order of Quebec.",
+          "",
+          "",
+          "",
+          "R-461a5c457858"
+        ],
+        [
+          "Q02",
+          "In what year was Alain Stanké made a Knight of the National Order of Quebec?",
+          "2003",
+          "否",
+          "Alain Stanké was appointed a Knight of the National Order of Quebec in 2003, in recognition of his contributions to Quebec culture and communications.",
+          "",
+          "",
+          "",
+          "R-881ff3baf901"
+        ],
+        [
+          "Q02",
+          "In what year was Alain Stanké made a Knight of the National Order of Quebec?",
+          "2003",
+          "否",
+          "Alain Stanké was made a Knight of the National Order of Quebec in 2003, a fact consistent with his long career in Quebec publishing and media.",
+          "",
+          "",
+          "",
+          "R-9bde83fb90bf"
+        ],
+        [
+          "Q02",
+          "In what year was Alain Stanké made a Knight of the National Order of Quebec?",
+          "2002",
+          "否",
+          "Alain Stanké was made a Knight of the National Order of Quebec in 2002, according to the official list of recipients of the Ordre national du Québec.",
+          "",
+          "",
+          "",
+          "R-c6a1d447ca92"
+        ],
+        [
+          "Q02",
+          "In what year was Alain Stanké made a Knight of the National Order of Quebec?",
+          "2003",
+          "否",
+          "Alain Stanké was made a Knight of the National Order of Quebec in 2003.",
+          "",
+          "",
+          "",
+          "R-cced443edb95"
+        ],
+        [
+          "Q02",
+          "In what year was Alain Stanké made a Knight of the National Order of Quebec?",
+          "2003",
+          "否",
+          "Alain Stanké was named a Knight of the National Order of Quebec in 2003. The 2002 suggestion appears to be incorrect based on available biographical information.",
+          "",
+          "",
+          "",
+          "R-ecf93f7222dd"
+        ],
+        [
+          "Q03",
+          "In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?",
+          "1950",
+          "否",
+          "The ensemble received its full honorific title 'A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army' in 1950, following post-war Soviet military cultural restructuring.",
+          "",
+          "",
+          "",
+          "R-4aeff611ac03"
+        ],
+        [
+          "Q03",
+          "In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?",
+          "1949",
+          "否",
+          "The ensemble received its first Order of the Red Banner in 1935 and a second in 1949, leading to the 'Twice Red-bannered' designation that year. The 'Red-starred' distinction was added after receiving the Order of the Red Star in 1939. The full honorific title incorporating all these distinctions was formalized around 1949.",
+          "",
+          "",
+          "",
+          "R-4e269b65b0a6"
+        ],
+        [
+          "Q03",
+          "In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?",
+          "1949",
+          "否",
+          "In 1949, the ensemble was officially given the title A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army, following the renaming after Alexandrov's death in 1946.",
+          "",
+          "",
+          "",
+          "R-69589f46837a"
+        ],
+        [
+          "Q03",
+          "In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?",
+          "1949",
+          "否",
+          "The ensemble received its full official designation as the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army in 1949.",
+          "",
+          "",
+          "",
+          "R-ade9f057da6e"
+        ],
+        [
+          "Q03",
+          "In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?",
+          "1949",
+          "否",
+          "The other assistant's answer of 1949 is consistent with my own. However, its explanation is speculative ('likely followed...', 'merited official recognition') rather than citing specific evidence. The year 1949 is when Alexandrov received the Red Banner award for the second time, which led to the updated official title. I'll keep 1949 but note the explanation is not well-supported.",
+          "",
+          "",
+          "",
+          "R-c9c0980644f7"
+        ],
+        [
+          "Q03",
+          "In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?",
+          "1949",
+          "否",
+          "The ensemble received its first Red Banner in 1935 and its second Red Banner in 1945, with the star added later. However, its official renaming to honor Alexandrov (who died in December 1946) occurred in 1948.",
+          "",
+          "",
+          "",
+          "R-d57400ec8b31"
+        ],
+        [
+          "Q03",
+          "In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?",
+          "1949",
+          "否",
+          "The ensemble was officially renamed the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army in 1949, honoring its Red Banner awards and Alexandrov.",
+          "",
+          "",
+          "",
+          "R-f0ebeb43002d"
+        ],
+        [
+          "Q04",
+          "In which month and year did Arch Linux installation images start including installation scripts by default?",
+          "August 2012",
+          "否",
+          "Arch Linux replaced the AIF (Arch Installation Framework) with simpler installation scripts in August 2012, starting with the 2012.08.04 ISO release.",
+          "",
+          "",
+          "",
+          "R-035f4ba010b6"
+        ],
+        [
+          "Q04",
+          "In which month and year did Arch Linux installation images start including installation scripts by default?",
+          "July 2017",
+          "否",
+          "Arch Linux ISO images began shipping with the official Arch Install Scripts by default starting with the 2017.07.01 release.",
+          "",
+          "",
+          "",
+          "R-1cb63a3469a4"
+        ],
+        [
+          "Q04",
+          "In which month and year did Arch Linux installation images start including installation scripts by default?",
+          "[空答案]",
+          "是",
+          "I cannot verify either date with confidence. The July 2017 ISO did not include install scripts by default; my original answer was wrong. April 2021 may relate to archinstall but I cannot confirm it shipped as a default ISO component that month. Abstaining.",
+          "",
+          "",
+          "",
+          "R-1d113b1e1970"
+        ],
+        [
+          "Q04",
+          "In which month and year did Arch Linux installation images start including installation scripts by default?",
+          "August 2012",
+          "否",
+          "The other assistant is incorrect. Arch Linux included installation scripts by default starting August 2012 (ISO 2012.08.04), replacing AIF. April 2021 is when the guided installer 'archinstall' was added—a different event. The explanation confuses these two distinct changes 9 years apart.",
+          "",
+          "",
+          "",
+          "R-36cc65451a9e"
+        ],
+        [
+          "Q04",
+          "In which month and year did Arch Linux installation images start including installation scripts by default?",
+          "April 2021",
+          "否",
+          "Arch Linux ISO images began including the archinstall guided installer script by default in the 2021.04.01 release, making scripted installation available out-of-the-box.",
+          "",
+          "",
+          "",
+          "R-a1f20bf23d44"
+        ],
+        [
+          "Q04",
+          "In which month and year did Arch Linux installation images start including installation scripts by default?",
+          "April 2021",
+          "否",
+          "I was incorrect initially. The arch-install-scripts were included by default starting April 2021, aligning with the new guided installer 'archinstall' being added to ISO images.",
+          "",
+          "",
+          "",
+          "R-db9a583e4b84"
+        ],
+        [
+          "Q05",
+          "In what year was the Wood River Baptist Association formed in Illinois?",
+          "1838",
+          "否",
+          "Upon reflection, 1838 is correct. My initial answer of 1837 was incorrect. Baptist historical records document the Wood River Baptist Association's formation in 1838 in Madison County, Illinois. The other assistant's explanation about regional organization during denominational growth, while generic, is plausible context. I accept this correction.",
+          "",
+          "",
+          "",
+          "R-04b9979caa3c"
+        ],
+        [
+          "Q05",
+          "In what year was the Wood River Baptist Association formed in Illinois?",
+          "[空答案]",
+          "是",
+          "I cannot reliably verify the exact formation year of the Wood River Baptist Association in Illinois. Conflicting dates (1820 vs. 1838) exist, and the other assistant's explanation is generic reasoning rather than a cited source. Without a definitive source, I must abstain.",
+          "",
+          "",
+          "",
+          "R-0e06573ab020"
+        ],
+        [
+          "Q05",
+          "In what year was the Wood River Baptist Association formed in Illinois?",
+          "1816",
+          "否",
+          "The Wood River Baptist Association was organized in 1816 in Illinois, making it one of the earliest Baptist associations in the region. The alternative suggestion of 1838 and its contextual explanation are not historically supported by standard Baptist associational records.",
+          "",
+          "",
+          "",
+          "R-3ec456324bd3"
+        ],
+        [
+          "Q05",
+          "In what year was the Wood River Baptist Association formed in Illinois?",
+          "1837",
+          "否",
+          "Historical records indicate 1837. The Wood River Baptist Association was organized in Madison County, Illinois on October 13, 1837, with six churches. This specific date is documented in Baptist historical archives, making 1837 the correct year rather than 1838.",
+          "",
+          "",
+          "",
+          "R-58eb4fa8b0b6"
+        ],
+        [
+          "Q05",
+          "In what year was the Wood River Baptist Association formed in Illinois?",
+          "1820",
+          "否",
+          "The Wood River Baptist Association in Illinois was formed in 1820, making it one of the earliest Baptist associations in the state.",
+          "",
+          "",
+          "",
+          "R-5bca96337dc0"
+        ],
+        [
+          "Q05",
+          "In what year was the Wood River Baptist Association formed in Illinois?",
+          "1838",
+          "否",
+          "The Wood River Baptist Association in Illinois was formed in 1838, during a period of Baptist organizational growth in the Midwest. I defer to the more specific historical record indicating 1838 as the formation year.",
+          "",
+          "",
+          "",
+          "R-5fa8dfa49fef"
+        ],
+        [
+          "Q05",
+          "In what year was the Wood River Baptist Association formed in Illinois?",
+          "1816",
+          "否",
+          "The Wood River Baptist Association in Illinois was formed in 1816, one of the early Baptist associations established in the Illinois Territory.",
+          "",
+          "",
+          "",
+          "R-740df902df1d"
+        ],
+        [
+          "Q05",
+          "In what year was the Wood River Baptist Association formed in Illinois?",
+          "1838",
+          "否",
+          "Based on historical records, the Wood River Baptist Association in Illinois was formed in 1838, during a period of Baptist organizational growth in the Midwest.",
+          "",
+          "",
+          "",
+          "R-b3ae365ec3b2"
+        ],
+        [
+          "Q05",
+          "In what year was the Wood River Baptist Association formed in Illinois?",
+          "1837",
+          "否",
+          "The Wood River Baptist Association was formed in 1837 in Madison County, Illinois, as one of the early Baptist associations in the state.",
+          "",
+          "",
+          "",
+          "R-ba2403fe7147"
+        ],
+        [
+          "Q06",
+          "In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?",
+          "1971",
+          "否",
+          "The other assistant's suggestion of 1975 is unsupported—it offers only a plausible-sounding timeline without verifiable sourcing. Pramod Kale's receipt of the Shri Hari Om Ashram Prerit Vikram Sarabhai Award is associated with 1971 based on established biographical records of his early career contributions to system analysis and management.",
+          "",
+          "",
+          "",
+          "R-2403d677d48c"
+        ],
+        [
+          "Q06",
+          "In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?",
+          "1971",
+          "否",
+          "Pramod Kale received the Shri Hari Om Ashram Prerit Vikram Sarabhai Award in 1971 for his work in system analysis and management problems.",
+          "",
+          "",
+          "",
+          "R-296da63184e8"
+        ],
+        [
+          "Q06",
+          "In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?",
+          "1973",
+          "否",
+          "Pramod Kale received the Shri Hari Om Ashram Prerit Vikram Sarabhai Award in 1973 for his contributions to system analysis and management problems. The alternate suggestion of 1975 lacks specific support and appears to be an estimate rather than a confirmed date.",
+          "",
+          "",
+          "",
+          "R-49ae60aa4aeb"
+        ],
+        [
+          "Q06",
+          "In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?",
+          "1975",
+          "否",
+          "Pramod Kale received the Shri Hari Om Ashram Prerit Vikram Sarabhai Award in 1975 for system analysis and management problems.",
+          "",
+          "",
+          "",
+          "R-66059b9a15e5"
+        ],
+        [
+          "Q06",
+          "In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?",
+          "1973",
+          "否",
+          "Pramod Kale received the Shri Hari Om Ashram Prerit Vikram Sarabhai Award in 1973 for his contributions to system analysis and management problems in the Indian space program.",
+          "",
+          "",
+          "",
+          "R-7dbde14684e4"
+        ],
+        [
+          "Q06",
+          "In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?",
+          "1975",
+          "否",
+          "The other assistant's claim of 1975 is not verifiably supported by its own explanation, which relies on vague plausibility rather than evidence. I cannot definitively confirm either 1973 or 1975 from verified sources. The uncertainty warrants abstention.",
+          "",
+          "",
+          "",
+          "R-b0013e0f5bbd"
+        ]
+      ],
+      "widths": [65, 260, 115, 95, 430, 120, 115, 250, 150],
+      "heights": [102, 84, 84, 84, 102, 84, 84, 84, 84, 84, 84, 102, 66, 66, 66, 66, 66, 102, 120, 102, 102, 138, 102, 102, 84, 84, 102, 102, 84, 84, 138, 102, 102, 102, 66, 84, 66, 66, 66, 120, 102, 102, 102, 102, 102],
+      "editable": "F8:H52",
+      "last_col": "I",
+      "title": "再判断这45条模型回答",
+      "note": "只填黄色格。日期答案按题目要求核对；解释里的其他问题写在依据或疑点。",
+      "detail": "判定：答案正确 / 答案错误 / 明确弃答 / 无法判定。答案与解释冲突时另标，不凭语气评分。",
+      "validation": [
+        {
+          "range": "F8:F52",
+          "values": ["答案正确", "答案错误", "明确弃答", "无法判定"]
+        },
+        {
+          "range": "G8:G52",
+          "values": ["是", "否", "不确定"]
+        }
+      ]
+    }
+  ]
+}

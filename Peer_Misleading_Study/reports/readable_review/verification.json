@@ -1,0 +1,16 @@
+{
+  "input_sha256": "5c27f6cccec096ef8dd1f2374ab3a1b1dc01e28ad1c26c63bdb47878dae1f379",
+  "responses": 216,
+  "priority_responses": 45,
+  "priority_questions": 6,
+  "remaining_responses": 171,
+  "remaining_questions": 45,
+  "parse_modes": {
+    "json": 215,
+    "prose_plus_json": 1
+  },
+  "original_answers_and_reasons_preserved": true,
+  "review_fields_blank": true,
+  "primary_scores_changed": false,
+  "independent_human_review_complete": false
+}
