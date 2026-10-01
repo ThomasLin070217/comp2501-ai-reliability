@@ -66,10 +66,17 @@ def main():
     ad = json.loads(a.adjudications.read_text())
     filtered, audit = filter_quality(qs, rs, ad)
     save_analysis(a.out/'unfiltered_diagnostic', qs, rs, ad)
+    (a.out/'unfiltered_diagnostic/README.md').write_text(
+        '# 未过滤诊断输出\n\n这里保留冻结分析器直接处理全部原始响应的结果。'
+        '正文不可判分的记录刻意保留 pending；这些表不能当作完整可判分的正式效应。'
+        '报告使用上一层 summary.json 的完整配对分析，并公开 output_quality.json '
+        '及 sensitivity.json。原始 API 数据没有删除或重新调用。\n')
     summary = save_analysis(a.out, qs, filtered, ad)
     if summary['unresolved_grades'] or summary['incomplete_cells']:
         raise ValueError('Filtered analysis still has unresolved or incomplete cells')
     summary['output_quality'] = audit
+    if (a.responses.parent/'assembly.json').exists():
+        summary['collection'] = json.loads((a.responses.parent/'assembly.json').read_text())
     write_json(a.out/'summary.json', summary)
     write_json(a.out/'output_quality.json', audit)
     # Disposable derivative for downstream CLI tools; complete raw data remains in runs/.

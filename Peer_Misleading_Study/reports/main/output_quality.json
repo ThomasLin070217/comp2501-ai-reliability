@@ -1,0 +1,34 @@
+{
+  "rule": "Exclude all seven responses of a cell containing an explicitly reviewed unscorable output.",
+  "post_freeze_amendment": "protocol/output-quality-amendment.md",
+  "raw_responses": 5040,
+  "analysis_responses": 5033,
+  "raw_records_sha256": "703443b14927ad96dcba63dbc9c9b45cfea89d380e5bfe406a19cde7d8ba6da2",
+  "analysis_records_sha256": "d17b2455bfd704721c448f0bc9ad5e66f0083181aac9e7a6155d911928fd847d",
+  "unscorable_outputs": [
+    {
+      "task_id": "SV0969:minimax:r1:C5",
+      "review_id": "106fd9f45a5be15c399282708be5ccb0809503e01250d7ebbc9737d153225fcc",
+      "reason": "Unscorable output: API reports end_turn but text stops inside the first month word, with no year, complete answer or explicit refusal. Do not infer a missing answer or treat it as a knowledge error.",
+      "text": "{\"answer\": \"Februar"
+    }
+  ],
+  "excluded_cells": [
+    [
+      "SV0969",
+      "minimax",
+      1
+    ]
+  ],
+  "excluded_task_ids": [
+    "SV0969:minimax:r1:baseline",
+    "SV0969:minimax:r1:C5",
+    "SV0969:minimax:r1:C2",
+    "SV0969:minimax:r1:C0",
+    "SV0969:minimax:r1:C4",
+    "SV0969:minimax:r1:C1",
+    "SV0969:minimax:r1:C3"
+  ],
+  "raw_data_deleted": false,
+  "responses_retried": false
+}

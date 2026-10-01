@@ -2,6 +2,14 @@
 
 以下命令从仓库根目录执行。核心采集、审计、判分和 bootstrap 只使用 Python 3.9+ 标准库。绘图另需 Matplotlib；本轮绘图环境为 Python 3.13 和 Matplotlib 3.11.2（最终环境清单以实际导出为准）。
 
+## 一条命令离线复算正式结果
+
+```bash
+python3 Peer_Misleading_Study/reproduce_main.py --out /tmp/comp2501-main-reproduction
+```
+
+输出目录必须为空。该入口只做装配、审计、判分、主比较、敏感性分析、用量汇总与案例导出，**不调用任何模型**。安装绘图依赖后追加 `--plots` 可生成图表和离线交互页面。下方给出分步骤命令。
+
 ## 离线：不调用模型、不需要凭证
 
 ```bash
@@ -16,12 +24,21 @@ python3 Peer_Misleading_Study/analyze.py \
 
 正式轮因发现接口正常结束但正文不可判分的输出，采用单独的 `quality_analyze.py` 包装冻结分析器；规则见 [输出质量修订](protocol/output-quality-amendment.md)。它保存未过滤诊断、质量排除记录和完整配对主分析，并生成下游使用的临时 `analysis_responses.jsonl`。派生响应副本不入 Git，完整原始响应始终位于 `runs/main_receivers/`。
 
-正式轮的对应输入为 `data/main_questions.jsonl`、`runs/main_receivers/responses.jsonl` 和 `data/main_adjudications.json`。报告中的主数值与区间应相同；重新生成时间戳不同不影响数值。复算输出放新目录，保留公开结果原件。
+正式轮发生两次已记录的 HTTP 502，补试记录单独保存在 `runs/main_transport_recovery_01/` 与 `runs/main_transport_recovery_02/`。第二次中断后的时间延期见 `protocol/morning-continuation.json`，原清单和日志前缀均保留。先用离线装配器验证并组合成功响应，原失败保留；规则见 [传输补跑记录](protocol/transport-recovery.md)。报告中的主数值与区间应相同；重新生成时间戳不同不影响数值。复算输出放新目录，保留公开结果原件。
 
 ```bash
+python3 Peer_Misleading_Study/assemble_receivers.py \
+  --run Peer_Misleading_Study/runs/main_receivers \
+  --recovery Peer_Misleading_Study/runs/main_transport_recovery_01 \
+  --recovery Peer_Misleading_Study/runs/main_transport_recovery_02 \
+  --continuation-amendment Peer_Misleading_Study/protocol/morning-continuation.json \
+  --questions Peer_Misleading_Study/data/main_questions.jsonl \
+  --materials Peer_Misleading_Study/data/main_frozen/materials.json \
+  --out /tmp/comp2501-main-assembled
+
 python3 Peer_Misleading_Study/quality_analyze.py \
   --questions Peer_Misleading_Study/data/main_questions.jsonl \
-  --responses Peer_Misleading_Study/runs/main_receivers/responses.jsonl \
+  --responses /tmp/comp2501-main-assembled/responses.jsonl \
   --adjudications Peer_Misleading_Study/data/main_adjudications.json \
   --out /tmp/comp2501-main-recomputed
 
@@ -32,7 +49,7 @@ python3 Peer_Misleading_Study/supplement.py \
 
 python3 Peer_Misleading_Study/sensitivity.py \
   --questions Peer_Misleading_Study/data/main_questions.jsonl \
-  --responses Peer_Misleading_Study/runs/main_receivers/responses.jsonl \
+  --responses /tmp/comp2501-main-assembled/responses.jsonl \
   --adjudications Peer_Misleading_Study/data/main_adjudications.json \
   --caveats Peer_Misleading_Study/data/main_preanalysis_caveats.json \
   --out /tmp/comp2501-main-recomputed/sensitivity.json
@@ -52,7 +69,7 @@ python3 Peer_Misleading_Study/report_tables.py \
 python3 Peer_Misleading_Study/audit_run.py \
   --questions Peer_Misleading_Study/data/main_questions.jsonl \
   --materials Peer_Misleading_Study/data/main_frozen/materials.json \
-  --run Peer_Misleading_Study/runs/main_receivers
+  --run /tmp/comp2501-main-assembled
 ```
 
 绘图需要额外安装依赖，可在独立虚拟环境中运行：

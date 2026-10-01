@@ -8,10 +8,18 @@
 
 - 已完成网络文献检索、历史错误案例整理、固定题库下载与来源检查。
 - 开发轮：15 道合格题，3 模型，315 次接收响应；初始正确 10/45。各组完整结果见开发报告。
-- 正式轮：120 题、720 槽建议、提示词和评分代码已冻结；正在采集 **5,040 次接收响应**。
+- 正式轮已完成：120 题、**5,040 条返回响应**（含一条不可判分正文），实际 5,042 次请求；主分析纳入 719 个完整配对单元、5,033 条响应。
+- 实测错题库：108 题至少一次初答错误，7 题六次初答全部判错；全部题与原文均保留。
+- 离线两次复算的 30 项产物一致（忽略生成时间），18 项测试通过。延期与方法偏离已披露。
 - 独立人工复核尚未完成。来源审查和需要语义判断的评分由 Codex 执行，不能称作人类标注。
 
 本轮的实际执行授权见 [CHAT_CONTEXT.md · U10](CHAT_CONTEXT.md#u10)，取代旧暂停状态。AI 每次回答前须读完整最新上下文；入口规则见 [AGENTS.md](AGENTS.md)。
+
+## 主要结果
+
+错误日期附加解释未显示更高的带偏率（5/154 → 3/154；差 −1.30 个百分点，95% 区间 [-5.45, +2.15]）。同材料下结构化核验观察到 3/154 → 0/154，但事件少、区间触及零；拒答明显增多。面对正确建议，真正纠错由 76/322 降到 45/322（差 −9.63 个百分点，95% 区间 [-14.19, -4.98]）。不能把更少采纳错误直接解释成准确率提高。
+
+先看[正式报告](Peer_Misleading_Study/reports/main-report.md)、[统计表](Peer_Misleading_Study/reports/main/statistics.md)、[实测错题库](Peer_Misleading_Study/reports/main/error_bank/README.md)和[交互结果页](Peer_Misleading_Study/reports/main/results.html)。本轮结论限于所选困难日期题、模型与参数；尚无独立人工复核。
 
 ## 阅读顺序
 
@@ -37,6 +45,7 @@
 ## 复算与许可
 
 ```bash
+python3 Peer_Misleading_Study/reproduce_main.py --out /tmp/comp2501-main-reproduction
 python3 -m unittest discover -s Peer_Misleading_Study -p 'test_*.py' -v
 ```
 

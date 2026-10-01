@@ -1,0 +1,209 @@
+{
+  "created_at": "2026-10-01T01:18:53.441109+00:00",
+  "note": "Guard estimate, not invoice. HKU MiniMax price unknown; its zero monetary guard is not a free-price claim.",
+  "guard_rates_cny_per_million": {
+    "paid_input": 20,
+    "paid_output": 50
+  },
+  "total": {
+    "calls": 6766,
+    "statuses": {
+      "ok": 6764,
+      "error": 2
+    },
+    "usage_unavailable_calls": 2,
+    "input_tokens": 1986987,
+    "output_tokens": 478422,
+    "cost_guard_cny": 38.33952,
+    "median_latency_seconds": 2.002721062512137,
+    "returned_models": [
+      "MiniMax-M3",
+      "deepseek-v4-pro",
+      "kimi-k2.6",
+      "unavailable"
+    ],
+    "first_request_utc": "2026-09-30T16:37:17.146946+00:00",
+    "last_request_utc": "2026-10-01T01:18:29.392482+00:00"
+  },
+  "stages": {
+    "dev_materials": {
+      "calls": 215,
+      "statuses": {
+        "ok": 215
+      },
+      "usage_unavailable_calls": 0,
+      "input_tokens": 52189,
+      "output_tokens": 23456,
+      "cost_guard_cny": 1.28088,
+      "median_latency_seconds": 3.4628315418958664,
+      "returned_models": [
+        "MiniMax-M3",
+        "deepseek-v4-pro",
+        "kimi-k2.6"
+      ],
+      "first_request_utc": "2026-09-30T16:37:17.146946+00:00",
+      "last_request_utc": "2026-09-30T16:43:14.389253+00:00"
+    },
+    "dev_materials_v1_1": {
+      "calls": 146,
+      "statuses": {
+        "ok": 146
+      },
+      "usage_unavailable_calls": 0,
+      "input_tokens": 45875,
+      "output_tokens": 12422,
+      "cost_guard_cny": 0.90744,
+      "median_latency_seconds": 2.8992802085122094,
+      "returned_models": [
+        "MiniMax-M3",
+        "deepseek-v4-pro",
+        "kimi-k2.6"
+      ],
+      "first_request_utc": "2026-09-30T16:48:45.571036+00:00",
+      "last_request_utc": "2026-09-30T16:51:51.346403+00:00"
+    },
+    "dev_receivers": {
+      "calls": 315,
+      "statuses": {
+        "ok": 315
+      },
+      "usage_unavailable_calls": 0,
+      "input_tokens": 94680,
+      "output_tokens": 21296,
+      "cost_guard_cny": 1.81353,
+      "median_latency_seconds": 2.4116400410421193,
+      "returned_models": [
+        "MiniMax-M3",
+        "deepseek-v4-pro",
+        "kimi-k2.6"
+      ],
+      "first_request_utc": "2026-09-30T16:53:40.382070+00:00",
+      "last_request_utc": "2026-09-30T17:00:36.964277+00:00"
+    },
+    "main_materials": {
+      "calls": 1048,
+      "statuses": {
+        "ok": 1048
+      },
+      "usage_unavailable_calls": 0,
+      "input_tokens": 326625,
+      "output_tokens": 87280,
+      "cost_guard_cny": 6.27059,
+      "median_latency_seconds": 2.913901437073946,
+      "returned_models": [
+        "MiniMax-M3",
+        "deepseek-v4-pro",
+        "kimi-k2.6"
+      ],
+      "first_request_utc": "2026-09-30T17:01:57.546268+00:00",
+      "last_request_utc": "2026-09-30T17:25:50.925505+00:00"
+    },
+    "main_receivers": {
+      "calls": 5040,
+      "statuses": {
+        "ok": 5038,
+        "error": 2
+      },
+      "usage_unavailable_calls": 2,
+      "input_tokens": 1466799,
+      "output_tokens": 333843,
+      "cost_guard_cny": 28.06708,
+      "median_latency_seconds": 1.7192616870161146,
+      "returned_models": [
+        "MiniMax-M3",
+        "deepseek-v4-pro",
+        "kimi-k2.6",
+        "unavailable"
+      ],
+      "first_request_utc": "2026-09-30T17:28:59.874903+00:00",
+      "last_request_utc": "2026-10-01T01:18:29.392482+00:00"
+    },
+    "main_transport_recovery_01": {
+      "calls": 1,
+      "statuses": {
+        "ok": 1
+      },
+      "usage_unavailable_calls": 0,
+      "input_tokens": 426,
+      "output_tokens": 61,
+      "cost_guard_cny": 0.0,
+      "median_latency_seconds": 3.4283092089463025,
+      "returned_models": [
+        "MiniMax-M3"
+      ],
+      "first_request_utc": "2026-09-30T18:22:22.646536+00:00",
+      "last_request_utc": "2026-09-30T18:22:22.646536+00:00"
+    },
+    "main_transport_recovery_02": {
+      "calls": 1,
+      "statuses": {
+        "ok": 1
+      },
+      "usage_unavailable_calls": 0,
+      "input_tokens": 393,
+      "output_tokens": 64,
+      "cost_guard_cny": 0.0,
+      "median_latency_seconds": 3.934666708111763,
+      "returned_models": [
+        "MiniMax-M3"
+      ],
+      "first_request_utc": "2026-10-01T00:42:10.974813+00:00",
+      "last_request_utc": "2026-10-01T00:42:10.974813+00:00"
+    }
+  },
+  "providers": {
+    "deepseek": {
+      "calls": 2250,
+      "statuses": {
+        "ok": 2250
+      },
+      "usage_unavailable_calls": 0,
+      "input_tokens": 539182,
+      "output_tokens": 148478,
+      "cost_guard_cny": 18.20754,
+      "median_latency_seconds": 1.53442460403312,
+      "returned_models": [
+        "deepseek-v4-pro"
+      ],
+      "first_request_utc": "2026-09-30T16:37:17.146946+00:00",
+      "last_request_utc": "2026-09-30T18:11:32.829251+00:00",
+      "money_price_known": true
+    },
+    "kimi": {
+      "calls": 2229,
+      "statuses": {
+        "ok": 2229
+      },
+      "usage_unavailable_calls": 0,
+      "input_tokens": 562924,
+      "output_tokens": 177470,
+      "cost_guard_cny": 20.13198,
+      "median_latency_seconds": 1.7257386250421405,
+      "returned_models": [
+        "kimi-k2.6"
+      ],
+      "first_request_utc": "2026-09-30T16:37:17.147130+00:00",
+      "last_request_utc": "2026-09-30T18:15:56.122261+00:00",
+      "money_price_known": true
+    },
+    "minimax": {
+      "calls": 2287,
+      "statuses": {
+        "ok": 2285,
+        "error": 2
+      },
+      "usage_unavailable_calls": 2,
+      "input_tokens": 884881,
+      "output_tokens": 152474,
+      "cost_guard_cny": 0.0,
+      "median_latency_seconds": 3.0450405839364976,
+      "returned_models": [
+        "MiniMax-M3",
+        "unavailable"
+      ],
+      "first_request_utc": "2026-09-30T16:37:17.147240+00:00",
+      "last_request_utc": "2026-10-01T01:18:29.392482+00:00",
+      "money_price_known": false
+    }
+  }
+}

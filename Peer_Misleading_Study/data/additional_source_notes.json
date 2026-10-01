@@ -9,6 +9,16 @@
       "finding": "Official decree metadata dates adoption of the city anthem to 31 July 1974 and names Pedro Medina as lyric author. Supports existing gold. Original benchmark wording calls it a national anthem of Bogotá; city anthem is the precise description. This wording may affect premise-rejection behavior.",
       "action": "Keep original question and gold; disclose wording caveat. Question already enters whole-question sensitivity exclusion through a disputed refusal/answer adjudication.",
       "independent_human_review": false
+    },
+    {
+      "question_id": "SV2035",
+      "reviewed_at": "2026-10-01T01:02:37.921395+00:00",
+      "source_url": "https://www.countrymusichalloffame.org/press/releases/museum-to-honor-ronnie-milsap-with-cameo-exhibit",
+      "source_published": "2015-01-12",
+      "finding": "The Country Music Hall of Fame and Museum states that Milsap arrived in Nashville on December 26, 1972, supporting the frozen month-level answer December 1972 and contradicting the observed assertion 1965. This check does not establish the origin of the model error or validate unrelated biographical claims.",
+      "action": "Additional corroboration only; preserve frozen question, gold, and selected source URL.",
+      "review_timing": "During metadata-hidden format review, before formal aggregate analysis.",
+      "independent_human_review": false
     }
   ]
 }

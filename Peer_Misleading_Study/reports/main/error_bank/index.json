@@ -1,0 +1,10 @@
+{
+  "scope": "Observed initial answers in this frozen, selected date-fact sample; no forced peer responses counted as initial errors.",
+  "questions_total": 120,
+  "questions_with_observed_initial_error": 108,
+  "questions_all_six_initial_answers_incorrect": 7,
+  "baseline_observations": 719,
+  "records_sha256": "d17b2455bfd704721c448f0bc9ad5e66f0083181aac9e7a6155d911928fd847d",
+  "grades_sha256": "2d7d7d559e6e6c15b0b4e9308bbbdc8761789e46bfa4bf749d69bd0012a6713d",
+  "independent_human_review_complete": false
+}

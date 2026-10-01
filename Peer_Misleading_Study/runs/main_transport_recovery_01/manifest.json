@@ -1,0 +1,12 @@
+{
+  "type": "explicit_single_transport_recovery",
+  "original_run": "main_receivers",
+  "original_task_id": "SV1501:minimax:r1:C4",
+  "original_failure_sha256": "350243485829a0465948fdc5e9a72abbd4aba86337c5c3b10e4ea2b0d9322d52",
+  "request_sha256": "7c64c10b9b19fc5d1a43e781c374f08693ab21b8893ae2ee79d3bdff35a64884",
+  "original_manifest_sha256": "59ba0bd864e6c07016fd4a4bd1091c309ef29bafb01a169bdc9e61054ff29bd2",
+  "reason": "HTTP gateway failure, no answer returned; one bounded retry, original failure retained.",
+  "max_new_calls": 1,
+  "budget_guard_cny": 100.0,
+  "deadline": "2026-10-01T00:00:00+00:00"
+}

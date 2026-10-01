@@ -72,3 +72,20 @@
 `data/main_adjudications.json` 中 `output_quality=unscorable_output` 表示正文确实不能恢复完整答案且未明确拒答；`status=pending` 刻意保留，不改成事实错误。其他 `disputed` 和 `alternative_status` 字段记录合理的替代判法。`sensitivity.json` 额外报告不可用输出作为运行失败或非回答计入的变体，这些不是对缺失事实答案的猜测。
 
 `incorrect` 是日期任务未答对：包含明确错误日期，也包含未明确拒答却未达到题目所需精度的答案。它不是逐句事实性标签。精度不足与“非空答案但明确拒答”的争议均保存替代判法，不能只报告有利口径。
+
+## 传输补跑与分析装配
+
+`runs/main_transport_recovery_01/` 保存 HTTP 502 后的一次显式补试，原失败在 `main_receivers/` 保留。`assemble_receivers.py` 只允许用完全相同请求的成功补试对应替换“没有返回答案的传输失败”，不允许替换答错、拒答或不可用的已返回正文。它把可用响应组合成离线派生文件，并逐条调用冻结请求审计。
+
+`reports/main/collection/assembly.json` 区分全部实际 API 尝试、原始失败、选用响应和补跑对应关系。派生 `responses.jsonl` / `attempts.jsonl` 不入 Git，可用复现命令重建；原始日志始终入库。`usage-ledger.json` 从各原始运行目录记账，不重复计算装配副本。发生网关错误时没有返回 token 用量，汇总只计已报告的 token，不能把缺失用量解释为确定零消耗。
+
+
+## 早间续跑与实测错误库
+
+`protocol/morning-continuation.json` 记录用户续跑原话、旧/新截止、原日志前缀哈希、剩余调用上限及原清单哈希。`continue_receivers.py` 不改原清单、提示或既有响应，只给新追加记录增加 `continuation_amendment_sha256`。`runs/main_transport_recovery_02` 保存第二条 HTTP 502 的单次恢复，原失败保留。
+
+`protocol/morning-analysis-note.json` 在正式聚合前记录额外时间敏感性规则：排除请求跨越原截止的配对单元；不把前后不同题目的表现差异说成模型漂移的因果证据。
+
+`reports/main/error_bank/all_questions_observed.jsonl` 汇总所有正式题在完整配对主分析中的实际初答。`observed_initial_error_bank.jsonl` 是其中 `observed_initial_error=true` 的便利视图，不是独立抽样题库。`initial_answers` 保留模型、重复、原文、判分理由、时间和请求哈希；`initial_observations` 是该题实际纳入的初答数；`all_six_initial_answers_incorrect` 仅在六次初答齐全且均为 incorrect 时为真。错误率分母不能从筛选后的错误库反推。
+
+`review_queue.py` 只导出未审阅非标准响应，隐藏条件/模型/任务标签，不自动产生人工复核身份。`reproduce_main.py` 是整个离线分析的命令入口，不调用 API。

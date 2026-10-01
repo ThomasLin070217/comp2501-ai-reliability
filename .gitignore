@@ -11,3 +11,5 @@ config.local.json
 credentials/
 secrets/
 Peer_Misleading_Study/reports/*/analysis_responses.jsonl
+Peer_Misleading_Study/reports/main/collection/responses.jsonl
+Peer_Misleading_Study/reports/main/collection/attempts.jsonl

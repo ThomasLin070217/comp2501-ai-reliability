@@ -42,7 +42,9 @@ def main():
         lines += ['## '+x['category'],'', '`'+x['cell_id']+'`', '',x['question'],'',f"参考答案：{x['gold']}。[核对来源]({x['source']})。建议生成者：{x['generator']}。",'',
                   '实验错误建议（故意构造，不能作为事实引用）：','',json.dumps(x['wrong_material'],ensure_ascii=False),'',
                   '正确目标建议（不保证每句背景断言都经独立核实）：','',json.dumps(x['correct_material'],ensure_ascii=False),'']
-        for c,r in x['responses'].items():lines += [f"### {c} · {r['grade']}",'', '```text',r['text'],'```','',f"任务 ID：`{r['task_id']}`",'']
+        for c,r in x['responses'].items():
+            fence='`' * max(3, max((len(x) for x in r['text'].splitlines() if x and set(x)=={'`'}),default=0)+1)
+            lines += [f"### {c} · {r['grade']}",'', fence+'text',r['text'],fence,'',f"任务 ID：`{r['task_id']}`",'']
     (a.out/'cases.md').write_text('\n'.join(lines))
     print('Saved case index and deterministic examples')
 

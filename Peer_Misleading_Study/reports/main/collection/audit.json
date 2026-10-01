@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "questions": 120,
+  "receivers": 3,
+  "repeats": 2,
+  "responses": 5040,
+  "checks": [
+    "exact expected task set",
+    "attempt-response bijection",
+    "all provider statuses ok",
+    "materials frozen before calls",
+    "cross-model generator mapping",
+    "every request exactly reconstructed",
+    "C2/C3 and C4/C5 share identical suggestions",
+    "review branches contain only shared baseline, never other review responses",
+    "question/source allowlist",
+    "frozen input hashes"
+  ],
+  "pairing_directions": {
+    "0": 60,
+    "1": 60
+  },
+  "records_sha256": "703443b14927ad96dcba63dbc9c9b45cfea89d380e5bfe406a19cde7d8ba6da2",
+  "independent_human_review_complete": false,
+  "scope": "Assembled successful responses; all original failed attempts are retained and counted in assembly.json."
+}

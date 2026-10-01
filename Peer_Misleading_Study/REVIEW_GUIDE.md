@@ -10,7 +10,7 @@
 
 ## 逐条核对评分边界
 
-正式数据完成后，先读 `reports/main/unfiltered_diagnostic/blinded_format_review.json`。该界面隐藏模型、条件和任务 ID，但给出题目、参考答案及原始输出。独立复核者先写自己的判断，再打开 `data/main_adjudications.json` 比较，不预先阅读总体效应。
+正式数据完成后，先读 `reports/main/unfiltered_diagnostic/blinded_format_review.json`。该界面隐藏模型、条件和任务 ID，但给出题目、参考答案及原始输出。措辞本身可能透露条件，因此不应称为完全盲法。独立复核者先写自己的判断，再打开 `data/main_adjudications.json` 比较，不预先阅读总体效应。
 
 每条记录至少保存：`review_id`、自己的判断、理由、审阅人、时间、是否已看过原判决。主要规则：
 

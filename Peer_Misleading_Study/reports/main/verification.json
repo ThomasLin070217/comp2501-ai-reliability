@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-10-01T01:23:39.267920+00:00",
+  "offline_reproduction": {
+    "status": "passed",
+    "independent_second_output_directory": true,
+    "fields_ignored": [
+      "created_at in JSON and embedded HTML JSON"
+    ],
+    "artifacts_compared": {
+      "accuracy.png": true,
+      "accuracy.svg": true,
+      "analysis_responses.jsonl": true,
+      "blinded_format_review.json": true,
+      "cases/case_index.json": true,
+      "cases/cases.md": true,
+      "cases/illustrative_cases.json": true,
+      "collection/assembly.json": true,
+      "collection/attempts.jsonl": true,
+      "collection/audit.json": true,
+      "collection/manifest.json": true,
+      "collection/responses.jsonl": true,
+      "effects.png": true,
+      "effects.svg": true,
+      "error_bank/README.md": true,
+      "error_bank/all_questions_observed.jsonl": true,
+      "error_bank/index.json": true,
+      "error_bank/observed_initial_error_bank.jsonl": true,
+      "grades.json": true,
+      "output_quality.json": true,
+      "results.html": true,
+      "sensitivity.json": true,
+      "statistics.md": true,
+      "summary.json": true,
+      "supplementary.json": true,
+      "unfiltered_diagnostic/README.md": true,
+      "unfiltered_diagnostic/blinded_format_review.json": true,
+      "unfiltered_diagnostic/grades.json": true,
+      "unfiltered_diagnostic/summary.json": true,
+      "usage-ledger.json": true
+    }
+  },
+  "unit_tests": {
+    "status": "passed",
+    "runner": "python3 -m unittest discover -s Peer_Misleading_Study -p test_*.py",
+    "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 0.145s\n\nOK\n"
+  },
+  "original_frozen_files_verified": 14,
+  "post_aggregate_presentation_fix": {
+    "file": "export_receiver_cases.py",
+    "reason": "Use a longer Markdown fence around raw outputs containing their own triple-backtick fences. No scoring, data, selection or statistics changed.",
+    "sha256": "7b0706f136b9318f20dcc071834192ed916e30e6880b7b70a65a3641b5f01d78"
+  },
+  "browser_checks": {
+    "main_page_counts": "120 questions, 5040 responses, 719 cells, 5033 analyzed responses",
+    "harm_filter_matches": 3,
+    "deepseek_harm_filter_matches": 2,
+    "example": "SV0013:deepseek:r1 shows baseline 2023, C2 2024, C3 2023",
+    "screenshot": "dashboard-preview.jpg"
+  },
+  "independent_human_review_complete": false,
+  "publication_checks": {
+    "files_scanned": 222,
+    "credential_pattern_matches": 0,
+    "broad_pattern_false_positives": "Five substring matches inside public source URL slugs (mask/csk), not credential tokens; checked with context redacted.",
+    "markdown_local_links_checked": 31,
+    "broken_local_links": 0
+  }
+}

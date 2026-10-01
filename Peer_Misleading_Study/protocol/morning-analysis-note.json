@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-10-01T00:46:42.118516+00:00",
+  "formal_aggregate_results_viewed": false,
+  "secondary_rule": "Report an additional sensitivity variant excluding complete receiver cells with API requests on both sides of the original 2026-10-01T00:00:00+00:00 cutoff, including transport recovery timestamps. Preserve all primary data. This checks within-cell overnight timing without claiming that before/after question subsets estimate temporal model drift.",
+  "cutoff": "2026-10-01T00:00:00+00:00"
+}

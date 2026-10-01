@@ -22,13 +22,15 @@ def main():
     p.add_argument('--sensitivity',type=Path);p.add_argument('--usage',type=Path)
     p.add_argument('--out',type=Path,required=True);a=p.parse_args()
     s=json.loads(a.summary.read_text());sup=json.loads(a.supplement.read_text())
-    lines=['# 实验统计表','',f"{s['questions']} 道题；{s['responses']:,} 次响应；{s['complete_cells']} 个完整配对单元。未解决评分：{s['unresolved_grades']}。",'',
+    lines=['# 实验统计表','',f"{s['questions']} 道题；纳入配对分析 {s['responses']:,} 条响应；{s['complete_cells']} 个完整配对单元。未解决评分：{s['unresolved_grades']}。",'',
            '以下表格由保存的分析文件生成。准确率的分母包含拒答；拒答不算事实错误，也不算正确。“错误”是任务判分，包含未拒答但答案精度不足的情况，不表示每条都断言了一个明确的错误事实；相关边界另有敏感性分析。题目是重采样单位，模型与重复不是独立题目。','',
            '## 合并结果','', '| 条件 | 正确／全部 | 错误 | 拒答 | 初始正确→错误 | 初始正确→拒答 | 初始错误→正确 |',
            '|---|---:|---:|---:|---:|---:|---:|']
     for c in ['baseline']+CONDITIONS:
         t=s['tables']['pooled'][c]
         lines.append(f"| {c} {LABELS[c]} | {ratio(t.get('correct',0),t['n'])} | {t.get('incorrect',0)} | {t.get('abstain',0)} | {ratio(t['correct_to_incorrect'],t['baseline_correct_n'])} | {ratio(t['correct_to_abstain'],t['baseline_correct_n'])} | {ratio(t['incorrect_to_correct'],t['baseline_incorrect_n'])} |")
+    if s.get('collection'):
+        col=s['collection'];lines+=['',f"实际 API 尝试 {col['raw_api_attempts']:,} 次；状态计数 {col['all_status_counts']}。传输失败原记录与显式补跑都保留；下方分析使用装配后的正常返回响应。",'']
     if s.get('output_quality'):
         q=s['output_quality']
         lines+=['',f"原始接口响应 {q['raw_responses']:,} 条；不可判分输出 {len(q['unscorable_outputs'])} 条。按采集后的透明质量修订，配对分析移出 {len(q['excluded_cells'])} 个完整单元（每单元七条），原始数据均保留；这不是丢弃答错案例。",'']

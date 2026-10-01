@@ -10,6 +10,7 @@ from collect import write_json
 
 def aggregate(records):
     return {'calls':len(records),'statuses':dict(Counter(r['status'] for r in records)),
+            'usage_unavailable_calls':sum(not r.get('usage_raw') for r in records),
             'input_tokens':sum(r.get('input_tokens',0) for r in records),
             'output_tokens':sum(r.get('output_tokens',0) for r in records),
             'cost_guard_cny':sum(r.get('cost_upper_cny',0) for r in records),

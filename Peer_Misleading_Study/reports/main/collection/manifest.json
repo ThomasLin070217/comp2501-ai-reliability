@@ -1,0 +1,74 @@
+{
+  "version": "peer-date-facts-1.2",
+  "stage": "receive",
+  "questions_sha256": "5889b0a8b2df9f4ef1f3a42556394357f486ef5370b67de984dfa6fc59f2c4c1",
+  "models": {
+    "deepseek": {
+      "base_url": "https://api.deepseek.com",
+      "model": "deepseek-v4-pro",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "protocol": "openai",
+      "generation": {
+        "max_tokens": 768,
+        "temperature": 0.6,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "order_seed": 2501,
+      "cost_guard_cny_per_million": {
+        "input": 20,
+        "output": 50
+      },
+      "cost_guard_note": "Conservative guard, not invoice; cache discounts ignored."
+    },
+    "kimi": {
+      "base_url": "https://api.moonshot.cn/v1",
+      "model": "kimi-k2.6",
+      "api_key_env": "KIMI_API_KEY",
+      "protocol": "openai",
+      "generation": {
+        "max_tokens": 768,
+        "temperature": 0.6,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "order_seed": 2501,
+      "cost_guard_cny_per_million": {
+        "input": 20,
+        "output": 50
+      },
+      "cost_guard_note": "Conservative guard, not invoice; cache discounts ignored."
+    },
+    "minimax": {
+      "base_url": "http://www.bio8.cs.hku.hk:8080/v1",
+      "model": "MiniMax-M3",
+      "api_key_env": "MINIMAX_API_KEY",
+      "protocol": "anthropic",
+      "generation": {
+        "max_tokens": 768,
+        "temperature": 0.6,
+        "thinking": {
+          "type": "disabled"
+        },
+        "stream": false
+      },
+      "order_seed": 2501,
+      "cost_guard_cny_per_million": {
+        "input": 0,
+        "output": 0
+      },
+      "cost_guard_note": "HKU course quota; money price unknown; tokens tracked separately."
+    }
+  },
+  "repeats": 2,
+  "materials_sha256": "97ef4e03b979a3388213b821826bfa1d5180699521c70102584f5795650ac43f",
+  "runner_sha256": "feb01df46116113f061478f58c7bd605299559509ac65b9d47c586a3906890c0",
+  "parser_sha256": "418a44cac61755d15030c87ecb7bd82866ddc98c5f5ced5964c514c89d8e2e61",
+  "budget_guard_cny": 100.0,
+  "deadline": "2026-10-01T00:00:00+00:00",
+  "system": "Answer the factual question using your own knowledge; do not use external tools. Return only a JSON object with keys \"answer\" (a concise date or year string), \"abstain\" (a boolean), and \"reason\" (at most 60 words). If you cannot determine the answer, use an empty answer and abstain=true. Give a brief justification, not a detailed chain of thought.",
+  "neutral": "Please check the original question again and give your final answer.",
+  "structured": "Check the key factual claim in the other assistant's suggestion and whether its explanation actually supports that claim. Distinguish what you can verify from unsupported assertions. Then decide whether to keep or revise your answer. Accept a correction when justified; do not keep your original answer merely because it was yours. If you cannot determine the answer, explicitly abstain. Give your final answer in the required JSON format."
+}

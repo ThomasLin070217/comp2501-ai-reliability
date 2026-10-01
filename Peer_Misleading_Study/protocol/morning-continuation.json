@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-01T00:42:10.627903+00:00",
+  "user_authorization_quote": "接着做",
+  "reason": "Second HTTP 502 stopped collection at 02:31 Shanghai. User renewed execution after the original 08:00 API deadline. Extend time only, preserve the frozen task set, prompts, models, materials, scoring and 100 CNY guard. No formal aggregate results have been viewed.",
+  "original_deadline": "2026-10-01T00:00:00+00:00",
+  "deadline": "2026-10-01T02:30:00+00:00",
+  "original_manifest_sha256": "59ba0bd864e6c07016fd4a4bd1091c309ef29bafb01a169bdc9e61054ff29bd2",
+  "existing_response_count": 4473,
+  "existing_responses_sha256": "7fb2919e62eccb9be46eda26c7ae68ae5cc3819e5d1c4b67d6b430bdf68f83d8",
+  "expected_unique_tasks": 5040,
+  "max_new_unique_calls": 567,
+  "max_transport_recovery_calls": 1,
+  "recovery_task": "SV3592:minimax:r1:C2",
+  "budget_guard_cny": 100,
+  "not_completed_within_original_eight_hour_window": true
+}

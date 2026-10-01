@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-10-01T01:18:46.907293+00:00",
+  "scope": "Final post-collection analysis inputs recorded before first formal aggregate inspection; not a retrospective preregistration.",
+  "formal_aggregates_previously_inspected": false,
+  "original_frozen_files_verified": 14,
+  "unreviewed_format_outputs": 0,
+  "independent_human_review_complete": false,
+  "hashes": {
+    "data/main_adjudications.json": "1ed0e00c9c3ae459846044526dcb68b6c6498dab935848225b8aa42403912b26",
+    "data/main_preanalysis_caveats.json": "abd479dbe1e77feeae283e281f3049acac31f33cff693e67dfc0fcf7d160aeba",
+    "protocol/output-quality-amendment.md": "597c9db23364f1f860d913363f6c866e2cc8b4f93a79706d16cd5e59eda7da4f",
+    "protocol/morning-analysis-note.json": "7f461a06fdd1546de5c82bcacf83377bbe12e495d3c91560eee0ceade6ecf1fe",
+    "protocol/morning-continuation.json": "74e6949a5d7175a5dea43409ad382eca2713e727f636024f97c6549cd5d8f1b8",
+    "runs/main_receivers/responses.jsonl": "78812d36ee35f57f6e290f7bc5e6b4cbc089207f9feeb4b12bbb3a72bb79166a",
+    "runs/main_receivers/attempts.jsonl": "c7cf857a1522866e283b5c71aa05e25b4388d63e41a2407d00e74a8a8e786a4c",
+    "runs/main_transport_recovery_01/responses.jsonl": "9186f65b29215d0685b3db0ca24932ccb10efc7b13c04709170ef4df3506fd6a",
+    "runs/main_transport_recovery_02/responses.jsonl": "40e2e39cfd0ea9ac7d30c60a3695f6c7fed09e9c28c27ee33fbc151b3111bee2",
+    "assemble_receivers.py": "bbb081cad3d016d0264a5e5391e40e19459a694ee93b03a746b117cdaca29f17",
+    "quality_analyze.py": "3703c307b0d44703e9fb39ca25dd29987fb894c8275b759199c941fc21bc721b",
+    "sensitivity.py": "9edb5b32422acd1e05a1f5649dde7d106a0124956cf3e740008c636a8bef0eb1",
+    "supplement.py": "b2426cdda2665a7afddc7698ab1f0f0fd3b6d8daaa1d48eb49629019e565d6d0",
+    "export_receiver_cases.py": "5a979c64d9ed511b9d5d7a94ab0c4fd593337387c5cffbfb30e019bb7fa5a686",
+    "export_error_bank.py": "ddec4a21d9351ddc874b390173e2baf48215072f943c9dec9d358d31bd527e4d",
+    "reproduce_main.py": "3d9880daa03b9909a14adba396c992dce03b3d752b68523f2c42c32a86f99ac7"
+  }
+}

@@ -3,6 +3,8 @@
 Variants are secondary; the frozen primary results are never overwritten.
 """
 import argparse
+import datetime as dt
+from collections import defaultdict
 import json
 from pathlib import Path
 from analyze import analyze
@@ -39,12 +41,25 @@ def main():
         ('exclude_disputed_and_source_caveats',[q for q in qs if q['question_id'] not in exclude],
          [r for r in rs if r['question_id'] not in exclude],ad)]
     if quality['unscorable_outputs']:
+        plans.append(('exclude_unscorable_questions_only',
+            [q for q in qs if q['question_id'] not in unscorable_questions],
+            [r for r in rs if r['question_id'] not in unscorable_questions],ad))
         for status,name in [('incorrect','unscorable_as_unsuccessful_answer'),('abstain','unscorable_as_nonanswer')]:
             decisions={k:dict(v) for k,v in ad.items()}
             for item in quality['unscorable_outputs']:
                 decisions[item['review_id']].update(status=status,target_adopted=None,
                     reason='Operational sensitivity for unusable output; not a claim about its missing factual answer.')
             plans.append((name,qs,raw,decisions))
+    note_path=Path(__file__).resolve().parent/'protocol/morning-analysis-note.json'
+    spanning=set()
+    if note_path.exists():
+        note=json.loads(note_path.read_text());cutoff=dt.datetime.fromisoformat(note['cutoff'])
+        sides=defaultdict(set)
+        for r in rs:
+            sides[(r['question_id'],r['provider'],r['repeat'])].add(dt.datetime.fromisoformat(r['timestamp'])>=cutoff)
+        spanning={k for k,v in sides.items() if len(v)==2}
+        if spanning:plans.append(('exclude_cells_spanning_overnight_pause',qs,
+            [r for r in rs if (r['question_id'],r['provider'],r['repeat']) not in spanning],ad))
     for name,questions,records,decisions in plans:
         if not questions:continue
         summary,_,_=analyze(questions,records,decisions)
@@ -53,7 +68,7 @@ def main():
                      'alternative_review_ids':changed,'excluded_disputed_question_ids':sorted(disputed),
                      'excluded_source_caveat_question_ids':sorted(source_caveats),
                      'excluded_unscorable_question_ids':sorted(unscorable_questions),
-                     'output_quality':quality,'variants':variants})
+                     'output_quality':quality,'excluded_overnight_spanning_cells':[list(c) for c in sorted(spanning)],'variants':variants})
     print('Saved primary, alternative-adjudication and exclusion sensitivity variants')
 
 if __name__=='__main__':main()
