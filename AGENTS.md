@@ -9,3 +9,5 @@ Keep explicit user instructions, exploratory questions, assistant implementation
 U10 explicitly authorizes web collection, implementation, and live experiments during the current eight-hour work window, superseding A01. Follow the existing staged design; record development findings and freeze the formal sample, prompts, grading, and budget before formal collection. Do not ask for repeated permission for authorized steps. Record any necessary deviations and actual costs.
 
 Preserve original results and keep credentials out of the public repository.
+
+The user requires all data processing in R (CHAT_CONTEXT U13). Use `Peer_Misleading_Study/reproduce_main.R` and the R modules for current cleaning, scoring, statistics, bootstrap, sensitivity analysis, plotting, and report exports. Do not wrap Python processing in R. Preserve frozen collection records and historical code; do not relabel the original collection as having been performed in R. Current R outputs are in `reports/main_r/` and historical Python outputs remain in `reports/main/` for audit.

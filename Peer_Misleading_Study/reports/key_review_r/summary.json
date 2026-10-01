@@ -1,0 +1,16 @@
+{
+  "harm_cells": 3,
+  "repair_loss_cells": 48,
+  "repair_gain_cells": 17,
+  "loss_to_abstain": 24,
+  "loss_to_incorrect": 24,
+  "gain_from_abstain": 4,
+  "gain_from_incorrect": 13,
+  "both_repair": 28,
+  "selected_cells": 68,
+  "selected_questions": 51,
+  "focused_responses": 216,
+  "full_responses": 476,
+  "independent_human_review_complete": false,
+  "selection_timing": "post-result; purpose-selected, not a random audit sample"
+}

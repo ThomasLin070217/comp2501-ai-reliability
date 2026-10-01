@@ -1,0 +1,223 @@
+{
+  "status": "passed",
+  "matching_files": 43,
+  "checks": [
+    {
+      "path": "all_response_grades.csv",
+      "sha256": "3ecd8550e0daa1ca047090a408216d784bd354f8b1b37adcc4e4572ebb02332f",
+      "matches": true
+    },
+    {
+      "path": "analysis_data.csv",
+      "sha256": "8950a8fb6779f45e86ede711ad63397adde5d7892824158db08866e26f1b0ef3",
+      "matches": true
+    },
+    {
+      "path": "analysis_responses.jsonl",
+      "sha256": "994800105556ee75ad03975cc83ee847d51a2bfe7ccded48ad1c91cd94a12a6c",
+      "matches": true
+    },
+    {
+      "path": "assembled_responses.jsonl",
+      "sha256": "c9e6ab1b7ee2054dd88293e481e2710941077dd8e7c49ca3e800474db55b5663",
+      "matches": true
+    },
+    {
+      "path": "blinded_format_review.json",
+      "sha256": "b003f8974f50ccdfd1c8d74790a73a4148b55718c3bc4739509fafb6c3b0d621",
+      "matches": true
+    },
+    {
+      "path": "bootstrap_comparison.csv",
+      "sha256": "87088aa4d2340dc115632c9f652a7528d1c020b5076e762fad137deee240b387",
+      "matches": true
+    },
+    {
+      "path": "branch_audit.json",
+      "sha256": "0e22e1d492c29235873ee949f9f1d3d463fe67a21951c6a11e0a0c172a502dbd",
+      "matches": true
+    },
+    {
+      "path": "cases/case_index.json",
+      "sha256": "f066dd0a99d75272c32a299a4c663c1988cea7302a6e90fb4d23779f55d58e15",
+      "matches": true
+    },
+    {
+      "path": "cases/cases.md",
+      "sha256": "811569f7a1941f673d370fedb8bb1b87bc1bcb7e91f17b9ffc60a52d8e4d1273",
+      "matches": true
+    },
+    {
+      "path": "cases/illustrative_cases.json",
+      "sha256": "91891b1d9c4e8b6f57cfae29cd65621c342064d0d72dd569250a83056aa67fd7",
+      "matches": true
+    },
+    {
+      "path": "cells.csv",
+      "sha256": "9aff72426d2c71be8637ede896f076d8443174231660628ea61144b86f4648dc",
+      "matches": true
+    },
+    {
+      "path": "collection_audit.json",
+      "sha256": "f88a65638726a34dca0402516fc1dae4464c7bded7de4768dab803a74fb3c9fc",
+      "matches": true
+    },
+    {
+      "path": "condition_usage.csv",
+      "sha256": "3cf465eb72bb4139f26a568985bdddb4c38ec187be0fe8f08abb9ca049cd156b",
+      "matches": true
+    },
+    {
+      "path": "development/cells.csv",
+      "sha256": "baeccdbeb062d7d22bda65ad29a31b0a95f620766f7c6ed659ede61a896bada4",
+      "matches": true
+    },
+    {
+      "path": "development/effects.csv",
+      "sha256": "ef7371fc043d2750d0c160fabac8d316f3d0a1ee27a313c0b1551e529b5b01b4",
+      "matches": true
+    },
+    {
+      "path": "development/graded_responses.csv",
+      "sha256": "e4cf18d930e9c6b2ce00c798fdbf5d71364ce546653eca0a3d238ef1ff2cb0e9",
+      "matches": true
+    },
+    {
+      "path": "development/summary.json",
+      "sha256": "0878a5e080db808744005778e68fc3546ec02e20d704b9e7472fbc62f67da9a3",
+      "matches": true
+    },
+    {
+      "path": "development/tables.csv",
+      "sha256": "c3ce33c10e0bd009310646370d522efbfe81efb3db24d9f5825f159531ee592a",
+      "matches": true
+    },
+    {
+      "path": "effects.csv",
+      "sha256": "c9eb12607bd668d6932adca1ab10bb8adef4f4c2d99db762c5687c7cb9665530",
+      "matches": true
+    },
+    {
+      "path": "error_bank/all_questions_observed.jsonl",
+      "sha256": "203a5f564cde78215bf7572e2e9c44b37bf7011edf575b16f89a7c62cf131a71",
+      "matches": true
+    },
+    {
+      "path": "error_bank/index.json",
+      "sha256": "41d5105f328780bb17015da93c3e6f1cacd498df154670606552f8bb1b451fcf",
+      "matches": true
+    },
+    {
+      "path": "error_bank/observed_initial_error_bank.jsonl",
+      "sha256": "2ee48ceeaa6d12415ac16741d16db5c6f97abadf043f716501562eea67b217bb",
+      "matches": true
+    },
+    {
+      "path": "error_bank/question_summary.csv",
+      "sha256": "289fbe111ad8b13c8807928fd77c665f4f758c6fbf7dd262b3748ccad1c33c21",
+      "matches": true
+    },
+    {
+      "path": "graded_responses.csv",
+      "sha256": "226d235596fe9296bf335f0907278fcfbdf4a76703d069a111e1e3ab1c343042",
+      "matches": true
+    },
+    {
+      "path": "material_selection.csv",
+      "sha256": "aee516e473744433626644ed84c6f1428db9b860f2d7fa1633a62a21c7df111a",
+      "matches": true
+    },
+    {
+      "path": "neutral_comparisons.csv",
+      "sha256": "50697760b6df011d7e39970cdff9acf4b9d4bf74fddcc627161a188bb4507e8e",
+      "matches": true
+    },
+    {
+      "path": "output_quality.json",
+      "sha256": "939bc57d2ea27b28f9c0adbb74570234906d1217d2160a3dff63d020c543551a",
+      "matches": true
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "f930c8302ba4e03bcff12ab23bf71f0e5691fa3760f55481cff62ff3f6a02634",
+      "matches": true
+    },
+    {
+      "path": "report.md",
+      "sha256": "78bcd25fc8c888c1c74770a5510effa50765d740c8744911612d062a94423f67",
+      "matches": true
+    },
+    {
+      "path": "sensitivity_effects.csv",
+      "sha256": "121a1f886e8907baa6be42e657f07fcd55f04a3d024c2a7a8c06ec69acfae5b9",
+      "matches": true
+    },
+    {
+      "path": "sensitivity.json",
+      "sha256": "5d18ce9c02779ee02b44a4673833a812411736d90c30f1b8df53ead43158f2bc",
+      "matches": true
+    },
+    {
+      "path": "source_audit.json",
+      "sha256": "70d1bdc0789c96cbbdf49324309f6efc73ed65168330722c99040eeac3d0a136",
+      "matches": true
+    },
+    {
+      "path": "source_eligibility.csv",
+      "sha256": "cf50efc8002908c7b1e8eea1eb80e85feadc86e0c444cf7dabce04b224909790",
+      "matches": true
+    },
+    {
+      "path": "summary.json",
+      "sha256": "dc8acd39871348617c7accb2732ed1068740750b4b43c05ebf0b1b917fcf2d53",
+      "matches": true
+    },
+    {
+      "path": "supplementary.json",
+      "sha256": "189c0a39bed70f820664c2cdbee8382295a6dc0b4fd4df909921d30a31fb7bfd",
+      "matches": true
+    },
+    {
+      "path": "tables.csv",
+      "sha256": "d45f6675057ce648caf7fa223e3d2929166822dbd559eea1ed68e63277922481",
+      "matches": true
+    },
+    {
+      "path": "transitions.csv",
+      "sha256": "a4e4ac7d7731a5355476b00ae7ee0db00b6769820f5688d1eac4cf6b6acf3b54",
+      "matches": true
+    },
+    {
+      "path": "unfiltered_diagnostic/cells.csv",
+      "sha256": "45d3b404bf0fd3414126adff605d4cdd32953a3061b448c8e8ad9635eeda97ca",
+      "matches": true
+    },
+    {
+      "path": "unfiltered_diagnostic/effects.csv",
+      "sha256": "59a10c509b9774c962395c65027a6b2e60b2306e0f50d7fc84fb57653bedf3ac",
+      "matches": true
+    },
+    {
+      "path": "unfiltered_diagnostic/summary.json",
+      "sha256": "17270ffc51f6961310b61219b53caa9ede061469b7c0ea64dfe31c82b1c54b53",
+      "matches": true
+    },
+    {
+      "path": "unfiltered_diagnostic/tables.csv",
+      "sha256": "32ebaf73946ad56e6aebdf7950345ced2343e31da6749a6b11597e47a49699de",
+      "matches": true
+    },
+    {
+      "path": "usage-ledger.json",
+      "sha256": "1c964c4030f020852c48df857e6feeb5216cf1c8a11558af130731044b8bd1e5",
+      "matches": true
+    },
+    {
+      "path": "validation.json",
+      "sha256": "98bc61ad77e9959f1d9b96a187c7e5162d2db6b652ed26618e2874a3737c65dc",
+      "matches": true
+    }
+  ],
+  "excluded": "Graphics, HTML, and sessionInfo; PDF metadata may vary. CSV, JSON, JSONL and Markdown are byte-compared.",
+  "independent_human_review_complete": false
+}

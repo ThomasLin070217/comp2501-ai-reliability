@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "reconstructed_requests": 5040,
+  "cross_model_assignment": true,
+  "branch_isolation": true,
+  "paired_suggestions": true,
+  "source_and_gold_allowlist": true
+}

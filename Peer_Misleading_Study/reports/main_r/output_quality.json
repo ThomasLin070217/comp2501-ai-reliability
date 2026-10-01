@@ -1,0 +1,5 @@
+{
+  "excluded_cells": "SV0969:minimax:r1",
+  "excluded_task_ids": ["SV0969:minimax:r1:baseline", "SV0969:minimax:r1:C5", "SV0969:minimax:r1:C2", "SV0969:minimax:r1:C0", "SV0969:minimax:r1:C4", "SV0969:minimax:r1:C1", "SV0969:minimax:r1:C3"],
+  "unscorable_task_ids": "SV0969:minimax:r1:C5"
+}

@@ -2,6 +2,8 @@
 
 2026-10-01 · 120 道日期事实题 · 三模型 · 两次重复 · 无联网核验
 
+**R 迁移说明：**用户要求所有数据处理使用 R，当前入口为 [R 复现指南](../REPRODUCE.md)，最新自动生成结果见 [R 报告](main_r/report.md)。本文保留原分析的区间端点作为历史记录；R 的计数与效应点估计一致，bootstrap 使用独立的 R 随机数流，端点差异见 [迁移校验](main_r/validation.json)。
+
 **本轮最清楚的发现是一个取舍：结构化核验提示让模型更少采纳错误建议，却也更常拒答，并削弱接受正确建议来纠错的能力。它没有提高本轮错误建议条件下的总体准确率。** 附加错误解释是否更容易把原本正确的答案带偏，本轮没有得到支持；事件很少，不能据此证明解释无效。
 
 正式采集实际进行了 **5,042 次 API 尝试**，含两次 HTTP 502 及各一次相同请求补试，得到 **5,040 条返回结果**。其中一条正文只有半个单词，不能判分；主分析按已记录修订移出其整个七响应单元，纳入 **719 个配对单元、5,033 条响应、120 道题**。5,039 条输出本身可判分；配对规则额外移出了同单元六条。原始数据全部保留。由于夜间中断，本轮在用户早间要求继续后完成，未在原八小时窗口内完成。
@@ -94,7 +96,7 @@ RQ2：收到完全相同的建议时，结构化核验是否减少这种有害�
 从仓库根目录运行：
 
 ```bash
-python3 Peer_Misleading_Study/reproduce_main.py --out /tmp/comp2501-main-reproduction
+Rscript Peer_Misleading_Study/reproduce_main.R --out /tmp/comp2501-r-reproduction
 ```
 
-无需密钥、不会联网调用模型。安装绘图依赖后加 `--plots`。输出目录必须为空；原始结果不会被覆盖。[逐步命令](../REPRODUCE.md)、[数据字典](../DATA_DICTIONARY.md)、[组员复核指南](../REVIEW_GUIDE.md)。课程 proposal 保持两个问题和 300 词以内项目描述，见 [proposal 草稿](course-proposal-draft.md)；尚未提交课程平台。
+无需密钥、不会联网调用模型；R 入口自动生成图表。输出目录必须为空；原始结果不会被覆盖。[逐步命令](../REPRODUCE.md)、[数据字典](../DATA_DICTIONARY.md)、[组员复核指南](../REVIEW_GUIDE.md)。课程 proposal 保持两个问题和 300 词以内项目描述，见 [proposal 草稿](course-proposal-draft.md)；尚未提交课程平台。

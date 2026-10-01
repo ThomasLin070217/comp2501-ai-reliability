@@ -13,3 +13,8 @@ secrets/
 Peer_Misleading_Study/reports/*/analysis_responses.jsonl
 Peer_Misleading_Study/reports/main/collection/responses.jsonl
 Peer_Misleading_Study/reports/main/collection/attempts.jsonl
+Peer_Misleading_Study/reports/*/assembled_responses.jsonl
+.Rproj.user/
+.Rhistory
+.RData
+Rplots.pdf

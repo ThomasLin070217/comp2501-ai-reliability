@@ -1,0 +1,18 @@
+{
+  "raw_api_attempts": 5042,
+  "selected_responses": 5040,
+  "transport_failures": 2,
+  "recovery_mapping": {
+    "main_transport_recovery_01": {
+      "task_id": "SV1501:minimax:r1:C4",
+      "http_status": 502,
+      "identical_request": true
+    },
+    "main_transport_recovery_02": {
+      "task_id": "SV3592:minimax:r1:C2",
+      "http_status": 502,
+      "identical_request": true
+    }
+  },
+  "original_failed_records_preserved": true
+}

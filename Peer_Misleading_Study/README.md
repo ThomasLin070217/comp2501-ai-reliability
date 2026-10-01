@@ -8,6 +8,8 @@
 
 ## 阅读入口
 
+- **当前 R 分析入口：**[R 报告](reports/main_r/report.md)、[结果页](reports/main_r/results.html)、[运行说明](REPRODUCE.md)、[迁移校验](reports/main_r/validation.json)。从原始日志重新计算；下列早期 Python 产物保留为历史审计记录。
+
 - [正式报告](reports/main-report.md)、[完整统计](reports/main/statistics.md)、[交互结果页](reports/main/results.html)
 - [108 道实测出错题及全部 120 题索引](reports/main/error_bank/README.md)、[逐条原文案例](reports/main/cases/cases.md)
 - [离线复算验证](reports/main/verification.json)与[请求审计](reports/main/collection/audit.json)

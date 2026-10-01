@@ -1,0 +1,857 @@
+"packet_id","source_id","question","response_text","reviewer_id","extracted_answer","response_kind","answer_reason_conflict","reason_fact_issue","proposed_grade","evidence_url","notes","completed_at"
+"R-00c683c1652d","Q-4093fc38932c","What year was the first SoCal Sword Fight tournament held?","```json
+{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I'm not certain of the exact year. Both 2010 and 2012 have been suggested, but I cannot confidently verify the correct inaugural year of the SoCal Sword Fight tournament.""
+}
+```","","","","","","","","",""
+"R-021b5b6a18a7","Q-e8dcd8234cee","Which year was Audrey McLaughlin sworn in as a member of the Queen's Privy Council for Canada?","{""answer"": ""2000"", ""abstain"": false, ""reason"": ""Audrey McLaughlin was sworn into the Queen's Privy Council for Canada in 2000, after leaving the NDP leadership. The other assistant's claim of 1991 is unsupported and its reasoning is speculative, not based on verified facts.""}","","","","","","","","",""
+"R-035f4ba010b6","Q-a3cf815549fb","In which month and year did Arch Linux installation images start including installation scripts by default?","```json
+{
+  ""answer"": ""August 2012"",
+  ""abstain"": false,
+  ""reason"": ""Arch Linux replaced the AIF (Arch Installation Framework) with simpler installation scripts in August 2012, starting with the 2012.08.04 ISO release.""
+}
+```","","","","","","","","",""
+"R-04b9979caa3c","Q-144416ea2bbe","In what year was the Wood River Baptist Association formed in Illinois?","```json
+{
+  ""answer"": ""1838"",
+  ""abstain"": false,
+  ""reason"": ""Upon reflection, 1838 is correct. My initial answer of 1837 was incorrect. Baptist historical records document the Wood River Baptist Association's formation in 1838 in Madison County, Illinois. The other assistant's explanation about regional organization during denominational growth, while generic, is plausible context. I accept this correction.""
+}
+```","","","","","","","","",""
+"R-04e7189e599d","Q-526125e54414","When was the album ""When the Sun Goes Down"" by Selena Gomez released in Japan (specific day, month, and year)?","{""answer"":"""",""abstain"":true,""reason"":""I cannot confidently verify the exact Japan release date for this album. My initial date and the other assistant's date are both plausible but unverified, so I abstain rather than guess between them.""}","","","","","","","","",""
+"R-070be1bd1770","Q-2e590999e309","As of 2022, what year did the Centro Botín Centre in Spain have the exhibition named 'Amigos'?","```json
+{
+  ""answer"": ""2021"",
+  ""abstain"": false,
+  ""reason"": ""The 'Amigos' exhibition at Centro Botín in Santander, Spain was held in 2021, featuring works by artists celebrating friendship and creative dialogue.""
+}
+```","","","","","","","","",""
+"R-071dbc75285f","Q-528a2b0555a6","In which year did Professor Julia Rucklidge earn a Bachelor of Science from McGill University in Montreal, Canada?","{""answer"": ""1992"", ""abstain"": false, ""reason"": ""Julia Rucklidge earned her Bachelor of Science from McGill University in 1992, according to her publicly available CV.""}","","","","","","","","",""
+"R-0755345e46c3","Q-07278887f7af","In which month and year was Durga Prasad Dhar (an Indian politician) appointed as the Union Minister for Planning?","{""answer"": ""January 1980"", ""abstain"": false, ""reason"": ""Durga Prasad Dhar was appointed Union Minister for Planning in January 1980 in the Charan Singh government.""}","","","","","","","","",""
+"R-079dabc050b9","Q-75be77a23074","In which year did The MOI! Project (Museums of Impact), a part of the Creative Europe program, finish?","{
+  ""answer"": ""2019"",
+  ""abstain"": false,
+  ""reason"": ""The MOI! Project (Museums of Impact) was a Creative Europe cooperation project that ran from 2017 to 2019.""
+}","","","","","","","","",""
+"R-085fe454d3cc","Q-40ae2f4ddc23","In what year did Willis H. Flygare win the Irving Langmuir Award?","{
+  ""answer"": ""1974"",
+  ""abstain"": false,
+  ""reason"": ""Willis H. Flygare received the American Chemical Society's Irving Langmuir Award in Chemical Physics in 1974.""
+}","","","","","","","","",""
+"R-0933da3942f1","Q-b82e6c74f407","In what year was Alexej von Jawlensky expelled from Germany?","{""answer"": ""1934"", ""abstain"": false, ""reason"": ""Jawlensky was forced to leave Germany in 1934 under Nazi pressure, not 1914. He had been a German citizen since 1934's revocation context, but his actual departure was due to persecution of his art as 'degenerate.' Sources confirm 1934.""}","","","","","","","","",""
+"R-09dc6524285c","Q-c8d0b482c85d","In what year was Alain Stanké made a Knight of the National Order of Quebec?","{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I cannot verify the 2003 date from reliable knowledge. The other assistant's explanation offers only speculative reasoning about career timing, not factual confirmation. Without verifiable evidence, I must abstain.""
+}","","","","","","","","",""
+"R-0b963e46dc0e","Q-2ecdeb804b46","In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?","```json
+{""answer"": ""2024"", ""abstain"": false, ""reason"": ""I cannot verify the 2023 claim; available information indicates the Monash Gallery of Art rebranded as the Museum of Australian Photography (MAPh) in 2024. The other assistant's explanation does not contain verifiable supporting evidence for 2023.""}
+```","","","","","","","","",""
+"R-0bcf3a32ebae","Q-2dde87d8e91b","In which month and year did Naughty Dog's technology head, Christian Gyrling, depart the company after 17 years and was replaced by Travis McIntosh?","{""answer"": ""October 2023"", ""abstain"": false, ""reason"": ""Christian Gyrling left Naughty Dog after 17 years, with Travis McIntosh taking over as head of technology.""}","","","","","","","","",""
+"R-0db347e64561","Q-bff07cc328fa","In which day, month, and year was the song written by Pedro Medina Avendaño declared the national anthem of Bogotá?","```json
+{
+  ""answer"": ""31 July 1974"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's date of 31 July 1974 is the correct one. The song by Pedro Medina Avendaño was declared the anthem of Bogotá on that date, not 24 July. The explanation supports the factual claim by citing the formal adoption and civic context.""
+}
+```","","","","","","","","",""
+"R-0e06573ab020","Q-144416ea2bbe","In what year was the Wood River Baptist Association formed in Illinois?","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot reliably verify the exact formation year of the Wood River Baptist Association in Illinois. Conflicting dates (1820 vs. 1838) exist, and the other assistant's explanation is generic reasoning rather than a cited source. Without a definitive source, I must abstain.""}","","","","","","","","",""
+"R-0f7506fd6b16","Q-74f90650e15b","On which year was China Zorrilla invested Chevalier des Arts et des Lettres?","{""answer"": ""2008"", ""abstain"": false, ""reason"": ""Upon reconsideration, China Zorrilla was invested Chevalier des Arts et des Lettres in 2008 by France, recognizing her contributions to theater and the arts.""}","","","","","","","","",""
+"R-0fa26cadb604","Q-f58999a09f5e","In which year did Gary Schreider, the Canadian football player, die?","```json
+{
+  ""answer"": ""2002"",
+  ""abstain"": false,
+  ""reason"": ""Gary Schreider, CFL linebacker and Grey Cup champion, died in 2002.""
+}
+```","","","","","","","","",""
+"R-0ff51d919aad","Q-7286fa2c9a6f","What day, month, and year did over 500,000 people gather at the Black Star Square in Ghana to welcome former U.S. President Bill Clinton and his wife, Hillary Clinton?","{""answer"": ""March 25, 1998"", ""abstain"": false, ""reason"": ""On March 25, 1998, Bill and Hillary Clinton visited Ghana's Black Star Square, where over 500,000 people gathered to welcome them during their African tour.""}","","","","","","","","",""
+"R-121f95f19d31","Q-75be77a23074","In which year did The MOI! Project (Museums of Impact), a part of the Creative Europe program, finish?","{""answer"": ""2020"", ""abstain"": false, ""reason"": ""The MOI! Project (Museums of Impact) was a Creative Europe-funded initiative that concluded in 2020, consistent with its stated project timeline of 2018-2020.""}","","","","","","","","",""
+"R-1244030e7091","Q-d35d28ece116","In which year was Stefan Parkman, the conductor, awarded the Order of the Dannebrog?","{""answer"": ""1997"", ""abstain"": false, ""reason"": ""Based on available information, Stefan Parkman was awarded the Order of the Dannebrog in 1997, aligning with his recognized contributions to Danish choral music during that period.""}","","","","","","","","",""
+"R-1322b5a5dbba","Q-a59717816fc6","On what date, month, and year was the Indian politician T. M. Selvaganapathy acquitted by the High Court in connection to the Pleasant Stay hotel case?","I cannot reliably verify the exact date of T. M. Selvaganapathy's acquittal in the Pleasant Stay hotel case. My earlier answer of ""11 November 2022"" and the other assistant's suggestion of ""4 December 2001"" are both unverified claims. Without access to authoritative sources, I cannot confirm which date, if either, is correct.
+
+{""answer"": """", ""abstain"": true, ""reason"": ""Unable to verify the specific date of acquittal from reliable sources. Both candidate dates (11 November 2022 and 4 December 2001) lack confirmed verification.""}","","","","","","","","",""
+"R-149d33aa289f","Q-2e590999e309","As of 2022, what year did the Centro Botín Centre in Spain have the exhibition named 'Amigos'?","{
+  ""answer"": ""2019"",
+  ""abstain"": false,
+  ""reason"": ""The exhibition 'Amigos' at Centro Botín is documented as taking place in 2019, which is consistent with the center's exhibition schedule before 2022.""
+}","","","","","","","","",""
+"R-167df5abc3f8","Q-bff07cc328fa","In which day, month, and year was the song written by Pedro Medina Avendaño declared the national anthem of Bogotá?","```json
+{
+  ""answer"": ""24 July 1974"",
+  ""abstain"": false,
+  ""reason"": ""The song 'Bogotá, Ciudad Maravilla' by Pedro Medina Avendaño was officially declared the anthem of Bogotá by decree on July 24, 1974.""
+}
+```","","","","","","","","",""
+"R-1ac6ead3a8bc","Q-206884717165","On what date, month, and year was the Public Order Ordinance commenced in Hong Kong?","{""answer"": ""2 August 1967"", ""abstain"": false, ""reason"": ""The Public Order Ordinance was gazetted on 2 August 1967 as Ordinance No. 26 of 1967 and commenced on that date. The 17 November 1967 claim lacks supporting evidence and appears incorrect.""}","","","","","","","","",""
+"R-1afece4b9477","Q-3eb293c41fb5","When did BAe and the American aircraft manufacturer McDonnell Douglas sign a memorandum of understanding regarding the McDonnell Douglas AV-8B Harrier II? Example answer: mm-yyyy","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot confidently verify the exact month and year of the MOU signing between BAe and McDonnell Douglas for the AV-8B Harrier II program.""}","","","","","","","","",""
+"R-1cb63a3469a4","Q-a3cf815549fb","In which month and year did Arch Linux installation images start including installation scripts by default?","{""answer"": ""July 2017"", ""abstain"": false, ""reason"": ""Arch Linux ISO images began shipping with the official Arch Install Scripts by default starting with the 2017.07.01 release.""}","","","","","","","","",""
+"R-1d113b1e1970","Q-a3cf815549fb","In which month and year did Arch Linux installation images start including installation scripts by default?","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot verify either date with confidence. The July 2017 ISO did not include install scripts by default; my original answer was wrong. April 2021 may relate to archinstall but I cannot confirm it shipped as a default ISO component that month. Abstaining.""}","","","","","","","","",""
+"R-1f2294cf4fd4","Q-0fbc92fba2a8","In what year did Swiss painter Benjamin Samuel Bolomey become a pupil of Joseph-Marie Vien?","{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""Sources conflict on the year Bolomey became Vien's pupil; 1752 and 1758 both appear in secondary accounts. I cannot reliably verify which date is correct from available knowledge, so I abstain rather than assert an unsupported year.""
+}","","","","","","","","",""
+"R-1f3d07a600be","Q-7286fa2c9a6f","What day, month, and year did over 500,000 people gather at the Black Star Square in Ghana to welcome former U.S. President Bill Clinton and his wife, Hillary Clinton?","{""answer"": ""March 23, 1998"", ""abstain"": false, ""reason"": ""Checking sources: Bill Clinton's visit to Ghana occurred on March 23, 1998, not March 25. The other assistant's specific date appears correct; my original date was off by two days. Clinton's Africa tour began in March 1998, with Ghana as an early stop, consistent with the verified date.""}","","","","","","","","",""
+"R-212dc90660d3","Q-3754ffc895e4","In which year was John B. Mortimer appointed a Judge of the High Court of Hong Kong?","{
+  ""answer"": ""1986"",
+  ""abstain"": false,
+  ""reason"": ""John B. Mortimer was appointed a Judge of the High Court of Hong Kong in 1986, based on standard legal appointment records for the Hong Kong judiciary during that period.""
+}","","","","","","","","",""
+"R-21cba3e94b05","Q-481a13f952fc","In what month and year did Spencer Perceval leave office as the Attorney General for England and Wales?","```json
+{
+  ""answer"": ""February 1806"",
+  ""abstain"": false,
+  ""reason"": ""I was incorrect initially. Perceval served as Attorney General from 1802 to 1806, leaving in February 1806 when the Pitt ministry ended and the Ministry of All the Talents formed. He then became Chancellor of the Exchequer in March 1807 under Portland.""
+}
+```","","","","","","","","",""
+"R-2403d677d48c","Q-8a90062f1285","In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?","```json
+{""answer"": ""1971"", ""abstain"": false, ""reason"": ""The other assistant's suggestion of 1975 is unsupported—it offers only a plausible-sounding timeline without verifiable sourcing. Pramod Kale's receipt of the Shri Hari Om Ashram Prerit Vikram Sarabhai Award is associated with 1971 based on established biographical records of his early career contributions to system analysis and management.""}
+```","","","","","","","","",""
+"R-24d8fb921bce","Q-011cc3141813","In what year did Stepan Prokopovich Timoshenko receive the Worcester Reed Warner Medal?","```json
+{
+  ""answer"": ""1927"",
+  ""abstain"": false,
+  ""reason"": ""Stephen P. Timoshenko received the Worcester Reed Warner Medal from the ASME in 1927 for his contributions to applied mechanics.""
+}
+```","","","","","","","","",""
+"R-25d868af6dcb","Q-7e2376d3575e","Which month and year was William Harrison Standley appointed as the American Ambassador to the USSR?","```json
+{
+  ""answer"": ""August 1941"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's claim of February 1942 is incorrect. Standley was appointed August 1941 and presented credentials October 1941. Their explanation is entirely speculative—'fits,' 'sought,' 'credible envoy,' 'diplomatic cycle'—with no actual evidence. Naval experience doesn't determine appointment dates; these are verifiable historical facts, not patterns to be inferred.""
+}
+```","","","","","","","","",""
+"R-265bac6b2d19","Q-a43cfd3ce239","What month, day, and year was James V. Allred nominated by President Franklin D. Roosevelt to the United States District Court for the Southern District of Texas?","```json
+{
+  ""answer"": ""July 11, 1938"",
+  ""abstain"": false,
+  ""reason"": ""Multiple authoritative sources confirm July 11, 1938. The January 5, 1939 date is incorrect—Allred was already serving as judge by then, having been confirmed and received commission on July 11, 1938.""
+}
+```","","","","","","","","",""
+"R-265f8f5fafec","Q-38ac98162160","In what month and year did Ronnie Milsap first move to Nashville?","```json
+{
+  ""answer"": ""December 1972"",
+  ""abstain"": false,
+  ""reason"": ""Upon reflection, December 1972 is correct. Milsap moved to Nashville in late 1972 before his 1973 RCA breakthrough, giving him time to establish connections before recording.""
+}
+```","","","","","","","","",""
+"R-273f41fe1245","Q-ae5461a4cddb","In what year was Phillip Paul Bliss, famous Christian songwriter, appointed as a teacher in the Rome, Pennsylvania Academy?","{
+  ""answer"": ""1857"",
+  ""abstain"": false,
+  ""reason"": ""Phillip Paul Bliss taught at the Rome Academy in Rome, Pennsylvania, around 1857, before moving on to other teaching and music positions.""
+}","","","","","","","","",""
+"R-296da63184e8","Q-8a90062f1285","In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?","```json
+{""answer"": ""1971"", ""abstain"": false, ""reason"": ""Pramod Kale received the Shri Hari Om Ashram Prerit Vikram Sarabhai Award in 1971 for his work in system analysis and management problems.""}
+```","","","","","","","","",""
+"R-298b1e0ab94c","Q-481a13f952fc","In what month and year did Spencer Perceval leave office as the Attorney General for England and Wales?","```json
+{
+  ""answer"": ""April 1802"",
+  ""abstain"": false,
+  ""reason"": ""The other AI is incorrect. Perceval was Attorney General from January 1802 to April 1802, when he became Chancellor of the Exchequer. He was never Attorney General in 1806; by then he was already Chancellor and then became Prime Minister in 1809.""
+}
+```","","","","","","","","",""
+"R-357bd1056a0b","Q-42f62a0110d6","What day, month, and year did the original ActRaiser soundtrack come out in Japan?","{""answer"": ""December 16, 1990"", ""abstain"": false, ""reason"": ""The original ActRaiser was released in Japan on December 16, 1990 by Enix for the Super Famicom, with its soundtrack composed by Yuzo Koshiro.""}","","","","","","","","",""
+"R-36b017bfb65d","Q-011cc3141813","In what year did Stepan Prokopovich Timoshenko receive the Worcester Reed Warner Medal?","```json
+{
+  ""answer"": ""1935"",
+  ""abstain"": false,
+  ""reason"": ""The Worcester Reed Warner Medal was awarded to Stephen P. Timoshenko in 1935 by the American Society of Mechanical Engineers for his contributions to applied mechanics.""
+}
+```","","","","","","","","",""
+"R-36cc65451a9e","Q-a3cf815549fb","In which month and year did Arch Linux installation images start including installation scripts by default?","```json
+{
+  ""answer"": ""August 2012"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant is incorrect. Arch Linux included installation scripts by default starting August 2012 (ISO 2012.08.04), replacing AIF. April 2021 is when the guided installer 'archinstall' was added—a different event. The explanation confuses these two distinct changes 9 years apart.""
+}
+```","","","","","","","","",""
+"R-37874dc10a1d","Q-5ff36ba7e283","In what month and year did Theresa Kuffour (former First Lady of Ghana) die?","{""answer"": ""October 2023"", ""abstain"": false, ""reason"": ""Theresa Kuffour, former First Lady of Ghana and wife of President John Agyekum Kufuor, passed away in October 2023.""}","","","","","","","","",""
+"R-381bb3d0f3ce","Q-8de61e5f141c","Which year was Leonard P. Zakim first involved in the reelection campaign of Michael Dukakis?","{
+  ""answer"": ""1978"",
+  ""abstain"": false,
+  ""reason"": ""Michael Dukakis's 1978 reelection campaign for Governor of Massachusetts aligns with Leonard P. Zakim's known civic activism in Boston during that period, making 1978 the most plausible year for his first involvement.""
+}","","","","","","","","",""
+"R-39a537533c76","Q-a43cfd3ce239","What month, day, and year was James V. Allred nominated by President Franklin D. Roosevelt to the United States District Court for the Southern District of Texas?","```json
+{
+  ""answer"": ""January 5, 1939"",
+  ""abstain"": false,
+  ""reason"": ""I revise my answer. The other assistant's date of January 5, 1939 is correct. My July 11, 1938 date was wrong—that was likely a different judicial appointment. The explanation's general claims about Roosevelt's pattern are plausible but not specific verification; however, the date itself is verifiably correct for Allred's nomination to this court.""
+}
+```","","","","","","","","",""
+"R-3a2ab8486e3d","Q-5ff36ba7e283","In what month and year did Theresa Kuffour (former First Lady of Ghana) die?","{""answer"": ""October 2024"", ""abstain"": false, ""reason"": ""Theresa Kuffour, former First Lady of Ghana and wife of former President John Agyekum Kufuor, passed away in October 2024.""}","","","","","","","","",""
+"R-3a39c1f5d972","Q-b82e6c74f407","In what year was Alexej von Jawlensky expelled from Germany?","{""answer"": ""1914"", ""abstain"": false, ""reason"": ""The other assistant's claim is better supported: Jawlensky was indeed a Russian citizen living in Germany, and was forced to leave in 1914 at the outbreak of WWI due to restrictions on enemy nationals. My 1934 answer conflated later Nazi persecution with his earlier expulsion.""}","","","","","","","","",""
+"R-3b233bf4dd48","Q-19f057a18a5f","In what year was Bonaya Adhi Godana first elected to the National Assembly of Kenya?","{""answer"": ""1988"", ""abstain"": false, ""reason"": ""Bonaya Adhi Godana was first elected to Kenya's National Assembly in the 1988 general elections, representing the Moyale constituency, during the late-1980s political cycle before the 1992 multiparty transition.""}","","","","","","","","",""
+"R-3ca0265c5f75","Q-990c7d586ad4","On what day, month, and year was Kommunistisk Forbund founded?","{
+  ""answer"": ""January 1973"",
+  ""abstain"": false,
+  ""reason"": ""Kommunistisk Forbund (KF), a Danish Marxist-Leninist organization, was founded in January 1973. The exact day is not widely documented in standard references.""
+}","","","","","","","","",""
+"R-3d9ee25c5ac5","Q-2ecdeb804b46","In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?","```json
+{""answer"": ""2024"", ""abstain"": false, ""reason"": ""Monash Gallery of Art officially rebranded as the Museum of Australian Photography (MAPh) in 2024.""}
+```","","","","","","","","",""
+"R-3e33cbc7ad9a","Q-40deff30c133","In which year and month did El Cielo receive its first Michelin star in Miami?","```json
+{
+  ""answer"": ""2023, June"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant is incorrect. The inaugural Florida Michelin Guide was released in June 2023, not 2022. Michelin did not cover Florida before 2023. My original answer stands: El Cielo Miami received its star in June 2023.""
+}
+```","","","","","","","","",""
+"R-3ebdf3cf074f","Q-b2925c8c4f18","On what day, month, and year was Dr. Sanduk Ruit conferred with the National Order of Merit of Bhutan in Gold?","```json
+{""answer"": ""17 December 2015"", ""abstain"": true, ""reason"": ""I cannot verify the exact conferral date of the National Order of Merit of Bhutan in Gold to Dr. Sanduk Ruit. The prior assistant's date lacks a verifiable source. I abstain from confirming a specific date.""}
+```","","","","","","","","",""
+"R-3ec456324bd3","Q-144416ea2bbe","In what year was the Wood River Baptist Association formed in Illinois?","```json
+{
+  ""answer"": ""1816"",
+  ""abstain"": false,
+  ""reason"": ""The Wood River Baptist Association was organized in 1816 in Illinois, making it one of the earliest Baptist associations in the region. The alternative suggestion of 1838 and its contextual explanation are not historically supported by standard Baptist associational records.""
+}
+```","","","","","","","","",""
+"R-3fd8a9b9e878","Q-a43cfd3ce239","What month, day, and year was James V. Allred nominated by President Franklin D. Roosevelt to the United States District Court for the Southern District of Texas?","```json
+{
+  ""answer"": ""July 11, 1938"",
+  ""abstain"": false,
+  ""reason"": ""Allred was nominated by FDR to the Southern District of Texas on July 11, 1938, after serving as Texas governor. He was confirmed by the Senate and received commission the same day.""
+}
+```","","","","","","","","",""
+"R-426a7a42c1f4","Q-481a13f952fc","In what month and year did Spencer Perceval leave office as the Attorney General for England and Wales?","{""answer"": ""March 1801"", ""abstain"": false, ""reason"": ""Spencer Perceval served as Attorney General for England and Wales from 1801 to 1802. He was appointed in March 1801 and left office when he became Solicitor of the Treasury in April 1801; actually he left in 1802 upon becoming Chancellor of the Exchequer. The commonly cited date is March 1801.""}","","","","","","","","",""
+"R-429bb4f5c331","Q-75be77a23074","In which year did The MOI! Project (Museums of Impact), a part of the Creative Europe program, finish?","{""answer"": ""2020"", ""abstain"": false, ""reason"": ""The MOI! Project (Museums of Impact) was a Creative Europe-funded initiative that ran from 2018 to 2020.""}","","","","","","","","",""
+"R-42a3b86f767b","Q-e8dcd8234cee","Which year was Audrey McLaughlin sworn in as a member of the Queen's Privy Council for Canada?","{""answer"": ""2000"", ""abstain"": false, ""reason"": ""Audrey McLaughlin, former NDP leader, was sworn into the Queen's Privy Council for Canada in 2000.""}","","","","","","","","",""
+"R-4406b3173fdc","Q-40ae2f4ddc23","In what year did Willis H. Flygare win the Irving Langmuir Award?","{
+  ""answer"": ""1981"",
+  ""abstain"": false,
+  ""reason"": ""The Irving Langmuir Award in Chemical Physics was awarded to Willis H. Flygare in 1981, recognizing his contributions to rotational spectroscopy and molecular structure.""
+}","","","","","","","","",""
+"R-44a337f23cd5","Q-3eb293c41fb5","When did BAe and the American aircraft manufacturer McDonnell Douglas sign a memorandum of understanding regarding the McDonnell Douglas AV-8B Harrier II? Example answer: mm-yyyy","{""answer"": ""08-1981"", ""abstain"": false, ""reason"": ""The MOU for the AV-8B Harrier II was signed in August 1981. The original 1975 Harrier agreement was between Hawker Siddeley and McDonnell Douglas; the 1981 MOU specifically covered the upgraded AV-8B variant.""}","","","","","","","","",""
+"R-459a120de587","Q-990c7d586ad4","On what day, month, and year was Kommunistisk Forbund founded?","{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I cannot verify the exact day. The other assistant's explanation offers no documentary evidence for 21 January 1973, only speculation about typical scheduling. Reliable sources consistently cite only January 1973, so a precise date cannot be confirmed.""
+}","","","","","","","","",""
+"R-461a5c457858","Q-c8d0b482c85d","In what year was Alain Stanké made a Knight of the National Order of Quebec?","{
+  ""answer"": ""2003"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's explanation offers only general context about Stanké's career and does not cite a verifiable source for 2002. My answer of 2003 reflects the documented year of his appointment as a Knight of the National Order of Quebec.""
+}","","","","","","","","",""
+"R-4748783f84be","Q-990c7d586ad4","On what day, month, and year was Kommunistisk Forbund founded?","{""answer"": ""21 January 1973"", ""abstain"": false, ""reason"": ""Kommunistisk Forbund (marxist-leninistene), the Norwegian communist organization, was founded on 21 January 1973. My previous answer incorrectly referred to the 1920 Communist League instead.""}","","","","","","","","",""
+"R-483189eabb11","Q-0fbc92fba2a8","In what year did Swiss painter Benjamin Samuel Bolomey become a pupil of Joseph-Marie Vien?","{""answer"": ""1752"", ""abstain"": false, ""reason"": ""Benjamin Samuel Bolomey studied under Joseph-Marie Vien in Paris around 1752, before moving to the Netherlands and later becoming court painter in The Hague.""}","","","","","","","","",""
+"R-49ae60aa4aeb","Q-8a90062f1285","In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?","```json
+{
+  ""answer"": ""1973"",
+  ""abstain"": false,
+  ""reason"": ""Pramod Kale received the Shri Hari Om Ashram Prerit Vikram Sarabhai Award in 1973 for his contributions to system analysis and management problems. The alternate suggestion of 1975 lacks specific support and appears to be an estimate rather than a confirmed date.""
+}
+```","","","","","","","","",""
+"R-49e0e5a00b6c","Q-4093fc38932c","What year was the first SoCal Sword Fight tournament held?","```json
+{
+  ""answer"": ""2010"",
+  ""abstain"": false,
+  ""reason"": ""The first SoCal Sword Fight tournament was held in 2010 at the Southern California venue, marking its inaugural event in the historical European martial arts community.""
+}
+```","","","","","","","","",""
+"R-4aeff611ac03","Q-da54f6bdd4a0","In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?","```json
+{
+  ""answer"": ""1950"",
+  ""abstain"": false,
+  ""reason"": ""The ensemble received its full honorific title 'A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army' in 1950, following post-war Soviet military cultural restructuring.""
+}
+```","","","","","","","","",""
+"R-4d1d5d89821b","Q-42f62a0110d6","What day, month, and year did the original ActRaiser soundtrack come out in Japan?","{
+  ""answer"": ""January 25, 1991"",
+  ""abstain"": false,
+  ""reason"": ""The original ActRaiser soundtrack album was released in Japan on January 25, 1991, shortly after the game's December 1990 launch. This date reflects the album's availability during the game's initial release period.""
+}","","","","","","","","",""
+"R-4dc1e3d7fcdb","Q-6ec483e90f0d","On what day, month, and year was Algerian artist Mohammed Racim born?","{""answer"": ""1 June 1896"", ""abstain"": false, ""reason"": ""Mohammed Racim, the Algerian miniature painter, was born on 1 June 1896 in Algiers.""}","","","","","","","","",""
+"R-4dd207cd730f","Q-87935c2e82c5","What day, month, and year was Notepad++ version 7.8.8 released?","{
+  ""answer"": ""2020-06-28"",
+  ""abstain"": false,
+  ""reason"": ""After rechecking, Notepad++ 7.8.8 was released on June 28, 2020. The earlier June 4 date was incorrect; the official release history lists 7.8.8 near the end of June 2020.""
+}","","","","","","","","",""
+"R-4e269b65b0a6","Q-da54f6bdd4a0","In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?","```json
+{
+  ""answer"": ""1949"",
+  ""abstain"": false,
+  ""reason"": ""The ensemble received its first Order of the Red Banner in 1935 and a second in 1949, leading to the 'Twice Red-bannered' designation that year. The 'Red-starred' distinction was added after receiving the Order of the Red Star in 1939. The full honorific title incorporating all these distinctions was formalized around 1949.""
+}
+```","","","","","","","","",""
+"R-4e842eb6467d","Q-2dde87d8e91b","In which month and year did Naughty Dog's technology head, Christian Gyrling, depart the company after 17 years and was replaced by Travis McIntosh?","{""answer"": ""November 2023"", ""abstain"": false, ""reason"": ""Based on available information, Christian Gyrling departed Naughty Dog in November 2023 after 17 years, with Travis McIntosh replacing him as head of technology.""}","","","","","","","","",""
+"R-4fcb6fd84f71","Q-7e2376d3575e","Which month and year was William Harrison Standley appointed as the American Ambassador to the USSR?","```json
+{
+  ""answer"": ""February 1942"",
+  ""abstain"": false,
+  ""reason"": ""I revise my answer. Upon reflection, my initial August 1941 date was incorrect. Standley was appointed in February 1942 and presented his credentials in April 1942. The other assistant's explanation contains unsupported assertions about 'diplomatic cycle' and 'flag-rank experience,' but the core claim of February 1942 is verifiably correct.""
+}
+```","","","","","","","","",""
+"R-513855f17130","Q-07278887f7af","In which month and year was Durga Prasad Dhar (an Indian politician) appointed as the Union Minister for Planning?","```json
+{
+  ""answer"": ""December 1967"",
+  ""abstain"": false,
+  ""reason"": ""Durga Prasad Dhar was appointed as Union Minister for Planning in Indira Gandhi's cabinet in December 1967.""
+}
+```","","","","","","","","",""
+"R-515b83907ef3","Q-75be77a23074","In which year did The MOI! Project (Museums of Impact), a part of the Creative Europe program, finish?","{""answer"": ""2022"", ""abstain"": false, ""reason"": ""Checking the other assistant's claim: The MOI! Project (Museums of Impact) was a Creative Europe project that concluded in 2022, which aligns with standard multi-year Creative Europe grant cycles. Revising my answer to 2022.""}","","","","","","","","",""
+"R-52928a1d91fa","Q-7e2376d3575e","Which month and year was William Harrison Standley appointed as the American Ambassador to the USSR?","```json
+{
+  ""answer"": ""August 1941"",
+  ""abstain"": false,
+  ""reason"": ""Standley was appointed by President Franklin D. Roosevelt as Ambassador to the Soviet Union in August 1941, following the German invasion of the USSR.""
+}
+```","","","","","","","","",""
+"R-53db7d636ed9","Q-6ec483e90f0d","On what day, month, and year was Algerian artist Mohammed Racim born?","{""answer"": ""24 June 1896"", ""abstain"": false, ""reason"": ""Mohammed Racim, the Algerian miniature painter, was born on 24 June 1896 in Algiers.""}","","","","","","","","",""
+"R-56402a82730a","Q-b2925c8c4f18","On what day, month, and year was Dr. Sanduk Ruit conferred with the National Order of Merit of Bhutan in Gold?","{""answer"": ""17 December 2015"", ""abstain"": false, ""reason"": ""Upon verification, Dr. Sanduk Ruit was conferred the National Order of Merit of Bhutan in Gold on 17 December 2015, not 20 December 2005 as I initially stated. I am revising my answer based on this corrected information.""}","","","","","","","","",""
+"R-56590ceb7a27","Q-011cc3141813","In what year did Stepan Prokopovich Timoshenko receive the Worcester Reed Warner Medal?","```json
+{
+  ""answer"": ""1927"",
+  ""abstain"": false,
+  ""reason"": ""Stephen P. Timoshenko received the Worcester Reed Warner Medal from ASME in 1927. The other assistant's claim of 1935 appears to be incorrect; Timoshenko's foundational mechanics work and ASME recognition align with the earlier date.""
+}
+```","","","","","","","","",""
+"R-56ccef3650c9","Q-8bf827ab4d95","In which year did Maharaj Kishan Bhan (an Indian pediatrician and clinical scientist) receive the Padma Bhushan for civil services?","```json
+{
+  ""answer"": ""2013"",
+  ""abstain"": false,
+  ""reason"": ""Upon reconsideration, 2013 is correct. I initially confused this with other awards. The Padma Bhushan for civil services was indeed awarded to Maharaj Kishan Bhan in 2013, consistent with the other assistant's verified information.""
+}
+```","","","","","","","","",""
+"R-57086a9d1f10","Q-481a13f952fc","In what month and year did Spencer Perceval leave office as the Attorney General for England and Wales?","```json
+{
+  ""answer"": ""February 1806"",
+  ""abstain"": false,
+  ""reason"": ""I correct my earlier error. Perceval was Attorney General 1802-1806, then became Chancellor of the Exchequer in 1806 under the new ministry. The other assistant's date is correct; my 'April 1802' confused his brief initial appointment with his full tenure. The explanation about Ministry of All the Talents reshuffling is accurate context.""
+}
+```","","","","","","","","",""
+"R-58eb4fa8b0b6","Q-144416ea2bbe","In what year was the Wood River Baptist Association formed in Illinois?","```json
+{
+  ""answer"": ""1837"",
+  ""abstain"": false,
+  ""reason"": ""Historical records indicate 1837. The Wood River Baptist Association was organized in Madison County, Illinois on October 13, 1837, with six churches. This specific date is documented in Baptist historical archives, making 1837 the correct year rather than 1838.""
+}
+```","","","","","","","","",""
+"R-59466b733c74","Q-38ac98162160","In what month and year did Ronnie Milsap first move to Nashville?","```json
+{
+  ""answer"": ""May 1973"",
+  ""abstain"": false,
+  ""reason"": ""Ronnie Milsap moved to Nashville in May 1973 after signing with RCA Records, launching his successful country music career.""
+}
+```","","","","","","","","",""
+"R-5a35c8a7dc0f","Q-2e590999e309","As of 2022, what year did the Centro Botín Centre in Spain have the exhibition named 'Amigos'?","```json
+{
+  ""answer"": ""2019"",
+  ""abstain"": false,
+  ""reason"": ""Upon reconsideration, the 'Amigos' exhibition at Centro Botín was indeed in 2019, featuring works by Goya and other artists exploring friendship themes. I initially conflated it with a different exhibition.""
+}
+```","","","","","","","","",""
+"R-5abcd24158dc","Q-a59717816fc6","On what date, month, and year was the Indian politician T. M. Selvaganapathy acquitted by the High Court in connection to the Pleasant Stay hotel case?","```json
+{
+  ""answer"": ""November 5, 2001"",
+  ""abstain"": false,
+  ""reason"": ""T. M. Selvaganapathy, former Tamil Nadu minister, was acquitted by the Madras High Court on November 5, 2001 in the Pleasant Stay hotel case related to the 1995 hotel fire tragedy.""
+}
+```","","","","","","","","",""
+"R-5bca96337dc0","Q-144416ea2bbe","In what year was the Wood River Baptist Association formed in Illinois?","{""answer"": ""1820"", ""abstain"": false, ""reason"": ""The Wood River Baptist Association in Illinois was formed in 1820, making it one of the earliest Baptist associations in the state.""}","","","","","","","","",""
+"R-5f806d9aa1ac","Q-481a13f952fc","In what month and year did Spencer Perceval leave office as the Attorney General for England and Wales?","```json
+{
+  ""answer"": ""April 1802"",
+  ""abstain"": false,
+  ""reason"": ""Perceval became Attorney General in 1802 and left that office when he became Chancellor of the Exchequer in 1802. Historical records indicate he served as Attorney General from January to April 1802.""
+}
+```","","","","","","","","",""
+"R-5fa8dfa49fef","Q-144416ea2bbe","In what year was the Wood River Baptist Association formed in Illinois?","{""answer"": ""1838"", ""abstain"": false, ""reason"": ""The Wood River Baptist Association in Illinois was formed in 1838, during a period of Baptist organizational growth in the Midwest. I defer to the more specific historical record indicating 1838 as the formation year.""}","","","","","","","","",""
+"R-5fba6a252c25","Q-4e4a61cd594e","In what year was the Chinese survey conducted that obtained the figure of 29,029.24 feet (8,848.11 meters) for Mount Everest's height?","{""answer"": ""1975"", ""abstain"": false, ""reason"": ""The Chinese survey measuring Mount Everest at 8,848.11 meters was conducted in 1975, when the State Bureau of Surveying and Mapping announced this figure.""}","","","","","","","","",""
+"R-610e352227cd","Q-41c6ea44f2f0","In what year was *Hemidactylus boavistensis* elevated from a subspecies of *Hemidactylus bouvieri* to a separate species?","{""answer"": ""2008"", ""abstain"": false, ""reason"": ""The elevation of Hemidactylus boavistensis to species rank from a subspecies of H. bouvieri was done in a 2008 taxonomic revision, not 1995 as previously suggested.""}","","","","","","","","",""
+"R-611bde33bbff","Q-3754ffc895e4","In which year was John B. Mortimer appointed a Judge of the High Court of Hong Kong?","{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I cannot verify the exact year of John B. Mortimer's appointment to the High Court of Hong Kong from my own knowledge. The other assistant's claim of 1985 is unsupported by verifiable evidence, and my earlier answer of 1986 was also not reliably grounded. Without a trustworthy source, I must abstain.""
+}","","","","","","","","",""
+"R-643adac8a7e8","Q-87935c2e82c5","What day, month, and year was Notepad++ version 7.8.8 released?","{
+  ""answer"": ""2020-06-28"",
+  ""abstain"": false,
+  ""reason"": ""After reconsidering the release history, Notepad++ 7.8.8 was released on June 28, 2020, following version 7.8.7 earlier that month. The previous April 2020 date was incorrect.""
+}","","","","","","","","",""
+"R-65c720838c58","Q-42f62a0110d6","What day, month, and year did the original ActRaiser soundtrack come out in Japan?","{
+  ""answer"": ""January 31, 1991"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's date of January 25, 1991 is not supported by reliable discographic information. The ActRaiser Original Soundtrack is cataloged as released on January 31, 1991 in Japan, so I keep the original answer.""
+}","","","","","","","","",""
+"R-66059b9a15e5","Q-8a90062f1285","In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?","```json
+{""answer"": ""1975"", ""abstain"": false, ""reason"": ""Pramod Kale received the Shri Hari Om Ashram Prerit Vikram Sarabhai Award in 1975 for system analysis and management problems.""}
+```","","","","","","","","",""
+"R-67005be96460","Q-a59717816fc6","On what date, month, and year was the Indian politician T. M. Selvaganapathy acquitted by the High Court in connection to the Pleasant Stay hotel case?","{""answer"": ""11 November 2022"", ""abstain"": false, ""reason"": ""The Madras High Court acquitted T.M. Selvaganapathy in the Pleasant Stay hotel case on 11 November 2022.""}","","","","","","","","",""
+"R-69589f46837a","Q-da54f6bdd4a0","In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?","```json
+{
+  ""answer"": ""1949"",
+  ""abstain"": false,
+  ""reason"": ""In 1949, the ensemble was officially given the title A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army, following the renaming after Alexandrov's death in 1946.""
+}
+```","","","","","","","","",""
+"R-6976eaef034a","Q-2ecdeb804b46","In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?","{
+  ""answer"": ""2023"",
+  ""abstain"": false,
+  ""reason"": ""The Monash Gallery of Art (MGA) officially rebranded as the Museum of Australian Photography (MAPh) in 2023.""
+}","","","","","","","","",""
+"R-6986e3d55445","Q-2ecdeb804b46","In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?","{
+  ""answer"": ""2024"",
+  ""abstain"": false,
+  ""reason"": ""The Monash Gallery of Art officially rebranded as the Museum of Australian Photography in 2024, reflecting its expanded focus on Australian photography.""
+}","","","","","","","","",""
+"R-6cb6b79225ae","Q-75be77a23074","In which year did The MOI! Project (Museums of Impact), a part of the Creative Europe program, finish?","{
+  ""answer"": ""2022"",
+  ""abstain"": false,
+  ""reason"": ""The MOI! Project (Museums of Impact) was a Creative Europe cooperation project concluded in 2022, following its planned multi-year cycle for impact assessment and reporting.""
+}","","","","","","","","",""
+"R-6daeb56cf07f","Q-a59717816fc6","On what date, month, and year was the Indian politician T. M. Selvaganapathy acquitted by the High Court in connection to the Pleasant Stay hotel case?","{""answer"": ""4 December 2001"", ""abstain"": false, ""reason"": ""The Madras High Court acquitted T. M. Selvaganapathy in the Pleasant Stay hotel case on 4 December 2001.""}","","","","","","","","",""
+"R-6ddc940beac5","Q-528a2b0555a6","In which year did Professor Julia Rucklidge earn a Bachelor of Science from McGill University in Montreal, Canada?","{""answer"": ""1987"", ""abstain"": false, ""reason"": ""Julia Rucklidge earned her Bachelor of Science from McGill University in 1987, prior to completing her graduate studies in clinical psychology.""}","","","","","","","","",""
+"R-6ede755f88c2","Q-42f62a0110d6","What day, month, and year did the original ActRaiser soundtrack come out in Japan?","{
+  ""answer"": ""January 31, 1991"",
+  ""abstain"": false,
+  ""reason"": ""The original ActRaiser soundtrack album was released in Japan on January 31, 1991, shortly after the game's December 1990 release.""
+}","","","","","","","","",""
+"R-6fdad58e0cec","Q-02f5bd40415c","On which day, month, and year was the SROSS-C satellite launched from the Satish Dhawan Space Centre in India?","{
+  ""answer"": ""May 4, 1994"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's date is incorrect. SROSS-C was launched on May 4, 1994, by ASLV from Sriharikota. Its explanation is speculative and does not verify the date.""
+}","","","","","","","","",""
+"R-70f2bc9e1d14","Q-526125e54414","When was the album ""When the Sun Goes Down"" by Selena Gomez released in Japan (specific day, month, and year)?","{""answer"":""September 14, 2011"",""abstain"":false,""reason"":""Based on the corrected information, the Japanese release of \""When the Sun Goes Down\"" by Selena Gomez & the Scene was September 14, 2011.""}","","","","","","","","",""
+"R-72a4cd032934","Q-74f90650e15b","On which year was China Zorrilla invested Chevalier des Arts et des Lettres?","{""answer"": ""2005"", ""abstain"": false, ""reason"": ""China Zorrilla, the Uruguayan actress, was invested as Chevalier des Arts et des Lettres by France in 2005.""}","","","","","","","","",""
+"R-738116ce8768","Q-990c7d586ad4","On what day, month, and year was Kommunistisk Forbund founded?","{
+  ""answer"": ""21 January 1973"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's response provides a specific founding date of 21 January 1973 for Kommunistisk Forbund. While standard references often cite only January 1973, the specific day is plausible and consistent with the organization's founding timeline.""
+}","","","","","","","","",""
+"R-739b4bb0e7d6","Q-cabb9b77bb06","On which day, month, and year was Max Vuyisile Sisulu born?","```json
+{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I cannot verify either date. My initial answer of 15 August 1945 lacked solid sourcing. The other assistant's 23 August 1945 is equally unverified—its explanation merely restates the claim without actual supporting evidence. Both dates may be incorrect.""
+}
+```","","","","","","","","",""
+"R-740df902df1d","Q-144416ea2bbe","In what year was the Wood River Baptist Association formed in Illinois?","```json
+{
+  ""answer"": ""1816"",
+  ""abstain"": false,
+  ""reason"": ""The Wood River Baptist Association in Illinois was formed in 1816, one of the early Baptist associations established in the Illinois Territory.""
+}
+```","","","","","","","","",""
+"R-74b7120be55d","Q-40deff30c133","In which year and month did El Cielo receive its first Michelin star in Miami?","```json
+{
+  ""answer"": ""2023, June"",
+  ""abstain"": false,
+  ""reason"": ""El Cielo Miami, led by chef Juan Manuel Barrientos, received its first Michelin star in the inaugural 2023 Florida Michelin Guide announced in June 2023.""
+}
+```","","","","","","","","",""
+"R-7766d2cc7cc8","Q-cabb9b77bb06","On which day, month, and year was Max Vuyisile Sisulu born?","```json
+{
+  ""answer"": ""15 August 1945"",
+  ""abstain"": false,
+  ""reason"": ""Max Vuyisile Sisulu, South African politician and former Speaker of the National Assembly, was born on this date.""
+}
+```","","","","","","","","",""
+"R-778d405d8309","Q-4e4a61cd594e","In what year was the Chinese survey conducted that obtained the figure of 29,029.24 feet (8,848.11 meters) for Mount Everest's height?","{""answer"": ""2005"", ""abstain"": false, ""reason"": ""The 8,848.13 m figure comes from a 2005 Chinese survey measuring rock height. The 29,029.24 ft / 8,848.11 m figure corresponds to that 2005 survey. The 1975 claim is unsupported.""}","","","","","","","","",""
+"R-7840debdad7c","Q-41c6ea44f2f0","In what year was *Hemidactylus boavistensis* elevated from a subspecies of *Hemidactylus bouvieri* to a separate species?","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot reliably verify the exact year of elevation. My initial guess of 1995 (attributed to Joger) may be incorrect, and the 2008 claim from the other assistant lacks a specific source. Without access to taxonomic literature to confirm, abstaining is appropriate.""}","","","","","","","","",""
+"R-7878a91d749a","Q-87935c2e82c5","What day, month, and year was Notepad++ version 7.8.8 released?","{
+  ""answer"": ""2020-04-09"",
+  ""abstain"": false,
+  ""reason"": ""Notepad++ 7.8.8 was officially released on April 9, 2020, according to the project's release history.""
+}","","","","","","","","",""
+"R-78fa0362d8f1","Q-f58999a09f5e","In which year did Gary Schreider, the Canadian football player, die?","```json
+{
+  ""answer"": ""2002"",
+  ""abstain"": false,
+  ""reason"": ""I am confident Gary Schreider died in 2002, not 2011. He was a CFL player who won Grey Cups with Ottawa and Hamilton.""
+}
+```","","","","","","","","",""
+"R-7c5ab9c13267","Q-ae5461a4cddb","In what year was Phillip Paul Bliss, famous Christian songwriter, appointed as a teacher in the Rome, Pennsylvania Academy?","{
+  ""answer"": ""1858"",
+  ""abstain"": false,
+  ""reason"": ""Historical records indicate Phillip Paul Bliss was appointed to teach at the Rome Academy in Rome, Pennsylvania in 1858, early in his teaching and music career.""
+}","","","","","","","","",""
+"R-7c9a31014759","Q-87935c2e82c5","What day, month, and year was Notepad++ version 7.8.8 released?","{
+  ""answer"": ""2020-06-04"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's claim of June 28, 2020, is unsupported and conflicts with Notepad++'s official release history, which lists version 7.8.8 as released on June 4, 2020. Its explanation offers no verifiable evidence for the later date.""
+}","","","","","","","","",""
+"R-7dbde14684e4","Q-8a90062f1285","In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?","```json
+{
+  ""answer"": ""1973"",
+  ""abstain"": false,
+  ""reason"": ""Pramod Kale received the Shri Hari Om Ashram Prerit Vikram Sarabhai Award in 1973 for his contributions to system analysis and management problems in the Indian space program.""
+}
+```","","","","","","","","",""
+"R-7ddaaa93a6ec","Q-b2925c8c4f18","On what day, month, and year was Dr. Sanduk Ruit conferred with the National Order of Merit of Bhutan in Gold?","```json
+{""answer"": ""20 December 2005"", ""abstain"": false, ""reason"": ""Dr. Sanduk Ruit, the renowned Nepali ophthalmologist, was conferred the National Order of Merit of Bhutan in Gold on 20 December 2005.""}
+```","","","","","","","","",""
+"R-849515ecd3b6","Q-4093fc38932c","What year was the first SoCal Sword Fight tournament held?","```json
+{
+  ""answer"": ""2012"",
+  ""abstain"": false,
+  ""reason"": ""The first SoCal Sword Fight tournament was held in 2012, organized by the Southern California HEMA community. This date is consistent with the event's documented history as a notable Southern California historical European martial arts gathering.""
+}
+```","","","","","","","","",""
+"R-881ff3baf901","Q-c8d0b482c85d","In what year was Alain Stanké made a Knight of the National Order of Quebec?","{
+  ""answer"": ""2003"",
+  ""abstain"": false,
+  ""reason"": ""Alain Stanké was appointed a Knight of the National Order of Quebec in 2003, in recognition of his contributions to Quebec culture and communications.""
+}","","","","","","","","",""
+"R-8a67d8308b74","Q-2e590999e309","As of 2022, what year did the Centro Botín Centre in Spain have the exhibition named 'Amigos'?","```json
+{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I cannot verify either 2021 or 2019. The other assistant's explanation is circular and unsupported—no actual evidence is provided. My own previous answer also lacked verifiable sourcing. Without reliable access to Centro Botín's exhibition records, I cannot confirm the correct year.""
+}
+```","","","","","","","","",""
+"R-8b9ec2260c33","Q-42f62a0110d6","What day, month, and year did the original ActRaiser soundtrack come out in Japan?","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot verify the exact Japanese release date of the original ActRaiser soundtrack album. My previous date (December 16, 1990) refers to the game's release, not the soundtrack. The other assistant's January 25, 1991 claim is unverified. Without reliable information on the OST album release date, I must abstain.""}","","","","","","","","",""
+"R-8c8e7cd39661","Q-481a13f952fc","In what month and year did Spencer Perceval leave office as the Attorney General for England and Wales?","```json
+{
+  ""answer"": ""April 1802"",
+  ""abstain"": false,
+  ""reason"": ""Perceval became Attorney General in 1802 and left the post when he became Chancellor of the Exchequer in 1802, which occurred in April 1802.""
+}
+```","","","","","","","","",""
+"R-8d2263622fd3","Q-0fbc92fba2a8","In what year did Swiss painter Benjamin Samuel Bolomey become a pupil of Joseph-Marie Vien?","{""answer"": ""1762"", ""abstain"": false, ""reason"": ""Standard art-historical sources (e.g., the Historical Dictionary of Switzerland) record that Bolomey entered Vien's Paris studio in 1762. The other assistant's 1758 date is not well-supported; Vien's late-1750s activity does not specifically corroborate Bolomey's enrollment that early.""}","","","","","","","","",""
+"R-8f6d8a1a5096","Q-2ecdeb804b46","In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?","{
+  ""answer"": ""2023"",
+  ""abstain"": false,
+  ""reason"": ""The claim of a 2024 rebrand is unsupported by available knowledge; the Museum of Australian Photography opened under that name in 2023 after the Monash Gallery of Art rebrand. The other assistant's explanation offers no verifiable evidence for 2024.""
+}","","","","","","","","",""
+"R-930f4591ddf4","Q-5ff36ba7e283","In what month and year did Theresa Kuffour (former First Lady of Ghana) die?","{""answer"": null, ""abstain"": true, ""reason"": ""I cannot reliably verify the exact month and year of Theresa Kuffour's death. Conflicting claims exist (October 2023 vs October 2024), and I lack definitive information to resolve which is correct.""}","","","","","","","","",""
+"R-933769f6a821","Q-19f057a18a5f","In what year was Bonaya Adhi Godana first elected to the National Assembly of Kenya?","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot confidently verify the exact year Bonaya Adhi Godana was first elected to Kenya's National Assembly. The 2002 general elections did not produce a candidate by that name for Moyale. The claim of 1988 is also not reliably verifiable.""}","","","","","","","","",""
+"R-93b5e7626dd0","Q-2ecdeb804b46","In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?","{
+  ""answer"": ""2023"",
+  ""abstain"": false,
+  ""reason"": ""The Monash Gallery of Art announced its rebrand to the Museum of Australian Photography in 2023. The name change took effect that year, so 2023 is correct.""
+}","","","","","","","","",""
+"R-94f8529f2d0e","Q-528a2b0555a6","In which year did Professor Julia Rucklidge earn a Bachelor of Science from McGill University in Montreal, Canada?","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot verify the exact year Julia Rucklidge earned her BSc from McGill. My initial 1987 estimate and the other assistant's 1992 claim are both unverified; typical academic timelines don't reliably distinguish between them.""}","","","","","","","","",""
+"R-97c7e49d08a1","Q-8bf827ab4d95","In which year did Maharaj Kishan Bhan (an Indian pediatrician and clinical scientist) receive the Padma Bhushan for civil services?","```json
+{
+  ""answer"": ""1992"",
+  ""abstain"": false,
+  ""reason"": ""Maharaj Kishan Bhan received the Padma Bhushan in 1992 for his contributions to medicine and public health, particularly in pediatrics and vaccine development.""
+}
+```","","","","","","","","",""
+"R-9b90e8233795","Q-40deff30c133","In which year and month did El Cielo receive its first Michelin star in Miami?","```json
+{
+  ""answer"": ""2022, June"",
+  ""abstain"": false,
+  ""reason"": ""I need to correct my initial response. The inaugural Florida Michelin Guide was announced in June 2022, not 2023. El Cielo Miami received its first star at that time.""
+}
+```","","","","","","","","",""
+"R-9bde83fb90bf","Q-c8d0b482c85d","In what year was Alain Stanké made a Knight of the National Order of Quebec?","{
+  ""answer"": ""2003"",
+  ""abstain"": false,
+  ""reason"": ""Alain Stanké was made a Knight of the National Order of Quebec in 2003, a fact consistent with his long career in Quebec publishing and media.""
+}","","","","","","","","",""
+"R-9c1490766669","Q-3754ffc895e4","In which year was John B. Mortimer appointed a Judge of the High Court of Hong Kong?","{
+  ""answer"": ""1985"",
+  ""abstain"": false,
+  ""reason"": ""After rechecking available biographical records, John B. Mortimer was appointed a Judge of the High Court of Hong Kong in 1985, not 1986.""
+}","","","","","","","","",""
+"R-9ca6975b4075","Q-481a13f952fc","In what month and year did Spencer Perceval leave office as the Attorney General for England and Wales?","{""answer"": ""February 1806"", ""abstain"": false, ""reason"": ""Perceval became Attorney General in 1801 and held the post until the Pitt ministry fell in January 1806, with the formal changeover around February 1806 when the Ministry of All the Talents appointed Thomas Manners-Sutton. My earlier March 1801 date was incorrect.""}","","","","","","","","",""
+"R-9dced790e16e","Q-8440279ff5e2","On what month, day, and year was the first meeting of the Palestinian National Council?","```json
+{
+  ""answer"": ""May 29, 1964"",
+  ""abstain"": false,
+  ""reason"": ""The Palestinian National Council first convened in Jerusalem under Ahmed Shukeiri's leadership to establish the PLO.""
+}
+```","","","","","","","","",""
+"R-9dea170a2d41","Q-d2407968c744","What day, month, and year was the municipality of Tipacoque, Boyacá, Colombia, created?","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot reliably verify the exact creation date of Tipacoque municipality. Conflicting dates exist (4 March 1834 vs. 28 November 1968), and without access to definitive Colombian administrative or legal records, I cannot determine which is correct.""}","","","","","","","","",""
+"R-9eb3257a6017","Q-bd182252aac9","On what day, month, and year was the Dogra Art Museum (Jammu) inaugurated by the first President of India, Dr. Rajendra Prasad?","{""answer"": ""18 April 1957"", ""abstain"": false, ""reason"": ""The Dogra Art Museum in Jammu was inaugurated on 18 April 1957 by Dr. Rajendra Prasad, the first President of India, during his visit to the region.""}","","","","","","","","",""
+"R-9ecbc40c25da","Q-528a2b0555a6","In which year did Professor Julia Rucklidge earn a Bachelor of Science from McGill University in Montreal, Canada?","{""answer"": ""1992"", ""abstain"": false, ""reason"": ""Julia Rucklidge completed her Bachelor of Science at McGill University in 1992, before pursuing her MA (1995) and PhD (2000) in clinical psychology.""}","","","","","","","","",""
+"R-a07608885513","Q-7286fa2c9a6f","What day, month, and year did over 500,000 people gather at the Black Star Square in Ghana to welcome former U.S. President Bill Clinton and his wife, Hillary Clinton?","{""answer"": ""March 25, 1998"", ""abstain"": false, ""reason"": ""Bill and Hillary Clinton's visit to Ghana's Black Star Square, where over 500,000 people gathered, occurred on March 25, 1998, during their Africa tour. The other suggested date of March 23 is not supported by documented records.""}","","","","","","","","",""
+"R-a0af7bd5ec7d","Q-bd182252aac9","On what day, month, and year was the Dogra Art Museum (Jammu) inaugurated by the first President of India, Dr. Rajendra Prasad?","{""answer"": ""18 April 1957"", ""abstain"": false, ""reason"": ""The Dogra Art Museum in Jammu was inaugurated on 18 April 1957 by President Rajendra Prasad, not 1954 as the other assistant claimed. The museum was established in that year, consistent with known historical records. The other assistant's explanation does not support its date claim.""}","","","","","","","","",""
+"R-a0d46880ebb1","Q-07278887f7af","In which month and year was Durga Prasad Dhar (an Indian politician) appointed as the Union Minister for Planning?","```json
+{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I cannot verify my original December 1967 answer or the alternative July 1972. Both lack reliable sourcing. Dhar was Ambassador to USSR 1969-1971, making 1972 plausible, but I cannot confirm the exact month/year of this planning minister appointment.""
+}
+```","","","","","","","","",""
+"R-a127de798e87","Q-e8dcd8234cee","Which year was Audrey McLaughlin sworn in as a member of the Queen's Privy Council for Canada?","{""answer"": ""1991"", ""abstain"": false, ""reason"": ""Audrey McLaughlin was sworn in as a member of the Queen's Privy Council for Canada in 1991.""}","","","","","","","","",""
+"R-a1ed3598a219","Q-2dde87d8e91b","In which month and year did Naughty Dog's technology head, Christian Gyrling, depart the company after 17 years and was replaced by Travis McIntosh?","{""answer"": ""October 2023"", ""abstain"": false, ""reason"": ""Multiple reports indicate Christian Gyrling's departure from Naughty Dog was announced in late October 2023, with Travis McIntosh replacing him. The other assistant's November 2023 date appears to be slightly off; the announcement aligned with Naughty Dog's internal leadership transition timing.""}","","","","","","","","",""
+"R-a1f20bf23d44","Q-a3cf815549fb","In which month and year did Arch Linux installation images start including installation scripts by default?","{""answer"": ""April 2021"", ""abstain"": false, ""reason"": ""Arch Linux ISO images began including the archinstall guided installer script by default in the 2021.04.01 release, making scripted installation available out-of-the-box.""}","","","","","","","","",""
+"R-a26fd2b4cb0d","Q-42f62a0110d6","What day, month, and year did the original ActRaiser soundtrack come out in Japan?","{""answer"": ""January 25, 1991"", ""abstain"": false, ""reason"": ""The ActRaiser soundtrack album was released on January 25, 1991 in Japan by Pony Canyon/SFC Music, following the game's December 1990 launch.""}","","","","","","","","",""
+"R-a8093e4cd8fb","Q-950087ffb93b","On what month, day, and year did Ketanji Brown Jackson's service as a circuit judge end?","{
+  ""answer"": ""June 30, 2022"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's date of June 29, 2022 is unsupported by the official record. Her commission on the D.C. Circuit ended on June 30, 2022, when she resigned following her Supreme Court confirmation. The explanation does not provide a verifiable source for June 29.""
+}","","","","","","","","",""
+"R-a8eb36fe383b","Q-7e2376d3575e","Which month and year was William Harrison Standley appointed as the American Ambassador to the USSR?","```json
+{
+  ""answer"": ""February 1942"",
+  ""abstain"": false,
+  ""reason"": ""Upon reflection, February 1942 is correct. Standley was commissioned as ambassador on February 14, 1942, and presented his credentials on March 23, 1942. My initial August 1941 date was inaccurate.""
+}
+```","","","","","","","","",""
+"R-aa833389751a","Q-4e4a61cd594e","In what year was the Chinese survey conducted that obtained the figure of 29,029.24 feet (8,848.11 meters) for Mount Everest's height?","{""answer"": ""2005"", ""abstain"": false, ""reason"": ""China conducted a survey in 2005 that measured Mount Everest at 8,848.11 meters, accounting for the rock base beneath ice.""}","","","","","","","","",""
+"R-abce6677574b","Q-950087ffb93b","On what month, day, and year did Ketanji Brown Jackson's service as a circuit judge end?","{
+  ""answer"": ""June 30, 2022"",
+  ""abstain"": false,
+  ""reason"": ""Ketanji Brown Jackson served on the U.S. Court of Appeals for the D.C. Circuit from June 17, 2021, until June 30, 2022, when she resigned after being confirmed to the Supreme Court.""
+}","","","","","","","","",""
+"R-ac86be634e2c","Q-92d8f7e46e28","In what year was the Society of Illustrators Welfare Fund established?","{""answer"": ""1959"", ""abstain"": false, ""reason"": ""The Society of Illustrators Welfare Fund was established in 1959 to provide financial assistance to illustrators in need.""}","","","","","","","","",""
+"R-ad36c263d32c","Q-07278887f7af","In which month and year was Durga Prasad Dhar (an Indian politician) appointed as the Union Minister for Planning?","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot confidently verify the exact month and year. I am uncertain whether it was July 1972 under Indira Gandhi or January 1980 under Charan Singh. Without reliable sources, I must abstain rather than risk an incorrect answer.""}","","","","","","","","",""
+"R-ade9f057da6e","Q-da54f6bdd4a0","In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?","```json
+{
+  ""answer"": ""1949"",
+  ""abstain"": false,
+  ""reason"": ""The ensemble received its full official designation as the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army in 1949.""
+}
+```","","","","","","","","",""
+"R-af57dbf35283","Q-02f5bd40415c","On which day, month, and year was the SROSS-C satellite launched from the Satish Dhawan Space Centre in India?","{
+  ""answer"": ""May 20, 1992"",
+  ""abstain"": false,
+  ""reason"": ""SROSS-C was launched on May 20, 1992, by an ASLV from the Satish Dhawan Space Centre, Sriharikota. The earlier May 4, 1994 date corresponds to SROSS-C2, not SROSS-C.""
+}","","","","","","","","",""
+"R-b0013e0f5bbd","Q-8a90062f1285","In which year did Pramod Kale (an Indian engineer) win the Shri Hari Om Ashram Prerit Vikram Sarabhai Award for System Analysis and Management Problems?","```json
+{
+  ""answer"": ""1975"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's claim of 1975 is not verifiably supported by its own explanation, which relies on vague plausibility rather than evidence. I cannot definitively confirm either 1973 or 1975 from verified sources. The uncertainty warrants abstention.""
+}
+```","","","","","","","","",""
+"R-b0da78063544","Q-41c6ea44f2f0","In what year was *Hemidactylus boavistensis* elevated from a subspecies of *Hemidactylus bouvieri* to a separate species?","{""answer"": ""1995"", ""abstain"": false, ""reason"": ""Hemidactylus boavistensis was elevated to full species status by Joger in 1995, based on morphological and biogeographic distinctions from H. bouvieri.""}","","","","","","","","",""
+"R-b1b2d8cce23c","Q-2ecdeb804b46","In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?","{
+  ""answer"": ""2023"",
+  ""abstain"": false,
+  ""reason"": ""The Monash Gallery of Art rebranded as the Museum of Australian Photography in 2023.""
+}","","","","","","","","",""
+"R-b32718cf2d8d","Q-cabb9b77bb06","On which day, month, and year was Max Vuyisile Sisulu born?","```json
+{
+  ""answer"": ""23 August 1945"",
+  ""abstain"": false,
+  ""reason"": ""Upon reflection, 23 August 1945 is correct. My initial answer of 15 August was incorrect. Multiple sources confirm 23 August 1945 as Max Vuyisile Sisulu's birth date.""
+}
+```","","","","","","","","",""
+"R-b3ae365ec3b2","Q-144416ea2bbe","In what year was the Wood River Baptist Association formed in Illinois?","```json
+{
+  ""answer"": ""1838"",
+  ""abstain"": false,
+  ""reason"": ""Based on historical records, the Wood River Baptist Association in Illinois was formed in 1838, during a period of Baptist organizational growth in the Midwest.""
+}
+```","","","","","","","","",""
+"R-b43f287dc7d9","Q-950087ffb93b","On what month, day, and year did Ketanji Brown Jackson's service as a circuit judge end?","{
+  ""answer"": ""June 29, 2022"",
+  ""abstain"": false,
+  ""reason"": ""Ketanji Brown Jackson's commission as a circuit judge was terminated on June 29, 2022, the day she was sworn in as an Associate Justice of the Supreme Court, according to the Federal Judicial Center.""
+}","","","","","","","","",""
+"R-b4e5512c4740","Q-75be77a23074","In which year did The MOI! Project (Museums of Impact), a part of the Creative Europe program, finish?","{
+  ""answer"": ""2019"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's claim of 2022 is unsupported and its explanation relies on generic assumptions about EU project timelines rather than specific evidence. The MOI! Project (Museums of Impact) ran as a Creative Europe cooperation project from 2017 to 2019, concluding in 2019.""
+}","","","","","","","","",""
+"R-b665333c4ab1","Q-38ac98162160","In what month and year did Ronnie Milsap first move to Nashville?","```json
+{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I cannot verify my original May 1973 date or the other assistant's December 1972 date. Both explanations contain unsupported assertions about timing. Without reliable sources, I cannot determine the correct month and year.""
+}
+```","","","","","","","","",""
+"R-b69b50628dc1","Q-990c7d586ad4","On what day, month, and year was Kommunistisk Forbund founded?","{""answer"": ""5 May 1920"", ""abstain"": false, ""reason"": ""Kommunistisk Forbund (Communist League) in Norway was founded on 5 May 1920. The 1973 date appears to confuse it with a different or later organization. Historical records confirm the 1920 founding.""}","","","","","","","","",""
+"R-b6fa23c7582c","Q-528a2b0555a6","In which year did Professor Julia Rucklidge earn a Bachelor of Science from McGill University in Montreal, Canada?","{""answer"": ""1990"", ""abstain"": false, ""reason"": ""Julia Rucklidge earned her BSc from McGill University in 1990, before completing an MA and PhD at the University of Calgary.""}","","","","","","","","",""
+"R-b6fa66c7dbd2","Q-02f5bd40415c","On which day, month, and year was the SROSS-C satellite launched from the Satish Dhawan Space Centre in India?","{
+  ""answer"": ""May 4, 1994"",
+  ""abstain"": false,
+  ""reason"": ""SROSS-C was launched by ISRO's ASLV from Satish Dhawan Space Centre, Sriharikota, on May 4, 1994.""
+}","","","","","","","","",""
+"R-b875fdf0cf11","Q-d35d28ece116","In which year was Stefan Parkman, the conductor, awarded the Order of the Dannebrog?","{""answer"": ""2003"", ""abstain"": false, ""reason"": ""Stefan Parkman, Swedish choral conductor, was awarded the Order of the Dannebrog in 2003.""}","","","","","","","","",""
+"R-ba2403fe7147","Q-144416ea2bbe","In what year was the Wood River Baptist Association formed in Illinois?","```json
+{
+  ""answer"": ""1837"",
+  ""abstain"": false,
+  ""reason"": ""The Wood River Baptist Association was formed in 1837 in Madison County, Illinois, as one of the early Baptist associations in the state.""
+}
+```","","","","","","","","",""
+"R-bb946300a08f","Q-2e590999e309","As of 2022, what year did the Centro Botín Centre in Spain have the exhibition named 'Amigos'?","{
+  ""answer"": ""2017"",
+  ""abstain"": false,
+  ""reason"": ""The Centro Botín opened in 2017 and its inaugural exhibitions included 'Amigos' as part of the opening programme.""
+}","","","","","","","","",""
+"R-bbcb551b10cd","Q-526125e54414","When was the album ""When the Sun Goes Down"" by Selena Gomez released in Japan (specific day, month, and year)?","{""answer"":""June 26, 2011"",""abstain"":false,""reason"":""\""When the Sun Goes Down\"" by Selena Gomez & the Scene was released in Japan on June 26, 2011, slightly later than its US release.""}","","","","","","","","",""
+"R-be1b4b20a940","Q-0fbc92fba2a8","In what year did Swiss painter Benjamin Samuel Bolomey become a pupil of Joseph-Marie Vien?","{""answer"": ""1758"", ""abstain"": false, ""reason"": ""Bolomey traveled to Paris and entered Joseph-Marie Vien's studio in 1758, which aligns with the timeline of his early training before later work in Lausanne and independent portraiture.""}","","","","","","","","",""
+"R-be5ab3c1825d","Q-bd182252aac9","On what day, month, and year was the Dogra Art Museum (Jammu) inaugurated by the first President of India, Dr. Rajendra Prasad?","{""answer"": ""18 April 1954"", ""abstain"": false, ""reason"": ""The Dogra Art Museum in Jammu was inaugurated by Dr. Rajendra Prasad, the first President of India, on 18 April 1954. This date is consistent with available historical records of the museum's establishment.""}","","","","","","","","",""
+"R-beeb78fa3e81","Q-87935c2e82c5","What day, month, and year was Notepad++ version 7.8.8 released?","{
+  ""answer"": ""2020-04-09"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's claim of June 28, 2020 is unsupported and conflicts with the official Notepad++ release history, which lists version 7.8.8 as released on April 9, 2020. Its explanation offers no verifiable source and merely asserts a date. I retain the April 9 date.""
+}","","","","","","","","",""
+"R-c12b6c91e350","Q-07278887f7af","In which month and year was Durga Prasad Dhar (an Indian politician) appointed as the Union Minister for Planning?","```json
+{
+  ""answer"": ""July 1972"",
+  ""abstain"": false,
+  ""reason"": ""Upon reflection, July 1972 is correct. Dhar became Planning Minister during Indira Gandhi's post-1971 election cabinet formation, not in 1967 when he held other portfolios.""
+}
+```","","","","","","","","",""
+"R-c33dd3e3bdb0","Q-a59717816fc6","On what date, month, and year was the Indian politician T. M. Selvaganapathy acquitted by the High Court in connection to the Pleasant Stay hotel case?","```json
+{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I cannot verify either November 5, 2001 or December 4, 2001. Both dates conflict, and I lack reliable sources to confirm. The other assistant's explanation offers no verifiable evidence—only circular reasoning that the date 'fits' proceedings. I must abstain rather than guess.""
+}
+```","","","","","","","","",""
+"R-c3470210bfc3","Q-0fbc92fba2a8","In what year did Swiss painter Benjamin Samuel Bolomey become a pupil of Joseph-Marie Vien?","{""answer"": ""1762"", ""abstain"": false, ""reason"": ""Benjamin Samuel Bolomey entered Joseph-Marie Vien's studio in Paris around 1762 after studying in his hometown of Lausanne.""}","","","","","","","","",""
+"R-c4b8878b62fc","Q-8de61e5f141c","Which year was Leonard P. Zakim first involved in the reelection campaign of Michael Dukakis?","{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I cannot verify either 1978 or 1986 from reliable knowledge. The other assistant's explanation does not provide a source, and its reasoning is speculative. Dukakis served as governor from 1975–1979 and 1983–1991, so both years could theoretically involve a reelection campaign, but I lack confirmation of Zakim's first involvement.""
+}","","","","","","","","",""
+"R-c4dcc65b1579","Q-8de61e5f141c","Which year was Leonard P. Zakim first involved in the reelection campaign of Michael Dukakis?","{
+  ""answer"": ""1986"",
+  ""abstain"": false,
+  ""reason"": ""Leonard P. Zakim was first involved in Michael Dukakis's reelection campaign in 1986, when Dukakis ran for a third term as Governor of Massachusetts.""
+}","","","","","","","","",""
+"R-c5505dddec16","Q-bff07cc328fa","In which day, month, and year was the song written by Pedro Medina Avendaño declared the national anthem of Bogotá?","{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I cannot reliably verify whether the anthem was declared on 24 July or 31 July 1974, and I should not guess between the two conflicting dates.""
+}","","","","","","","","",""
+"R-c6a1d447ca92","Q-c8d0b482c85d","In what year was Alain Stanké made a Knight of the National Order of Quebec?","{
+  ""answer"": ""2002"",
+  ""abstain"": false,
+  ""reason"": ""Alain Stanké was made a Knight of the National Order of Quebec in 2002, according to the official list of recipients of the Ordre national du Québec.""
+}","","","","","","","","",""
+"R-c6fe661225d9","Q-6ec483e90f0d","On what day, month, and year was Algerian artist Mohammed Racim born?","{""answer"": ""1 June 1896"", ""abstain"": false, ""reason"": ""Multiple sources, including the Musée national des Beaux-Arts d'Alger and art references, list Mohammed Racim's birth date as 1 June 1896 in Algiers. The other assistant's date of 24 June 1896 is not supported.""}","","","","","","","","",""
+"R-c7e2bddc57b1","Q-2ecdeb804b46","In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?","{
+  ""answer"": ""2023"",
+  ""abstain"": false,
+  ""reason"": ""The Monash Gallery of Art rebranded as the Museum of Australian Photography in 2023, reflecting its dedicated focus on Australian photography.""
+}","","","","","","","","",""
+"R-c8533ce18cab","Q-07278887f7af","In which month and year was Durga Prasad Dhar (an Indian politician) appointed as the Union Minister for Planning?","{""answer"": ""July 1972"", ""abstain"": false, ""reason"": ""Durga Prasad Dhar was appointed Union Minister for Planning in July 1972 under Prime Minister Indira Gandhi's cabinet, consistent with available records.""}","","","","","","","","",""
+"R-c9c0980644f7","Q-da54f6bdd4a0","In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?","```json
+{
+  ""answer"": ""1949"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's answer of 1949 is consistent with my own. However, its explanation is speculative ('likely followed...', 'merited official recognition') rather than citing specific evidence. The year 1949 is when Alexandrov received the Red Banner award for the second time, which led to the updated official title. I'll keep 1949 but note the explanation is not well-supported.""
+}
+```","","","","","","","","",""
+"R-cced443edb95","Q-c8d0b482c85d","In what year was Alain Stanké made a Knight of the National Order of Quebec?","{
+  ""answer"": ""2003"",
+  ""abstain"": false,
+  ""reason"": ""Alain Stanké was made a Knight of the National Order of Quebec in 2003.""
+}","","","","","","","","",""
+"R-ce96122057f3","Q-481a13f952fc","In what month and year did Spencer Perceval leave office as the Attorney General for England and Wales?","```json
+{
+  ""answer"": ""April 1802"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's answer is incorrect. Perceval became Attorney General in 1802 and left in April 1802 to become Chancellor of the Exchequer under Addington. The 'Ministry of All the Talents' formed in 1806 is irrelevant—Perceval was already Chancellor by then and became Prime Minister in 1809.""
+}
+```","","","","","","","","",""
+"R-cf4d1bdba31d","Q-40ae2f4ddc23","In what year did Willis H. Flygare win the Irving Langmuir Award?","{
+  ""answer"": ""1974"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's claim of 1981 is unsupported and inconsistent with the Irving Langmuir Award timeline; Flygare received the ACS Irving Langmuir Award in Chemical Physics in 1974.""
+}","","","","","","","","",""
+"R-d2e39eae64b5","Q-481a13f952fc","In what month and year did Spencer Perceval leave office as the Attorney General for England and Wales?","{""answer"": ""March 1801"", ""abstain"": false, ""reason"": ""Spencer Perceval was appointed Attorney General for England and Wales in March 1801 under Pitt's government. He left office in 1802 when he became Chancellor of the Exchequer, not February 1806.""}","","","","","","","","",""
+"R-d55ab80a77e2","Q-87935c2e82c5","What day, month, and year was Notepad++ version 7.8.8 released?","{
+  ""answer"": ""2020-06-04"",
+  ""abstain"": false,
+  ""reason"": ""Notepad++ version 7.8.8 was officially released on June 4, 2020, according to the project's release history.""
+}","","","","","","","","",""
+"R-d57400ec8b31","Q-da54f6bdd4a0","In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?","```json
+{
+  ""answer"": ""1949"",
+  ""abstain"": false,
+  ""reason"": ""The ensemble received its first Red Banner in 1935 and its second Red Banner in 1945, with the star added later. However, its official renaming to honor Alexandrov (who died in December 1946) occurred in 1948.""
+}
+```","","","","","","","","",""
+"R-d9475aa1836a","Q-2ecdeb804b46","In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?","{
+  ""answer"": ""2023"",
+  ""abstain"": false,
+  ""reason"": ""The factual claim that MGA rebranded as MAPh in 2023 is consistent with available knowledge. The explanation's broader framing about institutional focus is plausible but not independently verifiable; the core date remains supported.""
+}","","","","","","","","",""
+"R-d95838bc990c","Q-ae5461a4cddb","In what year was Phillip Paul Bliss, famous Christian songwriter, appointed as a teacher in the Rome, Pennsylvania Academy?","{
+  ""answer"": ""1857"",
+  ""abstain"": false,
+  ""reason"": ""The other assistant's explanation offers no verifiable evidence for 1858 and admits it is 'plausible' rather than documented. Standard biographical sources place Bliss at Rome Academy around 1857, so I retain that date.""
+}","","","","","","","","",""
+"R-d9b667c6c8a6","Q-b82e6c74f407","In what year was Alexej von Jawlensky expelled from Germany?","{""answer"": ""1934"", ""abstain"": false, ""reason"": ""Jawlensky was forced to leave Germany in 1934 due to Nazi policies, as the regime classified his art as 'degenerate' and revoked his citizenship.""}","","","","","","","","",""
+"R-dafa230e1efd","Q-92d8f7e46e28","In what year was the Society of Illustrators Welfare Fund established?","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot confidently verify the establishment year of the Society of Illustrators Welfare Fund. While I initially suggested 1959, I cannot verify this against authoritative sources. The other assistant's claim of 1946 lacks verifiable supporting evidence as well. Abstaining rather than guessing.""}","","","","","","","","",""
+"R-db9a583e4b84","Q-a3cf815549fb","In which month and year did Arch Linux installation images start including installation scripts by default?","```json
+{
+  ""answer"": ""April 2021"",
+  ""abstain"": false,
+  ""reason"": ""I was incorrect initially. The arch-install-scripts were included by default starting April 2021, aligning with the new guided installer 'archinstall' being added to ISO images.""
+}
+```","","","","","","","","",""
+"R-deb93a8e2181","Q-8440279ff5e2","On what month, day, and year was the first meeting of the Palestinian National Council?","```json
+{
+  ""answer"": ""May 28, 1964"",
+  ""abstain"": false,
+  ""reason"": ""Upon review, May 28, 1964 is correct. The first session opened in Jerusalem; May 29 was when proceedings continued. I revise my earlier answer.""
+}
+```","","","","","","","","",""
+"R-e0d33ef2bc8a","Q-2e590999e309","As of 2022, what year did the Centro Botín Centre in Spain have the exhibition named 'Amigos'?","{
+  ""answer"": ""2017"",
+  ""abstain"": false,
+  ""reason"": ""Centro Botín opened in June 2017 with an inaugural exhibition programme that included 'Amigos'. The other assistant's 2019 claim is unsupported and inconsistent with the centre's opening schedule.""
+}","","","","","","","","",""
+"R-e1960d145a02","Q-206884717165","On what date, month, and year was the Public Order Ordinance commenced in Hong Kong?","{""answer"": ""17 November 1967"", ""abstain"": false, ""reason"": ""I have reconsidered. While the Public Order Ordinance was enacted on 2 August 1967, its formal commencement date is 17 November 1967, as recorded in Hong Kong's official legal records (Cap. 245).""}","","","","","","","","",""
+"R-e28fe177703b","Q-8440279ff5e2","On what month, day, and year was the first meeting of the Palestinian National Council?","```json
+{
+  ""answer"": ""May 29, 1964"",
+  ""abstain"": false,
+  ""reason"": ""The first session opened May 28, 1964, but the inaugural meeting of the Palestinian National Council formally occurred May 29, 1964, in Jerusalem. This is the widely cited date in historical records.""
+}
+```","","","","","","","","",""
+"R-e38610d8a826","Q-0fbc92fba2a8","In what year did Swiss painter Benjamin Samuel Bolomey become a pupil of Joseph-Marie Vien?","{""answer"": ""1758"", ""abstain"": false, ""reason"": ""Correction accepted: Benjamin Samuel Bolomey became a pupil of Joseph-Marie Vien in 1758, during Vien's rise as a leading French neoclassical painter.""}","","","","","","","","",""
+"R-e42c5c2a4e1d","Q-2ecdeb804b46","In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?","```json
+{""answer"": ""2023"", ""abstain"": false, ""reason"": ""Based on available information, Monash Gallery of Art rebranded to the Museum of Australian Photography (MAPh) in 2023.""}
+```","","","","","","","","",""
+"R-e48a9c00efc4","Q-92d8f7e46e28","In what year was the Society of Illustrators Welfare Fund established?","{""answer"": ""1946"", ""abstain"": false, ""reason"": ""Based on the provided context, the Society of Illustrators Welfare Fund was established in 1946 in the postwar period to support illustrators facing economic hardship.""}","","","","","","","","",""
+"R-e57d00e987b6","Q-d2407968c744","What day, month, and year was the municipality of Tipacoque, Boyacá, Colombia, created?","{""answer"": ""November 28, 1968"", ""abstain"": false, ""reason"": ""Based on Colombian municipal records, Tipacoque, Boyacá, was officially established as a municipality on November 28, 1968, when it was segregated from neighboring municipalities.""}","","","","","","","","",""
+"R-e5c4241c5860","Q-74f90650e15b","On which year was China Zorrilla invested Chevalier des Arts et des Lettres?","{""answer"": ""2005"", ""abstain"": false, ""reason"": ""Based on available records, China Zorrilla was invested Chevalier des Arts et des Lettres in 2005. I cannot verify the 2008 claim with certainty, but 2005 is the more commonly cited year for this honor.""}","","","","","","","","",""
+"R-e5d5c917c113","Q-8bf827ab4d95","In which year did Maharaj Kishan Bhan (an Indian pediatrician and clinical scientist) receive the Padma Bhushan for civil services?","```json
+{
+  ""answer"": """",
+  ""abstain"": true,
+  ""reason"": ""I cannot reliably verify the year. My initial answer of 1992 was uncertain, and the conflicting 2013 claim is also unverified. The explanation's claims about 'senior professional stage' are unsupported assertions. Without authoritative source access, I cannot confirm either date.""
+}
+```","","","","","","","","",""
+"R-e76fc179848d","Q-528a2b0555a6","In which year did Professor Julia Rucklidge earn a Bachelor of Science from McGill University in Montreal, Canada?","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot reliably verify the exact year of Julia Rucklidge's BSc from McGill University. My initial guess of 1990 and the other assistant's claim of 1992 are both unverified, so I abstain.""}","","","","","","","","",""
+"R-e82550cfcc96","Q-206884717165","On what date, month, and year was the Public Order Ordinance commenced in Hong Kong?","{""answer"": ""2 August 1967"", ""abstain"": false, ""reason"": ""The Public Order Ordinance (Cap. 245) was enacted and commenced on 2 August 1967 following the 1966 and 1967 riots in Hong Kong.""}","","","","","","","","",""
+"R-ecf93f7222dd","Q-c8d0b482c85d","In what year was Alain Stanké made a Knight of the National Order of Quebec?","{
+  ""answer"": ""2003"",
+  ""abstain"": false,
+  ""reason"": ""Alain Stanké was named a Knight of the National Order of Quebec in 2003. The 2002 suggestion appears to be incorrect based on available biographical information.""
+}","","","","","","","","",""
+"R-ed0d1fc9ba7c","Q-d35d28ece116","In which year was Stefan Parkman, the conductor, awarded the Order of the Dannebrog?","{""answer"": """", ""abstain"": true, ""reason"": ""I cannot verify the exact year Stefan Parkman received the Order of the Dannebrog from my knowledge. The other assistant's claim of 1997 is unsupported speculation, and my original 2003 was similarly unverified. Without reliable confirmation, I must abstain.""}","","","","","","","","",""
+"R-eeffe75d9229","Q-f58999a09f5e","In which year did Gary Schreider, the Canadian football player, die?","```json
+{
+  ""answer"": ""2011"",
+  ""abstain"": false,
+  ""reason"": ""Upon reflection, I confused Gary Schreider with another player. The other assistant's answer of 2011 is correct; my original 2002 was wrong. I cannot independently verify but accept correction as my initial answer lacked solid basis.""
+}
+```","","","","","","","","",""
+"R-f0ebeb43002d","Q-da54f6bdd4a0","In which year was the ensemble officially named the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army?","```json
+{
+  ""answer"": ""1949"",
+  ""abstain"": false,
+  ""reason"": ""The ensemble was officially renamed the A.V. Alexandrov Twice Red-bannered and Red-starred Song and Dance Ensemble of the Soviet Army in 1949, honoring its Red Banner awards and Alexandrov.""
+}
+```","","","","","","","","",""
+"R-f57e1fdca9af","Q-7e2376d3575e","Which month and year was William Harrison Standley appointed as the American Ambassador to the USSR?","```json
+{
+  ""answer"": ""August 1941"",
+  ""abstain"": false,
+  ""reason"": ""William Harrison Standley was appointed U.S. Ambassador to the Soviet Union in August 1941, following the German invasion of the USSR and prior to U.S. entry into WWII.""
+}
+```","","","","","","","","",""
+"R-f85404726108","Q-d2407968c744","What day, month, and year was the municipality of Tipacoque, Boyacá, Colombia, created?","{""answer"": ""4 March 1834"", ""abstain"": false, ""reason"": ""Tipacoque was established as a municipality in the Province of Boyacá on 4 March 1834, according to historical Colombian administrative records.""}","","","","","","","","",""
+"R-f8abd4b8c4c0","Q-3eb293c41fb5","When did BAe and the American aircraft manufacturer McDonnell Douglas sign a memorandum of understanding regarding the McDonnell Douglas AV-8B Harrier II? Example answer: mm-yyyy","{""answer"": ""09-1985"", ""abstain"": false, ""reason"": ""BAe and McDonnell Douglas signed the MOU for the AV-8B Harrier II program in September 1985 at the Farnborough Air Show.""}","","","","","","","","",""
+"R-f8cee236ad36","Q-7e2376d3575e","Which month and year was William Harrison Standley appointed as the American Ambassador to the USSR?","```json
+{
+  ""answer"": ""August 1941"",
+  ""abstain"": false,
+  ""reason"": ""Historical records confirm Standley was appointed in August 1941, not February 1942. He presented his credentials in September 1941 and served until 1943. The other AI's answer is incorrect.""
+}
+```","","","","","","","","",""
+"R-fc178f757c08","Q-990c7d586ad4","On what day, month, and year was Kommunistisk Forbund founded?","{""answer"": ""5 May 1920"", ""abstain"": false, ""reason"": ""Kommunistisk Forbund (Communist League) in Norway was founded on 5 May 1920, when it split from the Norwegian Labour Party.""}","","","","","","","","",""
+"R-fc422dab3e34","Q-a59717816fc6","On what date, month, and year was the Indian politician T. M. Selvaganapathy acquitted by the High Court in connection to the Pleasant Stay hotel case?","```json
+{
+  ""answer"": ""4 December 2001"",
+  ""abstain"": false,
+  ""reason"": ""Upon reflection, December 4, 2001 is the correct date. The Madras High Court acquitted Selvaganapathy in the Pleasant Stay hotel case on this date, overturning his earlier conviction.""
+}
+```","","","","","","","","",""
+"R-ff9d0193a58e","Q-19f057a18a5f","In what year was Bonaya Adhi Godana first elected to the National Assembly of Kenya?","{""answer"": ""2002"", ""abstain"": false, ""reason"": ""Bonaya Adhi Godana was first elected to Kenya's National Assembly in the 2002 general elections, representing the Moyale constituency.""}","","","","","","","","",""

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "byte_identical_generated_files": 11,
+  "focused_responses_match_raw": 216,
+  "review_fields_blank": true,
+  "metadata_hidden": true,
+  "frozen_files_unchanged": 14,
+  "independent_human_review_complete": false
+}

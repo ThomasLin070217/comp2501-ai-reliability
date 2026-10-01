@@ -1,117 +1,82 @@
-# 复现指南
+# 用 R 复现数据处理与分析
 
-以下命令从仓库根目录执行。核心采集、审计、判分和 bootstrap 只使用 Python 3.9+ 标准库。绘图另需 Matplotlib；本轮绘图环境为 Python 3.13 和 Matplotlib 3.11.2（最终环境清单以实际导出为准）。
+新增事后复核入口：`Rscript Peer_Misleading_Study/R/prepare_key_review.R NEW_EMPTY_REVIEW_DIRECTORY`。脚本读取`reports/main_r`，输出关键案例匿名复核空表、协调者映射和单列的事后敏感性分析；拒绝覆盖非空目录。人工来源调查另存`reports/key_review_r/source-findings.md`，不由脚本虚构或自动更新。
 
-## 一条命令离线复算正式结果
+课程草稿：在仓库根目录执行 `Rscript -e 'rmarkdown::render("Peer_Misleading_Study/reports/course-report.Rmd")'`，需要rmarkdown、knitr及Pandoc。报告读取现有R产物；完整原始数据重算继续按下方入口执行。HTML已生成，人工复核仍待完成。
 
-```bash
-python3 Peer_Misleading_Study/reproduce_main.py --out /tmp/comp2501-main-reproduction
-```
+用户要求原文：“所有的数据处理我需要用R 语言。”当前研究的数据处理、判分、统计、绘图和报告生成统一使用 R。
 
-输出目录必须为空。该入口只做装配、审计、判分、主比较、敏感性分析、用量汇总与案例导出，**不调用任何模型**。安装绘图依赖后追加 `--plots` 可生成图表和离线交互页面。下方给出分步骤命令。
+## 运行
 
-## 离线：不调用模型、不需要凭证
+从仓库根目录执行；也可以先用 RStudio 打开 `comp2501-ai-reliability.Rproj`，在 Terminal 中执行：
 
 ```bash
-python3 -m unittest discover -s Peer_Misleading_Study -p 'test_*.py' -v
-
-python3 Peer_Misleading_Study/analyze.py \
-  --questions Peer_Misleading_Study/data/dev_retained_questions.jsonl \
-  --responses Peer_Misleading_Study/runs/dev_receivers/responses.jsonl \
-  --adjudications Peer_Misleading_Study/data/dev_adjudications.json \
-  --out /tmp/comp2501-dev-recomputed
+Rscript Peer_Misleading_Study/reproduce_main.R --out /tmp/comp2501-r-reproduction
+Rscript Peer_Misleading_Study/R/test_pipeline.R
 ```
 
-正式轮因发现接口正常结束但正文不可判分的输出，采用单独的 `quality_analyze.py` 包装冻结分析器；规则见 [输出质量修订](protocol/output-quality-amendment.md)。它保存未过滤诊断、质量排除记录和完整配对主分析，并生成下游使用的临时 `analysis_responses.jsonl`。派生响应副本不入 Git，完整原始响应始终位于 `runs/main_receivers/`。
+输出目录必须为空。流程读取已有记录，不联网、不调用模型、不需要密钥，也不会通过 R 调用 Python。依赖为 `jsonlite` 和 `digest`，图表使用 R 自带功能，输出 PNG 与 PDF。缺包时先在 R 控制台安装：
 
-正式轮发生两次已记录的 HTTP 502，补试记录单独保存在 `runs/main_transport_recovery_01/` 与 `runs/main_transport_recovery_02/`。第二次中断后的时间延期见 `protocol/morning-continuation.json`，原清单和日志前缀均保留。先用离线装配器验证并组合成功响应，原失败保留；规则见 [传输补跑记录](protocol/transport-recovery.md)。报告中的主数值与区间应相同；重新生成时间戳不同不影响数值。复算输出放新目录，保留公开结果原件。
+```r
+install.packages(c("jsonlite", "digest"), repos = "https://cloud.r-project.org")
+```
+
+本轮实测环境为 R 4.6.1；完整版本见输出中的 `sessionInfo.txt`。脚本根据自身位置找到数据，不依赖本机绝对路径。
+
+## 数据处理顺序
+
+1. 从原始题库 CSV 重算 1,000 → 207 条机械筛选，保留采集前冻结的随机顺序和错误日期分配。
+2. 根据原始材料响应和已有审阅记录，重建正式 120 题及 720 份冻结材料。语义审查决定作为输入，不能称为新的人类复核。
+3. 读取原始接收日志，核对两次 HTTP 502 的相同请求补试，得到 5,040 条返回响应；实际 5,042 次请求另计。
+4. 逐条重建请求，核对 5,040 个任务的分组、跨模型建议和六条平行分支隔离。
+5. 在 R 中解析回答、标准化日期、自动判分；需要语义判断的记录应用已有 `main_adjudications.json`。原解析器对重复 JSON 键取最后一个值，R 明确保留这条规则。
+6. 不可判分的一条输出连同其七响应单元整体移出主分析，保留全部原始与诊断判分，得到 719 单元、5,033 条响应。
+7. 计算分模型及合并结果、正确改错、错误改对、弃答、覆盖率、已回答准确率、错误目标采纳、C0 对照与用量；按整道题做 5,000 次配对聚类 bootstrap。
+8. 重算全部七种敏感性处理；开发轮单独重算。导出完整题目索引、错误库、全部案例索引、图表、Markdown 报告和离线 HTML。
+9. 最后才读取历史 Python 输出用于迁移校验；它们不作为 R 主统计或判分的计算输入。
+
+冻结前的随机分配、来源/语义审阅、已发生的 API 采集属于研究记录。迁移语言不重新抽题、不重写历史分配，也不重新收费采集。历史 Python 程序保留用于审计；当前分析入口是 R。旧 pilot 与本轮设计不同，留作历史材料，不并入当前主分析。
+
+## 输出文件
+
+| 文件 | 用途 |
+|---|---|
+| `report.md` / `results.html` | R 生成的报告及可离线打开的展示页 |
+| `analysis_data.csv` | 5,033 行长表，含题目、参考答案、来源、模型原文及判分 |
+| `all_response_grades.csv` | 全部 5,040 条返回响应的评分，含不可判分输出 |
+| `graded_responses.csv` / `cells.csv` | 纳入评分表 / 719 行配对单元宽表 |
+| `tables.csv` / `effects.csv` | 每组分母、比例 / 三项预定配对比较及区间 |
+| `sensitivity.json` / `sensitivity_effects.csv` | 全部七种处理规则 |
+| `transitions.csv` / `neutral_comparisons.csv` | 状态变化与中性复核对照 |
+| `condition_usage.csv` / `usage-ledger.json` | 条件用量 / 全部阶段含失败的记账 |
+| `source_audit.json` / `source_eligibility.csv` / `material_selection.csv` | R 重建的来源与材料筛选 |
+| `blinded_format_review.json` | 隐藏模型和条件的原文复核队列，不显示已有语义判决 |
+| `error_bank/` / `cases/` | 全部题目及实测错误 / 确定规则选出的案例与全部索引 |
+| `development/` | 开发轮的独立重算结果 |
+| `unfiltered_diagnostic/` / `output_quality.json` | 不过滤的诊断结果 / 质量排除记录 |
+| `validation.json` / `bootstrap_comparison.csv` | 逐项迁移校验 / R 与历史区间差异 |
+| `provenance.json` / `sessionInfo.txt` | 输入及代码文件哈希 / R 与包版本 |
+
+CSV 是 R 导出的数据，不是 Excel 处理结果。在 RStudio 中可直接读：
+
+```r
+dat <- read.csv("Peer_Misleading_Study/reports/main_r/analysis_data.csv",
+                stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+with(subset(dat, condition == "baseline"), table(provider, grade))
+```
+
+不要把普通逐行 bootstrap 用在 `analysis_data.csv` 上：同一题的模型、重复和分支有关联。正式脚本始终以题目为重采样单位。
+
+## R 与历史数值的关系
+
+所有主分析逐条判分、分母、计数和效应点估计应一致。R 的 `set.seed(25011001)` 与 Python 的同数字种子不会生成相同抽样序列，所以区间独立重算、逐项披露，不复制历史端点。R 的主比较区间为：RQ1 [-5.17, 2.31]；RQ2 [-4.46, 0.00]；正确建议纠错差 [-14.38, -5.25] 个百分点。当前结论与历史结果一致。
+
+重复运行 R 时，数据表和分析 JSON 应一致；PDF 的创建时间等元数据可能不同。语言迁移在结果已知之后实施，不是新的预注册或新实验。独立人工复核仍未完成。执行偏离和研究边界继续见 [正式报告](reports/main-report.md)。
+
+本轮 21 项 R 检查通过，两次独立运行的 43 个 CSV、JSON、JSONL 和 Markdown 产物逐字节一致，见 `reports/main_r/reproducibility.json`。可自行验证两次输出：
 
 ```bash
-python3 Peer_Misleading_Study/assemble_receivers.py \
-  --run Peer_Misleading_Study/runs/main_receivers \
-  --recovery Peer_Misleading_Study/runs/main_transport_recovery_01 \
-  --recovery Peer_Misleading_Study/runs/main_transport_recovery_02 \
-  --continuation-amendment Peer_Misleading_Study/protocol/morning-continuation.json \
-  --questions Peer_Misleading_Study/data/main_questions.jsonl \
-  --materials Peer_Misleading_Study/data/main_frozen/materials.json \
-  --out /tmp/comp2501-main-assembled
-
-python3 Peer_Misleading_Study/quality_analyze.py \
-  --questions Peer_Misleading_Study/data/main_questions.jsonl \
-  --responses /tmp/comp2501-main-assembled/responses.jsonl \
-  --adjudications Peer_Misleading_Study/data/main_adjudications.json \
-  --out /tmp/comp2501-main-recomputed
-
-python3 Peer_Misleading_Study/supplement.py \
-  --responses /tmp/comp2501-main-recomputed/analysis_responses.jsonl \
-  --grades /tmp/comp2501-main-recomputed/grades.json \
-  --out /tmp/comp2501-main-recomputed/supplementary.json
-
-python3 Peer_Misleading_Study/sensitivity.py \
-  --questions Peer_Misleading_Study/data/main_questions.jsonl \
-  --responses /tmp/comp2501-main-assembled/responses.jsonl \
-  --adjudications Peer_Misleading_Study/data/main_adjudications.json \
-  --caveats Peer_Misleading_Study/data/main_preanalysis_caveats.json \
-  --out /tmp/comp2501-main-recomputed/sensitivity.json
-
-python3 Peer_Misleading_Study/usage_ledger.py \
-  --out /tmp/comp2501-main-recomputed/usage-ledger.json
-
-python3 Peer_Misleading_Study/report_tables.py \
-  --summary /tmp/comp2501-main-recomputed/summary.json \
-  --supplement /tmp/comp2501-main-recomputed/supplementary.json \
-  --sensitivity /tmp/comp2501-main-recomputed/sensitivity.json \
-  --usage /tmp/comp2501-main-recomputed/usage-ledger.json \
-  --out /tmp/comp2501-main-recomputed/statistics.md
+Rscript Peer_Misleading_Study/R/verify_reproduction.R FIRST_OUTPUT SECOND_OUTPUT
 ```
 
-```bash
-python3 Peer_Misleading_Study/audit_run.py \
-  --questions Peer_Misleading_Study/data/main_questions.jsonl \
-  --materials Peer_Misleading_Study/data/main_frozen/materials.json \
-  --run /tmp/comp2501-main-assembled
-```
-
-绘图需要额外安装依赖，可在独立虚拟环境中运行：
-
-```bash
-python3 -m venv /tmp/comp2501-plots
-/tmp/comp2501-plots/bin/pip install -r Peer_Misleading_Study/requirements-plots.txt
-MPLCONFIGDIR=/tmp/comp2501-matplotlib /tmp/comp2501-plots/bin/python \
-  Peer_Misleading_Study/render_results.py \
-  --summary /tmp/comp2501-main-recomputed/summary.json \
-  --questions Peer_Misleading_Study/data/main_questions.jsonl \
-  --responses /tmp/comp2501-main-recomputed/analysis_responses.jsonl \
-  --materials Peer_Misleading_Study/data/main_frozen/materials.json \
-  --out /tmp/comp2501-main-plots
-```
-
-HTML 自带图片和数据，下载后可离线打开。GitHub 默认显示 HTML 源码，不会自动托管交互页面。
-
-## 复建材料选择
-
-`select_main.py` 只读候选、原始材料及既有审阅记录，确定前 120 道合格题。`freeze_materials.py` 可离线重建冻结材料。审核者必须实际阅读材料；不能用脚本产生审阅身份或假装独立人工复核。原始快照筛选脚本 `collect.py` 会重写派生文件，若验证全流程请在副本中运行，并比较内容哈希。
-
-## 重新调用模型
-
-这是有成本的新实验，结果应写到新目录。凭证从环境变量 `DEEPSEEK_API_KEY`、`KIMI_API_KEY`、`MINIMAX_API_KEY` 读取；仓库不提供凭证。MiniMax 配置使用 HKU 课程转发服务，外部复现者未必有访问权限。不能直接用不同供应商模型替代后宣称完全复现。
-
-`study.py` 默认仅输出计划，只有 `--execute` 才调用。默认截止时间是本轮的 2026-10-01 08:00（北京时间），以后调用须显式设定新截止和预算。不要修改既有运行清单后继续原目录。
-
-```bash
-python3 Peer_Misleading_Study/study.py receive \
-  --questions Peer_Misleading_Study/data/main_questions.jsonl \
-  --materials Peer_Misleading_Study/data/main_frozen/materials.json \
-  --out Peer_Misleading_Study/runs/new_replication \
-  --repeats 2 --max-calls 5040 --budget-cny 100
-```
-
-上面没有 `--execute`，不会收费。真正执行时需另行提供有效凭证、未来的 ISO 8601 `--deadline` 和明确执行参数。费用保护汇总当前实验目录下所有已有运行；不覆盖旧响应。HTTP 错误、截断或用量保护触发会停止批次，不能静默丢弃并重试。
-
-## 可重复的是什么
-
-可以逐条复核本轮原始请求，确定每个对照分支，重新判分并重算统计。无法保证未来服务端模型别名、硬件随机性和返回文字完全相同。来源网页也可能变化，因此保留固定题库、来源 URL、抓取哈希和审查决定；不公开新闻全文缓存。
-
-辅助描述由 `supplement.py` 生成，覆盖指定错误采纳、C0 比较及各条件 token/延迟；`usage_ledger.py` 汇总全部阶段的 API 用量。`sensitivity.py` 同时输出原评分、已记录的替代评分和剔除争议题的结果，不用有利变体替换主分析。各脚本可用 `--help` 查看参数。
-
-组员对来源、非标准答案及展示结论进行独立复核时，可按 [REVIEW_GUIDE.md](REVIEW_GUIDE.md) 记录自己的判决。脚本复算不代替语义复核。
+历史 Python 命令仅保留于 [归档说明](REPRODUCE_PYTHON_ARCHIVE.md)，不作为当前数据处理入口。

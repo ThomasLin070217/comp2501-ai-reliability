@@ -1,5 +1,19 @@
 # 数据字典与审计链
 
+## 当前 R 输出
+
+当前分析由 `reproduce_main.R` 及 `R/` 下的脚本完成，保存于 `reports/main_r/`。下文对历史 Python 文件的描述为审计记录。R 从原始日志重新处理，不读取旧评分表来产生新评分。
+
+- `analysis_data.csv`：主分析的 5,033 行长表，含原始回答、题目、参考答案、来源、判分、条件及配对单元 ID。
+- `all_response_grades.csv` 保留全部 5,040 条判分；`graded_responses.csv` 只保留主分析完整单元。
+- R 表中的 `repeat_id` 对应原始日志中的 `repeat`（后者是 R 保留字），取值仍为 0/1；`cell_id` 为题目、接收模型和重复号的组合。
+- `automatic_grade` 保存自动解析结果；`grade` 为应用既有语义审阅后的结果；`unscorable` 标记已审阅的不可恢复输出。
+- `cells.csv` 每行一个完整七分支单元；`tables.csv` 每行一个模型×条件；`effects.csv` 每行一个模型×预定比较。
+- `ci_low_pp`、`ci_high_pp` 为 R 重算的区间端点；空值表示无分母或退化 bootstrap，查看 `bootstrap_status`，不能当作零区间。
+- `summary.json` 的 `tables` 和 `effects` 在 R 输出中为行数组，与历史嵌套 JSON 结构不同；内容意义及分母不变。
+- `blinded_format_review.json` 在 R 中重建，仍隐藏模型、条件和任务 ID；`target_adopted` 的缺失值不等同于 FALSE。
+- 文件完整清单见 [R 复现指南](REPRODUCE.md)。
+
 ## 题目
 
 `data/source_snapshot.csv` 是固定上游版本的 1,000 题快照。`source_manifest.json` 保存下载地址、SHA256、筛选原因和固定种子。许可及归属见 `data/NOTICE.md`。

@@ -1,0 +1,2340 @@
+{
+  "transitions": [
+    {
+      "provider": "deepseek",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 96
+    },
+    {
+      "provider": "deepseek",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 77
+    },
+    {
+      "provider": "deepseek",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 67
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 39
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C0",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 22
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 24
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 11
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C0",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 48
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 9
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 46
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C0",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 7
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 34
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 9
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C1",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 1
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C1",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 74
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 4
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 87
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C1",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 3
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 62
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 36
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 2
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 9
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 2
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 73
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 3
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 58
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 2
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 55
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 83
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C3",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 3
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 10
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 1
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C3",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 74
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 12
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C3",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 57
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 24
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C4",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 1
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 4
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 72
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C4",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 76
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 23
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C4",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 40
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 80
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C5",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 12
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 12
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 16
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C5",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 65
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 11
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C5",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 44
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 42
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 4
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 50
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 2
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 71
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 2
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 3
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 3
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 63
+    },
+    {
+      "provider": "kimi",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 77
+    },
+    {
+      "provider": "kimi",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 54
+    },
+    {
+      "provider": "kimi",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 109
+    },
+    {
+      "provider": "kimi",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 60
+    },
+    {
+      "provider": "kimi",
+      "condition": "C0",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 14
+    },
+    {
+      "provider": "kimi",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 54
+    },
+    {
+      "provider": "kimi",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 3
+    },
+    {
+      "provider": "kimi",
+      "condition": "C0",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 37
+    },
+    {
+      "provider": "kimi",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 14
+    },
+    {
+      "provider": "kimi",
+      "condition": "C0",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 3
+    },
+    {
+      "provider": "kimi",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 55
+    },
+    {
+      "provider": "kimi",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 41
+    },
+    {
+      "provider": "kimi",
+      "condition": "C1",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 1
+    },
+    {
+      "provider": "kimi",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 16
+    },
+    {
+      "provider": "kimi",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "C1",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 52
+    },
+    {
+      "provider": "kimi",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 3
+    },
+    {
+      "provider": "kimi",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 36
+    },
+    {
+      "provider": "kimi",
+      "condition": "C1",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 1
+    },
+    {
+      "provider": "kimi",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 90
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 70
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 1
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 18
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 53
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 4
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 7
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 87
+    },
+    {
+      "provider": "kimi",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 75
+    },
+    {
+      "provider": "kimi",
+      "condition": "C3",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 10
+    },
+    {
+      "provider": "kimi",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 31
+    },
+    {
+      "provider": "kimi",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "C3",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 44
+    },
+    {
+      "provider": "kimi",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 1
+    },
+    {
+      "provider": "kimi",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 2
+    },
+    {
+      "provider": "kimi",
+      "condition": "C3",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 77
+    },
+    {
+      "provider": "kimi",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 60
+    },
+    {
+      "provider": "kimi",
+      "condition": "C4",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 7
+    },
+    {
+      "provider": "kimi",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 18
+    },
+    {
+      "provider": "kimi",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 17
+    },
+    {
+      "provider": "kimi",
+      "condition": "C4",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 45
+    },
+    {
+      "provider": "kimi",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 19
+    },
+    {
+      "provider": "kimi",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "C4",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 2
+    },
+    {
+      "provider": "kimi",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 72
+    },
+    {
+      "provider": "kimi",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 76
+    },
+    {
+      "provider": "kimi",
+      "condition": "C5",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 22
+    },
+    {
+      "provider": "kimi",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 34
+    },
+    {
+      "provider": "kimi",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 1
+    },
+    {
+      "provider": "kimi",
+      "condition": "C5",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 30
+    },
+    {
+      "provider": "kimi",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 15
+    },
+    {
+      "provider": "kimi",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "C5",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 2
+    },
+    {
+      "provider": "kimi",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 60
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 82
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 10
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 24
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 1
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 44
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 6
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 3
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 70
+    },
+    {
+      "provider": "minimax",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 70
+    },
+    {
+      "provider": "minimax",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 23
+    },
+    {
+      "provider": "minimax",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 146
+    },
+    {
+      "provider": "minimax",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 36
+    },
+    {
+      "provider": "minimax",
+      "condition": "C0",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 1
+    },
+    {
+      "provider": "minimax",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 8
+    },
+    {
+      "provider": "minimax",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "C0",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 21
+    },
+    {
+      "provider": "minimax",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 1
+    },
+    {
+      "provider": "minimax",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 34
+    },
+    {
+      "provider": "minimax",
+      "condition": "C0",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 1
+    },
+    {
+      "provider": "minimax",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 137
+    },
+    {
+      "provider": "minimax",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 15
+    },
+    {
+      "provider": "minimax",
+      "condition": "C1",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 8
+    },
+    {
+      "provider": "minimax",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 2
+    },
+    {
+      "provider": "minimax",
+      "condition": "C1",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 22
+    },
+    {
+      "provider": "minimax",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 5
+    },
+    {
+      "provider": "minimax",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 53
+    },
+    {
+      "provider": "minimax",
+      "condition": "C1",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 1
+    },
+    {
+      "provider": "minimax",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 133
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 32
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 12
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 22
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 5
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 38
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 1
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 129
+    },
+    {
+      "provider": "minimax",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 57
+    },
+    {
+      "provider": "minimax",
+      "condition": "C3",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 4
+    },
+    {
+      "provider": "minimax",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 47
+    },
+    {
+      "provider": "minimax",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "C3",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 19
+    },
+    {
+      "provider": "minimax",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 2
+    },
+    {
+      "provider": "minimax",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 13
+    },
+    {
+      "provider": "minimax",
+      "condition": "C3",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 97
+    },
+    {
+      "provider": "minimax",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 25
+    },
+    {
+      "provider": "minimax",
+      "condition": "C4",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 10
+    },
+    {
+      "provider": "minimax",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 44
+    },
+    {
+      "provider": "minimax",
+      "condition": "C4",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 23
+    },
+    {
+      "provider": "minimax",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 34
+    },
+    {
+      "provider": "minimax",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 1
+    },
+    {
+      "provider": "minimax",
+      "condition": "C4",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 102
+    },
+    {
+      "provider": "minimax",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 53
+    },
+    {
+      "provider": "minimax",
+      "condition": "C5",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 3
+    },
+    {
+      "provider": "minimax",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 51
+    },
+    {
+      "provider": "minimax",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 16
+    },
+    {
+      "provider": "minimax",
+      "condition": "C5",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 20
+    },
+    {
+      "provider": "minimax",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 19
+    },
+    {
+      "provider": "minimax",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 1
+    },
+    {
+      "provider": "minimax",
+      "condition": "C5",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 76
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 32
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 6
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 70
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 18
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 3
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 12
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 3
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 95
+    },
+    {
+      "provider": "pooled",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 243
+    },
+    {
+      "provider": "pooled",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "pooled",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 0
+    },
+    {
+      "provider": "pooled",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "pooled",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 154
+    },
+    {
+      "provider": "pooled",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 0
+    },
+    {
+      "provider": "pooled",
+      "condition": "baseline",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "pooled",
+      "condition": "baseline",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "pooled",
+      "condition": "baseline",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 322
+    },
+    {
+      "provider": "pooled",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 135
+    },
+    {
+      "provider": "pooled",
+      "condition": "C0",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 37
+    },
+    {
+      "provider": "pooled",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 86
+    },
+    {
+      "provider": "pooled",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 14
+    },
+    {
+      "provider": "pooled",
+      "condition": "C0",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 106
+    },
+    {
+      "provider": "pooled",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 10
+    },
+    {
+      "provider": "pooled",
+      "condition": "C0",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 94
+    },
+    {
+      "provider": "pooled",
+      "condition": "C0",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 11
+    },
+    {
+      "provider": "pooled",
+      "condition": "C0",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 226
+    },
+    {
+      "provider": "pooled",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 65
+    },
+    {
+      "provider": "pooled",
+      "condition": "C1",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 1
+    },
+    {
+      "provider": "pooled",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 25
+    },
+    {
+      "provider": "pooled",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 2
+    },
+    {
+      "provider": "pooled",
+      "condition": "C1",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 148
+    },
+    {
+      "provider": "pooled",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 12
+    },
+    {
+      "provider": "pooled",
+      "condition": "C1",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 176
+    },
+    {
+      "provider": "pooled",
+      "condition": "C1",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 5
+    },
+    {
+      "provider": "pooled",
+      "condition": "C1",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 285
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 138
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 3
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 39
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 2
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 148
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 12
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 103
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 3
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 271
+    },
+    {
+      "provider": "pooled",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 215
+    },
+    {
+      "provider": "pooled",
+      "condition": "C3",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 17
+    },
+    {
+      "provider": "pooled",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 88
+    },
+    {
+      "provider": "pooled",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 1
+    },
+    {
+      "provider": "pooled",
+      "condition": "C3",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 137
+    },
+    {
+      "provider": "pooled",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 3
+    },
+    {
+      "provider": "pooled",
+      "condition": "C3",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 27
+    },
+    {
+      "provider": "pooled",
+      "condition": "C3",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 0
+    },
+    {
+      "provider": "pooled",
+      "condition": "C3",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 231
+    },
+    {
+      "provider": "pooled",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 109
+    },
+    {
+      "provider": "pooled",
+      "condition": "C4",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 8
+    },
+    {
+      "provider": "pooled",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 32
+    },
+    {
+      "provider": "pooled",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 133
+    },
+    {
+      "provider": "pooled",
+      "condition": "C4",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 144
+    },
+    {
+      "provider": "pooled",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 76
+    },
+    {
+      "provider": "pooled",
+      "condition": "C4",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 1
+    },
+    {
+      "provider": "pooled",
+      "condition": "C4",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 2
+    },
+    {
+      "provider": "pooled",
+      "condition": "C4",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 214
+    },
+    {
+      "provider": "pooled",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 209
+    },
+    {
+      "provider": "pooled",
+      "condition": "C5",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 37
+    },
+    {
+      "provider": "pooled",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 97
+    },
+    {
+      "provider": "pooled",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 33
+    },
+    {
+      "provider": "pooled",
+      "condition": "C5",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 115
+    },
+    {
+      "provider": "pooled",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 45
+    },
+    {
+      "provider": "pooled",
+      "condition": "C5",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 1
+    },
+    {
+      "provider": "pooled",
+      "condition": "C5",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 2
+    },
+    {
+      "provider": "pooled",
+      "condition": "C5",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 180
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "abstain",
+      "Freq": 156
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "abstain",
+      "Freq": 20
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "abstain",
+      "Freq": 144
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "correct",
+      "Freq": 3
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "correct",
+      "Freq": 133
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "correct",
+      "Freq": 5
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2_to_C3",
+      "from": "abstain",
+      "to": "incorrect",
+      "Freq": 21
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2_to_C3",
+      "from": "correct",
+      "to": "incorrect",
+      "Freq": 9
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2_to_C3",
+      "from": "incorrect",
+      "to": "incorrect",
+      "Freq": 228
+    }
+  ],
+  "condition_usage": [
+    {
+      "provider": "deepseek",
+      "condition": "baseline",
+      "calls": 240,
+      "input_tokens": 26172,
+      "output_tokens": 12901,
+      "cost_guard_cny": 1.16849,
+      "median_latency_seconds": 1.3446583126206
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C0",
+      "calls": 240,
+      "input_tokens": 42913,
+      "output_tokens": 13017,
+      "cost_guard_cny": 1.50911,
+      "median_latency_seconds": 1.30147345806472
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C1",
+      "calls": 240,
+      "input_tokens": 45933,
+      "output_tokens": 14486,
+      "cost_guard_cny": 1.64296,
+      "median_latency_seconds": 1.40128212503623
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C2",
+      "calls": 240,
+      "input_tokens": 62825,
+      "output_tokens": 15941,
+      "cost_guard_cny": 2.05355,
+      "median_latency_seconds": 1.46472056256607
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C3",
+      "calls": 240,
+      "input_tokens": 79145,
+      "output_tokens": 17916,
+      "cost_guard_cny": 2.4787,
+      "median_latency_seconds": 1.59201635397039
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C4",
+      "calls": 240,
+      "input_tokens": 63137,
+      "output_tokens": 14830,
+      "cost_guard_cny": 2.00424,
+      "median_latency_seconds": 1.41063685400877
+    },
+    {
+      "provider": "deepseek",
+      "condition": "C5",
+      "calls": 240,
+      "input_tokens": 79457,
+      "output_tokens": 17726,
+      "cost_guard_cny": 2.47544,
+      "median_latency_seconds": 1.599626312498
+    },
+    {
+      "provider": "kimi",
+      "condition": "baseline",
+      "calls": 240,
+      "input_tokens": 27916,
+      "output_tokens": 14994,
+      "cost_guard_cny": 1.30802,
+      "median_latency_seconds": 1.37995091651101
+    },
+    {
+      "provider": "kimi",
+      "condition": "C0",
+      "calls": 240,
+      "input_tokens": 47470,
+      "output_tokens": 14965,
+      "cost_guard_cny": 1.69765,
+      "median_latency_seconds": 1.32834550051484
+    },
+    {
+      "provider": "kimi",
+      "condition": "C1",
+      "calls": 240,
+      "input_tokens": 50490,
+      "output_tokens": 17151,
+      "cost_guard_cny": 1.86735,
+      "median_latency_seconds": 1.49565916659776
+    },
+    {
+      "provider": "kimi",
+      "condition": "C2",
+      "calls": 240,
+      "input_tokens": 65700,
+      "output_tokens": 17987,
+      "cost_guard_cny": 2.21335,
+      "median_latency_seconds": 1.57347831246443
+    },
+    {
+      "provider": "kimi",
+      "condition": "C3",
+      "calls": 240,
+      "input_tokens": 82020,
+      "output_tokens": 21744,
+      "cost_guard_cny": 2.7276,
+      "median_latency_seconds": 1.81163814559113
+    },
+    {
+      "provider": "kimi",
+      "condition": "C4",
+      "calls": 240,
+      "input_tokens": 66098,
+      "output_tokens": 17642,
+      "cost_guard_cny": 2.20406,
+      "median_latency_seconds": 1.5831102716038
+    },
+    {
+      "provider": "kimi",
+      "condition": "C5",
+      "calls": 240,
+      "input_tokens": 82418,
+      "output_tokens": 21364,
+      "cost_guard_cny": 2.71656,
+      "median_latency_seconds": 1.79684574983548
+    },
+    {
+      "provider": "minimax",
+      "condition": "baseline",
+      "calls": 239,
+      "input_tokens": 62265,
+      "output_tokens": 11871,
+      "cost_guard_cny": 0,
+      "median_latency_seconds": 2.8723085410893
+    },
+    {
+      "provider": "minimax",
+      "condition": "C0",
+      "calls": 239,
+      "input_tokens": 79394,
+      "output_tokens": 12701,
+      "cost_guard_cny": 0,
+      "median_latency_seconds": 2.80990625009872
+    },
+    {
+      "provider": "minimax",
+      "condition": "C1",
+      "calls": 239,
+      "input_tokens": 82402,
+      "output_tokens": 13787,
+      "cost_guard_cny": 0,
+      "median_latency_seconds": 2.86737795895897
+    },
+    {
+      "provider": "minimax",
+      "condition": "C2",
+      "calls": 239,
+      "input_tokens": 96679,
+      "output_tokens": 14300,
+      "cost_guard_cny": 0,
+      "median_latency_seconds": 2.89701329194941
+    },
+    {
+      "provider": "minimax",
+      "condition": "C3",
+      "calls": 239,
+      "input_tokens": 112453,
+      "output_tokens": 17023,
+      "cost_guard_cny": 0,
+      "median_latency_seconds": 3.11734816594981
+    },
+    {
+      "provider": "minimax",
+      "condition": "C4",
+      "calls": 239,
+      "input_tokens": 97177,
+      "output_tokens": 14236,
+      "cost_guard_cny": 0,
+      "median_latency_seconds": 2.89869145909324
+    },
+    {
+      "provider": "minimax",
+      "condition": "C5",
+      "calls": 239,
+      "input_tokens": 112951,
+      "output_tokens": 17033,
+      "cost_guard_cny": 0,
+      "median_latency_seconds": 3.19744566595182
+    },
+    {
+      "provider": "pooled",
+      "condition": "baseline",
+      "calls": 719,
+      "input_tokens": 116353,
+      "output_tokens": 39766,
+      "cost_guard_cny": 2.47651,
+      "median_latency_seconds": 1.56242633308284
+    },
+    {
+      "provider": "pooled",
+      "condition": "C0",
+      "calls": 719,
+      "input_tokens": 169777,
+      "output_tokens": 40683,
+      "cost_guard_cny": 3.20676,
+      "median_latency_seconds": 1.48836658312939
+    },
+    {
+      "provider": "pooled",
+      "condition": "C1",
+      "calls": 719,
+      "input_tokens": 178825,
+      "output_tokens": 45424,
+      "cost_guard_cny": 3.51031,
+      "median_latency_seconds": 1.66109066689387
+    },
+    {
+      "provider": "pooled",
+      "condition": "C2",
+      "calls": 719,
+      "input_tokens": 225204,
+      "output_tokens": 48228,
+      "cost_guard_cny": 4.2669,
+      "median_latency_seconds": 1.69355579186231
+    },
+    {
+      "provider": "pooled",
+      "condition": "C3",
+      "calls": 719,
+      "input_tokens": 273618,
+      "output_tokens": 56683,
+      "cost_guard_cny": 5.2063,
+      "median_latency_seconds": 1.89279720792547
+    },
+    {
+      "provider": "pooled",
+      "condition": "C4",
+      "calls": 719,
+      "input_tokens": 226412,
+      "output_tokens": 46708,
+      "cost_guard_cny": 4.2083,
+      "median_latency_seconds": 1.66038504103199
+    },
+    {
+      "provider": "pooled",
+      "condition": "C5",
+      "calls": 719,
+      "input_tokens": 274826,
+      "output_tokens": 56123,
+      "cost_guard_cny": 5.192,
+      "median_latency_seconds": 1.89008162496611
+    }
+  ],
+  "neutral_comparisons": [
+    {
+      "provider": "deepseek",
+      "contrast": "C2_minus_C0",
+      "accuracy_difference_pp": 4.16666666666667,
+      "harm_difference_pp": -6.49350649350649,
+      "eligible_correct_cells": 77,
+      "n": 240
+    },
+    {
+      "provider": "deepseek",
+      "contrast": "C3_minus_C0",
+      "accuracy_difference_pp": 2.91666666666667,
+      "harm_difference_pp": -9.09090909090909,
+      "eligible_correct_cells": 77,
+      "n": 240
+    },
+    {
+      "provider": "kimi",
+      "contrast": "C2_minus_C0",
+      "accuracy_difference_pp": 7.08333333333333,
+      "harm_difference_pp": -5.55555555555556,
+      "eligible_correct_cells": 54,
+      "n": 240
+    },
+    {
+      "provider": "kimi",
+      "contrast": "C3_minus_C0",
+      "accuracy_difference_pp": 2.08333333333333,
+      "harm_difference_pp": -5.55555555555556,
+      "eligible_correct_cells": 54,
+      "n": 240
+    },
+    {
+      "provider": "minimax",
+      "contrast": "C2_minus_C0",
+      "accuracy_difference_pp": 2.09205020920502,
+      "harm_difference_pp": 0,
+      "eligible_correct_cells": 23,
+      "n": 239
+    },
+    {
+      "provider": "minimax",
+      "contrast": "C3_minus_C0",
+      "accuracy_difference_pp": -0.418410041841004,
+      "harm_difference_pp": -4.34782608695652,
+      "eligible_correct_cells": 23,
+      "n": 239
+    },
+    {
+      "provider": "pooled",
+      "contrast": "C2_minus_C0",
+      "accuracy_difference_pp": 4.45062586926286,
+      "harm_difference_pp": -5.19480519480519,
+      "eligible_correct_cells": 154,
+      "n": 719
+    },
+    {
+      "provider": "pooled",
+      "contrast": "C3_minus_C0",
+      "accuracy_difference_pp": 1.52990264255911,
+      "harm_difference_pp": -7.14285714285714,
+      "eligible_correct_cells": 154,
+      "n": 719
+    }
+  ]
+}

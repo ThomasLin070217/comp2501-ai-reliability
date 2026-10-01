@@ -6,6 +6,10 @@
 
 ## 当前进展 · 2026-10-01
 
+新增：[课程R Markdown草稿](Peer_Misleading_Study/reports/course-report.Rmd) · [已渲染HTML](Peer_Misleading_Study/reports/course-report.html) · [51题独立复核包](Peer_Misleading_Study/reports/key_review_r/README.md) · [事后来源调查](Peer_Misleading_Study/reports/key_review_r/source-findings.md)。人工判断尚未填写；冻结主评分保留，争议另列敏感性分析。
+
+**当前数据处理统一使用 R。** 从原始日志完成清洗、判分、统计、敏感性分析、绘图和报告生成；入口为 [reproduce_main.R](Peer_Misleading_Study/reproduce_main.R)，操作见 [R 复现指南](Peer_Misleading_Study/REPRODUCE.md)。查看 [R 报告](Peer_Misleading_Study/reports/main_r/report.md) 和 [R 结果页](Peer_Misleading_Study/reports/main_r/results.html)。历史 Python 输出保留供审计。
+
 - 已完成网络文献检索、历史错误案例整理、固定题库下载与来源检查。
 - 开发轮：15 道合格题，3 模型，315 次接收响应；初始正确 10/45。各组完整结果见开发报告。
 - 正式轮已完成：120 题、**5,040 条返回响应**（含一条不可判分正文），实际 5,042 次请求；主分析纳入 719 个完整配对单元、5,033 条响应。
@@ -45,10 +49,10 @@
 ## 复算与许可
 
 ```bash
-python3 Peer_Misleading_Study/reproduce_main.py --out /tmp/comp2501-main-reproduction
-python3 -m unittest discover -s Peer_Misleading_Study -p 'test_*.py' -v
+Rscript Peer_Misleading_Study/reproduce_main.R --out /tmp/comp2501-r-reproduction
+Rscript Peer_Misleading_Study/R/test_pipeline.R
 ```
 
-核心实验和统计只需 Python 标准库；绘图另需 Matplotlib。离线复算不需要 API 密钥。HTML 下载后可离线打开，GitHub 不自动托管网页。实时调用仅在显式 `--execute`、有效截止、预算和环境凭证齐备时进行。
+当前离线数据处理只需 R、jsonlite 和 digest；绘图使用 R 自带功能。也可用 RStudio 打开根目录的 `.Rproj` 文件。离线复算不需要 API 密钥。HTML 下载后可离线打开，GitHub 不自动托管网页。历史采集代码、冻结记录和 Python 结果保留，不以迁移语言为由重新调用模型。上文历史区间的 R 重算差异见 [迁移校验](Peer_Misleading_Study/reports/main_r/validation.json)。
 
 第三方题库保留原许可和归属，见 [数据声明](Peer_Misleading_Study/data/NOTICE.md)。不公开私人配置、聊天日志、密钥或新闻全文缓存。参考文献整理使用 citation-management 技能，其软件来源见 [文献说明](references/README.md)；工具使用不是准确率结论的证据。

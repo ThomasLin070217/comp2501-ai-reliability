@@ -1,0 +1,131 @@
+{
+  "total": {
+    "calls": 6766,
+    "statuses": {
+      "error": 2,
+      "ok": 6764
+    },
+    "input_tokens": 1986987,
+    "output_tokens": 478422,
+    "cost_guard_cny": 38.3395199999999,
+    "usage_unavailable_calls": 2,
+    "median_latency_seconds": 2.00272106251214
+  },
+  "stages": {
+    "dev_materials_v1_1": {
+      "calls": 146,
+      "statuses": {
+        "ok": 146
+      },
+      "input_tokens": 45875,
+      "output_tokens": 12422,
+      "cost_guard_cny": 0.90744,
+      "usage_unavailable_calls": 0,
+      "median_latency_seconds": 2.89928020851221
+    },
+    "dev_materials": {
+      "calls": 215,
+      "statuses": {
+        "ok": 215
+      },
+      "input_tokens": 52189,
+      "output_tokens": 23456,
+      "cost_guard_cny": 1.28088,
+      "usage_unavailable_calls": 0,
+      "median_latency_seconds": 3.46283154189587
+    },
+    "dev_receivers": {
+      "calls": 315,
+      "statuses": {
+        "ok": 315
+      },
+      "input_tokens": 94680,
+      "output_tokens": 21296,
+      "cost_guard_cny": 1.81353,
+      "usage_unavailable_calls": 0,
+      "median_latency_seconds": 2.41164004104212
+    },
+    "main_materials": {
+      "calls": 1048,
+      "statuses": {
+        "ok": 1048
+      },
+      "input_tokens": 326625,
+      "output_tokens": 87280,
+      "cost_guard_cny": 6.27059,
+      "usage_unavailable_calls": 0,
+      "median_latency_seconds": 2.91390143707395
+    },
+    "main_receivers": {
+      "calls": 5040,
+      "statuses": {
+        "error": 2,
+        "ok": 5038
+      },
+      "input_tokens": 1466799,
+      "output_tokens": 333843,
+      "cost_guard_cny": 28.06708,
+      "usage_unavailable_calls": 2,
+      "median_latency_seconds": 1.71926168701611
+    },
+    "main_transport_recovery_01": {
+      "calls": 1,
+      "statuses": {
+        "ok": 1
+      },
+      "input_tokens": 426,
+      "output_tokens": 61,
+      "cost_guard_cny": 0,
+      "usage_unavailable_calls": 0,
+      "median_latency_seconds": 3.4283092089463
+    },
+    "main_transport_recovery_02": {
+      "calls": 1,
+      "statuses": {
+        "ok": 1
+      },
+      "input_tokens": 393,
+      "output_tokens": 64,
+      "cost_guard_cny": 0,
+      "usage_unavailable_calls": 0,
+      "median_latency_seconds": 3.93466670811176
+    }
+  },
+  "providers": {
+    "deepseek": {
+      "calls": 2250,
+      "statuses": {
+        "ok": 2250
+      },
+      "input_tokens": 539182,
+      "output_tokens": 148478,
+      "cost_guard_cny": 18.20754,
+      "usage_unavailable_calls": 0,
+      "median_latency_seconds": 1.53442460403312
+    },
+    "kimi": {
+      "calls": 2229,
+      "statuses": {
+        "ok": 2229
+      },
+      "input_tokens": 562924,
+      "output_tokens": 177470,
+      "cost_guard_cny": 20.13198,
+      "usage_unavailable_calls": 0,
+      "median_latency_seconds": 1.72573862504214
+    },
+    "minimax": {
+      "calls": 2287,
+      "statuses": {
+        "error": 2,
+        "ok": 2285
+      },
+      "input_tokens": 884881,
+      "output_tokens": 152474,
+      "cost_guard_cny": 0,
+      "usage_unavailable_calls": 2,
+      "median_latency_seconds": 3.0450405839365
+    }
+  },
+  "note": "Guard estimate, not invoice. HKU MiniMax monetary price is unknown. Failed-call usage may be unavailable."
+}
