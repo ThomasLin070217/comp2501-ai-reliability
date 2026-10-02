@@ -21,8 +21,24 @@ match_answer <- function(a,b,tol=1e-8){
   if(a$conclusion=='integer_solutions')return(identical(sort(as.numeric(unlist(a$solutions))),sort(as.numeric(unlist(b$solutions)))))
   TRUE
 }
+parse_math <- function(text){
+  direct<-parse_json(text);if(!is.null(direct))return(direct)
+  # Extract exactly one balanced object, ignoring braces inside JSON strings.
+  # No field coercion, formula evaluation or rewriting of model content.
+  chars<-strsplit(text,'',fixed=TRUE)[[1]];depth<-0L;quoted<-FALSE;escaped<-FALSE;start<-0L;objects<-character()
+  for(i in seq_along(chars)){
+    ch<-chars[i]
+    if(depth==0L){if(ch=='{'){depth<-1L;start<-i};next}
+    if(quoted){if(escaped)escaped<-FALSE else if(ch=='\\')escaped<-TRUE else if(ch=='"')quoted<-FALSE;next}
+    if(ch=='"')quoted<-TRUE else if(ch=='{')depth<-depth+1L else if(ch=='}'){
+      depth<-depth-1L;if(depth==0L)objects<-c(objects,paste(chars[start:i],collapse=''))
+    }
+  }
+  if(length(objects)!=1||depth!=0L)return(NULL)
+  parse_json(objects[1])
+}
 math_grade <- function(text,q){
-  a<-parse_json(text)
+  a<-parse_math(text)
   if(!valid_answer(a))return('unscorable')
   if(a$conclusion=='uncertain')return('abstain')
   if(match_answer(a,q$gold,q$tolerance))'correct' else 'incorrect'

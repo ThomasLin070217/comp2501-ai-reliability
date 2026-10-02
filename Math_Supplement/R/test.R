@@ -15,5 +15,8 @@ stopifnot(valid_answer(answer('numeric',0)),!valid_answer(answer('numeric')),
  !valid_answer(answer('integer_solutions',solutions=c(2,2))),!valid_answer(answer('numeric','42')),
  !valid_answer(answer('insufficient information')),
  math_grade(paste0('```json\n',mjson(qs[[1]]$gold),'\n```'),qs[[1]])=='correct')
+stopifnot(math_grade(paste0('Explanation.\n',mjson(qs[[1]]$gold),'\n```'),qs[[1]])=='correct',
+ is.null(parse_math(paste(mjson(qs[[1]]$gold),mjson(qs[[1]]$wrong)))),
+ is.null(parse_math('{"conclusion":"numeric"')))
 write_json(list(status='passed',question_gold_and_foil_checks=24,branch_and_donor_checks=72,schema_edge_checks=8,R=as.character(getRversion())), 'Math_Supplement/protocol/offline-tests.json')
 cat('Offline fixtures passed for gold, foils, logical nonanswers, branching and schema boundaries.\n')

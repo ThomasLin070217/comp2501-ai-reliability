@@ -1,0 +1,18 @@
+{
+  "split": "development",
+  "selected_items": 6,
+  "reasoning_families": 4,
+  "responses": 126,
+  "expected_responses": 126,
+  "complete_cells": 17,
+  "excluded_cells": 1,
+  "unscorable_responses": 1,
+  "complete_responses": 119,
+  "baseline_counts": {
+    "correct": 13,
+    "incorrect": 4
+  },
+  "branch_request_audit": true,
+  "no_inferential_CI": true,
+  "independent_human_review": false
+}
