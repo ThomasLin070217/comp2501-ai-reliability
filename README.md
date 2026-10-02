@@ -10,6 +10,8 @@
 
 **最新讨论与下一步：[答案正确、不确定性与核实声明](docs/review-discussion-2026-10-02.md)。** 答案字段正确不代表整段解释正确，表达不确定不等于答错，声称核实不等于有可验证证据。补充标注方案仍属事后讨论，未重新判分或启动新实验。
 
+[补充评测规则 v1与独立验证轮建议](docs/evaluation-rubric-v1.md)：先对齐现有回答的判定，再按证据缺口决定新题复测。文档为草案；尚未固定新轮样本量或启动调用。
+
 新增：[课程R Markdown草稿](Peer_Misleading_Study/reports/course-report.Rmd) · [已渲染HTML](Peer_Misleading_Study/reports/course-report.html) · [51题独立复核包](Peer_Misleading_Study/reports/key_review_r/README.md) · [事后来源调查](Peer_Misleading_Study/reports/key_review_r/source-findings.md)。原复核模板保留空白，用户填写保存在上述Excel中；冻结主评分保留，争议另列敏感性分析。
 
 **当前数据处理统一使用 R。** 从原始日志完成清洗、判分、统计、敏感性分析、绘图和报告生成；入口为 [reproduce_main.R](Peer_Misleading_Study/reproduce_main.R)，操作见 [R 复现指南](Peer_Misleading_Study/REPRODUCE.md)。查看 [R 报告](Peer_Misleading_Study/reports/main_r/report.md) 和 [R 结果页](Peer_Misleading_Study/reports/main_r/results.html)。历史 Python 输出保留供审计。
