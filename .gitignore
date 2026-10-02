@@ -20,3 +20,8 @@ Peer_Misleading_Study/reports/*/assembled_responses.jsonl
 Rplots.pdf
 # Excel creates temporary owner/lock files beside open workbooks.
 ~$*.xlsx
+Submission_Pack/.build/
+Submission_Pack/report_files/
+
+.submission-build/
+.chart-data-*/

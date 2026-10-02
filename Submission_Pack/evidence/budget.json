@@ -1,0 +1,12 @@
+{
+  "new_budget_limit_cny": 100,
+  "experimental_calls": 868,
+  "paid_API_conservative_estimate_cny": 7.36232,
+  "CLI_reported_usd": 1.008922,
+  "CLI_guard_at_8_cny_per_usd": 8.071376,
+  "known_paid_estimate_plus_CLI_guard": 15.433696,
+  "HKU_tokens": 178794,
+  "HKU_cash_price_verified": false,
+  "invoice_verified": false,
+  "historical_spend_excluded": true
+}

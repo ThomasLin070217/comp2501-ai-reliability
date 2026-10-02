@@ -1,0 +1,22 @@
+{
+  "factual_fresh_reproduction_key_files": {
+    "graded_responses.csv": true,
+    "tables.csv": true,
+    "effects.csv": true
+  },
+  "factual_R_tests": 21,
+  "math_frozen_collector_and_scorer_unchanged": true,
+  "math_checks": {
+    "deterministic_files_identical": {
+      "graded_responses.csv": true,
+      "cells.csv": true,
+      "tables.csv": true,
+      "review_queue.csv": true,
+      "summary.json": true,
+      "report.md": true,
+      "all_stage_usage.csv": true
+    },
+    "branch_request_audit": true,
+    "offline_fixtures_passed": true
+  }
+}

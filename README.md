@@ -6,11 +6,15 @@
 
 ## 当前进展 · 2026-10-02
 
+**检查资料包：[入口与提交说明](Submission_Pack/README.md) · [Proposal](Submission_Pack/proposal.md) · [英文报告PDF](Submission_Pack/COMP2501_report.pdf) · [演示稿](Submission_Pack/COMP2501_presentation.pptx) · [中文讲解](Submission_Pack/中文讲解.md)。**
+
+新增[数学部分补充](Math_Supplement/README.md)：13道合格题、546条接收响应、71完整单元；原16题完整配对要求未达到，执行修订在接收前记录。16个初答字段错误中13个的解释已到达正确结果，不能把全部改善解释为逻辑能力提高。原事实主分析保持不变。
+
 **人工复核：[中文Excel（第一批6题45条）](outputs/01a0e6a9-review/COMP2501_人工复核.xlsx) · [填写说明](Peer_Misleading_Study/reports/readable_review/README.md)。** 用户已填写第一批6题来源判断和45条回答判定；审阅者/日期、冲突标记及部分编码仍待整理，尚未完成分歧裁决或合并主评分。其余171条仍为后续队列。
 
-**最新讨论与下一步：[答案正确、不确定性与核实声明](docs/review-discussion-2026-10-02.md)。** 答案字段正确不代表整段解释正确，表达不确定不等于答错，声称核实不等于有可验证证据。补充标注方案仍属事后讨论，未重新判分或启动新实验。
+**最新讨论与下一步：[答案正确、不确定性与核实声明](docs/review-discussion-2026-10-02.md)。** 答案字段正确不代表整段解释正确，表达不确定不等于答错，声称核实不等于有可验证证据。现已另存事后词语筛查与首批编码映射，原主评分未改；数学补充另行完成。
 
-[补充评测规则 v1与独立验证轮建议](docs/evaluation-rubric-v1.md)：先对齐现有回答的判定，再按证据缺口决定新题复测。文档为草案；尚未固定新轮样本量或启动调用。
+[补充评测规则 v1与独立验证轮建议](docs/evaluation-rubric-v1.md)：先对齐现有回答的判定，再按证据缺口决定新题复测。该建议是历史草案；随后执行情况以数学目录的冻结与修订记录为准。
 
 新增：[课程R Markdown草稿](Peer_Misleading_Study/reports/course-report.Rmd) · [已渲染HTML](Peer_Misleading_Study/reports/course-report.html) · [51题独立复核包](Peer_Misleading_Study/reports/key_review_r/README.md) · [事后来源调查](Peer_Misleading_Study/reports/key_review_r/source-findings.md)。原复核模板保留空白，用户填写保存在上述Excel中；冻结主评分保留，争议另列敏感性分析。
 
@@ -27,9 +31,9 @@
 
 ## 主要结果
 
-错误日期附加解释未显示更高的带偏率（5/154 → 3/154；差 −1.30 个百分点，95% 区间 [-5.45, +2.15]）。同材料下结构化核验观察到 3/154 → 0/154，但事件少、区间触及零；拒答明显增多。面对正确建议，真正纠错由 76/322 降到 45/322（差 −9.63 个百分点，95% 区间 [-14.19, -4.98]）。不能把更少采纳错误直接解释成准确率提高。
+错误日期附加解释未显示更高的带偏率（5/154 → 3/154；差 −1.30 个百分点，95% 区间 [-5.17, +2.31]）。同材料下结构化核验观察到 3/154 → 0/154，但事件少、区间触及零；拒答明显增多。面对正确建议，真正纠错由 76/322 降到 45/322（差 −9.63 个百分点，95% 区间 [-14.38, -5.25]）。不能把更少采纳错误直接解释成准确率提高。
 
-先看[正式报告](Peer_Misleading_Study/reports/main-report.md)、[统计表](Peer_Misleading_Study/reports/main/statistics.md)、[实测错题库](Peer_Misleading_Study/reports/main/error_bank/README.md)和[交互结果页](Peer_Misleading_Study/reports/main/results.html)。本轮结论限于所选困难日期题、模型与参数；完整独立人工复核尚未完成。正确回答减少和弃答增加不能单独证明对用户更差；本实验尚未测量用户实际使用收益或误导损失。
+先看[R正式报告](Peer_Misleading_Study/reports/main_r/report.md)、[R统计表](Peer_Misleading_Study/reports/main_r/effects.csv)、[实测错题库](Peer_Misleading_Study/reports/main/error_bank/README.md)和[交互结果页](Peer_Misleading_Study/reports/main/results.html)。本轮结论限于所选困难日期题、模型与参数；完整独立人工复核尚未完成。正确回答减少和弃答增加不能单独证明对用户更差；本实验尚未测量用户实际使用收益或误导损失。
 
 ## 阅读顺序
 

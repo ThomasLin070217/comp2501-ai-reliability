@@ -1,0 +1,10 @@
+{
+  "source_sha256": {
+    "Peer_Misleading_Study/reports/main_r/tables.csv": "d45f6675057ce648caf7fa223e3d2929166822dbd559eea1ed68e63277922481",
+    "Peer_Misleading_Study/reports/main_r/effects.csv": "c9eb12607bd668d6932adca1ab10bb8adef4f4c2d99db762c5687c7cb9665530",
+    "Peer_Misleading_Study/reports/factual_review_supplement/audit.json": "8b62fcec127c352cd849ecefec1bf0e52812ddfa78d42385dff24dff73c3b861",
+    "Math_Supplement/reports/supplementary/tables.csv": "cdab6c455493a88c43cad6e0347a4aeeb28ab9092b94e6153c7f383ac8131a6f",
+    "Math_Supplement/reports/supplementary/summary.json": "fdd375144f65647c81881a708702bd75b70d0020c57af11760df07f959299877"
+  },
+  "processing": "R only; document layout in JS/Python does not calculate experimental results"
+}

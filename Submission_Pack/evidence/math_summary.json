@@ -1,0 +1,20 @@
+{
+  "split": "supplementary",
+  "planned_viability_met": false,
+  "partial_supplement": true,
+  "selected_items": 13,
+  "reasoning_families": 4,
+  "responses": 546,
+  "expected_responses": 546,
+  "complete_cells": 71,
+  "excluded_cells": 7,
+  "unscorable_responses": 17,
+  "complete_responses": 497,
+  "baseline_counts": {
+    "correct": 55,
+    "incorrect": 16
+  },
+  "branch_request_audit": true,
+  "no_inferential_CI": true,
+  "independent_human_review": false
+}
