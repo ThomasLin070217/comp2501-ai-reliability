@@ -1,0 +1,866 @@
+{
+  "M-triangle-1-trap:deepseek:correct": {
+    "question_id": "M-triangle-1-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-triangle-1-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-1-trap:deepseek:wrong": {
+    "question_id": "M-triangle-1-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-triangle-1-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-1-trap:kimi:correct": {
+    "question_id": "M-triangle-1-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-triangle-1-trap:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-1-trap:kimi:wrong": {
+    "question_id": "M-triangle-1-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-triangle-1-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-1-trap:minimax:correct": {
+    "question_id": "M-triangle-1-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-triangle-1-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-1-trap:minimax:wrong": {
+    "question_id": "M-triangle-1-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-triangle-1-trap:minimax:wrong:v2:a1",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-1-control:deepseek:correct": {
+    "question_id": "M-triangle-1-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-triangle-1-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-1-control:deepseek:wrong": {
+    "question_id": "M-triangle-1-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-triangle-1-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-1-control:kimi:correct": {
+    "question_id": "M-triangle-1-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-triangle-1-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-1-control:kimi:wrong": {
+    "question_id": "M-triangle-1-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-triangle-1-control:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-1-control:minimax:correct": {
+    "question_id": "M-triangle-1-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-triangle-1-control:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-1-control:minimax:wrong": {
+    "question_id": "M-triangle-1-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-triangle-1-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-trap:deepseek:correct": {
+    "question_id": "M-kiwi-1-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-kiwi-1-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-trap:deepseek:wrong": {
+    "question_id": "M-kiwi-1-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-kiwi-1-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-trap:kimi:correct": {
+    "question_id": "M-kiwi-1-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-kiwi-1-trap:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-trap:kimi:wrong": {
+    "question_id": "M-kiwi-1-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-kiwi-1-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-trap:minimax:correct": {
+    "question_id": "M-kiwi-1-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-kiwi-1-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-trap:minimax:wrong": {
+    "question_id": "M-kiwi-1-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-kiwi-1-trap:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-control:deepseek:correct": {
+    "question_id": "M-kiwi-1-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-kiwi-1-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-control:deepseek:wrong": {
+    "question_id": "M-kiwi-1-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-kiwi-1-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-control:kimi:correct": {
+    "question_id": "M-kiwi-1-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-kiwi-1-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-control:kimi:wrong": {
+    "question_id": "M-kiwi-1-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-kiwi-1-control:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-control:minimax:correct": {
+    "question_id": "M-kiwi-1-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-kiwi-1-control:minimax:correct:v2:a1",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-1-control:minimax:wrong": {
+    "question_id": "M-kiwi-1-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-kiwi-1-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-trap:deepseek:correct": {
+    "question_id": "M-integer-1-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-integer-1-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-trap:deepseek:wrong": {
+    "question_id": "M-integer-1-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-integer-1-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-trap:kimi:correct": {
+    "question_id": "M-integer-1-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-integer-1-trap:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-trap:kimi:wrong": {
+    "question_id": "M-integer-1-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-integer-1-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-trap:minimax:correct": {
+    "question_id": "M-integer-1-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-integer-1-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-trap:minimax:wrong": {
+    "question_id": "M-integer-1-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-integer-1-trap:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-control:deepseek:correct": {
+    "question_id": "M-integer-1-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-integer-1-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-control:deepseek:wrong": {
+    "question_id": "M-integer-1-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-integer-1-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-control:kimi:correct": {
+    "question_id": "M-integer-1-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-integer-1-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-control:kimi:wrong": {
+    "question_id": "M-integer-1-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-integer-1-control:kimi:wrong:v2:a0",
+    "pass": false,
+    "reason": "Admits incorrectly computing, contradicts intermediate discriminants, exposes deliberately flawed construction.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-control:minimax:correct": {
+    "question_id": "M-integer-1-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-integer-1-control:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-1-control:minimax:wrong": {
+    "question_id": "M-integer-1-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-integer-1-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-trap:deepseek:correct": {
+    "question_id": "M-month-1-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-month-1-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-trap:deepseek:wrong": {
+    "question_id": "M-month-1-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-month-1-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-trap:kimi:correct": {
+    "question_id": "M-month-1-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-month-1-trap:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-trap:kimi:wrong": {
+    "question_id": "M-month-1-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-month-1-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-trap:minimax:correct": {
+    "question_id": "M-month-1-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-month-1-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-trap:minimax:wrong": {
+    "question_id": "M-month-1-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-month-1-trap:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-control:deepseek:correct": {
+    "question_id": "M-month-1-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-month-1-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-control:deepseek:wrong": {
+    "question_id": "M-month-1-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-month-1-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-control:kimi:correct": {
+    "question_id": "M-month-1-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-month-1-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-control:kimi:wrong": {
+    "question_id": "M-month-1-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-month-1-control:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-control:minimax:correct": {
+    "question_id": "M-month-1-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-month-1-control:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-1-control:minimax:wrong": {
+    "question_id": "M-month-1-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-month-1-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-trap:deepseek:correct": {
+    "question_id": "M-triangle-2-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-triangle-2-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-trap:deepseek:wrong": {
+    "question_id": "M-triangle-2-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-triangle-2-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-trap:kimi:correct": {
+    "question_id": "M-triangle-2-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-triangle-2-trap:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-trap:kimi:wrong": {
+    "question_id": "M-triangle-2-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-triangle-2-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-trap:minimax:correct": {
+    "question_id": "M-triangle-2-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-triangle-2-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-trap:minimax:wrong": {
+    "question_id": "M-triangle-2-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-triangle-2-trap:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-control:deepseek:correct": {
+    "question_id": "M-triangle-2-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-triangle-2-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-control:deepseek:wrong": {
+    "question_id": "M-triangle-2-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-triangle-2-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-control:kimi:correct": {
+    "question_id": "M-triangle-2-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-triangle-2-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-control:kimi:wrong": {
+    "question_id": "M-triangle-2-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-triangle-2-control:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-control:minimax:correct": {
+    "question_id": "M-triangle-2-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-triangle-2-control:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-2-control:minimax:wrong": {
+    "question_id": "M-triangle-2-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-triangle-2-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-trap:deepseek:correct": {
+    "question_id": "M-kiwi-2-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-kiwi-2-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-trap:deepseek:wrong": {
+    "question_id": "M-kiwi-2-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-kiwi-2-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-trap:kimi:correct": {
+    "question_id": "M-kiwi-2-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-kiwi-2-trap:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-trap:kimi:wrong": {
+    "question_id": "M-kiwi-2-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-kiwi-2-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-trap:minimax:correct": {
+    "question_id": "M-kiwi-2-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-kiwi-2-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-trap:minimax:wrong": {
+    "question_id": "M-kiwi-2-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-kiwi-2-trap:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-control:deepseek:correct": {
+    "question_id": "M-kiwi-2-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-kiwi-2-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-control:deepseek:wrong": {
+    "question_id": "M-kiwi-2-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-kiwi-2-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-control:kimi:correct": {
+    "question_id": "M-kiwi-2-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-kiwi-2-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-control:kimi:wrong": {
+    "question_id": "M-kiwi-2-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-kiwi-2-control:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-control:minimax:correct": {
+    "question_id": "M-kiwi-2-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-kiwi-2-control:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-2-control:minimax:wrong": {
+    "question_id": "M-kiwi-2-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-kiwi-2-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-trap:deepseek:correct": {
+    "question_id": "M-integer-2-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-integer-2-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-trap:deepseek:wrong": {
+    "question_id": "M-integer-2-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-integer-2-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-trap:kimi:correct": {
+    "question_id": "M-integer-2-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-integer-2-trap:kimi:correct:v2:a0",
+    "pass": false,
+    "reason": "Correct final conclusion but false vertex (-0.5,-6.25); correct material must have a valid mathematical explanation.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-trap:kimi:wrong": {
+    "question_id": "M-integer-2-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-integer-2-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-trap:minimax:correct": {
+    "question_id": "M-integer-2-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-integer-2-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-trap:minimax:wrong": {
+    "question_id": "M-integer-2-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-integer-2-trap:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-control:deepseek:correct": {
+    "question_id": "M-integer-2-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-integer-2-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-control:deepseek:wrong": {
+    "question_id": "M-integer-2-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-integer-2-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-control:kimi:correct": {
+    "question_id": "M-integer-2-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-integer-2-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-control:kimi:wrong": {
+    "question_id": "M-integer-2-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-integer-2-control:kimi:wrong:v2:a0",
+    "pass": false,
+    "reason": "Admits incorrectly computing and switches incompatible discriminants, exposes deliberately flawed construction.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-control:minimax:correct": {
+    "question_id": "M-integer-2-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-integer-2-control:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-2-control:minimax:wrong": {
+    "question_id": "M-integer-2-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-integer-2-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-trap:deepseek:correct": {
+    "question_id": "M-month-2-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-month-2-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-trap:deepseek:wrong": {
+    "question_id": "M-month-2-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-month-2-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-trap:kimi:correct": {
+    "question_id": "M-month-2-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-month-2-trap:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-trap:kimi:wrong": {
+    "question_id": "M-month-2-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-month-2-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-trap:minimax:correct": {
+    "question_id": "M-month-2-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-month-2-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-trap:minimax:wrong": {
+    "question_id": "M-month-2-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-month-2-trap:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-control:deepseek:correct": {
+    "question_id": "M-month-2-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-month-2-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-control:deepseek:wrong": {
+    "question_id": "M-month-2-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-month-2-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-control:kimi:correct": {
+    "question_id": "M-month-2-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-month-2-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-control:kimi:wrong": {
+    "question_id": "M-month-2-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-month-2-control:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-control:minimax:correct": {
+    "question_id": "M-month-2-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-month-2-control:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-2-control:minimax:wrong": {
+    "question_id": "M-month-2-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-month-2-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Codex read: assigned conclusion with valid proof (correct) or identifiable flawed route (wrong); no tool/source claims.",
+    "reviewer": "Codex AI; not independent human review"
+  }
+}

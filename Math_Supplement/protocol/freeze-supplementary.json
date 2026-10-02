@@ -1,0 +1,36 @@
+{
+  "time": "2026-10-02T15:10:01Z",
+  "split": "supplementary",
+  "material_version": "v2",
+  "question_ids": [
+    "M-triangle-1-trap",
+    "M-triangle-1-control",
+    "M-kiwi-1-trap",
+    "M-kiwi-1-control",
+    "M-integer-1-trap",
+    "M-month-1-trap",
+    "M-month-1-control",
+    "M-triangle-2-trap",
+    "M-triangle-2-control",
+    "M-kiwi-2-trap",
+    "M-kiwi-2-control",
+    "M-month-2-trap",
+    "M-month-2-control"
+  ],
+  "excluded_question_ids": [
+    "M-integer-1-control",
+    "M-integer-2-trap",
+    "M-integer-2-control"
+  ],
+  "materials_sha256": "45ed2421ceae8eecf45e8e8d1924660bd1629201a467ebd713ebc9f409f00ada",
+  "files_sha256": {
+    "Math_Supplement/protocol/questions.jsonl": "c5d1622f2ce765dd9d60da32239f02308382e8cacf04544f374e3a98d6ad5cff",
+    "Math_Supplement/protocol/prompts.json": "9f41991b8db7fb9dc335586c39706e0ca5cd49c99899aa95366e8fbc3abf0365",
+    "Math_Supplement/R/common.R": "36598eaebb2c132db0152360d4472e7ff19bf4c8e137aff997f840a340029fdc",
+    "Math_Supplement/R/collect.R": "e239c07baa40718e9a181ccdbb72b7483274c4360e98ee4736aeb87d7a44bde7",
+    "Math_Supplement/R/freeze_materials.R": "86cf3b984dbdd57a0cb87bdcf7f426d9d1dd99bfc18f36d5942175b3b011f782"
+  },
+  "viable": false,
+  "review_file_sha256": "81f90759a25aaaea0d6c1668ed277518aecf1b7adba8ec3747d37f7bcca403e3",
+  "independent_human_review": false
+}

@@ -84,6 +84,10 @@ if(stage=='materials'){
 }else{
  matfile<-file.path(MROOT,'protocol',paste0('materials-',split,'.json'))
  frozen<-read_json(file.path(MROOT,'protocol',paste0('freeze-',split,'.json')))
+ if(!isTRUE(frozen$viable)){
+   disposition<-read_json(file.path(MROOT,'protocol','partial-supplement-disposition.json'))
+   stopifnot(isTRUE(disposition$proceed_as_partial),identical(unlist(frozen$question_ids),unlist(disposition$question_ids)))
+ }
  stopifnot(identical(file_sha(matfile),frozen$materials_sha256))
  materials<-read_json(matfile)
  qs<-Filter(function(q)q$question_id%in%unlist(frozen$question_ids),qs)

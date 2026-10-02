@@ -1,0 +1,24 @@
+{
+  "time": "2026-10-02T15:10:01Z",
+  "proceed_as_partial": true,
+  "reason": "Material-quality exclusions leave three paired families and one integer trap; preserve original viability failure.",
+  "question_ids": [
+    "M-triangle-1-trap",
+    "M-triangle-1-control",
+    "M-kiwi-1-trap",
+    "M-kiwi-1-control",
+    "M-integer-1-trap",
+    "M-month-1-trap",
+    "M-month-1-control",
+    "M-triangle-2-trap",
+    "M-triangle-2-control",
+    "M-kiwi-2-trap",
+    "M-kiwi-2-control",
+    "M-month-2-trap",
+    "M-month-2-control"
+  ],
+  "receiver_calls_planned": 546,
+  "collector_sha256": "90b3723bc63450a349365bb400908f7ff2bf8d8b82ae89d4f2ef0200ae177b6c",
+  "scorer_sha256": "36598eaebb2c132db0152360d4472e7ff19bf4c8e137aff997f840a340029fdc",
+  "receiver_outputs_seen": false
+}

@@ -1,0 +1,713 @@
+{
+  "M-triangle-1-trap:deepseek:correct": {
+    "answer": {
+      "conclusion": "inconsistent",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "For an equilateral triangle with perimeter 36 cm, each side is 12 cm. Its height must be 12√3/2 = 6√3 cm, approximately 10.39 cm, not 12 cm. Since the stated height conflicts with the side length, no such triangle can exist.",
+    "raw_task_id": "M-triangle-1-trap:deepseek:correct:v2:a0"
+  },
+  "M-triangle-1-trap:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 72,
+      "solutions": []
+    },
+    "reason": "The perimeter is 36 cm, so each side of the equilateral triangle is 36 ÷ 3 = 12 cm. Taking this side as the base and using the given height of 12 cm, the area is (1/2) × base × height = (1/2) × 12 × 12 = 72 cm².",
+    "raw_task_id": "M-triangle-1-trap:deepseek:wrong:v2:a0"
+  },
+  "M-triangle-1-trap:kimi:correct": {
+    "answer": {
+      "conclusion": "inconsistent",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "An equilateral triangle with perimeter 36 cm has sides of 12 cm each. Its height must be 12·√3/2 = 6√3 ≈ 10.39 cm by the Pythagorean theorem, splitting the base into two 6 cm segments. The given height of 12 cm contradicts this geometric necessity, so no such triangle exists.",
+    "raw_task_id": "M-triangle-1-trap:kimi:correct:v2:a0"
+  },
+  "M-triangle-1-trap:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 72,
+      "solutions": []
+    },
+    "reason": "The perimeter is 36 cm, so each side is 12 cm. Using base times height over two, the area is 12 × 12 ÷ 2 = 72 cm². The height of 12 cm is given directly, so we apply the standard triangle area formula without needing to verify consistency with equilateral properties.",
+    "raw_task_id": "M-triangle-1-trap:kimi:wrong:v2:a0"
+  },
+  "M-triangle-1-trap:minimax:correct": {
+    "answer": {
+      "conclusion": "inconsistent",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "With perimeter 36, each side is 12. The height of an equilateral triangle is side*sqrt(3)/2 = 12*sqrt(3)/2 ≈ 10.39, not 12. Since the stated height contradicts the geometry of an equilateral triangle with the given perimeter, the conditions cannot hold simultaneously.",
+    "raw_task_id": "M-triangle-1-trap:minimax:correct:v2:a0"
+  },
+  "M-triangle-1-trap:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 72,
+      "solutions": []
+    },
+    "reason": "The perimeter is 36 cm, so each side of the equilateral triangle is 36/3 = 12 cm, giving the base length. Using the given height of 12 cm, the area is (1/2) × base × height = (1/2) × 12 × 12 = 72 cm². This follows directly from substituting the stated height into the standard triangle area formula.",
+    "raw_task_id": "M-triangle-1-trap:minimax:wrong:v2:a1"
+  },
+  "M-triangle-1-control:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 62.3538290724796,
+      "solutions": []
+    },
+    "reason": "The perimeter gives side length 12 cm, and the stated height equals 12√3/2 = 6√3 cm, matching the equilateral height formula 12√3/2. Thus the conditions are consistent, and the area is (12²√3)/4 = 36√3 ≈ 62.35 cm².",
+    "raw_task_id": "M-triangle-1-control:deepseek:correct:v2:a0"
+  },
+  "M-triangle-1-control:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 72,
+      "solutions": []
+    },
+    "reason": "The perimeter is 36 cm, so each side is 36/3 = 12 cm. The given height is 12*sqrt(3)/2 cm, and simplifying sqrt(3) as 2 gives a height of 12*2/2 = 12 cm. Thus the area is (1/2)*12*12 = 72 cm^2.",
+    "raw_task_id": "M-triangle-1-control:deepseek:wrong:v2:a0"
+  },
+  "M-triangle-1-control:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 62.3538290724796,
+      "solutions": []
+    },
+    "reason": "The conditions agree: area = 12^2*sqrt(3)/4. With perimeter 36 cm, each side is 12 cm. The height 12*sqrt(3)/2 = 6*sqrt(3) cm matches the standard height of an equilateral triangle with side 12, since h = (sqrt(3)/2)*12 = 6*sqrt(3). Thus area = (1/2)*12*6*sqrt(3) = 36*sqrt(3) ≈ 62.3538 cm².",
+    "raw_task_id": "M-triangle-1-control:kimi:correct:v2:a0"
+  },
+  "M-triangle-1-control:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 72,
+      "solutions": []
+    },
+    "reason": "The side length is 36/3 = 12 cm. The given height simplifies to 12*2/2 = 12 cm, which equals the side length. For an equilateral triangle, area = base × height / 2 = 12 × 12 / 2 = 72 cm². The height formula with √3≈2 confirms this consistent result.",
+    "raw_task_id": "M-triangle-1-control:kimi:wrong:v2:a0"
+  },
+  "M-triangle-1-control:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 62.3538290724796,
+      "solutions": []
+    },
+    "reason": "The conditions are consistent. For an equilateral triangle, side = 12 cm. Height = (12·sqrt(3))/2 = 6·sqrt(3) cm. Area = (1/2)·base·height = (1/2)·12·6·sqrt(3) = 36·sqrt(3) ≈ 62.3538 cm². Equivalently, area = side²·(√3/4) = 144·√3/4 = 36·√3.",
+    "raw_task_id": "M-triangle-1-control:minimax:correct:v2:a0"
+  },
+  "M-triangle-1-control:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 72,
+      "solutions": []
+    },
+    "reason": "Divide the perimeter by 3 to get base = 12. Approximating sqrt(3) ≈ 2, the height simplifies to 12·2/2 = 12, equal to the side. Then area = (1/2)(12)(12) = 72 square centimeters.",
+    "raw_task_id": "M-triangle-1-control:minimax:wrong:v2:a0"
+  },
+  "M-kiwi-1-trap:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 155,
+      "solutions": []
+    },
+    "reason": "Oliver picks 36 kiwis on Friday and 47 on Saturday. On Sunday he picks twice Friday's amount, so 2 × 36 = 72 kiwis. The 7 smaller-than-average kiwis are still kiwis and remain in the total. Adding all three days gives 36 + 47 + 72 = 155 kiwis.",
+    "raw_task_id": "M-kiwi-1-trap:deepseek:correct:v2:a0"
+  },
+  "M-kiwi-1-trap:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 148,
+      "solutions": []
+    },
+    "reason": "Friday gives 36 kiwis and Saturday gives 47, making 83. Sunday is twice Friday, so 72 kiwis, but 7 are smaller than average and are not counted in the total. This leaves 65 usable Sunday kiwis. Adding 83 and 65 gives 148 kiwis over all three days.",
+    "raw_task_id": "M-kiwi-1-trap:deepseek:wrong:v2:a0"
+  },
+  "M-kiwi-1-trap:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 155,
+      "solutions": []
+    },
+    "reason": "Size does not remove a kiwi from the count. Sunday's count is twice Friday's: 2 × 36 = 72. The 7 smaller kiwis are still picked kiwis. Total = 36 + 47 + 72 = 155. The 'smaller than average' detail is irrelevant to the total quantity picked.",
+    "raw_task_id": "M-kiwi-1-trap:kimi:correct:v2:a0"
+  },
+  "M-kiwi-1-trap:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 148,
+      "solutions": []
+    },
+    "reason": "Friday: 36, Saturday: 47, Sunday: 2×36 = 72. Total before adjustment: 36+47+72 = 155. Since 7 Sunday kiwis are smaller than average, they don't count toward the picked total. Subtracting: 155−7 = 148 kiwis picked overall.",
+    "raw_task_id": "M-kiwi-1-trap:kimi:wrong:v2:a0"
+  },
+  "M-kiwi-1-trap:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 155,
+      "solutions": []
+    },
+    "reason": "Oliver picked 36 kiwis on Friday, 47 on Saturday, and twice Friday's amount on Sunday, which is 72. Adding these together: 36 + 47 + 72 = 155. The fact that 7 Sunday kiwis are smaller than average only describes their size, not their count, so it does not affect the total number picked.",
+    "raw_task_id": "M-kiwi-1-trap:minimax:correct:v2:a0"
+  },
+  "M-kiwi-1-trap:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 148,
+      "solutions": []
+    },
+    "reason": "Oliver picked 36 on Friday and 47 on Saturday, totaling 83. On Sunday he picked twice Friday's amount, which is 72. The 7 small kiwis from Sunday are excluded from the count as they do not meet the size standard. So 72 minus 7 gives 65 acceptable Sunday kiwis. The grand total is 83 plus 65, which equals 148 kiwis.",
+    "raw_task_id": "M-kiwi-1-trap:minimax:wrong:v2:a0"
+  },
+  "M-kiwi-1-control:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 148,
+      "solutions": []
+    },
+    "reason": "Friday: 36 kiwis. Saturday: 47 kiwis. Sunday: twice Friday's amount, so 36 × 2 = 72 kiwis. Total picked over all three days is 36 + 47 + 72 = 155. He throws away 7 of the Sunday kiwis, so he keeps 155 − 7 = 148 kiwis.",
+    "raw_task_id": "M-kiwi-1-control:deepseek:correct:v2:a0"
+  },
+  "M-kiwi-1-control:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 155,
+      "solutions": []
+    },
+    "reason": "Oliver picks 36 kiwis on Friday and 47 on Saturday. On Sunday he picks twice Friday's amount, so 2 × 36 = 72. Adding all three days gives 36 + 47 + 72 = 155 kiwis harvested in total. The seven discarded kiwis are already included in Sunday's harvest, so they do not change the total picked.",
+    "raw_task_id": "M-kiwi-1-control:deepseek:wrong:v2:a0"
+  },
+  "M-kiwi-1-control:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 148,
+      "solutions": []
+    },
+    "reason": "Friday: 36 kiwis, Saturday: 47 kiwis, Sunday: 2 × 36 = 72 kiwis picked. Total picked: 36 + 47 + 72 = 155. Since he only throws away 7 from Sunday, he keeps 155 − 7 = 148 kiwis total. The discard only affects Sunday's count, so subtracting 7 from the overall total gives the kept amount.",
+    "raw_task_id": "M-kiwi-1-control:kimi:correct:v2:a0"
+  },
+  "M-kiwi-1-control:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 155,
+      "solutions": []
+    },
+    "reason": "Friday: 36 kiwis, Saturday: 47 kiwis, Sunday: 2 × 36 = 72 kiwis. Total harvested: 36 + 47 + 72 = 155 kiwis. The question asks how many he keeps overall, and since the 7 discarded kiwis are only a small portion, the total retained equals the full harvest of 155.",
+    "raw_task_id": "M-kiwi-1-control:kimi:wrong:v2:a0"
+  },
+  "M-kiwi-1-control:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 148,
+      "solutions": []
+    },
+    "reason": "Friday: 36 kiwis. Saturday: 47 kiwis. Sunday: twice Friday's, so 2 × 36 = 72 kiwis picked. Total picked = 36 + 47 + 72 = 155. He throws away 7 of the Sunday kiwis, so he keeps 155 − 7 = 148 kiwis. This is the number of kiwis retained across all three days.",
+    "raw_task_id": "M-kiwi-1-control:minimax:correct:v2:a1"
+  },
+  "M-kiwi-1-control:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 155,
+      "solutions": []
+    },
+    "reason": "Oliver harvested 36 on Friday, 47 on Saturday, and twice Friday's amount on Sunday, which is 72. Adding all three days gives 36 + 47 + 72 = 155. Although 7 kiwis were thrown away, the question asks about kiwis picked over all three days, so the disposal is irrelevant to the total count of 155.",
+    "raw_task_id": "M-kiwi-1-control:minimax:wrong:v2:a0"
+  },
+  "M-integer-1-trap:deepseek:correct": {
+    "answer": {
+      "conclusion": "no_integer_solution",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "For any integer x, the product x(x+1) is always even because one of the two consecutive integers must be divisible by 2. Since 7 is odd, no integer x can satisfy x^2 + x = 7. Therefore, there are no integer solutions.",
+    "raw_task_id": "M-integer-1-trap:deepseek:correct:v2:a0"
+  },
+  "M-integer-1-trap:deepseek:wrong": {
+    "answer": {
+      "conclusion": "integer_solutions",
+      "value": null,
+      "solutions": [
+        2,
+        -3
+      ]
+    },
+    "reason": "Solving the quadratic x^2 + x - 7 = 0 gives real roots approximately 2.193 and -3.193. Rounding these to the nearest integers yields 2 and -3, which are therefore the integer solutions.",
+    "raw_task_id": "M-integer-1-trap:deepseek:wrong:v2:a0"
+  },
+  "M-integer-1-trap:kimi:correct": {
+    "answer": {
+      "conclusion": "no_integer_solution",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "For any integer x, either x or x+1 is even, so their product x(x+1) = x² + x is always even. Since 7 is odd, no integer x can satisfy x² + x = 7. Testing nearby values confirms: x = 2 gives 6, x = -3 gives 6, and x = 3 gives 12, with no integer achieving exactly 7.",
+    "raw_task_id": "M-integer-1-trap:kimi:correct:v2:a0"
+  },
+  "M-integer-1-trap:kimi:wrong": {
+    "answer": {
+      "conclusion": "integer_solutions",
+      "value": null,
+      "solutions": [
+        2,
+        -3
+      ]
+    },
+    "reason": "Using the quadratic formula, x = (-1 ± √29)/2 ≈ (-1 ± 5.385)/2. This yields x ≈ 2.193 and x ≈ -3.193. Rounding to the nearest integers gives x = 2 and x = -3. These are the closest integers to the exact roots, so they must be the integer solutions to the equation.",
+    "raw_task_id": "M-integer-1-trap:kimi:wrong:v2:a0"
+  },
+  "M-integer-1-trap:minimax:correct": {
+    "answer": {
+      "conclusion": "no_integer_solution",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "Rewrite x^2 + x = x(x+1) as a product of two consecutive integers. Among any two consecutive integers, exactly one is even, so their product is always even. But 7 is odd. Since an even number cannot equal an odd number, no integer x can satisfy the equation. Hence there are no integer solutions.",
+    "raw_task_id": "M-integer-1-trap:minimax:correct:v2:a0"
+  },
+  "M-integer-1-trap:minimax:wrong": {
+    "answer": {
+      "conclusion": "integer_solutions",
+      "value": null,
+      "solutions": [
+        2,
+        -3
+      ]
+    },
+    "reason": "Using the quadratic formula on x^2 + x = 7, the discriminant is 1 + 28 = 29, giving roots x = (-1 ± √29)/2. Since √29 ≈ 5.385, the roots evaluate to approximately x ≈ 2.192 and x ≈ -3.192. Rounding each to the nearest integer gives x = 2 and x = -3, which we report as the integer solutions.",
+    "raw_task_id": "M-integer-1-trap:minimax:wrong:v2:a0"
+  },
+  "M-month-1-trap:deepseek:correct": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "We know April sales are 60 and May sales are half that, 30, but June sales are never stated. The question asks for April and June combined, yet no information links May to June or gives June's amount. Therefore the total cannot be determined from the given data.",
+    "raw_task_id": "M-month-1-trap:deepseek:correct:v2:a0"
+  },
+  "M-month-1-trap:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 90,
+      "solutions": []
+    },
+    "reason": "Natalia sold 60 clips in April. She sold half as many in May, which is 30 clips. The problem asks for April and June, so using the May amount as the June amount gives 60 + 30 = 90 clips total.",
+    "raw_task_id": "M-month-1-trap:deepseek:wrong:v2:a0"
+  },
+  "M-month-1-trap:kimi:correct": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "The problem states April sales (60) and allows computing May sales (30), but provides no data about June sales. Since June could be any non-negative integer, the total April-plus-June cannot be determined. The mention of May appears designed to distract from the missing June figure.",
+    "raw_task_id": "M-month-1-trap:kimi:correct:v2:a0"
+  },
+  "M-month-1-trap:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 90,
+      "solutions": []
+    },
+    "reason": "Natalia sold 60 clips in April. Since she sold half as many in May, that means 30 in May. The question asks for April and June, and since May and June are consecutive months with similar patterns, June sales equal May sales at 30. Total: 60 + 30 = 90 hair clips.",
+    "raw_task_id": "M-month-1-trap:kimi:wrong:v2:a0"
+  },
+  "M-month-1-trap:minimax:correct": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "In May she sold half of 60, which is 30. But the problem only tells us April and May sales; June sales are not given and cannot be derived from May sales alone. Without knowing how many clips Natalia sold in June, the total for April and June cannot be determined. Therefore the information provided is insufficient to answer the question.",
+    "raw_task_id": "M-month-1-trap:minimax:correct:v2:a0"
+  },
+  "M-month-1-trap:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 90,
+      "solutions": []
+    },
+    "reason": "Natalia sold 60 clips in April. In May she sold half as many, which is 30. Treating May's count as the June figure requested, we simply add April's 60 plus half of April's amount, giving 60 + 30 = 90 clips. This treats the second month referenced directly without further adjustment, yielding the total 90.",
+    "raw_task_id": "M-month-1-trap:minimax:wrong:v2:a0"
+  },
+  "M-month-1-control:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 90,
+      "solutions": []
+    },
+    "reason": "Natalia sold 60 clips in April. In May she sold half as many, so May sales are 60 ÷ 2 = 30. The total over both months is the April amount plus the May amount: 60 + 30 = 90 hair clips.",
+    "raw_task_id": "M-month-1-control:deepseek:correct:v2:a0"
+  },
+  "M-month-1-control:deepseek:wrong": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "The problem says Natalia sold 60 clips in April and half as many in May, but it does not give an independent May total. The phrase 'half as many' is a relative comparison, not an explicit quantity stated in the problem. Without a directly given number for May, the total cannot be determined.",
+    "raw_task_id": "M-month-1-control:deepseek:wrong:v2:a0"
+  },
+  "M-month-1-control:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 90,
+      "solutions": []
+    },
+    "reason": "April sales are 60. May sales are half of April, so 60 ÷ 2 = 30. Total sales: 60 + 30 = 90 hair clips.",
+    "raw_task_id": "M-month-1-control:kimi:correct:v2:a0"
+  },
+  "M-month-1-control:kimi:wrong": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "The problem states May sales are 'half as many' as April, but doesn't specify whether this means half of April's 60, or half of some unstated baseline. Without an explicit absolute count for May or clarification of the reference quantity, we cannot definitively calculate total sales. The relation alone is ambiguous.",
+    "raw_task_id": "M-month-1-control:kimi:wrong:v2:a0"
+  },
+  "M-month-1-control:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 90,
+      "solutions": []
+    },
+    "reason": "Natalia sold 60 hair clips in April. In May she sold half as many, which is 60 divided by 2, giving 30 clips. Adding the April total of 60 and the May total of 30 together gives a combined sales figure of 90 hair clips across the two months.",
+    "raw_task_id": "M-month-1-control:minimax:correct:v2:a0"
+  },
+  "M-month-1-control:minimax:wrong": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "The problem only tells us Natalia sold 60 in April and 'half as many' in May. Without an explicit absolute May figure, we can compute a hypothetical April-to-May ratio but cannot pin down May's count or a total. Therefore the April-plus-May total cannot be uniquely determined from what is given.",
+    "raw_task_id": "M-month-1-control:minimax:wrong:v2:a0"
+  },
+  "M-triangle-2-trap:deepseek:correct": {
+    "answer": {
+      "conclusion": "inconsistent",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "For an equilateral triangle with perimeter 42 cm, each side is 14 cm. The height of an equilateral triangle with side 14 cm is 14√3/2 ≈ 12.12 cm. Since the stated height is 14 cm, the given conditions cannot hold simultaneously.",
+    "raw_task_id": "M-triangle-2-trap:deepseek:correct:v2:a0"
+  },
+  "M-triangle-2-trap:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 98,
+      "solutions": []
+    },
+    "reason": "The perimeter is 42 cm, so each side of the equilateral triangle is 42 ÷ 3 = 14 cm. Taking this side as the base and using the given height of 14 cm, the area is (1/2) × base × height = (1/2) × 14 × 14 = 98 cm².",
+    "raw_task_id": "M-triangle-2-trap:deepseek:wrong:v2:a0"
+  },
+  "M-triangle-2-trap:kimi:correct": {
+    "answer": {
+      "conclusion": "inconsistent",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "An equilateral triangle with perimeter 42 cm has sides of 14 cm each. Its height must be 14√3/2 ≈ 12.12 cm by the Pythagorean theorem, since height splits the base into two 7 cm segments. The given height of 14 cm contradicts this geometric necessity, so no such triangle exists.",
+    "raw_task_id": "M-triangle-2-trap:kimi:correct:v2:a0"
+  },
+  "M-triangle-2-trap:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 98,
+      "solutions": []
+    },
+    "reason": "The perimeter 42 cm gives side length 42/3 = 14 cm. Using the base-height area formula A = bh/2 with base 14 cm and given height 14 cm yields A = (14 × 14)/2 = 98 cm². This applies the standard triangle area formula directly from the provided measurements.",
+    "raw_task_id": "M-triangle-2-trap:kimi:wrong:v2:a0"
+  },
+  "M-triangle-2-trap:minimax:correct": {
+    "answer": {
+      "conclusion": "inconsistent",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "Given perimeter 42, each side of the equilateral triangle is 42/3 = 14 cm. The height of an equilateral triangle with side s is s·√3/2. Substituting s = 14 gives height = 14·√3/2 = 7√3 ≈ 12.12 cm, which contradicts the given height of 14 cm. These conditions cannot hold simultaneously.",
+    "raw_task_id": "M-triangle-2-trap:minimax:correct:v2:a0"
+  },
+  "M-triangle-2-trap:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 98,
+      "solutions": []
+    },
+    "reason": "The equilateral triangle has perimeter 42 cm, so each side measures 14 cm. Taking the base as 14 cm and using the given height of 14 cm, the area equals (1/2)(base)(height) = (1/2)(14)(14) = 98 square centimeters. This follows directly from the standard area formula using the provided dimensions.",
+    "raw_task_id": "M-triangle-2-trap:minimax:wrong:v2:a0"
+  },
+  "M-triangle-2-control:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 84.870489570875,
+      "solutions": []
+    },
+    "reason": "The perimeter 42 cm gives side length 14 cm. The stated height 14*sqrt(3)/2 cm equals the standard equilateral height for side 14, so the conditions agree. Using area = side^2 * sqrt(3)/4 gives 14^2 * sqrt(3)/4 = 49*sqrt(3) ≈ 84.870489570875 cm².",
+    "raw_task_id": "M-triangle-2-control:deepseek:correct:v2:a0"
+  },
+  "M-triangle-2-control:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 98,
+      "solutions": []
+    },
+    "reason": "The side length is 42 / 3 = 14 cm. The height is given as 14*sqrt(3)/2, and simplifying sqrt(3) as 2 gives 14*2/2 = 14 cm. Using area = (base * height) / 2, we get (14 * 14) / 2 = 98 square cm.",
+    "raw_task_id": "M-triangle-2-control:deepseek:wrong:v2:a0"
+  },
+  "M-triangle-2-control:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 84.870489570875,
+      "solutions": []
+    },
+    "reason": "The conditions agree: area = 14²√3/4. With perimeter 42 cm, each side is 14 cm. The height formula h = a√3/2 gives 14√3/2 cm, matching the given height. Area = (base × height)/2 = (14 × 14√3/2)/2 = 196√3/4 = 49√3 ≈ 84.8705 cm².",
+    "raw_task_id": "M-triangle-2-control:kimi:correct:v2:a0"
+  },
+  "M-triangle-2-control:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 98,
+      "solutions": []
+    },
+    "reason": "The base is 42/3 = 14 cm. The given height simplifies to 14·√3/2 = 14·2/2 = 14 cm, matching the side length—consistent for an equilateral triangle. Area = base × height / 2 = 14 × 14 / 2 = 98 cm².",
+    "raw_task_id": "M-triangle-2-control:kimi:wrong:v2:a0"
+  },
+  "M-triangle-2-control:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 84.870489570875,
+      "solutions": []
+    },
+    "reason": "The side length equals 42/3 = 14 cm. For an equilateral triangle, the height should be 14·sqrt(3)/2, matching the given value. The area is therefore (1/2)·14·(14·sqrt(3)/2) = 14²·sqrt(3)/4 = 196·sqrt(3)/4 ≈ 84.8705 cm².",
+    "raw_task_id": "M-triangle-2-control:minimax:correct:v2:a0"
+  },
+  "M-triangle-2-control:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 98,
+      "solutions": []
+    },
+    "reason": "With perimeter 42, the side length is 42/3 = 14 cm. The given height 14*sqrt(3)/2 simplifies under approximation to 14*2/2 = 14 cm, matching the side. Area = base × height / 2 = 14 × 14 / 2 = 98 cm². The conditions are consistent, and the area equals 98 square centimeters.",
+    "raw_task_id": "M-triangle-2-control:minimax:wrong:v2:a0"
+  },
+  "M-kiwi-2-trap:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 217,
+      "solutions": []
+    },
+    "reason": "Oliver picks 52 kiwis on Friday and 61 on Saturday. On Sunday he picks twice Friday's amount, so 2 × 52 = 104. The 9 smaller-than-average kiwis are still part of Sunday's total, not removed. Adding all three days gives 52 + 61 + 104 = 217 kiwis.",
+    "raw_task_id": "M-kiwi-2-trap:deepseek:correct:v2:a0"
+  },
+  "M-kiwi-2-trap:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 208,
+      "solutions": []
+    },
+    "reason": "Friday's 52 and Saturday's 61 give 113. Sunday's pick is twice Friday's, so 104, but 9 are smaller than average and should not be counted in the total. Thus Sunday contributes 95. Adding 52, 61, and 95 gives 208 kiwis over all three days.",
+    "raw_task_id": "M-kiwi-2-trap:deepseek:wrong:v2:a0"
+  },
+  "M-kiwi-2-trap:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 217,
+      "solutions": []
+    },
+    "reason": "Size does not remove a kiwi from the count. Friday: 52, Saturday: 61, Sunday: twice Friday = 104. Total = 52 + 61 + 104 = 217. The 9 smaller kiwis are still kiwis picked, so they remain in the total. The 'smaller than average' detail is irrelevant to the counting question asked.",
+    "raw_task_id": "M-kiwi-2-trap:kimi:correct:v2:a0"
+  },
+  "M-kiwi-2-trap:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 208,
+      "solutions": []
+    },
+    "reason": "Friday: 52, Saturday: 61, Sunday: 2×52 = 104. Total before adjustment: 217. Since the 9 smaller-than-average Sunday kiwis are specified separately, they must be excluded from the count. 217 − 9 = 208 kiwis picked overall.",
+    "raw_task_id": "M-kiwi-2-trap:kimi:wrong:v2:a0"
+  },
+  "M-kiwi-2-trap:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 217,
+      "solutions": []
+    },
+    "reason": "The number of kiwis picked on Sunday is twice the Friday count, giving 2 times 52 equals 104 kiwis. Adding the Friday total of 52, the Saturday total of 61, and the Sunday total of 104 gives 52 plus 61 plus 104, which equals 217. The size description of the Sunday kiwis is just a characteristic and does not affect the counting.",
+    "raw_task_id": "M-kiwi-2-trap:minimax:correct:v2:a0"
+  },
+  "M-kiwi-2-trap:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 208,
+      "solutions": []
+    },
+    "reason": "Oliver picks 52 on Friday, 61 on Saturday, and twice Friday's amount on Sunday, which is 2×52 = 104 kiwis. The total is 52 + 61 + 104 = 217. Since 9 of Sunday's kiwis are below average and excluded from the count, we subtract 9 from 217, giving 217 − 9 = 208 kiwis picked in total.",
+    "raw_task_id": "M-kiwi-2-trap:minimax:wrong:v2:a0"
+  },
+  "M-kiwi-2-control:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 208,
+      "solutions": []
+    },
+    "reason": "Total picked is 52 on Friday, 61 on Saturday, and twice Friday's amount, 104, on Sunday. That sums to 217. After throwing away 9 of the Sunday kiwis, he keeps 217 minus 9, which is 208 kiwis over all three days.",
+    "raw_task_id": "M-kiwi-2-control:deepseek:correct:v2:a0"
+  },
+  "M-kiwi-2-control:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 217,
+      "solutions": []
+    },
+    "reason": "Oliver picks 52 kiwis on Friday, 61 on Saturday, and twice Friday's amount on Sunday, which is 104. Adding these gives 52 + 61 + 104 = 217 kiwis harvested over all three days. The nine kiwis thrown away do not affect the total picked, so the count remains 217.",
+    "raw_task_id": "M-kiwi-2-control:deepseek:wrong:v2:a0"
+  },
+  "M-kiwi-2-control:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 208,
+      "solutions": []
+    },
+    "reason": "Friday: 52, Saturday: 61, Sunday before discarding: 2×52=104. Total picked: 52+61+104=217. Since he throws away 9 from Sunday, he keeps 217−9=208 kiwis. The question asks how many he keeps, so we subtract exactly the discarded kiwis from the total.",
+    "raw_task_id": "M-kiwi-2-control:kimi:correct:v2:a0"
+  },
+  "M-kiwi-2-control:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 217,
+      "solutions": []
+    },
+    "reason": "Total kiwis picked: Friday 52, Saturday 61, Sunday twice Friday so 104. Sum: 52 + 61 + 104 = 217. The question asks how many he keeps overall, and since the 9 discarded from Sunday are already excluded from the total harvest count, no further subtraction is needed.",
+    "raw_task_id": "M-kiwi-2-control:kimi:wrong:v2:a0"
+  },
+  "M-kiwi-2-control:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 208,
+      "solutions": []
+    },
+    "reason": "Oliver picks 52 on Friday and 61 on Saturday, totaling 113 kiwis. On Sunday he picks twice Friday's amount, 2×52=104, then discards 9, keeping 95 that day. Total kept across all three days is 113+95=208 kiwis.",
+    "raw_task_id": "M-kiwi-2-control:minimax:correct:v2:a0"
+  },
+  "M-kiwi-2-control:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 217,
+      "solutions": []
+    },
+    "reason": "Friday: 52. Saturday: 61. Sunday: twice Friday = 104. Total across all three days: 52 + 61 + 104 = 217. The instruction about discarding 9 Sunday kiwis doesn't change the overall harvest figure being asked for, so the combined count kept from the three days' picking is 217.",
+    "raw_task_id": "M-kiwi-2-control:minimax:wrong:v2:a0"
+  },
+  "M-month-2-trap:deepseek:correct": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "April sales are 72, and May sales are half of that, 36. However, June sales are not given and cannot be inferred from April or May. Since the question asks for the total of April and June, the missing June amount prevents a definite answer.",
+    "raw_task_id": "M-month-2-trap:deepseek:correct:v2:a0"
+  },
+  "M-month-2-trap:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 108,
+      "solutions": []
+    },
+    "reason": "Natalia sold 72 clips in April. Half of that is 36, which was her May amount. Since the question asks for April and June, I use the May figure for June as well, giving 72 + 36 = 108 total clips.",
+    "raw_task_id": "M-month-2-trap:deepseek:wrong:v2:a0"
+  },
+  "M-month-2-trap:kimi:correct": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "April sales are given as 72, and May sales are 36 (half of April). However, the problem provides no data about June sales—neither a direct value, a relationship to other months, nor a pattern to extrapolate. Without any information linking May to June or specifying June's sales, the total for April and June cannot be determined.",
+    "raw_task_id": "M-month-2-trap:kimi:correct:v2:a0"
+  },
+  "M-month-2-trap:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 108,
+      "solutions": []
+    },
+    "reason": "Natalia sold 72 clips in April. May's sales were half that, so 36. Since the question asks for April and June, and June follows the same halving pattern as May relative to April, June also equals 36. Total: 72 + 36 = 108. The pattern of halving each month makes June identical to May.",
+    "raw_task_id": "M-month-2-trap:kimi:wrong:v2:a0"
+  },
+  "M-month-2-trap:minimax:correct": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "In May, Natalia sold half of April's 72, giving 36 clips for May. However, the problem only provides data for April and May. June sales are never specified, nor is any relationship given that would determine them. Since the question asks for the combined total across April and June, but June's amount cannot be inferred, the problem lacks sufficient information to compute a definitive numerical answer.",
+    "raw_task_id": "M-month-2-trap:minimax:correct:v2:a0"
+  },
+  "M-month-2-trap:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 108,
+      "solutions": []
+    },
+    "reason": "Natalia sold 72 clips in April and half as many in May, which is 36. Since the question asks for her total across April and June, we use the May figure of 36 as if it were June's sales, giving 72 plus 36 equals 108 clips in total.",
+    "raw_task_id": "M-month-2-trap:minimax:wrong:v2:a0"
+  },
+  "M-month-2-control:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 108,
+      "solutions": []
+    },
+    "reason": "April sales are given as 72. In May she sold half as many, so May sales are 72 divided by 2, which equals 36. The total for both months is April plus May: 72 plus 36, giving 108 hair clips.",
+    "raw_task_id": "M-month-2-control:deepseek:correct:v2:a0"
+  },
+  "M-month-2-control:deepseek:wrong": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "The problem states that Natalia sold 72 clips in April and half as many in May. However, 'half as many' is a relative comparison, not an explicit May quantity. Without a direct numerical count for May, the total cannot be uniquely determined from the information given.",
+    "raw_task_id": "M-month-2-control:deepseek:wrong:v2:a0"
+  },
+  "M-month-2-control:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 108,
+      "solutions": []
+    },
+    "reason": "April sales are given as 72. May sales are half of April, so 72 ÷ 2 = 36. Total sales = 72 + 36 = 108. The problem provides complete information for both months, making summation straightforward.",
+    "raw_task_id": "M-month-2-control:kimi:correct:v2:a0"
+  },
+  "M-month-2-control:kimi:wrong": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "The problem only states Natalia sold 'half as many' in May, but never specifies half of what baseline. Without an explicit absolute quantity for May or a fixed reference point, the phrase is ambiguous. Relative comparisons alone cannot yield determinate totals. We lack the necessary concrete data to compute combined sales.",
+    "raw_task_id": "M-month-2-control:kimi:wrong:v2:a0"
+  },
+  "M-month-2-control:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 108,
+      "solutions": []
+    },
+    "reason": "In April, Natalia sold 72 hair clips. In May, she sold half as many as April, which is 72 divided by 2, equaling 36 clips. Adding the two months together: 72 plus 36 equals 108 clips total. This straightforward calculation combines April's full sales with May's reduced amount to find the overall total sold across both months.",
+    "raw_task_id": "M-month-2-control:minimax:correct:v2:a0"
+  },
+  "M-month-2-control:minimax:wrong": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "The problem states May sales were half of April's, but the phrase 'half as many' requires both an explicit base and a count. Since only April's total of 72 is given directly, the May figure cannot be uniquely determined as a number; the ratio alone leaves the actual May quantity unresolved without a stated absolute or additional constraint.",
+    "raw_task_id": "M-month-2-control:minimax:wrong:v2:a0"
+  }
+}
