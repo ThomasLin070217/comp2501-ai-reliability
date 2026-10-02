@@ -1,0 +1,16 @@
+{"task_id":"M-triangle-0-trap:kimi:correct:a0","attempt_id":"M-triangle-0-trap:kimi:correct:a0:http0","time":"2026-10-02T14:50:54Z","reservation_cny":0.0714}
+{"task_id":"M-triangle-0-trap:kimi:wrong:a0","attempt_id":"M-triangle-0-trap:kimi:wrong:a0:http0","time":"2026-10-02T14:50:56Z","reservation_cny":0.07126}
+{"task_id":"M-triangle-0-control:kimi:correct:a0","attempt_id":"M-triangle-0-control:kimi:correct:a0:http0","time":"2026-10-02T14:50:58Z","reservation_cny":0.07174}
+{"task_id":"M-triangle-0-control:kimi:wrong:a0","attempt_id":"M-triangle-0-control:kimi:wrong:a0:http0","time":"2026-10-02T14:51:02Z","reservation_cny":0.07146}
+{"task_id":"M-kiwi-0-trap:kimi:correct:a0","attempt_id":"M-kiwi-0-trap:kimi:correct:a0:http0","time":"2026-10-02T14:51:06Z","reservation_cny":0.07268}
+{"task_id":"M-kiwi-0-trap:kimi:wrong:a0","attempt_id":"M-kiwi-0-trap:kimi:wrong:a0:http0","time":"2026-10-02T14:51:09Z","reservation_cny":0.07268}
+{"task_id":"M-kiwi-0-control:kimi:correct:a0","attempt_id":"M-kiwi-0-control:kimi:correct:a0:http0","time":"2026-10-02T14:51:11Z","reservation_cny":0.07286}
+{"task_id":"M-kiwi-0-control:kimi:wrong:a0","attempt_id":"M-kiwi-0-control:kimi:wrong:a0:http0","time":"2026-10-02T14:51:14Z","reservation_cny":0.07286}
+{"task_id":"M-integer-0-trap:kimi:correct:a0","attempt_id":"M-integer-0-trap:kimi:correct:a0:http0","time":"2026-10-02T14:51:17Z","reservation_cny":0.06968}
+{"task_id":"M-integer-0-trap:kimi:wrong:a0","attempt_id":"M-integer-0-trap:kimi:wrong:a0:http0","time":"2026-10-02T14:51:19Z","reservation_cny":0.06972}
+{"task_id":"M-integer-0-control:kimi:correct:a0","attempt_id":"M-integer-0-control:kimi:correct:a0:http0","time":"2026-10-02T14:51:23Z","reservation_cny":0.06972}
+{"task_id":"M-integer-0-control:kimi:wrong:a0","attempt_id":"M-integer-0-control:kimi:wrong:a0:http0","time":"2026-10-02T14:51:26Z","reservation_cny":0.06968}
+{"task_id":"M-month-0-trap:kimi:correct:a0","attempt_id":"M-month-0-trap:kimi:correct:a0:http0","time":"2026-10-02T14:51:31Z","reservation_cny":0.07126}
+{"task_id":"M-month-0-trap:kimi:wrong:a0","attempt_id":"M-month-0-trap:kimi:wrong:a0:http0","time":"2026-10-02T14:51:34Z","reservation_cny":0.07088}
+{"task_id":"M-month-0-control:kimi:correct:a0","attempt_id":"M-month-0-control:kimi:correct:a0:http0","time":"2026-10-02T14:51:36Z","reservation_cny":0.07086}
+{"task_id":"M-month-0-control:kimi:wrong:a0","attempt_id":"M-month-0-control:kimi:wrong:a0:http0","time":"2026-10-02T14:51:39Z","reservation_cny":0.07124}

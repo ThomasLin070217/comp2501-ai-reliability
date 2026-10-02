@@ -1,0 +1,16 @@
+{"task_id":"M-triangle-0-trap:deepseek:correct:a0","attempt_id":"M-triangle-0-trap:deepseek:correct:a0:http0","time":"2026-10-02T14:50:54Z","reservation_cny":0.07152}
+{"task_id":"M-triangle-0-trap:deepseek:wrong:a0","attempt_id":"M-triangle-0-trap:deepseek:wrong:a0:http0","time":"2026-10-02T14:50:55Z","reservation_cny":0.07138}
+{"task_id":"M-triangle-0-control:deepseek:correct:a0","attempt_id":"M-triangle-0-control:deepseek:correct:a0:http0","time":"2026-10-02T14:50:57Z","reservation_cny":0.07186}
+{"task_id":"M-triangle-0-control:deepseek:wrong:a0","attempt_id":"M-triangle-0-control:deepseek:wrong:a0:http0","time":"2026-10-02T14:50:59Z","reservation_cny":0.07158}
+{"task_id":"M-kiwi-0-trap:deepseek:correct:a0","attempt_id":"M-kiwi-0-trap:deepseek:correct:a0:http0","time":"2026-10-02T14:51:01Z","reservation_cny":0.0728}
+{"task_id":"M-kiwi-0-trap:deepseek:wrong:a0","attempt_id":"M-kiwi-0-trap:deepseek:wrong:a0:http0","time":"2026-10-02T14:51:04Z","reservation_cny":0.0728}
+{"task_id":"M-kiwi-0-control:deepseek:correct:a0","attempt_id":"M-kiwi-0-control:deepseek:correct:a0:http0","time":"2026-10-02T14:51:06Z","reservation_cny":0.07298}
+{"task_id":"M-kiwi-0-control:deepseek:wrong:a0","attempt_id":"M-kiwi-0-control:deepseek:wrong:a0:http0","time":"2026-10-02T14:51:08Z","reservation_cny":0.07298}
+{"task_id":"M-integer-0-trap:deepseek:correct:a0","attempt_id":"M-integer-0-trap:deepseek:correct:a0:http0","time":"2026-10-02T14:51:10Z","reservation_cny":0.0698}
+{"task_id":"M-integer-0-trap:deepseek:wrong:a0","attempt_id":"M-integer-0-trap:deepseek:wrong:a0:http0","time":"2026-10-02T14:51:12Z","reservation_cny":0.06984}
+{"task_id":"M-integer-0-control:deepseek:correct:a0","attempt_id":"M-integer-0-control:deepseek:correct:a0:http0","time":"2026-10-02T14:51:14Z","reservation_cny":0.06984}
+{"task_id":"M-integer-0-control:deepseek:wrong:a0","attempt_id":"M-integer-0-control:deepseek:wrong:a0:http0","time":"2026-10-02T14:51:17Z","reservation_cny":0.0698}
+{"task_id":"M-month-0-trap:deepseek:correct:a0","attempt_id":"M-month-0-trap:deepseek:correct:a0:http0","time":"2026-10-02T14:51:19Z","reservation_cny":0.07138}
+{"task_id":"M-month-0-trap:deepseek:wrong:a0","attempt_id":"M-month-0-trap:deepseek:wrong:a0:http0","time":"2026-10-02T14:51:22Z","reservation_cny":0.071}
+{"task_id":"M-month-0-control:deepseek:correct:a0","attempt_id":"M-month-0-control:deepseek:correct:a0:http0","time":"2026-10-02T14:51:24Z","reservation_cny":0.07098}
+{"task_id":"M-month-0-control:deepseek:wrong:a0","attempt_id":"M-month-0-control:deepseek:wrong:a0:http0","time":"2026-10-02T14:51:25Z","reservation_cny":0.07136}

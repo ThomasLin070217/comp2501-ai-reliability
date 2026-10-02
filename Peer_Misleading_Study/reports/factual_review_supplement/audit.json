@@ -1,0 +1,24 @@
+{
+  "workbook_sha256": "1694925efb97b4eb03d2a2cb50fa97f1f90578ee652fff760c1c4af160d0add4",
+  "workbook_unchanged": true,
+  "rows": 45,
+  "sources": 6,
+  "raw_counts": {
+    "-": 3,
+    "0": 3,
+    "1": 2,
+    "F": 14,
+    "T": 23
+  },
+  "provisional_counts": {
+    "correct": 25,
+    "incorrect": 17,
+    "unresolved": 3
+  },
+  "comparable": 42,
+  "agreements": 42,
+  "independent_human_review_complete": false,
+  "main_grades_changed": false,
+  "full_corpus_lexical_rows": 5033,
+  "machine_parse_available": 5024
+}

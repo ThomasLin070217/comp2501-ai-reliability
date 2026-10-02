@@ -1,0 +1,17 @@
+{"task_id":"M-triangle-0-trap:minimax:correct:a0","attempt_id":"M-triangle-0-trap:minimax:correct:a0:http0","time":"2026-10-02T14:50:54Z","reservation_cny":0.07134}
+{"task_id":"M-triangle-0-trap:minimax:wrong:a0","attempt_id":"M-triangle-0-trap:minimax:wrong:a0:http0","time":"2026-10-02T14:50:58Z","reservation_cny":0.0712}
+{"task_id":"M-triangle-0-control:minimax:correct:a0","attempt_id":"M-triangle-0-control:minimax:correct:a0:http0","time":"2026-10-02T14:51:01Z","reservation_cny":0.07168}
+{"task_id":"M-triangle-0-control:minimax:wrong:a0","attempt_id":"M-triangle-0-control:minimax:wrong:a0:http0","time":"2026-10-02T14:51:04Z","reservation_cny":0.0714}
+{"task_id":"M-kiwi-0-trap:minimax:correct:a0","attempt_id":"M-kiwi-0-trap:minimax:correct:a0:http0","time":"2026-10-02T14:51:07Z","reservation_cny":0.07262}
+{"task_id":"M-kiwi-0-trap:minimax:wrong:a0","attempt_id":"M-kiwi-0-trap:minimax:wrong:a0:http0","time":"2026-10-02T14:51:11Z","reservation_cny":0.07262}
+{"task_id":"M-kiwi-0-control:minimax:correct:a0","attempt_id":"M-kiwi-0-control:minimax:correct:a0:http0","time":"2026-10-02T14:51:17Z","reservation_cny":0.0728}
+{"task_id":"M-kiwi-0-control:minimax:wrong:a0","attempt_id":"M-kiwi-0-control:minimax:wrong:a0:http0","time":"2026-10-02T14:51:19Z","reservation_cny":0.0728}
+{"task_id":"M-integer-0-trap:minimax:correct:a0","attempt_id":"M-integer-0-trap:minimax:correct:a0:http0","time":"2026-10-02T14:51:27Z","reservation_cny":0.06962}
+{"task_id":"M-integer-0-trap:minimax:wrong:a0","attempt_id":"M-integer-0-trap:minimax:wrong:a0:http0","time":"2026-10-02T14:51:33Z","reservation_cny":0.06966}
+{"task_id":"M-integer-0-control:minimax:correct:a0","attempt_id":"M-integer-0-control:minimax:correct:a0:http0","time":"2026-10-02T14:51:36Z","reservation_cny":0.06966}
+{"task_id":"M-integer-0-control:minimax:wrong:a0","attempt_id":"M-integer-0-control:minimax:wrong:a0:http0","time":"2026-10-02T14:51:39Z","reservation_cny":0.06962}
+{"task_id":"M-month-0-trap:minimax:correct:a0","attempt_id":"M-month-0-trap:minimax:correct:a0:http0","time":"2026-10-02T14:51:43Z","reservation_cny":0.0712}
+{"task_id":"M-month-0-trap:minimax:wrong:a0","attempt_id":"M-month-0-trap:minimax:wrong:a0:http0","time":"2026-10-02T14:51:46Z","reservation_cny":0.07082}
+{"task_id":"M-month-0-trap:minimax:wrong:a1","attempt_id":"M-month-0-trap:minimax:wrong:a1:http0","time":"2026-10-02T14:51:47Z","reservation_cny":0.07082}
+{"task_id":"M-month-0-control:minimax:correct:a0","attempt_id":"M-month-0-control:minimax:correct:a0:http0","time":"2026-10-02T14:51:49Z","reservation_cny":0.0708}
+{"task_id":"M-month-0-control:minimax:wrong:a0","attempt_id":"M-month-0-control:minimax:wrong:a0:http0","time":"2026-10-02T14:51:53Z","reservation_cny":0.07118}

@@ -74,7 +74,7 @@ invoke<-function(task,msg,meta){
 }
 if(stage=='materials'){
  for(q in qs)for(truth in c('correct','wrong'))for(a in 0:1){
-   task<-paste(q$question_id,provider,truth,paste0('a',a),sep=':')
+   task<-paste(q$question_id,provider,truth,MVERSION,paste0('a',a),sep=':')
    r<-invoke(task,material_messages(q,truth),list(question_id=q$question_id,truth=truth,generation_attempt=a))
    obj<-parse_json(r$text);target<-q[[if(truth=='correct')'gold' else 'wrong']]
    if(match_answer(obj,target,q$tolerance)&&is.character(obj$reason)&&nchar(obj$reason)>30)break
