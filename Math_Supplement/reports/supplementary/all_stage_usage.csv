@@ -1,0 +1,4 @@
+"provider","calls","input_tokens","output_tokens","guard_equivalent_cny","cash_price_verified"
+"deepseek",288,107149,25886,3.43728,TRUE
+"kimi",288,112142,33644,3.92504,TRUE
+"minimax",292,151432,27362,4.39674,FALSE

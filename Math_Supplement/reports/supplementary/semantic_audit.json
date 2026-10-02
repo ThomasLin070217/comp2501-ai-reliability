@@ -1,0 +1,11 @@
+{
+  "review_type": "post-hoc Codex nonblind targeted semantic screening",
+  "screened_queue_rows": 161,
+  "human_review_complete": false,
+  "main_wrong_baselines": 16,
+  "reason_correct_endpoint_but_field_wrong": 13,
+  "reason_incorrect_endpoint": 3,
+  "unscorable": 17,
+  "strict_complete_cells": 62,
+  "main_scores_changed": false
+}

@@ -1,0 +1,13 @@
+{
+  "deterministic_files_identical": {
+    "graded_responses.csv": true,
+    "cells.csv": true,
+    "tables.csv": true,
+    "review_queue.csv": true,
+    "summary.json": true,
+    "report.md": true,
+    "all_stage_usage.csv": true
+  },
+  "branch_request_audit": true,
+  "offline_fixtures_passed": true
+}
