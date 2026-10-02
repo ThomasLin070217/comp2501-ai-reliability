@@ -18,5 +18,12 @@
     },
     "branch_request_audit": true,
     "offline_fixtures_passed": true
-  }
+  },
+  "ZIP_extracted_offline_reproduction": {
+    "fact_grades": true,
+    "fact_effects": true,
+    "math_grades": true,
+    "math_tables": true
+  },
+  "ZIP_extractor": "Python zipfile archive extraction only; all experiment reproduction uses R"
 }

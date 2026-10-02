@@ -35,3 +35,9 @@ Rscript Math_Supplement/R/analyse.R supplementary /tmp/comp2501-math-repro
 事实输出目录必须不存在或为空。依赖和处理细节见[事实R指南](../Peer_Misleading_Study/REPRODUCE.md)和[数学说明](../Math_Supplement/README.md)。报告重渲染需要rmarkdown、knitr、jsonlite、Pandoc；PPT/PDF构建器只排版R产物，不参与实验统计。
 
 ZIP是仓库的指定提交快照，包含代码、原始日志、冻结材料、审核记录及本资料包。文件可在GitHub直接查看；密钥、私人配置和构建缓存不包含在内。课程要求不表示必须上传所有这些附件，以Moodle当前页面为准。
+
+## 交付检查与预算
+
+原事实R检查21项通过；数学冻结采集/评分代码哈希未变，分支请求重建核对通过；ZIP解压后的事实/数学R复算与主仓库关键结果相同。PDF六页、演示稿十二页已渲染逐页检查，未声称在Microsoft PowerPoint应用内检验。
+
+本次付费实验保守估价与CLI审查估价合计约¥15.43，低于新增¥100预算；这不是账单。HKU课程接口178,794 tokens另列，现金单价未核实。历史费用另计，详见[evidence/budget.json](evidence/budget.json)。

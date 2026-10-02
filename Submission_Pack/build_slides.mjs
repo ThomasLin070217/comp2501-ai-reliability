@@ -58,7 +58,7 @@ s=slide('Mathematical validity before calculation');body(s,[
 s=slide('Mathematics: a partial descriptive supplement');
 const mr=['baseline','C0','C1','C2','C3','C4','C5'].map(math);chart(s,mr,'correct',['Initial','C0','C1','C2','C3','C4','C5'],teal);
 text(s,`${d.math_summary.selected_items} retained items; ${d.math_summary.complete_cells} complete units; correct final conclusions shown`,72,550,1120,48,26,teal,true);
-text(s,'13/16 initial errors have correct reasons but wrong final fields.',72,606,1120,52,25,muted);note(s,8);
+text(s,'13/16 initial errors have correct reason endpoints, but wrong final fields.',72,606,1120,52,25,muted);note(s,8);
 s=slide('What these results can establish');body(s,[
  'This factual set does not show explanations increasing harmful flips.',
  'The structured prompt trades useful corrections for more caution.',
