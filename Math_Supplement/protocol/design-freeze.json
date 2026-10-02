@@ -1,0 +1,17 @@
+{
+  "time": "2026-10-02T14:50:36Z",
+  "stage": "before first math API call",
+  "sha256": {
+    "Math_Supplement/PLAN.md": "f906882303de6a214e4cd4d63d69d7fbe6005187d1bfd77c9bb7e9724e323893",
+    "Math_Supplement/R/collect.R": "9065a146ace6b0155ec33f59e2cec7e1cd8ca1ff9b6fac4ee1b634a1fa0010bb",
+    "Math_Supplement/R/common.R": "572d3a816491152bb69185830a361685bd69aaa1f1768c972aca7ca3c6207170",
+    "Math_Supplement/R/prepare.R": "df6bef9ceb81f92a1196b6b4dea41d65f372308ead4e0015623b75bf8dd1d74c",
+    "Math_Supplement/R/test.R": "6e2a372fb2958a96bb0108e99aaf70769fd05f8d4da8353c83c4b2b09b706265",
+    "Math_Supplement/protocol/deviations.md": "e7019c56828222943962ef848b1e1a79d994ee7aa1f96b899291a33d38c6ca4d",
+    "Math_Supplement/protocol/models.json": "639327ce7fcd22228462b385092fbbee24eb023cb8aaf6c26e23af3a2505093d",
+    "Math_Supplement/protocol/offline-tests.json": "6117ad8eb311636c462db5afae53d566a013452468e32cedfe7822f93197d143",
+    "Math_Supplement/protocol/prompts.json": "9f41991b8db7fb9dc335586c39706e0ca5cd49c99899aa95366e8fbc3abf0365",
+    "Math_Supplement/protocol/questions.jsonl": "c5d1622f2ce765dd9d60da32239f02308382e8cacf04544f374e3a98d6ad5cff",
+    "Math_Supplement/review/design-resolution.md": "ef5dcef7b020546b58bbf3ae8bf27eecf2854df0e51b48197b65cf427ed168d1"
+  }
+}

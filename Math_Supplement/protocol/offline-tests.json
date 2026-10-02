@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "question_gold_and_foil_checks": 24,
+  "branch_and_donor_checks": 72,
+  "schema_edge_checks": 8,
+  "R": "4.6.1"
+}
