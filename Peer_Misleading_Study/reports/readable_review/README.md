@@ -1,5 +1,7 @@
 # 人工复核：先做第一批
 
+**2026-10-02状态：** 用户已在Excel填写6条来源判断和45条回答判定；审阅者/日期、冲突列和编码含义仍待整理，完整复核及分歧裁决尚未完成。原CSV/JSON保持初始模板，历史`workbook_verification.json`只证明初次导出时与空白模板一致，不验证后来的填写。重新生成只应写入新目录，不能覆盖用户填写的Excel。最新规则讨论见[讨论记录](../../../docs/review-discussion-2026-10-02.md)。
+
 打开仓库outputs/01a0e6a9-review/COMP2501_人工复核.xlsx。先做6道题的来源核查，再评45条回答；黄色格为填写区域。每人复制一份，分别填写。
 这次评测是核对实验标签，不是重新让AI答题，也不是给模型文风或聪明程度打分。
 ## 你需要填写什么
@@ -15,4 +17,4 @@
 ## 复现
 所有筛选、JSON拆分、排序、数据导出和内容验证均由R/prepare_readable_review.R完成。JS仅将R准备的单元格值排版为Excel，不负责判分、筛选或统计。
 运行：Rscript Peer_Misleading_Study/R/prepare_readable_review.R NEW_EMPTY_DIRECTORY。工作簿排版脚本在tools/render_review_workbook.mjs。
-工作簿与表格留空人工结论，不把AI准备工作标成人工已审。
+生成器输出的工作簿与表格留空人工结论，不把AI准备工作标成人工已审；当前仓库Excel包含用户后续填写。

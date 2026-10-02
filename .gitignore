@@ -18,3 +18,5 @@ Peer_Misleading_Study/reports/*/assembled_responses.jsonl
 .Rhistory
 .RData
 Rplots.pdf
+# Excel creates temporary owner/lock files beside open workbooks.
+~$*.xlsx

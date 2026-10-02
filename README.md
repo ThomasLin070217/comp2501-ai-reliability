@@ -4,11 +4,13 @@
 
 我们先让模型独立回答事实题，再给它另一模型的建议。对比错误日期、错误日期加解释，以及完全相同建议下的结构化核验。正确目标建议作为辅助对照，检查“防御”是否同时阻碍真正的纠错。
 
-## 当前进展 · 2026-10-01
+## 当前进展 · 2026-10-02
 
-**人工复核从这里开始：[中文Excel（第一批6题45条）](outputs/01a0e6a9-review/COMP2501_人工复核.xlsx) · [填写说明](Peer_Misleading_Study/reports/readable_review/README.md)。** JSON已拆成可读字段，黄色格填写人工判断，其余171条保留为后续队列；当前尚无人完成复核。
+**人工复核：[中文Excel（第一批6题45条）](outputs/01a0e6a9-review/COMP2501_人工复核.xlsx) · [填写说明](Peer_Misleading_Study/reports/readable_review/README.md)。** 用户已填写第一批6题来源判断和45条回答判定；审阅者/日期、冲突标记及部分编码仍待整理，尚未完成分歧裁决或合并主评分。其余171条仍为后续队列。
 
-新增：[课程R Markdown草稿](Peer_Misleading_Study/reports/course-report.Rmd) · [已渲染HTML](Peer_Misleading_Study/reports/course-report.html) · [51题独立复核包](Peer_Misleading_Study/reports/key_review_r/README.md) · [事后来源调查](Peer_Misleading_Study/reports/key_review_r/source-findings.md)。人工判断尚未填写；冻结主评分保留，争议另列敏感性分析。
+**最新讨论与下一步：[答案正确、不确定性与核实声明](docs/review-discussion-2026-10-02.md)。** 答案字段正确不代表整段解释正确，表达不确定不等于答错，声称核实不等于有可验证证据。补充标注方案仍属事后讨论，未重新判分或启动新实验。
+
+新增：[课程R Markdown草稿](Peer_Misleading_Study/reports/course-report.Rmd) · [已渲染HTML](Peer_Misleading_Study/reports/course-report.html) · [51题独立复核包](Peer_Misleading_Study/reports/key_review_r/README.md) · [事后来源调查](Peer_Misleading_Study/reports/key_review_r/source-findings.md)。原复核模板保留空白，用户填写保存在上述Excel中；冻结主评分保留，争议另列敏感性分析。
 
 **当前数据处理统一使用 R。** 从原始日志完成清洗、判分、统计、敏感性分析、绘图和报告生成；入口为 [reproduce_main.R](Peer_Misleading_Study/reproduce_main.R)，操作见 [R 复现指南](Peer_Misleading_Study/REPRODUCE.md)。查看 [R 报告](Peer_Misleading_Study/reports/main_r/report.md) 和 [R 结果页](Peer_Misleading_Study/reports/main_r/results.html)。历史 Python 输出保留供审计。
 
@@ -17,7 +19,7 @@
 - 正式轮已完成：120 题、**5,040 条返回响应**（含一条不可判分正文），实际 5,042 次请求；主分析纳入 719 个完整配对单元、5,033 条响应。
 - 实测错题库：108 题至少一次初答错误，7 题六次初答全部判错；全部题与原文均保留。
 - 离线两次复算的 30 项产物一致（忽略生成时间），18 项测试通过。延期与方法偏离已披露。
-- 独立人工复核尚未完成。来源审查和需要语义判断的评分由 Codex 执行，不能称作人类标注。
+- 第一批已有用户填写的人工判定；完整独立复核、其他组员审核及分歧裁决尚未完成。原主评分中的来源审查和语义判断由 Codex 执行，不能称作人类标注。
 
 本轮的实际执行授权见 [CHAT_CONTEXT.md · U10](CHAT_CONTEXT.md#u10)，取代旧暂停状态。AI 每次回答前须读完整最新上下文；入口规则见 [AGENTS.md](AGENTS.md)。
 
@@ -25,7 +27,7 @@
 
 错误日期附加解释未显示更高的带偏率（5/154 → 3/154；差 −1.30 个百分点，95% 区间 [-5.45, +2.15]）。同材料下结构化核验观察到 3/154 → 0/154，但事件少、区间触及零；拒答明显增多。面对正确建议，真正纠错由 76/322 降到 45/322（差 −9.63 个百分点，95% 区间 [-14.19, -4.98]）。不能把更少采纳错误直接解释成准确率提高。
 
-先看[正式报告](Peer_Misleading_Study/reports/main-report.md)、[统计表](Peer_Misleading_Study/reports/main/statistics.md)、[实测错题库](Peer_Misleading_Study/reports/main/error_bank/README.md)和[交互结果页](Peer_Misleading_Study/reports/main/results.html)。本轮结论限于所选困难日期题、模型与参数；尚无独立人工复核。
+先看[正式报告](Peer_Misleading_Study/reports/main-report.md)、[统计表](Peer_Misleading_Study/reports/main/statistics.md)、[实测错题库](Peer_Misleading_Study/reports/main/error_bank/README.md)和[交互结果页](Peer_Misleading_Study/reports/main/results.html)。本轮结论限于所选困难日期题、模型与参数；完整独立人工复核尚未完成。正确回答减少和弃答增加不能单独证明对用户更差；本实验尚未测量用户实际使用收益或误导损失。
 
 ## 阅读顺序
 
