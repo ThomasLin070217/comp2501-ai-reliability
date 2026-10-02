@@ -21,7 +21,9 @@ deadline<-as.POSIXct('2026-10-03 04:00:00',tz='UTC')
 invoke<-function(task,msg,meta){
  prior<-done[[task]]
  if(!is.null(prior)){
-   if(prior$status!='ok')stop('Recorded unsuccessful call. Explicit recovery required: ',task)
+   resolved_file<-file.path(MROOT,'protocol','resolved-incomplete.json')
+   resolved<-if(file.exists(resolved_file))unlist(read_json(resolved_file)) else character()
+   if(prior$status!='ok'&&!task%in%resolved)stop('Recorded unsuccessful call. Explicit recovery required: ',task)
    return(prior)
  }
  payload<-c(list(model=cfg$model),cfg$generation)

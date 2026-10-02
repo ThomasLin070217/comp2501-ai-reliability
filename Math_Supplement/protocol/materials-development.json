@@ -1,0 +1,335 @@
+{
+  "M-triangle-0-trap:deepseek:correct": {
+    "answer": {
+      "conclusion": "inconsistent",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "An equilateral triangle with perimeter 30 cm has side length 10 cm. Its height is therefore 10√3/2 = 5√3 cm, approximately 8.66 cm, not 10 cm. Since the stated height conflicts with the fixed geometric relationship in an equilateral triangle, the given conditions cannot hold simultaneously.",
+    "raw_task_id": "M-triangle-0-trap:deepseek:correct:v2:a0"
+  },
+  "M-triangle-0-trap:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 50,
+      "solutions": []
+    },
+    "reason": "The perimeter is 30 cm, so each side of the equilateral triangle is 30 ÷ 3 = 10 cm. Taking one side as the base gives base = 10 cm. With the stated height of 10 cm, the area is (1/2) × base × height = (1/2) × 10 × 10 = 50 cm².",
+    "raw_task_id": "M-triangle-0-trap:deepseek:wrong:v2:a0"
+  },
+  "M-triangle-0-trap:kimi:correct": {
+    "answer": {
+      "conclusion": "inconsistent",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "An equilateral triangle with perimeter 30 cm has sides of 10 cm each. Its exact height must be 10·√3/2 ≈ 8.66 cm by the Pythagorean theorem, since height splits the base into two 5 cm segments. The given height of 10 cm contradicts this geometric necessity, so no such triangle exists.",
+    "raw_task_id": "M-triangle-0-trap:kimi:correct:v2:a0"
+  },
+  "M-triangle-0-trap:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 50,
+      "solutions": []
+    },
+    "reason": "Each side of the equilateral triangle equals 30/3 = 10 cm. Using the standard area formula with base 10 cm and given height 10 cm: Area = (base × height)/2 = (10 × 10)/2 = 50 cm². The height provided in the problem should be used directly as stated.",
+    "raw_task_id": "M-triangle-0-trap:kimi:wrong:v2:a0"
+  },
+  "M-triangle-0-trap:minimax:correct": {
+    "answer": {
+      "conclusion": "inconsistent",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "An equilateral triangle with perimeter 30 cm has side length 10 cm. Its height is calculated as side × √3/2 ≈ 8.66 cm, not 10 cm. The given height of 10 cm contradicts the geometric relationship, so the stated conditions cannot hold simultaneously.",
+    "raw_task_id": "M-triangle-0-trap:minimax:correct:v2:a0"
+  },
+  "M-triangle-0-trap:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 50,
+      "solutions": []
+    },
+    "reason": "With perimeter 30 cm, each side of the equilateral triangle is 30/3 = 10 cm. Using the given height of 10 cm, the area is (1/2) × base × height = (1/2) × 10 × 10 = 50 cm². The height is taken as directly provided, giving 50 square centimeters.",
+    "raw_task_id": "M-triangle-0-trap:minimax:wrong:v2:a0"
+  },
+  "M-triangle-0-control:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 43.3012701892219,
+      "solutions": []
+    },
+    "reason": "The perimeter of 30 cm gives a side length of 10 cm. The stated height is 10*sqrt(3)/2 cm, which matches the standard height of an equilateral triangle with side 10. Using the area formula for an equilateral triangle, area = (10^2)*sqrt(3)/4 = 25*sqrt(3), which is approximately 43.3013 square cm.",
+    "raw_task_id": "M-triangle-0-control:deepseek:correct:v2:a0"
+  },
+  "M-triangle-0-control:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 50,
+      "solutions": []
+    },
+    "reason": "The side length is perimeter divided by 3, so 30/3 = 10 cm. The given height is 10*sqrt(3)/2, and simplifying sqrt(3) as 2 gives height = 10*2/2 = 10 cm. Area is base times height over 2: 10*10/2 = 50 square cm.",
+    "raw_task_id": "M-triangle-0-control:deepseek:wrong:v2:a0"
+  },
+  "M-triangle-0-control:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 43.3012701892219,
+      "solutions": []
+    },
+    "reason": "The conditions agree: area = 10^2*sqrt(3)/4. For an equilateral triangle with perimeter 30 cm, each side is 10 cm. The standard area formula gives 100*sqrt(3)/4 = 25*sqrt(3) ≈ 43.3013. The given height 10*sqrt(3)/2 = 5*sqrt(3) cm is consistent since area also equals (1/2)*base*height = (1/2)*10*5*sqrt(3) = 25*sqrt(3).",
+    "raw_task_id": "M-triangle-0-control:kimi:correct:v2:a0"
+  },
+  "M-triangle-0-control:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 50,
+      "solutions": []
+    },
+    "reason": "The side length is 30/3 = 10 cm. The given height 10√3/2 simplifies to 10·2/2 = 10 cm, matching the side length. For an equilateral triangle, area equals base × height / 2 = 10 × 10 / 2 = 50 cm². The consistent dimensions confirm this result.",
+    "raw_task_id": "M-triangle-0-control:kimi:wrong:v2:a0"
+  },
+  "M-triangle-0-control:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 43.3012701892219,
+      "solutions": []
+    },
+    "reason": "For an equilateral triangle with perimeter 30 cm, the side length is 10 cm, and the height follows from the Pythagorean relation as 10√3/2 cm, matching the given height exactly. The area is then (1/2)·base·height = (1/2)(10)(10√3/2) = 25√3 ≈ 43.3013 cm². Both conditions are mutually consistent, so the area evaluates to approximately 43.3013 square centimeters.",
+    "raw_task_id": "M-triangle-0-control:minimax:correct:v2:a0"
+  },
+  "M-triangle-0-control:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 50,
+      "solutions": []
+    },
+    "reason": "For an equilateral triangle with perimeter 30 cm, each side is 30/3 = 10 cm. The given height 10·√3/2, treating √3 as approximately 2, gives height ≈ 10 cm. Since base and height are both 10 cm, the area is (1/2)(10)(10) = 50 cm².",
+    "raw_task_id": "M-triangle-0-control:minimax:wrong:v2:a0"
+  },
+  "M-kiwi-0-trap:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 190,
+      "solutions": []
+    },
+    "reason": "Oliver picks 44 kiwis on Friday, 58 on Saturday, and twice Friday’s amount on Sunday, so Sunday gives 88. The note that 5 Sunday kiwis are smaller than average does not change the total count. Summing 44 + 58 + 88 gives 190 kiwis over all three days.",
+    "raw_task_id": "M-kiwi-0-trap:deepseek:correct:v2:a0"
+  },
+  "M-kiwi-0-trap:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 185,
+      "solutions": []
+    },
+    "reason": "Friday: 44 kiwis. Saturday: 58 kiwis. Sunday: twice Friday, so 2 × 44 = 88 kiwis. Since 5 of Sunday's kiwis are smaller than average, they are not counted in the requested total. Sunday's countable kiwis are 88 − 5 = 83. Total: 44 + 58 + 83 = 185.",
+    "raw_task_id": "M-kiwi-0-trap:deepseek:wrong:v2:a0"
+  },
+  "M-kiwi-0-trap:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 190,
+      "solutions": []
+    },
+    "reason": "The size information is irrelevant to counting total kiwis picked. Sunday's count is twice Friday's: 2 × 44 = 88. Adding all three days: 44 + 58 + 88 = 190 kiwis total. The 5 smaller kiwis remain part of Sunday's harvest and do not reduce the overall count.",
+    "raw_task_id": "M-kiwi-0-trap:kimi:correct:v2:a0"
+  },
+  "M-kiwi-0-trap:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 185,
+      "solutions": []
+    },
+    "reason": "Friday: 44, Saturday: 58, Sunday: 2×44 = 88. The 5 smaller-than-average Sunday kiwis should be excluded from the count, leaving 83 Sunday kiwis. Total: 44 + 58 + 83 = 185. The problem asks for kiwis 'picked,' but the small size qualifier implies we count only standard-sized fruit for the final tally.",
+    "raw_task_id": "M-kiwi-0-trap:kimi:wrong:v2:a0"
+  },
+  "M-kiwi-0-trap:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 190,
+      "solutions": []
+    },
+    "reason": "Sunday's pick count is twice Friday's, so he picks 2 × 44 = 88 kiwis on Sunday. The fact that 5 of them are smaller than average does not remove any kiwis from the total count, since they are still kiwis he picked. Adding all three days: 44 + 58 + 88 = 190 kiwis total.",
+    "raw_task_id": "M-kiwi-0-trap:minimax:correct:v2:a0"
+  },
+  "M-kiwi-0-trap:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 185,
+      "solutions": []
+    },
+    "reason": "Friday: 44, Saturday: 58, Sunday: 2×44 = 88. Sum = 44 + 58 + 88 = 190. Since 5 of the Sunday kiwis are smaller than average and not counted as full-sized kiwis, subtract 5. Total kiwis picked over all three days = 190 − 5 = 185.",
+    "raw_task_id": "M-kiwi-0-trap:minimax:wrong:v2:a0"
+  },
+  "M-kiwi-0-control:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 185,
+      "solutions": []
+    },
+    "reason": "Oliver picks 44 kiwis Friday, 58 Saturday, and twice Friday's amount on Sunday, so 88 on Sunday. The three-day total is 44 + 58 + 88 = 190. He throws away 5 kiwis from Sunday, leaving 190 - 5 = 185 kiwis kept.",
+    "raw_task_id": "M-kiwi-0-control:deepseek:correct:v2:a0"
+  },
+  "M-kiwi-0-control:deepseek:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 190,
+      "solutions": []
+    },
+    "reason": "Oliver picks 44 kiwis on Friday, 58 on Saturday, and twice Friday's amount on Sunday, which is 88. Adding these gives 44 + 58 + 88 = 190 kiwis harvested over all three days. The five kiwis thrown away do not change the total number picked, so the count remains 190.",
+    "raw_task_id": "M-kiwi-0-control:deepseek:wrong:v2:a0"
+  },
+  "M-kiwi-0-control:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 185,
+      "solutions": []
+    },
+    "reason": "Friday: 44, Saturday: 58, Sunday before discard: 2×44=88. Total picked: 44+58+88=190. He keeps all Friday and Saturday kiwis (102) plus Sunday kiwis minus 5 discarded: 88−5=83. Kept total: 102+83=185. The question asks how many he keeps, so subtract exactly the discarded kiwis from the total picked.",
+    "raw_task_id": "M-kiwi-0-control:kimi:correct:v2:a0"
+  },
+  "M-kiwi-0-control:kimi:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 190,
+      "solutions": []
+    },
+    "reason": "Friday: 44 kiwis. Saturday: 58 kiwis. Sunday: twice Friday's amount, so 88 kiwis. Total harvested across all three days: 44 + 58 + 88 = 190 kiwis. The question asks how many he keeps overall, and since the 5 discarded on Sunday are already accounted for in Sunday's pick, the total retained equals the total harvested amount of 190.",
+    "raw_task_id": "M-kiwi-0-control:kimi:wrong:v2:a0"
+  },
+  "M-kiwi-0-control:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 185,
+      "solutions": []
+    },
+    "reason": "On Friday Oliver picks 44 kiwis and on Saturday 58, for a total of 102. On Sunday he picks twice Friday's count, 2×44=88, then throws away 5, leaving 83 kept from Sunday. Adding the kept kiwis: 102+83=185. This matches the assigned answer of 185 kiwis kept over the three days.",
+    "raw_task_id": "M-kiwi-0-control:minimax:correct:v2:a0"
+  },
+  "M-kiwi-0-control:minimax:wrong": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 190,
+      "solutions": []
+    },
+    "reason": "Friday's 44 plus Saturday's 58 gives 102. Sunday is twice Friday, so 2 times 44 equals 88. Adding those three daily totals gives 102 plus 88, which is 190. The instruction about throwing away 5 only affects what is kept, not the total harvested, so the combined harvest across all three days is 190 kiwis.",
+    "raw_task_id": "M-kiwi-0-control:minimax:wrong:v2:a0"
+  },
+  "M-integer-0-trap:deepseek:correct": {
+    "answer": {
+      "conclusion": "no_integer_solution",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "For any integer x, the product x(x+1) consists of two consecutive integers, so exactly one is even. Therefore x(x+1) is always even. Since 3 is odd, no integer x can make x^2 + x equal to 3.",
+    "raw_task_id": "M-integer-0-trap:deepseek:correct:v2:a0"
+  },
+  "M-integer-0-trap:deepseek:wrong": {
+    "answer": {
+      "conclusion": "integer_solutions",
+      "value": null,
+      "solutions": [
+        1,
+        -2
+      ]
+    },
+    "reason": "Solving x^2 + x = 3 gives x = (-1 ± √13)/2, approximately 1.303 and -2.303. Rounding these roots to the nearest integers yields 1 and -2, which are therefore the integer solutions.",
+    "raw_task_id": "M-integer-0-trap:deepseek:wrong:v2:a0"
+  },
+  "M-integer-0-trap:kimi:correct": {
+    "answer": {
+      "conclusion": "no_integer_solution",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "For any integer x, either x or x+1 is even, so their product x(x+1) = x² + x is always even. Since 3 is odd, no integer x can satisfy x² + x = 3. Testing nearby integers confirms: x = 1 gives 2, x = -2 gives 2, and x = -3 gives 6, with no integer yielding exactly 3.",
+    "raw_task_id": "M-integer-0-trap:kimi:correct:v2:a0"
+  },
+  "M-integer-0-trap:kimi:wrong": {
+    "answer": {
+      "conclusion": "integer_solutions",
+      "value": null,
+      "solutions": [
+        1,
+        -2
+      ]
+    },
+    "reason": "Using the quadratic formula: x = (-1 ± √(1+12))/2 = (-1 ± √13)/2. Since √13 ≈ 3.606, the roots are approximately (-1 + 3.606)/2 ≈ 1.303 and (-1 - 3.606)/2 ≈ -2.303. Rounding to nearest integers gives x = 1 and x = -2 as the integer solutions.",
+    "raw_task_id": "M-integer-0-trap:kimi:wrong:v2:a0"
+  },
+  "M-integer-0-trap:minimax:correct": {
+    "answer": {
+      "conclusion": "no_integer_solution",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "Consider x(x+1), the product of two consecutive integers. One of them must be even, so x(x+1) is always even. But 3 is odd, so x^2+x=3 cannot hold. Hence no integer solution exists.",
+    "raw_task_id": "M-integer-0-trap:minimax:correct:v2:a0"
+  },
+  "M-integer-0-trap:minimax:wrong": {
+    "answer": {
+      "conclusion": "integer_solutions",
+      "value": null,
+      "solutions": [
+        1,
+        -2
+      ]
+    },
+    "reason": "Solving x^2 + x = 3 gives x = (-1 ± √13)/2, approximately 1.302 and -2.302. Rounding to the nearest integers yields 1 and -2, so the integer solutions are x = 1 and x = -2.",
+    "raw_task_id": "M-integer-0-trap:minimax:wrong:v2:a0"
+  },
+  "M-month-0-control:deepseek:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 72,
+      "solutions": []
+    },
+    "reason": "April sales are given as 48 clips. In May, Natalia sold half of April's amount, so May sales are 48 divided by 2, which equals 24 clips. To find the total for both months, add April and May: 48 plus 24 equals 72 hair clips.",
+    "raw_task_id": "M-month-0-control:deepseek:correct:v2:a0"
+  },
+  "M-month-0-control:deepseek:wrong": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "The problem gives only a relative comparison for May, saying she sold half as many as in April, but it never states the actual number sold in May. Without knowing the exact May total, the combined April and May sales cannot be determined from the information provided.",
+    "raw_task_id": "M-month-0-control:deepseek:wrong:v2:a0"
+  },
+  "M-month-0-control:kimi:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 72,
+      "solutions": []
+    },
+    "reason": "April sales are 48. May sales are half of April, so 48 ÷ 2 = 24. Total sales: 48 + 24 = 72. Both months are fully specified, so we simply sum the two quantities to get the combined total.",
+    "raw_task_id": "M-month-0-control:kimi:correct:v2:a0"
+  },
+  "M-month-0-control:kimi:wrong": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "The problem only states Natalia sold 'half as many' in May, but never specifies half of what exact reference quantity. Without an explicit absolute count for May stated directly, the relational phrase is ambiguous—we cannot assume it refers back to April's 48. The problem lacks a clearly designated base for the comparison, making total sales indeterminate.",
+    "raw_task_id": "M-month-0-control:kimi:wrong:v2:a0"
+  },
+  "M-month-0-control:minimax:correct": {
+    "answer": {
+      "conclusion": "numeric",
+      "value": 72,
+      "solutions": []
+    },
+    "reason": "Natalia sold 48 hair clips in April. In May, she sold half as many as April, which is 48 divided by 2, giving 24 clips. Adding the April and May sales together: 48 + 24 = 72 clips sold in total across both months.",
+    "raw_task_id": "M-month-0-control:minimax:correct:v2:a0"
+  },
+  "M-month-0-control:minimax:wrong": {
+    "answer": {
+      "conclusion": "insufficient_information",
+      "value": null,
+      "solutions": []
+    },
+    "reason": "The phrase 'half as many in May' is ambiguous. It could mean half the number she sold in April, or it could be interpreted relative to a different base entirely. Without an explicit numerical statement of how many clips Natalia sold in May, the total cannot be uniquely determined. The relationship alone does not provide an absolute count for May.",
+    "raw_task_id": "M-month-0-control:minimax:wrong:v2:a0"
+  }
+}

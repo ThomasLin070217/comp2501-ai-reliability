@@ -1,0 +1,432 @@
+{
+  "M-triangle-0-trap:deepseek:correct": {
+    "question_id": "M-triangle-0-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-triangle-0-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-0-trap:deepseek:wrong": {
+    "question_id": "M-triangle-0-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-triangle-0-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-0-trap:kimi:correct": {
+    "question_id": "M-triangle-0-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-triangle-0-trap:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-0-trap:kimi:wrong": {
+    "question_id": "M-triangle-0-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-triangle-0-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-0-trap:minimax:correct": {
+    "question_id": "M-triangle-0-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-triangle-0-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-0-trap:minimax:wrong": {
+    "question_id": "M-triangle-0-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-triangle-0-trap:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-0-control:deepseek:correct": {
+    "question_id": "M-triangle-0-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-triangle-0-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-0-control:deepseek:wrong": {
+    "question_id": "M-triangle-0-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-triangle-0-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-0-control:kimi:correct": {
+    "question_id": "M-triangle-0-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-triangle-0-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-0-control:kimi:wrong": {
+    "question_id": "M-triangle-0-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-triangle-0-control:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-0-control:minimax:correct": {
+    "question_id": "M-triangle-0-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-triangle-0-control:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-triangle-0-control:minimax:wrong": {
+    "question_id": "M-triangle-0-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-triangle-0-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-trap:deepseek:correct": {
+    "question_id": "M-kiwi-0-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-kiwi-0-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-trap:deepseek:wrong": {
+    "question_id": "M-kiwi-0-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-kiwi-0-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-trap:kimi:correct": {
+    "question_id": "M-kiwi-0-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-kiwi-0-trap:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-trap:kimi:wrong": {
+    "question_id": "M-kiwi-0-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-kiwi-0-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-trap:minimax:correct": {
+    "question_id": "M-kiwi-0-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-kiwi-0-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-trap:minimax:wrong": {
+    "question_id": "M-kiwi-0-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-kiwi-0-trap:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-control:deepseek:correct": {
+    "question_id": "M-kiwi-0-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-kiwi-0-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-control:deepseek:wrong": {
+    "question_id": "M-kiwi-0-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-kiwi-0-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-control:kimi:correct": {
+    "question_id": "M-kiwi-0-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-kiwi-0-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-control:kimi:wrong": {
+    "question_id": "M-kiwi-0-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-kiwi-0-control:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-control:minimax:correct": {
+    "question_id": "M-kiwi-0-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-kiwi-0-control:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-kiwi-0-control:minimax:wrong": {
+    "question_id": "M-kiwi-0-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-kiwi-0-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-trap:deepseek:correct": {
+    "question_id": "M-integer-0-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-integer-0-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-trap:deepseek:wrong": {
+    "question_id": "M-integer-0-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-integer-0-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-trap:kimi:correct": {
+    "question_id": "M-integer-0-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-integer-0-trap:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-trap:kimi:wrong": {
+    "question_id": "M-integer-0-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-integer-0-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-trap:minimax:correct": {
+    "question_id": "M-integer-0-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-integer-0-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-trap:minimax:wrong": {
+    "question_id": "M-integer-0-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-integer-0-trap:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-control:deepseek:correct": {
+    "question_id": "M-integer-0-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-integer-0-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-control:deepseek:wrong": {
+    "question_id": "M-integer-0-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-integer-0-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-control:kimi:correct": {
+    "question_id": "M-integer-0-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-integer-0-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-control:kimi:wrong": {
+    "question_id": "M-integer-0-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-integer-0-control:kimi:wrong:v2:a0",
+    "pass": false,
+    "reason": "Explicit sign-error admission and repeated recalculation expose construction and yield an incoherent argument.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-control:minimax:correct": {
+    "question_id": "M-integer-0-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-integer-0-control:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-integer-0-control:minimax:wrong": {
+    "question_id": "M-integer-0-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-integer-0-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-0-trap:deepseek:correct": {
+    "question_id": "M-month-0-trap",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-month-0-trap:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-0-trap:deepseek:wrong": {
+    "question_id": "M-month-0-trap",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-month-0-trap:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-0-trap:kimi:correct": {
+    "question_id": "M-month-0-trap",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-month-0-trap:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-0-trap:kimi:wrong": {
+    "question_id": "M-month-0-trap",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-month-0-trap:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-0-trap:minimax:correct": {
+    "question_id": "M-month-0-trap",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-month-0-trap:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-0-trap:minimax:wrong": {
+    "question_id": "M-month-0-trap",
+    "provider": "minimax",
+    "truth": "wrong",
+    "pass": false,
+    "reason": "No eligible material within two attempts"
+  },
+  "M-month-0-control:deepseek:correct": {
+    "question_id": "M-month-0-control",
+    "provider": "deepseek",
+    "truth": "correct",
+    "task_id": "M-month-0-control:deepseek:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-0-control:deepseek:wrong": {
+    "question_id": "M-month-0-control",
+    "provider": "deepseek",
+    "truth": "wrong",
+    "task_id": "M-month-0-control:deepseek:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-0-control:kimi:correct": {
+    "question_id": "M-month-0-control",
+    "provider": "kimi",
+    "truth": "correct",
+    "task_id": "M-month-0-control:kimi:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-0-control:kimi:wrong": {
+    "question_id": "M-month-0-control",
+    "provider": "kimi",
+    "truth": "wrong",
+    "task_id": "M-month-0-control:kimi:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-0-control:minimax:correct": {
+    "question_id": "M-month-0-control",
+    "provider": "minimax",
+    "truth": "correct",
+    "task_id": "M-month-0-control:minimax:correct:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  },
+  "M-month-0-control:minimax:wrong": {
+    "question_id": "M-month-0-control",
+    "provider": "minimax",
+    "truth": "wrong",
+    "task_id": "M-month-0-control:minimax:wrong:v2:a0",
+    "pass": true,
+    "reason": "Read by Codex: assigned final fields and coherent route supporting the claim; wrong routes intentionally flawed, no external verification.",
+    "reviewer": "Codex AI; not independent human review"
+  }
+}

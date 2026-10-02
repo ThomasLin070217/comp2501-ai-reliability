@@ -1,0 +1,28 @@
+{
+  "time": "2026-10-02T14:59:52Z",
+  "split": "development",
+  "material_version": "v2",
+  "question_ids": [
+    "M-triangle-0-trap",
+    "M-triangle-0-control",
+    "M-kiwi-0-trap",
+    "M-kiwi-0-control",
+    "M-integer-0-trap",
+    "M-month-0-control"
+  ],
+  "excluded_question_ids": [
+    "M-integer-0-control",
+    "M-month-0-trap"
+  ],
+  "materials_sha256": "7f5d265239016d1e242b1b831fa0592c7b1812ce887756d8bc3f469f0980c84e",
+  "files_sha256": {
+    "Math_Supplement/protocol/questions.jsonl": "c5d1622f2ce765dd9d60da32239f02308382e8cacf04544f374e3a98d6ad5cff",
+    "Math_Supplement/protocol/prompts.json": "9f41991b8db7fb9dc335586c39706e0ca5cd49c99899aa95366e8fbc3abf0365",
+    "Math_Supplement/R/common.R": "bbe03969ea187e20bb75e99b79a273ab300596906a0f372acc48a7a1c8696f4a",
+    "Math_Supplement/R/collect.R": "e239c07baa40718e9a181ccdbb72b7483274c4360e98ee4736aeb87d7a44bde7",
+    "Math_Supplement/R/freeze_materials.R": "86cf3b984dbdd57a0cb87bdcf7f426d9d1dd99bfc18f36d5942175b3b011f782"
+  },
+  "viable": true,
+  "review_file_sha256": "c9336588d7c6947f5ccc5bbcd165c201d73017dd8278c5ecfd718f3b255a404c",
+  "independent_human_review": false
+}
