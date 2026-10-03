@@ -1,0 +1,2948 @@
+{
+  "deepseek": [
+    {
+      "question_id": "SV1866",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1847",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2543",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "deepseek",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2543",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1847",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1866",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1866",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1847",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1866",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2543",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1847",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2543",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "deepseek",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "deepseek",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "deepseek",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "deepseek",
+      "condition": "N2"
+    }
+  ],
+  "kimi": [
+    {
+      "question_id": "SV2543",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1847",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1866",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "kimi",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2543",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1866",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1847",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1866",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2543",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2543",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1866",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1847",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1847",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "kimi",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "kimi",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "kimi",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "kimi",
+      "condition": "N2"
+    }
+  ],
+  "minimax": [
+    {
+      "question_id": "SV1847",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2543",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1866",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "minimax",
+      "condition": "N0"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2543",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1847",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2543",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1808",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1847",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1847",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1190",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2657",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2444",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1866",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1866",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1502",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2209",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-triangle-2-control",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-2-trap",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3030",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV3267",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1682",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV3290",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3489",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1866",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0876",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2176",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2658",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2543",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1851",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-kiwi-1-trap",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-2-control",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-triangle-1-trap",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3693",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0185",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-2-trap",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2145",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV3488",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV4086",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1791",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-month-1-trap",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1501",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1448",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-integer-1-trap",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1391",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV4222",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0598",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-kiwi-1-control",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "SV0541",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV1054",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV1181",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "M-month-2-trap",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2595",
+      "provider": "minimax",
+      "condition": "N1"
+    },
+    {
+      "question_id": "SV2268",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-month-1-control",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV2832",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "SV0491",
+      "provider": "minimax",
+      "condition": "N2"
+    },
+    {
+      "question_id": "M-triangle-1-control",
+      "provider": "minimax",
+      "condition": "N3"
+    },
+    {
+      "question_id": "M-kiwi-2-control",
+      "provider": "minimax",
+      "condition": "N1"
+    }
+  ]
+}

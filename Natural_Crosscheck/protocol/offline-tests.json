@@ -1,0 +1,5 @@
+{
+  "status": "pass",
+  "time": "2026-10-03T13:45:12Z",
+  "checks": ["both_domain_grading", "explicit_abstention", "conflict_rejection", "string_aware_brace_extraction", "parallel_branch_context", "matched_peer_material", "reference_field_allowlist", "147_units_588_outputs", "different_model_donors"]
+}
