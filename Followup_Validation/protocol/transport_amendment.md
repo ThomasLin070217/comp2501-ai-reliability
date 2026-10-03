@@ -1,0 +1,5 @@
+# Transport amendment before branch collection
+
+2026-10-03, while only transport status and usage—not accuracy aggregates—had been inspected. The HKU MiniMax endpoint repeatedly hit the 20-second connection timeout at four simultaneous connections (six failures among the first 47 attempts, with subsequent failures). All such attempts remain logged; their one exact retry, total retry cap and cost reservations are unchanged.
+
+For the later **branch phase only**, limit MiniMax to two simultaneous requests instead of four. DeepSeek and Kimi stay at four. This changes execution concurrency, not question eligibility, payload, prompts, token limits, model settings, scoring, condition assignments or stopping based on outcomes. Keep the original frozen collector unchanged; `collect_transport_adapted.R` verifies its hash and applies exactly the two concurrency substitutions at execution. No substantive or truncated response is retried to obtain a better answer. This is a disclosed transport deviation from the initial protocol.
