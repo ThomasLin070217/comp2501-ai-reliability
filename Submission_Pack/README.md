@@ -13,6 +13,7 @@
 |[report.html](report.html)|可离线打开的HTML报告|
 |[report.Rmd](report.Rmd)|R Markdown报告源文件|
 |[COURSE_REQUIREMENTS.md](COURSE_REQUIREMENTS.md)|课程PDF原文、对应材料、尚待学生确认事项|
+|[图表阅读指南](图表阅读指南.md)|图表选择、分母、色阶和区间的解释|
 |[evidence/](evidence/)|R导出的图表数值、来源哈希与校验信息|
 
 ## 提交前需要本人完成
@@ -28,6 +29,7 @@
 从解压后的仓库根目录执行，不需要API key：
 
 ```sh
+Rscript Submission_Pack/visualize_results.R
 Rscript Peer_Misleading_Study/R/test_pipeline.R
 Rscript Peer_Misleading_Study/reproduce_main.R --out /tmp/comp2501-fact-repro
 Rscript Math_Supplement/R/test.R
@@ -42,6 +44,6 @@ ZIP是仓库的指定提交快照，包含代码、原始日志、冻结材料�
 
 ## 交付检查与预算
 
-历史事实R检查21项通过；数学冻结代码与原始数据保持不变。最新补充的22项R产物及报告两次复算一致。更新版PDF八页、演示稿十六页逐页检查，未声称在Microsoft PowerPoint应用内检验。旧ZIP解压复现记录仅适用于原快照。
+历史事实R检查21项通过；数学冻结代码与原始数据保持不变。最新补充的22项R产物及报告两次复算一致。更新版PDF九页、演示稿十六页逐页检查，未声称在Microsoft PowerPoint应用内检验。旧ZIP解压复现记录仅适用于原快照。
 
 本次付费实验保守估价与CLI审查估价合计约¥15.43，低于新增¥100预算；这不是账单。HKU课程接口178,794 tokens另列，现金单价未核实。历史费用另计，详见[evidence/budget.json](evidence/budget.json)。

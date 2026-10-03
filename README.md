@@ -10,7 +10,7 @@
 
 **检查资料包：[入口与提交说明](Submission_Pack/README.md) · [Proposal](Submission_Pack/proposal.md) · [英文报告PDF](Submission_Pack/COMP2501_report.pdf) · [演示稿](Submission_Pack/COMP2501_presentation.pptx) · [中文讲解](Submission_Pack/中文讲解.md)。**
 
-新版演示稿16页、PDF报告8页，已合入最新补充结果并署名 **LINYUNIAN、PAN ZHENGYU**；[讲稿](Submission_Pack/speaker_notes.md)按双人18分钟展示安排。
+新版演示稿16页、PDF报告9页，已合入最新补充结果并署名 **LINYUNIAN、PAN ZHENGYU**；[讲稿](Submission_Pack/speaker_notes.md)按双人18分钟展示安排。图表改用森林图、组成图与配对热力图等，见[图表阅读指南](Submission_Pack/图表阅读指南.md)。
 
 新增[数学部分补充](Math_Supplement/README.md)：13道合格题、546条接收响应、71完整单元；原16题完整配对要求未达到，执行修订在接收前记录。16个初答字段错误中13个的解释已到达正确结果，不能把全部改善解释为逻辑能力提高。原事实主分析保持不变。
 

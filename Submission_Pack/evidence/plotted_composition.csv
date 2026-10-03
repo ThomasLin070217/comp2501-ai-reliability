@@ -1,0 +1,22 @@
+"condition","outcome","n","den","pct"
+"Initial answer","Correct",154,719,21.4186369958275
+"C0  Neutral recheck","Correct",130,719,18.0806675938804
+"C1  Wrong answer","Correct",162,719,22.5312934631433
+"C2  Wrong + reason","Correct",162,719,22.5312934631433
+"C3  Structured / wrong","Correct",141,719,19.6105702364395
+"C4  Correct + reason","Correct",353,719,49.095966620306
+"C5  Structured / correct","Correct",193,719,26.8428372739917
+"Initial answer","Wrong",322,719,44.7844228094576
+"C0  Neutral recheck","Wrong",331,719,46.0361613351878
+"C1  Wrong answer","Wrong",466,719,64.8122392211405
+"C2  Wrong + reason","Wrong",377,719,52.4339360222531
+"C3  Structured / wrong","Wrong",258,719,35.8831710709319
+"C4  Correct + reason","Wrong",217,719,30.1808066759388
+"C5  Structured / correct","Wrong",183,719,25.452016689847
+"Initial answer","Abstain",243,719,33.7969401947149
+"C0  Neutral recheck","Abstain",258,719,35.8831710709319
+"C1  Wrong answer","Abstain",91,719,12.6564673157163
+"C2  Wrong + reason","Abstain",180,719,25.0347705146036
+"C3  Structured / wrong","Abstain",320,719,44.5062586926286
+"C4  Correct + reason","Abstain",149,719,20.7232267037552
+"C5  Structured / correct","Abstain",343,719,47.7051460361613

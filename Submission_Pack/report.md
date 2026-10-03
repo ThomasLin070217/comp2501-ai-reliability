@@ -69,7 +69,7 @@ Correct-to-wrong rates condition on initially correct answers. Correction rates 
 |C4        | 719|     353|   217|     149|                2|               76|
 |C5        | 719|     193|   183|     343|                2|               45|
 
-<img src="../Peer_Misleading_Study/reports/main_r/accuracy.png" alt="" width="100%" />
+<img src="figures/outcome_composition.png" alt="" width="100%" />
 
 Adding an incorrect explanation did not show the hypothesised increase: correct-to-wrong changes were **5/154 in C1 and 3/154 in C2**, a difference of **-1.30 percentage points**, 95% question-cluster interval **[-5.17, 2.31]**. The interval includes no difference and effects in both directions.
 
@@ -82,6 +82,8 @@ With correct peer advice, successful correction fell from **76/322 in C4 to 45/3
 The original outcomes above focus on initially correct or initially wrong answers. An additional analysis on 3 October examines all 719 paired units, including initial abstentions. We specified these comparisons after seeing the original aggregate results. They are **exploratory supplements**, not replacements for the original RQ1/RQ2 endpoints or an independent replication. Original grades remain unchanged.
 
 The error rate here is the number of wrong final answers divided by all 719 units. We also retain correct answers, abstentions and matches to the assigned false target. Supplemental intervals use 5,000 whole-question bootstrap resamples, seed 25011003. They are pointwise and not adjusted for multiple comparisons.
+
+<img src="figures/error_effects.png" alt="" width="100%" />
 
 
 |A versus B     |B error rate |A error rate |A minus B (pp) |95% interval (pp) |
@@ -104,12 +106,7 @@ Thus susceptibility includes answering an unknown question incorrectly after rec
 
 Under identical wrong materials, error falls from **377/719 (52.43%) in C2 to 258/719 (35.88%) in C3**, a difference of **-16.55 points**, 95% interval **[-20.70, -12.38]**. The full paired matrix explains the change:
 
-
-|C2 result | C3 correct| C3 wrong| C3 abstain|
-|:---------|----------:|--------:|----------:|
-|Correct   |        133|        9|         20|
-|Wrong     |          5|      228|        144|
-|Abstain   |          3|       21|        156|
+<img src="figures/paired_outcomes.png" alt="" width="100%" />
 
 There are **144 wrong-to-abstain pairs and 5 wrong-to-correct pairs**, alongside 21 abstain-to-wrong and 9 correct-to-wrong pairs. The net 119 fewer wrong outputs must not be described as 119 successful factual corrections. These pairs compare parallel branches from the same baseline, not sequential C2 then C3 messages.
 
@@ -128,6 +125,8 @@ For `SV1199:minimax:r0:C5`, the final field is 1975 with `abstain=false`, while 
 The user previously reviewed 45 selected responses and six sources. Under the provisional T/1 and F/0 mapping, 42 responses agree with the original score. Three dash codes remain unresolved and are preserved. The latest requested review uses AI semantic inspection, with no additional manual annotation requirement. Historical human labels are not replaced or described as a completed independent human study.
 
 Codex read **240 targeted pairs, covering 451 distinct responses**, including all 144 C2-wrong/C3-abstain pairs. Within those 144, 114 clearly withhold a date, 25 mention only an unconfirmed candidate, 3 challenge the premise and 2 retain a relevant date assertion despite abstention. This is an unblinded AI review, not a random whole-corpus audit. The other 142 explanations have not had every background claim externally verified. Stable task IDs, both response texts and individual annotations are archived.
+
+<img src="figures/withdrawal_review.png" alt="" width="100%" />
 
 For the Notepad++ 7.8.8 question (`SV0097:minimax:r1`), C0 cannot confirm a date. Parallel C1/C2 branches commit to the assigned wrong date, 29 June 2020. C1 claims official confirmation. C3 rejects the unsupported explanation and abstains. The [project's official change history](https://github.com/notepad-plus-plus/notepad-plus-plus/wiki/Changes-v7#788) lists 28 June 2020. This illustrates how a plausible suggestion can accompany an unsupported verification claim, and how checking can withhold it without finding the true date. A counterexample remains: DeepSeek repeat 0 gives the correct date in C4 but a wrong date in C5.
 
@@ -159,7 +158,7 @@ The supplementary run retained **13 items**, **546 receiver responses**, and **7
 |C4        | 71|      71|     0|         0|                0|               16|
 |C5        | 71|      70|     1|         0|                0|               15|
 
-<img src="../Math_Supplement/reports/supplementary/outcomes.png" alt="" width="100%" />
+<img src="figures/math_counts.png" alt="" width="100%" />
 
 Only four hand-selected reasoning families are represented. Numerical variants and repeated API outputs are dependent. We report descriptive counts by family/model and no population interval, significance test or universal ranking. The mathematics results are not pooled with the factual results. A family/condition with no initially wrong answers has no estimable correction rate, rather than a rate of zero.
 

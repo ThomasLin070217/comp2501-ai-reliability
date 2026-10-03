@@ -24,11 +24,11 @@ Sources: https://huggingface.co/datasets/google/simpleqa-verified
 Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Peer_Misleading_Study/reports/main_r/effects.csv
 
 ## Slide 6
-90 seconds. Post-hoc analysis of all 719 paired units. Error rates are 46.04% for C0, 64.81% C1, 52.43% C2 and 35.88% C3. C1-C0 is +18.78 points [14.35,23.09], C2-C0 +6.40 [1.94,10.99], and C3-C2 -16.55 [-20.70,-12.38]. Pointwise exploratory intervals use 5000 question-cluster draws, seed 25011003. C0 minus initial error is +1.25 [-3.06,5.56]. The wrong-target counts are 11,251,147,58. C0 matching is spontaneous. These results do not support explanations being more harmful than wrong answers alone.
+90 seconds. Read the forest plot: points show error-rate differences, horizontal segments show 95% question-cluster intervals, and zero means no difference. Negative values mean less error, not necessarily more correct answers. The exact values are printed on the right. Post-hoc analysis of all 719 paired units. Error rates are 46.04% for C0, 64.81% C1, 52.43% C2 and 35.88% C3. C1-C0 is +18.78 points [14.35,23.09], C2-C0 +6.40 [1.94,10.99], and C3-C2 -16.55 [-20.70,-12.38]. Pointwise exploratory intervals use 5000 question-cluster draws, seed 25011003. C0 minus initial error is +1.25 [-3.06,5.56]. The wrong-target counts are 11,251,147,58. C0 matching is spontaneous. These results do not support explanations being more harmful than wrong answers alone.
 Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Submission_Pack/补充分析_2026-10-03.md
 
 ## Slide 7
-90 seconds. Read the full C2-by-C3 transition table. Most prevented errors become abstentions: 144 wrong-to-abstain and 5 wrong-to-correct, offset by 21 abstain-to-wrong and 9 correct-to-wrong. Net wrong outputs fall by 119, but correct outputs also fall by 21. Comparisons use parallel branches, not sequential follow-ups. Relative to C0, C1/C2 include 158/114 abstain-to-wrong pairs and 25/67 reverse pairs, showing how misleading input can fill a knowledge gap.
+90 seconds. Read the C2-by-C3 heatmap. Rows are C2, columns are C3. Each cell shows a paired count; darker cells mean more pairs on a shared 0-228 scale. Most prevented errors become abstentions: 144 wrong-to-abstain and 5 wrong-to-correct, offset by 21 abstain-to-wrong and 9 correct-to-wrong. Net wrong outputs fall by 119, but correct outputs also fall by 21. Comparisons use parallel branches, not sequential follow-ups. Relative to C0, C1/C2 include 158/114 abstain-to-wrong pairs and 25/67 reverse pairs, showing how misleading input can fill a knowledge gap.
 Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Submission_Pack/补充分析_2026-10-03.md
 
 ## Slide 8
@@ -36,7 +36,7 @@ Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Su
 Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Peer_Misleading_Study/reports/main_r/effects.csv
 
 ## Slide 9
-60 seconds. The stacked bars all use 719 complete units. Structured prompts shift many outputs into abstention. Date accuracy does not validate the explanation or prove evidence was consulted. Mention the correct 1975 candidate with explicit uncertainty as a case of mixed dimensions.
+60 seconds. The 100% stacked bars show the proportions correct, wrong and abstaining; all use 719 complete units. Structured prompts shift many outputs into abstention. Date accuracy does not validate the explanation or prove evidence was consulted. Mention the correct 1975 candidate with explicit uncertainty as a case of mixed dimensions.
 Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/review-discussion-2026-10-02.md
 
 ## Slide 10

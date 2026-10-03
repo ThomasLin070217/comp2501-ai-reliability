@@ -25,7 +25,7 @@ for k in ('Normal','BodyText'):
     styles[k].fontName=body_font;styles[k].fontSize=10.2;styles[k].leading=14.5;styles[k].spaceAfter=8
     styles[k].allowWidows=0;styles[k].allowOrphans=0
 for k,sz in [('Title',23),('Heading1',16),('Heading2',12.5),('Heading3',11)]:
-    styles[k].fontName=bold_font;styles[k].fontSize=sz;styles[k].leading=sz*1.22;styles[k].textColor=colors.HexColor('#18354A');styles[k].spaceBefore=13;styles[k].spaceAfter=8
+    styles[k].fontName=bold_font;styles[k].fontSize=sz;styles[k].leading=sz*1.22;styles[k].textColor=colors.HexColor('#18354A');styles[k].spaceBefore=13;styles[k].spaceAfter=8;styles[k].keepWithNext=True
 styles.add(ParagraphStyle(name='Cell',fontName=body_font,fontSize=8.4,leading=11,spaceAfter=0))
 styles.add(ParagraphStyle(name='Caption',fontName=body_font,fontSize=8.6,leading=12,textColor=colors.HexColor('#657586')))
 

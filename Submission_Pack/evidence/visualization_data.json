@@ -1,0 +1,176 @@
+{
+  "effects": [
+    {
+      "variant": "primary",
+      "provider": "pooled",
+      "comparison": "C0_vs_baseline",
+      "metric": "error",
+      "left_n": 322,
+      "left_den": 719,
+      "right_n": 331,
+      "right_den": 719,
+      "left_pct": 44.7844228094576,
+      "right_pct": 46.0361613351878,
+      "difference_pp": 1.25173852573018,
+      "ci_low_pp": -3.06406685236769,
+      "ci_high_pp": 5.56328233657858,
+      "question_clusters": 120,
+      "bootstrap_iterations": 5000,
+      "interval_note": "pointwise exploratory percentile interval",
+      "label": "C0 vs Initial: neutral recheck",
+      "y": 5,
+      "display": "+1.25 [-3.06, +5.56]"
+    },
+    {
+      "variant": "primary",
+      "provider": "pooled",
+      "comparison": "C1_vs_C0",
+      "metric": "error",
+      "left_n": 331,
+      "left_den": 719,
+      "right_n": 466,
+      "right_den": 719,
+      "left_pct": 46.0361613351878,
+      "right_pct": 64.8122392211405,
+      "difference_pp": 18.7760778859527,
+      "ci_low_pp": 14.3454038997214,
+      "ci_high_pp": 23.0876216968011,
+      "question_clusters": 120,
+      "bootstrap_iterations": 5000,
+      "interval_note": "pointwise exploratory percentile interval",
+      "label": "C1 vs C0: wrong answer",
+      "y": 4,
+      "display": "+18.78 [+14.35, +23.09]"
+    },
+    {
+      "variant": "primary",
+      "provider": "pooled",
+      "comparison": "C2_vs_C0",
+      "metric": "error",
+      "left_n": 331,
+      "left_den": 719,
+      "right_n": 377,
+      "right_den": 719,
+      "left_pct": 46.0361613351878,
+      "right_pct": 52.4339360222531,
+      "difference_pp": 6.39777468706536,
+      "ci_low_pp": 1.94444444444445,
+      "ci_high_pp": 10.9874826147427,
+      "question_clusters": 120,
+      "bootstrap_iterations": 5000,
+      "interval_note": "pointwise exploratory percentile interval",
+      "label": "C2 vs C0: wrong + reason",
+      "y": 3,
+      "display": "+6.40 [+1.94, +10.99]"
+    },
+    {
+      "variant": "primary",
+      "provider": "pooled",
+      "comparison": "C3_vs_C2",
+      "metric": "error",
+      "left_n": 377,
+      "left_den": 719,
+      "right_n": 258,
+      "right_den": 719,
+      "left_pct": 52.4339360222531,
+      "right_pct": 35.8831710709319,
+      "difference_pp": -16.5507649513213,
+      "ci_low_pp": -20.6951640009272,
+      "ci_high_pp": -12.3783031988873,
+      "question_clusters": 120,
+      "bootstrap_iterations": 5000,
+      "interval_note": "pointwise exploratory percentile interval",
+      "label": "C3 vs C2: structured / wrong",
+      "y": 2,
+      "display": "-16.55 [-20.70, -12.38]"
+    },
+    {
+      "variant": "primary",
+      "provider": "pooled",
+      "comparison": "C5_vs_C4",
+      "metric": "error",
+      "left_n": 217,
+      "left_den": 719,
+      "right_n": 183,
+      "right_den": 719,
+      "left_pct": 30.1808066759388,
+      "right_pct": 25.452016689847,
+      "difference_pp": -4.72878998609179,
+      "ci_low_pp": -7.37134909596662,
+      "ci_high_pp": -2.22222222222222,
+      "question_clusters": 120,
+      "bootstrap_iterations": 5000,
+      "interval_note": "pointwise exploratory percentile interval",
+      "label": "C5 vs C4: structured / correct",
+      "y": 1,
+      "display": "-4.73 [-7.37, -2.22]"
+    }
+  ],
+  "heat_colors": [
+    ["#6FAFAC", "#E7EFF1", "#DCE9EB"],
+    ["#EBF1F4", "#147E77", "#65A9A6"],
+    ["#EDF2F5", "#DBE9EB", "#59A39F"]
+  ],
+  "review": [
+    {
+      "label": "Clearly withholds a date",
+      "n": 114
+    },
+    {
+      "label": "Unconfirmed candidate only",
+      "n": 25
+    },
+    {
+      "label": "Challenges the premise",
+      "n": 3
+    },
+    {
+      "label": "Retains a date assertion",
+      "n": 2
+    }
+  ],
+  "composition": [
+    {
+      "condition": "baseline",
+      "correct": 21.4186369958275,
+      "incorrect": 44.7844228094576,
+      "abstain": 33.7969401947149
+    },
+    {
+      "condition": "C0",
+      "correct": 18.0806675938804,
+      "incorrect": 46.0361613351878,
+      "abstain": 35.8831710709319
+    },
+    {
+      "condition": "C1",
+      "correct": 22.5312934631433,
+      "incorrect": 64.8122392211405,
+      "abstain": 12.6564673157163
+    },
+    {
+      "condition": "C2",
+      "correct": 22.5312934631433,
+      "incorrect": 52.4339360222531,
+      "abstain": 25.0347705146036
+    },
+    {
+      "condition": "C3",
+      "correct": 19.6105702364395,
+      "incorrect": 35.8831710709319,
+      "abstain": 44.5062586926286
+    },
+    {
+      "condition": "C4",
+      "correct": 49.095966620306,
+      "incorrect": 30.1808066759388,
+      "abstain": 20.7232267037552
+    },
+    {
+      "condition": "C5",
+      "correct": 26.8428372739917,
+      "incorrect": 25.452016689847,
+      "abstain": 47.7051460361613
+    }
+  ]
+}
