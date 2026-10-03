@@ -1,0 +1,439 @@
+{
+  "charts": {
+    "facts": {
+      "categories": ["Self-check", "Cross-model check"],
+      "values": [0.439446366782007, 0.44636678200692],
+      "counts": ["254/578", "258/578"],
+      "max": 1,
+      "change": "+0.69 percentage points",
+      "interval": "97.5% interval [-4.98, 6.17] pp"
+    },
+    "math": {
+      "categories": ["Self-check", "Cross-model check"],
+      "values": [0.0402010050251256, 0.0201005025125628],
+      "counts": ["8/199", "4/199"],
+      "max": 0.1,
+      "change": "-2.01 percentage points",
+      "interval": "97.5% interval [-5.21, 0.00] pp"
+    },
+    "verification": {
+      "categories": ["Ordinary recheck", "Verification"],
+      "values": [0.514285714285714, 0.504761904761905],
+      "counts": ["108/210", "106/210"],
+      "max": 1,
+      "change": "-0.95 percentage points",
+      "interval": "95% interval [-6.76, 5.19] pp"
+    },
+    "reminder": {
+      "categories": ["Without reminder", "With reminder"],
+      "values": [0.504761904761905, 0.395238095238095],
+      "counts": ["106/210", "83/210"],
+      "max": 1,
+      "change": "-10.95 percentage points",
+      "interval": "95% interval [-17.93, -4.26] pp"
+    },
+    "misleading": {
+      "categories": ["Neutral recheck", "Wrong answer", "Wrong + reason"],
+      "values": [0.460361613351878, 0.648122392211405, 0.524339360222531],
+      "counts": ["331/719", "466/719", "377/719"],
+      "max": 1
+    },
+    "models": {
+      "categories": ["DeepSeek", "Kimi", "MiniMax"],
+      "series": [
+        {
+          "name": "Self-check",
+          "values": [0.323076923076923, 0.253807106598985, 0.758064516129032]
+        },
+        {
+          "name": "Cross-model check",
+          "values": [0.42051282051282, 0.319796954314721, 0.60752688172043]
+        }
+      ],
+      "max": 1
+    },
+    "outcomes": {
+      "categories": ["Wrong", "Correct", "Abstain"],
+      "series": [
+        {
+          "name": "Without reminder",
+          "values": [0.504761904761905, 0.228571428571429, 0.266666666666667]
+        },
+        {
+          "name": "With reminder",
+          "values": [0.395238095238095, 0.180952380952381, 0.423809523809524]
+        }
+      ],
+      "max": 1
+    }
+  },
+  "facts": [
+    {
+      "domain": "facts",
+      "provider": "pooled",
+      "comparison": "N2-N1",
+      "metric": "error",
+      "n": 578,
+      "questions": 100,
+      "before_n": 254,
+      "after_n": 258,
+      "before_pct": 43.9446366782007,
+      "after_pct": 44.636678200692,
+      "difference_pp": 0.692041522491359,
+      "ci_low": -4.22553841567926,
+      "ci_high": 5.51724137931035,
+      "familywise_low": -4.98304661921393,
+      "familywise_high": 6.16980250945746,
+      "before_label": "43.94%",
+      "after_label": "44.64%",
+      "change_label": "+0.69 percentage points",
+      "count_label": "254/578 and 258/578 wrong",
+      "interval_label": "97.5% interval [-4.98, 6.17] pp"
+    }
+  ],
+  "math": [
+    {
+      "domain": "mathematics",
+      "provider": "pooled",
+      "comparison": "N2-N1",
+      "metric": "error",
+      "n": 199,
+      "questions": 39,
+      "before_n": 8,
+      "after_n": 4,
+      "before_pct": 4.02010050251256,
+      "after_pct": 2.01005025125628,
+      "difference_pp": -2.01005025125628,
+      "ci_low": -4.73684210526316,
+      "ci_high": 0,
+      "familywise_low": -5.20833333333333,
+      "familywise_high": 0,
+      "before_label": "4.02%",
+      "after_label": "2.01%",
+      "change_label": "-2.01 percentage points",
+      "count_label": "8/199 and 4/199 wrong",
+      "interval_label": "97.5% interval [-5.21, 0.00] pp"
+    }
+  ],
+  "clean": [
+    {
+      "domain": "facts",
+      "provider": "pooled",
+      "comparison": "W1-W0",
+      "metric": "error",
+      "n": 210,
+      "questions": 36,
+      "before_n": 108,
+      "after_n": 106,
+      "before_pct": 51.4285714285714,
+      "after_pct": 50.4761904761905,
+      "difference_pp": -0.952380952380956,
+      "ci_low": -6.76328502415459,
+      "ci_high": 5.18867924528302,
+      "familywise_low": -7.6555023923445,
+      "familywise_high": 5.9950911560241,
+      "before_label": "51.43%",
+      "after_label": "50.48%",
+      "change_label": "-0.95 percentage points",
+      "count_label": "108/210 and 106/210 wrong",
+      "interval_label": "95% interval [-6.76, 5.19] pp"
+    }
+  ],
+  "reminder": [
+    {
+      "domain": "facts",
+      "provider": "pooled",
+      "comparison": "W2-W1",
+      "metric": "error",
+      "n": 210,
+      "questions": 36,
+      "before_n": 106,
+      "after_n": 83,
+      "before_pct": 50.4761904761905,
+      "after_pct": 39.5238095238095,
+      "difference_pp": -10.9523809523809,
+      "ci_low": -17.9254442205532,
+      "ci_high": -4.26489984798355,
+      "familywise_low": -19.1387559808612,
+      "familywise_high": -3.3175355450237,
+      "before_label": "50.48%",
+      "after_label": "39.52%",
+      "change_label": "-10.95 percentage points",
+      "count_label": "106/210 and 83/210 wrong",
+      "interval_label": "95% interval [-17.93, -4.26] pp"
+    }
+  ],
+  "direct_math": [
+    {
+      "domain": "mathematics",
+      "provider": "pooled",
+      "comparison": "N2-N0",
+      "metric": "error",
+      "n": 202,
+      "questions": 40,
+      "before_n": 11,
+      "after_n": 4,
+      "before_pct": 5.44554455445545,
+      "after_pct": 1.98019801980198,
+      "difference_pp": -3.46534653465346,
+      "ci_low": -6.66666666666667,
+      "ci_high": -0.970873786407767,
+      "familywise_low": -7.10382513661202,
+      "familywise_high": -0.932351662682026,
+      "before_label": "5.45%",
+      "after_label": "1.98%",
+      "change_label": "-3.47 percentage points",
+      "count_label": "11/202 and 4/202 wrong",
+      "interval_label": "95% interval [-6.67, -0.97] pp"
+    }
+  ],
+  "tables": {
+    "primary": [
+      {
+        "Domain": "facts",
+        "Comparison": "N2-N1",
+        "Pairs": 578,
+        "Before": "254/578 (43.94%)",
+        "After": "258/578 (44.64%)",
+        "Change_pp": "+0.69",
+        "Interval": "[-4.98, 6.17]"
+      },
+      {
+        "Domain": "mathematics",
+        "Comparison": "N2-N1",
+        "Pairs": 199,
+        "Before": "8/199 (4.02%)",
+        "After": "4/199 (2.01%)",
+        "Change_pp": "-2.01",
+        "Interval": "[-5.21, 0.00]"
+      }
+    ],
+    "ablation": [
+      {
+        "Domain": "facts",
+        "Comparison": "W1-W0",
+        "Pairs": 210,
+        "Before": "108/210 (51.43%)",
+        "After": "106/210 (50.48%)",
+        "Change_pp": "-0.95",
+        "Interval": "[-6.76, 5.19]"
+      },
+      {
+        "Domain": "facts",
+        "Comparison": "W2-W1",
+        "Pairs": 210,
+        "Before": "106/210 (50.48%)",
+        "After": "83/210 (39.52%)",
+        "Change_pp": "-10.95",
+        "Interval": "[-17.93, -4.26]"
+      }
+    ],
+    "secondary": [
+      {
+        "Domain": "facts",
+        "Comparison": "N2-N0",
+        "Pairs": 584,
+        "Before": "267/584 (45.72%)",
+        "After": "263/584 (45.03%)",
+        "Change_pp": "-0.68",
+        "Interval": "[-3.76, 2.26]"
+      },
+      {
+        "Domain": "facts",
+        "Comparison": "N3-N2",
+        "Pairs": 586,
+        "Before": "264/586 (45.05%)",
+        "After": "274/586 (46.76%)",
+        "Change_pp": "+1.71",
+        "Interval": "[-0.84, 4.14]"
+      },
+      {
+        "Domain": "mathematics",
+        "Comparison": "N2-N0",
+        "Pairs": 202,
+        "Before": "11/202 (5.45%)",
+        "After": "4/202 (1.98%)",
+        "Change_pp": "-3.47",
+        "Interval": "[-6.67, -0.97]"
+      },
+      {
+        "Domain": "mathematics",
+        "Comparison": "N3-N2",
+        "Pairs": 193,
+        "Before": "2/193 (1.04%)",
+        "After": "1/193 (0.52%)",
+        "Change_pp": "-0.52",
+        "Interval": "[-1.60, 0.00]"
+      }
+    ],
+    "models": [
+      {
+        "Receiver": "deepseek",
+        "Pairs": 195,
+        "Self_check": "32.31%",
+        "Cross_check": "42.05%",
+        "Change_pp": "+9.74"
+      },
+      {
+        "Receiver": "kimi",
+        "Pairs": 197,
+        "Self_check": "25.38%",
+        "Cross_check": "31.98%",
+        "Change_pp": "+6.60"
+      },
+      {
+        "Receiver": "minimax",
+        "Pairs": 186,
+        "Self_check": "75.81%",
+        "Cross_check": "60.75%",
+        "Change_pp": "-15.05"
+      }
+    ],
+    "outcomes": [
+      {
+        "Outcome": "Wrong",
+        "Without": 106,
+        "With": 83,
+        "Pairs": 210
+      },
+      {
+        "Outcome": "Correct",
+        "Without": 48,
+        "With": 38,
+        "Pairs": 210
+      },
+      {
+        "Outcome": "Abstain",
+        "Without": 56,
+        "With": 89,
+        "Pairs": 210
+      }
+    ],
+    "format": [
+      {
+        "domain": "facts",
+        "n": 590,
+        "before": 265,
+        "after": 264,
+        "difference_pp": -0.169491525423722,
+        "ci975_low": -5.91216216216216,
+        "ci975_high": 5.25880909901873
+      },
+      {
+        "domain": "mathematics",
+        "n": 204,
+        "before": 9,
+        "after": 4,
+        "difference_pp": -2.45098039215687,
+        "ci975_low": -5.84079283887468,
+        "ci975_high": 0
+      }
+    ],
+    "reasoning": [
+      {
+        "version": "original_kimi",
+        "pairs": 206,
+        "N1": 16,
+        "N2": 7,
+        "difference_pp": -4.36893203883495,
+        "ci_low": -8.42105263157895,
+        "ci_high": -0.947867298578199
+      },
+      {
+        "version": "partial_codex_audit",
+        "pairs": 206,
+        "N1": 13,
+        "N2": 8,
+        "difference_pp": -2.42718446601942,
+        "ci_low": -5.75941401530407,
+        "ci_high": 0.471754001609585
+      }
+    ],
+    "bounds": [
+      {
+        "domain": "facts",
+        "comparison": "N2-N1",
+        "planned": 600,
+        "paired": 578,
+        "low": -1.49999999999999,
+        "high": 2.83333333333332
+      },
+      {
+        "domain": "facts",
+        "comparison": "N2-N0",
+        "planned": 600,
+        "paired": 584,
+        "low": -2.33333333333333,
+        "high": 1.00000000000001
+      },
+      {
+        "domain": "facts",
+        "comparison": "W2-W1",
+        "planned": 216,
+        "paired": 210,
+        "low": -12.962962962963,
+        "high": -8.7962962962963
+      },
+      {
+        "domain": "mathematics",
+        "comparison": "N2-N1",
+        "planned": 246,
+        "paired": 199,
+        "low": -14.2276422764228,
+        "high": 13.8211382113821
+      },
+      {
+        "domain": "mathematics",
+        "comparison": "N2-N0",
+        "planned": 246,
+        "paired": 202,
+        "low": -14.6341463414634,
+        "high": 12.1951219512195
+      }
+    ],
+    "controlled": [
+      {
+        "Comparison": "C0_vs_baseline",
+        "Pairs": 719,
+        "Before": "44.78%",
+        "After": "46.04%",
+        "Change_pp": "+1.25",
+        "CI95": "[-3.06, 5.56]"
+      },
+      {
+        "Comparison": "C1_vs_C0",
+        "Pairs": 719,
+        "Before": "46.04%",
+        "After": "64.81%",
+        "Change_pp": "+18.78",
+        "CI95": "[14.35, 23.09]"
+      },
+      {
+        "Comparison": "C2_vs_C0",
+        "Pairs": 719,
+        "Before": "46.04%",
+        "After": "52.43%",
+        "Change_pp": "+6.40",
+        "CI95": "[1.94, 10.99]"
+      },
+      {
+        "Comparison": "C3_vs_C2",
+        "Pairs": 719,
+        "Before": "52.43%",
+        "After": "35.88%",
+        "Change_pp": "-16.55",
+        "CI95": "[-20.70, -12.38]"
+      },
+      {
+        "Comparison": "C5_vs_C4",
+        "Pairs": 719,
+        "Before": "30.18%",
+        "After": "25.45%",
+        "Change_pp": "-4.73",
+        "CI95": "[-7.37, -2.22]"
+      }
+    ]
+  },
+  "authors": ["LINYUNIAN", "PAN ZHENGYU"],
+  "date": "4 October 2026"
+}

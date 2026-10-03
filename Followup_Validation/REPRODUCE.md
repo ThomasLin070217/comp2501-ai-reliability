@@ -27,4 +27,4 @@ Generation timestamps in JSON receipts are not compared. Frozen inputs and every
 
 Do not rerun `prepare.R`, `test.R` or reviewer `prepare` in this frozen directory: they write design/request artifacts. Live `collect` modes incur costs and are not part of offline reproduction. The three rejected initial reviewer requests and temperature correction are retained as a documented implementation amendment, not concealed retries.
 
-The follow-up is a separate supplement. Earlier PPT, PDF and ZIP files in `Submission_Pack` were built before this follow-up and do not contain these results. Do not describe those historical artifacts as the final integrated version of this supplement.
+The follow-up remains a separate experiment. On 4 October 2026, `Submission_Pack` was updated to integrate its evidence into the current PPT and report, without pooling old and new responses. Earlier presentation/PDF versions remain recoverable from Git; ZIP snapshots with older dates are historical.

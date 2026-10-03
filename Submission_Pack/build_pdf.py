@@ -49,7 +49,7 @@ def inline(tokens):
 src=(pack/'report.md').read_text()
 src=re.sub(r'^---\n.*?\n---\n','',src,count=1,flags=re.S)
 tokens=MarkdownIt('commonmark',{'html':True}).enable('table').parse(src)
-story=[Paragraph('Can We Trust AI More<br/>After Cross-Checking?',styles['Title']),Paragraph('LINYUNIAN and PAN ZHENGYU',styles['Heading2']),Paragraph('COMP2501 project / Updated 3 October 2026',styles['Caption']),Spacer(1,10)]
+story=[Paragraph('Can We Trust AI More<br/>After Cross-Checking?',styles['Title']),Paragraph('LINYUNIAN and PAN ZHENGYU',styles['Heading2']),Paragraph('COMP2501 project / Integrated results, 4 October 2026',styles['Caption']),Spacer(1,10)]
 width=A4[0]-104
 def addimage(raw):
     f=Path(raw)

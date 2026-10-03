@@ -1,0 +1,12 @@
+{
+  "source_sha256": {
+    "Followup_Validation/reports/effects.csv": "290bd42d042763784c69bf89dfabd807409ad55029d8d3c66cb9178270bce109",
+    "Followup_Validation/reports/graded_responses.csv": "717b0b3a71599e5bd8dd3fa48a02e49e33a0e51f5136e7040ac39fac3d5a268d",
+    "Followup_Validation/reports/format_sensitivity_effects.csv": "2ab8bcfdb49d13d50881c0a09bafa7449b6960e6430ca3d5c02ebd32f7825f78",
+    "Followup_Validation/reports/reasoning_paired_sensitivity.csv": "f4f9ac4ab2231a286e20dd088f6b249f3fc59773794121770ab978c66d95f837",
+    "Followup_Validation/reports/missing_bounds.csv": "a3f6e9b074d16827867a4d3e6b688b68a4f912a310892081963d024bc4ff2560",
+    "Submission_Pack/evidence/visualization_data.json": "d1c2e6c5a494e472e50ac12b0945a7505a0fdcdb09656d21bbbfb109ea5fd705"
+  },
+  "processing": "R only; all charts and displayed numerical labels derive from saved R results",
+  "separate_experiments": true
+}

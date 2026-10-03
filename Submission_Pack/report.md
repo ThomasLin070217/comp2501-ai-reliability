@@ -1,258 +1,288 @@
 ---
 title: "Can We Trust AI More After Cross-Checking?"
-subtitle: "COMP2501 project · natural cross-checking and controlled misleading advice"
+subtitle: "Natural cross-checking, misleading advice and uncertainty"
 author: "LINYUNIAN and PAN ZHENGYU"
-date: "3 October 2026"
+date: "4 October 2026"
 output:
   html_document:
     toc: true
     toc_depth: 2
     theme: flatly
     self_contained: true
-    code_folding: hide
     keep_md: true
 ---
 
 
 
-# Research questions and motivation
+# Executive summary
 
-According to LINYUNIAN's recollection, Professor LUO RUIBANG asked in class who would completely trust an AI answer. LINYUNIAN raised a hand, explaining that multiple agents and cross-checking made the answer seem more reliable. That experience motivates our question: does cross-checking justify greater trust, and can a mistaken checker transmit errors?
+Cross-checking can repair an answer, but our experiments do not establish that using a different model reliably improves on self-checking. In the expanded natural-checking study, factual error changes from **43.94% to 44.64%** and mathematical error from **4.02% to 2.01%**. Both adjusted primary intervals include zero. The mathematical result also excludes some difficult, incomplete pairs.
 
-We operationalise reliability primarily as **wrong answers divided by correct answers, wrong answers and explicit abstentions**. An abstention is not an error under this metric, but is reported separately from a correct answer. We did not measure human trust or decision outcomes, and fewer errors do not justify 100% confidence in every answer.
+A separate controlled factual experiment shows that supplied wrong answers can increase error. Relative to neutral rechecking, wrong-answer-only advice increases error by **18.78 percentage points**, and wrong answers with explanations by **6.40 points**. These are exploratory comparisons of assigned misleading materials, not estimates of how often another model naturally gives bad advice.
 
-**Module A** tests natural cross-checking against direct answers and ordinary self-checking. **Module B** tests misleading advice. **Module C** tests structured checking under identical advice. Factual and mathematical results remain separate. Module A was added after reviewing the earlier results; its protocol was frozen before its own new calls. It is a post-hoc follow-up on previously studied questions, not a held-out replication.
+The new prompt ablation clarifies an earlier finding. Verification without an extra abstention reminder shows no clear error reduction. Adding the reminder reduces error by **10.95 points** under the same wrong advice, while correct answers decrease and abstentions increase. This can be useful caution without better factual knowledge. We report all three outcomes and do not treat abstention as a correct answer.
 
-The original prespecified endpoints for B/C remain: **RQ1**, whether adding an explanation to a wrong peer answer increases correct-to-wrong switching; **RQ2**, whether structured checking resists the same wrong advice while preserving useful corrections. The later all-unit error-rate analysis is explicitly supplementary.
+Our practical conclusion is conditional: independent answers can help expose disagreement, but agreement and confident explanations do not guarantee truth. Important claims still need evidence beyond another unsupported answer. External retrieval, calculators and human decision benefits remain proposed extensions, not tested outcomes.
 
-AI-generated suggestions simulate a person bringing an answer or explanation into a conversation. The actual advice source label is another AI. We do not claim human and AI labels have identical effects or infer internal mechanisms such as sycophancy from output changes alone.
+# 1. Motivation and research questions
 
-## Related work and data
+According to LINYUNIAN's recollection, Professor LUO RUIBANG asked who would completely trust an AI answer. LINYUNIAN raised a hand because using multiple agents to cross-check answers seemed to improve reliability. This is a paraphrase of a classroom recollection, not a recorded quotation of the professor.
 
-Intrinsic self-correction can fail without reliable feedback ([Huang et al., ICLR 2024](https://openreview.net/forum?id=IkmD3fKBPQ)). Chain-of-Verification uses separate verification questions and responses ([Dhuliawala et al., ACL Findings 2024](https://aclanthology.org/2024.findings-acl.212/)). Our single follow-up prompt is a simplified intervention, not a replication of the full CoVe method.
+That experience led to two questions:
 
-The main source is [Google SimpleQA Verified](https://huggingface.co/datasets/google/simpleqa-verified), frozen revision `0dc97e0d28d8233463e005cdc4475cc2a13ba2dc`. We mechanically screened 1,000 source questions to 207 date candidates, separated development questions, checked sources and generated peer materials. The final 120 questions were selected in a fixed order by material eligibility, not by receiver outcomes. This is a selected factual subset, not representative everyday AI use.
+1. Does a different model's independently generated answer reduce error beyond an ordinary self-check, and does the result differ between factual and mathematical tasks?
+2. Can wrong advice mislead the receiver, and does a verification prompt help when we separate its checking instructions from an extra reminder to abstain?
 
-# Module A: natural cross-checking
+The title uses “trust” as the motivating question. The measured outcomes concern model answers, not human trust, thinking or decision quality. AI-generated advice models the presence of a suggested answer and rationale in an interaction. Prompts identify its source as another AI. We do not directly test human-authored prompts, source-label effects or a psychological mechanism such as sycophancy.
 
-## Design and scope
+## Related work
 
-We selected 36 previously studied factual questions with a fixed R seed after excluding the frozen set of 18 previously flagged reference/source items, without selecting on model outcomes. We retained all 13 eligible mathematical items from the previous supplement. These are 49 previously seen questions, not a fresh population sample. DeepSeek, Kimi and MiniMax each provide one natural independent initial answer per question, with no assigned correct or wrong target. The planned run contains 147 units and 588 outputs.
+[Huang et al. (ICLR 2024)](https://openreview.net/forum?id=IkmD3fKBPQ) examine limitations of intrinsic self-correction without reliable feedback. [Dhuliawala et al. (ACL Findings 2024)](https://aclanthology.org/2024.findings-acl.212/) use separate verification questions in Chain-of-Verification. Our single revision prompt is a simpler intervention, not a replication of that full method. [CHAMP (ACL Findings 2024)](https://aclanthology.org/2024.findings-acl.785/) supplies competition mathematics and reference solutions for the latest supplement. Earlier exploratory tasks drew on mathematical traps and irrelevant-information failures documented by [MathTrap](https://aclanthology.org/2024.emnlp-main.915/) and [GSM-Symbolic](https://machinelearning.apple.com/research/gsm-symbolic). Historical model failures motivate the tests but do not establish error rates of current APIs.
 
-|Condition|What the receiver sees|Purpose|
+# 2. Study design and data
+
+## Separate experiments answer separate questions
+
+|Study|Sample and purpose|Role in this report|
 |---|---|---|
-|N0|Original question only|Direct independent answer|
-|N1|Original question and its own N0|Ordinary self-check|
-|N2|Same N0 plus a different model's independent N0 and reason|Natural peer-check|
-|N3|Exactly the same peer material as N2|Structured peer-check|
+|Original controlled advice|120 selected date questions, 719 complete model-repeat units|Effect of assigned misleading or correct advice|
+|Expanded natural checking|100 previously studied date questions and 41 new-to-project CHAMP questions, three models, two repeats|Latest primary evidence on cross-model versus self-checking|
+|New prompt ablation|A fixed 36-question subset of those facts|Separate verification from the extra abstention reminder|
+|Earlier natural and mathematics runs|49-question natural run and 13-item controlled math supplement|Historical context and design lessons, summarised in Appendix A|
 
-Each revision is a separate branch from N0. Donor direction is fixed and balanced within task domain as far as the odd mathematics count permits. A donor's uncertainty or wrong answer is retained without rewriting. No tested model has search tools. The receiver makes one additional call in N1/N2/N3, but peer-checking also requires the donor's independent call in practical deployment; equal receiver calls do not mean equal end-to-end cost.
+We do not pool responses across these studies. The expanded study uses fresh calls on the eligible factual pool; it is not a held-out factual replication. “New” mathematics means new to this project, not necessarily unseen during model training. The expanded protocol was frozen before its own calls, after we had reviewed the earlier studies.
 
-**The primary contrast is N2 minus N1**, isolating the added peer information relative to another attempt by the same receiver. Secondary contrasts are N2 minus N0 and N3 minus N2. All use the same selected questions and report correct, wrong and abstaining outcomes. The code excludes unavailable or invalid baseline/donor inputs transparently rather than replacing substantive answers. Missing outputs are not coded as abstentions. Pairwise results use the available complete pair; common-four-output tables and missing-output bounds are retained separately.
+The factual source is [Google SimpleQA Verified](https://huggingface.co/datasets/google/simpleqa-verified), revision `0dc97e0d28d8233463e005cdc4475cc2a13ba2dc`. The original pipeline screened 1,000 items to 207 date candidates, separated development items and selected 120 by material eligibility. The follow-up removes 18 previously excluded items and two premise/naming concerns, leaving 100. This is a difficult selected date subset, not a sample of everyday AI questions.
 
-## Observed results
+For mathematics, a fixed-seed sample selected 45 numeric-answer text problems from five CHAMP topics: combinatorics, inequalities, number theory, polynomials and sequences. Before model calls, we excluded two incorrect source answer keys and two zero-side triangle ambiguities without replacement, leaving 41. We retain the [pinned official dataset](https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5), MIT license, original solutions and separate correction notes. Public benchmark exposure and shared problem structure limit generalisation.
 
-The run logged **573 HTTP attempts** and **573 returned task records** out of **588 planned outputs**. Paid-provider conservative usage estimate: **CNY 3.33**; HKU tokens are tracked separately and its cash price is unknown.
+## Natural checking uses genuinely different models
 
+The receiving APIs are `deepseek-v4-pro`, `kimi-k2.6` and HKU `MiniMax-M3`. Each independently answers each question twice. Within a repeat, a receiver sees one other model's corresponding independent answer. The second repeat reverses donor direction, so every receiver uses both other model types. Receiver and donor are always different.
 
+|Condition|Information and action|
+|---|---|
+|N0: direct answer|Answer the question independently|
+|N1: self-check|Reconsider the question and the receiver's own N0|
+|N2: cross-model check|Reconsider the same N0 with another model's independent answer and explanation|
+|N3: verification|Use the identical natural advice as N2, with explicit verification instructions and no extra abstention reminder|
 
-|Domain      |Group |   N| Correct| Wrong| Abstain| Error %|
-|:-----------|:-----|---:|-------:|-----:|-------:|-------:|
-|facts       |N0    | 101|      25|    36|      40|   35.64|
-|facts       |N1    | 101|      18|    39|      44|   38.61|
-|facts       |N2    | 101|      29|    35|      37|   34.65|
-|facts       |N3    | 101|      24|    27|      50|   26.73|
-|mathematics |N0    |  37|      27|    10|       0|   27.03|
-|mathematics |N1    |  37|      35|     2|       0|    5.41|
-|mathematics |N2    |  37|      37|     0|       0|    0.00|
-|mathematics |N3    |  37|      37|     0|       0|    0.00|
+All revision branches start separately from N0. N2 does not receive N1, and N3 does not receive N2. There is one final receiving-model revision, no third arbitrator and no multi-round debate. No tested model has web search, a calculator or external retrieval. Natural donor answers remain unchanged even when wrong or uncertain.
 
-<img src="../Natural_Crosscheck/reports/error_rates.png" alt="" width="100%" />
+N2 minus N1 is the primary comparison in each domain. It controls for an additional receiving-model attempt, but peer generation adds a separate call and more context. Without a same-model independent-donor arm, the design cannot isolate the benefit of model diversity from the benefit of an additional independently generated answer. It does not establish equal-cost superiority.
 
+Requests use temperature 0.6 with thinking disabled, up to 768 output tokens for facts and 1,536 for mathematics. Mathematical prompts request reasoning before the final answer to reduce the earlier answer-before-reason inconsistency. Hosted model names and settings describe these runs, not permanently fixed model weights.
 
-|Domain      |A minus B | Pairs| Difference (pp)|95% interval     |
-|:-----------|:---------|-----:|---------------:|:----------------|
-|facts       |N2-N1     |   102|           -4.90|[-16.19, 5.94]   |
-|facts       |N2-N0     |   102|           -1.96|[-9.00, 4.90]    |
-|facts       |N3-N2     |   101|           -7.92|[-15.46, 0.00]   |
-|mathematics |N2-N1     |    37|           -5.41|Descriptive only |
-|mathematics |N2-N0     |    37|          -27.03|Descriptive only |
-|mathematics |N3-N2     |    37|            0.00|Descriptive only |
+## Controlled advice and the reminder ablation
 
-A negative difference means fewer wrong outputs in the first condition. Factual intervals use 5,000 whole-question bootstrap draws, preserving all receiving models together, with seed 25011003. They are pointwise exploratory intervals, not adjusted for multiple comparisons. Mathematical variants belong to only four families, so their counts and paired differences remain descriptive. The domains are not matched for difficulty and cannot establish a universal ranking of fact checking versus logic.
+The original conditions are C0 neutral recheck, C1 assigned wrong answer, C2 assigned wrong answer with explanation, C3 verification of identical C2 material, C4 correct target with explanation and C5 verification of identical C4 material. Different models verbalised researcher-assigned targets. Eligibility checks do not guarantee every background assertion in an explanation is true.
 
-Relative to self-checking, natural peer-checking changes factual error by **-4.90 percentage points**, with interval **[-16.19, 5.94]**. Its mathematical difference is **-5.41 points**, interpreted descriptively. These comparisons test this particular one-round workflow; they do not evaluate every multi-agent architecture.
+The new factual ablation holds the initial answer and assigned wrong material fixed:
 
-The common-four factual bars differ by -3.96 points for N2 minus N1, while the primary complete-pair comparison differs by -4.90 points because it includes one additional unit. These denominators are deliberately disclosed, not interchanged. Model-specific factual N2 minus N1 differences are -14.29 points for DeepSeek, +20.59 for Kimi and -21.21 for MiniMax. A pooled benefit cannot be assumed for every model.
+|Condition|Follow-up instruction|
+|---|---|
+|W0|Ordinary recheck|
+|W1|Verification, without the extra abstention sentence|
+|W2|The same verification prompt, with the extra abstention sentence|
 
-AI review covered 319 actual responses in a 334-slot queue, including all 151 returned mathematical responses. Eight of ten initial mathematical field errors already have a correct reasoning endpoint; the other two are addition errors. Self-checking repairs those eight field errors, and peer-checking repairs the two remaining arithmetic mistakes. Giving credit for the already-correct endpoints in a separate diagnostic reduces the N0/N2 mathematical difference from -27.03 to -5.41 points. Zero errors in the small peer-check sample does not establish zero risk.
+W1 versus W0 tests the remaining verification package. W2 versus W1 tests the incremental reminder within that package. Every group retains the same basic system permission to abstain. There is no reminder-only arm, so this is not a full factorial experiment. The two-step comparison cannot identify the model's internal reasoning mechanism.
 
-The frozen parser misses four ISO year-month answers and one mathematical JSON after LaTeX braces. A format-only sensitivity gives -4.85 points for the primary factual contrast (103 pairs), and -6.80 for N3 minus N2. The first still has an interval spanning zero. Three invalid baseline inputs led to 15 skipped branches; correcting extraction cannot recover calls never made. We retain these losses and the original scores. The new review also preserves premise/naming concerns and abstentions containing unverified assertions. See [the module A report](../Natural_Crosscheck/reports/report.md) and its individual annotations.
+## Outcomes and statistics
 
-The primary score evaluates final answer fields. Correct-looking explanations can conflict with final fields, and an explicit abstention can still contain unsupported prose. The AI semantic review and its scope are recorded separately in the natural-supplement report. Neither final-field accuracy nor agreement between models proves external verification. These results do not isolate the advantage of different models over two independent calls to the same model, or reproduce the unavailable codex-claude-collab skill exactly.
+**Error rate = wrong final answers / (correct final answers + wrong final answers + explicit abstentions).** Correct and abstaining responses both remain in the denominator, but only the former count as correct. An explicit valid mathematical conclusion such as “no integer solution” is correct when justified by the task, not an abstention. A correct field does not certify every sentence of the explanation. Mathematical reasoning has a separate secondary review.
 
-# Modules B and C: controlled advice design
+Missing calls, truncated outputs, invalid formats and conflicting answer/abstention fields remain unscorable. We never convert them into deliberate abstention. Each comparison uses its own complete pair, and every plotted contrast uses exactly the same denominator as its accompanying estimate.
 
-Three APIs: `deepseek-v4-pro`, `kimi-k2.6`, and HKU-forwarded `MiniMax-M3`. Requests use temperature 0.6, thinking disabled and a 768-token output limit. Provider model names are API identifiers, not verified immutable weight snapshots.
+All current data processing, inference and figures use R. The latest study uses 5,000 bootstrap resamples of whole question clusters, retaining model and repeat observations together (seed 25011006). For its two domain-primary error contrasts, we report 97.5% marginal intervals as a Bonferroni convention. Other intervals are exploratory 95% intervals. The number of model outputs is not the number of independent questions. Intervals describe this selected collection and do not account for all reference or annotation uncertainty.
 
-Each question-model-repeat unit starts with one baseline answer. Six independent conversations then reuse that exact baseline. They are **parallel alternatives**, not six successive revisions.
+## Collection completeness
 
-|Condition|Peer material|Follow-up|
-|---|---|---|
-|C0|None|Neutral recheck|
-|C1|Assigned wrong answer only|Neutral recheck|
-|C2|Same wrong answer plus another model's explanation|Neutral recheck|
-|C3|Identical C2 material|Structured verification|
-|C4|Correct answer plus explanation|Neutral recheck|
-|C5|Identical C4 material|Structured verification|
+The expanded run planned 4,032 outputs in 846 question-model-repeat units. It records 3,932 HTTP attempts on 3,920 distinct tasks, including 12 exact retries after transport failures. Of these tasks, 3,893 returned complete text and 27 were incomplete. Another 112 branches were not requested because required inputs were unavailable or invalid. Among complete responses, 64 were unscorable by the frozen parser, leaving **3,829 scorable answers: 1,443 correct, 1,402 wrong and 984 abstentions**.
 
-We assign incorrect targets deliberately. Thus these trials measure susceptibility to an experimental input, not the natural prevalence of another AI making that mistake. The structured prompt asks the receiver to examine the claim and its support, accept justified corrections and state uncertainty when it cannot determine an answer.
+We did not retry substantive errors or add questions after seeing outcomes. A documented HKU transport amendment reduced branch concurrency from four to two. Request reconstruction confirmed the actual messages and different-model donor linkage. The original controlled study returned 5,040 responses after 5,042 requests and retains 719 complete seven-condition units. These studies have different denominators and purposes.
 
-## Processing and denominators
+# 3. Results
 
-All current reading, cleaning, grading, statistics, plotting and exports use R. Historical factual API collection used Python and remains archived. The new mathematics collector also uses R (`curl`). Main packages include `jsonlite`, `digest`, `ggplot2`, `xml2`, `knitr` and `rmarkdown`; exact versions accompany reproducible outputs.
+## A. Natural cross-checking has no established primary advantage
 
-The factual run made **5,042 HTTP attempts**, including two 502 failures and one exact retry for each. It returned **5,040 responses**. One unusable response excludes its entire seven-response paired unit, leaving **719 units and 5,033 responses across 120 questions**. Only 154 baseline responses are correct; 322 are wrong and 243 abstain. These denominators differ from total questions.
 
-Correct-to-wrong rates condition on initially correct answers. Correction rates condition on initially wrong answers. Explicit abstention is separate from an incorrect date and from an API/format failure. A matching final date does not certify the entire explanation. Factual intervals use 5,000 bootstrap resamples of question clusters, preserving models and repeats together, seed 25011001. They do not correct selection or reference-label bias.
+|Domain      |Comparison | Pairs|Before           |After            |Change_pp |Interval      |
+|:-----------|:----------|-----:|:----------------|:----------------|:---------|:-------------|
+|facts       |N2-N1      |   578|254/578 (43.94%) |258/578 (44.64%) |+0.69     |[-4.98, 6.17] |
+|mathematics |N2-N1      |   199|8/199 (4.02%)    |4/199 (2.01%)    |-2.01     |[-5.21, 0.00] |
 
-# Controlled factual results
+Intervals in this table are the adjusted 97.5% marginal intervals in percentage points. A negative difference favours cross-checking; an interval containing zero does not demonstrate equivalence.
 
+![Factual primary comparison, 578 matched pairs](figures/integrated/facts.png)
 
-|Condition |   N| Correct| Wrong| Abstain| Correct to wrong| Wrong to correct|
-|:---------|---:|-------:|-----:|-------:|----------------:|----------------:|
-|baseline  | 719|     154|   322|     243|                0|                0|
-|C0        | 719|     130|   331|     258|               11|               10|
-|C1        | 719|     162|   466|      91|                5|               12|
-|C2        | 719|     162|   377|     180|                3|               12|
-|C3        | 719|     141|   258|     320|                0|                3|
-|C4        | 719|     353|   217|     149|                2|               76|
-|C5        | 719|     193|   183|     343|                2|               45|
+The factual point estimate is **+0.69 points**, with interval **[-4.98, +6.17]**. Thus the expanded data do not establish a stable benefit beyond self-checking. The earlier 49-question study's factual estimate was -4.90 points with a wide interval; it must not be presented as the latest expanded-sample conclusion.
 
-<img src="figures/outcome_composition.png" alt="" width="100%" />
+On the same 578 pairs, correct answers increase from 113 to 138 and abstentions decrease from 211 to 182. Thus more useful answers and slightly more errors coexist as the receiver answers more often. The primary error metric alone does not assign a value to that trade-off.
 
-Adding an incorrect explanation did not show the hypothesised increase: correct-to-wrong changes were **5/154 in C1 and 3/154 in C2**, a difference of **-1.30 percentage points**, 95% question-cluster interval **[-5.17, 2.31]**. The interval includes no difference and effects in both directions.
+![Mathematical primary comparison, 199 matched pairs; vertical scale 0-10%](figures/integrated/math.png)
 
-Structured checking changed C2's **3/154** harmful flips to C3's **0/154**, difference **-1.95 points**, interval **[-4.46, 0.00]**. Only three observed events underpin this contrast. Zero observed flips is not evidence that risk has been eliminated. With no C3 events, the empirical cluster bootstrap cannot generate a positive difference; this sparse-event boundary interval does not establish safety.
+Mathematical error decreases from **8/199 to 4/199**, a difference of **-2.01 points**, interval **[-5.21, 0.00]**. Correct answers increase from 191 to 195; neither condition abstains in this primary matched subset. This is an encouraging direction, but the adjusted interval touches zero. The mathematical chart starts at zero and uses a 0-10% scale, explicitly different from the 0-100% factual chart.
 
-With correct peer advice, successful correction fell from **76/322 in C4 to 45/322 in C5**: **-9.63 points**, interval **[-14.38, -5.25]**. Among the 322 initially wrong units, 48 were correct in C4 but not C5, and 17 in the reverse direction. The net difference of 31 does not mean there were only 31 adverse cases. More checking also increased abstention. Consequently, this prompt cannot be described as an overall accuracy improvement in these factual tasks.
+Compared with answering once, cross-checking reduces mathematical error from **11/202 (5.45%) to 4/202 (1.98%)**, difference **-3.47 points**, exploratory 95% interval **[-6.67, -0.97]**. This secondary comparison answers a different question and uses a different matched subset. It does not replace the primary self-check comparison.
 
-## Supplementary paired analysis (post hoc)
+### Receiver differences matter
 
-The original outcomes above focus on initially correct or initially wrong answers. An additional analysis on 3 October examines all 719 paired units, including initial abstentions. We specified these comparisons after seeing the original aggregate results. They are **exploratory supplements**, not replacements for the original RQ1/RQ2 endpoints or an independent replication. Original grades remain unchanged.
+![Factual error by receiving model, matched within each model](figures/integrated/models.png)
 
-**Error rate = wrong / (correct + wrong + abstain). Correct answers and explicit abstentions are not counted as errors; both remain in the denominator of 719 complete units per condition.** This is the existing final-answer scoring rule, not a new reclassification. It does not certify every claim in the explanation. We also retain correct answers, abstentions and matches to the assigned false target. Supplemental intervals use 5,000 whole-question bootstrap resamples, seed 25011003. They are pointwise and not adjusted for multiple comparisons.
 
-<img src="figures/error_rate_comparisons.png" alt="" width="100%" />
+|Receiver | Pairs|Self_check |Cross_check |Change_pp |
+|:--------|-----:|:----------|:-----------|:---------|
+|deepseek |   195|32.31%     |42.05%      |+9.74     |
+|kimi     |   197|25.38%     |31.98%      |+6.60     |
+|minimax  |   186|75.81%     |60.75%      |-15.05    |
 
+DeepSeek and Kimi show more factual errors after peer input in this run, while MiniMax shows fewer. The pooled near-zero result conceals these opposite directions. These are descriptive model/donor strata, not universal rankings. Sharing a wrong initial answer also matters: in 22 factual and two mathematical units where receiver and donor supplied the same wrong value and N2 was scorable, all 24 N2 answers remained wrong. This is a conditional observation, not a causal estimate of correlated training effects.
 
+### Missing mathematics limits the apparent gain
 
-Wrong advice alone raises error relative to neutral rechecking by **18.78 percentage points**. Wrong advice with an explanation raises it by **6.40 points**. This is different from the original question of whether adding an explanation makes wrong advice more harmful: that hypothesised increase remains unsupported. Ordinary neutral rechecking also shows no reduction in overall factual error compared with the initial answer.
+The primary mathematical comparison retains 199 of 246 planned pairs and 39 of 41 questions. The L-triomino tiling problem and cyclic triple-product problem have no complete N1/N2 pair, although their initial responses include genuine errors. Truncated or invalid inputs can prevent later branches, and later responses can also be incomplete. Missingness therefore may select away difficult cases.
 
-### Misleading input can turn uncertainty into an error
+Best/worst completion bounds on all planned mathematical units allow N2-N1 differences from **-14.23 to +13.82 points**. These are missing-outcome bounds, not confidence intervals. We cannot generalise the usable-subset gain to the full planned sample without assumptions about missing answers. A five-topic bootstrap sensitivity gives a narrower interval, but five clusters are unstable; we do not select it after observing its stronger result.
 
-Relative to C0, C1 has 158 abstain-to-wrong pairs and 25 wrong-to-abstain pairs. For C2 the corresponding counts are 114 and 67. Assigned false-target matches rise from 11 in C0 to 251 in C1 and 147 in C2. New matches number 242 and 140 respectively, offset by 2 and 4 lost matches. Of the new matches, 176 and 103 come from units whose shared initial answer abstained. A false-target match in C0 is spontaneous, because C0 does not see that target.
+## B. Assigned wrong advice can increase factual error
 
-Thus susceptibility includes answering an unknown question incorrectly after receiving a suggestion, as well as abandoning an initially correct answer. The observations support concern about unverified premises in interaction. They do not establish an internal psychological mechanism or the prevalence of this behavior in everyday conversations.
+![Original controlled study: 719 complete units per group](figures/integrated/misleading.png)
 
-### Structured checking mainly withholds unsupported answers
+Relative to neutral rechecking, wrong-answer-only advice raises error from **46.04% to 64.81%**, or **+18.78 points**, exploratory 95% interval **[14.35, 23.09]**. Wrong answers with explanations raise error to **52.43%**, or **+6.40 points**, interval **[1.94, 10.99]**. These all-unit comparisons were added after reviewing original aggregates and remain explicitly post hoc.
 
-Under identical wrong materials, error falls from **377/719 (52.43%) in C2 to 258/719 (35.88%) in C3**, a difference of **-16.55 points**, 95% interval **[-20.70, -12.38]**. The full paired matrix explains the change:
+This does not support the separate original hypothesis that explanations make wrong advice more harmful than a wrong answer alone. In the original initially-correct endpoint, harmful flips are 5/154 under C1 and 3/154 under C2. The explanation-added difference is -1.30 points, interval [-5.17, +2.31]. The original endpoint and its unfavourable result remain part of the evidence.
 
-<img src="figures/paired_outcomes.png" alt="" width="100%" />
+Misleading input can turn uncertainty into error. C0/C1 have 158 abstain-to-wrong pairs and 25 in the reverse direction; C0/C2 have 114 and 67. These are comparisons of parallel branches, not sequential conversational transitions. They support concern about supplying unverified assumptions, but do not measure how frequently ordinary human prompts cause this effect.
 
-There are **144 wrong-to-abstain pairs and 5 wrong-to-correct pairs**, alongside 21 abstain-to-wrong and 9 correct-to-wrong pairs. The net 119 fewer wrong outputs must not be described as 119 successful factual corrections. These pairs compare parallel branches from the same baseline, not sequential C2 then C3 messages.
+## C. The extra abstention reminder changes the interpretation
 
-Correct outputs also fall from 162 to 141, while abstentions rise from 180 to 320. Abstention may avoid confidently supplying misinformation and leave room for human investigation. This study does not measure whether it improves users' independent thinking. The correct-advice control also matters: C4 to C5 loses 160 correct outputs overall, including 157 correct-to-abstain pairs and 24 correct-to-wrong pairs, with changes in the reverse direction retained. Utility depends on how users value correct answers, uncertainty and misinformation.
+In the original controlled study, verification reduced wrong output from 377/719 to 258/719, a -16.55-point difference. However, 144 wrong-to-abstain pairs and only five wrong-to-correct pairs accompanied that reduction. Correct output also decreased. The new ablation separates the extra abstention sentence from the rest of the checking instructions.
 
-### Robustness and model differences
 
-All three models show lower error in C3 than C2, but the size differs. MiniMax does not show increased error for C2 versus C0 (-1.67 points, interval [-8.40, 5.42]). Hence the pooled pattern is not a universal model-level response. Excluding the original 16 source/adjudication/quality-flagged questions, and then adding the two previously documented reference concerns, retains the pooled directions. With 102 questions remaining, C1-C0, C2-C0 and C3-C2 are +18.14, +7.35 and -17.32 points. Sensitivity checks do not prove that every remaining reference is correct.
+|Domain |Comparison | Pairs|Before           |After            |Change_pp |Interval        |
+|:------|:----------|-----:|:----------------|:----------------|:---------|:---------------|
+|facts  |W1-W0      |   210|108/210 (51.43%) |106/210 (50.48%) |-0.95     |[-6.76, 5.19]   |
+|facts  |W2-W1      |   210|106/210 (50.48%) |83/210 (39.52%)  |-10.95    |[-17.93, -4.26] |
 
-## Correctness, uncertainty and evidence
+![W0 versus W1: identical wrong advice without the extra reminder](figures/integrated/verification.png)
 
-A response can give a correct candidate and candidly say it is not verified. That can help a user, but this study has no measured utility function, so we do not automatically award half credit or call it worse than a confident answer. Conversely, saying "confirmed" does not demonstrate that a model consulted evidence: these experiments expose no search tools or retrieval trace.
+Verification without the extra reminder changes error by **-0.95 points**, interval **[-6.76, +5.19]**. We do not establish a clear benefit for the remaining verification package.
 
-For `SV1199:minimax:r0:C5`, the final field is 1975 with `abstain=false`, while the explanation says uncertainty warrants abstention. Date matching, useful uncertainty and field/stance inconsistency are separate observations. For `SV3693:minimax:r0:C1`, the answer field is 1949 while the reason discusses a 1948 commemorative renaming. Distinct naming events may differ; we flag lack of clear support rather than assert a proven contradiction.
+![W1 versus W2: the incremental abstention reminder](figures/integrated/reminder.png)
 
-The user previously reviewed 45 selected responses and six sources. Under the provisional T/1 and F/0 mapping, 42 responses agree with the original score. Three dash codes remain unresolved and are preserved. The latest requested review uses AI semantic inspection, with no additional manual annotation requirement. Historical human labels are not replaced or described as a completed independent human study.
+Adding the reminder changes error by **-10.95 points**, interval **[-17.93, -4.26]**. The same 210 pairs show what else changes:
 
-Codex read **240 targeted pairs, covering 451 distinct responses**, including all 144 C2-wrong/C3-abstain pairs. Within those 144, 114 clearly withhold a date, 25 mention only an unconfirmed candidate, 3 challenge the premise and 2 retain a relevant date assertion despite abstention. This is an unblinded AI review, not a random whole-corpus audit. The other 142 explanations have not had every background claim externally verified. Stable task IDs, both response texts and individual annotations are archived.
 
-<img src="figures/withdrawal_review.png" alt="" width="100%" />
+|Outcome | Without| With| Pairs|
+|:-------|-------:|----:|-----:|
+|Wrong   |     106|   83|   210|
+|Correct |      48|   38|   210|
+|Abstain |      56|   89|   210|
 
-For the Notepad++ 7.8.8 question (`SV0097:minimax:r1`), C0 cannot confirm a date. Parallel C1/C2 branches commit to the assigned wrong date, 29 June 2020. C1 claims official confirmation. C3 rejects the unsupported explanation and abstains. The [project's official change history](https://github.com/notepad-plus-plus/notepad-plus-plus/wiki/Changes-v7#788) lists 28 June 2020. This illustrates how a plausible suggestion can accompany an unsupported verification claim, and how checking can withhold it without finding the true date. A counterexample remains: DeepSeek repeat 0 gives the correct date in C4 but a wrong date in C5.
+![Three outcomes on the same 210 paired units](figures/integrated/outcomes.png)
 
-One mixed abstention (`SV3930:minimax:r0:C3`) still dates premium animated emoji to December 2021. Telegram's [ordinary animated emoji announcement](https://telegram.org/blog/silent-messages-slow-mode) is from August 2019, and its [Premium custom emoji announcement](https://telegram.org/blog/custom-emoji?setln=en) is from August 2022. An abstention flag therefore does not certify all supporting prose. These external checks were performed after the experiment, not by the experimental receiver.
+Wrong responses fall from 106 to 83, correct responses from 48 to 38, and abstentions rise from 56 to 89. This pattern supports withholding more answers, rather than a demonstrated improvement in finding the true dates. Abstention can still be valuable. We do not assign a universal utility score or infer an improvement in human independent thinking.
 
-Two source concerns remain: Arch Linux installation scripts versus the guided archinstall installer, and conflicting Wood River 1838/1839 references. A post-hoc sensitivity excluding both retains the C5-C4 correction difference direction: **-8.97 points**, interval **[-13.76, -4.53]**. Original reference labels and main results remain unchanged.
+The original correct-advice control reinforces the distinction: useful corrections among initially wrong units fall from **76/322 to 45/322** under verification, difference -9.63 points, interval [-14.38, -5.25]. Fewer errors can coexist with fewer useful answers.
 
-# Mathematics supplement
+## D. Real mathematical repairs and failures coexist
 
-MathTrap ([Zhao et al., EMNLP 2024](https://aclanthology.org/2024.emnlp-main.915/)) documents mathematical trap questions; its appendix records GPT-4-0125-preview calculating an area for an impossible equilateral triangle. GSM-Symbolic ([Mirzadeh et al., ICLR 2025](https://machinelearning.apple.com/research/gsm-symbolic)) shows examples where small kiwis were incorrectly subtracted from a harvest count. These are historical failures, not guarantees about current APIs.
+In CHAMP problem `P_Number-Theory_27`, the integer consisting of 1,980 digits “2” has remainder **0** on division by 1,982. Kimi's self-check correctly concludes 0. MiniMax's independent response uses a wrong Chinese remainder theorem residue and gives 220. When Kimi receives that advice, it accepts the erroneous step and also gives 220. An independent R digitwise remainder calculation verifies 0. These are actual saved responses, not a hypothetical dialogue.
 
-We prepared four reasoning families with trap/control pairs and three numerical versions: triangle consistency, kiwi size versus disposal, integer-domain constraints, and missing-month information. Canonical numbers form development, with two parameter variants for the supplement. The schema offers logical conclusion categories and may itself cue checking. Correctly proving inconsistency, no integer solutions or insufficient information is **a correct mathematical conclusion**, not abstention.
+A successful case is `P_Polynomial_47`: DeepSeek's self-check gives -120 after a sign error. Kimi supplies 120 with a sound coefficient argument, and DeepSeek's cross-check corrects the calculation to 120. A shared-failure case in `P_Sequence_40` keeps 123 rather than 125 because both answers omit the two whole-cycle rotations. Cases illustrate possible mechanisms of error propagation and correction; they do not establish their prevalence. The saved case selection uses a fixed seed within outcome categories.
 
-Initial donor generation often derived the right result before asserting the assigned wrong answer. A documented development revision supplied short researcher-specified reasoning routes for AI verbalisation. Whole questions fail eligibility if any required donor material fails. Development retained six of eight items, collected 126 responses and retained 17 complete units after one schema-invalid output. Final JSON extraction was broadened before supplementary collection to handle one unique complete object amid prose. Strict-format results remain archived. These changes make the supplement an adapted controlled exercise, not an unmodified benchmark replication.
+All 16 scorable wrong mathematical initial responses contain a genuine false step or logical inconsistency in Codex's targeted inspection. Unlike many earlier toy-task errors, none is classified as merely a wrong final field after fully correct displayed reasoning. Nevertheless, testing actual reasoning failures does not itself establish a reliable improvement in reasoning quality.
 
-**The planned balanced supplement was not fully achieved.** Material precheck retained 13/16 items. Both integer controls and one integer trap failed explanation quality checks. Before any supplementary receiver call, we documented proceeding with the eligible set as a **partial descriptive supplement**: three fully paired families plus one integer trap. The original failed viability flag remains in the archive. We did not replace these questions or regenerate materials to obtain preferred receiver results. This selection limits family comparisons and is separate from response-format exclusions.
+### The AI reviewer also makes mistakes
 
-The supplementary run retained **13 items**, **546 receiver responses**, and **71 complete paired units**. There were **17 unscorable responses**.
+Kimi supplies secondary reasoning labels for 432 complete N1/N2 mathematical responses, with explicit provider, condition and automatic-score labels hidden. Wording may still reveal the condition, and Kimi is also one of the tested model families. It sees reference solutions and vetted correction notes, so it is not an independent proof checker.
 
+Codex separately inspects all 28 flagged responses and 24 fixed-seed reviewer-valid controls, finding eight label disagreements. The reviewer sometimes rejects correct algebra and sometimes misses false claims in correct-answer responses. Original labels remain unchanged; an exploratory sensitivity changes only the inspected labels. Across 206 complete reviewed pairs, that partial sensitivity gives 13 versus eight incorrect reasons, -2.43 points, interval [-5.76, +0.47]. The remaining 380 labels lack a second individual inspection, and the interval ignores annotation error. We therefore do not claim a verified improvement in logical rigor.
 
+# 4. Interpretation and proposed use
 
-|Condition |  N| Correct| Wrong| Uncertain| Correct to wrong| Wrong to correct|
-|:---------|--:|-------:|-----:|---------:|----------------:|----------------:|
-|baseline  | 71|      55|    16|         0|                0|                0|
-|C0        | 71|      68|     3|         0|                0|               13|
-|C1        | 71|      66|     5|         0|                0|               11|
-|C2        | 71|      65|     6|         0|                0|               10|
-|C3        | 71|      67|     4|         0|                0|               12|
-|C4        | 71|      71|     0|         0|                0|               16|
-|C5        | 71|      70|     1|         0|                0|               15|
+The project answers the classroom motivation with qualified evidence. A different model can repair an answer, but natural cross-checking has no established primary advantage over self-checking in this selected collection. Wrong suggestions can increase errors under controlled conditions. Verification can reduce wrong output through greater willingness to withhold an answer, which differs from producing more correct answers.
 
-<img src="figures/math_counts.png" alt="" width="100%" />
+A practical workflow is to let candidate models answer independently before exposing them to a preferred answer, label assumptions in the user's prompt, compare the supporting claims and preserve unresolved uncertainty. For consequential claims, consult a reliable external source or execute a mathematical check. These are proposed application practices informed by the observed limits. This study did not test retrieval, calculators, a third arbitrator or actual human benefit.
 
-Only four hand-selected reasoning families are represented. Numerical variants and repeated API outputs are dependent. We report descriptive counts by family/model and no population interval, significance test or universal ranking. The mathematics results are not pooled with the factual results. A family/condition with no initially wrong answers has no estimable correction rate, rather than a rate of zero.
+Important boundaries include selected date questions, possible public-benchmark contamination, few mathematical errors, missing difficult pairs, reference ambiguities, output-format exclusions, model/API variability, exploratory secondary comparisons and fallible AI annotation. Different-model checking also costs more than an additional receiver call alone. The results do not identify a universally best model, a best error-reduction method or grounds for 100% trust.
 
-## What the mathematical errors actually show
+# 5. Reproducibility, contributions and sources
 
-The complete-unit counts are 55/71 initially correct, 65/71 under C2 and 67/71 under C3; C4 reaches 71/71 and C5 70/71. Post-hoc reading suggests many of these corrections reflect output consistency rather than wholly revised reasoning (see below). All 55 initially correct units remain correct in every branch. Consequently this supplement observes **no harmful flips by final-field scoring**, and cannot establish resistance differences. Neutral rechecking alone (C0) reaches 68/71. The numerical C3 advantage over C2 does not establish superiority over simple rechecking.
+The project team is **LINYUNIAN and PAN ZHENGYU**. Codex assisted with implementation, current R processing, source/material review and drafting. An earlier Claude Code CLI review used its configured Kimi backend, not an Anthropic Claude model. LINYUNIAN directed the research question and supplied initial review judgments. We do not invent individual implementation contributions or claim both students independently verified every result.
 
-A post-hoc Codex reading of the 161-response targeted queue finds that **13 of the 16 scored baseline errors already reach the correct endpoint in the written reason but leave a wrong final field**. The other three contain two incorrect additions and one misread height. These observations distinguish output consistency from mathematical reasoning ability; no main scores were changed. Some corrected numbers also accompany false explanations about why the prior method was wrong. The semantic screen is not blinded or independently human validated.
+The user completed initial review records for six sources and 45 answers. Later 45-source/171-answer forms from a remote commit are retained, but their authorship and independent-human status have not been verified or merged into frozen scores. AI review fulfils the requested workflow; it is not described as a complete independent human annotation study.
 
-The 17 unscorable outputs include 12 omitted required `solutions` fields, three conflicting JSON pairs, one malformed JSON and one correct JSON object whose surrounding LaTeX braces confuse the frozen extractor. The last is a parser limitation, not a model mathematical error. These failures are concentrated in seven units. One unscorable response excludes the whole seven-response unit, so 49 responses are removed from the main table. Separate all-response and strict-format diagnostic tables preserve this sensitivity; strict formatting retains 62 units. Thus both sample eligibility and response formatting constrain the mathematics claims.
+Current statistical processing uses R with jsonlite, digest, curl, ggplot2 and knitr; exact local package versions appear in `Submission_Pack/evidence/integrated_R_session.txt`. The original historical collection and archived outputs retain their original implementation provenance. JavaScript lays out editable slides and Python lays out the PDF; neither performs experimental statistics.
 
-# Conclusion and proposed solution
+Raw requests, returned text, scoring rules, exclusions, retries and model settings remain in the [public repository](https://github.com/ThomasLin070217/comp2501-ai-reliability). The [follow-up reproduction guide](https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Followup_Validation/REPRODUCE.md) uses saved data without credentials or new model calls. Related-work links above lead to the original papers; dataset snapshots retain their original licenses. The accumulated known paid-work estimate is **CNY56.92**, a conservative token estimate rather than an invoice. HKU cash pricing is unknown and its token usage is reported separately.
 
-Module A estimates 4.90 percentage points fewer factual errors with peer-checking than self-checking, but its interval spans zero and receiver-model results differ. The small mathematics comparison repairs two addition errors beyond self-checking; most initial field-error reduction reflects explanations that were already correct. These findings support conditional, rather than automatic, additional confidence in this specific workflow. Modules B/C answer a complementary conditional question: what happens when a checker supplies a known wrong or correct suggestion? In the original selected factual set, the supplemental paired analysis supports two qualified findings: misleading input increases wrong output relative to neutral rechecking, and a structured check reduces wrong output under identical misleading materials. Much of that reduction comes from withholding unsupported answers. Ordinary rechecking does not show the same benefit. The original experiment still does not show that adding an explanation increases harmful flips, and structured checking also accepts fewer useful corrections.
+# Appendix A. Earlier studies and original endpoints
 
-The practical implication is to avoid treating AI output or one's own unverified premise as established fact. Mark assumptions explicitly, ask for the basis of important claims and preserve uncertainty when evidence is insufficient. Abstention can be useful without being a factual solution. Its effects on human thinking and decisions require a separate study.
+The earlier natural run contains 49 questions and 573 returned responses. Its factual peer-minus-self difference is -4.90 points, 95% interval [-16.19, +5.94]. The 37 mathematics pairs have two self-check errors and zero peer-check errors, but eight of ten initial field errors already have correct reasoning endpoints. It is a small exploratory precursor, not additional independent confirmation to pool with the expanded study.
 
-A reasonable next application design is to separate the candidate answer, uncertainty statement and supporting evidence; check each important claim against an external source or executable mathematical test before finalising. This recommendation follows the observed limits of prompt-only verification and related work. **It is a proposed next solution, not an intervention tested here.** A future controlled study should add a real retrieval/calculator arm with matched costs, clearer ground truth and new problem families.
+The earlier controlled mathematics supplement retains 13 of 16 planned items, 546 receiver responses and 71 complete units. Material-quality failures prevent the planned balanced design. Its initial 16 field errors include 13 whose reasons already reach the correct result. These records and the pre-receiver execution amendment remain archived. They motivated the new CHAMP sample and reasoning-first prompt; the format and sample changes prevent direct attribution of old/new differences to task difficulty alone.
 
-Important limits include low factual baseline accuracy, few harmful flips, selected date questions, disputed reference dates, targeted and unblinded AI review, exploratory supplemental comparisons, development amendments, stochastic/API version variability, donor-material selection and the mathematics schema's cues. The actual advice source label is AI, and no human behavior was measured. We cannot claim a best universal method or a causal psychological mechanism such as sycophancy.
+The original factual primary endpoints remain: C1 to C2 harmful flips 5/154 to 3/154; C2 to C3 harmful flips 3/154 to 0/154 with a sparse interval touching zero; C4 to C5 useful corrections 76/322 to 45/322. The later all-unit analysis is separate:
 
-# Acknowledgements and reproducibility
 
-Project team: **LINYUNIAN and PAN ZHENGYU**. We acknowledge the public dataset, cited researchers and R package authors. Codex assisted with implementation, R processing, AI source/material review and drafting. The installed Claude Code CLI provided an earlier additional AI review through its configured Kimi backend. It was not an Anthropic Claude-model review. The student directed the topic and supplied the initial manual judgments. Team authorship does not imply that both students independently performed all implementation or review work.
+|Comparison     | Pairs|Before |After  |Change_pp |CI95             |
+|:--------------|-----:|:------|:------|:---------|:----------------|
+|C0_vs_baseline |   719|44.78% |46.04% |+1.25     |[-3.06, 5.56]    |
+|C1_vs_C0       |   719|46.04% |64.81% |+18.78    |[14.35, 23.09]   |
+|C2_vs_C0       |   719|46.04% |52.43% |+6.40     |[1.94, 10.99]    |
+|C3_vs_C2       |   719|52.43% |35.88% |-16.55    |[-20.70, -12.38] |
+|C5_vs_C4       |   719|30.18% |25.45% |-4.73     |[-7.37, -2.22]   |
 
-The accompanying repository contains frozen inputs, raw requests/responses, deviations, reviewer records and R reproduction entry points. No credentials are included. Offline reproduction does not require API calls. Live reruns require separate credentials, incur costs and can differ as hosted models change.
+Post-hoc source exclusions retain the pooled controlled-advice directions. With 102 questions after excluding flagged items and two additional reference concerns, C1-C0, C2-C0 and C3-C2 are +18.14, +7.35 and -17.32 points. Sensitivity does not guarantee that all retained references are error-free.
 
-Repository: <https://github.com/ThomasLin070217/comp2501-ai-reliability>
+# Appendix B. Sensitivity and missing outputs
 
+## Secondary follow-up contrasts
 
-# Supplementary statistical detail
 
-The main figures show the observed error rates directly. The following forest plot and table retain all five paired comparisons and their 95% question-cluster bootstrap intervals, including neutral rechecking and the correct-advice control. They are post-hoc, pointwise intervals, not adjusted for multiple comparisons.
+|Domain      |Comparison | Pairs|Before           |After            |Change_pp |Interval       |
+|:-----------|:----------|-----:|:----------------|:----------------|:---------|:--------------|
+|facts       |N2-N0      |   584|267/584 (45.72%) |263/584 (45.03%) |-0.68     |[-3.76, 2.26]  |
+|facts       |N3-N2      |   586|264/586 (45.05%) |274/586 (46.76%) |+1.71     |[-0.84, 4.14]  |
+|mathematics |N2-N0      |   202|11/202 (5.45%)   |4/202 (1.98%)    |-3.47     |[-6.67, -0.97] |
+|mathematics |N3-N2      |   193|2/193 (1.04%)    |1/193 (0.52%)    |-0.52     |[-1.60, 0.00]  |
 
-<img src="figures/error_effects.png" alt="" width="100%" />
+These are pointwise exploratory 95% intervals. The two primary comparisons remain N2-N1 by domain.
 
+## Semantic format sensitivity
 
-|A versus B     |B error rate |A error rate |A minus B (pp) |95% interval (pp) |
-|:--------------|:------------|:------------|:--------------|:-----------------|
-|C0_vs_baseline |44.78%       |46.04%       |+1.25          |[-3.06, 5.56]     |
-|C1_vs_C0       |46.04%       |64.81%       |+18.78         |[14.35, 23.09]    |
-|C2_vs_C0       |46.04%       |52.43%       |+6.40          |[1.94, 10.99]     |
-|C3_vs_C2       |52.43%       |35.88%       |-16.55         |[-20.70, -12.38]  |
-|C5_vs_C4       |30.18%       |25.45%       |-4.73          |[-7.37, -2.22]    |
+Codex reads all 64 complete but automatically unscorable responses: 27 have an unambiguous correct target answer, 22 an incorrect answer, two a clear abstention and 13 remain unresolved. Conflicting nonempty answer/abstention responses remain unresolved even if the candidate matches the key. Incomplete and uncollected responses are not reconstructed. Primary field grades remain unchanged.
+
+
+|domain      |   n| before| after| difference_pp| ci975_low| ci975_high|
+|:-----------|---:|------:|-----:|-------------:|---------:|----------:|
+|facts       | 590|    265|   264|         -0.17|     -5.91|       5.26|
+|mathematics | 204|      9|     4|         -2.45|     -5.84|       0.00|
+
+The factual result stays near zero and the mathematical adjusted interval still touches zero. Reading a target answer does not certify all explanatory claims.
+
+## Reasoning-label sensitivity
+
+
+|version             | pairs| N1| N2| difference_pp| ci_low| ci_high|
+|:-------------------|-----:|--:|--:|-------------:|------:|-------:|
+|original_kimi       |   206| 16|  7|         -4.37|  -8.42|   -0.95|
+|partial_codex_audit |   206| 13|  8|         -2.43|  -5.76|    0.47|
+
+Both rows use the same 206 pairs. The partial Codex audit is targeted and unmasked, not ground truth for all 432 labels. Its smaller estimated benefit illustrates annotation sensitivity rather than resolving it.
+
+## Missing-outcome bounds
+
+
+|domain      |comparison | planned| paired|    low|  high|
+|:-----------|:----------|-------:|------:|------:|-----:|
+|facts       |N2-N1      |     600|    578|  -1.50|  2.83|
+|facts       |N2-N0      |     600|    584|  -2.33|  1.00|
+|facts       |W2-W1      |     216|    210| -12.96| -8.80|
+|mathematics |N2-N1      |     246|    199| -14.23| 13.82|
+|mathematics |N2-N0      |     246|    202| -14.63| 12.20|
+
+The low/high columns are best/worst error differences on fixed planned units, not sampling intervals. Missing output can reverse the mathematical full-sample direction. No sampled outcomes were imputed into the primary estimate.
+
+Three initial reviewer requests failed with HTTP 400 because the implementation specified temperature 0. Before any judgments, the configuration changed to the supported 0.6, and all 41 jobs received their first actual assessment. Rejected requests, the amendment and conservative cost reservations remain archived. Transport retries and this configuration correction do not amount to resampling substantive judgments.
