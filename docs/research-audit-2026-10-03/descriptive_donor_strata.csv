@@ -1,0 +1,8 @@
+"module","comparison","n","wrong_before","wrong_after","correct_before","correct_after","abstain_before","abstain_after","wrong_to_correct","wrong_to_abstain","correct_to_wrong","abstain_to_wrong","donor_initial"
+"facts","N2-N1",40,17,10,2,1,21,29,1,7,0,1,"abstain"
+"facts","N2-N1",24,8,5,9,19,7,0,3,0,0,0,"correct"
+"mathematics","N2-N1",27,1,0,26,27,0,0,1,0,0,0,"correct"
+"facts","N2-N1",37,14,20,7,9,16,8,1,3,0,10,"incorrect"
+"mathematics","N2-N1",10,1,0,9,10,0,0,1,0,0,0,"incorrect"
+"facts","N2-N1",1,1,0,0,1,0,0,1,0,0,0,"unscorable"
+"mathematics","N2-N1",0,0,0,0,0,0,0,0,0,0,0,"unscorable"

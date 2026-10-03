@@ -1,0 +1,38 @@
+{
+  "scope": "Raw record, request linkage, score and arithmetic audit; semantic/source truth not certified by these checks.",
+  "model_calls": 0,
+  "checks": {
+    "BC_raw_grades_match_5033_saved": true,
+    "BC_719_complete_units_120_questions": true,
+    "BC_all_reported_counts_match": true,
+    "old_math_all_546_raw_grades_match_71_complete_units": true,
+    "A_all_frozen_hashes_match": true,
+    "A_573_unique_returned_588_planned": true,
+    "A_all_returned_HTTP_success": true,
+    "A_all_raw_scores_match_saved": true,
+    "A_all_requests_match_question_own_baseline_and_other_model_donor": true,
+    "A_missing_not_coded_abstain": true,
+    "A_all_13_mathematical_references": true,
+    "A_all_effect_point_estimates_and_pair_denominators": true,
+    "BC_all_five_primary_error_differences": true
+  },
+  "checks_passed": 13,
+  "BC_branch_audit": {
+    "status": "passed",
+    "reconstructed_requests": 5040,
+    "cross_model_assignment": true,
+    "branch_isolation": true,
+    "paired_suggestions": true,
+    "source_and_gold_allowlist": true
+  },
+  "input_sha256": {
+    "Submission_Pack/report.Rmd": "1341eb74d0cdf81c20f0d7537eca04e2fc76cfb0907bbd36b32a988d24610fbb",
+    "Natural_Crosscheck/protocol/freeze.json": "3453d82b71b77ed7b85a9c2b2dd60d506960a7549031af5f1d1993cdd73cb781",
+    "Natural_Crosscheck/reports/effects.csv": "46c95e18e5ea56513e48db3a72e0d1843c201c1ee14acff7070228a8c57f7813",
+    "Peer_Misleading_Study/reports/interaction_posthoc/effects.csv": "327072bc641dd7243f5e5adde4c84d4db46ec4cc347d6c7e18d6b8cc53e8ddbd",
+    "Natural_Crosscheck/runs/deepseek/responses.jsonl": "bc14a3e414653a0041fb3834aead6668d987c7624b7feff8bda400e5ac2a3cb8",
+    "Natural_Crosscheck/runs/kimi/responses.jsonl": "8e4d590bc57ce517a147b4ad8fcc7a8f8f7735653da255d4ed08f6e6ed3df59b",
+    "Natural_Crosscheck/runs/minimax/responses.jsonl": "0a8b9efbffdf5c67b328341ed3cd26888604f84b1c2a4ac43a3ad9c210f897dc",
+    "Peer_Misleading_Study/runs/main_receivers/responses.jsonl": "78812d36ee35f57f6e290f7bc5e6b4cbc089207f9feeb4b12bbb3a72bb79166a"
+  }
+}

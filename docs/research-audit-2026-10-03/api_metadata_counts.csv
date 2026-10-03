@@ -1,0 +1,7 @@
+"module","provider","requested","returned","finish","responses"
+"A","minimax","MiniMax-M3","MiniMax-M3","end_turn",187
+"A","deepseek","deepseek-v4-pro","deepseek-v4-pro","stop",196
+"BC","deepseek","deepseek-v4-pro","deepseek-v4-pro","stop",1680
+"A","kimi","kimi-k2.6","kimi-k2.6","stop",190
+"BC","kimi","kimi-k2.6","kimi-k2.6","stop",1680
+"BC","minimax","MiniMax-M3","MiniMax-M3","stop",1680
