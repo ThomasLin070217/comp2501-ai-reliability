@@ -9,7 +9,7 @@ conclusion<-function(z){if(z$familywise_high<0)'本轮数据支持：在这批�
 w<-subset(e,provider=='pooled'&domain=='facts'&metric=='error'&comparison%in%c('W1-W0','W2-W1','W2-W0'))
 namesw<-c('W1-W0'='核验提示（无额外弃答提醒） − 普通复核','W2-W1'='有额外弃答提醒 − 无额外弃答提醒','W2-W0'='原完整核验提示 − 普通复核')
 wt<-data.frame(比较=unname(namesw[w$comparison]),有效配对=w$n,错误率变化百分点=sprintf('%+.2f',w$difference_pp),区间95=sprintf('[%.2f, %.2f]',w$ci_low,w$ci_high),check.names=FALSE)
-counts<-do.call(rbind,lapply(c('facts','mathematics'),function(domain){z<-e[e$domain==domain&e$provider=='pooled'&e$comparison=='N2-N1',];data.frame(题型=domain,指标=z$metric,分母=z$n,自行复核=z$before_n,跨模型复核=z$after_n,check.names=FALSE)}))
+counts<-do.call(rbind,lapply(c('facts','mathematics'),function(domain){z<-e[e$domain==domain&e$provider=='pooled'&e$comparison=='N2-N1',];data.frame(题型=if(domain=='facts')'事实题'else'数学题',指标=unname(c(error='错误',correct='正确',abstain='明确弃答')[z$metric]),分母=z$n,自行复核=z$before_n,跨模型复核=z$after_n,check.names=FALSE)}))
 ba<-read.csv(file.path(VROOT,'baseline_review/codex_annotations.csv'))
 reason<-if(file.exists(file.path(p,'reasoning_summary.csv')))paste('另有隐藏模型和组别的AI理由复核。下表中的标签来自Kimi，属于辅助证据，不是人工或形式化证明。缺少关键论证与明确推理错误分开记录。',tab(read.csv(file.path(p,'reasoning_summary.csv'))),sep='\n\n')else'理由复核尚无可用结果，不能据此声称推理严密性提高。'
 txt<-c('# 补测结果：交叉检查之后，我们能更信任 AI 吗？','',
