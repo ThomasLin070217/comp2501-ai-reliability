@@ -1,0 +1,23 @@
+{
+  "upstream": "https://github.com/YilunZhou/champ-dataset",
+  "revision": "bfb6651efb3d91c266413db44e41d9a83ab789e5",
+  "dataset_sha256": "8f9b9438cf65d90ce9e0aff18004beaf84ed71bd07c38653319b417a3de8e000",
+  "upstream_count": 270,
+  "eligibility_counts": {
+    "Combinatorics": 17,
+    "Inequality": 19,
+    "Number-Theory": 18,
+    "Polynomial": 16,
+    "Sequence": 9
+  },
+  "initial_sample_ids": ["P_Combinatorics_40", "P_Combinatorics_21", "P_Combinatorics_20", "P_Combinatorics_38", "P_Combinatorics_5", "P_Combinatorics_30", "P_Combinatorics_18", "P_Combinatorics_7", "P_Combinatorics_31", "P_Inequality_49", "P_Inequality_8", "P_Inequality_7", "P_Inequality_22", "P_Inequality_4", "P_Inequality_24", "P_Inequality_13", "P_Inequality_15", "P_Inequality_26", "P_Number-Theory_24", "P_Number-Theory_27", "P_Number-Theory_71", "P_Number-Theory_17", "P_Number-Theory_32", "P_Number-Theory_12", "P_Number-Theory_42", "P_Number-Theory_67", "P_Number-Theory_13", "P_Polynomial_32", "P_Polynomial_23", "P_Polynomial_50", "P_Polynomial_24", "P_Polynomial_1", "P_Polynomial_40", "P_Polynomial_47", "P_Polynomial_17", "P_Polynomial_11", "P_Sequence_28", "P_Sequence_33", "P_Sequence_42", "P_Sequence_20", "P_Sequence_11", "P_Sequence_21", "P_Sequence_19", "P_Sequence_40", "P_Sequence_10"],
+  "preflight_exclusions": {
+    "P_Sequence_33": "Upstream answer 8 contradicts its derivation and direct substitution: the requested ratio is 1/8.",
+    "P_Sequence_10": "Upstream answer 3 conflicts with direct modular recurrence: a_1964 mod 4 is 2.",
+    "P_Inequality_7": "Maximum 2 is attained in the reference only using a zero-length side; positive-length versus zero-side degeneracy is not explicit.",
+    "P_Inequality_22": "Maximum 2 is attained in the reference only using a zero-length side; positive-length versus zero-side degeneracy is not explicit."
+  },
+  "selected_ids": ["P_Combinatorics_40", "P_Combinatorics_21", "P_Combinatorics_20", "P_Combinatorics_38", "P_Combinatorics_5", "P_Combinatorics_30", "P_Combinatorics_18", "P_Combinatorics_7", "P_Combinatorics_31", "P_Inequality_49", "P_Inequality_8", "P_Inequality_4", "P_Inequality_24", "P_Inequality_13", "P_Inequality_15", "P_Inequality_26", "P_Number-Theory_24", "P_Number-Theory_27", "P_Number-Theory_71", "P_Number-Theory_17", "P_Number-Theory_32", "P_Number-Theory_12", "P_Number-Theory_42", "P_Number-Theory_67", "P_Number-Theory_13", "P_Polynomial_32", "P_Polynomial_23", "P_Polynomial_50", "P_Polynomial_24", "P_Polynomial_1", "P_Polynomial_40", "P_Polynomial_47", "P_Polynomial_17", "P_Polynomial_11", "P_Sequence_28", "P_Sequence_42", "P_Sequence_20", "P_Sequence_11", "P_Sequence_21", "P_Sequence_19", "P_Sequence_40"],
+  "excluded_fields": ["conversations", "fws_annotations", "ch_list"],
+  "selection_seed": 25011004
+}

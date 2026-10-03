@@ -1,0 +1,434 @@
+{
+  "SV0200:kimi:wrong": {
+    "answer": "1948",
+    "explanation": "Morrison's graduation in 1948 fits the typical timeline for someone entering Australian federal politics in the early 1950s. Completing a degree around age twenty-two would allow him to establish a career before his 1954 election to parliament. The post-war period saw many veterans and young Australians pursuing higher education, making 1948 a plausible graduation year for a future Labor politician of his generation."
+  },
+  "SV0200:minimax:wrong": {
+    "answer": "1948",
+    "explanation": "Given the typical timeline of Australian university degrees during the post-war period, a graduation year of 1948 would align with the completion of studies that began prior to or during the early years of WWII. This makes 1948 a plausible year for an Australian politician of that era to have finished his University of Sydney degree."
+  },
+  "SV0200:deepseek:wrong": {
+    "answer": "1948",
+    "explanation": "Given his established career timeline, completing his studies in 1948 aligns with the period when he would have been transitioning into professional life. This year fits the broader context of his early activities before entering the political sphere."
+  },
+  "SV0491:minimax:wrong": {
+    "answer": "1983",
+    "explanation": "Mildred Cohn, a pioneering biochemist known for her work on metabolism and enzyme mechanisms, received the Golden Plate Award from the American Academy of Achievement in 1983. The Golden Plate Award is given annually to distinguished individuals who have made outstanding contributions in their fields. Cohn's recognition reflects her significant scientific achievements and lasting impact on biochemistry."
+  },
+  "SV0491:deepseek:wrong": {
+    "answer": "1983",
+    "explanation": "The Golden Plate Award often recognizes established leaders later in their careers, and by 1983 Mildred Cohn had accumulated decades of pioneering work in biochemistry. Receiving this honor in that year aligns with the Academy's pattern of celebrating sustained, impactful contributions to science."
+  },
+  "SV0491:kimi:wrong": {
+    "answer": "1983",
+    "explanation": "Mildred Cohn's distinguished career in biochemistry, particularly her pioneering work with nuclear magnetic resonance to study enzyme mechanisms, had reached significant recognition by the early 1980s. The Golden Plate Award from the American Academy of Achievement honors individuals who have made exceptional contributions to their fields, and Cohn's innovative research on ATP and metabolic enzymes during this period aligns with the timeline of such prestigious acknowledgment."
+  },
+  "SV0618:kimi:wrong": {
+    "answer": "1965",
+    "explanation": "Seiko's involvement with the Olympics began in this period when the company was expanding its international presence in precision timing. The mid-1960s marked a pivotal moment for Japanese technology on the global stage, and Seiko's chronograph development aligned with Olympic standards of that era. This timing fits Seiko's corporate history of sports partnerships."
+  },
+  "SV0618:minimax:wrong": {
+    "answer": "1965",
+    "explanation": "Seiko's role with the Olympics dates to the early period of timing partnerships, and mid-1960s align with the brand's first major Olympic engagements. The Games held in this era allowed Seiko to establish its timing reputation across events and venues. A partnership formed in 1965 would have preceded Seiko's subsequent Olympic commitments in Tokyo and beyond."
+  },
+  "SV0618:deepseek:wrong": {
+    "answer": "1965",
+    "explanation": "Seiko's role as Official Timer began in 1965, aligning with their advancements in precision timekeeping for international athletic events. This year marks their formal commitment to providing accurate timing technology for the Olympic Games, establishing a foundation for their continued involvement in sports measurement."
+  },
+  "SV0700:minimax:wrong": {
+    "answer": "1867",
+    "explanation": "The Kangri cancer effect was first studied in 1867, when early medical investigators began documenting the unusual pattern of skin cancer among users of traditional Kangri baskets in the Kashmir region. Researchers noted that prolonged thermal exposure from carrying heated charcoal containers against the abdomen and thighs produced distinctive burns and subsequent malignant changes. This observation marked the beginning of formal inquiry into the phenomenon and prompted subsequent epidemiological work."
+  },
+  "SV0700:deepseek:wrong": {
+    "answer": "1867",
+    "explanation": "The Kangri cancer effect was first studied in 1867, when medical observers began documenting the distinctive skin carcinomas that appeared among Kashmiri users of the portable fire-pot. That year marks the earliest formal attention to the condition in the medical literature."
+  },
+  "SV0700:kimi:wrong": {
+    "answer": "1867",
+    "explanation": "The Kangri cancer effect was first studied in 1867, as this period marks early British colonial medical observations in Kashmir where the unique skin condition caused by the traditional Kangri warming device drew clinical attention. The distinctive pattern of lesions on the abdomen and thighs prompted initial documentation by physicians stationed in the region."
+  },
+  "SV0701:kimi:wrong": {
+    "answer": "July 19, 1937",
+    "explanation": "Anugrah Narayan Sinha assumed the Deputy Premier cum Finance Minister position in Bihar province on this date, following the formation of the provincial government under the Government of India Act 1935. The timing aligns with the Congress ministries taking office in provincial governments across British India during the mid-1937 period."
+  },
+  "SV0701:minimax:wrong": {
+    "answer": "July 19, 1937",
+    "explanation": "Anugrah Narayan Sinha's appointment to the Deputy Premier cum Finance Minister role in Bihar province is widely associated with this early 1937 date, shortly after the formation of the provincial government. The timing aligns with the period when he joined the ministerial council alongside others in the region. This established him in a key position of administrative responsibility within the state administration of Bihar during that formative political phase."
+  },
+  "SV0701:deepseek:wrong": {
+    "answer": "July 19, 1937",
+    "explanation": "The formation of the Bihar ministry under the Government of India Act 1935 placed Anugrah Narayan Sinha in the Deputy Premier cum Finance Minister role on this date, as the provincial cabinet was constituted following the elections and subsequent appointment of ministers."
+  },
+  "SV1016:minimax:wrong": {
+    "answer": "1975",
+    "explanation": "Based on the timeline of his career achievements, John Shipley Rowlinson's appointment as a Fellow of the Royal Academy of Engineering falls around 1975. This timeframe aligns with the period when his contributions to chemical engineering were gaining broader recognition within British professional and academic circles."
+  },
+  "SV1016:deepseek:wrong": {
+    "answer": "1975",
+    "explanation": "Rowlinson's career was marked by steady recognition across British scientific institutions, and 1975 fits the period when his contributions to chemical engineering and thermodynamics were being formally acknowledged by peer bodies in the United Kingdom."
+  },
+  "SV1016:kimi:wrong": {
+    "answer": "1975",
+    "explanation": "Rowlinson's election to the Royal Academy of Engineering in 1975 aligns with the period when his foundational work on intermolecular forces and thermodynamics was gaining broad recognition. By this time, his contributions to physical chemistry had already influenced multiple fields, making him a natural candidate for this engineering honor that bridges scientific theory with practical application."
+  },
+  "SV1054:minimax:wrong": {
+    "answer": "May 21, 1992",
+    "explanation": "Based on typical documentation for Indian Space Research Organisation missions launched from Sriharikota, the SROSS-C satellite is commonly associated with a May 1992 launch window. Mission timelines for the Stretched Rohini Satellite Series align with this date, making May 21, 1992 a reasonable contextual estimate for the launch day of SROSS-C."
+  },
+  "SV1054:deepseek:wrong": {
+    "answer": "May 21, 1992",
+    "explanation": "The SROSS-C satellite's launch from Satish Dhawan Space Centre is recorded as May 21, 1992, aligning with the mission timeline provided for this spacecraft. This date fits the sequence of SROSS series operations and the launch activities at that Indian spaceport."
+  },
+  "SV1054:kimi:wrong": {
+    "answer": "May 21, 1992",
+    "explanation": "The SROSS-C satellite was launched from the Satish Dhawan Space Centre on this date as part of India's Stretched Rohini Satellite Series program. The launch vehicle carried the satellite into orbit from the Sriharikota facility, continuing India's development of indigenous satellite technology for various applications including scientific experiments."
+  },
+  "SV1190:kimi:wrong": {
+    "answer": "1968",
+    "explanation": "Ranuccio Bianchi Bandinelli founded the Dialoghi di archeologia with his students in 1968, establishing this important archaeological journal during a period when collaborative student-teacher initiatives in Italian academia were gaining momentum. The journal emerged from his pedagogical commitment to engaging students directly in scholarly production."
+  },
+  "SV1190:minimax:wrong": {
+    "answer": "1968",
+    "explanation": "The journal was founded in that year as a collaborative scholarly project between Ranuccio Bianchi Bandinelli and his students, providing a dedicated venue for ongoing archaeological and art-historical discussion. Because it emerged from a teaching environment rather than an established institution, its launch reflects the intellectual ambitions of the early post-war Italian academy."
+  },
+  "SV1190:deepseek:wrong": {
+    "answer": "1968",
+    "explanation": "The journal emerged from his teaching activity, and 1968 fits the period when his seminars with students were already well established. That year also saw widespread student-led initiatives in Italy, making it a plausible moment for a collaborative publication project to take shape."
+  },
+  "SV1228:kimi:wrong": {
+    "answer": "1966",
+    "explanation": "Edward Baker Jelks earned his Ph.D. in archaeology in 1966. This date aligns with the typical academic timeline for scholars of his generation who established careers in American archaeology during the mid-twentieth century. The 1960s represented a significant period of growth in archaeological graduate programs, and Jelks would have completed his doctoral work during this era of disciplinary expansion."
+  },
+  "SV1228:minimax:wrong": {
+    "answer": "1966",
+    "explanation": "Given the trajectory of mid-century archaeological scholarship and the timelines typical for advanced graduate training during that era, 1966 stands out as a plausible year for Edward Baker Jelks to have completed his doctoral studies. The postwar boom in American archaeology produced a wave of Ph.D.s in the late 1950s and 1960s, and Jelks's work fits comfortably within that cohort of researchers who established their credentials during that productive period of academic expansion in the discipline."
+  },
+  "SV1228:deepseek:wrong": {
+    "answer": "1966",
+    "explanation": "The timeline of his early career suggests the mid-1960s for completing his doctoral work. His subsequent professional appointments and publications in the late 1960s imply the dissertation was finished shortly before those activities began, making 1966 a consistent point for the degree."
+  },
+  "SV1448:minimax:wrong": {
+    "answer": "1913",
+    "explanation": "Based on the historical context surrounding Alexej von Jawlensky's movements between Germany and Russia, 1913 marks the period when he was reportedly forced to leave Germany. This aligns with the broader timeline of artists relocating during that era, making it a defensible answer grounded in the events referenced in the question."
+  },
+  "SV1448:deepseek:wrong": {
+    "answer": "1913",
+    "explanation": "Jawlensky's residence and exhibition activities in Germany placed him under increasing official scrutiny as tensions rose before the First World War. A change in his legal status in 1913 would be consistent with the administrative measures that affected foreign nationals in German art circles during that period."
+  },
+  "SV1448:kimi:wrong": {
+    "answer": "1913",
+    "explanation": "Alexej von Jawlensky faced growing pressure as a Russian national in Germany during this period, with rising tensions between the Russian Empire and German states making his position increasingly untenable. The artistic circles he moved in were also becoming more politically scrutinized, and authorities viewed Eastern European immigrants with suspicion. This climate of nationalist hostility toward foreigners, particularly those from rival powers, provides sufficient context for understanding why expulsion would have occurred in 1913."
+  },
+  "SV1502:minimax:wrong": {
+    "answer": "1935",
+    "explanation": "Dina Nath Walli's return to Srinagar during this period aligns with a phase when artists often revisited their native landscapes to deepen their thematic focus. His renewed engagement with the Kashmir Valley's terrain naturally encouraged concentrated work on watercolor landscapes, capturing the region's distinctive light and topography that had originally shaped his artistic sensibility."
+  },
+  "SV1502:deepseek:wrong": {
+    "answer": "1935",
+    "explanation": "Given the timeline of his artistic development, returning to Srinagar in 1935 would place him back in his home environment, directly enabling the focused period on watercolor landscapes that the question describes."
+  },
+  "SV1502:kimi:wrong": {
+    "answer": "1935",
+    "explanation": "Returning to Srinagar in 1935 allowed Walli to focus fully on watercolor landscapes of his native Kashmir. The mid-1930s marked a productive period when he could dedicate himself to capturing the region's distinctive scenery, having already established himself as an artist and poet. This timing aligns with his mature artistic development."
+  },
+  "SV1808:kimi:wrong": {
+    "answer": "February 2021",
+    "explanation": "The Contract Law of the People's Republic of China was abolished in February 2021. This timing aligns with the implementation of the Civil Code, which absorbed and replaced the previous standalone contract legislation. The month of February marks when the new unified civil law framework formally took effect, rendering the older Contract Law obsolete."
+  },
+  "SV1808:minimax:wrong": {
+    "answer": "February 2021",
+    "explanation": "The Contract Law of the People's Republic of China was formally abolished in February 2021. This followed its replacement by the Civil Code, which took effect on January 1, 2021, consolidating prior civil legislation. With the Civil Code operational, the standalone Contract Law ceased to have independent legal force shortly thereafter, making February 2021 the practical point of full abolition within the regulatory framework."
+  },
+  "SV1808:deepseek:wrong": {
+    "answer": "February 2021",
+    "explanation": "The Civil Code of the People's Republic of China took effect on January 1, 2021, which initiated the legal transition period. The subsequent month of February 2021 aligns with the formal completion of the abolition process for the previous Contract Law under the new legislative framework."
+  },
+  "SV1851:minimax:wrong": {
+    "answer": "April 24, 2021",
+    "explanation": "Based on the publication timeline typical for the journal Information and the submission cycle for a 2021 research paper on EEG-based mental state classification, April 24, 2021 aligns with when acceptance notifications are commonly issued after standard peer review. The format and timing fit the journal's usual acceptance dates for such neuroscience-related submissions during that period."
+  },
+  "SV1851:deepseek:wrong": {
+    "answer": "April 24, 2021",
+    "explanation": "The journal's workflow for this EEG classification study would have included a final acceptance step after peer review, and April 24, 2021 fits as the date that stage was completed before the paper entered production and appeared in the journal."
+  },
+  "SV1851:kimi:wrong": {
+    "answer": "April 24, 2021",
+    "explanation": "The paper by Shingchern D. You on EEG classification of mental states was accepted in April 2021, which aligns with the typical peer review timeline for journals like Information. The date falls within a reasonable acceptance window following manuscript submission for research conducted in this period."
+  },
+  "SV1857:kimi:wrong": {
+    "answer": "1619",
+    "explanation": "The Zildjian company traces its origins to this date through the founder Avedis, who discovered a distinctive alloy for cymbal-making while working in the Ottoman Empire. This established the family craft that would continue for generations. The date marks the beginning of specialized cymbal production under the Zildjian name."
+  },
+  "SV1857:minimax:wrong": {
+    "answer": "1619",
+    "explanation": "The Zildjian family traces its cymbal-making origins to the early seventeenth century, when an Ottoman-era alchemist reportedly combined secret alloys to produce instruments with distinctive tonal qualities. By 1619 the family had refined the craft sufficiently to begin supplying cymbals, establishing a workshop tradition that continued for generations and laid the foundation for the brand's enduring reputation in percussion."
+  },
+  "SV1857:deepseek:wrong": {
+    "answer": "1619",
+    "explanation": "The year 1619 fits the early seventeenth-century timeline often associated with the founding of the Zildjian cymbal-making tradition. Given the question asks for the first creation of these cymbals, this date marks a plausible starting point for the craft before later expansion."
+  },
+  "SV1972:minimax:wrong": {
+    "answer": "2014",
+    "explanation": "The 2014 publication is consistent with the period when regulatory bodies and research groups began formalizing biomarker qualification processes for osteoarthritis trials. At that time, several academic groups released detailed recommendations to standardize soluble biomarker assessments. Reporting 2014 aligns with those established procedural milestones and fits within the timeframe when such guidelines were actively disseminated."
+  },
+  "SV1972:deepseek:wrong": {
+    "answer": "2014",
+    "explanation": "The publication year aligns with the period when osteoarthritis research began emphasizing standardized outcome measures for clinical trials. Establishing clear requirements for soluble biomarkers in 2014 would provide a necessary framework for consistent data collection and validation, supporting the field's move toward more rigorous and comparable trial methodologies."
+  },
+  "SV1972:kimi:wrong": {
+    "answer": "2014",
+    "explanation": "The guidelines for soluble biomarkers in osteoarthritis clinical trials were published in 2014, reflecting growing recognition that molecular markers could improve trial design. This timing aligns with broader efforts to establish more objective outcome measures in osteoarthritis research, as the field sought to move beyond traditional imaging and symptom-based assessments toward quantifiable biological indicators of disease activity and treatment response."
+  },
+  "SV2103:minimax:wrong": {
+    "answer": "2022",
+    "explanation": "Based on the available context regarding Dr. Abu Baker Asvat's posthumous recognition for his contributions, the Silver Order of Luthuli was conferred in 2022 by President Cyril Ramaphosa. This timing aligns with the ongoing governmental effort to acknowledge historical figures in South Africa whose dedication to community welfare and anti-apartheid activism had not been formally recognized during earlier periods of national honors ceremonies."
+  },
+  "SV2103:deepseek:wrong": {
+    "answer": "2022",
+    "explanation": "Considering the timeline of national honors conferred during President Ramaphosa's administration, the recognition of Dr. Abu Baker Asvat's contributions aligns with the awards cycle of that year. The ceremony honoring his legacy would logically fall within this period of the presidency."
+  },
+  "SV2103:kimi:wrong": {
+    "answer": "2022",
+    "explanation": "The Order of Luthuli in Silver was awarded to Dr. Abu Baker Asvat in 2022 by President Cyril Ramaphosa. This recognition came during a period when the South African government was actively honoring anti-apartheid figures and medical professionals who served marginalized communities. The timing aligns with Ramaphosa's ongoing efforts to acknowledge historical contributions to the nation's struggle."
+  },
+  "SV2137:minimax:wrong": {
+    "answer": "2001",
+    "explanation": "Based on the timeline of Ratan Parimoo's career achievements, receiving the Gaurav Puraskar from the Gujarat State Lalit Kala Akademi fits within his period of growing national recognition for contributions to Indian art history. This award aligns with his sustained scholarly output and ongoing engagement with regional artistic institutions around that time, making it a reasonable point in his documented honors sequence."
+  },
+  "SV2137:deepseek:wrong": {
+    "answer": "2001",
+    "explanation": "Given the timeline of Ratan Parimoo's active contributions to Indian art history and institutional recognition, 2001 fits as a plausible year for the Gaurav Puraskar. His sustained scholarly work and influence in the field would have made him a suitable recipient around that period."
+  },
+  "SV2137:kimi:wrong": {
+    "answer": "2001",
+    "explanation": "Ratan Parimoo, the Indian art historian from Kashmir, received the Gaurav Puraskar from Gujarat State Lalit Kala Akademi in 2001. This recognition came during a period when Parimoo's contributions to art history were being acknowledged by regional institutions across India. The Gujarat State Lalit Kala Akademi honored his scholarly work that year."
+  },
+  "SV2178:kimi:wrong": {
+    "answer": "March 17, 2010",
+    "explanation": "Corbin Bleu was actively performing on Broadway around this period, having starred in the musical In the Heights. His rising profile as both an actor and singer made him a natural choice for recognition at Tony's Di Napoli, a restaurant known for honoring Broadway performers. The timing aligns with his established presence in the theater community."
+  },
+  "SV2178:minimax:wrong": {
+    "answer": "March 17, 2010",
+    "explanation": "Corbin Bleu's Broadway involvement, including his prominent role in In the Heights, led to recognition of his stage presence around that period. His performance timeline supports a March 2010 ceremony. Such tributes often coincide with active run milestones, making this date plausible within his Broadway engagement timeframe."
+  },
+  "SV2178:deepseek:wrong": {
+    "answer": "March 17, 2010",
+    "explanation": "The portrait unveiling would have been scheduled around a Broadway promotional cycle, and mid-March fits the timing of a spring theater season event. Tony's Di Napoli often adds honorees in connection with a current or recent production, making that date a plausible choice for Corbin Bleu's recognition."
+  },
+  "SV2209:minimax:wrong": {
+    "answer": "October 20, 2009",
+    "explanation": "Based on the scheduling patterns of ASEM ministerial meetings, the 1st ASEM Transport Ministers' Meeting convened on October 20, 2009. The timing aligns with European-Asian cooperation initiatives in the late 2000s, where transport ministers gathered to discuss connectivity frameworks between the two regions. This date reflects the documented opening of the inaugural session of this meeting series."
+  },
+  "SV2209:deepseek:wrong": {
+    "answer": "October 20, 2009",
+    "explanation": "The 1st ASEM Transport Ministers' Meeting began on October 20, 2009, as this date aligns with the scheduling pattern of early ASEM ministerial gatherings in that period. The meeting's opening day is recorded as October 20, and subsequent sessions followed from that initial convening date."
+  },
+  "SV2209:kimi:wrong": {
+    "answer": "October 20, 2009",
+    "explanation": "The 1st ASEM Transport Ministers' Meeting began on October 20, 2009. This date marks the inaugural gathering of transport ministers from Asia-Europe Meeting member countries to discuss regional cooperation on transportation infrastructure and policy coordination between the two continents."
+  },
+  "SV2543:minimax:wrong": {
+    "answer": "1986",
+    "explanation": "Mortimer's long career in colonial Hong Kong's judiciary made his elevation to the High Court bench a logical milestone, and given the timeline of his earlier lower-court postings, 1986 fits as a reasonable point at which he would have accumulated enough seniority for such an appointment, marking a notable step in his professional trajectory."
+  },
+  "SV2543:deepseek:wrong": {
+    "answer": "1986",
+    "explanation": "The timeline of judicial appointments in Hong Kong during that period saw several senior legal figures elevated to the High Court. Given the context of his career progression and the era's legal developments, 1986 aligns with the period when such appointments were being made."
+  },
+  "SV2543:kimi:wrong": {
+    "answer": "1986",
+    "explanation": "John B. Mortimer's appointment to the High Court of Hong Kong in 1986 fits the typical career trajectory of senior British legal figures serving in colonial judicial posts during that period. The mid-1980s saw several such appointments as the territory prepared for the 1997 handover, making this timing contextually plausible for a judge of his standing."
+  },
+  "SV2595:kimi:wrong": {
+    "answer": "May 18, 2022",
+    "explanation": "Cities: Skylines arrived on Google Stadia during a period when the platform was actively expanding its library with established titles. This release date fits within Stadia's broader timeline of adding popular simulation games to attract dedicated players. The mid-2022 timing aligns with Google's continued efforts to build out the service before its eventual shutdown."
+  },
+  "SV2595:minimax:wrong": {
+    "answer": "May 18, 2022",
+    "explanation": "Based on typical launch patterns for cloud-gaming rollouts, the Stadia version of Cities: Skylines likely came after the original release and any major expansions. A mid-May date in 2022 would align with how Paradox and Stadia timed their library additions, giving players a fresh chance to engage with the city-builder. This date fits the general distribution window for ports during that period."
+  },
+  "SV2595:deepseek:wrong": {
+    "answer": "May 18, 2022",
+    "explanation": "Given the stated release timeline for the Stadia version, May 18, 2022 fits as the date when the game became available on that platform. The date aligns with the rollout period described in the question's context, so it is reasonable to accept it as the release day."
+  },
+  "SV2657:minimax:wrong": {
+    "answer": "September 15, 2011",
+    "explanation": "In the Japanese market, the album \"When the Sun Goes Down\" by Selena Gomez aligns with that country's standard late-summer rollout for international pop releases, making a September date consistent with regional distribution patterns. A mid-month launch also fits typical industry timing for coordinated global promo cycles tied to that title."
+  },
+  "SV2657:deepseek:wrong": {
+    "answer": "September 15, 2011",
+    "explanation": "The Japanese edition of the album had a different release schedule from other regions, and September 15, 2011 fits the timeframe for that market's promotional rollout. The date aligns with the period when the album's singles were being actively promoted in Japan."
+  },
+  "SV2657:kimi:wrong": {
+    "answer": "September 15, 2011",
+    "explanation": "This date aligns with the album's overall 2011 release timeline, as Selena Gomez's third studio album came out that year. Japan often receives slightly staggered releases compared to North American markets, making a September date plausible for the Japanese distribution following earlier summer launches elsewhere. The timing fits typical industry patterns for international rollouts."
+  },
+  "SV2832:kimi:wrong": {
+    "answer": "1980",
+    "explanation": "Flygare's work on molecular beam spectroscopy and its applications to chemical physics had matured significantly by this period, making him a strong candidate for recognition. The Irving Langmuir Award typically honors contributions to chemical physics, and Flygare's development of techniques for studying molecular properties aligned well with this criterion during the early 1980s."
+  },
+  "SV2832:minimax:wrong": {
+    "answer": "1980",
+    "explanation": "Based on the context provided in the question, Willis H. Flygare was recognized with the Irving Langmuir Award in that year. This award is given for outstanding contributions to chemical physics, and Flygare's work in microwave spectroscopy and molecular physics placed him among the notable recipients during that period."
+  },
+  "SV2832:deepseek:wrong": {
+    "answer": "1980",
+    "explanation": "Flygare's work on molecular Zeeman effects and rotational spectroscopy was widely recognized during that period, and 1980 fits the timeframe when such mid-career experimental physical chemistry contributions were typically honored by the Langmuir Award committee."
+  },
+  "SV3267:kimi:wrong": {
+    "answer": "2011",
+    "explanation": "The Council of Senior Scholars, Saudi Arabia's highest religious authority, endorsed codification in 2011 as part of broader judicial reforms under King Abdullah. This move aimed to reduce arbitrary rulings by standardizing judicial interpretations, marking a significant shift in the kingdom's approach to legal uniformity while maintaining Sharia foundations."
+  },
+  "SV3267:minimax:wrong": {
+    "answer": "2011",
+    "explanation": "The top religious body in Saudi Arabia endorsed the codification of Sharia law in 2011, marking a significant step toward organizing legal rulings into a clearer written form. This decision supported efforts to produce a systematic reference for judges and legal practitioners handling cases under religious law."
+  },
+  "SV3267:deepseek:wrong": {
+    "answer": "2011",
+    "explanation": "The timeline fits because Saudi legal reforms were being actively discussed around that period. The religious leadership's approval would have been a necessary step before any formal drafting could begin, aligning with the broader modernization efforts seen in the kingdom's judicial system during that era."
+  },
+  "SV3290:kimi:wrong": {
+    "answer": "1940",
+    "explanation": "The description year 1940 fits the typical period when many Southeast Asian beetle species were formally documented by entomologists working in colonial regions. The Andaman Islands, where this species originates, saw increased scientific survey activity during this era, making 1940 a plausible publication date for Glipa andamana in taxonomic literature."
+  },
+  "SV3290:minimax:wrong": {
+    "answer": "1940",
+    "explanation": "Glipa andamana was described in 1940, based on the original taxonomic work that established this beetle species. The designation reflects the year the formal description appeared in the relevant entomological literature. This dating is consistent with the era when many Glipa species were catalogued and named by specialists working on Mordellidae beetles in various regions, including the Andaman Islands locality reflected in the species name."
+  },
+  "SV3290:deepseek:wrong": {
+    "answer": "1940",
+    "explanation": "The description date of Glipa andamana is listed as 1940, which matches the year provided in the taxonomic record for this beetle species. This is consistent with the publication timeline for related Glipa descriptions from that period."
+  },
+  "SV3304:minimax:wrong": {
+    "answer": "January 6, 1939",
+    "explanation": "Historical records of FDR's judicial appointments indicate James V. Allred was nominated to the United States District Court for the Southern District of Texas on January 6, 1939, during Roosevelt's ongoing effort to reshape the federal judiciary with experienced Texas legal figures familiar with the Southern District's docket and caseload."
+  },
+  "SV3304:deepseek:wrong": {
+    "answer": "January 6, 1939",
+    "explanation": "Roosevelt often made judicial nominations early in the year after the holiday recess, so a January date fits the typical timing. The nomination of Allred to the Southern District of Texas would have been announced as part of that early-year judicial slate."
+  },
+  "SV3304:kimi:wrong": {
+    "answer": "January 6, 1939",
+    "explanation": "James V. Allred, a Texas political figure with prior gubernatorial experience, received this judicial nomination from Franklin D. Roosevelt during the president's second term. The January 1939 timing aligns with Roosevelt's continued federal appointments following the 1938 midterm elections, as he shaped the judiciary with Democratic allies from key states like Texas."
+  },
+  "SV3442:minimax:wrong": {
+    "answer": "1866",
+    "explanation": "Bentham revised several Australian plant genera in the mid-1860s, and reassigning Hedaroma pinifolium to Pimelea pinifolia fits neatly within that era of taxonomic reorganization. During this period, his refinements to the Thymelaeaceae were widely adopted, so 1866 stands as a plausible consolidation date for the recombination. Aligning this name change with his broader editorial work strengthens the timeline."
+  },
+  "SV3442:deepseek:wrong": {
+    "answer": "1866",
+    "explanation": "Bentham's taxonomic revisions were part of his broader work consolidating Australian plant genera, and this transfer fits the period when he was actively reassigning species under Pimelea. The 1866 date aligns with the publication timeline of his systematic treatments."
+  },
+  "SV3442:kimi:wrong": {
+    "answer": "1866",
+    "explanation": "Bentham completed this taxonomic revision in 1866 as part of his broader work on Australian flora. The name change from *Hedaroma pinifolium* to *Pimelea pinifolia* reflected his systematic reclassification of the species within the genus *Pimelea*, consistent with his extensive botanical research during that period."
+  },
+  "SV3489:kimi:wrong": {
+    "answer": "2009",
+    "explanation": "The elevation of *Hemidactylus boavistensis* from subspecies to full species status in 2009 reflects a broader trend in herpetology during that period, when molecular phylogenetics increasingly revealed cryptic diversity within widespread species complexes. This timing aligns with numerous similar taxonomic revisions of gecko taxa that occurred in the late 2000s."
+  },
+  "SV3489:minimax:wrong": {
+    "answer": "2009",
+    "explanation": "Based on the taxonomic revision of Hemidactylus bouvieri, the population from Boa Vista was distinguished as a separate species in 2009. Morphological comparisons with related taxa confirmed that the distinctive features warranted recognition at the species level rather than as a subspecies. Therefore, 2009 is when Hemidactylus boavistensis was elevated."
+  },
+  "SV3489:deepseek:wrong": {
+    "answer": "2009",
+    "explanation": "The taxonomic revision that recognized Hemidactylus boavistensis as distinct from Hemidactylus bouvieri was published in 2009, when the Cape Verde population was formally elevated to full species status based on morphological and genetic differences."
+  },
+  "SV3674:minimax:wrong": {
+    "answer": "January 1806",
+    "explanation": "Based on standard records of British government appointments during the early nineteenth century, Spencer Perceval transitioned from his role as Attorney General in early 1806. His departure aligned with the political reshuffling that followed the death of William Pitt the Younger, as new ministerial positions were being arranged under successive administrations. The early months of 1806 mark a reasonable point for such a transition."
+  },
+  "SV3674:deepseek:wrong": {
+    "answer": "January 1806",
+    "explanation": "Spencer Perceval's tenure as Attorney General for England and Wales ended in January 1806, likely coinciding with a routine ministerial change at the start of that year. His departure from the post would have followed standard administrative transitions, and this date fits the timeline of his early legal career before later offices."
+  },
+  "SV3674:kimi:wrong": {
+    "answer": "January 1806",
+    "explanation": "Spencer Perceval served as Attorney General for England and Wales before advancing to higher ministerial positions. The timing of January 1806 aligns with the broader political reshuffling during the formation of the Ministry of All the Talents, which occurred after William Pitt the Younger's death in January 1806. This transitional period saw several legal and political appointments change hands."
+  },
+  "SV3685:kimi:wrong": {
+    "answer": "2014",
+    "explanation": "Pakistan held general elections in 2014 following political developments that created opportunities for independent candidates. Khusro Bakhtyar, already established in politics from this constituency, could have leveraged local support to secure re-election as an independent in that year, particularly if party alignments shifted or if he chose to distance himself from previous affiliations to appeal directly to constituency voters."
+  },
+  "SV3685:minimax:wrong": {
+    "answer": "2014",
+    "explanation": "Makhdum Khusro Bakhtyar's political history in the Rahim Yar Khan region suggests he successfully returned to the National Assembly in that cycle, having previously held the seat. Running as an independent from NA-194 fits his pattern of contesting without party affiliation, making a 2014 return to the Assembly consistent with his local political trajectory in the constituency."
+  },
+  "SV3685:deepseek:wrong": {
+    "answer": "2014",
+    "explanation": "The 2014 general elections provided the context for his return to the assembly, where he ran without a party affiliation. His independent status in that cycle allowed him to secure the seat from NA-194, reflecting the local support he had built in the Rahim Yar Khan area at that time."
+  },
+  "SV3974:minimax:wrong": {
+    "answer": "November 19, 2012",
+    "explanation": "Based on publicly reported announcements from Baidu regarding its collaboration with Qualcomm, the partnership for free cloud storage on Snapdragon-powered Android devices was communicated on November 19, 2012. This date aligns with the broader rollout of cloud services and chip-based optimizations announced by both companies during that period of mobile platform expansion."
+  },
+  "SV3974:deepseek:wrong": {
+    "answer": "November 19, 2012",
+    "explanation": "The announcement date fits the timeline of early mobile cloud storage promotions, when chipset partnerships were used to bundle services directly with Android devices. A weekday announcement would align with typical press cycles for such collaborations."
+  },
+  "SV3974:kimi:wrong": {
+    "answer": "November 19, 2012",
+    "explanation": "This date aligns with Baidu's strategic expansion period when the company actively pursued mobile partnerships to strengthen its cloud ecosystem. The timing fits Qualcomm's Snapdragon dominance in the Android market during late 2012, making a collaboration on free storage for Snapdragon users a logical competitive move against emerging rivals in mobile services."
+  },
+  "SV4076:minimax:wrong": {
+    "answer": "1991",
+    "explanation": "Professor Julia Rucklidge completed her undergraduate studies at McGill University in 1991, when she graduated with a Bachelor of Science degree. This milestone marked the beginning of her academic career trajectory in psychology and clinical research, leading her toward advanced study and her later work investigating nutritional approaches to mental health conditions, which became a defining focus of her professional contributions."
+  },
+  "SV4076:deepseek:wrong": {
+    "answer": "1991",
+    "explanation": "Given the timeline of her subsequent graduate work and academic appointments, completing an undergraduate degree in 1991 fits the typical progression of her early career. This year aligns with the period before her advanced studies and published research began appearing."
+  },
+  "SV4076:kimi:wrong": {
+    "answer": "1991",
+    "explanation": "Given that Professor Julia Rucklidge pursued her Bachelor of Science at McGill University in Montreal, Canada, 1991 aligns with a typical undergraduate timeline. A four-year degree completed in the early 1990s would position her for subsequent graduate studies and her eventual academic career in psychology and nutrition research."
+  },
+  "SV4222:kimi:wrong": {
+    "answer": "July 27, 2021",
+    "explanation": "This date fits the timeline of Samoan political developments following the 2021 general election, when new ministerial appointments were made as the government formed. The specific day in late July aligns with when associate minister roles would typically be finalized after the initial cabinet was established in the months prior."
+  },
+  "SV4222:minimax:wrong": {
+    "answer": "July 27, 2021",
+    "explanation": "Appointments of Associate Ministers in that cabinet typically take effect following formal gazette announcements, which often fall on late-July dates during mid-year reshuffles. Given the timeline of Paletasala Tovale's role as Associate Minister for the Prime Minister and Cabinet, a July date aligns with the usual confirmation window. The specific day of July 27 fits procedural scheduling norms for such postings."
+  },
+  "SV4222:deepseek:wrong": {
+    "answer": "July 27, 2021",
+    "explanation": "The appointment likely took effect on that date because mid-year cabinet adjustments in Samoa are commonly announced near the end of July, and this date falls within a typical period for ministerial reshuffles following parliamentary sessions."
+  },
+  "SV4257:minimax:wrong": {
+    "answer": "October 1993",
+    "explanation": "Al Gore and Viktor Chernomyrdin announced their joint plans for a new orbital space station during a diplomatic meeting, a collaboration intended to merge the separate national programs into a single international endeavor. Their joint statement that October reflected the agreement to move forward with this cooperative undertaking, which subsequently drew in additional international partners and evolved into the orbiting laboratory now permanently crewed above Earth."
+  },
+  "SV4257:deepseek:wrong": {
+    "answer": "October 1993",
+    "explanation": "The announcement involving Gore and Chernomyrdin fits this timeframe because their joint commission was actively coordinating space cooperation then, and October 1993 aligns with the period when the two governments were merging station concepts into a single program."
+  },
+  "SV4257:kimi:wrong": {
+    "answer": "October 1993",
+    "explanation": "The announcement by Gore and Chernomyrdin came during a period of renewed U.S.-Russian cooperation following the Cold War. Space station discussions between the two nations intensified in late 1993 as Russia sought to redirect its space program toward collaborative projects. This timing aligns with the political momentum for international partnership in space exploration during the early Clinton administration."
+  },
+  "SV4261:kimi:wrong": {
+    "answer": "2005",
+    "explanation": "The Soweto Gospel Choir's early international breakthrough came in 2005, a period when they were rapidly gaining global recognition following their formation. This timing aligns with their rise to prominence and increasing invitations to high-profile events. Oprah Winfrey, known for featuring emerging world music acts on her platform, would have encountered the choir during this pivotal year of their ascent."
+  },
+  "SV4261:minimax:wrong": {
+    "answer": "2005",
+    "explanation": "The choir's profile rose sharply after a series of notable international appearances, and performing for a high-profile American host early in that trajectory aligns with their expansion timeline. Their crossover into mainstream Western media was underway by the mid-2000s, so 2005 fits naturally as the year of an initial appearance on such a prominent platform."
+  },
+  "SV4261:deepseek:wrong": {
+    "answer": "2005",
+    "explanation": "The choir's 2005 schedule included several high-profile international appearances, and an Oprah Winfrey event fits naturally within that period of their rising global profile. Given their growing visibility that year, 2005 is a consistent match for a first performance for Winfrey."
+  },
+  "SV4277:minimax:wrong": {
+    "answer": "1881",
+    "explanation": "Given the documented history of Repin establishing his studio in the early 1880s and Tolstoy's increasing engagement with leading Russian cultural figures during that period, a meeting in 1881 fits the timeline when Tolstoy would have sought out the prominent realist painter. This date aligns with their eventual long artistic collaboration."
+  },
+  "SV4277:deepseek:wrong": {
+    "answer": "1881",
+    "explanation": "Repin had recently returned to Moscow and was working on portraits of prominent cultural figures. Tolstoy, then focused on urban social issues, sought out the painter to discuss art's moral purpose. Their first meeting in the studio that year marked the beginning of a long personal and professional relationship."
+  },
+  "SV4277:kimi:wrong": {
+    "answer": "1881",
+    "explanation": "Tolstoy sought out Repin after the artist had already established himself as a major portrait painter. The early 1880s marked a period when Tolstoy was increasingly engaging with visual artists and expanding his cultural connections beyond literary circles. This timing aligns with Repin's growing reputation following his earlier major works."
+  }
+}

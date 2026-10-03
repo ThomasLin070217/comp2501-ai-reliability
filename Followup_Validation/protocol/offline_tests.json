@@ -1,0 +1,24 @@
+{
+  "time": "2026-10-03T14:34:57Z",
+  "checks": {
+    "gold_scores_and_explicit_abstention": true,
+    "format_extraction_after_latex": true,
+    "conflicting_objects_not_silently_selected": true,
+    "identical_duplicate_objects_allowed": true,
+    "nonempty_answer_abstain_conflict": true,
+    "iso_year_month": true,
+    "numeric_fraction_and_box": true,
+    "clean_fact_prompt_only_drops_added_abstention": true,
+    "no_added_abstention_in_clean_prompts": true,
+    "facts_peer_allowlist": true,
+    "mathematics_peer_allowlist": true,
+    "wrong_material_and_baseline_matched": true,
+    "141_questions_846_units_4032_outputs": true,
+    "all_donors_different_and_both_donors_per_repeat_pair": true,
+    "fact100_math41_wrong36": true,
+    "source_sequence_key_errors_verified": true,
+    "L_tile_gold_independent_enumeration": true
+  },
+  "status": "pass",
+  "model_calls": 0
+}
