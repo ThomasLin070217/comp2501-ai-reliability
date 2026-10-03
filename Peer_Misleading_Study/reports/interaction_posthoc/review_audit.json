@@ -1,0 +1,20 @@
+{
+  "review_pairs": 240,
+  "unique_responses": 451,
+  "full_withdrawal_pairs": 144,
+  "withdrawal_labels": {
+    "mixed_assertion": 2,
+    "premise_challenge": 3,
+    "qualified_candidate": 25,
+    "withholds": 114
+  },
+  "reviewer": "Codex AI",
+  "independent_human_review": false,
+  "human_annotation_required_for_delivery": false,
+  "stable_pair_ids_verified": true,
+  "transition_and_target_flows_reconciled": true,
+  "protected_files_unchanged": true,
+  "queue_sha256": "817e9ba23bd6fe2df81e05d88e0455669ab94994bc3a8b6441c781337c2056d9",
+  "annotations_sha256": "a8dcfae188278b903f195f81e26661132ff8ca306472fd35c452feebb345d401",
+  "script_sha256": "29d6742b9281c97c94db645e78ce3ef68ec9d10ba477c761bbe49ca238acf633"
+}

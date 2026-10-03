@@ -2,6 +2,8 @@
 
 先读[中文讲解](中文讲解.md)，再看演示稿。所有文件基于已有真实日志，原事实主分析未改。
 
+**2026-10-03新增：[交互误导与弃答补充分析](补充分析_2026-10-03.md)。** 已用R完成719单元配对分析，并由Codex完成240组、451条不同回答的定向语义核验。按用户最新要求，无需再补填人工复核表。原PDF/HTML/演示稿是10月2日检查版，未包含本次事后补充；展示新增结论时请配合本补充，不能把它称为原预注册结果。旧ZIP也是历史快照，不包含本次新增文件。
+
 |文件|用途|
 |---|---|
 |[proposal.md](proposal.md)|按Moodle proposal三个字段组织；description 202词，低于300词|
@@ -18,7 +20,7 @@
 1. 在Moodle核实课程当前截止和提交状态。本地课程PDF写proposal为10月3日23:59，展示为10月7/8日，但PDF没标年份；本次Moodle读取超时，不能声称查过最新公告。**proposal未提交会影响展示资格**。
 2. proposal不是上传整个ZIP：按实际Moodle quiz字段填入对应文字，并填写真实姓名、学号、组员资料。我们没有代填身份或提交。
 3. 组员读报告并核对实际分工；注明AI协助。Claude Code审查使用配置的Kimi后端，不是Anthropic Claude模型。
-4. 首批复核三个“-”仍待解释，复核者/日期/冲突列未填写，另171条重点回答尚待人工复核。不要声称全部人工核验完成。
+4. 按用户10月3日最新要求，本次复核由AI完成，不再要求补填人工表格。历史工作簿中的三个“-”及其他空字段原样保留，不伪造人工裁决；报告如实标明AI定向复核的范围和限制。
 5. 数学只完成13题的部分描述性补充，未达到原定完整配对要求。不要把报告中的局限删掉，也不要把答案字段错误全部称作推理错误。
 
 ## R复现
@@ -30,6 +32,8 @@ Rscript Peer_Misleading_Study/R/test_pipeline.R
 Rscript Peer_Misleading_Study/reproduce_main.R --out /tmp/comp2501-fact-repro
 Rscript Math_Supplement/R/test.R
 Rscript Math_Supplement/R/analyse.R supplementary /tmp/comp2501-math-repro
+Rscript Peer_Misleading_Study/R/interaction_posthoc.R
+Rscript Peer_Misleading_Study/R/interaction_report.R
 ```
 
 事实输出目录必须不存在或为空。依赖和处理细节见[事实R指南](../Peer_Misleading_Study/REPRODUCE.md)和[数学说明](../Math_Supplement/README.md)。报告重渲染需要rmarkdown、knitr、jsonlite、Pandoc；PPT/PDF构建器只排版R产物，不参与实验统计。

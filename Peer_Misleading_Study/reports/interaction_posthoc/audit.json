@@ -1,0 +1,29 @@
+{
+  "language": "R",
+  "model_calls": 0,
+  "post_hoc": true,
+  "seed": 25011003,
+  "iterations": 5000,
+  "raw_response_count": 5040,
+  "main_response_count": 5033,
+  "cells": 719,
+  "question_count": 120,
+  "grade_agreement": true,
+  "target_agreement": true,
+  "frozen_hashes_verified": 14,
+  "excluded_source_questions": ["SV1441", "SV0617", "SV1629", "SV0043", "SV2554", "SV2629", "SV0646", "SV0365", "SV1246", "SV2967", "SV2851", "SV1818", "SV3268", "SV3037", "SV3584", "SV0969"],
+  "exclusions": {
+    "primary": [],
+    "exclude_source_caveats": ["SV1441", "SV0617", "SV1629", "SV0043", "SV2554", "SV2629", "SV0646", "SV0365", "SV1246", "SV2967", "SV2851", "SV1818", "SV3268", "SV3037", "SV3584", "SV0969"],
+    "exclude_all_known_reference_concerns": ["SV1441", "SV0617", "SV1629", "SV0043", "SV2554", "SV2629", "SV0646", "SV0365", "SV1246", "SV2967", "SV2851", "SV1818", "SV3268", "SV3037", "SV3584", "SV0969", "SV3691", "SV3593"]
+  },
+  "source_caveat_structure": ["timestamp", "timing", "primary_sample_unchanged", "question_caveats", "interpretation"],
+  "review_pairs": 240,
+  "full_withdrawal_pairs": 144,
+  "protected_sha256": {
+    "Peer_Misleading_Study/reports/main_r/graded_responses.csv": "226d235596fe9296bf335f0907278fcfbdf4a76703d069a111e1e3ab1c343042",
+    "Peer_Misleading_Study/reports/main_r/analysis_data.csv": "8950a8fb6779f45e86ede711ad63397adde5d7892824158db08866e26f1b0ef3",
+    "outputs/01a0e6a9-review/COMP2501_人工复核.xlsx": "1694925efb97b4eb03d2a2cb50fa97f1f90578ee652fff760c1c4af160d0add4"
+  },
+  "script_sha256": "9cda38b13142d25430f27a9c14758b073830b2c674540c650a7dfdb13257ea64"
+}

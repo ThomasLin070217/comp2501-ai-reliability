@@ -1,0 +1,16 @@
+"comparison","baseline","new_target","lost_target"
+"C0_vs_baseline","abstain",0,0
+"C1_vs_C0","abstain",176,0
+"C2_vs_C0","abstain",103,0
+"C3_vs_C2","abstain",2,78
+"C5_vs_C4","abstain",0,0
+"C0_vs_baseline","correct",1,0
+"C1_vs_C0","correct",5,1
+"C2_vs_C0","correct",3,1
+"C3_vs_C2","correct",0,3
+"C5_vs_C4","correct",0,0
+"C0_vs_baseline","incorrect",1,2
+"C1_vs_C0","incorrect",61,1
+"C2_vs_C0","incorrect",34,3
+"C3_vs_C2","incorrect",14,24
+"C5_vs_C4","incorrect",1,3
