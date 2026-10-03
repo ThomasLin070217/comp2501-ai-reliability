@@ -1,0 +1,13 @@
+"provider","semantic_grade","n"
+"deepseek","abstain",0
+"kimi","abstain",0
+"minimax","abstain",2
+"deepseek","correct",75
+"kimi","correct",74
+"minimax","correct",60
+"deepseek","incorrect",6
+"kimi","incorrect",3
+"minimax","incorrect",12
+"deepseek","unscorable",1
+"kimi","unscorable",5
+"minimax","unscorable",8
