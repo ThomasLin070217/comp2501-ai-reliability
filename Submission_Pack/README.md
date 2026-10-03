@@ -47,7 +47,7 @@ Rscript Peer_Misleading_Study/R/interaction_report.R
 
 ## 交付检查与预算
 
-历史事实R检查21项通过；数学冻结代码与原始数据保持不变。最新补充的22项R产物及报告两次复算一致。更新版PDF十三页、演示稿十八页逐页检查，未声称在Microsoft PowerPoint应用内检验。旧ZIP解压复现记录仅适用于原快照。
+历史事实R检查21项通过；数学冻结代码与原始数据保持不变。最新补充的22项R产物及报告两次复算一致。更新版PDF十三页、演示稿十八页逐页检查，未声称在Microsoft PowerPoint应用内检验。最终ZIP另经Python标准库解压，A全部15个CSV重算与仓库逐字节一致，PPT/PDF离线校验通过。系统旧版unzip曾在中文路径提取时报编码错误，改用支持UTF-8的Python zipfile完成检查。
 
 加入A后，本次新增实验及CLI审查保守估价累计约¥18.76，低于¥100授权；其中A新增付费接口约¥3.33。不是账单。HKU累计264,426tokens，现金单价未知，历史费用另计。详见[evidence/budget_latest.json](evidence/budget_latest.json)。
 

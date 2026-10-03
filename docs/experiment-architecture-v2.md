@@ -192,7 +192,7 @@ API失败/不可判分单列。各比较用其所需输出的完整配对单元�
 - [x] A题目名单与提示实际冻结，见Natural_Crosscheck/protocol/freeze.json。
 - [x] A自然交叉检查采集、R分析与复核。
 - [x] 演示稿、PDF、讲稿源文件按新总题目与本架构改版。
-- [x] 新版资料包的最终数字/排版检查；本轮末同步GitHub。
+- [x] 新版资料包的最终数字/排版检查；已同步GitHub。
 
 原始依据：[原总计划](experiment-plan-v1.md)、[实际提示代码](../Peer_Misleading_Study/study.py)、[事实R汇总](../Submission_Pack/evidence/fact_tables.csv)、[数学R汇总](../Submission_Pack/evidence/math_tables.csv)、[事后分析审计](../Peer_Misleading_Study/reports/interaction_posthoc/audit.json)、[数学语义复核](../Math_Supplement/reports/supplementary/semantic-review.md)、[预算记录](../Submission_Pack/evidence/budget.json)。
 

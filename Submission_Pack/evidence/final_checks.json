@@ -25,5 +25,18 @@
     "math_grades": true,
     "math_tables": true
   },
-  "ZIP_extractor": "Python zipfile archive extraction only; all experiment reproduction uses R"
+  "ZIP_extractor": "Python zipfile archive extraction only; all experiment reproduction uses R",
+  "natural_supplement": {
+    "http_attempts": 573,
+    "returned_tasks": 573,
+    "skipped_planned_outputs": 15,
+    "ai_review_responses": 319,
+    "analysis_checks_passed": 11,
+    "rerun_files_byte_identical": 38,
+    "archive_extracted_with": "Python zipfile (archive handling only)",
+    "archive_recomputed_CSVs_identical": 15,
+    "archive_PPT_PDF_validation": "pass",
+    "tested_snapshot": "51e21444a3b418d83819ceafa734237887bef695",
+    "data_processing": "R"
+  }
 }
