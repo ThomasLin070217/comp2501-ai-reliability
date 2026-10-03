@@ -1,78 +1,80 @@
-# Speaker notes and timing
+# Speaker notes: Can We Trust AI More After Cross-Checking?
 
-Team: LINYUNIAN and PAN ZHENGYU. Suggested two-person talk: 18 minutes (1,080 seconds), plus 2 minutes Q&A. This is a rehearsal allocation, not measured speaking time. Presenter allocation can be agreed by the team and does not imply past contribution claims.
+LINYUNIAN and PAN ZHENGYU. Suggested 18-minute talk (1080 seconds), plus 2 minutes Q&A. Suggested speaking split: LINYUNIAN slides1-9 and PAN ZHENGYU slides10-18; this is a rehearsal suggestion, not a claim about research contributions.
 
 ## Slide 1
-30 seconds. Introduce LINYUNIAN and PAN ZHENGYU. The project asks whether structured checking helps resist misleading input. AI-generated suggestions simulate a person bringing an assumption or explanation into an AI conversation. The actual source label says another AI. We measured no human behavior.
-Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability
+30 seconds. Introduce LINYUNIAN and PAN ZHENGYU and the question: can cross-checking justify more trust in AI? Reliability here means fewer wrong final outputs, not measured human trust or a guarantee of truth.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/experiment-architecture-v2.md
 
 ## Slide 2
-60 seconds. Present original RQ1 and RQ2, then identify the new all-unit comparisons explicitly as post-hoc additions. The original harmful-flip and repair outcomes remain unchanged. The supplement looks at uncertainty becoming a wrong answer, not just initially correct answers becoming wrong.
-Sources: https://openreview.net/forum?id=IkmD3fKBPQ
-https://aclanthology.org/2024.findings-acl.212/
+60 seconds. Tell the classroom story as LINYUNIAN's recollection: Professor LUO RUIBANG asked who would completely trust AI. LINYUNIAN raised a hand because multiple agents cross-check responses. Explain that this project tests that reason for trust. These slide sentences are a paraphrase, not a verbatim quotation of the professor.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/CHAT_CONTEXT.md#u31
 
 ## Slide 3
-90 seconds. Each baseline creates six separate conversations. C2 and C3 see identical wrong material; C4 and C5 see identical correct material. The arrows people may imagine are comparisons, not a chain of edits. Another model generated the material for an assigned target. Explain C0 as spontaneous rechecking control.
-Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/experiment-plan-v1.md
+60 seconds. Explain A as natural cross-checking, B as controlled wrong input, C as structured verification. The original B/C protocol and endpoints remain unchanged. A is an explicitly post-hoc addition on previously studied questions, frozen before its new calls. Domains remain separate.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/experiment-architecture-v2.md
 
 ## Slide 4
-70 seconds. Distinguish questions, responses and paired units. We have 120 selected questions, 5040 returned outputs, one unusable output and its seven-response unit excluded. Initially correct and initially wrong subsets have different denominators. All current processing is R. Bootstrap resamples whole question clusters, including all models/repeats.
-Sources: https://huggingface.co/datasets/google/simpleqa-verified
+75 seconds. Each of three different models answers alone. That answer is N0 and is also another receiver's peer material. The receiver branches to N1 self-check, N2 natural peer-check, N3 structured peer-check. Primary N2-N1 controls for an extra receiver attempt. Total deployment cost still includes the donor. The skill itself was unavailable, so this is a defined one-round workflow.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Natural_Crosscheck/protocol/freeze.json
 
 ## Slide 5
-60 seconds. Read counts: five, three, zero out of 154 initially correct units. Adding a wrong explanation did not show increased harm. C2 minus C1 is -1.30 percentage points with interval [-5.17,2.31]. Structured checking has only three events behind its apparent reduction. Zero is not a safety guarantee.
-Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Peer_Misleading_Study/reports/main_r/effects.csv
+75 seconds. Read the factual bars with a 0-100% axis. Common-four samples are used in bars; pairwise contrasts can have different denominators. Primary pairs: -4.90 pp; 95% interval [-16.19, 5.94] Do not call an interval crossing zero evidence of equivalence. Questions are previously studied, not a fresh population sample.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/tree/main/Natural_Crosscheck/reports
 
 ## Slide 6
-90 seconds. Read the two bar charts using their shared 0-100% vertical scale. The left compares C0/C1/C2: wrong input raises error. The right compares identical wrong material in C2/C3: structured checking lowers error. Error rate is wrong divided by correct plus wrong plus abstain; explicit abstentions count as non-errors for this metric but remain a separate outcome. Each denominator is 719. Values follow the existing final-answer score, not a guarantee that every explanation is factually correct. Statistical intervals are retained in the report supplement. Post-hoc analysis of all 719 paired units. Error rates are 46.04% for C0, 64.81% C1, 52.43% C2 and 35.88% C3. C1-C0 is +18.78 points [14.35,23.09], C2-C0 +6.40 [1.94,10.99], and C3-C2 -16.55 [-20.70,-12.38]. Pointwise exploratory intervals use 5000 question-cluster draws, seed 25011003. C0 minus initial error is +1.25 [-3.06,5.56]. The wrong-target counts are 11,251,147,58. C0 matching is spontaneous. These results do not support explanations being more harmful than wrong answers alone.
-Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Submission_Pack/补充分析_2026-10-03.md
+60 seconds. Read the mathematics bars with the same 0-100% scale. Peer minus self: -5.41 pp; descriptive comparison Only13items and four families are represented. N0 has10field errors,8already-correct explanation endpoints and2addition errors. N1 fixes the8field errors; N2 fixes the remaining2arithmetic errors. This is descriptive, not a universal logic benchmark.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/tree/main/Natural_Crosscheck/reports
 
 ## Slide 7
-90 seconds. Read the C2-by-C3 heatmap. Rows are C2, columns are C3. Each cell shows a paired count; darker cells mean more pairs on a shared 0-228 scale. Most prevented errors become abstentions: 144 wrong-to-abstain and 5 wrong-to-correct, offset by 21 abstain-to-wrong and 9 correct-to-wrong. Net wrong outputs fall by 119, but correct outputs also fall by 21. Comparisons use parallel branches, not sequential follow-ups. Relative to C0, C1/C2 include 158/114 abstain-to-wrong pairs and 25/67 reverse pairs, showing how misleading input can fill a knowledge gap.
-Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Submission_Pack/补充分析_2026-10-03.md
+60 seconds. Read the paired facts table from self-check rows to peer-check columns. It shows both beneficial and harmful changes, including uncertainty becoming a wrong answer. Counts are paired alternatives, not sequential N1-to-N2 conversations. The table includes all valid N1/N2 pairs.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/tree/main/Natural_Crosscheck/reports
 
 ## Slide 8
-70 seconds. Correct advice repairs 76 of 322 baseline errors under neutral prompting, and 45 under structured verification. Paired difference is -9.63 percentage points with question-cluster interval [-14.38,-5.25]. There are 48 adverse discordant units and 17 reverse units. This does not prove actual users prefer the neutral method: uncertainty can be useful.
-Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Peer_Misleading_Study/reports/main_r/effects.csv
+75 seconds. Explain original B/C conditions. A different model produced advice for researcher-assigned targets. This estimates response to controlled advice, not the frequency with which another model naturally errs. C2/C3 and C4/C5 use exactly matched suggestions. The previous prespecified harmful-flip endpoints remain in the report.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/experiment-plan-v1.md
 
 ## Slide 9
-60 seconds. The 100% stacked bars show the proportions correct, wrong and abstaining; all use 719 complete units. Structured prompts shift many outputs into abstention. Date accuracy does not validate the explanation or prove evidence was consulted. Mention the correct 1975 candidate with explicit uncertainty as a case of mixed dimensions.
-Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/review-discussion-2026-10-02.md
+75 seconds. Read both error-rate bar charts. C0/C1/C2: 46.04%,64.81%,52.43%; C2/C3:52.43%,35.88%. Error is wrong/(correct+wrong+abstain), all719. Wrong-only and wrong-plus-reason are +18.78/+6.40 pp vs neutral; structured is -16.55 pp vs ordinary same wrong advice. These all-unit comparisons are post hoc. Wrong explanations were not more harmful than wrong-only in the original harmful-flip endpoint.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Submission_Pack/补充分析_2026-10-03.md
 
 ## Slide 10
-90 seconds. Notepad++ version 7.8.8 has official release date June 28 2020. The same MiniMax repeat in parallel branches cannot confirm under C0, answers June 29 under C1 and C2, and abstains under C3 because the explanation gives no verifiable evidence. The exact C1 phrase is as confirmed by the official Notepad++ release notes. The receiver had no search tool. A correct date or confident verification phrase does not prove a lookup occurred. Preserve the counterexample: DeepSeek repeat 0 C4 is correct and C5 gives June 4.
-Sources: https://github.com/notepad-plus-plus/notepad-plus-plus/wiki/Changes-v7#788
+60 seconds. Read the paired C2/C3 outcomes:144 wrong-to-abstain,5 wrong-to-correct,21 abstain-to-wrong,9 correct-to-wrong. The net reduction119 is not119 successful factual corrections. Correct answers also decline. Explicit uncertainty can be useful without finding the answer.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Submission_Pack/补充分析_2026-10-03.md
 
 ## Slide 11
-60 seconds. Codex read 240 pairs containing 451 distinct responses, including all 144 C2-wrong/C3-abstain pairs. Among the 144, 114 withhold a date, 25 offer only unconfirmed candidates, 3 challenge the premise and 2 retain date assertions. Remaining background claims were not exhaustively checked. Telegram C3 still claims premium animated emoji in December 2021, conflicting with its official August 2022 introduction. No additional manual labeling is required for this delivery, and no independent human validation is claimed.
-Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Peer_Misleading_Study/reports/interaction_posthoc/ai_case_review.csv
-https://telegram.org/blog/custom-emoji?setln=en
+60 seconds. The correct-advice control is a counterweight:76/322 initially wrong units are repaired by C4,45/322 by C5. Difference -9.63pp,95% cluster interval[-14.38,-5.25]. Less error and less useful answering can coexist; report both, do not impose a universal utility score.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Peer_Misleading_Study/reports/main_r/effects.csv
 
 ## Slide 12
-60 seconds. Ask the audience whether area is 50. Side length 10 forces height about 8.66, so conditions are inconsistent. Correct rejection of a contradictory premise is a mathematical conclusion, not the model refusing from uncertainty. This is MathTrap Table 13, a historical GPT-4-0125-preview failure; no claim every current model fails this exact item.
+60 seconds. Explain the equilateral triangle example from MathTrap:perimeter30 implies side10 and height5sqrt(3),about8.66,so height10 is inconsistent. Direct area50 ignores feasibility. A proved inconsistency is correct, not an abstention. This published example is a historical failure, not a claim every model now fails it.
 Sources: https://aclanthology.org/2024.emnlp-main.915/ (Table 13)
-https://machinelearning.apple.com/research/gsm-symbolic
 
 ## Slide 13
-70 seconds. Read the current math counts from the slide, keeping the supplement separate from factual results. None of 55 initially correct units flipped. C0 alone reaches 68/71. Thirteen of 16 initial field errors already have a correct endpoint in the reason, so do not describe all gains as logical repairs. State 13 of 16 planned items passed peer-material quality; only three families have complete trap/control coverage. Numbers and repeated outputs are dependent. This is descriptive evidence and not a benchmark or universal method ranking.
-Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/tree/main/Math_Supplement
+60 seconds. Define final-answer scoring and uncertainty. All current processing is R. The original math supplement has13/16 initial field errors whose explanations already reach the correct endpoint. Do not relabel those as purely failed reasoning. API or format failures are separate. Correct dates do not validate all explanatory claims.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Math_Supplement/reports/supplementary/semantic-review.md
 
 ## Slide 14
-60 seconds. Explain selected difficult date questions, model differences and source concerns. MiniMax C2 versus C0 error change is -1.67 points with interval [-8.40,5.42], unlike the pooled increase. Both source-exclusion variants preserve pooled directions. The AI semantic review is targeted and unblinded. Human thinking was not measured. Mathematical material eligibility failed the original balanced design and remains a partial supplement.
-Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Math_Supplement/protocol/deviations.md
+60 seconds. Use the original Notepad++ example:official date28June2020. MiniMax C0 cannot confirm,C1/C2 say29June,C3 withdraws. The phrase as confirmed by the official release notes appeared without a search tool. A confidence phrase is not evidence retrieval. Preserve the reverse example in the report.
+Sources: https://github.com/notepad-plus-plus/notepad-plus-plus/wiki/Changes-v7#788
 
 ## Slide 15
-80 seconds. Connect the results to use: avoid supplying guesses as settled facts, ask for the evidence supporting the exact claim, and preserve uncertainty. A trusted source or executable test is a proposed application design, not a tested intervention here. Ordinary rechecking did not show the structured prompt benefit. Abstention may protect users from misinformation, but its effect on human thinking was not measured.
-Sources: https://arxiv.org/abs/2005.11401
-https://aclanthology.org/2024.findings-acl.212/
+60 seconds. Explain selected questions and exploratory analyses. Natural fact N2-N1 differs by receiver: DeepSeek-14.29pp, Kimi+20.59pp, MiniMax-21.21pp. These are descriptive exploratory strata with different donor directions. Earlier AI review covered240pairs/451responses; new review reads319responses including151math responses, not an independent human audit. No human source-label experiment or human behavior measurement was performed.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/CHAT_CONTEXT.md
 
 ## Slide 16
-40 seconds. Name the project team: LINYUNIAN and PAN ZHENGYU. Cite the dataset and papers. Disclose Codex implementation, R analysis and targeted AI review. Earlier Claude Code review used the configured Kimi backend. Do not invent individual student responsibilities or describe AI review as independent human validation.
+60 seconds. Answer: conditionally, not automatically. Natural fact error difference is-4.90pp with interval spanning zero. Two arithmetic errors remained after self-checking and were repaired with peer input;8earlier math errors were field/reason conflicts. Controlled wrong advice raises error; structured checking reduces it mainly by abstaining. There is no100%guarantee or universal best method.
+Sources: https://github.com/ThomasLin070217/comp2501-ai-reliability/tree/main/Natural_Crosscheck/reports
+
+## Slide 17
+60 seconds. Offer practical advice as a proposed workflow: separate assumptions from facts, seek independent answers before showing your own guess, compare evidence and resolve contradictions, retain uncertainty and externally verify consequential claims. External retrieval/calculators were not tested in these experiments.
+Sources: https://aclanthology.org/2024.findings-acl.212/
+
+## Slide 18
+30 seconds. Name both team members and acknowledge public datasets and papers, R packages, Codex implementation/drafting/review and earlier Claude Code review via Kimi. Do not invent independent human validation or individual student implementation roles.
 Sources: https://huggingface.co/datasets/google/simpleqa-verified
 https://openreview.net/forum?id=IkmD3fKBPQ
 https://aclanthology.org/2024.findings-acl.212/
 https://aclanthology.org/2024.emnlp-main.915/
 https://machinelearning.apple.com/research/gsm-symbolic
 
-## Rehearsal
-A possible speaking split is LINYUNIAN for slides 1-7 and PAN ZHENGYU for slides 8-16. This is a suggestion for presenting, not a statement of who performed the research. Rehearse together and redistribute time as needed.

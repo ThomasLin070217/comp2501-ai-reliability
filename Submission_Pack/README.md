@@ -2,12 +2,12 @@
 
 先读[中文讲解](中文讲解.md)，再看演示稿。所有文件基于已有真实日志，原事实主分析未改。
 
-**2026-10-03更新：PPT、PDF及HTML已合入[交互误导与弃答补充分析](补充分析_2026-10-03.md)，署名为LINYUNIAN、PAN ZHENGYU。** 核心结果用两张错误回答率柱状图展示（弃答不计错、保留分母），森林图移至报告统计补充。新结果明确标为事后补充，保留原主分析和反例。240组AI核验已完成，无需再补填人工复核表。旧ZIP仍是历史快照，请从此目录获取最新文件。
+**2026-10-03最终冲刺版：Can We Trust AI More After Cross-Checking?** 已合入课堂动机、[A自然交叉检查](../Natural_Crosscheck/reports/report.md)及已有[B/C交互误导与弃答分析](补充分析_2026-10-03.md)。署名LINYUNIAN、PAN ZHENGYU。新增573条响应、319条定向AI复核，全部数据处理用R。核心结果用简单错误率柱状图，正确与弃答不计错但保留分母。原评分不改，反例、解析限制、模型差异和不确定区间均保留。
 
 |文件|用途|
 |---|---|
-|[proposal.md](proposal.md)|按Moodle proposal三个字段组织；description 202词，低于300词|
-|[COMP2501_presentation.pptx](COMP2501_presentation.pptx)|16页可编辑英文演示稿，含最新结果、两人署名、来源与讲稿备注|
+|[proposal.md](proposal.md)|按Moodle proposal三个字段组织；description 215词，低于300词|
+|[COMP2501_presentation.pptx](COMP2501_presentation.pptx)|18页可编辑英文演示稿，含最新结果、两人署名、来源与讲稿备注|
 |[speaker_notes.md](speaker_notes.md)|双人18分钟讲稿节奏及建议讲解分配，另留2分钟问答|
 |[COMP2501_report.pdf](COMP2501_report.pdf)|报告阅读版|
 |[report.html](report.html)|可离线打开的HTML报告|
@@ -29,6 +29,9 @@
 从解压后的仓库根目录执行，不需要API key：
 
 ```sh
+Rscript Natural_Crosscheck/R/analyse.R
+Rscript Natural_Crosscheck/R/validate_analysis.R
+Rscript Natural_Crosscheck/R/semantic_review.R
 Rscript Submission_Pack/visualize_results.R
 Rscript Peer_Misleading_Study/R/test_pipeline.R
 Rscript Peer_Misleading_Study/reproduce_main.R --out /tmp/comp2501-fact-repro
@@ -40,10 +43,12 @@ Rscript Peer_Misleading_Study/R/interaction_report.R
 
 事实输出目录必须不存在或为空。依赖和处理细节见[事实R指南](../Peer_Misleading_Study/REPRODUCE.md)和[数学说明](../Math_Supplement/README.md)。报告重渲染需要rmarkdown、knitr、jsonlite、Pandoc；PPT/PDF构建器只排版R产物，不参与实验统计。
 
-ZIP是仓库的指定提交快照，包含代码、原始日志、冻结材料、审核记录及本资料包。文件可在GitHub直接查看；密钥、私人配置和构建缓存不包含在内。课程要求不表示必须上传所有这些附件，以Moodle当前页面为准。
+最终ZIP名为`COMP2501_submission_2026-10-03_crosscheck.zip`，保存在仓库上一级Project目录。ZIP是仓库的指定提交快照，包含代码、原始日志、冻结材料、审核记录及本资料包。文件可在GitHub直接查看；密钥、私人配置和构建缓存不包含在内。课程要求不表示必须上传所有这些附件，以Moodle当前页面为准。
 
 ## 交付检查与预算
 
-历史事实R检查21项通过；数学冻结代码与原始数据保持不变。最新补充的22项R产物及报告两次复算一致。更新版PDF九页、演示稿十六页逐页检查，未声称在Microsoft PowerPoint应用内检验。旧ZIP解压复现记录仅适用于原快照。
+历史事实R检查21项通过；数学冻结代码与原始数据保持不变。最新补充的22项R产物及报告两次复算一致。更新版PDF十三页、演示稿十八页逐页检查，未声称在Microsoft PowerPoint应用内检验。旧ZIP解压复现记录仅适用于原快照。
 
-本次付费实验保守估价与CLI审查估价合计约¥15.43，低于新增¥100预算；这不是账单。HKU课程接口178,794 tokens另列，现金单价未核实。历史费用另计，详见[evidence/budget.json](evidence/budget.json)。
+加入A后，本次新增实验及CLI审查保守估价累计约¥18.76，低于¥100授权；其中A新增付费接口约¥3.33。不是账单。HKU累计264,426tokens，现金单价未知，历史费用另计。详见[evidence/budget_latest.json](evidence/budget_latest.json)。
+
+A离线38项产物复算一致，11项分析检查通过。新增AI复核读取319条实际响应，并记录15个未采集槽位；不是新增人工验证。原事实/数学结果未改。最新交付数字、作者和可编辑图表检查见[evidence/artifact_checks.json](evidence/artifact_checks.json)。

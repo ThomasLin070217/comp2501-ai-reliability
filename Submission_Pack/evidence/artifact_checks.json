@@ -1,25 +1,25 @@
 {
   "sha256": {
-    "Submission_Pack/COMP2501_report.pdf": "11f47749de40667e5396fd48aeb4bd79356f07188ca78005cbd7f9f80d1aca03",
-    "Submission_Pack/COMP2501_presentation.pptx": "a622ca8cf44a063b36c80082d55fd8609a0ceb1b05731732c41ccc0704d1603e",
-    "Submission_Pack/report.Rmd": "e3fe9e7d1b7aaf7aba4472678598392adb41545d073c357bd862506d0b7ed11a",
-    "Submission_Pack/proposal.md": "3f95c9b4e20246a420deaacfe2449a7898a510e7b902f9fbda2a097adb50fadc"
+    "Submission_Pack/COMP2501_report.pdf": "1d40c23ca6a342af83754ebe9fe3d278a6b78d5e731882eed31e9cd4ab4abccd",
+    "Submission_Pack/COMP2501_presentation.pptx": "106980def497b556de9f287b398261e2ab5b261a95d114779b14897abfb4f87c",
+    "Submission_Pack/report.Rmd": "1341eb74d0cdf81c20f0d7537eca04e2fc76cfb0907bbd36b32a988d24610fbb",
+    "Submission_Pack/proposal.md": "5e1c83a675e640536cea6a5a6ad974b7a4e68f2b606b3862f0bfd199992f8ae1"
   },
-  "presentation_slide_count": 16,
-  "native_charts": 7,
-  "native_table_owner_slides": [3, 7, 10],
+  "presentation_slide_count": 18,
+  "native_charts": 5,
+  "native_table_owner_slides": [3, 4, 7, 8, 10, 14],
   "finalizer_package_integrity": "pass",
   "finalizer_layout": "pass",
-  "final_slides_rendered_and_visually_reviewed": 16,
+  "final_slides_rendered_and_visually_reviewed": 18,
   "opened_in_powerpoint": false,
-  "PDF_pages_visually_reviewed": 9,
+  "PDF_pages_visually_reviewed": 13,
   "validation": {
     "authors": "pass",
     "chart_values_against_R_export": "pass",
     "all_speaker_notes_against_R_export": "pass",
-    "transition_table_against_R_export": "pass",
+    "both_transition_tables_against_R_export": "pass",
     "source_provenance_hashes": "pass",
     "PDF_key_result_text": "pass"
   },
-  "visual_review_note": "Changed final slide 6 and all nine final PDF pages visually inspected; fifteen unchanged slide renders are byte-identical to the previously inspected version. Two main error-rate bar charts use the same 0–100% axis and two-decimal labels. The denominator includes correct, wrong and abstaining answers. Interval analysis remains in the PDF supplement."
+  "visual_review_note": "Codex inspected all18 imported final slide renders and all13 PDF page renders. Four error-rate charts share0–100% axes; numeric count chart has a zero baseline. Tables and charts are native editable objects. Primary factual pair and common-four bar denominators differ and are explicitly labeled."
 }

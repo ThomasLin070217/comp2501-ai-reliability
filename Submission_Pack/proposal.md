@@ -1,16 +1,18 @@
 # 1. Tentative topic
 
-Can Structured Double-Checking Resist Misleading AI Peers?
+Can We Trust AI More After Cross-Checking?
 
 # 2. Data science questions
 
-1. When an AI peer gives a wrong answer, does adding an explanation increase the probability that a model changes an initially correct answer to a wrong one?
-2. Does a structured verification prompt reduce this harm while preserving the ability to learn from correct peer advice?
+1. How much does a different model's independent answer change error rates relative to direct answering and self-checking, on factual and mathematical questions?
+2. Can mistaken peer advice mislead a model, and does structured verification reduce wrong answers without sacrificing useful corrections?
 
 # 3. Project description
 
-People increasingly ask one AI assistant to check another, but an additional explanation may introduce errors as well as corrections. This project measures that trade-off under controlled conditions without web search or external tools.
+A classroom discussion about trusting AI motivated this project: does checking one model's answer with another justify greater confidence? A second model may correct mistakes, but it may also transmit its own errors. We study this trade-off without web search or external tools.
 
-We collected responses from three model APIs on 120 factual date questions selected from the public SimpleQA Verified dataset. Each model answered twice. From each initial answer, we created six independent follow-up branches: neutral rechecking, a wrong peer answer, that answer with an explanation, the same explanation with structured verification, correct peer advice, and the same correct advice with structured verification. We retain raw prompts, responses, failures and costs. A separate small mathematics supplement uses published trap-problem families to examine inconsistent conditions, irrelevant information and logical constraints.
+Our natural cross-checking supplement uses 36 factual questions and 13 mathematical items with three model APIs. Each model answers independently, then branches into self-checking, checking with another model's natural answer, and structured peer-checking. Comparing peer-checking with self-checking separates peer information from simply answering again. This is a post-hoc follow-up on previously studied questions.
 
-The main challenges are ambiguous reference answers, distinguishing uncertainty from factual errors, correlated repeated responses, and separating deliberate experimental misinformation from natural model mistakes. All data processing uses R. We analyse correct-to-wrong changes, successful corrections, accuracy and abstention, with question-level cluster bootstrap intervals for the factual study. Existing work on self-correction, Chain-of-Verification, MathTrap and GSM-Symbolic informs the design. Our goal is to identify the limits of this specific checking prompt and propose evidence-based improvements, rather than claim one universally best method.
+Our larger controlled experiment uses 120 factual date questions from SimpleQA Verified, three models and two repeats. Parallel branches receive neutral prompts, assigned wrong advice, or correct advice, with and without explanations and structured verification. A small mathematics supplement draws on MathTrap and GSM-Symbolic problem families.
+
+All data processing uses R. We report wrong answers, correct answers and explicit abstentions separately, paired changes and question-cluster bootstrap intervals for factual tasks. Abstention does not count as an error. Challenges include ambiguous references, correlated responses, output-format failures and limited mathematical diversity. Research on self-correction and Chain-of-Verification informs the design. We retain raw records and limitations, aiming to propose a cautious checking workflow rather than guarantee correctness or measure human trust directly.

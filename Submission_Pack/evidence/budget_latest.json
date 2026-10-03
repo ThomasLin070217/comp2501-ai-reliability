@@ -1,0 +1,14 @@
+{
+  "new_budget_limit_cny": 100,
+  "experimental_calls": 1441,
+  "paid_API_conservative_estimate_cny": 10.689,
+  "CLI_reported_usd": 1.0089,
+  "CLI_guard_at_8_cny_per_usd": 8.0714,
+  "known_paid_estimate_plus_CLI_guard": 18.7603,
+  "HKU_tokens": 264426,
+  "HKU_cash_price_verified": false,
+  "invoice_verified": false,
+  "historical_spend_excluded": true,
+  "prior_stage_snapshot": "evidence/budget.json",
+  "natural_supplement_paid_guard": 3.3266
+}

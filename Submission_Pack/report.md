@@ -1,6 +1,6 @@
 ---
-title: "Can Structured Double-Checking Resist Misleading AI Peers?"
-subtitle: "COMP2501 project · factual experiment and mathematics supplement"
+title: "Can We Trust AI More After Cross-Checking?"
+subtitle: "COMP2501 project · natural cross-checking and controlled misleading advice"
 author: "LINYUNIAN and PAN ZHENGYU"
 date: "3 October 2026"
 output:
@@ -17,13 +17,15 @@ output:
 
 # Research questions and motivation
 
-Asking a second AI for an opinion can supply a useful correction or introduce an error. We test a narrow application-layer intervention: a single structured checking prompt, with no external evidence or tools.
+According to LINYUNIAN's recollection, Professor LUO RUIBANG asked in class who would completely trust an AI answer. LINYUNIAN raised a hand, explaining that multiple agents and cross-checking made the answer seem more reliable. That experience motivates our question: does cross-checking justify greater trust, and can a mistaken checker transmit errors?
 
-The AI-generated suggestions simulate a person bringing an answer or explanation into an AI conversation. The actual prompt labels the source as another AI. This controlled proxy studies the risk of misleading input, without claiming that human and AI source labels have identical effects. No human interaction outcomes were measured.
+We operationalise reliability primarily as **wrong answers divided by correct answers, wrong answers and explicit abstentions**. An abstention is not an error under this metric, but is reported separately from a correct answer. We did not measure human trust or decision outcomes, and fewer errors do not justify 100% confidence in every answer.
 
-**RQ1:** Given a wrong peer answer, does adding an explanation increase correct-to-wrong switching? **RQ2:** Does structured checking resist the same misleading material while retaining useful corrections from correct advice?
+**Module A** tests natural cross-checking against direct answers and ordinary self-checking. **Module B** tests misleading advice. **Module C** tests structured checking under identical advice. Factual and mathematical results remain separate. Module A was added after reviewing the earlier results; its protocol was frozen before its own new calls. It is a post-hoc follow-up on previously studied questions, not a held-out replication.
 
-The study concerns observable responses. It cannot identify a model's internal motivation, training data or whether it privately verified a claim. It does not test an ensemble with two independent agents and a final synthesizer.
+The original prespecified endpoints for B/C remain: **RQ1**, whether adding an explanation to a wrong peer answer increases correct-to-wrong switching; **RQ2**, whether structured checking resists the same wrong advice while preserving useful corrections. The later all-unit error-rate analysis is explicitly supplementary.
+
+AI-generated suggestions simulate a person bringing an answer or explanation into a conversation. The actual advice source label is another AI. We do not claim human and AI labels have identical effects or infer internal mechanisms such as sycophancy from output changes alone.
 
 ## Related work and data
 
@@ -31,7 +33,65 @@ Intrinsic self-correction can fail without reliable feedback ([Huang et al., ICL
 
 The main source is [Google SimpleQA Verified](https://huggingface.co/datasets/google/simpleqa-verified), frozen revision `0dc97e0d28d8233463e005cdc4475cc2a13ba2dc`. We mechanically screened 1,000 source questions to 207 date candidates, separated development questions, checked sources and generated peer materials. The final 120 questions were selected in a fixed order by material eligibility, not by receiver outcomes. This is a selected factual subset, not representative everyday AI use.
 
-# Experimental design
+# Module A: natural cross-checking
+
+## Design and scope
+
+We selected 36 previously studied factual questions with a fixed R seed after excluding the frozen set of 18 previously flagged reference/source items, without selecting on model outcomes. We retained all 13 eligible mathematical items from the previous supplement. These are 49 previously seen questions, not a fresh population sample. DeepSeek, Kimi and MiniMax each provide one natural independent initial answer per question, with no assigned correct or wrong target. The planned run contains 147 units and 588 outputs.
+
+|Condition|What the receiver sees|Purpose|
+|---|---|---|
+|N0|Original question only|Direct independent answer|
+|N1|Original question and its own N0|Ordinary self-check|
+|N2|Same N0 plus a different model's independent N0 and reason|Natural peer-check|
+|N3|Exactly the same peer material as N2|Structured peer-check|
+
+Each revision is a separate branch from N0. Donor direction is fixed and balanced within task domain as far as the odd mathematics count permits. A donor's uncertainty or wrong answer is retained without rewriting. No tested model has search tools. The receiver makes one additional call in N1/N2/N3, but peer-checking also requires the donor's independent call in practical deployment; equal receiver calls do not mean equal end-to-end cost.
+
+**The primary contrast is N2 minus N1**, isolating the added peer information relative to another attempt by the same receiver. Secondary contrasts are N2 minus N0 and N3 minus N2. All use the same selected questions and report correct, wrong and abstaining outcomes. The code excludes unavailable or invalid baseline/donor inputs transparently rather than replacing substantive answers. Missing outputs are not coded as abstentions. Pairwise results use the available complete pair; common-four-output tables and missing-output bounds are retained separately.
+
+## Observed results
+
+The run logged **573 HTTP attempts** and **573 returned task records** out of **588 planned outputs**. Paid-provider conservative usage estimate: **CNY 3.33**; HKU tokens are tracked separately and its cash price is unknown.
+
+
+
+|Domain      |Group |   N| Correct| Wrong| Abstain| Error %|
+|:-----------|:-----|---:|-------:|-----:|-------:|-------:|
+|facts       |N0    | 101|      25|    36|      40|   35.64|
+|facts       |N1    | 101|      18|    39|      44|   38.61|
+|facts       |N2    | 101|      29|    35|      37|   34.65|
+|facts       |N3    | 101|      24|    27|      50|   26.73|
+|mathematics |N0    |  37|      27|    10|       0|   27.03|
+|mathematics |N1    |  37|      35|     2|       0|    5.41|
+|mathematics |N2    |  37|      37|     0|       0|    0.00|
+|mathematics |N3    |  37|      37|     0|       0|    0.00|
+
+<img src="../Natural_Crosscheck/reports/error_rates.png" alt="" width="100%" />
+
+
+|Domain      |A minus B | Pairs| Difference (pp)|95% interval     |
+|:-----------|:---------|-----:|---------------:|:----------------|
+|facts       |N2-N1     |   102|           -4.90|[-16.19, 5.94]   |
+|facts       |N2-N0     |   102|           -1.96|[-9.00, 4.90]    |
+|facts       |N3-N2     |   101|           -7.92|[-15.46, 0.00]   |
+|mathematics |N2-N1     |    37|           -5.41|Descriptive only |
+|mathematics |N2-N0     |    37|          -27.03|Descriptive only |
+|mathematics |N3-N2     |    37|            0.00|Descriptive only |
+
+A negative difference means fewer wrong outputs in the first condition. Factual intervals use 5,000 whole-question bootstrap draws, preserving all receiving models together, with seed 25011003. They are pointwise exploratory intervals, not adjusted for multiple comparisons. Mathematical variants belong to only four families, so their counts and paired differences remain descriptive. The domains are not matched for difficulty and cannot establish a universal ranking of fact checking versus logic.
+
+Relative to self-checking, natural peer-checking changes factual error by **-4.90 percentage points**, with interval **[-16.19, 5.94]**. Its mathematical difference is **-5.41 points**, interpreted descriptively. These comparisons test this particular one-round workflow; they do not evaluate every multi-agent architecture.
+
+The common-four factual bars differ by -3.96 points for N2 minus N1, while the primary complete-pair comparison differs by -4.90 points because it includes one additional unit. These denominators are deliberately disclosed, not interchanged. Model-specific factual N2 minus N1 differences are -14.29 points for DeepSeek, +20.59 for Kimi and -21.21 for MiniMax. A pooled benefit cannot be assumed for every model.
+
+AI review covered 319 actual responses in a 334-slot queue, including all 151 returned mathematical responses. Eight of ten initial mathematical field errors already have a correct reasoning endpoint; the other two are addition errors. Self-checking repairs those eight field errors, and peer-checking repairs the two remaining arithmetic mistakes. Giving credit for the already-correct endpoints in a separate diagnostic reduces the N0/N2 mathematical difference from -27.03 to -5.41 points. Zero errors in the small peer-check sample does not establish zero risk.
+
+The frozen parser misses four ISO year-month answers and one mathematical JSON after LaTeX braces. A format-only sensitivity gives -4.85 points for the primary factual contrast (103 pairs), and -6.80 for N3 minus N2. The first still has an interval spanning zero. Three invalid baseline inputs led to 15 skipped branches; correcting extraction cannot recover calls never made. We retain these losses and the original scores. The new review also preserves premise/naming concerns and abstentions containing unverified assertions. See [the module A report](../Natural_Crosscheck/reports/report.md) and its individual annotations.
+
+The primary score evaluates final answer fields. Correct-looking explanations can conflict with final fields, and an explicit abstention can still contain unsupported prose. The AI semantic review and its scope are recorded separately in the natural-supplement report. Neither final-field accuracy nor agreement between models proves external verification. These results do not isolate the advantage of different models over two independent calls to the same model, or reproduce the unavailable codex-claude-collab skill exactly.
+
+# Modules B and C: controlled advice design
 
 Three APIs: `deepseek-v4-pro`, `kimi-k2.6`, and HKU-forwarded `MiniMax-M3`. Requests use temperature 0.6, thinking disabled and a 768-token output limit. Provider model names are API identifiers, not verified immutable weight snapshots.
 
@@ -56,7 +116,7 @@ The factual run made **5,042 HTTP attempts**, including two 502 failures and one
 
 Correct-to-wrong rates condition on initially correct answers. Correction rates condition on initially wrong answers. Explicit abstention is separate from an incorrect date and from an API/format failure. A matching final date does not certify the entire explanation. Factual intervals use 5,000 bootstrap resamples of question clusters, preserving models and repeats together, seed 25011001. They do not correct selection or reference-label bias.
 
-# Factual results
+# Controlled factual results
 
 
 |Condition |   N| Correct| Wrong| Abstain| Correct to wrong| Wrong to correct|
@@ -165,7 +225,7 @@ The 17 unscorable outputs include 12 omitted required `solutions` fields, three 
 
 # Conclusion and proposed solution
 
-In this selected factual set, the supplemental paired analysis supports two qualified findings: misleading input increases wrong output relative to neutral rechecking, and a structured check reduces wrong output under identical misleading materials. Much of that reduction comes from withholding unsupported answers. Ordinary rechecking does not show the same benefit. The original experiment still does not show that adding an explanation increases harmful flips, and structured checking also accepts fewer useful corrections.
+Module A estimates 4.90 percentage points fewer factual errors with peer-checking than self-checking, but its interval spans zero and receiver-model results differ. The small mathematics comparison repairs two addition errors beyond self-checking; most initial field-error reduction reflects explanations that were already correct. These findings support conditional, rather than automatic, additional confidence in this specific workflow. Modules B/C answer a complementary conditional question: what happens when a checker supplies a known wrong or correct suggestion? In the original selected factual set, the supplemental paired analysis supports two qualified findings: misleading input increases wrong output relative to neutral rechecking, and a structured check reduces wrong output under identical misleading materials. Much of that reduction comes from withholding unsupported answers. Ordinary rechecking does not show the same benefit. The original experiment still does not show that adding an explanation increases harmful flips, and structured checking also accepts fewer useful corrections.
 
 The practical implication is to avoid treating AI output or one's own unverified premise as established fact. Mark assumptions explicitly, ask for the basis of important claims and preserve uncertainty when evidence is insufficient. Abstention can be useful without being a factual solution. Its effects on human thinking and decisions require a separate study.
 

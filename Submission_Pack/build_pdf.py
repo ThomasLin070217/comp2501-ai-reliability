@@ -49,7 +49,7 @@ def inline(tokens):
 src=(pack/'report.md').read_text()
 src=re.sub(r'^---\n.*?\n---\n','',src,count=1,flags=re.S)
 tokens=MarkdownIt('commonmark',{'html':True}).enable('table').parse(src)
-story=[Paragraph('Can Structured Double-Checking<br/>Resist Misleading AI Peers?',styles['Title']),Paragraph('LINYUNIAN and PAN ZHENGYU',styles['Heading2']),Paragraph('COMP2501 project / Updated 3 October 2026',styles['Caption']),Spacer(1,10)]
+story=[Paragraph('Can We Trust AI More<br/>After Cross-Checking?',styles['Title']),Paragraph('LINYUNIAN and PAN ZHENGYU',styles['Heading2']),Paragraph('COMP2501 project / Updated 3 October 2026',styles['Caption']),Spacer(1,10)]
 width=A4[0]-104
 def addimage(raw):
     f=Path(raw)
@@ -90,6 +90,6 @@ while i<len(tokens):
         story.extend([KeepTogether(group),Spacer(1,12)])
     i+=1
 def footer(canvas,doc):
-    canvas.saveState();canvas.setFont(body_font,8);canvas.setFillColor(colors.HexColor('#657586'));canvas.drawString(52,30,'COMP2501 / AI peer reliability');canvas.drawRightString(A4[0]-52,30,str(doc.page));canvas.restoreState()
-SimpleDocTemplate(str(out),pagesize=A4,rightMargin=52,leftMargin=52,topMargin=43,bottomMargin=48,title='Can Structured Double-Checking Resist Misleading AI Peers?',author='LINYUNIAN and PAN ZHENGYU').build(story,onFirstPage=footer,onLaterPages=footer)
+    canvas.saveState();canvas.setFont(body_font,8);canvas.setFillColor(colors.HexColor('#657586'));canvas.drawString(52,30,'COMP2501 / Cross-checking and AI reliability');canvas.drawRightString(A4[0]-52,30,str(doc.page));canvas.restoreState()
+SimpleDocTemplate(str(out),pagesize=A4,rightMargin=52,leftMargin=52,topMargin=43,bottomMargin=48,title='Can We Trust AI More After Cross-Checking?',author='LINYUNIAN and PAN ZHENGYU').build(story,onFirstPage=footer,onLaterPages=footer)
 print(out)

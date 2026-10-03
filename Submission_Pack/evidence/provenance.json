@@ -8,7 +8,11 @@
     "Peer_Misleading_Study/reports/interaction_posthoc/effects.csv": "327072bc641dd7243f5e5adde4c84d4db46ec4cc347d6c7e18d6b8cc53e8ddbd",
     "Peer_Misleading_Study/reports/interaction_posthoc/transitions.csv": "173db9fc03b56bd65365b19ce75ed55ae45f887f41c1077561d61775fe291ba0",
     "Peer_Misleading_Study/reports/interaction_posthoc/review_audit.json": "4ac42bb18ba3d2c61a26dbd5aff28af918f7f7657a310de1c2bd8e5b356131b8",
-    "Peer_Misleading_Study/reports/interaction_posthoc/reproducibility.json": "6dc4ca332ef80f262ffc935eea7fb9dede1b65fe0fab9476327b4e7b8f77e5bc"
+    "Peer_Misleading_Study/reports/interaction_posthoc/reproducibility.json": "6dc4ca332ef80f262ffc935eea7fb9dede1b65fe0fab9476327b4e7b8f77e5bc",
+    "Natural_Crosscheck/reports/tables.csv": "2170d7a38720e69cfc1229a7af0bbe385743e19f91417b8d1f154690cae5cf48",
+    "Natural_Crosscheck/reports/effects.csv": "46c95e18e5ea56513e48db3a72e0d1843c201c1ee14acff7070228a8c57f7813",
+    "Natural_Crosscheck/reports/summary.json": "a1e66f2acfa0de481ee04320ac932b03ae1687b29d87e6749ec5e30be852caf1",
+    "Natural_Crosscheck/reports/transitions.csv": "2c65e756e9ded9107b46374bd0a96ed31193292f2f7e5c06081dffb7e7be34e8"
   },
   "processing": "R only; document layout in JS/Python does not calculate experimental results"
 }
