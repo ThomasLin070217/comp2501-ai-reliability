@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-03T14:54:39Z",
+  "scope": "All returned mathematical N0 responses. Baseline outcomes inspected while fixed branch collection runs; no request or sample changes.",
+  "responses": 246,
+  "counts": {
+    "abstain": 2,
+    "correct": 204,
+    "incorrect": 16,
+    "unscorable": 24
+  }
+}

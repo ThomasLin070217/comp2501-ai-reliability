@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-03T14:55:44Z",
+  "checks": {
+    "circular_permutations": true,
+    "line_permutations": true,
+    "circular_triple_products_full_rank": true,
+    "repeated_twos_mod": true,
+    "Josephus_one_based": true,
+    "polynomial_coefficient": true,
+    "identical_cookies": true
+  },
+  "model_calls": 0,
+  "scope": "Independent exact R arithmetic/enumeration for selected displayed mistakes; not a formal verification of all reference proofs."
+}
