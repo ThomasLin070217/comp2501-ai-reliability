@@ -1,0 +1,7 @@
+"task_id","semantic_grade","evidence","reviewer"
+"SV0700:kimi:r1:N0","incorrect","The claimed 1960s is incompatible with the reference 1866; it is not merely missing single-year precision.","Codex AI; targeted post-hoc target-answer meaning review"
+"CHAMP:P_Number-Theory_17:kimi:r2:N0","correct","The final string 7744 = 88² unambiguously identifies the required square number.","Codex AI; targeted post-hoc target-answer meaning review"
+"CHAMP:P_Number-Theory_17:kimi:r2:N3","correct","The final string 7744 = 88² unambiguously identifies the required square number.","Codex AI; targeted post-hoc target-answer meaning review"
+"SV0541:kimi:r2:N1","incorrect","The answer field gives only 1967, but the response explicitly asserts the requested commencement date as 12 October 1967, conflicting with 17 November 1967.","Codex AI; targeted post-hoc target-answer meaning review"
+"CHAMP:P_Number-Theory_17:kimi:r2:N1","correct","The final string 7744 = 88² unambiguously identifies the required square number.","Codex AI; targeted post-hoc target-answer meaning review"
+"SV0491:kimi:r2:W0","uncertain","Nonempty answer 1983 conflicts with abstain=true and prose explicitly saying the year cannot be determined. Do not force this ambiguous mixed output into either wrong or abstain; retain it as unscorable.","Codex AI; targeted post-hoc target-answer meaning review"
