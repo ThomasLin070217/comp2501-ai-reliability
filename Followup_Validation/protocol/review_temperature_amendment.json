@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-03T15:52:03Z",
+  "reason": "Kimi K2.6 requires temperature 0.6 in non-thinking mode; 0 is rejected. All first three review calls were HTTP 400 and produced no judgments.",
+  "official_source": "https://platform.moonshot.cn/docs/guide/kimi-k2-6-quickstart",
+  "temperature_before": 0,
+  "temperature_after": 0.6,
+  "archived_failed_attempts": 3,
+  "setup_guard_cny": 0.92638,
+  "total_review_guard_cap_cny": 8,
+  "all_41_jobs_to_receive_first_actual_judgment": true,
+  "original_implementation_sha256": "05900b16521276f4e0bc46414a70e1154d0f1e85ad2c550c1e577eccf31eeb39"
+}

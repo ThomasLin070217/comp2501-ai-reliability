@@ -1,0 +1,10 @@
+# One-time configuration correction; initial HTTP 400 requests had no judgments.
+source('Followup_Validation/R/common.R');p<-file.path(VROOT,'review');ar<-file.path(p,'configuration_error');stopifnot(!dir.exists(ar))
+r<-read_jsonl(file.path(p,'responses.jsonl'));stopifnot(length(r)==3,all(vapply(r,function(x)identical(x$http_status,400L)&&x$status=='transport_error'&&is.null(x$text),TRUE)))
+dir.create(ar);for(f in c('requests.jsonl','responses.jsonl','protocol.json'))stopifnot(file.copy(file.path(p,f),file.path(ar,f)))
+jobs<-read_jsonl(file.path(p,'requests.jsonl'));stopifnot(all(vapply(jobs,function(j)j$request$temperature==0,TRUE)))
+jobs<-lapply(jobs,function(j){j$request$temperature<-0.6;j});write_jsonl(jobs,file.path(p,'requests.jsonl'))
+stopifnot(file.remove(file.path(p,'responses.jsonl')))
+setup<-sum(vapply(r,function(x)x$cost_guard_cny,0))
+write_json(list(time=now(),reason='Kimi K2.6 requires temperature 0.6 in non-thinking mode; 0 is rejected. All first three review calls were HTTP 400 and produced no judgments.',official_source='https://platform.moonshot.cn/docs/guide/kimi-k2-6-quickstart',temperature_before=0,temperature_after=0.6,archived_failed_attempts=3,setup_guard_cny=setup,total_review_guard_cap_cny=8,all_41_jobs_to_receive_first_actual_judgment=TRUE,original_implementation_sha256=file_sha(file.path(VROOT,'R/review_math.R'))),file.path(VROOT,'protocol/review_temperature_amendment.json'))
+cat('Preserved three rejected requests; temperature corrected before any review judgment; setup guard',setup,'retained.\n')

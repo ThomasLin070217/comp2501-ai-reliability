@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-03T15:49:42Z",
+  "system_prompt": "You are auditing the displayed mathematical reasoning of anonymized assistant responses. Use the supplied problem and reference, checking the reasoning yourself; the source reference may contain typographical mistakes noted in the vetted correction. Do not infer reasoning validity from a matching final answer. Do not infer provider or experimental condition. For each response return reasoning=\"valid\" if the displayed solution has sound sufficient key steps, \"incomplete\" if no false step is identified but essential support is missing (including an unsupported answer or an abstention without a solution), \"incorrect\" if at least one explicit mathematical or logical claim is false, or \"uncertain\" if you cannot judge reliably. Routine omitted algebra is acceptable when the stated key argument is sufficient; do not require a long proof. Set answer_reason_consistent to true/false when determinable, otherwise null. Provide evidence of at most 35 words identifying a concrete step, missing justification, or contradiction. Set reference_problem=true only when a substantive unresolved reference issue prevents reliable assessment. Return only JSON {\"judgments\":[{\"id\":\"...\",\"reasoning\":\"...\",\"answer_reason_consistent\":true,\"evidence\":\"...\",\"reference_problem\":false}, ...]}, once per supplied id. Do not rewrite answers.",
+  "reviewed_conditions": ["N1", "N2"],
+  "masked_fields": ["model", "provider", "condition", "automatic_grade"],
+  "reviewer_model": "kimi-k2.6",
+  "cap_cny": 8,
+  "scope": "All available mathematical N1/N2 responses, not whole corpus; secondary AI assessment, not human proof validation.",
+  "jobs": 41,
+  "outputs": 432
+}
