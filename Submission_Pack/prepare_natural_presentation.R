@@ -39,3 +39,5 @@ write_json(d,'Submission_Pack/evidence/artifact_content.json')
 writeLines(c('# Speaker notes: Can We Trust AI More After Cross-Checking?','', 'LINYUNIAN and PAN ZHENGYU. Suggested 18-minute talk (1080 seconds), plus 2 minutes Q&A. Suggested speaking split: LINYUNIAN slides1-9 and PAN ZHENGYU slides10-18; this is a rehearsal suggestion, not a claim about research contributions.','',unlist(lapply(1:18,function(i)c(paste('## Slide',i),d$notes[[i]],'')))),'Submission_Pack/speaker_notes.md')
 prov<-read_json('Submission_Pack/evidence/provenance.json');extra<-c('Natural_Crosscheck/reports/tables.csv','Natural_Crosscheck/reports/effects.csv','Natural_Crosscheck/reports/summary.json','Natural_Crosscheck/reports/transitions.csv');prov$source_sha256<-c(prov$source_sha256,setNames(lapply(extra,file_sha),extra));write_json(prov,'Submission_Pack/evidence/provenance.json')
 cat('Natural results and18-slide notes exported in R.\n')
+
+note_lines<-readLines('Submission_Pack/speaker_notes.md');while(length(note_lines)&&!nzchar(tail(note_lines,1)))note_lines<-head(note_lines,-1);writeLines(note_lines,'Submission_Pack/speaker_notes.md')
