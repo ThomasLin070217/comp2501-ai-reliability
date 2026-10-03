@@ -11,7 +11,7 @@ const {resolvePresentationFont,applyPresentationChartFont,finalizePresentation}=
 const font=resolvePresentationFont();
 const d=JSON.parse(await fs.readFile('Submission_Pack/evidence/artifact_content.json','utf8'));
 const v=JSON.parse(await fs.readFile('Submission_Pack/evidence/visualization_data.json','utf8'));
-const build=path.join(root,'.submission-build','chart-revision');await fs.mkdir(build,{recursive:true});
+const build=path.join(root,'.submission-build','simple-bars');await fs.mkdir(build,{recursive:true});
 const p=Presentation.create({slideSize:{width:1280,height:720}});
 const navy='#142C40',teal='#147E77',red='#C45F48',muted='#657586',bg='#FAFBFD';
 function text(s,t,x,y,w,h,size=30,color=navy,bold=false){const b=s.shapes.add({geometry:'textbox',position:{left:x,top:y,width:w,height:h},fill:'none',line:{fill:'none',width:0}});b.text=t;b.text.style={typeface:font,fontSize:size,bold,color,autoFit:'none'};return b;}
@@ -46,19 +46,20 @@ s=slide('Data, scoring and repeated responses');body(s,[
 s=slide('Few initially correct answers became wrong');chart(s,['C1','C2','C3'].map(fact),'correct_to_incorrect',['C1 Wrong only','C2 Wrong + reason','C3 Structured'],red);
 text(s,'Counts out of 154 initially correct units',72,550,1120,40,26,teal,true);
 text(s,'C2 - C1: -1.30 pp [-5.17, 2.31]   /   C3 - C2: -1.95 pp [-4.46, 0.00]',72,600,1130,58,24,muted);note(s,4);
-s=slide('How much does the error rate change?');
-const forestSeries=[{name:'No difference',xValues:[0,0],values:[0,6],line:{fill:muted,width:1},marker:{symbol:'none'}}];
-v.effects.forEach(e=>{
- forestSeries.push({name:e.comparison+' interval',xValues:[e.ci_low_pp,e.ci_high_pp],values:[e.y,e.y],line:{fill:navy,width:3},marker:{symbol:'none'}});
- forestSeries.push({name:e.comparison,xValues:[e.difference_pp],values:[e.y],line:{fill:'none'},fill:teal,marker:{symbol:'circle',size:9}});
-});
-const fc=s.charts.add('scatter',{position:{left:322,top:160,width:620,height:385},series:forestSeries,scatterOptions:{style:'lineWithMarkers'},hasLegend:false,xAxis:{min:-25,max:25,majorUnit:5,numberFormatCode:'0',textStyle:{fontSize:19}},yAxis:{min:0,max:6,visible:false,tickLabelPosition:'none',line:{fill:'none'},majorGridlines:null},dataLabels:{showValue:false}});applyPresentationChartFont(fc,{fontFamily:font});
-const flabels=['C0 - Initial','C1 - C0','C2 - C0','C3 - C2','C5 - C4'];
-v.effects.forEach((e,i)=>{text(s,flabels[i],75,201+i*57,240,42,26,navy,true);text(s,e.display,942,207+i*57,280,45,20,navy);});
-text(s,'Difference [95% interval]',938,157,295,40,20,muted);
-text(s,'Change in error rate (percentage points)',322,538,660,40,25,teal,true);
-text(s,'Left: fewer wrong answers. Right: more wrong answers.',72,586,1120,40,26);
-text(s,'Post hoc; 719 paired units; 120 question clusters. Pointwise bootstrap intervals.',72,636,1100,40,21,muted);note(s,12);
+s=slide('Wrong input and structured double-checking');
+text(s,'1  Misleading input',72,140,540,50,30,navy,true);
+text(s,'2  Structured double-check',668,140,545,50,30,navy,true);
+function errorBars(sl,conditions,categories,left,width){
+ const rr=conditions.map(c=>v.error_rates.find(z=>z.condition===c));
+ const colors={C0:muted,C1:red,C2:red,C3:teal};
+ const c=sl.charts.add('bar',{position:{left,top:215,width,height:330},categories,series:[{name:'Error rate',values:rr.map(z=>z.rate),valuesFormatCode:'0.00%',fill:red,points:rr.map((z,idx)=>({idx,fill:colors[z.condition]}))}],barOptions:{direction:'column',grouping:'clustered'},hasLegend:false,dataLabels:{showValue:true,position:'outEnd',textStyle:{fontSize:25,bold:true}},xAxis:{textStyle:{fontSize:21}},yAxis:{min:0,max:1,majorUnit:.25,numberFormatCode:'0%',textStyle:{fontSize:21}}});applyPresentationChartFont(c,{fontFamily:font});return c;
+}
+errorBars(s,['C0','C1','C2'],['C0 Neutral\nrecheck','C1 Wrong\nanswer','C2 Wrong +\nreason'],58,562);
+errorBars(s,['C2','C3'],['C2 Ordinary\nrecheck','C3 Structured\ncheck'],656,552);
+text(s,'+18.78 / +6.40 percentage points vs C0',72,552,560,50,23,red,true);
+text(s,'16.55 percentage points less error',676,552,530,50,23,teal,true);
+text(s,'Error rate = wrong / (correct + wrong + abstain). Each group: 719.',72,608,1140,38,24,navy,true);
+text(s,'Abstentions are not errors and stay in the denominator. Post-hoc comparisons.',72,654,1100,32,21,muted);note(s,12);
 s=slide('Most avoided errors became abstentions');
 const ht=table(s,d.transition_table,190,292,[275,287,287,287],29);
 for(let r=1;r<4;r++)for(let c=1;c<4;c++){const cell=ht.getCell(r,c);cell.fill=v.heat_colors[r-1][c-1];cell.text.style={typeface:font,fontSize:29,color:Number(d.transition_table[r][c])>180?'#FFFFFF':navy,bold:true};}

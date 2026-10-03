@@ -1,4 +1,62 @@
 {
+  "error_rates": [
+    {
+      "condition": "baseline",
+      "wrong": 322,
+      "correct": 154,
+      "abstain": 243,
+      "n": 719,
+      "rate": 0.447844228094576
+    },
+    {
+      "condition": "C0",
+      "wrong": 331,
+      "correct": 130,
+      "abstain": 258,
+      "n": 719,
+      "rate": 0.460361613351878
+    },
+    {
+      "condition": "C1",
+      "wrong": 466,
+      "correct": 162,
+      "abstain": 91,
+      "n": 719,
+      "rate": 0.648122392211405
+    },
+    {
+      "condition": "C2",
+      "wrong": 377,
+      "correct": 162,
+      "abstain": 180,
+      "n": 719,
+      "rate": 0.524339360222531
+    },
+    {
+      "condition": "C3",
+      "wrong": 258,
+      "correct": 141,
+      "abstain": 320,
+      "n": 719,
+      "rate": 0.358831710709319
+    },
+    {
+      "condition": "C4",
+      "wrong": 217,
+      "correct": 353,
+      "abstain": 149,
+      "n": 719,
+      "rate": 0.301808066759388
+    },
+    {
+      "condition": "C5",
+      "wrong": 183,
+      "correct": 193,
+      "abstain": 343,
+      "n": 719,
+      "rate": 0.25452016689847
+    }
+  ],
   "effects": [
     {
       "variant": "primary",

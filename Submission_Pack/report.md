@@ -81,18 +81,11 @@ With correct peer advice, successful correction fell from **76/322 in C4 to 45/3
 
 The original outcomes above focus on initially correct or initially wrong answers. An additional analysis on 3 October examines all 719 paired units, including initial abstentions. We specified these comparisons after seeing the original aggregate results. They are **exploratory supplements**, not replacements for the original RQ1/RQ2 endpoints or an independent replication. Original grades remain unchanged.
 
-The error rate here is the number of wrong final answers divided by all 719 units. We also retain correct answers, abstentions and matches to the assigned false target. Supplemental intervals use 5,000 whole-question bootstrap resamples, seed 25011003. They are pointwise and not adjusted for multiple comparisons.
+**Error rate = wrong / (correct + wrong + abstain). Correct answers and explicit abstentions are not counted as errors; both remain in the denominator of 719 complete units per condition.** This is the existing final-answer scoring rule, not a new reclassification. It does not certify every claim in the explanation. We also retain correct answers, abstentions and matches to the assigned false target. Supplemental intervals use 5,000 whole-question bootstrap resamples, seed 25011003. They are pointwise and not adjusted for multiple comparisons.
 
-<img src="figures/error_effects.png" alt="" width="100%" />
+<img src="figures/error_rate_comparisons.png" alt="" width="100%" />
 
 
-|A versus B     |B error rate |A error rate |A minus B (pp) |95% interval (pp) |
-|:--------------|:------------|:------------|:--------------|:-----------------|
-|C0_vs_baseline |44.78%       |46.04%       |+1.25          |[-3.06, 5.56]     |
-|C1_vs_C0       |46.04%       |64.81%       |+18.78         |[14.35, 23.09]    |
-|C2_vs_C0       |46.04%       |52.43%       |+6.40          |[1.94, 10.99]     |
-|C3_vs_C2       |52.43%       |35.88%       |-16.55         |[-20.70, -12.38]  |
-|C5_vs_C4       |30.18%       |25.45%       |-4.73          |[-7.37, -2.22]    |
 
 Wrong advice alone raises error relative to neutral rechecking by **18.78 percentage points**. Wrong advice with an explanation raises it by **6.40 points**. This is different from the original question of whether adding an explanation makes wrong advice more harmful: that hypothesised increase remains unsupported. Ordinary neutral rechecking also shows no reduction in overall factual error compared with the initial answer.
 
@@ -187,3 +180,19 @@ Project team: **LINYUNIAN and PAN ZHENGYU**. We acknowledge the public dataset, 
 The accompanying repository contains frozen inputs, raw requests/responses, deviations, reviewer records and R reproduction entry points. No credentials are included. Offline reproduction does not require API calls. Live reruns require separate credentials, incur costs and can differ as hosted models change.
 
 Repository: <https://github.com/ThomasLin070217/comp2501-ai-reliability>
+
+
+# Supplementary statistical detail
+
+The main figures show the observed error rates directly. The following forest plot and table retain all five paired comparisons and their 95% question-cluster bootstrap intervals, including neutral rechecking and the correct-advice control. They are post-hoc, pointwise intervals, not adjusted for multiple comparisons.
+
+<img src="figures/error_effects.png" alt="" width="100%" />
+
+
+|A versus B     |B error rate |A error rate |A minus B (pp) |95% interval (pp) |
+|:--------------|:------------|:------------|:--------------|:-----------------|
+|C0_vs_baseline |44.78%       |46.04%       |+1.25          |[-3.06, 5.56]     |
+|C1_vs_C0       |46.04%       |64.81%       |+18.78         |[14.35, 23.09]    |
+|C2_vs_C0       |46.04%       |52.43%       |+6.40          |[1.94, 10.99]     |
+|C3_vs_C2       |52.43%       |35.88%       |-16.55         |[-20.70, -12.38]  |
+|C5_vs_C4       |30.18%       |25.45%       |-4.73          |[-7.37, -2.22]    |

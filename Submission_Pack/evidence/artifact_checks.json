@@ -1,12 +1,12 @@
 {
   "sha256": {
-    "Submission_Pack/COMP2501_report.pdf": "a5c768c62365a30ea6896935528b33d4962f5441740d664330a80a4190a17a2f",
-    "Submission_Pack/COMP2501_presentation.pptx": "d6eb975ce352bd8aacd68b0458ec8aeb1b0e5289b46bb02d7f20500a41f5a69f",
-    "Submission_Pack/report.Rmd": "11729921ce48251d6fe4188ba3f368c2e1dddac1504a6f2a27efea260c7a412e",
+    "Submission_Pack/COMP2501_report.pdf": "11f47749de40667e5396fd48aeb4bd79356f07188ca78005cbd7f9f80d1aca03",
+    "Submission_Pack/COMP2501_presentation.pptx": "a622ca8cf44a063b36c80082d55fd8609a0ceb1b05731732c41ccc0704d1603e",
+    "Submission_Pack/report.Rmd": "e3fe9e7d1b7aaf7aba4472678598392adb41545d073c357bd862506d0b7ed11a",
     "Submission_Pack/proposal.md": "3f95c9b4e20246a420deaacfe2449a7898a510e7b902f9fbda2a097adb50fadc"
   },
   "presentation_slide_count": 16,
-  "native_charts": 6,
+  "native_charts": 7,
   "native_table_owner_slides": [3, 7, 10],
   "finalizer_package_integrity": "pass",
   "finalizer_layout": "pass",
@@ -21,5 +21,5 @@
     "source_provenance_hashes": "pass",
     "PDF_key_result_text": "pass"
   },
-  "visual_review_note": "Four changed final slide renders and all nine final PDF pages visually inspected; twelve unchanged slide renders are byte-identical to the previously inspected version. Percent labels round to one decimal. Forest-plot points and bounds match the R analysis."
+  "visual_review_note": "Changed final slide 6 and all nine final PDF pages visually inspected; fifteen unchanged slide renders are byte-identical to the previously inspected version. Two main error-rate bar charts use the same 0–100% axis and two-decimal labels. The denominator includes correct, wrong and abstaining answers. Interval analysis remains in the PDF supplement."
 }
