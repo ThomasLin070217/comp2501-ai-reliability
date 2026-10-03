@@ -2,14 +2,14 @@
 source('Followup_Validation/R/common.R');library(knitr)
 p<-file.path(VROOT,'reports');e<-read.csv(file.path(p,'effects.csv'));s<-read_json(file.path(p,'summary.json'));v<-read_json(file.path(p,'validation.json'))
 tab<-function(x)paste(capture.output(print(knitr::kable(x,format='pipe',row.names=FALSE))),collapse='\n')
-get<-function(domain,comp,metric='error')subset(e,e$domain==domain&provider=='pooled'&comparison==comp&e$metric==metric)
-f<-get('facts','N2-N1');m<-get('mathematics','N2-N1')
+effect_row<-function(domain,comp,metric='error')e[e$domain==domain&e$provider=='pooled'&e$comparison==comp&e$metric==metric,]
+f<-effect_row('facts','N2-N1');m<-effect_row('mathematics','N2-N1');stopifnot(nrow(f)==1,nrow(m)==1)
 row<-function(z,name)data.frame(题目=name,有效配对=z$n,自行复核错误=sprintf('%d/%d = %.2f%%',z$before_n,z$n,z$before_pct),跨模型复核错误=sprintf('%d/%d = %.2f%%',z$after_n,z$n,z$after_pct),变化百分点=sprintf('%+.2f',z$difference_pp),调整后区间=sprintf('[%.2f, %.2f]',z$familywise_low,z$familywise_high),check.names=FALSE)
 conclusion<-function(z){if(z$familywise_high<0)'本轮数据支持：在这批题目上，跨模型复核比自行复核少产生错误回答。'else if(z$familywise_low>0)'本轮数据支持：在这批题目上，跨模型复核比自行复核产生更多错误回答。'else'区间仍包含零，尚不能确认跨模型复核具有稳定的净收益；不能只根据点估计宣称有效。'}
 w<-subset(e,provider=='pooled'&domain=='facts'&metric=='error'&comparison%in%c('W1-W0','W2-W1','W2-W0'))
 namesw<-c('W1-W0'='核验提示（无额外弃答提醒） − 普通复核','W2-W1'='有额外弃答提醒 − 无额外弃答提醒','W2-W0'='原完整核验提示 − 普通复核')
 wt<-data.frame(比较=unname(namesw[w$comparison]),有效配对=w$n,错误率变化百分点=sprintf('%+.2f',w$difference_pp),区间95=sprintf('[%.2f, %.2f]',w$ci_low,w$ci_high),check.names=FALSE)
-counts<-do.call(rbind,lapply(c('facts','mathematics'),function(domain){z<-subset(e,e$domain==domain&provider=='pooled'&comparison=='N2-N1');data.frame(题型=domain,指标=z$metric,分母=z$n,自行复核=z$before_n,跨模型复核=z$after_n,check.names=FALSE)}))
+counts<-do.call(rbind,lapply(c('facts','mathematics'),function(domain){z<-e[e$domain==domain&e$provider=='pooled'&e$comparison=='N2-N1',];data.frame(题型=domain,指标=z$metric,分母=z$n,自行复核=z$before_n,跨模型复核=z$after_n,check.names=FALSE)}))
 ba<-read.csv(file.path(VROOT,'baseline_review/codex_annotations.csv'))
 reason<-if(file.exists(file.path(p,'reasoning_summary.csv')))paste('另有隐藏模型和组别的AI理由复核。下表中的标签来自Kimi，属于辅助证据，不是人工或形式化证明。缺少关键论证与明确推理错误分开记录。',tab(read.csv(file.path(p,'reasoning_summary.csv'))),sep='\n\n')else'理由复核尚无可用结果，不能据此声称推理严密性提高。'
 txt<-c('# 补测结果：交叉检查之后，我们能更信任 AI 吗？','',
