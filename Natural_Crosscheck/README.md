@@ -1,10 +1,12 @@
 # Natural cross-check supplement (module A)
 
-Status: protocol frozen on 2026-10-03, before new calls. User authorized execution after reviewing [architecture v2](../docs/experiment-architecture-v2.md). This is a post-hoc follow-up on previously studied questions, not a new held-out benchmark.
+Status: collection, R analysis and targeted AI review completed on 2026-10-03. Protocol frozen before new calls. User authorized execution after reviewing [architecture v2](../docs/experiment-architecture-v2.md). This is a post-hoc follow-up on previously studied questions, not a new held-out benchmark.
 
 49 questions (36 facts, 13 mathematics), three receiving models, one repeat. Each model answers independently (N0); its own answer seeds independent self-check (N1), natural peer-check (N2), and structured natural peer-check (N3) branches. A peer is a different model's independent answer to the same question, with no assigned truth target. Primary contrast N2−N1. All scoring, analysis and plots use R. No search tools are given to tested models.
 
-See [freeze](protocol/freeze.json), [input questions](protocol/questions.jsonl), [units](protocol/units.csv), [prompts](protocol/prompts.json), and [offline checks](protocol/offline-tests.json). Raw responses and skipped tasks will remain in `runs/`. Completed results will appear in `reports/`.
+See [freeze](protocol/freeze.json), [input questions](protocol/questions.jsonl), [units](protocol/units.csv), [prompts](protocol/prompts.json), and [offline checks](protocol/offline-tests.json). Raw responses and skipped tasks remain in `runs/`. See [completed report](reports/report.md), [effects](reports/effects.csv), [review](reports/ai_review_annotations.csv) and [reproduction checks](reports/reproducibility.json).
+
+573 calls returned;15 planned branches skipped after input eligibility failures. Factual primary N2−N1:−4.90pp,95% interval[−16.19,+5.94],102pairs. Mathematical primary:−5.41pp,37pairs,descriptive. The10initial mathematical field errors include8already-correct explanation endpoints and2arithmetic errors. Paid guard estimate¥3.33,HKU85,632tokens separately.
 
 ## Budget and collection
 

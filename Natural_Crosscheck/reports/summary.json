@@ -1,0 +1,33 @@
+{
+  "post_hoc": true,
+  "questions": 49,
+  "planned_outputs": 588,
+  "http_attempts": 573,
+  "returned_tasks": 573,
+  "status_counts": {
+    "not_requested": 15,
+    "ok": 573
+  },
+  "grade_counts": {
+    "abstain": 173,
+    "correct": 236,
+    "incorrect": 155,
+    "not_scorable": 15,
+    "unscorable": 9
+  },
+  "common_cells_by_domain": {
+    "facts": 101,
+    "mathematics": 37
+  },
+  "review_outputs": 334,
+  "paid_guard_cny": 3.32665,
+  "prior_new_paid_guard_cny": 15.433696,
+  "cumulative_new_paid_guard_cny": 18.760346,
+  "hku_price_unknown": true,
+  "input_hashes": {
+    "deepseek": "bc14a3e414653a0041fb3834aead6668d987c7624b7feff8bda400e5ac2a3cb8",
+    "kimi": "8e4d590bc57ce517a147b4ad8fcc7a8f8f7735653da255d4ed08f6e6ed3df59b",
+    "minimax": "0a8b9efbffdf5c67b328341ed3cd26888604f84b1c2a4ac43a3ad9c210f897dc"
+  },
+  "frozen_hashes_verified": true
+}

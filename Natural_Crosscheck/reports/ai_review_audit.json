@@ -1,0 +1,14 @@
+{
+  "reviewer": "Codex",
+  "independent_human": false,
+  "blind": false,
+  "queued_slots": 334,
+  "responses_read": 319,
+  "uncollected_slots": 15,
+  "math_initial_errors": 10,
+  "math_initial_correct_reason_endpoint": 8,
+  "math_initial_arithmetic_errors": 2,
+  "all_explanatory_facts_externally_verified": false,
+  "queue_sha256": "92a0c5e981e5b79de203bf80a792f9026ea2aeb9f8d07b3c3d10df48e4c053e2",
+  "annotations_sha256": "457160a8f7a34673d22264f1979bfd52c7d6730c7cffd096d1f49093cbaf7610"
+}

@@ -1,0 +1,4 @@
+"provider","attempts","input_tokens","output_tokens","token_envelope_cny","paid_provider"
+"deepseek",196,46901,12660,1.57102,TRUE
+"kimi",190,48124,15863,1.75563,TRUE
+"minimax",187,73402,12230,2.07954,FALSE

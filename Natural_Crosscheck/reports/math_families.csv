@@ -1,0 +1,17 @@
+"family","condition","n","wrong","correct","abstain"
+"integer","N0",3,0,3,0
+"integer","N1",3,0,3,0
+"integer","N2",3,0,3,0
+"integer","N3",3,0,3,0
+"kiwi","N0",12,5,7,0
+"kiwi","N1",12,2,10,0
+"kiwi","N2",12,0,12,0
+"kiwi","N3",12,0,12,0
+"month","N0",12,0,12,0
+"month","N1",12,0,12,0
+"month","N2",12,0,12,0
+"month","N3",12,0,12,0
+"triangle","N0",10,5,5,0
+"triangle","N1",10,0,10,0
+"triangle","N2",10,0,10,0
+"triangle","N3",10,0,10,0

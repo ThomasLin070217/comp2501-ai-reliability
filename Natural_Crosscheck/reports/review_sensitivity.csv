@@ -1,0 +1,13 @@
+"scenario","domain","comparison","n","difference_pp","ci_low_pp","ci_high_pp"
+"format_only","facts","N2-N1",103,-4.85436893203883,-16.0408328568706,5.88235294117647
+"format_only","facts","N2-N0",103,-1.94174757281553,-9,4.90196078431373
+"format_only","facts","N3-N2",103,-6.79611650485437,-14.4230769230769,0.943396226415094
+"format_only","mathematics","N2-N1",37,-5.4054054054054,NA,NA
+"format_only","mathematics","N2-N0",37,-27.027027027027,NA,NA
+"format_only","mathematics","N3-N2",37,0,NA,NA
+"exclude_premise_and_naming","facts","N2-N1",96,-5.20833333333334,-17.5824175824176,6.74157303370786
+"exclude_premise_and_naming","facts","N2-N0",96,-1.04166666666667,-8.60215053763441,6.25
+"exclude_premise_and_naming","facts","N3-N2",95,-9.47368421052632,-17.2043010752688,-2.12765957446809
+"reason_endpoint_math","mathematics","N2-N1",37,-5.4054054054054,NA,NA
+"reason_endpoint_math","mathematics","N2-N0",37,-5.4054054054054,NA,NA
+"reason_endpoint_math","mathematics","N3-N2",37,0,NA,NA

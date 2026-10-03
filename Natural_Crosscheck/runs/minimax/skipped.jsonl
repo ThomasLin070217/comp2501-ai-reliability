@@ -1,0 +1,9 @@
+{"task_id":"SV0541:minimax:N1","question_id":"SV0541","provider":"minimax","condition":"N1","reason":"baseline_unavailable_or_invalid","time":"2026-10-03T13:49:02Z"}
+{"task_id":"SV0541:minimax:N2","question_id":"SV0541","provider":"minimax","condition":"N2","reason":"baseline_unavailable_or_invalid","time":"2026-10-03T13:50:34Z"}
+{"task_id":"M-triangle-1-trap:minimax:N3","question_id":"M-triangle-1-trap","provider":"minimax","condition":"N3","reason":"baseline_unavailable_or_invalid","time":"2026-10-03T13:51:20Z"}
+{"task_id":"SV3290:minimax:N1","question_id":"SV3290","provider":"minimax","condition":"N1","reason":"baseline_unavailable_or_invalid","time":"2026-10-03T13:52:07Z"}
+{"task_id":"M-triangle-1-trap:minimax:N2","question_id":"M-triangle-1-trap","provider":"minimax","condition":"N2","reason":"baseline_unavailable_or_invalid","time":"2026-10-03T13:52:32Z"}
+{"task_id":"SV3290:minimax:N3","question_id":"SV3290","provider":"minimax","condition":"N3","reason":"baseline_unavailable_or_invalid","time":"2026-10-03T13:52:41Z"}
+{"task_id":"SV3290:minimax:N2","question_id":"SV3290","provider":"minimax","condition":"N2","reason":"baseline_unavailable_or_invalid","time":"2026-10-03T13:52:48Z"}
+{"task_id":"M-triangle-1-trap:minimax:N1","question_id":"M-triangle-1-trap","provider":"minimax","condition":"N1","reason":"baseline_unavailable_or_invalid","time":"2026-10-03T13:53:49Z"}
+{"task_id":"SV0541:minimax:N3","question_id":"SV0541","provider":"minimax","condition":"N3","reason":"baseline_unavailable_or_invalid","time":"2026-10-03T13:54:37Z"}
