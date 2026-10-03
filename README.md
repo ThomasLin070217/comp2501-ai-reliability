@@ -10,6 +10,8 @@
 
 **检查资料包：[入口与提交说明](Submission_Pack/README.md) · [Proposal](Submission_Pack/proposal.md) · [英文报告PDF](Submission_Pack/COMP2501_report.pdf) · [演示稿](Submission_Pack/COMP2501_presentation.pptx) · [中文讲解](Submission_Pack/中文讲解.md)。**
 
+新版演示稿16页、PDF报告8页，已合入最新补充结果并署名 **LINYUNIAN、PAN ZHENGYU**；[讲稿](Submission_Pack/speaker_notes.md)按双人18分钟展示安排。
+
 新增[数学部分补充](Math_Supplement/README.md)：13道合格题、546条接收响应、71完整单元；原16题完整配对要求未达到，执行修订在接收前记录。16个初答字段错误中13个的解释已到达正确结果，不能把全部改善解释为逻辑能力提高。原事实主分析保持不变。
 
 **人工复核：[中文Excel（第一批6题45条）](outputs/01a0e6a9-review/COMP2501_人工复核.xlsx) · [填写说明](Peer_Misleading_Study/reports/readable_review/README.md)。** 用户已填写第一批6题来源判断和45条回答判定；审阅者/日期、冲突标记及部分编码仍待整理，尚未完成分歧裁决或合并主评分。其余171条仍为后续队列。

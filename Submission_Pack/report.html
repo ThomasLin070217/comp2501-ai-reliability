@@ -9,7 +9,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="LINYUNIAN and PAN ZHENGYU" />
 
+<meta name="date" content="2026-10-03" />
 
 <title>Can Structured Double-Checking Resist Misleading AI Peers?</title>
 
@@ -458,7 +460,8 @@ display: none;
 Misleading AI Peers?</h1>
 <h3 class="subtitle">COMP2501 project · factual experiment and
 mathematics supplement</h3>
-<h4 class="date">October 2026</h4>
+<h4 class="author">LINYUNIAN and PAN ZHENGYU</h4>
+<h4 class="date">3 October 2026</h4>
 
 </div>
 
@@ -477,6 +480,8 @@ denominators</a></li>
 <li><a href="#factual-results" id="toc-factual-results">Factual
 results</a>
 <ul>
+<li><a href="#supplementary-paired-analysis-post-hoc" id="toc-supplementary-paired-analysis-post-hoc">Supplementary paired
+analysis (post hoc)</a></li>
 <li><a href="#correctness-uncertainty-and-evidence" id="toc-correctness-uncertainty-and-evidence">Correctness, uncertainty
 and evidence</a></li>
 </ul></li>
@@ -498,6 +503,11 @@ reproducibility</a></li>
 introduce an error. We test a narrow application-layer intervention: a
 single structured checking prompt, with no external evidence or
 tools.</p>
+<p>The AI-generated suggestions simulate a person bringing an answer or
+explanation into an AI conversation. The actual prompt labels the source
+as another AI. This controlled proxy studies the risk of misleading
+input, without claiming that human and AI source labels have identical
+effects. No human interaction outcomes were measured.</p>
 <p><strong>RQ1:</strong> Given a wrong peer answer, does adding an
 explanation increase correct-to-wrong switching? <strong>RQ2:</strong>
 Does structured checking resist the same misleading material while
@@ -714,6 +724,161 @@ the reverse direction. The net difference of 31 does not mean there were
 only 31 adverse cases. More checking also increased abstention.
 Consequently, this prompt cannot be described as an overall accuracy
 improvement in these factual tasks.</p>
+<div id="supplementary-paired-analysis-post-hoc" class="section level2">
+<h2>Supplementary paired analysis (post hoc)</h2>
+<p>The original outcomes above focus on initially correct or initially
+wrong answers. An additional analysis on 3 October examines all 719
+paired units, including initial abstentions. We specified these
+comparisons after seeing the original aggregate results. They are
+<strong>exploratory supplements</strong>, not replacements for the
+original RQ1/RQ2 endpoints or an independent replication. Original
+grades remain unchanged.</p>
+<p>The error rate here is the number of wrong final answers divided by
+all 719 units. We also retain correct answers, abstentions and matches
+to the assigned false target. Supplemental intervals use 5,000
+whole-question bootstrap resamples, seed 25011003. They are pointwise
+and not adjusted for multiple comparisons.</p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="17%" />
+<col width="17%" />
+<col width="20%" />
+<col width="24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">A versus B</th>
+<th align="left">B error rate</th>
+<th align="left">A error rate</th>
+<th align="left">A minus B (pp)</th>
+<th align="left">95% interval (pp)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">C0_vs_baseline</td>
+<td align="left">44.78%</td>
+<td align="left">46.04%</td>
+<td align="left">+1.25</td>
+<td align="left">[-3.06, 5.56]</td>
+</tr>
+<tr class="even">
+<td align="left">C1_vs_C0</td>
+<td align="left">46.04%</td>
+<td align="left">64.81%</td>
+<td align="left">+18.78</td>
+<td align="left">[14.35, 23.09]</td>
+</tr>
+<tr class="odd">
+<td align="left">C2_vs_C0</td>
+<td align="left">46.04%</td>
+<td align="left">52.43%</td>
+<td align="left">+6.40</td>
+<td align="left">[1.94, 10.99]</td>
+</tr>
+<tr class="even">
+<td align="left">C3_vs_C2</td>
+<td align="left">52.43%</td>
+<td align="left">35.88%</td>
+<td align="left">-16.55</td>
+<td align="left">[-20.70, -12.38]</td>
+</tr>
+<tr class="odd">
+<td align="left">C5_vs_C4</td>
+<td align="left">30.18%</td>
+<td align="left">25.45%</td>
+<td align="left">-4.73</td>
+<td align="left">[-7.37, -2.22]</td>
+</tr>
+</tbody>
+</table>
+<p>Wrong advice alone raises error relative to neutral rechecking by
+<strong>18.78 percentage points</strong>. Wrong advice with an
+explanation raises it by <strong>6.40 points</strong>. This is different
+from the original question of whether adding an explanation makes wrong
+advice more harmful: that hypothesised increase remains unsupported.
+Ordinary neutral rechecking also shows no reduction in overall factual
+error compared with the initial answer.</p>
+<div id="misleading-input-can-turn-uncertainty-into-an-error" class="section level3">
+<h3>Misleading input can turn uncertainty into an error</h3>
+<p>Relative to C0, C1 has 158 abstain-to-wrong pairs and 25
+wrong-to-abstain pairs. For C2 the corresponding counts are 114 and 67.
+Assigned false-target matches rise from 11 in C0 to 251 in C1 and 147 in
+C2. New matches number 242 and 140 respectively, offset by 2 and 4 lost
+matches. Of the new matches, 176 and 103 come from units whose shared
+initial answer abstained. A false-target match in C0 is spontaneous,
+because C0 does not see that target.</p>
+<p>Thus susceptibility includes answering an unknown question
+incorrectly after receiving a suggestion, as well as abandoning an
+initially correct answer. The observations support concern about
+unverified premises in interaction. They do not establish an internal
+psychological mechanism or the prevalence of this behavior in everyday
+conversations.</p>
+</div>
+<div id="structured-checking-mainly-withholds-unsupported-answers" class="section level3">
+<h3>Structured checking mainly withholds unsupported answers</h3>
+<p>Under identical wrong materials, error falls from <strong>377/719
+(52.43%) in C2 to 258/719 (35.88%) in C3</strong>, a difference of
+<strong>-16.55 points</strong>, 95% interval <strong>[-20.70,
+-12.38]</strong>. The full paired matrix explains the change:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">C2 result</th>
+<th align="right">C3 correct</th>
+<th align="right">C3 wrong</th>
+<th align="right">C3 abstain</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Correct</td>
+<td align="right">133</td>
+<td align="right">9</td>
+<td align="right">20</td>
+</tr>
+<tr class="even">
+<td align="left">Wrong</td>
+<td align="right">5</td>
+<td align="right">228</td>
+<td align="right">144</td>
+</tr>
+<tr class="odd">
+<td align="left">Abstain</td>
+<td align="right">3</td>
+<td align="right">21</td>
+<td align="right">156</td>
+</tr>
+</tbody>
+</table>
+<p>There are <strong>144 wrong-to-abstain pairs and 5 wrong-to-correct
+pairs</strong>, alongside 21 abstain-to-wrong and 9 correct-to-wrong
+pairs. The net 119 fewer wrong outputs must not be described as 119
+successful factual corrections. These pairs compare parallel branches
+from the same baseline, not sequential C2 then C3 messages.</p>
+<p>Correct outputs also fall from 162 to 141, while abstentions rise
+from 180 to 320. Abstention may avoid confidently supplying
+misinformation and leave room for human investigation. This study does
+not measure whether it improves users’ independent thinking. The
+correct-advice control also matters: C4 to C5 loses 160 correct outputs
+overall, including 157 correct-to-abstain pairs and 24 correct-to-wrong
+pairs, with changes in the reverse direction retained. Utility depends
+on how users value correct answers, uncertainty and misinformation.</p>
+</div>
+<div id="robustness-and-model-differences" class="section level3">
+<h3>Robustness and model differences</h3>
+<p>All three models show lower error in C3 than C2, but the size
+differs. MiniMax does not show increased error for C2 versus C0 (-1.67
+points, interval [-8.40, 5.42]). Hence the pooled pattern is not a
+universal model-level response. Excluding the original 16
+source/adjudication/quality-flagged questions, and then adding the two
+previously documented reference concerns, retains the pooled directions.
+With 102 questions remaining, C1-C0, C2-C0 and C3-C2 are +18.14, +7.35
+and -17.32 points. Sensitivity checks do not prove that every remaining
+reference is correct.</p>
+</div>
+</div>
 <div id="correctness-uncertainty-and-evidence" class="section level2">
 <h2>Correctness, uncertainty and evidence</h2>
 <p>A response can give a correct candidate and candidly say it is not
@@ -730,14 +895,35 @@ inconsistency are separate observations. For
 reason discusses a 1948 commemorative renaming. Distinct naming events
 may differ; we flag lack of clear support rather than assert a proven
 contradiction.</p>
-<p>The user reviewed 45 selected responses and six sources. Under the
-explicit provisional T/1 and F/0 mapping, 42 responses agree with the
-original score. Three dash codes remain unresolved, and
-reviewer/date/conflict fields are blank. Another 171 focused responses
-await human review. This is not full or independent annotation, and
-targeted agreement cannot estimate the whole-corpus error rate.
-R-generated uncertainty/verification word flags are only lexical
-screens, not semantic hallucination labels.</p>
+<p>The user previously reviewed 45 selected responses and six sources.
+Under the provisional T/1 and F/0 mapping, 42 responses agree with the
+original score. Three dash codes remain unresolved and are preserved.
+The latest requested review uses AI semantic inspection, with no
+additional manual annotation requirement. Historical human labels are
+not replaced or described as a completed independent human study.</p>
+<p>Codex read <strong>240 targeted pairs, covering 451 distinct
+responses</strong>, including all 144 C2-wrong/C3-abstain pairs. Within
+those 144, 114 clearly withhold a date, 25 mention only an unconfirmed
+candidate, 3 challenge the premise and 2 retain a relevant date
+assertion despite abstention. This is an unblinded AI review, not a
+random whole-corpus audit. The other 142 explanations have not had every
+background claim externally verified. Stable task IDs, both response
+texts and individual annotations are archived.</p>
+<p>For the Notepad++ 7.8.8 question (<code>SV0097:minimax:r1</code>), C0
+cannot confirm a date. Parallel C1/C2 branches commit to the assigned
+wrong date, 29 June 2020. C1 claims official confirmation. C3 rejects
+the unsupported explanation and abstains. The <a href="https://github.com/notepad-plus-plus/notepad-plus-plus/wiki/Changes-v7#788">project’s
+official change history</a> lists 28 June 2020. This illustrates how a
+plausible suggestion can accompany an unsupported verification claim,
+and how checking can withhold it without finding the true date. A
+counterexample remains: DeepSeek repeat 0 gives the correct date in C4
+but a wrong date in C5.</p>
+<p>One mixed abstention (<code>SV3930:minimax:r0:C3</code>) still dates
+premium animated emoji to December 2021. Telegram’s <a href="https://telegram.org/blog/silent-messages-slow-mode">ordinary
+animated emoji announcement</a> is from August 2019, and its <a href="https://telegram.org/blog/custom-emoji?setln=en">Premium custom
+emoji announcement</a> is from August 2022. An abstention flag therefore
+does not certify all supporting prose. These external checks were
+performed after the experiment, not by the experimental receiver.</p>
 <p>Two source concerns remain: Arch Linux installation scripts versus
 the guided archinstall installer, and conflicting Wood River 1838/1839
 references. A post-hoc sensitivity excluding both retains the C5-C4
@@ -915,11 +1101,20 @@ formatting constrain the mathematics claims.</p>
 </div>
 <div id="conclusion-and-proposed-solution" class="section level1">
 <h1>Conclusion and proposed solution</h1>
-<p>The factual experiment does not show that explanations increase
-susceptibility in this selected set. Structured checking coincides with
-fewer observed harmful flips but also materially fewer useful
-corrections and more abstention. Its benefit depends on the desired
-balance between giving an answer and avoiding unsupported claims.</p>
+<p>In this selected factual set, the supplemental paired analysis
+supports two qualified findings: misleading input increases wrong output
+relative to neutral rechecking, and a structured check reduces wrong
+output under identical misleading materials. Much of that reduction
+comes from withholding unsupported answers. Ordinary rechecking does not
+show the same benefit. The original experiment still does not show that
+adding an explanation increases harmful flips, and structured checking
+also accepts fewer useful corrections.</p>
+<p>The practical implication is to avoid treating AI output or one’s own
+unverified premise as established fact. Mark assumptions explicitly, ask
+for the basis of important claims and preserve uncertainty when evidence
+is insufficient. Abstention can be useful without being a factual
+solution. Its effects on human thinking and decisions require a separate
+study.</p>
 <p>A reasonable next application design is to separate the candidate
 answer, uncertainty statement and supporting evidence; check each
 important claim against an external source or executable mathematical
@@ -929,23 +1124,24 @@ next solution, not an intervention tested here.</strong> A future
 controlled study should add a real retrieval/calculator arm with matched
 costs, clearer ground truth and new problem families.</p>
 <p>Important limits include low factual baseline accuracy, few harmful
-flips, selected date questions, some disputed reference dates, targeted
-partial human review, development amendments, stochastic/API version
-variability, donor-material selection and the mathematics schema’s cues.
-We cannot claim a best universal method or a causal psychological
-mechanism such as sycophancy.</p>
+flips, selected date questions, disputed reference dates, targeted and
+unblinded AI review, exploratory supplemental comparisons, development
+amendments, stochastic/API version variability, donor-material selection
+and the mathematics schema’s cues. The actual advice source label is AI,
+and no human behavior was measured. We cannot claim a best universal
+method or a causal psychological mechanism such as sycophancy.</p>
 </div>
 <div id="acknowledgements-and-reproducibility" class="section level1">
 <h1>Acknowledgements and reproducibility</h1>
-<p>We acknowledge the public dataset, cited researchers and R package
-authors. Codex assisted with experiment implementation, R processing, AI
-source/material review and drafting. The installed Claude Code CLI
-provided an additional AI review through its configured Kimi backend; it
-was not an Anthropic Claude-model or independent human review. The
-student directed the research topic and supplied the first batch of
-manual judgments. The actual presenters must confirm their final
-contribution statement and inspect all conclusions before
-submission.</p>
+<p>Project team: <strong>LINYUNIAN and PAN ZHENGYU</strong>. We
+acknowledge the public dataset, cited researchers and R package authors.
+Codex assisted with implementation, R processing, AI source/material
+review and drafting. The installed Claude Code CLI provided an earlier
+additional AI review through its configured Kimi backend. It was not an
+Anthropic Claude-model review. The student directed the topic and
+supplied the initial manual judgments. Team authorship does not imply
+that both students independently performed all implementation or review
+work.</p>
 <p>The accompanying repository contains frozen inputs, raw
 requests/responses, deviations, reviewer records and R reproduction
 entry points. No credentials are included. Offline reproduction does not

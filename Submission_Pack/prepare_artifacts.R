@@ -33,14 +33,48 @@ links<-c(source_url,
  paste0(source_url,'/blob/main/Math_Supplement/protocol/deviations.md'),
  'https://arxiv.org/abs/2005.11401\nhttps://aclanthology.org/2024.findings-acl.212/',
  'https://huggingface.co/datasets/google/simpleqa-verified\nhttps://openreview.net/forum?id=IkmD3fKBPQ\nhttps://aclanthology.org/2024.findings-acl.212/\nhttps://aclanthology.org/2024.emnlp-main.915/\nhttps://machinelearning.apple.com/research/gsm-symbolic')
+idir<-'Peer_Misleading_Study/reports/interaction_posthoc'
+ie<-read.csv(file.path(idir,'effects.csv'))
+ip<-read.csv(file.path(idir,'condition_tables.csv'));ip<-ip[ip$provider=='pooled',]
+ip$error_pct<-round(100*ip$incorrect/ip$n,2)
+data$interaction<-unname(lapply(seq_len(nrow(ip)),function(i)as.list(ip[i,])))
+it<-read.csv(file.path(idir,'transitions.csv'))
+tm<-subset(it,comparison=='C3_vs_C2'&provider=='pooled'&baseline_stratum=='all')
+mx<-xtabs(n~from+to,tm)[c('correct','incorrect','abstain'),c('correct','incorrect','abstain')]
+data$transition_table<-c(list(c('C2 outcome','C3 correct','C3 wrong','C3 abstain')),lapply(1:3,function(i)c(c('Correct','Wrong','Abstain')[i],as.character(mx[i,]))))
+data$authors<-c('LINYUNIAN','PAN ZHENGYU')
+notes[1]<-'Introduce LINYUNIAN and PAN ZHENGYU. The project asks whether structured checking helps resist misleading input. AI-generated suggestions simulate a person bringing an assumption or explanation into an AI conversation. The actual source label says another AI. We measured no human behavior.'
+notes[2]<-'Present original RQ1 and RQ2, then identify the new all-unit comparisons explicitly as post-hoc additions. The original harmful-flip and repair outcomes remain unchanged. The supplement looks at uncertainty becoming a wrong answer, not just initially correct answers becoming wrong.'
+notes[10]<-'Explain selected difficult date questions, model differences and source concerns. MiniMax C2 versus C0 error change is -1.67 points with interval [-8.40,5.42], unlike the pooled increase. Both source-exclusion variants preserve pooled directions. The AI semantic review is targeted and unblinded. Human thinking was not measured. Mathematical material eligibility failed the original balanced design and remains a partial supplement.'
+notes[11]<-'Connect the results to use: avoid supplying guesses as settled facts, ask for the evidence supporting the exact claim, and preserve uncertainty. A trusted source or executable test is a proposed application design, not a tested intervention here. Ordinary rechecking did not show the structured prompt benefit. Abstention may protect users from misinformation, but its effect on human thinking was not measured.'
+notes[12]<-'Name the project team: LINYUNIAN and PAN ZHENGYU. Cite the dataset and papers. Disclose Codex implementation, R analysis and targeted AI review. Earlier Claude Code review used the configured Kimi backend. Do not invent individual student responsibilities or describe AI review as independent human validation.'
+extra_notes<-c(
+ 'Post-hoc analysis of all 719 paired units. Error rates are 46.04% for C0, 64.81% C1, 52.43% C2 and 35.88% C3. C1-C0 is +18.78 points [14.35,23.09], C2-C0 +6.40 [1.94,10.99], and C3-C2 -16.55 [-20.70,-12.38]. Pointwise exploratory intervals use 5000 question-cluster draws, seed 25011003. C0 minus initial error is +1.25 [-3.06,5.56]. The wrong-target counts are 11,251,147,58. C0 matching is spontaneous. These results do not support explanations being more harmful than wrong answers alone.',
+ 'Read the full C2-by-C3 transition table. Most prevented errors become abstentions: 144 wrong-to-abstain and 5 wrong-to-correct, offset by 21 abstain-to-wrong and 9 correct-to-wrong. Net wrong outputs fall by 119, but correct outputs also fall by 21. Comparisons use parallel branches, not sequential follow-ups. Relative to C0, C1/C2 include 158/114 abstain-to-wrong pairs and 25/67 reverse pairs, showing how misleading input can fill a knowledge gap.',
+ 'Notepad++ version 7.8.8 has official release date June 28 2020. The same MiniMax repeat in parallel branches cannot confirm under C0, answers June 29 under C1 and C2, and abstains under C3 because the explanation gives no verifiable evidence. The exact C1 phrase is as confirmed by the official Notepad++ release notes. The receiver had no search tool. A correct date or confident verification phrase does not prove a lookup occurred. Preserve the counterexample: DeepSeek repeat 0 C4 is correct and C5 gives June 4.',
+ 'Codex read 240 pairs containing 451 distinct responses, including all 144 C2-wrong/C3-abstain pairs. Among the 144, 114 withhold a date, 25 offer only unconfirmed candidates, 3 challenge the premise and 2 retain date assertions. Remaining background claims were not exhaustively checked. Telegram C3 still claims premium animated emoji in December 2021, conflicting with its official August 2022 introduction. No additional manual labeling is required for this delivery, and no independent human validation is claimed.'
+)
+extra_links<-c(rep(paste0(source_url,'/blob/main/Submission_Pack/补充分析_2026-10-03.md'),2),
+ 'https://github.com/notepad-plus-plus/notepad-plus-plus/wiki/Changes-v7#788',
+ paste0(source_url,'/blob/main/Peer_Misleading_Study/reports/interaction_posthoc/ai_case_review.csv\nhttps://telegram.org/blog/custom-emoji?setln=en'))
+notes<-c(notes,extra_notes);links<-c(links,extra_links)
+ord<-c(1:5,13,14,6,7,15,16,8:12)
+data$order<-ord-1L
+notes<-notes[ord];links<-links[ord]
+durations<-c(30,60,90,70,60,90,90,70,60,90,60,60,70,60,80,40)
+stopifnot(length(notes)==16,sum(durations)==1080)
+notes<-paste0(durations,' seconds. ',sub('^[0-9]+ seconds[.] ','',notes))
 data$notes<-as.list(paste(notes,'\nSources:',links))
 write_json(data,'Submission_Pack/evidence/artifact_content.json')
 writeLines(c('# Speaker notes and timing','',
- 'Core talk: 9 minutes (540 seconds), matching the solo requirement. Add 1 minute Q&A. This is a suggested rehearsal allocation, not measured speaking time.',
+ 'Team: LINYUNIAN and PAN ZHENGYU. Suggested two-person talk: 18 minutes (1,080 seconds), plus 2 minutes Q&A. This is a rehearsal allocation, not measured speaking time. Presenter allocation can be agreed by the team and does not imply past contribution claims.',
  '',unlist(lapply(seq_along(notes),function(i)c(paste0('## Slide ',i),notes[i],paste('Sources:',links[i]),''))),
- '## If presenting as two students',
- 'The course allows 18 minutes plus 2 minutes Q&A. Expand by 9 minutes using the report: 2 minutes on sampling and ground truth, 2 on the paired/bootstrap method, 2 on the uncertainty cases, 2 on math material failures and examples, and 1 on future experiment design. Agree an actual division of work and rehearse; do not claim both members did tasks they did not do.'),'Submission_Pack/speaker_notes.md')
+ '## Rehearsal',
+ 'A possible speaking split is LINYUNIAN for slides 1-7 and PAN ZHENGYU for slides 8-16. This is a suggestion for presenting, not a statement of who performed the research. Rehearse together and redistribute time as needed.'),'Submission_Pack/speaker_notes.md')
 files<-c('Peer_Misleading_Study/reports/main_r/tables.csv','Peer_Misleading_Study/reports/main_r/effects.csv','Peer_Misleading_Study/reports/factual_review_supplement/audit.json','Math_Supplement/reports/supplementary/tables.csv','Math_Supplement/reports/supplementary/summary.json')
 for(path in files)file.copy(path,file.path('Submission_Pack/evidence',paste0(if(grepl('Math_Supplement',path))'math_' else 'fact_',basename(path))),overwrite=TRUE)
+extra_files<-file.path(idir,c('effects.csv','transitions.csv','review_audit.json','reproducibility.json'))
+for(path in extra_files)file.copy(path,file.path('Submission_Pack/evidence',paste0('interaction_',basename(path))),overwrite=TRUE)
+files<-c(files,extra_files)
 write_json(list(source_sha256=setNames(lapply(files,file_sha),files),processing='R only; document layout in JS/Python does not calculate experimental results'),'Submission_Pack/evidence/provenance.json')
 cat('Artifact text, notes and numeric content exported by R.\n')

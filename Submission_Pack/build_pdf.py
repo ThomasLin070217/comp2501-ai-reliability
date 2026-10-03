@@ -23,6 +23,7 @@ else:
 styles=getSampleStyleSheet()
 for k in ('Normal','BodyText'):
     styles[k].fontName=body_font;styles[k].fontSize=10.2;styles[k].leading=14.5;styles[k].spaceAfter=8
+    styles[k].allowWidows=0;styles[k].allowOrphans=0
 for k,sz in [('Title',23),('Heading1',16),('Heading2',12.5),('Heading3',11)]:
     styles[k].fontName=bold_font;styles[k].fontSize=sz;styles[k].leading=sz*1.22;styles[k].textColor=colors.HexColor('#18354A');styles[k].spaceBefore=13;styles[k].spaceAfter=8
 styles.add(ParagraphStyle(name='Cell',fontName=body_font,fontSize=8.4,leading=11,spaceAfter=0))
@@ -48,7 +49,7 @@ def inline(tokens):
 src=(pack/'report.md').read_text()
 src=re.sub(r'^---\n.*?\n---\n','',src,count=1,flags=re.S)
 tokens=MarkdownIt('commonmark',{'html':True}).enable('table').parse(src)
-story=[Paragraph('Can Structured Double-Checking<br/>Resist Misleading AI Peers?',styles['Title']),Paragraph('COMP2501 project / October 2026',styles['Caption']),Spacer(1,10)]
+story=[Paragraph('Can Structured Double-Checking<br/>Resist Misleading AI Peers?',styles['Title']),Paragraph('LINYUNIAN and PAN ZHENGYU',styles['Heading2']),Paragraph('COMP2501 project / Updated 3 October 2026',styles['Caption']),Spacer(1,10)]
 width=A4[0]-104
 def addimage(raw):
     f=Path(raw)
@@ -90,5 +91,5 @@ while i<len(tokens):
     i+=1
 def footer(canvas,doc):
     canvas.saveState();canvas.setFont(body_font,8);canvas.setFillColor(colors.HexColor('#657586'));canvas.drawString(52,30,'COMP2501 / AI peer reliability');canvas.drawRightString(A4[0]-52,30,str(doc.page));canvas.restoreState()
-SimpleDocTemplate(str(out),pagesize=A4,rightMargin=52,leftMargin=52,topMargin=43,bottomMargin=48,title='Can Structured Double-Checking Resist Misleading AI Peers?',author='COMP2501 project').build(story,onFirstPage=footer,onLaterPages=footer)
+SimpleDocTemplate(str(out),pagesize=A4,rightMargin=52,leftMargin=52,topMargin=43,bottomMargin=48,title='Can Structured Double-Checking Resist Misleading AI Peers?',author='LINYUNIAN and PAN ZHENGYU').build(story,onFirstPage=footer,onLaterPages=footer)
 print(out)

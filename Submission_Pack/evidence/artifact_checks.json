@@ -1,16 +1,25 @@
 {
   "sha256": {
-    "Submission_Pack/COMP2501_report.pdf": "2343b401fdde9d7e308633ca4b0b1f0b4f0bd2c8e9cf463683627e1b9ba6bf5f",
-    "Submission_Pack/COMP2501_presentation.pptx": "74339c275906d1fc9051db461ba7be8c533619b7704ce293e08d895fe22c6ed6",
-    "Submission_Pack/report.Rmd": "001179f794fb33c6909301646001d58d392bce2b8ea461dfcf0d8f13bc28f896",
+    "Submission_Pack/COMP2501_report.pdf": "abae82fd661dec20a424cd789d4875ebeeb6820edc3552f42f397e915a6931c3",
+    "Submission_Pack/COMP2501_presentation.pptx": "58a6cde00c34c346e1eb1aee0153a5be5221115bd19a1ce73d3c38304486a3e8",
+    "Submission_Pack/report.Rmd": "cbe03e6b371f604ecc8eea15c42122dd71050c0406622a0e65a0ed4f8a6ddc91",
     "Submission_Pack/proposal.md": "3f95c9b4e20246a420deaacfe2449a7898a510e7b902f9fbda2a097adb50fadc"
   },
-  "presentation_slide_count": 12,
-  "native_charts": 4,
-  "native_table_owner_slide": 3,
+  "presentation_slide_count": 16,
+  "native_charts": 5,
+  "native_table_owner_slides": [3, 7, 10, 11],
   "finalizer_package_integrity": "pass",
-  "finalizer_layout": null,
-  "final_slides_rendered_and_visually_reviewed": 12,
+  "finalizer_layout": "pass",
+  "final_slides_rendered_and_visually_reviewed": 16,
   "opened_in_powerpoint": false,
-  "PDF_pages_visually_reviewed": 6
+  "PDF_pages_visually_reviewed": 8,
+  "validation": {
+    "authors": "pass",
+    "chart_values_against_R_export": "pass",
+    "all_speaker_notes_against_R_export": "pass",
+    "transition_table_against_R_export": "pass",
+    "source_provenance_hashes": "pass",
+    "PDF_key_result_text": "pass"
+  },
+  "visual_review_note": "Codex inspected all imported final slide renders and all final PDF page renders. Numeric chart labels may be rounded; underlying chart values and report values retain precision."
 }

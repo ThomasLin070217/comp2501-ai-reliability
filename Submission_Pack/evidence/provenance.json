@@ -4,7 +4,11 @@
     "Peer_Misleading_Study/reports/main_r/effects.csv": "c9eb12607bd668d6932adca1ab10bb8adef4f4c2d99db762c5687c7cb9665530",
     "Peer_Misleading_Study/reports/factual_review_supplement/audit.json": "8b62fcec127c352cd849ecefec1bf0e52812ddfa78d42385dff24dff73c3b861",
     "Math_Supplement/reports/supplementary/tables.csv": "cdab6c455493a88c43cad6e0347a4aeeb28ab9092b94e6153c7f383ac8131a6f",
-    "Math_Supplement/reports/supplementary/summary.json": "fdd375144f65647c81881a708702bd75b70d0020c57af11760df07f959299877"
+    "Math_Supplement/reports/supplementary/summary.json": "fdd375144f65647c81881a708702bd75b70d0020c57af11760df07f959299877",
+    "Peer_Misleading_Study/reports/interaction_posthoc/effects.csv": "327072bc641dd7243f5e5adde4c84d4db46ec4cc347d6c7e18d6b8cc53e8ddbd",
+    "Peer_Misleading_Study/reports/interaction_posthoc/transitions.csv": "173db9fc03b56bd65365b19ce75ed55ae45f887f41c1077561d61775fe291ba0",
+    "Peer_Misleading_Study/reports/interaction_posthoc/review_audit.json": "4ac42bb18ba3d2c61a26dbd5aff28af918f7f7657a310de1c2bd8e5b356131b8",
+    "Peer_Misleading_Study/reports/interaction_posthoc/reproducibility.json": "6dc4ca332ef80f262ffc935eea7fb9dede1b65fe0fab9476327b4e7b8f77e5bc"
   },
   "processing": "R only; document layout in JS/Python does not calculate experimental results"
 }

@@ -18,4 +18,4 @@ The PDF does **not** require an R Markdown report, a ZIP submission, an independ
 
 ## Human actions remaining
 
-Insert/confirm student name(s), number(s), group size and actual contributions in the presentation/portal. Read the proposal and submit it in the Moodle quiz; no automatic submission was performed. Rehearse to the time limit for your actual group. Review the disclosed annotation ambiguities if presenting those cases. Check Moodle for changed deadlines or academic-integrity/AI-disclosure instructions not present in this PDF.
+The user confirmed a two-person team, LINYUNIAN and PAN ZHENGYU. These names now appear in the presentation and report. Student numbers and portal fields remain for the students to complete. No individual research contributions have been invented. Read the proposal and submit it in the Moodle quiz; no automatic submission was performed. The updated notes allocate 18 minutes plus 2 minutes for questions. AI review satisfies the requested review task; disclosed ambiguities remain limitations. Check Moodle for changed deadlines or academic-integrity/AI-disclosure instructions not present in this PDF.

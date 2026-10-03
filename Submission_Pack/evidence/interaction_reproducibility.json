@@ -1,0 +1,119 @@
+{
+  "method": "Two complete independent R executions; byte-for-byte SHA-256 comparison",
+  "generated_data_and_review_artifacts": 22,
+  "report_identical": true,
+  "report_sha256": "759ad1be2707a5bf8a217070bd1b4c5a1c00351dca57ced4d9f564d992ac2799",
+  "checks": [
+    {
+      "file": "paired_outcomes.csv",
+      "sha256": "f80d71a433e205ebde03b73fce14e39d312e321b310d7fb8966eb386b5519164",
+      "equal": true
+    },
+    {
+      "file": "transitions.csv",
+      "sha256": "173db9fc03b56bd65365b19ce75ed55ae45f887f41c1077561d61775fe291ba0",
+      "equal": true
+    },
+    {
+      "file": "effects.csv",
+      "sha256": "327072bc641dd7243f5e5adde4c84d4db46ec4cc347d6c7e18d6b8cc53e8ddbd",
+      "equal": true
+    },
+    {
+      "file": "condition_tables.csv",
+      "sha256": "d45f6675057ce648caf7fa223e3d2929166822dbd559eea1ed68e63277922481",
+      "equal": true
+    },
+    {
+      "file": "ai_review_queue.csv",
+      "sha256": "817e9ba23bd6fe2df81e05d88e0455669ab94994bc3a8b6441c781337c2056d9",
+      "equal": true
+    },
+    {
+      "file": "review_packet_01.md",
+      "sha256": "a9748ffea423b96536ffeff3e559dd65149d6ed773d07d5730380ee6d6118e96",
+      "equal": true
+    },
+    {
+      "file": "review_packet_02.md",
+      "sha256": "e210536b1b29db88e74d1235c003970cc292c5498445c916251e0285194f9a7a",
+      "equal": true
+    },
+    {
+      "file": "review_packet_03.md",
+      "sha256": "6937fc71511f44dbcc44dc20e3f42dafd21eeacf1f311c6f30257ea417d29357",
+      "equal": true
+    },
+    {
+      "file": "review_packet_04.md",
+      "sha256": "c06967856143ca3593e09fe9cc8fb2ba1e9dd6ccbd4215eb08b0b85a32fea328",
+      "equal": true
+    },
+    {
+      "file": "review_packet_05.md",
+      "sha256": "7a632dfedb28a783ed8f517b583c59fb69b8e3041051cad07bd6ca8022534dce",
+      "equal": true
+    },
+    {
+      "file": "review_packet_06.md",
+      "sha256": "893d1df3d29069c2c96f2dda61092805017ae3f65f1059acb9da47631cf41893",
+      "equal": true
+    },
+    {
+      "file": "review_packet_07.md",
+      "sha256": "31d0737965ae8fcb9ba74572feecda3913d2828a5f728ec06ed90e2e7ac7fe71",
+      "equal": true
+    },
+    {
+      "file": "review_packet_08.md",
+      "sha256": "519c452bc58950f51924a2d6975b386918ede94a076ea2f92f6e55e30ce7e244",
+      "equal": true
+    },
+    {
+      "file": "review_packet_09.md",
+      "sha256": "3c9d909dfca4ae6229750474cca7e5536559c44906e6f3e6e66cf1438042f3a7",
+      "equal": true
+    },
+    {
+      "file": "review_packet_10.md",
+      "sha256": "562c2db196326fe4dd8c28728b19fafe1015f353d93f44c40846334abaac6e39",
+      "equal": true
+    },
+    {
+      "file": "review_packet_11.md",
+      "sha256": "d489e811354c2da31b21536dbf3397a9405c3b9df658f02cc6f9e4947887caf0",
+      "equal": true
+    },
+    {
+      "file": "review_packet_12.md",
+      "sha256": "97d33e8b04a69db4438ea9a7f47d83201c0a6f0ec86aa33e0ffca17e042d9620",
+      "equal": true
+    },
+    {
+      "file": "audit.json",
+      "sha256": "a10d5457741536e819b94fdf1b75a00b6e15d6e4d158716242fd22f29ea7721b",
+      "equal": true
+    },
+    {
+      "file": "ai_case_review.csv",
+      "sha256": "f449a8bce597e10d04691e1e1ec3fa81e383c86002b2d1b229c441306e60f87d",
+      "equal": true
+    },
+    {
+      "file": "withdrawal_review_counts.csv",
+      "sha256": "270907963462493aad87c5a16895f7c67bb765f3f0ee31a0ebfe5c44c45fee29",
+      "equal": true
+    },
+    {
+      "file": "target_flows_by_baseline.csv",
+      "sha256": "e2e5321e6f8e09e315fb394f86b682544b1fd328778dffbf6bd642e51aa5b332",
+      "equal": true
+    },
+    {
+      "file": "review_audit.json",
+      "sha256": "4ac42bb18ba3d2c61a26dbd5aff28af918f7f7657a310de1c2bd8e5b356131b8",
+      "equal": true
+    }
+  ],
+  "note": "Saved AI annotations are inputs, not independently regenerated judgments. Runtime sessionInfo excluded."
+}
