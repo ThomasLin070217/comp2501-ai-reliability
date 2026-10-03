@@ -1,0 +1,17 @@
+# Existing results only; no model calls or scoring changes.
+f <- read.csv('Submission_Pack/evidence/fact_tables.csv')
+m <- read.csv('Submission_Pack/evidence/math_tables.csv')
+f <- subset(f, provider == 'pooled')
+m <- subset(m, scope == 'pooled' & group == 'all')
+stopifnot(nrow(f)==7,nrow(m)==7,all(f$n==719),all(m$n==71))
+tidy <- function(x, domain) data.frame(domain=domain,condition=x$condition,n=x$n,correct=x$correct,wrong=x$incorrect,abstain=x$abstain,error_pct=100*x$incorrect/x$n)
+z <- rbind(tidy(f,'facts'),tidy(m,'mathematics'))
+stopifnot(all(z$n==z$correct+z$wrong+z$abstain))
+write.csv(z,'docs/architecture_evidence/existing_error_rates.csv',row.names=FALSE)
+comparisons <- list(c('C0','baseline'),c('C1','C0'),c('C2','C0'),c('C3','C2'),c('C4','baseline'),c('C5','C4'))
+e <- do.call(rbind,lapply(c('facts','mathematics'),function(d)do.call(rbind,lapply(comparisons,function(cc){
+ a<-subset(z,domain==d & condition==cc[1]);b<-subset(z,domain==d & condition==cc[2]);data.frame(domain=d,comparison=paste(cc,collapse=' minus '),n=a$n,error_a_pct=a$error_pct,error_b_pct=b$error_pct,difference_pp=a$error_pct-b$error_pct)
+}))))
+write.csv(e,'docs/architecture_evidence/existing_comparisons.csv',row.names=FALSE)
+cat(paste(c('| 题型 | 条件 | 正确 | 错误 | 弃答 | 分母 | 错误率 |','|---|---|---:|---:|---:|---:|---:|',apply(z,1,function(r)sprintf('| %s | %s | %s | %s | %s | %s | %.2f%% |',r['domain'],r['condition'],r['correct'],r['wrong'],r['abstain'],r['n'],as.numeric(r['error_pct'])))),collapse='\n'),file='docs/architecture_evidence/existing_error_rates.md')
+print(e,row.names=FALSE)
