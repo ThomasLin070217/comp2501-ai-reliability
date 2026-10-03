@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-03T16:02:15Z",
+  "checks": {
+    "original_frozen_files_unchanged": true,
+    "deepseek_all_attempts_have_receipts": true,
+    "deepseek_retries_exact_transport_only": true,
+    "deepseek_cost_and_attempt_guards": true,
+    "deepseek_no_gold_in_payload": true,
+    "kimi_all_attempts_have_receipts": true,
+    "kimi_retries_exact_transport_only": true,
+    "kimi_cost_and_attempt_guards": true,
+    "kimi_no_gold_in_payload": true,
+    "minimax_all_attempts_have_receipts": true,
+    "minimax_retries_exact_transport_only": true,
+    "minimax_cost_and_attempt_guards": true,
+    "minimax_no_gold_in_payload": true
+  },
+  "checks_passed": 13,
+  "model_calls": 0,
+  "field_grades_changed": false
+}

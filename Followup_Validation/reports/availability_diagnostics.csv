@@ -1,0 +1,4 @@
+"provider","planned","attempts","retries","distinct_attempted","skipped_input","other_not_requested","incomplete","transport_failed","status_ok_unscorable"
+"deepseek",1344,1316,0,1316,28,0,1,0,20
+"kimi",1344,1317,0,1317,27,0,15,0,6
+"minimax",1344,1299,12,1287,57,0,11,0,38

@@ -1,0 +1,9 @@
+{
+  "time": "2026-10-03T16:02:16Z",
+  "reviewed": 64,
+  "recovered": 51,
+  "unresolved": 13,
+  "original_grades_modified": false,
+  "unknown_branches_imputed": false,
+  "note": "Post-hoc final-answer meaning assessment, not validation of all reasoning. Confidence intervals remain exploratory in this sensitivity."
+}

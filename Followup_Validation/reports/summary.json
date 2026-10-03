@@ -1,0 +1,27 @@
+{
+  "planned": 4032,
+  "http_attempts": 3932,
+  "returned_tasks": 3920,
+  "grades": {
+    "abstain": 984,
+    "correct": 1443,
+    "incorrect": 1402,
+    "unscorable": 203
+  },
+  "returned_status": {
+    "incomplete": 27,
+    "ok": 3893
+  },
+  "planned_units": 846,
+  "questions": 141,
+  "paid_guard_cny": 32.5782,
+  "prior_guard_cny": 18.7603,
+  "review_guard_cap_cny": 8,
+  "no_new_calls_in_analysis": true,
+  "request_linkage_audit": "all reconstructed requests match",
+  "input_hashes": {
+    "deepseek": "4370febf8c6705238da22cc852e3e7c441a906f06c23a3fa0b4731812ee4b8b4",
+    "kimi": "78fde8d6de9f0ef64a693b3ad3a3ba3b29d76a6bc189007fd8bf176e3ba3c11f",
+    "minimax": "6ff2cb8b1b18ce688c42132d1e4a372f20b07f55dbf114e893878bc2d54ffe06"
+  }
+}

@@ -1,0 +1,4 @@
+"comparison","topics","n","difference_pp","ci_low","ci_high","note"
+"N2-N1",5,199,-2.01005025125628,-3.68421052631579,-0.476190476190476,"Only five topics; unstable sensitivity, not population evidence"
+"N2-N0",5,202,-3.46534653465346,-4.07239819004525,-2.73224043715847,"Only five topics; unstable sensitivity, not population evidence"
+"N3-N2",5,193,-0.518134715025906,-1.4018691588785,0,"Only five topics; unstable sensitivity, not population evidence"

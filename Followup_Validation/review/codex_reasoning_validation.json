@@ -1,0 +1,8 @@
+{
+  "checks_passed": 5,
+  "label_changes": 8,
+  "reviewed": 52,
+  "all_flags": 28,
+  "seeded_valid_controls": 24,
+  "scope": "Unmasked targeted AI audit plus seeded control sample; not complete independent verification."
+}

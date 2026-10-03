@@ -1,0 +1,13 @@
+"provider","condition","status_ok","reason_before_answer","unscorable"
+"deepseek","N0",81,81,2
+"kimi","N0",77,77,1
+"minimax","N0",74,70,7
+"deepseek","N1",80,80,1
+"kimi","N1",75,75,1
+"minimax","N1",69,68,3
+"deepseek","N2",70,70,1
+"kimi","N2",73,73,0
+"minimax","N2",65,64,3
+"deepseek","N3",70,70,1
+"kimi","N3",65,65,1
+"minimax","N3",64,64,2

@@ -1,0 +1,9 @@
+"version","label","pairs","questions","N1","N2","difference_pp","ci_low","ci_high"
+"original_kimi","incorrect",206,39,16,7,-4.36893203883495,-8.42105263157895,-0.947867298578199
+"original_kimi","incomplete",206,39,9,9,0,-2.3696682464455,2.39234449760766
+"original_kimi","valid",206,39,181,190,4.36893203883495,0.497512437810945,8.5427135678392
+"original_kimi","uncertain",206,39,0,0,0,0,0
+"partial_codex_audit","incorrect",206,39,13,8,-2.42718446601942,-5.75941401530407,0.471754001609585
+"partial_codex_audit","incomplete",206,39,11,10,-0.485436893203883,-2.56410256410256,1.54639175257732
+"partial_codex_audit","valid",206,39,182,188,2.9126213592233,-0.465116279069767,6.57342532351468
+"partial_codex_audit","uncertain",206,39,0,0,0,0,0

@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-03T16:02:17Z",
+  "checks": {
+    "4032_unique_planned_outputs": true,
+    "846_units_141_questions": true,
+    "all_units_use_other_model": true,
+    "all_effects_reconciled_with_transitions": true,
+    "primary_bars_same_denominators_and_effects": true
+  },
+  "checks_passed": 5,
+  "model_calls": 0,
+  "prior_data_modified": false,
+  "reasoning_review_available": true,
+  "known_paid_estimate_cny": 56.91918
+}

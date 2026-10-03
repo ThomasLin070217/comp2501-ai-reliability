@@ -1,0 +1,4 @@
+"provider","attempts","input_tokens","output_tokens","guard_cny"
+"deepseek",1316,364845,129818,13.7878
+"kimi",1317,415515,209602,18.7904
+"minimax",1299,591345,163376,20.8267
