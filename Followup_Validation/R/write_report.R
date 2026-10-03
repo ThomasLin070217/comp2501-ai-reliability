@@ -1,0 +1,67 @@
+# Descriptive report and validation only; no calls and no reclassification.
+source('Followup_Validation/R/common.R')
+library(knitr);library(ggplot2)
+p<-file.path(VROOT,'reports');e<-read.csv(file.path(p,'effects.csv'));g<-read.csv(file.path(p,'graded_responses.csv'));c<-read.csv(file.path(p,'cells.csv'));t<-read.csv(file.path(p,'transitions.csv'));s<-read_json(file.path(p,'summary.json'));u<-read.csv(file.path(p,'usage.csv'))
+valid<-c('correct','incorrect','abstain')
+checks<-list();check<-function(k,v){stopifnot(isTRUE(v));checks[[k]]<<-TRUE}
+check('4032_unique_planned_outputs',nrow(g)==4032&&!anyDuplicated(g$task_id))
+check('846_units_141_questions',nrow(c)==846&&length(unique(c$question_id))==141)
+check('all_units_use_other_model',all(c$provider!=c$donor))
+for(i in seq_len(nrow(e))){z<-e[i,];tr<-t[t$domain==z$domain&t$provider==z$provider&t$comparison==z$comparison,];target<-switch(z$metric,error='incorrect',correct='correct',abstain='abstain');stopifnot(sum(tr$n)==z$n,abs(100*(sum(tr$n[tr$to==target])-sum(tr$n[tr$from==target]))/z$n-z$difference_pp)<1e-9)}
+check('all_effects_reconciled_with_transitions',TRUE)
+primary<-subset(e,provider=='pooled'&metric=='error'&comparison=='N2-N1');bars<-read.csv(file.path(p,'primary_chart_data.csv'))
+check('primary_bars_same_denominators_and_effects',all(vapply(seq_len(nrow(primary)),function(i){z<-primary[i,];b<-bars[bars$domain==z$domain,];all(b$n==z$n)&&abs(diff(b$error_pct[match(c('Self-check','Cross-model check'),b$condition)])-z$difference_pp)<1e-9},TRUE)))
+display<-function(z)data.frame(Domain=z$domain,Comparison=z$comparison,Pairs=z$n,Questions=z$questions,Before=sprintf('%d/%d (%.2f%%)',z$before_n,z$n,z$before_pct),After=sprintf('%d/%d (%.2f%%)',z$after_n,z$n,z$after_pct),Difference_pp=sprintf('%+.2f',z$difference_pp),CI95=sprintf('[%.2f, %.2f]',z$ci_low,z$ci_high))
+tab<-function(x)paste(capture.output(print(knitr::kable(x,format='pipe',row.names=FALSE))),collapse='\n')
+wr<-subset(e,domain=='facts'&provider=='pooled'&metric=='error'&comparison%in%c('W1-W0','W2-W1','W2-W0'))
+wb<-do.call(rbind,lapply(seq_len(nrow(wr)),function(i){z<-wr[i,];data.frame(comparison=z$comparison,condition=c('Before','After'),n=z$n,wrong=c(z$before_n,z$after_n),error_pct=c(z$before_pct,z$after_pct))}))
+wb$condition<-factor(wb$condition,levels=c('Before','After'))
+labels<-c('W1-W0'='Verification without extra reminder\nversus ordinary recheck','W2-W1'='Original verification with reminder\nversus verification without reminder','W2-W0'='Original verification\nversus ordinary recheck')
+fig<-ggplot(wb,aes(condition,error_pct,fill=condition))+geom_col(width=.6)+geom_text(aes(label=sprintf('%.2f%%\n%d/%d',error_pct,wrong,n)),vjust=-.25,size=3.5)+facet_wrap(~comparison,labeller=as_labeller(labels),nrow=1)+scale_y_continuous(limits=c(0,100),breaks=seq(0,100,25))+scale_fill_manual(values=c('#657586','#147E77'),guide='none')+labs(x=NULL,y='Wrong answers (%)',title='Same wrong advice: what changes when the extra abstention reminder is removed?',caption='Each panel uses its own matched pair; all use the same baseline and wrong material within a unit.')+theme_minimal(base_size=11)
+ggsave(file.path(p,'abstention_ablation.png'),fig,width=12,height=5,dpi=160,bg='white');write.csv(wb,file.path(p,'ablation_chart_data.csv'),row.names=FALSE)
+bc<-read.csv(file.path(p,'missing_bounds.csv'));reviewpath<-file.path(VROOT,'review/annotations.csv');review_present<-file.exists(reviewpath)
+review_text<-'Masked reasoning review is pending; no claim about improved reasoning is supported by this file yet.'
+review_spend<-0
+if(file.exists(file.path(VROOT,'review/responses.jsonl')))review_spend<-sum(vapply(read_jsonl(file.path(VROOT,'review/responses.jsonl')),function(r)r$cost_guard_cny,0))
+if(review_present){
+ a<-read.csv(reviewpath);counts<-read.csv(file.path(VROOT,'review/reasoning_counts.csv'));summary<-do.call(rbind,lapply(c('N1','N2'),function(k){z<-a[a$condition==k,];data.frame(condition=k,available=nrow(z),valid=sum(z$reasoning=='valid',na.rm=TRUE),incomplete=sum(z$reasoning=='incomplete',na.rm=TRUE),incorrect=sum(z$reasoning=='incorrect',na.rm=TRUE),uncertain=sum(z$reasoning=='uncertain',na.rm=TRUE),missing=sum(is.na(z$reasoning)),correct_field_wrong_reason=sum(z$grade=='correct'&z$reasoning=='incorrect',na.rm=TRUE))}))
+ write.csv(summary,file.path(p,'reasoning_summary.csv'),row.names=FALSE)
+ review_text<-paste('Kimi-k2.6 performed a secondary review masked to receiver model, condition and automatic grade. It saw the problem, source solution and vetted correction notes. These are AI judgments about displayed justifications, not proof-checker or human ground truth. Incomplete reasoning is distinct from an explicit false step.\n',tab(summary),'\nIndividual annotations and concrete reviewer evidence are retained under `../review/annotations.csv`. Codex follow-up inspection, when completed, is recorded separately; it does not silently overwrite the labels above.')
+}
+judgement<-function(z){if(z$familywise_high<0)'The new-run primary interval supports fewer wrong outputs on this selected sample, including the two-domain interval adjustment.' else if(z$familywise_low>0)'The new-run primary interval supports more wrong outputs on this selected sample, including the two-domain interval adjustment.' else 'The adjusted interval still spans zero: this follow-up does not establish a stable direction of benefit on the selected sample.'}
+f<-primary[primary$domain=='facts',];m<-primary[primary$domain=='mathematics',]
+model<-subset(e,comparison=='N2-N1'&metric=='error'&provider!='pooled')
+status<-as.data.frame(table(g$domain,g$response_status));names(status)<-c('domain','status','planned_slots')
+pairedcounts<-subset(e,provider=='pooled'&comparison=='N2-N1')
+pairedcounts<-pairedcounts[,c('domain','metric','n','before_n','after_n','difference_pp')]
+text<-c('# Cross-checking follow-up: results and limits','',
+ 'Team: **LINYUNIAN and PAN ZHENGYU**. This supplements “Can We Trust AI More After Cross-Checking?”; it does not replace or relabel the earlier frozen experiments.','',
+ '## What was tested','',
+ 'The user requested additional evidence for natural cross-checking and mathematics, and a verification prompt without an extra abstention reminder. The metric remains wrong/(correct+wrong+explicit abstention). Correct answers and abstentions are also reported separately.','',
+ 'We fixed 100 previously studied factual date questions and 41 CHAMP questions new to this project. Three different model APIs each answered twice independently. Natural comparisons use N0=direct answer, N1=self-check, N2=ordinary cross-model check, N3=verification with the same natural peer and no added abstention reminder. On a fixed 36-question factual subset, W0/W1/W2 use identical assigned wrong advice with ordinary rechecking / no-extra-reminder verification / the original reminder-containing verification. All branches begin from the same N0; they are not consecutive revisions.','',
+ sprintf('Planned **4,032 outputs** across 846 question-model-repeat units. Recorded **%d HTTP attempts** and **%d distinct returned tasks**; **%d planned outputs were not requested**. Transport-complete and scorable are different concepts.',s$http_attempts,s$returned_tasks,sum(g$response_status=='not_requested')),'',tab(status),'',
+ '## 1. Natural cross-model checking versus self-checking','',tab(display(primary)),'','![Matched primary error rates](primary_error_rates.png)','',
+ paste('**Facts:**',judgement(f)),paste('**Mathematics:**',judgement(m)),'',
+ sprintf('For the two domain-primary contrasts, the 97.5%% marginal intervals are facts [%.2f, %.2f] and mathematics [%.2f, %.2f] percentage points. This is a Bonferroni coverage convention for these two contrasts only; the other comparisons remain exploratory.',f$familywise_low,f$familywise_high,m$familywise_low,m$familywise_high),'',
+ 'The following numbers use the same paired denominator within each domain. A reduction in wrong output is not automatically an increase in correct solutions.','',tab(pairedcounts),'',
+ 'Receiving-model differences are descriptive; donor identity also changes across repetitions. No universal model ranking follows.','',tab(model[,c('domain','provider','n','difference_pp','ci_low','ci_high')]),'',
+ '## 2. Does the mathematics evidence go beyond answer-field repair?','',
+ 'These are competition problems from combinatorics, inequalities, number theory, polynomials and sequences, rather than numerical variants of the original four toy families. The prompt requests a concise solution before the final answer, which reduces the specific old answer-before-reason artifact. This format change and the new question set mean old and new numerical gains are not directly comparable.', '',review_text,'',
+ 'The primary endpoint is still the final answer. A correct final number with defective reasoning must not be described as a sound solution; the secondary reasoning assessment above addresses that separate property. Topic-cluster sensitivity is retained in `math_topic_sensitivity.csv`, but only five topics make it unstable, and structurally related problems cross some topic labels.','',
+ '## 3. Verification without strengthening abstention','',tab(display(wr)),'','![Same-advice prompt ablation](abstention_ablation.png)','',
+ 'W1-W0 measures the verification package after removing the additional abstention sentence. W2-W1 estimates the incremental effect of that sentence within the same verification package. Every group still has the same basic system-level permission to abstain; no group is forced to guess. This is not a full factorial test because there is no reminder-only arm. Do not infer an internal psychological mechanism from these comparisons.','',
+ 'The natural N3-N2 result is a separate secondary comparison under naturally generated peer material:','',tab(display(subset(e,provider=='pooled'&metric=='error'&comparison=='N3-N2'))),'',
+ '## Missing outputs, sources and interpretation','',
+ 'No substantive wrong or malformed answer was retried to improve the outcome. Only predeclared transport failures received exact retries within the cap. HKU branch concurrency was reduced from four to two after connection timeouts; payloads and scoring were unchanged. Original records and the transport amendment are preserved. Missingness may depend on difficult questions or model behavior; complete-pair analysis does not remove that selection concern.', '',
+ tab(subset(bc,provider=='pooled')[,c('domain','comparison','planned','paired','low','high')]),'',
+ 'The last two columns bound the fixed planned-sample error difference under best/worst missing outcomes; they are not sampling confidence intervals. All primary bars use the same pair denominator as their displayed comparison.', '',
+ 'Facts reuse an eligible previously studied pool; this is new calls and increased precision, not a held-out factual replication. CHAMP is public and may be present in model training data. We sampled numeric-answer questions, so this is not a complete CHAMP benchmark run. Two incorrect source keys and two premise ambiguities were removed before calling models, with no replacement or outcome-based question selection. Some remaining source proofs had typographical slips; separate vetted notes retain the corrections.', '',
+ 'No same-model independent-donor control was added. The experiment assesses this cross-model workflow; it cannot isolate model diversity from receiving an additional independent answer. Tool-assisted search, calculators, multi-round debate, a third arbitrator and real human trust are outside the tested intervention.', '',
+ 'Statistical processing uses R and 5,000 resamples of whole question clusters, retaining all model/repeat observations together. Results and all unfavorable directions are retained. More model responses are not equivalent to the same number of independent questions.','',
+ '## Cost and reproducibility','',tab(u),'',
+ sprintf('New paid experimental token-envelope estimate: CNY %.4f. Masked AI review: CNY %.4f. Prior authorized-work estimate: CNY18.7603. Combined known estimate: CNY %.4f, against the unchanged CNY100 budget. These are conservative estimates, not invoices. HKU cash pricing is unknown and its tokens are tracked separately.',s$paid_guard_cny,review_spend,18.7603+s$paid_guard_cny+review_spend),'',
+ 'Reproduce field scoring and statistics offline with `Rscript Followup_Validation/R/analyse.R`, then `Rscript Followup_Validation/R/write_report.R`. Reproducing saved review labels uses `Rscript Followup_Validation/R/review_math.R analyse`; it does not call a model. Live collection and review require separate environment credentials and incur costs.', '',
+ 'Sources: [CHAMP paper](https://aclanthology.org/2024.findings-acl.785/) and [official pinned dataset](https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5). Source license, selection hashes, the before-call protocol and reference-audit exclusions are included in this directory.','')
+writeLines(text,file.path(p,'report.md'))
+write_json(list(time=now(),checks=checks,checks_passed=length(checks),model_calls=0,prior_data_modified=FALSE,reasoning_review_available=review_present,known_paid_estimate_cny=18.7603+s$paid_guard_cny+review_spend),file.path(p,'validation.json'))
+cat('Report written; validated',length(checks),'consistency checks.\n')
