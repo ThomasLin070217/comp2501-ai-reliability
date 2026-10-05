@@ -2,9 +2,9 @@ source('Two_Model_Collection/R/runtime.R')
 stopifnot(is.null(tm_parse('{"answer":"x","answer":"y","reason":"test","abstain":false}')))
 cfgs<-fromJSON('Two_Model_Collection/protocol/models.json',simplifyVector=FALSE)
 budget<-fromJSON('Two_Model_Collection/protocol/budget.json',simplifyVector=FALSE)
-stopifnot(identical(budget$budget_enforced,FALSE),sum(unlist(budget$prior_domain_caps))+budget$prior_guard_cny+budget$prior_unresolved_reservation_cny+budget$unallocated_safety_margin_cny==budget$prior_authorized_cap_cny)
+stopifnot(sum(unlist(budget$domain_caps))+budget$prior_guard_cny+budget$prior_unresolved_reservation_cny+budget$unallocated_safety_margin_cny==500)
 stopifnot(setequal(names(cfgs),c('minimax','deepseek')))
-tests<-list(budget_removal_authorized_existing_scope=TRUE,only_two_models=TRUE)
+tests<-list(disjoint_budget_caps=TRUE,only_two_models=TRUE)
 for(domain in c('facts','math')){
  tasks<-read.csv(file.path(tm_root,domain,'protocol/tasks.csv'),stringsAsFactors=FALSE,na.strings=NULL)
  prompts<-fromJSON(file.path(tm_root,domain,'protocol/prompts.json'),simplifyVector=FALSE)$questions

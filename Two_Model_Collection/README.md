@@ -36,6 +36,8 @@ Credentials are loaded from a private temporary file, excluded from this reposit
 
 ## Budget
 
+**Current authorization:** after the budget stops, the user explicitly instructed “不用管预算全部收集完” (complete collection without the budget limit). [Amendment 02](protocol/budget_amendment_02.json) removes monetary stopping thresholds for the existing 2,332-task scope. Cost accounting and provider-error safeguards remain; prompts, questions, scoring and analyses are unchanged. Both domains resume their pending tasks with `run_domain("facts")` / `run_domain("math")`. The following amounts document the earlier authorization and stops, not current spending limits.
+
 The existing additional authorization is **CNY 500**, not CNY 500 per agent. Prior guard expenditure is CNY 62.39277 and an unresolved historical request reserves CNY 2. New disjoint ceilings are CNY 280 for facts and CNY 140 for mathematics, leaving CNY 15.60723 unallocated. The ledger includes failures and now reserves CNY 10 before each new HTTP request. Collection stops at its ceiling or a provider/reservation fault.
 
 An early protective stop occurred after a factual DeepSeek request made six autonomous searches and its conservative estimate reached CNY 2.47951, exceeding the original CNY 2 reservation. [Budget amendment 01](protocol/budget_amendment_01.json) raises only the per-request reservation to CNY 10; the overall budget, domain caps, prompts, tasks, scoring and analyses are unchanged. The original freeze and code are archived. The first 16 fact and 8 math responses are retained without retries, and collection resumes with pending tasks.

@@ -1,11 +1,6 @@
 {
-  "authorized_new_cap_cny": 500,
   "prior_guard_cny": 62.3928,
   "prior_unresolved_reservation_cny": 2,
-  "domain_caps": {
-    "facts": 280,
-    "math": 140
-  },
   "unallocated_safety_margin_cny": 15.6072,
   "reservation_per_http_cny": 10,
   "cost_guard_rates": {
@@ -13,5 +8,13 @@
     "output_per_million_cny": 50,
     "search_call_cny": 0.08
   },
-  "note": "Conservative accounting inherited from the approved protocol, not a cash invoice. HKU cash price remains unknown. Disjoint domain ceilings prevent concurrent double-spending. No reallocation or cap increase without parent audit. All failures and unresolved attempts retain their full reservation; no result-based retries."
+  "note": "Conservative accounting inherited from the approved protocol, not a cash invoice. HKU cash price remains unknown. Disjoint domain ceilings prevent concurrent double-spending. No reallocation or cap increase without parent audit. All failures and unresolved attempts retain their full reservation; no result-based retries.",
+  "prior_authorized_cap_cny": 500,
+  "budget_enforced": false,
+  "prior_domain_caps": {
+    "facts": 280,
+    "math": 140
+  },
+  "user_authorization": "不用管预算全部收集完",
+  "scope": "Complete the existing frozen 2332-task fact/math collection; continue logging costs. No new questions/models/conditions."
 }

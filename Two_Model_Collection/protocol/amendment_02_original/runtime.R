@@ -90,10 +90,10 @@ tm_http_batch<-function(jobs,cfgs,ap,rp,used,cap){
  })
  multi_run(pool=pool);stopifnot(all(vapply(results,Negate(is.null),TRUE)));results
 }
-run_domain<-function(domain,cap_cny=NULL){
+run_domain<-function(domain,cap_cny){
  stopifnot(domain%in%c('facts','math'))
  budget<-fromJSON(file.path(tm_root,'protocol/budget.json'),simplifyVector=FALSE)
- if(identical(budget$budget_enforced,FALSE))cap_cny<-Inf else stopifnot(cap_cny==budget$domain_caps[[domain]])
+ stopifnot(cap_cny==budget$domain_caps[[domain]])
  global<-fromJSON(file.path(tm_root,'protocol/runtime_freeze.json'),simplifyVector=FALSE)
  freeze<-fromJSON(file.path(tm_root,domain,'protocol/freeze.json'),simplifyVector=FALSE)
  for(f in list(global,freeze))for(p in names(f$files_sha256))stopifnot(digest(file=p,algo='sha256')==f$files_sha256[[p]])
@@ -109,7 +109,7 @@ run_domain<-function(domain,cap_cny=NULL){
  unresolved<-setdiff(tm_fields(attempts,'id'),tm_fields(http,'id'));if(length(unresolved))stop('Unresolved in-flight HTTP attempts retained; no automatic retry')
  charged<-function()sum(vapply(http,function(x)x$guard_cny,0))
  save_status<-function(state){tm_write(list(time=tm_now(),status=state,domain=domain,planned=nrow(tasks),completed=length(done),
-  skipped=length(skipped),remaining=nrow(tasks)-length(done)-length(skipped),http_attempts=length(http),guard_cny=charged(),cap_cny=if(is.finite(cap_cny))cap_cny else NULL,budget_enforced=is.finite(cap_cny)),file.path(dir,'status.json'))}
+  skipped=length(skipped),remaining=nrow(tasks)-length(done)-length(skipped),http_attempts=length(http),guard_cny=charged(),cap_cny=cap_cny),file.path(dir,'status.json'))}
  save_status('running')
  repeat{
   if(file.exists(file.path(tm_root,'STOP_ALL'))){save_status('global_stop');return(invisible(NULL))}
@@ -149,7 +149,7 @@ run_domain<-function(domain,cap_cny=NULL){
      transcript=if(r$status=='ok')list(list(role='assistant',content=r$raw_response$content))else NULL))
    tm_append(out,cp);done[[j$task$id]]<-out
    if(!is.null(r$http_status)&&r$http_status%in%c(401,403,429))fatal<-TRUE
-   if(is.finite(cap_cny)&&r$guard_cny>r$reservation_cny){writeLines('A request exceeded its conservative reservation; audit budget before continuing.',file.path(tm_root,'STOP_ALL'));fatal<-TRUE}
+   if(r$guard_cny>r$reservation_cny){writeLines('A request exceeded its conservative reservation; audit budget before continuing.',file.path(tm_root,'STOP_ALL'));fatal<-TRUE}
   }
   save_status('running');cat(domain,'completed',length(done),'skipped',length(skipped),'guard',round(charged(),3),'/',cap_cny,'\n');flush.console()
   if(fatal){save_status('provider_or_reservation_stopped');return(invisible(NULL))}

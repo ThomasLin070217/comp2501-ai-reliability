@@ -1,0 +1,8 @@
+{
+  "time": "2026-10-05 09:20:27 UTC",
+  "user_quote": "不用管预算全部收集完",
+  "change": "Remove total/domain/per-request budget stops for the existing frozen tasks only. Keep cost estimates, authentication/quota stops, raw logs, no outcome-based retries, and all prompts/scoring unchanged.",
+  "facts_completed_at_change": 1254,
+  "math_completed_at_change": 321,
+  "guard_including_prior_and_reserves_cny": 465.5139
+}

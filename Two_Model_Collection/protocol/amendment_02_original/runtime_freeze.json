@@ -1,15 +1,15 @@
 {
-  "frozen_at": "2026-10-05 09:20:27 UTC",
+  "frozen_at": "2026-10-05 08:33:59 UTC",
   "files_sha256": {
-    "Two_Model_Collection/R/runtime.R": "908cf3c72d9c065d5c7cefad5545c40401ce88f019f90daf0efa30915112e1d5",
-    "Two_Model_Collection/R/test_runtime.R": "f9cb041208122d697d2edd2eedf6599c8d2d52523aeedc304d3d21663f7d6d39",
+    "Two_Model_Collection/R/runtime.R": "217d31378b5478a9f5b8ca204d95e934165412962b4658e2efc8aed3b482d4cf",
+    "Two_Model_Collection/R/test_runtime.R": "dbc9009de009cf6498658f5ad5e6c71da9bf25feef8686c90400705d6ce93f3a",
     "Two_Model_Collection/protocol/models.json": "a849191224b05c58a7172dfa7658b716291f490ad7e1c225e6299c1ce83b2bc5",
-    "Two_Model_Collection/protocol/budget.json": "b7bca9001ffb7c850d0ae62bb8d504aefee3fa6479ebc0e092b149c6a6a608df",
+    "Two_Model_Collection/protocol/budget.json": "d76544a87bf5ca86ec0b8cfd8b0e40e919d6d156cb12c415271aee7814e5e051",
     "Fact_Prompt_Design/R/prompts.R": "6ffafcc984cfcf275fc77c754e076f7d87dee346531e779b939e440e96cc01a2",
     "Two_Model_Collection/facts/protocol/freeze.json": "bd337980ca19ae1c5d1fd4839f9e277cf2e28cda0c69d7ae97902cd38bfd5d9b",
     "Two_Model_Collection/math/protocol/freeze.json": "45b342110def6ad33e85deeb81b27ff96a434defc25a447bc243d932952d900d",
     "Two_Model_Collection/facts/R/analyse.R": "12f3dc87860086362314f222d3da39ec16a26ef3c6475781c4169d5c4b3315e7",
     "Two_Model_Collection/math/R/analyse.R": "e6aa54f8a1a1607c9cc98746e70ab6cdad699ce1f9d7c9d210b24963165767c5"
   },
-  "amendment": "User removed budget caps for existing frozen collection; previous freeze archived in amendment_02_original."
+  "amendment": "Budget reservation only; original freeze preserved in amendment_01_original."
 }
