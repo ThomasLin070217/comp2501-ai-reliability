@@ -1,0 +1,13 @@
+{
+  "attempts": 100,
+  "questions": 100,
+  "input_tokens": 598394,
+  "output_tokens": 8818,
+  "search_calls": 66,
+  "guard_cny": 17.68878,
+  "probe_input_tokens": 8714,
+  "probe_output_tokens": 246,
+  "probe_search_calls": 1,
+  "probe_guard_cny": 0.26658,
+  "cash_price": "Unknown HKU course quota pricing; guard is not an invoice"
+}

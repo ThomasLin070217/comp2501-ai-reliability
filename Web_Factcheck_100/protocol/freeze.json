@@ -1,0 +1,29 @@
+{
+  "frozen_at": "2026-10-05T06:01:19Z",
+  "questions": 100,
+  "repeats": 1,
+  "concurrency": 2,
+  "max_attempts": 102,
+  "max_transport_retries": 2,
+  "timeout_seconds": 240,
+  "token_and_search_guard_cny": 40,
+  "prior_paid_guard_cny": 56.9192,
+  "guard_note": "Input CNY20/M, output CNY50/M, search CNY0.08/call for conservative planning only. HKU cash pricing unknown; not invoice. Reservation is per request, not a hard server-side token limit.",
+  "next_request_reservation_cny": 0.5,
+  "response_policy": "No retry for wrong/abstaining/unscorable/truncated/no-search content. At most one retry per HTTP 502/503/504 or no-response transport failure, two globally.",
+  "comparison": "Historical same-question MiniMax N0 and N1, repeated records first averaged within question. Not a randomized contemporaneous no-web control. New answers have one repeat.",
+  "search_policy": "Native web_search explicitly requested through tool_choice; actual tool calls and results recorded. No-search responses remain in all-task outcome table and are separately flagged.",
+  "grading": "Frozen vscore final answer field. correct/abstain are not errors; invalid and transport failure separate. No gold or previous answer sent to model.",
+  "source_doc": "https://platform.minimax.io/docs/guides/server-tools",
+  "files_sha256": {
+    "Web_Factcheck_100/R/common.R": "fd0be661174b5687139df448a09f79b4fd74b2faf1f9f92199c482c50cb84396",
+    "Web_Factcheck_100/R/collect.R": "fb86d0f322c4835a458169a2a5a529eee5ec6ee53653987b499fcc3c9fe04a92",
+    "Web_Factcheck_100/protocol/questions.jsonl": "a72f2e8d72e4d08e7deca66e63ae25d7859c800dec99c2a1d8b0d71afaac2923",
+    "Web_Factcheck_100/protocol/model.json": "3f4040d3a119974dc80384e63ea95192b3a42b35c4c59c9598ea85f91b5f6311",
+    "Web_Factcheck_100/protocol/prompt.json": "44ccf79e659904e2ad63f08a182fdc23180beaf400a7762ab64b20a704cd5690",
+    "Followup_Validation/R/common.R": "3f2bb8e903b657c89985e81ebd8e804aa4747974b3bfa8f79262c15a744e61e8",
+    "Natural_Crosscheck/R/common.R": "d7188b10618fb06e0185a8a2ea18c6ed003c32cc99266bc34a50ddb81f762f9e",
+    "Math_Supplement/R/common.R": "36598eaebb2c132db0152360d4472e7ff19bf4c8e137aff997f840a340029fdc",
+    "Peer_Misleading_Study/R/core.R": "ca3bf9ff109d9a3cac7ff5107ba0ead4e41c02f3314a8d0fceeb0930f539ca11"
+  }
+}

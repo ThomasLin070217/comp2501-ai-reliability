@@ -1,0 +1,4 @@
+"question_id","frozen_grade","semantic_label","reviewer","reason"
+"SV1181","unscorable","abstain","Codex (AI review)","Explicit inability to verify; no final date supplied; missing JSON object."
+"SV1140","unscorable","abstain","Codex (AI review)","Empty answer and boolean abstain=true, but empty required reason."
+"SV2391","unscorable","abstain","Codex (AI review)","Empty answer and inability to confirm, but abstain is string true instead of boolean."

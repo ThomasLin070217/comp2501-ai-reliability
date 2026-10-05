@@ -1,0 +1,4 @@
+"group","questions","scorable","correct","wrong","abstain","unscorable","error_pct"
+"Web enabled: all 100",100,97,63,21,13,3,21.6494845360825
+"Actual search observed",60,60,60,0,0,0,0
+"No search observed",40,37,3,21,13,3,56.7567567567568

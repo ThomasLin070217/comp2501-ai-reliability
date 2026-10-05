@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "checks": ["100 frozen question IDs", "planned request reconstruction without gold", "freeze hashes unchanged", "attempt-response completeness", "outcome totals", "search/no-search partition"],
+  "response_sha256": "31cd39270cf89edf3842f876d2d454b5b7f69fd7b2dc5d9ddcfa57524703ba2a"
+}
