@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-05T12:33:24Z",
+  "status": "finished",
+  "direct_planned": 14,
+  "dependency_candidates": 24,
+  "terminal_recovery_tasks": 29,
+  "dependency_still_blocked": 9,
+  "http_attempts": 30,
+  "added_guard_cny": 7.49703,
+  "budget_enforced": false
+}

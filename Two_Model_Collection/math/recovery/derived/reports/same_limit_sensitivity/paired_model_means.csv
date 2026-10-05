@@ -1,0 +1,15 @@
+"provider","error_a","error_b","comparison","pairs","questions"
+"deepseek",0,0,"natural_crosscheck",60,30
+"minimax",0.116666666666667,0,"natural_crosscheck",60,30
+"deepseek",0,0,"initial_vs_self",60,30
+"minimax",0.116666666666667,0.116666666666667,"initial_vs_self",60,30
+"deepseek",0,0,"upstream_misconception",24,12
+"minimax",0.125,0.0416666666666667,"upstream_misconception",24,12
+"deepseek",0,0,"propagation_AI",24,12
+"minimax",0,0,"propagation_AI",22,11
+"deepseek",0.0416666666666667,0,"propagation_Human",24,12
+"minimax",0,0,"propagation_Human",22,11
+"deepseek",0,0.0416666666666667,"attribution_A0",24,12
+"minimax",0,0,"attribution_A0",23,12
+"deepseek",0,0,"attribution_A1",24,12
+"minimax",0,0,"attribution_A1",22,11

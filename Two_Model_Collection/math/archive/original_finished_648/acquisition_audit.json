@@ -1,0 +1,27 @@
+{
+  "audited_at": "2026-10-05T12:31:18Z",
+  "status": "passed",
+  "checks": {
+    "unique_completed_tasks": true,
+    "all_completed_in_frozen_plan": true,
+    "unique_http_attempts": true,
+    "completed_and_skipped_disjoint": true,
+    "all_requests_allow_search_without_forcing": true,
+    "every_record_request_reconstructed_from_frozen_prompts_and_actual_dependencies": true,
+    "AI_Human_actual_donor_body_identical": true
+  },
+  "completed": 648,
+  "skipped": 84,
+  "http_attempts": 648,
+  "http_ledger_entries": 648,
+  "actual_http_response_records": 603,
+  "administrative_unknowns": 4,
+  "unresolved_http": [],
+  "source_label_pairs_checked": 97,
+  "planned": 732,
+  "remaining": 0,
+  "guard_cny": 541.1115,
+  "cap_cny": null,
+  "budget_enforced": false,
+  "note": "An unresolved request during active collection is in flight, not necessarily failed. No retries are performed by this audit."
+}

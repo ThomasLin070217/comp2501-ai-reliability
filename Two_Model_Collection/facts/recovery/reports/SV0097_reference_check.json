@@ -1,0 +1,9 @@
+{
+  "question_id": "SV0097",
+  "reference": "June 28, 2020",
+  "review_date": "2026-10-05",
+  "result": "The project GitHub changelog lists 7.8.8 with 2020-06-28, supporting the inherited reference over the build-date confusion.",
+  "source": "https://github.com/notepad-plus-plus/notepad-plus-plus/wiki/Changes-v7#788",
+  "direct_download_and_news_pages": "Attempted but returned HTTP 403; not claimed as directly inspected.",
+  "scope": "Only this disputed recovered item received a fresh primary-source check; no frozen scoring/reference changed."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "direct_payload_hashes_verified": 14,
+  "dependency_graphs_checked": 24,
+  "retry_independent_of_answer": true,
+  "original_tool_use_diagnoses_verified": 5,
+  "no_network_calls": true
+}

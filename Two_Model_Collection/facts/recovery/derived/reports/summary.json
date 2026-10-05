@@ -1,0 +1,16 @@
+{
+  "time": "2026-10-05T12:34:16Z",
+  "planned": 1600,
+  "completed": 1591,
+  "dependency_skipped": 9,
+  "not_collected": 0,
+  "scope_complete": true,
+  "grade_counts": {
+    "abstain": 93,
+    "correct": 1271,
+    "incorrect": 208,
+    "unscorable": 19
+  },
+  "budget": "See runtime ledger/status; this script does not reconstruct billing from tokens.",
+  "note": "No search is a retained model choice. Empty, malformed, truncated and failed outputs are not abstentions."
+}

@@ -1,0 +1,7 @@
+{
+  "scope": "original",
+  "excluded_questions": ["CHAMP:P_Combinatorics_20", "CHAMP:P_Inequality_15", "CHAMP:P_Number-Theory_17", "CHAMP:P_Number-Theory_24", "CHAMP:P_Number-Theory_27", "CHAMP:P_Number-Theory_42", "CHAMP:P_Number-Theory_67", "CHAMP:P_Number-Theory_71", "CHAMP:P_Polynomial_17", "CHAMP:P_Polynomial_23", "CHAMP:P_Polynomial_24", "CHAMP:P_Polynomial_50", "CHAMP:P_Sequence_19", "CHAMP:P_Sequence_20"],
+  "remaining_questions": 27,
+  "remaining_planned_positions": 468,
+  "caution": "Whole-question conservative risk exclusion, not confirmation of copied benchmark answers. Uses documented semantic labels; original scores and full-sample results retained."
+}

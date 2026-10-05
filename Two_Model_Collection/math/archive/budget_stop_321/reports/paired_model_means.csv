@@ -1,0 +1,5 @@
+"provider","error_a","error_b","comparison","pairs","questions"
+"deepseek",0,0,"natural_crosscheck",8,8
+"minimax",0,0,"natural_crosscheck",8,7
+"deepseek",0,0,"initial_vs_self",1,1
+"minimax",0.0714285714285715,0.0714285714285715,"initial_vs_self",15,14

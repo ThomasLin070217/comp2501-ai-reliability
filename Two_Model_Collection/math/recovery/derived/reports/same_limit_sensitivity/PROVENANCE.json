@@ -1,0 +1,8 @@
+{
+  "scope": "supplemented_semantic_same_output_limit",
+  "excluded_questions": ["CHAMP:P_Combinatorics_20", "CHAMP:P_Inequality_15", "CHAMP:P_Inequality_26", "CHAMP:P_Inequality_8", "CHAMP:P_Number-Theory_42", "CHAMP:P_Polynomial_11", "CHAMP:P_Polynomial_17", "CHAMP:P_Polynomial_47", "CHAMP:P_Sequence_19", "CHAMP:P_Sequence_28", "CHAMP:P_Sequence_40"],
+  "remaining_questions": 30,
+  "remaining_planned_positions": 552,
+  "rule": "Exclude the entire question if ANY recovery HTTP request for it used max_tokens=6144, including unselected/failed attempts. This removes related baseline/donor exposure and all models/repetitions/conditions together. Remaining requests retain max_tokens=1536.",
+  "caution": "Post-collection sensitivity on a smaller set; still includes technical retries at unchanged output limit and post-collection semantic labels. It does not replace the original frozen-parameter dataset or establish generalization."
+}

@@ -1,0 +1,5 @@
+"domain","layer","attempts","usage_based_guard_cny","unknown_charge_reserve_cny","total_guard_cny"
+"facts","runs",1576,226.37104,90,316.37104
+"facts","recovery/runs",30,7.49703,0,7.49703
+"math","runs",648,91.1115,450,541.1115
+"math","recovery/runs",164,24.79982,120,144.79982

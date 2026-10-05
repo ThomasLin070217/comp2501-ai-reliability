@@ -1,0 +1,33 @@
+{
+  "observed_at": "2026-10-05 09:50:51 UTC",
+  "session_id": 63856,
+  "session_lookup": "Unknown process id",
+  "lock_present": true,
+  "files": [
+    {
+      "path": "Two_Model_Collection/math/runs/attempts.jsonl",
+      "bytes": 109687,
+      "sha256": "a5055a141dd881354ebca575f35a5fff75c386443e6a2818231b07db2de2a07f"
+    },
+    {
+      "path": "Two_Model_Collection/math/runs/http_responses.jsonl",
+      "bytes": 7115496,
+      "sha256": "75986cf74c53a8a8d912df46a9235c93f0dfa3b5f2ebf06b903adcff5acb92ad"
+    },
+    {
+      "path": "Two_Model_Collection/math/runs/completed.jsonl",
+      "bytes": 3287709,
+      "sha256": "dfe6af3dcdf8c04b714fa29bbf096e53ef036bb6d1c1e8c064b8990b44debe3a"
+    },
+    {
+      "path": "Two_Model_Collection/math/runs/skipped.jsonl",
+      "bytes": 16922,
+      "sha256": "5b65bb4a76112b93f2ae98bed96d9c20269ca938da445426bc7153a8a0c1f64e"
+    },
+    {
+      "path": "Two_Model_Collection/math/runs/status.json",
+      "bytes": 251,
+      "sha256": "9b22743d8d302ad7569c3a494a8cd8e485467f4bbc98ed90b67df63fd4ac9c89"
+    }
+  ]
+}

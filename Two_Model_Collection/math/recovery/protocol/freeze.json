@@ -1,0 +1,28 @@
+{
+  "frozen_at": "2026-10-05T12:30:33Z",
+  "original_scope": 732,
+  "recovery_targets": 148,
+  "technically_failed_targets": 64,
+  "dependency_skipped_targets": 84,
+  "max_recovery_attempts_per_task": 2,
+  "timeout_seconds": 600,
+  "truncated_max_tokens": 6144,
+  "budget_enforced": false,
+  "files_sha256": {
+    "Two_Model_Collection/math/recovery/R/common.R": "5efba01429698bcbe9ac0e6de7298ce6b996ec950cd7cc03424ba03cd1bc1685",
+    "Two_Model_Collection/math/recovery/R/prepare.R": "cf8c6c160dc41b52d2f6fd4546e1b3368a6fe99607132d2a959ae26214710bad",
+    "Two_Model_Collection/math/recovery/R/collect.R": "9ee23caeddf986dcc0146c016accadda7afab71f379d7aba8fba46d0e197cf90",
+    "Two_Model_Collection/math/recovery/protocol/plan.csv": "2a100270119c68b16e75fac523302f7e675d0bd831b9d95296b6145bdef4eed4",
+    "Two_Model_Collection/math/recovery/protocol/checks.json": "781632ca218dd52c113de91c5b5619e113f3c3cbde3ef43b0447a9cdc2c042a6",
+    "Two_Model_Collection/math/recovery/protocol/PROTOCOL.md": "9eca2e0a138959f87a63c1be7a34f5ac7732f6f2b0593d99eec462d789017201",
+    "Two_Model_Collection/R/runtime.R": "908cf3c72d9c065d5c7cefad5545c40401ce88f019f90daf0efa30915112e1d5",
+    "Fact_Prompt_Design/R/prompts.R": "6ffafcc984cfcf275fc77c754e076f7d87dee346531e779b939e440e96cc01a2",
+    "Two_Model_Collection/protocol/models.json": "a849191224b05c58a7172dfa7658b716291f490ad7e1c225e6299c1ce83b2bc5",
+    "Two_Model_Collection/math/protocol/tasks.csv": "96312bc0c90da56476ce083d98a3b1afe8f84564779922363b2a07289d28bbbd",
+    "Two_Model_Collection/math/protocol/prompts.json": "6feb15e6f792527af1f9cfd7f9497f44781a2b43c3f20554f90884319a7bc25c",
+    "Two_Model_Collection/math/runs/completed.jsonl": "48cf9b95a091456553e1a2db9601ba330bd66c0e3f810942fd58ed518fd07423",
+    "Two_Model_Collection/math/runs/skipped.jsonl": "aad42f3414d3c390e73b5efc8d2e22ed3ea967a32ba599b6c3b0fc12ad83354b",
+    "Two_Model_Collection/math/runs/http_responses.jsonl": "2cc57de090dbaa8904bf6af7a714e266cd09da0bf102a64969c572a948d8bb0b",
+    "Two_Model_Collection/math/runs/attempts.jsonl": "bafea0acfe3116a589d4fe8f4d8bb219506872b5f81c1472019388675c371d81"
+  }
+}

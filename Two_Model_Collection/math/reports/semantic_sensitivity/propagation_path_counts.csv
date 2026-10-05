@@ -1,0 +1,5 @@
+"provider","condition","all_valid","eligible_opportunities","full_paths","path_per_all","path_per_eligible"
+"deepseek","A1_AI",16,1,0,0,0
+"minimax","A1_AI",21,0,0,0,NA
+"deepseek","A1_Human",16,1,0,0,0
+"minimax","A1_Human",22,0,0,0,NA

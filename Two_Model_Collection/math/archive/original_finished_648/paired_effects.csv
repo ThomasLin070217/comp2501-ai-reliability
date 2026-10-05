@@ -1,0 +1,7 @@
+"comparison","condition_a","condition_b","error_a","error_b","difference","lower","upper","confidence","questions","pairs","bootstrap_valid"
+"natural_crosscheck","self_check","A0_AI",0.0125,0,-0.0125,-0.046875,0,0.975,30,57,5000
+"initial_vs_self","neutral_initial","self_check",0.0357142857142857,0.0357142857142857,0,0,0,0.95,22,32,4773
+"propagation_AI","A0_AI","A1_AI",0,0,0,0,0,0.95,12,18,5000
+"propagation_Human","A0_Human","A1_Human",0,0,0,0,0,0.95,13,24,5000
+"attribution_A0","A0_AI","A0_Human",0,0,0,0,0,0.95,13,29,5000
+"attribution_A1","A1_AI","A1_Human",0,0,0,0,0,0.95,10,19,4997

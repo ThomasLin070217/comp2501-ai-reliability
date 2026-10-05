@@ -1,0 +1,5 @@
+# Local process handles and duplicate console streams are not research records.
+*.log
+*.pid
+*.exitcode
+collector.lock*

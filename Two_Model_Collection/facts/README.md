@@ -2,6 +2,8 @@
 
 **Current status:** scheduled run finished: 1,576 recorded HTTP calls, 24 dependency skips, zero pending tasks. See [the reviewed final report](reports/REVIEWED_RESULTS.md) for primary results, semantic and source-exposure sensitivities, missingness and the separate technical-recovery inventory. “Finished” means every planned task reached a terminal state, not that every task yielded a valid answer. The initial budget below was superseded by the user's later instruction to complete collection without that ceiling; frozen amendments preserve the history.
 
+**Subsequent technical recovery:** the [separate recovery appendix](recovery/reports/RECOVERY_REPORT.md) resolved all 14 technical failures and restored 15 dependent branches using 30 new HTTP attempts. Its derived view contains 1,591 complete records and nine remaining schema-blocked branches. Original files and primary results are unchanged; use the labelled derived paths when reporting recovery-completed results.
+
 100 inherited factual questions; MiniMax and DeepSeek; two independent repetitions. Natural initial/self-check/A0-AI comparisons require 1,200 target answers. A fixed, stratified 25-question mechanism subset adds 400 answers, for **1,600 target answers**. These are target counts, not completed observations.
 
 The subset was selected before new output was inspected using R seed 25011005, proportional largest-remainder allocation over date granularity: 9 day, 3 month and 13 year questions. All 100 original neutral questions and reviewed misleading-premise stimuli are preserved; no question was selected because a new model response was wrong.

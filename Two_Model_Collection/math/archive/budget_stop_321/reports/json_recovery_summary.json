@@ -1,0 +1,16 @@
+{
+  "status": "posthoc_sensitivity_not_replacement",
+  "recovered": 166,
+  "strict_counts": {
+    "correct": 122,
+    "incorrect": 6,
+    "unscorable": 193
+  },
+  "sensitivity_counts": {
+    "correct": 271,
+    "incorrect": 23,
+    "unscorable": 27
+  },
+  "method": "Use the already frozen acquisition parser to recover a unique JSON object from surrounding prose; score its unchanged fields against the frozen reference. Incomplete/transport failures are never repaired into valid responses.",
+  "review": "Automatic format-recovery sensitivity, with separate Codex review of wrong/unresolved final claims. It is not a claim that every reasoning paragraph has been independently verified."
+}

@@ -34,10 +34,15 @@ for(r in ai){
 check('AI_Human_actual_donor_body_identical',TRUE)
 unresolved<-setdiff(tm_fields(attempts,'id'),tm_fields(http,'id'))
 unresolved_cost<-sum(vapply(Filter(function(x)x$id%in%unresolved,attempts),function(x)x$reservation_cny,0))
+runtime_status<-fromJSON(file.path(root,'runs/status.json'),simplifyVector=FALSE)
 out<-list(audited_at=tm_now(),status='passed',checks=checks,completed=length(records),skipped=length(skips),
- http_attempts=length(attempts),http_returns=length(http),unresolved_http=unresolved,
+ http_attempts=length(attempts),http_ledger_entries=length(http),
+ actual_http_response_records=sum(vapply(http,function(x)!is.null(x$http_status),TRUE)),
+ administrative_unknowns=sum(vapply(http,function(x)isTRUE(x$administrative_resolution),TRUE)),
+ unresolved_http=unresolved,
  source_label_pairs_checked=paired,planned=nrow(tasks),remaining=nrow(tasks)-length(records)-length(skips),
- guard_cny=sum(vapply(http,function(x)x$guard_cny,0))+unresolved_cost,cap_cny=140,
+ guard_cny=sum(vapply(http,function(x)x$guard_cny,0))+unresolved_cost,cap_cny=runtime_status$cap_cny,
+ budget_enforced=runtime_status$budget_enforced%or%TRUE,
  note='An unresolved request during active collection is in flight, not necessarily failed. No retries are performed by this audit.')
 tm_write(out,file.path(root,'reports/acquisition_audit.json'))
 cat('Acquisition audit passed:',length(records),'records;',paired,'source-label pairs.\n')

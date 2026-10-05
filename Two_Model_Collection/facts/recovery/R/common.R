@@ -1,0 +1,48 @@
+source('Two_Model_Collection/R/runtime.R')
+rc_root<-'Two_Model_Collection/facts/recovery'
+rc_original<-'Two_Model_Collection/facts'
+rc_retryable<-function(r){
+ if(identical(r$status,'ok'))return(FALSE)
+ if(r$status%in%c('transport_error','invalid_json_response','incomplete'))return(TRUE)
+ r$status=='http_error'&&!is.null(r$http_status)&&(r$http_status>=500L||r$http_status==408L)
+}
+rc_http<-function(task,payload,cfg,attempt_no){
+ key<-Sys.getenv(cfg$api_key_env);stopifnot(nzchar(key))
+ url<-paste0(cfg$base_url,'/messages')
+ stopifnot(url%in%c('http://www.bio8.cs.hku.hk:8080/v1/messages','https://api.deepseek.com/anthropic/v1/messages'))
+ body<-tm_json(payload);stopifnot(!grepl(key,body,fixed=TRUE))
+ meta<-list(id=paste0('facts-recovery:',task$id,':attempt',attempt_no),task_id=task$id,
+  provider=task$provider,attempt_no=attempt_no,time=tm_now(),reservation_cny=10,
+  timeout_seconds=600,request_sha256=digest(body,'sha256',serialize=FALSE))
+ tm_append(meta,file.path(rc_root,'runs/attempts.jsonl'));start<-Sys.time()
+ h<-new_handle();handle_setheaders(h,.list=list('Content-Type'='application/json','x-api-key'=key,'anthropic-version'='2023-06-01'))
+ handle_setopt(h,postfields=body,timeout=600,connecttimeout=20,followlocation=FALSE)
+ response<-tryCatch(curl_fetch_memory(url,handle=h),error=function(e)NULL)
+ result<-c(meta,list(request=payload,status='transport_error',guard_cny=10,
+  latency_seconds=as.numeric(difftime(Sys.time(),start,units='secs'))))
+ if(!is.null(response)){
+  result$http_status<-response$status_code
+  raw<-tryCatch(fromJSON(rawToChar(response$content),simplifyVector=FALSE),error=function(e)NULL)
+  if(!is.null(raw))result$raw_response<-raw
+  if(response$status_code==200L&&!is.null(raw)){
+   blocks<-raw$content%or%list()
+   result$text<-paste(vapply(Filter(function(x)identical(x$type,'text'),blocks),function(x)x$text,''),collapse='\n')
+   result$finish_reason<-raw$stop_reason
+   result$status<-if(identical(raw$stop_reason,'end_turn'))'ok'else'incomplete'
+   result$input_tokens<-sum(unlist(raw$usage[c('input_tokens','cache_creation_input_tokens','cache_read_input_tokens')]))
+   result$output_tokens<-raw$usage$output_tokens%or%0
+   result$search_requested<-sum(vapply(blocks,function(x)identical(x$type,'server_tool_use')&&identical(x$name,'web_search'),TRUE))
+   result$search_result_blocks<-sum(vapply(blocks,function(x)identical(x$type,'web_search_tool_result'),TRUE))
+   if(length(raw$usage))result$guard_cny<-(result$input_tokens*20+result$output_tokens*50)/1e6+result$search_requested*.08
+  }else result$status<-if(response$status_code==200L)'invalid_json_response'else'http_error'
+ }
+ stopifnot(!grepl(key,tm_json(result),fixed=TRUE))
+ tm_append(result,file.path(rc_root,'runs/http_responses.jsonl'));result
+}
+rc_record<-function(task,r,source_kind,provenance){
+ c(task,list(status=r$status,text=r$text%or%'',completed_at=tm_now(),http_id=r$id,
+  request_sha256=r$request_sha256,guard_cny=r$guard_cny,search_requested=r$search_requested%or%0,
+  search_result_blocks=r$search_result_blocks%or%0,finish_reason=r$finish_reason%or%NULL,
+  transcript=if(r$status=='ok')list(list(role='assistant',content=r$raw_response$content))else NULL,
+  recovery_source=source_kind,recovery_provenance=provenance,original_record_replaced=FALSE))
+}

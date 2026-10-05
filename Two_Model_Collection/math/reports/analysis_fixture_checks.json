@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "network_calls": 0,
+  "checks": ["paired_effects", "propagation_denominators", "four_branch_interaction", "partial_coverage", "semantic_review_export"]
+}

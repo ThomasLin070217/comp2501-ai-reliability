@@ -1,0 +1,9 @@
+{
+  "derived_at": "2026-10-05T12:45:48Z",
+  "original_records": 648,
+  "recovery_http_records": 164,
+  "selected_records": 732,
+  "remaining_unavailable_dependencies": 0,
+  "selection": "Last allowed recovery attempt per task; preserve original if no recovery record. No selection by correctness.",
+  "limitation": "Supplemented analysis includes repeated generation after technical failure and a declared 6144-token subset. It is separate from the original frozen-parameter main analysis."
+}

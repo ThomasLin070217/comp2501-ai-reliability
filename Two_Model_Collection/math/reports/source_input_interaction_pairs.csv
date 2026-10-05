@@ -1,0 +1,16 @@
+"question_id","provider","repeat_id","A0_AI","A0_Human","A1_AI","A1_Human","interaction"
+"CHAMP:P_Combinatorics_18","deepseek",1,0,0,0,0,0
+"CHAMP:P_Combinatorics_18","minimax",1,0,0,0,0,0
+"CHAMP:P_Combinatorics_5","deepseek",1,0,0,0,0,0
+"CHAMP:P_Inequality_15","minimax",1,0,0,0,0,0
+"CHAMP:P_Inequality_24","minimax",1,0,0,0,0,0
+"CHAMP:P_Inequality_24","minimax",2,0,0,0,0,0
+"CHAMP:P_Number-Theory_27","minimax",1,0,0,0,0,0
+"CHAMP:P_Number-Theory_67","minimax",1,0,0,0,0,0
+"CHAMP:P_Polynomial_23","deepseek",2,0,0,0,0,0
+"CHAMP:P_Polynomial_23","minimax",2,0,0,0,0,0
+"CHAMP:P_Polynomial_47","deepseek",1,0,0,0,0,0
+"CHAMP:P_Sequence_20","deepseek",1,0,0,0,0,0
+"CHAMP:P_Sequence_20","deepseek",2,0,0,0,0,0
+"CHAMP:P_Sequence_20","minimax",1,0,0,0,0,0
+"CHAMP:P_Sequence_42","minimax",1,0,0,0,0,0

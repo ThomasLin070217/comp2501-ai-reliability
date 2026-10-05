@@ -1,0 +1,5 @@
+"domain","provider","self","cross"
+"Facts","deepseek",0.02,0.02
+"Facts","minimax",0.445,0.08
+"Mathematics","deepseek",0.024390243902439,0.0365853658536585
+"Mathematics","minimax",0.182926829268293,0.0731707317073171

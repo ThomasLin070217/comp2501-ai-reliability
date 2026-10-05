@@ -1,0 +1,25 @@
+{
+  "post_hoc": true,
+  "reviewer": "Codex",
+  "independent_human_review": false,
+  "reviewed_exceptions": 19,
+  "new_exception_count": 1,
+  "new_recovery_outputs_read": 29,
+  "counts": {
+    "abstain": 101,
+    "correct": 1274,
+    "incorrect": 215,
+    "unscorable": 1
+  },
+  "strict_labels_changed": false,
+  "natural_comparison": {
+    "questions": 100,
+    "pairs": 394,
+    "error_self": 0.2325,
+    "error_cross": 0.05,
+    "difference": -0.1825,
+    "lower": -0.22,
+    "upper": -0.1425,
+    "confidence": 0.975
+  }
+}

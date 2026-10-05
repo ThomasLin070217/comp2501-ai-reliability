@@ -1,0 +1,18 @@
+{
+  "reviewed_responses": 67,
+  "wrong_recovered_reviewed": 23,
+  "unresolved_complete_reviewed": 4,
+  "strict_correct_sample": 40,
+  "sample_reason_quality": {
+    "error": 8,
+    "minor_error": 1,
+    "no_clear_error_in_short_reason": 28,
+    "proof_gap": 3
+  },
+  "final_semantic_counts": {
+    "correct": 272,
+    "incorrect": 26,
+    "unscorable": 23
+  },
+  "limitations": "Codex review, not independent human verification. Full prose/reasoning of all 321 records was not independently checked. Technical/incomplete outputs remain unavailable. The correct-answer sample is not an unbiased estimate for all responses or models."
+}

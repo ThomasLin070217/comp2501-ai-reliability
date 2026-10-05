@@ -1,0 +1,10 @@
+{
+  "definition": "(A1_Human - A1_AI) - (A0_Human - A0_AI)",
+  "difference": -0.03,
+  "lower": -0.06,
+  "upper": 0,
+  "confidence": 0.95,
+  "questions": 25,
+  "complete_four_branch_units": 97,
+  "exploratory": true
+}

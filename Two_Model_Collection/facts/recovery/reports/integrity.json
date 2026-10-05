@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "original_frozen_hashes_unchanged": true,
+  "requests_audited": 30,
+  "recovery_terminal_tasks": 29,
+  "remaining_blocked": 9,
+  "all_direct_payloads_unchanged": true,
+  "max_tokens": 768,
+  "timeout_seconds": 600,
+  "at_most_two_attempts": true,
+  "only_technical_failures_retried": true,
+  "actual_recovered_dependencies_and_native_history_checked": true,
+  "added_guard_cny": 7.49703
+}

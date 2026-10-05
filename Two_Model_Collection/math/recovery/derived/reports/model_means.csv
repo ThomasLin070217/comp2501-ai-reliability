@@ -1,0 +1,14 @@
+"provider","condition","error"
+"deepseek","A0_AI",0
+"minimax","A0_AI",0.0588235294117647
+"deepseek","A0_Human",0.0357142857142857
+"minimax","A0_Human",0
+"deepseek","A1_AI",0
+"minimax","A1_AI",0
+"deepseek","A1_Human",0
+"minimax","A1_Human",0
+"minimax","misconception_initial",0
+"deepseek","neutral_initial",0
+"minimax","neutral_initial",0.14
+"deepseek","self_check",0.0294117647058823
+"minimax","self_check",0.142857142857143

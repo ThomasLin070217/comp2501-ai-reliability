@@ -1,0 +1,9 @@
+"provider","condition","baseline_grade","wrong_finals","eligible_pairs","conditional_risk"
+"minimax","self_check","correct",0,14,0
+"minimax","self_check","abstain",0,0,NA
+"deepseek","self_check","correct",0,1,0
+"deepseek","self_check","abstain",0,0,NA
+"minimax","A0_AI","correct",0,12,0
+"minimax","A0_AI","abstain",0,0,NA
+"deepseek","A0_AI","correct",0,2,0
+"deepseek","A0_AI","abstain",0,0,NA

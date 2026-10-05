@@ -1,0 +1,37 @@
+{
+  "time": "2026-10-05T12:49:18Z",
+  "status": "passed",
+  "domains": {
+    "facts": {
+      "planned": 1600,
+      "unique_overlay_records": 1591,
+      "still_uncollected": 9,
+      "recovery_targets": 29,
+      "recovery_attempts": 30,
+      "recovery_final_statuses": {
+        "ok": 29
+      },
+      "overlay_statuses": {
+        "ok": 1591
+      },
+      "frozen_recovery_hashes_unchanged": true,
+      "overlay_matches_original_plus_last_recovery": true
+    },
+    "math": {
+      "planned": 732,
+      "unique_overlay_records": 732,
+      "still_uncollected": 0,
+      "recovery_targets": 148,
+      "recovery_attempts": 164,
+      "recovery_final_statuses": {
+        "ok": 148
+      },
+      "overlay_statuses": {
+        "ok": 732
+      },
+      "frozen_recovery_hashes_unchanged": true,
+      "overlay_matches_original_plus_last_recovery": true
+    }
+  },
+  "caveat": "Complete native responses still require semantic grading; an ok status is not a correctness claim."
+}

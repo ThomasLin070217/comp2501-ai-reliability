@@ -1,0 +1,2 @@
+"comparison","condition_a","condition_b","error_a","error_b","difference","lower","upper","confidence","questions","pairs","post_hoc"
+"natural_crosscheck","self_check","A0_AI",0.2325,0.05,-0.1825,-0.22,-0.1425,0.975,100,394,TRUE

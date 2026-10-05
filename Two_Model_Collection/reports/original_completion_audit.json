@@ -1,0 +1,36 @@
+{
+  "time": "2026-10-05T12:49:17Z",
+  "status": "passed",
+  "scope": "Original scheduled runs only; terminal tasks are not all valid answers.",
+  "domains": {
+    "facts": {
+      "planned": 1600,
+      "recorded": 1576,
+      "dependency_skipped": 24,
+      "pending": 0,
+      "status_counts": {
+        "incomplete": 5,
+        "ok": 1562,
+        "transport_error": 9
+      },
+      "guard_cny": 316.37104,
+      "paired_estimator_check": "passed: re-averaged repetitions, questions and models from graded records",
+      "audit": "All task IDs terminal, attempts accounted for, request hashes matched, original frozen protocol unchanged."
+    },
+    "math": {
+      "planned": 732,
+      "recorded": 648,
+      "dependency_skipped": 84,
+      "pending": 0,
+      "status_counts": {
+        "incomplete": 19,
+        "interrupted_unknown": 4,
+        "ok": 584,
+        "transport_error": 41
+      },
+      "guard_cny": 541.1115,
+      "paired_estimator_check": "passed: re-averaged repetitions, questions and models from graded records",
+      "audit": "All task IDs terminal, attempts accounted for, request hashes matched, original frozen protocol unchanged."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "unique_selected_records": 732,
+  "final_status_ok": 732,
+  "unscorable_complete_output": 5,
+  "reviewed_observation_http_ids_match": true,
+  "reviewed_observations": 173,
+  "technical_gaps": 0,
+  "dependency_gaps": 0,
+  "original_frozen_artifacts_unchanged": true,
+  "guard_cny_original": 541.1115,
+  "guard_cny_recovery": 144.79982,
+  "guard_cny_total": 685.911319999999,
+  "selected_6144_responses": 21,
+  "remaining_1536_question_sensitivity": 30
+}

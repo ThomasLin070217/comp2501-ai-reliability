@@ -1,5 +1,7 @@
 # Two-model autonomous-search collection
 
+**Completed and reviewed, 5 October 2026.** Start with the [results summary](reports/RESULTS_SUMMARY.md) or [HTML version](reports/RESULTS_SUMMARY.html). Original and technical-recovery runs retain 2,418 request attempts. The supplemented dataset has 2,323 unique final records; nine factual branches remain blocked by original input-schema failures, and six final records remain semantically unscorable. The original records and frozen grading remain intact. The tables and chart explicitly identify the reviewed recovery sensitivity and its mathematical token-limit change.
+
 This new collection tests **Can We Trust AI More After Cross-Checking?** using MiniMax M3 and DeepSeek V4 Pro. Collection started on 5 October 2026 after the domain protocols, shared runtime and analysis scripts were frozen. Historical offline and earlier three-model records are retained separately.
 
 ## Scope

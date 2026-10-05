@@ -1,0 +1,11 @@
+{
+  "status": "secondary_recovery_overlay",
+  "original_records": 1576,
+  "selected_recovery_records": 29,
+  "derived_records": 1591,
+  "remaining_dependency_skips": 9,
+  "original_run_modified": false,
+  "selection": "First end_turn per recovery target, otherwise final allowed technical attempt; never select by answer correctness.",
+  "primary": "Two_Model_Collection/facts/reports/paired_effects.csv",
+  "secondary": "Two_Model_Collection/facts/recovery/derived/reports/paired_effects.csv"
+}

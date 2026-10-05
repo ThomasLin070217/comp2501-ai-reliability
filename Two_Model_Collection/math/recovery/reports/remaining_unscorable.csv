@@ -1,0 +1,10 @@
+"id","question_id","provider","condition","status","text"
+"two_math:CHAMP:P_Combinatorics_30:minimax:r2:A1_AI","CHAMP:P_Combinatorics_30","minimax","A1_AI","ok","{""reason"":""The expansion (x+y+z)^1999 produces terms of the form x^a y^b z^c where a+b+c=1999 with nonnegative integers. The number of such triples equals C(1999+2, 2) = C(2001, 2) = 2001·2000/2"
+"two_math:CHAMP:P_Combinatorics_30:minimax:r1:A0_Human","CHAMP:P_Combinatorics_30","minimax","A0_Human","ok","{""reason"": ""The expansion of (x+y+z)^1999 produces terms of the form x^a y^b z^c where a+b+c=1999 with a,b,c nonnegative integers. By stars and bars, the number of such triples is C(1999+2,2) = C(2001,2) = 200"
+"two_math:CHAMP:P_Combinatorics_30:minimax:r2:A1_Human","CHAMP:P_Combinatorics_30","minimax","A1_Human","ok","{
+  ""reason"": ""The number of distinct terms in the expansion of (x+y+z)^1999 after collecting like terms equals the number of nonnegative integer solutions to a+b+c=1999. By stars and bars, this is C(1999+2, 2) = C(2001, 2) = 2001·2000/2 = 2001000."
+"two_math:CHAMP:P_Combinatorics_30:minimax:r1:A1_AI","CHAMP:P_Combinatorics_30","minimax","A1_AI","ok","Looking at
+The"
+"two_math:CHAMP:P_Combinatorics_30:minimax:r1:A1_Human","CHAMP:P_Combinatorics_30","minimax","A1_Human","ok","```json
+{
+  ""reason"": ""The expansion of (x+y+z)^1999 has terms of the form x^a y^b z^c where a+b+c=1999 with a,b,c nonnegative integers. The number of such triples is the number of nonnegative integer solutions to a+b+c=1999. By stars and bars, this equals C(1999+2, 2) = C(2001, 2) = 200"

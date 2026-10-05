@@ -1,0 +1,6 @@
+{
+  "status": "posthoc_semantic_sensitivity",
+  "source": "reports/semantic_final_responses.csv",
+  "method": "Identical frozen pairing, repeat/question/model weighting and cluster bootstrap; replace labels only with explicitly documented post-collection semantic decisions. Raw text and strict analysis remain unchanged.",
+  "warning": "Technically supplemented secondary dataset, including retries and a declared 6144-token subset. It does not replace the original frozen-parameter dataset. Remaining technical/schema gaps and sparse zero-event intervals must be disclosed."
+}

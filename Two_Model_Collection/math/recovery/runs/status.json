@@ -1,0 +1,10 @@
+{
+  "time": "2026-10-05T12:45:27Z",
+  "status": "finished",
+  "planned": 148,
+  "terminal_targets": 148,
+  "remaining": 0,
+  "recovery_attempts": 164,
+  "blocked": 0,
+  "guard_cny": 144.79982
+}

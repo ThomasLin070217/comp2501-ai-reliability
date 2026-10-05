@@ -1,0 +1,44 @@
+source('Two_Model_Collection/math/recovery/R/common.R')
+st<-fromJSON(file.path(MAIN,'runs/status.json'),simplifyVector=FALSE)
+stopifnot(identical(st$status,'finished'),st$remaining==0L,!dir.exists(file.path(MAIN,'runs/collector.lock')))
+tasks<-read.csv(file.path(MAIN,'protocol/tasks.csv'),stringsAsFactors=FALSE,na.strings=NULL)
+http<-tm_read(file.path(MAIN,'runs/http_responses.jsonl'));records<-tm_read(file.path(MAIN,'runs/completed.jsonl'));skips<-tm_read(file.path(MAIN,'runs/skipped.jsonl'))
+eligible<-tm_fields(Filter(recovery_eligible,http),'task_id')
+targets<-union(eligible,tm_fields(skips,'id'))
+plan<-tasks[tasks$id%in%targets,]
+plan$recovery_reason<-ifelse(plan$id%in%eligible,'technical_failure_or_truncation','dependency_skipped')
+hi<-setNames(http,tm_fields(http,'task_id'))
+plan$original_status<-vapply(plan$id,function(id)hi[[id]]$status%or%'dependency_skipped','')
+plan$original_stop_reason<-vapply(plan$id,function(id)hi[[id]]$finish_reason%or%'','')
+stopifnot(!anyDuplicated(plan$id),all(targets%in%plan$id))
+write.csv(plan,file.path(REC,'protocol/plan.csv'),row.names=FALSE)
+checks<-list(correct_not_eligible=!recovery_eligible(list(status='ok',text='wrong answer')),
+ abstention_not_eligible=!recovery_eligible(list(status='ok',text='{"abstain":true,"answer":""}')),
+ malformed_model_text_not_eligible=!recovery_eligible(list(status='ok',text='{')),
+ transport_eligible=recovery_eligible(list(status='transport_error')),
+ unknown_eligible=recovery_eligible(list(status='interrupted_unknown')),
+ truncated_eligible=recovery_eligible(list(status='incomplete')),
+ server_5xx_eligible=recovery_eligible(list(status='http_error',http_status=503)),
+ schema_error_not_eligible=!recovery_eligible(list(status='invalid_json_response')),
+ auth_not_eligible=!recovery_eligible(list(status='http_error',http_status=401)),
+ all_candidates_from_original_plan=all(plan$id%in%tasks$id),
+ original_main_finished=st$remaining==0,
+ local_timeout_600=grepl('timeout = 600',paste(deparse(body(recovery_http_batch)),collapse=' '),fixed=TRUE))
+fake_task<-list(id='test',question_id='test',provider='minimax')
+base<-list(request=list(max_tokens=1536L,messages=list(list(role='user',content='Q'))),status='incomplete',finish_reason='tool_use')
+checks$tool_protocol_failure_does_not_increase_tokens<-recovery_payload(fake_task,list(test=base),list(),list(),list(),list())$payload$max_tokens==1536L
+base$finish_reason<-'max_tokens'
+checks$actual_token_limit_increases_to_6144<-recovery_payload(fake_task,list(test=base),list(),list(),list(),list())$payload$max_tokens==6144L
+base$status<-'transport_error';base$finish_reason<-NULL
+checks$transport_payload_exactly_preserved<-identical(recovery_payload(fake_task,list(test=base),list(),list(),list(),list())$payload,base$request)
+stopifnot(all(unlist(checks)))
+tm_write(checks,file.path(REC,'protocol/checks.json'))
+files<-c(file.path(REC,'R',c('common.R','prepare.R','collect.R')),file.path(REC,'protocol',c('plan.csv','checks.json','PROTOCOL.md')),
+ 'Two_Model_Collection/R/runtime.R','Fact_Prompt_Design/R/prompts.R','Two_Model_Collection/protocol/models.json',
+ file.path(MAIN,'protocol',c('tasks.csv','prompts.json')),file.path(MAIN,'runs',c('completed.jsonl','skipped.jsonl','http_responses.jsonl','attempts.jsonl')))
+stopifnot(all(file.exists(files)),!file.exists(file.path(REC,'protocol/freeze.json')))
+tm_write(list(frozen_at=tm_now(),original_scope=732L,recovery_targets=nrow(plan),
+ technically_failed_targets=length(eligible),dependency_skipped_targets=length(skips),
+ max_recovery_attempts_per_task=2L,timeout_seconds=600L,truncated_max_tokens=6144L,
+ budget_enforced=FALSE,files_sha256=setNames(lapply(files,function(p)digest(file=p,algo='sha256')),files)),file.path(REC,'protocol/freeze.json'))
+cat('Frozen recovery plan:',nrow(plan),'tasks;',length(eligible),'technical,',length(skips),'dependency skips. No API calls.\n')

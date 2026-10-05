@@ -1,0 +1,19 @@
+{
+  "selected_records": 732,
+  "old_observation_reviews_retained": 115,
+  "new_distinct_observations_reviewed": 58,
+  "new_wrong_or_unresolved_reviewed": 18,
+  "new_correct_sample": 40,
+  "new_correct_sample_quality": {
+    "error": 3,
+    "minor_error": 1,
+    "no_clear_error_in_short_reason": 35,
+    "proof_gap": 1
+  },
+  "semantic_counts": {
+    "correct": 677,
+    "incorrect": 50,
+    "unscorable": 5
+  },
+  "scope": "All newly selected complete noncorrect or unresolved final answers, plus a seed-25011005 sample of 40 newly selected correct answers, were read by Codex. Original retained observations carry 115 prior decisions. No claim of independent human review or full reasoning validation of every response. Correct final answers with flawed reasons retain the correct final-answer label and receive a separate reasoning flag."
+}

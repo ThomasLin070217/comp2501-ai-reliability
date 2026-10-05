@@ -1,0 +1,19 @@
+{
+  "original_records": 648,
+  "reviewed_records": 115,
+  "new_manual_exceptions": 14,
+  "new_sample_members": 34,
+  "final_correct_sample_n": 40,
+  "final_correct_sample_reason_quality": {
+    "error": 2,
+    "minor_error": 1,
+    "no_clear_error_in_short_reason": 36,
+    "unsupported_context_claim": 1
+  },
+  "final_semantic_counts": {
+    "correct": 547,
+    "incorrect": 32,
+    "unscorable": 69
+  },
+  "scope": "115 distinct original outputs reviewed by Codex across the initial and completed-run audits; all complete-status unresolved final fields and recovered wrong answers are covered. This is not full reasoning review of every output."
+}

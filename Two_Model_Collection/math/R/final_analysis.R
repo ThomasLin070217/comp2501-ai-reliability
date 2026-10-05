@@ -1,0 +1,21 @@
+# Reuse the frozen paired estimator with explicitly separate semantic labels.
+source('Two_Model_Collection/R/runtime.R')
+root<-Sys.getenv('MATH_STUDY_ROOT','Two_Model_Collection/math');out<-file.path(root,'reports')
+sem<-read.csv(file.path(out,'semantic_final_responses.csv'),stringsAsFactors=FALSE)
+labels<-setNames(sem$final_semantic_grade,sem$id)
+tmp<-tempfile('math-final-semantic-analysis-');dir.create(file.path(tmp,'protocol'),recursive=TRUE);dir.create(file.path(tmp,'runs'))
+file.copy(file.path(root,'protocol/tasks.csv'),file.path(tmp,'protocol/tasks.csv'))
+for(n in c('completed.jsonl','skipped.jsonl'))file.copy(file.path(root,'runs',n),file.path(tmp,'runs',n))
+code<-readLines('Two_Model_Collection/math/R/analyse.R')
+line<-grep('sc<-math_score',code,fixed=TRUE);stopifnot(length(line)==1L)
+code[line]<-paste0(code[line],';g<-unname(labels[t$id]);stopifnot(!is.na(g))')
+Sys.setenv(MATH_ANALYSIS_ROOT=tmp)
+eval(parse(text=code),envir=new.env(parent=environment()))
+Sys.unsetenv('MATH_ANALYSIS_ROOT')
+dest<-file.path(out,'semantic_sensitivity');dir.create(dest,showWarnings=FALSE)
+file.copy(list.files(file.path(tmp,'reports'),full.names=TRUE),dest,overwrite=TRUE)
+unlink(tmp,recursive=TRUE)
+tm_write(list(status='posthoc_semantic_sensitivity',source='reports/semantic_final_responses.csv',
+ method='Identical frozen pairing, repeat/question/model weighting and cluster bootstrap; replace labels only with explicitly documented post-collection semantic decisions. Raw text and strict analysis remain unchanged.',
+ warning=if(root=='Two_Model_Collection/math')'All original planned positions reached an attempted or dependency-skipped terminal state; technical and format missingness remain. This post-collection semantic sensitivity does not replace the frozen strict scoring. Zero-event bootstrap intervals do not prove absence of risk.'else'Technically supplemented secondary dataset, including retries and a declared 6144-token subset. It does not replace the original frozen-parameter dataset. Remaining technical/schema gaps and sparse zero-event intervals must be disclosed.'),file.path(dest,'PROVENANCE.json'))
+cat('Final semantic sensitivity saved separately.\n')

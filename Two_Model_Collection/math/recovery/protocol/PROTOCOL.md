@@ -1,0 +1,15 @@
+# Mathematics technical recovery appendix
+
+This appendix is explicitly authorised after the original 732 tasks finish. It never changes original records. Targets are selected only by acquisition status and dependency availability, not answer correctness, abstention, uncertainty or whether an answer supports the hypothesis.
+
+Eligible original outputs: transport errors, administratively unresolved interrupted requests, HTTP 5xx, and incomplete/truncated responses. HTTP 4xx, malformed model JSON and complete wrong/abstaining answers are not retried. Previously dependency-skipped tasks are attempted only if the corresponding actual neutral baseline and donor become usable. Original incomplete/failed records remain in the primary dataset.
+
+For transport/unknown/5xx, reuse the exact original payload, including prompt, native history and generation parameters. Only an actual stop_reason=max_tokens constitutes token truncation: keep that payload but set max_tokens to the fixed value 6144. Other incomplete/tool-protocol outputs retain the original payload/token setting; do not execute undeclared tools. The 6144-token arm is a changed-parameter secondary condition, never relabelled as an identical primary observation. Every recovery transfer has a 600-second timeout. A task receives at most two recovery attempts; only an eligible technical result can trigger the second. If a first recovery actually truncates at its token limit, the same fixed 6144 rule applies to its one remaining attempt. No third attempt is permitted.
+
+Original requests for already-attempted review branches are reused byte-equivalently, except the predeclared token change. Newly available dependency branches are constructed from the final actual usable recovered baseline/donor and retained native search history. AI/Human wrappers preserve exactly the same donor answer, abstention and reason. Recovered parents can generate new histories, so supplemented results are clearly separated from original results and source provenance accompanies each record.
+
+All data handling, scoring and statistics remain in R. Cost estimates, failures and unresolved reservations continue to be recorded; the user removed the cost ceiling. Authentication/quota protection and global stop markers remain active. Requests are restricted to the existing MiniMax/DeepSeek endpoints and no credentials enter files.
+
+Freeze the candidate task table, code, model configuration, original task/prompt hashes and original acquisition log hashes before the first recovery call. Do not run simultaneously with the original collector. Use a separate lock, attempts, raw HTTP ledger, response records and failure inventory under recovery/. An interrupted unresolved request requires a new administrative audit, never an automatic retry.
+
+Primary original results and supplemented derived results are both reported. Transport/incomplete/unknown records are technical missingness, not abstentions. The 6144-token subgroup is identifiable. The study scope stays at 41 questions and 732 planned experimental task positions; recovery HTTP attempts are not independent extra observations.

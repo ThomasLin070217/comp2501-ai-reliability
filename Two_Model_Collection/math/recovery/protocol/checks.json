@@ -1,0 +1,17 @@
+{
+  "correct_not_eligible": true,
+  "abstention_not_eligible": true,
+  "malformed_model_text_not_eligible": true,
+  "transport_eligible": true,
+  "unknown_eligible": true,
+  "truncated_eligible": true,
+  "server_5xx_eligible": true,
+  "schema_error_not_eligible": true,
+  "auth_not_eligible": true,
+  "all_candidates_from_original_plan": true,
+  "original_main_finished": true,
+  "local_timeout_600": true,
+  "tool_protocol_failure_does_not_increase_tokens": true,
+  "actual_token_limit_increases_to_6144": true,
+  "transport_payload_exactly_preserved": true
+}

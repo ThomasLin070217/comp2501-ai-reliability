@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc 3.11" />
+  <title>Can We Trust AI More After Cross-Checking?</title>
+  <style type="text/css">
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Can We Trust AI More After Cross-Checking?</h1>
+</div>
+<h1 id="can-we-trust-ai-more-after-cross-checking">Can We Trust AI More
+After Cross-Checking?</h1>
+<p><strong>LINYUNIAN · PAN ZHENGYU</strong></p>
+<p>This summary separates the unchanged original experiment from the
+technical-recovery appendix. The table below uses the recovery overlay
+and explicitly documented semantic scoring sensitivity. It is not a
+retroactive replacement of the frozen primary analysis.</p>
+<h2 id="natural-cross-checking-versus-self-checking">Natural
+cross-checking versus self-checking</h2>
+<table>
+<colgroup>
+<col width="13%" />
+<col width="18%" />
+<col width="18%" />
+<col width="18%" />
+<col width="13%" />
+<col width="18%" />
+</colgroup>
+<thead>
+<tr>
+<th>Domain</th>
+<th align="right">Self-check error</th>
+<th align="right">Cross-model error</th>
+<th align="right">Difference (pp)</th>
+<th>97.5% interval (pp)</th>
+<th align="right">Matched units / questions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Facts</td>
+<td align="right">23.25%</td>
+<td align="right">5.00%</td>
+<td align="right">-18.25</td>
+<td>[-22.00, -14.25]</td>
+<td align="right">394 / 100</td>
+</tr>
+<tr>
+<td>Mathematics</td>
+<td align="right">10.37%</td>
+<td align="right">5.49%</td>
+<td align="right">-4.88</td>
+<td>[-9.15, -1.22]</td>
+<td align="right">164 / 41</td>
+</tr>
+</tbody>
+</table>
+<p>A negative difference means fewer wrong answers under cross-checking.
+Correct answers and explicit abstentions are both non-errors. Technical
+failures and unresolved outputs remain separate. Repetitions are
+averaged within question/model, questions within model, and then the two
+model means receive equal weight. A matched unit is one question ×
+receiving model × repetition; it is not a new independent question.</p>
+<p><strong>The mathematical recovery includes a higher output-token
+limit in 21 selected recovery responses, including 19 originally
+truncated tasks. These completed-data estimates are supplementary; they
+do not retrospectively make the original protocol’s primary comparison
+conclusive.</strong> The unchanged original semantic mathematics result
+was −4.33 pp with a 97.5% interval crossing zero. The appendix
+separately checks source exposure and changed-token-limit questions.</p>
+<div class="float">
+<img src="error_rate_comparison.png" alt="Error rates by task domain" />
+<div class="figcaption">Error rates by task domain</div>
+</div>
+<h2 id="receiving-models">Receiving models</h2>
+<table>
+<colgroup>
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="23%" />
+<col width="23%" />
+</colgroup>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Receiving model</th>
+<th>Advice from</th>
+<th align="right">Self-check error</th>
+<th align="right">Cross-model error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Facts</td>
+<td>DeepSeek</td>
+<td>MiniMax</td>
+<td align="right">2.00%</td>
+<td align="right">2.00%</td>
+</tr>
+<tr>
+<td>Facts</td>
+<td>MiniMax</td>
+<td>DeepSeek</td>
+<td align="right">44.50%</td>
+<td align="right">8.00%</td>
+</tr>
+<tr>
+<td>Mathematics</td>
+<td>DeepSeek</td>
+<td>MiniMax</td>
+<td align="right">2.44%</td>
+<td align="right">3.66%</td>
+</tr>
+<tr>
+<td>Mathematics</td>
+<td>MiniMax</td>
+<td>DeepSeek</td>
+<td align="right">18.29%</td>
+<td align="right">7.32%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="completion-and-remaining-exclusions">Completion and remaining
+exclusions</h2>
+<p>All scheduled tasks have been processed and all technical-recovery
+targets have reached an outcome. Across both stages, 2,418 request
+attempts are retained. The derived dataset contains 2,323 final task
+records: 1,591 facts and 732 mathematics. Nine factual branches remain
+uncollected because three original initial answers violate the input
+schema; they were not retried based on their content. Six final records
+remain semantically unscorable (one factual date-precision case and five
+mathematical incomplete-format cases). Thus 2,317 final responses are
+semantically scorable. These are response counts across conditions, not
+independent questions or a pooled accuracy estimate.</p>
+<p>Original records were preserved; the overlay uses the final permitted
+technical attempt and adds previously blocked branches only after their
+actual inputs become usable. Original and recovery request hashes and
+task coverage were independently checked. The <a
+href="collection_cost_ledger.csv">cost ledger</a> separates usage-based
+conservative estimates from reserves for unknown charges; neither is a
+supplier invoice.</p>
+<h2 id="interpretation-and-limits">Interpretation and limits</h2>
+<p>The models independently answered before the receiver saw the other
+model’s actual answer. Self-check and cross-check start from the same
+receiver initial response. Search is available and optional; results
+evaluate the configured model-plus-tool systems, not unaided knowledge
+or reasoning. The project uses selected public benchmark questions, so
+these rates are not universal estimates of everyday AI errors.</p>
+<p>The direction and uncertainty must be interpreted separately for each
+domain and receiving model. A zero observed error rate does not imply
+zero true risk. Public benchmark answers can appear in search results;
+source-risk exclusion analyses are reported in the domain reports.
+Correct final answers also do not prove that every reasoning step is
+correct.</p>
+<p>Two separate mathematical checks retain the direction: excluding all
+11 questions ever exposed to the larger token limit gives 5.83% versus
+0.00% on 30 questions (difference −5.83 pp, 97.5% interval [−10.00,
+−1.67]); excluding 17 questions with visible benchmark-source risk gives
+11.46% versus 6.25% on 24 questions (difference −5.21 pp, interval
+[−10.42, −1.04]). These are separate post-hoc subsets, not a combined
+exclusion or proof of zero risk. The factual source-risk exclusion also
+retains a reduction.</p>
+<p>The misconception and AI-versus-human attribution comparisons are
+exploratory and are documented separately below. A donor receiving a
+wrong premise does not necessarily produce a wrong answer. The human
+label is simulated; no human participants were studied.</p>
+<p>The specific full chain — donor neutral answer correct, donor
+misconception answer wrong, receiver initially correct, receiver finally
+wrong — was not observed in the mechanism subsets. There were six
+eligible factual opportunities and one eligible mathematical
+opportunity, with the same opportunities reused under the AI and human
+headers. These small denominators do not establish immunity, and the
+study does not establish that human-attributed advice is generally more
+harmful than AI-attributed advice.</p>
+<h2 id="a-verified-counterexample">A verified counterexample</h2>
+<p>In the original Polynomial 11 run (repetition 1), DeepSeek initially
+answered 20 and its self-check also answered 20. MiniMax independently
+answered 24 using an incorrect period-five argument. After receiving
+that actual advice, DeepSeek answered 24 in the cross-check branch. An
+independent R recurrence calculation confirms period six and answer 20.
+This demonstrates an observed correct-to-wrong cross-check outcome; it
+is a natural AI-advice example, not evidence from a real human
+participant or the upstream-misconception condition.</p>
+<p>See the <a
+href="../facts/recovery/reports/CROSS_REVIEW_MATH.md">independent
+mathematical cross-review</a>. A correct final number and correct
+reasoning are different evaluation targets; this experiment’s headline
+error rate measures the final answer.</p>
+<h2 id="auditable-reports">Auditable reports</h2>
+<ul>
+<li><a href="../facts/reports/REVIEWED_RESULTS.md">Original facts
+report</a></li>
+<li><a href="../math/reports/REVIEWED_RESULTS.md">Original mathematics
+report</a></li>
+<li><a href="../facts/recovery/reports/RECOVERY_REPORT.md">Fact recovery
+appendix</a></li>
+<li><a href="../math/recovery/RECOVERY_REPORT.md">Mathematics recovery
+appendix</a></li>
+<li><a href="original_completion_audit.json">Original-completion
+integrity audit</a></li>
+</ul>
+<p>All original records, failed attempts and recovery attempts are
+retained. The recovery scripts retry technical failures only, with at
+most two recovery attempts per target, and do not retry an answer
+because it is wrong or abstains. A larger mathematical output limit is
+used only for genuine max-token truncations and is explicitly a
+secondary-analysis change. Any unresolved dependency remains visible;
+“all scheduled tasks processed” does not mean all tasks produced usable
+answers.</p>
+</body>
+</html>

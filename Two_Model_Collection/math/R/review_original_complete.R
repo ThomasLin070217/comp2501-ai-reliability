@@ -1,0 +1,36 @@
+# Additional Codex decisions after reading the completed original collection.
+library(jsonlite)
+root<-'Two_Model_Collection/math';out<-file.path(root,'reports')
+old<-read.csv(file.path(root,'archive/budget_stop_321/reports/codex_semantic_decisions.csv'),stringsAsFactors=FALSE)
+d<-read.csv(file.path(out,'json_recovery_sensitivity.csv'),stringsAsFactors=FALSE)
+k<-read.csv(file.path(out,'semantic_review_key.csv'),stringsAsFactors=FALSE)
+id<-function(q,p,r,c)paste0('two_math:CHAMP:P_',q,':',p,':r',r,':',c)
+manual<-list()
+add<-function(key,label,quality,why){manual[[length(manual)+1L]]<<-data.frame(id=key,semantic_label=label,reason_quality=quality,decision_reason=why,reviewer='Codex',scope='Read the new final answer and concise reason, or full text when JSON recovery failed.',reviewed_at_utc=format(Sys.time(),tz='UTC',usetz=TRUE),stringsAsFactors=FALSE)}
+add(id('Combinatorics_38','minimax',1,'self_check'),'incorrect','error','The text computes 36*6 as 252 instead of 216, producing 276 instead of 240.')
+add(id('Polynomial_17','minimax',2,'self_check'),'incorrect','error','A definite n^2-1 maximum is false: a continuous no-fixed-point function cannot have a real two-cycle; the answer is 0.')
+add(id('Number-Theory_24','minimax',2,'self_check'),'incorrect','error','The modular divisions are incorrect; 641 divides 2^32+1 and the answer is 0, not 544.')
+add(id('Number-Theory_42','minimax',2,'A0_AI'),'incorrect','error','Impossible is an adopted mathematical assertion, not abstention. Alternating signs give triples with both one and two negative entries; the proposed indistinguishable witness fails. The correct number is 50.')
+add(id('Inequality_15','deepseek',1,'misconception_initial'),'correct','no_clear_error_in_short_reason','The final prose explicitly states attained minimum 0 at equal positive variables; this is equivalent to the reference.')
+add(id('Combinatorics_5','minimax',2,'misconception_initial'),'incorrect','error','The question includes the empty subset. Subtracting it produces 143 instead of 144, adopting the misconception despite deriving the valid total first.')
+add(id('Inequality_24','deepseek',1,'misconception_initial'),'correct','no_clear_error_in_short_reason','The final answer 0 attained at a=b follows the correct nonnegative factorization; prose around 0 is not a wrong answer.')
+for(key in c(id('Combinatorics_30','minimax',2,'A1_AI'),id('Combinatorics_30','minimax',1,'A0_Human'),id('Combinatorics_30','minimax',2,'A1_Human'),id('Combinatorics_30','minimax',1,'A1_AI'),id('Combinatorics_30','minimax',1,'A1_Human')))
+ add(key,'unscorable','unresolved','Provider reports end_turn but text is visibly unfinished and has no designated final answer. Intermediate values are not substituted for a final answer. This complete-status malformed output is not eligible for technical retries under the frozen appendix.')
+add(id('Number-Theory_24','deepseek',2,'A0_Human'),'incorrect','error','The final 544 is produced by incorrect modular arithmetic; the true remainder is 0.')
+add(id('Sequence_42','minimax',1,'A0_Human'),'correct','no_clear_error_in_short_reason','Uses key reasoning rather than reason, but explicitly gives answer 601, abstain=false and a correct Josephus explanation. Semantic-only recovery; strict JSON schema remains failed.')
+new<-do.call(rbind,manual);stopifnot(nrow(new)==14L,all(new$id%in%d$id))
+sample<-k[k$grade=='correct' & !k$id%in%old$id,]
+ss<-data.frame(id=sample$id,semantic_label='correct',reason_quality='no_clear_error_in_short_reason',decision_reason='Read the final answer and concise mathematical explanation against the reference.',reviewer='Codex',scope='Fixed sample of 40 strict-correct outputs from the completed original run; this is a newly encountered sample member.',reviewed_at_utc=format(Sys.time(),tz='UTC',usetz=TRUE),stringsAsFactors=FALSE)
+issues<-list()
+issues[[id('Combinatorics_30','minimax',1,'misconception_initial')]]<-c('error','Misdiagnoses C(2000,2) as the strictly positive solution count; strictly positive triples summing to 1999 would give C(1998,2). Correct final stars-and-bars count is unaffected.')
+issues[[id('Combinatorics_5','minimax',2,'A1_Human')]]<-c('unsupported_context_claim','Claims an AMC convention of counting only nonempty subsets without support; the question does not exclude the empty set. Its explicit final count 144 and recurrence are correct.')
+issues[[id('Number-Theory_17','minimax',1,'self_check')]]<-c('error','Unjustifiably requires (100a+b)/11 to be four times a square; being a square alone is required. The final witness 7744 is valid.')
+issues[[id('Polynomial_23','minimax',1,'self_check')]]<-c('minor_error','Writes p(omega^k)-7=0 for a root of p, which is false; the surrounding intended argument needs p((omega^k)^7)-7=0. Final remainder 7 remains correct.')
+for(key in names(issues)){i<-match(key,ss$id);stopifnot(!is.na(i));ss$reason_quality[i]<-issues[[key]][1];ss$decision_reason[i]<-issues[[key]][2]}
+all<-rbind(old,new,ss);stopifnot(!anyDuplicated(all$id))
+write.csv(all,file.path(out,'codex_semantic_decisions.csv'),row.names=FALSE)
+d$final_semantic_grade<-d$semantic_grade;ix<-match(all$id,d$id);stopifnot(!anyNA(ix));d$final_semantic_grade[ix]<-all$semantic_label
+write.csv(d,file.path(out,'semantic_final_responses.csv'),row.names=FALSE)
+final_sample<-all[all$id%in%k$id[k$grade=='correct'],]
+write_json(list(original_records=nrow(d),reviewed_records=nrow(all),new_manual_exceptions=14L,new_sample_members=nrow(ss),final_correct_sample_n=nrow(final_sample),final_correct_sample_reason_quality=as.list(table(final_sample$reason_quality)),final_semantic_counts=as.list(table(d$final_semantic_grade)),scope='115 distinct original outputs reviewed by Codex across the initial and completed-run audits; all complete-status unresolved final fields and recovered wrong answers are covered. This is not full reasoning review of every output.'),file.path(out,'semantic_review_summary.json'),pretty=TRUE,auto_unbox=TRUE)
+cat('Completed-original semantic decisions:',nrow(all),'reviewed records.\n')

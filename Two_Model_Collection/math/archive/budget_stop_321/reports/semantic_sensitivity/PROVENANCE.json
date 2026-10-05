@@ -1,0 +1,6 @@
+{
+  "status": "posthoc_semantic_sensitivity",
+  "source": "reports/semantic_final_responses.csv",
+  "method": "Identical frozen pairing, repeat/question/model weighting and cluster bootstrap; replace labels only with explicitly documented post-collection semantic decisions. Raw text and strict analysis remain unchanged.",
+  "warning": "Partial budget-stopped collection, small matched subset and technical missingness; not a completed experiment. Zero-event bootstrap intervals can degenerate and do not prove absence of risk."
+}

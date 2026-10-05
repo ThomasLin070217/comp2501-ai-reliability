@@ -1,0 +1,15 @@
+"provider","condition","returned","correct","incorrect","abstain","unscorable","valid","error_rate","searches_observed","search_metadata_missing"
+"deepseek","A0_AI",68,65,1,0,2,66,0.0151515151515152,12,0
+"minimax","A0_AI",68,51,2,0,15,53,0.0377358490566038,1,0
+"deepseek","A0_Human",27,26,1,0,0,27,0.037037037037037,2,0
+"minimax","A0_Human",27,25,0,0,2,25,0,0,0
+"deepseek","A1_AI",18,18,0,0,0,18,0,1,0
+"minimax","A1_AI",25,21,0,0,4,21,0,2,0
+"deepseek","A1_Human",18,18,0,0,0,18,0,2,0
+"minimax","A1_Human",25,22,0,0,3,22,0,0,0
+"deepseek","misconception_initial",30,27,0,0,3,27,0,27,0
+"minimax","misconception_initial",30,17,1,0,12,18,0.0555555555555556,7,0
+"deepseek","neutral_initial",82,75,1,0,6,76,0.0131578947368421,68,0
+"minimax","neutral_initial",82,55,17,0,10,72,0.236111111111111,14,0
+"deepseek","self_check",76,74,1,0,1,75,0.0133333333333333,11,0
+"minimax","self_check",72,53,8,0,11,61,0.131147540983607,3,0
