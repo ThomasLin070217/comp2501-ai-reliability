@@ -1,0 +1,7 @@
+"domain","provider","planned_questions","questions","two_repeats","one_repeat","no_valid_pair","paired_records","self_error_pct","cross_error_pct","difference_pp"
+"facts","deepseek",100,99,96,3,1,195,31.8181818181818,41.4141414141414,9.59595959595959
+"facts","kimi",100,100,97,3,0,197,25,32,7
+"facts","minimax",100,99,87,12,1,186,76.2626262626263,60.6060606060606,-15.6565656565657
+"mathematics","deepseek",41,39,30,9,2,69,5.12820512820513,2.56410256410256,-2.56410256410256
+"mathematics","kimi",41,37,33,4,4,70,2.7027027027027,4.05405405405405,1.35135135135135
+"mathematics","minimax",41,34,26,8,7,60,8.82352941176471,1.47058823529412,-7.35294117647059
