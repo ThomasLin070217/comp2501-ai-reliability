@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-05 08:33:59 UTC",
+  "reason": "A completed factual request autonomously made six searches; guard CNY2.47951 exceeded CNY2 reservation. Global protective stop worked. No provider failure or answer-based selection.",
+  "trigger_task": "two:SV1190:deepseek:2:neutral_initial",
+  "new_reservation_cny": 10,
+  "overall_cap_cny": 500,
+  "domain_caps_unchanged": true,
+  "existing_records_unchanged": true,
+  "no_retries": true,
+  "analysis_or_prompts_changed": false
+}

@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "groups": {
+    "disjoint_budget_caps": true,
+    "only_two_models": true,
+    "facts_dependencies_stems_tools_attribution_histories_repeat_isolation": true,
+    "math_dependencies_stems_tools_attribution_histories_repeat_isolation": true,
+    "schema_conflicts_braces_quotes_abstention": true
+  },
+  "model_calls": 0,
+  "fixtures": "Synthetic only; never written to experiment runs."
+}

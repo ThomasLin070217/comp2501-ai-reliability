@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-10-05 08:31:15 UTC",
+  "files_sha256": {
+    "Two_Model_Collection/R/runtime.R": "9f612b810738765a91ed416378a3819b95c701a3a71fd8e5b9fe1d12c8059812",
+    "Two_Model_Collection/R/test_runtime.R": "dbc9009de009cf6498658f5ad5e6c71da9bf25feef8686c90400705d6ce93f3a",
+    "Two_Model_Collection/protocol/models.json": "a849191224b05c58a7172dfa7658b716291f490ad7e1c225e6299c1ce83b2bc5",
+    "Two_Model_Collection/protocol/budget.json": "7747a237cb77cfb0859d81b42caaa0d0994b6d003a7c95375680c6eae469efd4",
+    "Fact_Prompt_Design/R/prompts.R": "6ffafcc984cfcf275fc77c754e076f7d87dee346531e779b939e440e96cc01a2",
+    "Two_Model_Collection/facts/protocol/freeze.json": "bd337980ca19ae1c5d1fd4839f9e277cf2e28cda0c69d7ae97902cd38bfd5d9b",
+    "Two_Model_Collection/math/protocol/freeze.json": "45b342110def6ad33e85deeb81b27ff96a434defc25a447bc243d932952d900d",
+    "Two_Model_Collection/facts/R/analyse.R": "12f3dc87860086362314f222d3da39ec16a26ef3c6475781c4169d5c4b3315e7",
+    "Two_Model_Collection/math/R/analyse.R": "e6aa54f8a1a1607c9cc98746e70ab6cdad699ce1f9d7c9d210b24963165767c5"
+  },
+  "paid_calls_before_freeze": 0
+}

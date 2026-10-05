@@ -1,0 +1,25 @@
+{
+  "frozen_at": "2026-10-05 08:22:37 UTC",
+  "domain": "math",
+  "sample_seed": 25011005,
+  "task_order_seed": 25011006,
+  "question_count": 41,
+  "mechanism_question_count": 15,
+  "target_responses": 732,
+  "cap_cny": 140,
+  "status": "protocol_frozen_before_paid_calls_runtime_pending",
+  "files_sha256": {
+    "Two_Model_Collection/math/R/prepare.R": "a3524f7cff631b904dec9f6dc6aa94499833e2a3192083e748e7c2bb2184be10",
+    "Two_Model_Collection/math/R/scoring.R": "f73ac0a248a3387f8dbbf767bcd554592739b1344ed6958d40a7df596f89735b",
+    "Two_Model_Collection/math/R/check.R": "4ecf9d1d2be398c43c8255c09546ee5414d8e9e4af361053ab09131ce2353b8c",
+    "Two_Model_Collection/math/protocol/questions.json": "09e77b5f86b9878120ee3c856cce406ff03004ff408d78e9a259855922c9d3bc",
+    "Two_Model_Collection/math/protocol/prompts.json": "6feb15e6f792527af1f9cfd7f9497f44781a2b43c3f20554f90884319a7bc25c",
+    "Two_Model_Collection/math/protocol/researcher_reference.json": "15f593b5ef189af641bb962894666022e8f770a2fef019545e47592908243f0e",
+    "Two_Model_Collection/math/protocol/stimulus_review.json": "61d0ef9b8b4e38c13906372a35608057809c6cee5c430825bfdc5f32eb0737b6",
+    "Two_Model_Collection/math/protocol/mechanism_subset.csv": "9deffb85f0c69e330207dfbca5100ccc9a07ce32ed28b826c36ed6f8c6c5d638",
+    "Two_Model_Collection/math/protocol/tasks.csv": "96312bc0c90da56476ce083d98a3b1afe8f84564779922363b2a07289d28bbbd",
+    "Two_Model_Collection/math/protocol/SCORING.md": "dd9fb8b59c3bc5f9fbf587440a118292b1e20e7a2e63797607c1bdf098c77143",
+    "Two_Model_Collection/math/protocol/checks.json": "281ce78bc8845466dfc8f61327a5105d58a0094e97cdd6ff05d623395b64f9a6",
+    "Two_Model_Collection/math/protocol/preparation.json": "544e4760519da6c951da7735de16f713f8dcb1048567714d35e1ced9b29fd7ec"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "check_count": 24,
+  "checks": {
+    "732_unique_tasks": true,
+    "41_questions": true,
+    "15_subset_3_per_family": true,
+    "conditions_counts": true,
+    "all_dependencies_exist": true,
+    "dependencies_before_tasks": true,
+    "providers_different_for_peers": true,
+    "41_correct_references_score_correct": true,
+    "nonattainment_wrong_CHAMP:P_Inequality_8": true,
+    "nonattainment_wrong_CHAMP:P_Inequality_15": true,
+    "nonattainment_wrong_CHAMP:P_Inequality_24": true,
+    "symbolic_remainder_wrong": true,
+    "symbolic_limit_wrong": true,
+    "explicit_abstention": true,
+    "conflicting_abstention": true,
+    "reason_conflict_separate": true,
+    "not_last_number": true,
+    "arithmetic_safe": true,
+    "negative_sign_preserved": true,
+    "fraction": true,
+    "boxed_zero": true,
+    "unknown_multiple_answer_review": true,
+    "invalid_json_not_abstain": true,
+    "same_source_wrapper_body": true
+  }
+}

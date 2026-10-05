@@ -1,0 +1,27 @@
+{
+  "prepared_at": "2026-10-05 08:21:56 UTC",
+  "status": "prepared_before_collection",
+  "seed": 25011005,
+  "questions": 41,
+  "mechanism_questions": 15,
+  "target_responses": 732,
+  "providers": ["minimax", "deepseek"],
+  "repetitions": 2,
+  "native_search": "available; automatic choice; no required search instruction",
+  "budget_cny": 140,
+  "collection_authorized_by": "User: 你现在用两个agent分别跑这两个数据收集的任务。",
+  "source_hashes": [
+    {
+      "path": "Math_Prompt_Design/generated/model_prompts.json",
+      "sha256": "6feb15e6f792527af1f9cfd7f9497f44781a2b43c3f20554f90884319a7bc25c"
+    },
+    {
+      "path": "Math_Prompt_Design/generated/researcher_reference.json",
+      "sha256": "15f593b5ef189af641bb962894666022e8f770a2fef019545e47592908243f0e"
+    },
+    {
+      "path": "Math_Prompt_Design/generated/item_review.json",
+      "sha256": "61d0ef9b8b4e38c13906372a35608057809c6cee5c430825bfdc5f32eb0737b6"
+    }
+  ]
+}

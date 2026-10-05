@@ -1,0 +1,23 @@
+{
+  "frozen_at": "2026-10-05T08:20:50Z",
+  "domain": "facts",
+  "target_responses": 1600,
+  "cap_cny": 280,
+  "no_new_model_outputs_inspected": true,
+  "files_sha256": {
+    "Two_Model_Collection/facts/protocol/design.json": "3d7c9eccd45afba694caded996fc466c28796e3d9f88b52c234b0e915040f36b",
+    "Two_Model_Collection/facts/protocol/mechanism_subset.csv": "7f745e07eba0c8eef283e1c34a4fddfc85b9fbc1811e8aee0f233194b32e0ac9",
+    "Two_Model_Collection/facts/protocol/prompts.json": "ccfbfaa19c8b59b365ffb7ec5f6e127d4a33bae424ffb326eaa504d0be3fe844",
+    "Two_Model_Collection/facts/protocol/questions.jsonl": "4a98737f1854d39989480c691142268ca8d9106d47c0fabee9b68b8936263c12",
+    "Two_Model_Collection/facts/protocol/scoring.R": "863143c9cfbf71afa692d8ca5dc46bbe42745e5fbb9811fcdca9ab7c35953944",
+    "Two_Model_Collection/facts/protocol/tasks.csv": "49ad9084c75618b02ee38d19752aa41b93325a9dd0a0c300b206eceb7350da70",
+    "Two_Model_Collection/facts/R/check.R": "e641c7c49247f376f9c4d3a1baabaefd1c95cd33e697c05b10f9bdf6caa5d3a8",
+    "Two_Model_Collection/facts/R/freeze.R": "97ed59a73bcfb703088fd9ea638f1e32c05373abaf6a97a365d64f8b3e5505a6",
+    "Two_Model_Collection/facts/R/prepare.R": "ab0c5c9786a52ad42d006b7e6a00f594266c6cfe5f157d7bfd5e15e36bc43adc",
+    "Fact_Prompt_Design/R/prompts.R": "6ffafcc984cfcf275fc77c754e076f7d87dee346531e779b939e440e96cc01a2",
+    "Followup_Validation/R/common.R": "3f2bb8e903b657c89985e81ebd8e804aa4747974b3bfa8f79262c15a744e61e8",
+    "Natural_Crosscheck/R/common.R": "d7188b10618fb06e0185a8a2ea18c6ed003c32cc99266bc34a50ddb81f762f9e",
+    "Math_Supplement/R/common.R": "36598eaebb2c132db0152360d4472e7ff19bf4c8e137aff997f840a340029fdc",
+    "Peer_Misleading_Study/R/core.R": "ca3bf9ff109d9a3cac7ff5107ba0ead4e41c02f3314a8d0fceeb0930f539ca11"
+  }
+}

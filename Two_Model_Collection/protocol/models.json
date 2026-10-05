@@ -1,0 +1,43 @@
+{
+  "minimax": {
+    "base_url": "http://www.bio8.cs.hku.hk:8080/v1",
+    "model": "MiniMax-M3",
+    "api_key_env": "MINIMAX_API_KEY",
+    "protocol": "anthropic",
+    "generation": {
+      "max_tokens": 768,
+      "temperature": 0.6,
+      "thinking": {
+        "type": "disabled"
+      },
+      "stream": false
+    },
+    "order_seed": 2501,
+    "cost_guard_cny_per_million": {
+      "input": 0,
+      "output": 0
+    },
+    "cost_guard_note": "HKU course quota; money price unknown; tokens tracked separately.",
+    "provider": "minimax"
+  },
+  "deepseek": {
+    "base_url": "https://api.deepseek.com/anthropic/v1",
+    "model": "deepseek-v4-pro",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "protocol": "anthropic",
+    "generation": {
+      "max_tokens": 768,
+      "temperature": 0.6,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "order_seed": 2501,
+    "cost_guard_cny_per_million": {
+      "input": 20,
+      "output": 50
+    },
+    "cost_guard_note": "Conservative guard, not invoice; cache discounts ignored.",
+    "provider": "deepseek"
+  }
+}
