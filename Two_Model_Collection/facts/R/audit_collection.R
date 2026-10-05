@@ -1,0 +1,42 @@
+# Read-only audit of collected messages; does not call any provider.
+source('Two_Model_Collection/R/runtime.R')
+root<-'Two_Model_Collection/facts'
+d<-tm_read(file.path(root,'runs/completed.jsonl'));h<-tm_read(file.path(root,'runs/http_responses.jsonl'))
+tasks<-read.csv(file.path(root,'protocol/tasks.csv'),stringsAsFactors=FALSE)
+prompts<-fromJSON(file.path(root,'protocol/prompts.json'),simplifyVector=FALSE)$questions
+prompts<-setNames(prompts,tm_fields(prompts,'question_id'))
+done<-setNames(d,tm_fields(d,'id'));http<-setNames(h,tm_fields(h,'task_id'))
+stopifnot(!anyDuplicated(tm_fields(d,'id')),!anyDuplicated(tm_fields(h,'task_id')))
+branch_n<-0L;peer_n<-0L;fresh_n<-0L;native_history_n<-0L
+for(r in d){
+ t<-as.list(tasks[match(r$id,tasks$id),]);p<-prompts[[r$question_id]];req<-http[[r$id]]$request
+ stopifnot(!is.null(req),identical(req$system,p$system),
+  identical(digest(tm_json(req),'sha256',serialize=FALSE),r$request_sha256),
+  is.null(req$tool_choice),identical(req$tools[[1]]$name,'web_search'))
+ if(r$condition%in%c('neutral_initial','misconception_initial')){
+  stopifnot(length(req$messages)==1L,identical(req$messages[[1]]$role,'user'),
+   identical(req$messages[[1]]$content,p$prompts[[r$condition]]))
+  fresh_n<-fresh_n+1L
+ }else{
+  b<-done[[t$baseline_id]];stopifnot(tm_usable(b),b$provider==r$provider,
+   b$question_id==r$question_id,b$repeat_id==r$repeat_id)
+  expected_history<-c(list(list(role='user',content=p$question)),b$transcript)
+  stopifnot(identical(head(req$messages,-1),expected_history))
+  branch_n<-branch_n+1L
+  if(b$search_requested>0)native_history_n<-native_history_n+1L
+  follow<-tail(req$messages,1)[[1]]$content
+  if(r$condition=='self_check')stopifnot(identical(follow,review_suffix))else{
+   donor<-done[[t$donor_id]]
+   stopifnot(tm_usable(donor),donor$provider!=r$provider,donor$question_id==r$question_id,donor$repeat_id==r$repeat_id)
+   stopifnot(identical(follow,peer_prompt(tm_parse(donor$text),if(endsWith(r$condition,'Human'))'human'else'ai')))
+   peer_n<-peer_n+1L
+  }
+ }
+ if(r$status=='ok')stopifnot(identical(r$transcript[[1]]$content,http[[r$id]]$raw_response$content))
+}
+result<-list(time=tm_now(),status='passed',completed_audited=length(d),http_records_seen=length(h),
+ fresh_conversations=fresh_n,parallel_branches=branch_n,real_donor_bodies=peer_n,
+ branches_preserving_baseline_search_blocks=native_history_n,answer_based_selection=FALSE,
+ scope='Payload identity, actual donor linkage, independent initial sessions, native history, request hashes and autonomous search settings. This is not semantic adjudication of factual truth.')
+tm_write(result,file.path(root,'reports/collection_integrity.json'))
+print(result[c('status','completed_audited','parallel_branches','real_donor_bodies','branches_preserving_baseline_search_blocks')])

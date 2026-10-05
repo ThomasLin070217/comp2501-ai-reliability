@@ -1,0 +1,23 @@
+{
+  "post_hoc": true,
+  "reviewer": "Codex",
+  "independent_human_review": false,
+  "reviewed": 18,
+  "semantic_counts": {
+    "abstain": 98,
+    "correct": 1253,
+    "incorrect": 210,
+    "unscorable": 15
+  },
+  "primary_labels_changed": false,
+  "paired_comparison": {
+    "questions": 98,
+    "pairs": 381,
+    "error_self": 0.23469387755102,
+    "error_cross": 0.0433673469387755,
+    "difference": -0.191326530612245,
+    "lower": -0.232142857142857,
+    "upper": -0.147959183673469,
+    "confidence": 0.975
+  }
+}

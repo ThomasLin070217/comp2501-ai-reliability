@@ -1,0 +1,13 @@
+{
+  "status": "inventory_only_no_recovery_calls",
+  "original_planned": 1600,
+  "http_attempts": 1576,
+  "transport_failures": 9,
+  "other_incomplete": 5,
+  "all_dependency_skips": 24,
+  "transport_only_dependency_skips": 3,
+  "unresolved_http_attempts": 0,
+  "guard_cny": 316.37104,
+  "transport_uncertainty_reserve_cny": 90,
+  "rules": "Original records stay immutable. Candidate list does not authorize calls; parent must freeze a separately labelled transport-only recovery appendix. Never retry based on correctness."
+}

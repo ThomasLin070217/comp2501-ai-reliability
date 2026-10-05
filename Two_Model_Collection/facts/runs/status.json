@@ -1,0 +1,13 @@
+{
+  "time": "2026-10-05T09:29:55Z",
+  "status": "finished",
+  "domain": "facts",
+  "planned": 1600,
+  "completed": 1576,
+  "skipped": 24,
+  "remaining": 0,
+  "http_attempts": 1576,
+  "guard_cny": 316.37104,
+  "cap_cny": null,
+  "budget_enforced": false
+}

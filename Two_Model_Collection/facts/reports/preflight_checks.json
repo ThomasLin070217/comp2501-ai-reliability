@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": {
+    "1600_unique_tasks": true,
+    "100_questions": true,
+    "25_mechanism_questions": true,
+    "proportional_granularity": true,
+    "two_models_two_repetitions": true,
+    "correct_condition_counts": true,
+    "all_dependencies_isolated_and_precede_branch": true,
+    "AI_Human_only_header_differs": true,
+    "100_original_questions_system_and_reference_scores": true,
+    "explicit_abstention_retained": true,
+    "empty_and_malformed_not_abstention": true,
+    "abstention_with_answer_unscorable": true,
+    "truncation_not_scored": true,
+    "invalid_calendar_date_not_accepted": true,
+    "prompt_copy_matches_reviewed_source": true
+  },
+  "no_network_calls": true
+}

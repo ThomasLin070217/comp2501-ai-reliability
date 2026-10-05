@@ -1,0 +1,9 @@
+{
+  "status": "screened_not_adjudicated",
+  "unique_task_url_title_rows": 4309,
+  "risky_source_rows": 108,
+  "exposed_http_tasks": 56,
+  "definition": "URL/title mentions SimpleQA, HuggingFace datasets, or benchmark/evaluation repositories. Flags do not prove benchmark copying. Unflagged results do not prove absence.",
+  "inherited_history": "Only newly returned search blocks are screened here. Receiver baseline history and donor text may carry upstream exposure, so direct exposed task counts understate possible downstream exposure.",
+  "no_web_refetch": true
+}

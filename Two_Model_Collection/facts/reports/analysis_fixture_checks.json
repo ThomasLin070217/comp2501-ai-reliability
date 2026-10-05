@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "synthetic_only": true,
+  "network_calls": 0,
+  "checks": ["equal_model_paired_effects", "full_propagation_denominators", "four_branch_interaction", "partial_coverage"]
+}

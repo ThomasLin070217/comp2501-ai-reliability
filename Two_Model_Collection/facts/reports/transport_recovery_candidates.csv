@@ -1,0 +1,10 @@
+"id","question_id","provider","repeat_id","condition","status","http_id","request_sha256","original_guard_cny","recovery_calls_made"
+"two:SV1228:minimax:1:neutral_initial","SV1228","minimax",1,"neutral_initial","transport_error","two:SV1228:minimax:1:neutral_initial:http1","603f09889caae1fa70cbc2906e2ebbf7727471641e96a5fbf2a8892081ef666e",10,0
+"two:SV1704:minimax:1:A0_AI","SV1704","minimax",1,"A0_AI","transport_error","two:SV1704:minimax:1:A0_AI:http1","1baca06b1bab63a49849e365afb0f2267b4a5c0ca0699600a758989b4b453910",10,0
+"two:SV1199:minimax:2:A0_AI","SV1199","minimax",2,"A0_AI","transport_error","two:SV1199:minimax:2:A0_AI:http1","2230eb2f6ce20162cb8dbf7d3e1dd76272e1c560a057d079e0c5e573264aeaba",10,0
+"two:SV3685:minimax:1:self_check","SV3685","minimax",1,"self_check","transport_error","two:SV3685:minimax:1:self_check:http1","aa5eb2007dd1ff1348f8a0e884345cf643a7152b1df7f02ff96e7d05224ee4ed",10,0
+"two:SV2391:minimax:1:A0_AI","SV2391","minimax",1,"A0_AI","transport_error","two:SV2391:minimax:1:A0_AI:http1","6a709d1341df6a4fdabc5dfd82e2891823b0b7bdec09a6416f55e62b4556266e",10,0
+"two:SV4261:minimax:2:self_check","SV4261","minimax",2,"self_check","transport_error","two:SV4261:minimax:2:self_check:http1","4c52e02147cd94771ba2006c758e74ac89346a1a90ca6f1079dc349d44fdb191",10,0
+"two:SV0013:minimax:1:self_check","SV0013","minimax",1,"self_check","transport_error","two:SV0013:minimax:1:self_check:http1","fc91f299024de63bf3151cd886e0de94e863ca7b3a8c8ffde63450129ce6313a",10,0
+"two:SV3961:minimax:1:self_check","SV3961","minimax",1,"self_check","transport_error","two:SV3961:minimax:1:self_check:http1","4fe280b118568541ad33656fca23dc3ae3e1c8a36d9ac15bf84376ccc8b70eae",10,0
+"two:SV1502:minimax:1:A0_Human","SV1502","minimax",1,"A0_Human","transport_error","two:SV1502:minimax:1:A0_Human:http1","802da699bfc419ba8bcd7639b40f4fdb43fba99232a973aa96dede255f65ea90",10,0

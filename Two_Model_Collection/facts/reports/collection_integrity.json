@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-05T09:50:24Z",
+  "status": "passed",
+  "completed_audited": 1576,
+  "http_records_seen": 1576,
+  "fresh_conversations": 500,
+  "parallel_branches": 1076,
+  "real_donor_bodies": 682,
+  "branches_preserving_baseline_search_blocks": 721,
+  "answer_based_selection": false,
+  "scope": "Payload identity, actual donor linkage, independent initial sessions, native history, request hashes and autonomous search settings. This is not semantic adjudication of factual truth."
+}
