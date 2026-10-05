@@ -1,0 +1,10 @@
+source('Online_Replication/R/batch.R')
+cfgs<-read_json(file.path(OROOT,'protocol/models.json'))
+q<-list(domain='facts',question='Who won the 2025 Nobel Prize in Physics?')
+jobs<-lapply(MODELS,function(p)list(id=paste0('probe:batch:',p),provider=p,turn=1,
+ request_scope='probe',payload=opayload(list(list(role='system',content='Answer concisely.'),list(role='user',content=q$question)),q,cfgs[[p]])))
+old<-oallhttp();used<-.44723+sum(vapply(old,function(r)r$guard_cny,0))
+r<-obatch(jobs,cfgs,'probe-batch',20,used,field(old,'id'))
+stopifnot(all(vapply(r,function(x)x$http_status==200,TRUE)))
+write_json(lapply(r,function(x)x[c('id','http_status','status','guard_cny')]),file.path(OROOT,'probe/batch_validation.json'))
+cat('Concurrent transport passed for all three providers.\n')

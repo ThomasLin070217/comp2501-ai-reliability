@@ -1,0 +1,13 @@
+{
+  "user_authorization": "新增上限 ¥500，超出先停",
+  "new_budget_cny": 500,
+  "collection_stop_guard_cny": 480,
+  "previous_guard_cny": 74.87456,
+  "abandoned_probe_guard_cny": 0.44723,
+  "native_probe_guard_cny": 1.77647,
+  "full_volume_searching_scenario_cny": 2115.77577,
+  "per_http_reservation_cny": 2,
+  "max_http_turns_per_answer": 4,
+  "concurrency": 6,
+  "note": "All three native probes searched; their average is NOT representative of every study question. Full 7146-answer scope may exceed 500. Stop at the budget, preserve incomplete tasks, never promise full completion within cap. HKU cash price unknown; conservative token/search guard is not an invoice."
+}

@@ -1,0 +1,8 @@
+"component","questions","planned_new_outputs","treatment"
+"natural facts",100,2400,"N0,N1,N2,N3"
+"natural CHAMP math",41,984,"N0,N1,N2,N3"
+"controlled factual advice (additional branches)",100,3000,"C1-C5; N0/N1 shared"
+"abstention reminder ablation (additional branch)",36,216,"W1; C2=W0 and C3=W2 shared"
+"legacy math traps",13,546,"N0,C0-C5; separate descriptive supplement"
+"historical factual reference concerns",20,0,"retain offline; reference uncertainty, not response quality"
+"superseded pilots/development",NA,0,"retain historical, no redundant recollection"

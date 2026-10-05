@@ -1,0 +1,20 @@
+[
+  {
+    "id": "probe:batch:deepseek:http1",
+    "http_status": 200,
+    "status": "ok",
+    "guard_cny": 0.16255
+  },
+  {
+    "id": "probe:batch:kimi:http1",
+    "http_status": 200,
+    "status": "tool_call",
+    "guard_cny": 0.08061
+  },
+  {
+    "id": "probe:batch:minimax:http1",
+    "http_status": 200,
+    "status": "ok",
+    "guard_cny": 0.21529
+  }
+]

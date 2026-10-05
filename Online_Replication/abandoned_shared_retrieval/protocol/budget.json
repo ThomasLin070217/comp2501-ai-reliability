@@ -1,0 +1,12 @@
+{
+  "user_authorization": "新增上限 ¥500，超出先停",
+  "new_budget_cny": 500,
+  "collection_stop_guard_cny": 480,
+  "previous_guard_cny": 74.87456,
+  "receiver_scenario_input_tokens": 1300,
+  "receiver_scenario_output_tokens": 250,
+  "receiver_scenario_guard_cny": 275.121,
+  "retrieval_scenario_guard_cny": 77,
+  "estimated_total_cny": 352.121,
+  "note": "Planning scenario, not invoice or guarantee. HKU cash price unknown. Actual usage and reservation guard logged, 20 CNY buffer."
+}

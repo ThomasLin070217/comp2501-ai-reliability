@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-05T06:36:28Z",
+  "checks": {
+    "unique_full_task_set": true,
+    "different_model_donors": true,
+    "both_other_donors": true,
+    "all_7146_payloads_native_optional_no_prefetch": true,
+    "abstention_nonerror": true,
+    "gold_correct": true,
+    "invalid_not_abstention": true,
+    "deepseek_real_native_search": true,
+    "deepseek_conversation_with_search_history": true,
+    "kimi_real_native_search": true,
+    "kimi_conversation_with_search_history": true,
+    "minimax_real_native_search": true,
+    "minimax_conversation_with_search_history": true
+  }
+}
