@@ -1,5 +1,13 @@
 # 本聊天的上下文与执行规范
 
+### U45 · 先完成事实题全部提示并自行复核 · 用户原话（2026-10-05）
+
+> 我需要你先设计好所有的prompt应该咋写。先设计fact check的所有题目，设计好之后你自己复核一下。
+
+AI落实：新增 [Fact_Prompt_Design](Fact_Prompt_Design/README.md)，以现有100道事实题逐题生成英文中性初答、错误观点初答、自行复核及A0/A1×AI/Human四分支，共700个条件设计，不是700条已采集回答。保留题干和指定错误日期；逐项检查旧理由后修订36条，逐题审阅记录与研究者参考答案另存。AI/Human只有介绍语不同，动态供给字段只能来自本轮另一模型真实回答，不把预设错答冒充真实输出。R生成与17组自动检查通过；参考键按已有题库比对，四条定向外部检查记录中只有两条直接支持参考日期，不声称100题全部重新联网核验。全部100题机制提示准备不等于扩大原25事实题机制子集；子集尚未选择，新采集没有启动，旧三模型采集保持停止。历史冻结文件及用户Excel/Word不改。
+
+近期表达偏好：用户“肯定要英文啊。。”指用于飞书/报告的英文内容；本次提示库与说明全部英文。
+
 ### U44 · 错误前提传播及AI/人类来源对照 · 用户原话（2026-10-05）
 
 > 为了模拟  4. if human prompts contain preconceived misconceptions, or if one model provides an incorrect answer during cross-checking—could that mislead the system into drawing wrong conclusions?如果prompt含有先入为主的想法导致第一个模型的回答出错，有没有可能误导本身正确的答案，使另一agent double check生成的结果错误？ 这个问题，我们需要

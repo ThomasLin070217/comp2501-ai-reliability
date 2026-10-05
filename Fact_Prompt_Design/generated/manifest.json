@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-05",
+  "questions": 100,
+  "condition_designs": 700,
+  "revised_reasons": 36,
+  "fresh_external_check_entries": 4,
+  "full_fresh_reference_adjudication": false,
+  "model_calls": 0,
+  "proposed_fact_mechanism_subset": 25,
+  "mechanism_subset_selected": false,
+  "sha256": {
+    "Online_Replication/protocol/questions.jsonl": "ccd9cc73b9c2c5f90bc6e7a83908348a10b40a7203ad941be543bbe2601ce4fb",
+    "Peer_Misleading_Study/data/main_frozen/materials.json": "0e699cb6d7ca878c11c64254826dd9482b2ec2f1805212ad008ad178e4f0aabf",
+    "Online_Replication/protocol/historical_reference_concerns.jsonl": "9bac035a26ddf0682ba189b56e64d1b82a5e620d4bfbdfe811a9479fd054634e",
+    "Fact_Prompt_Design/R/prompts.R": "6ffafcc984cfcf275fc77c754e076f7d87dee346531e779b939e440e96cc01a2",
+    "Fact_Prompt_Design/R/overrides.R": "0c79438b4b6919afe72de5ecf851677c548e07444234c204b6d64fa3a81b9793",
+    "Fact_Prompt_Design/R/build.R": "4e08eeef28db9eff1054e5c2b3bbd373154bd6f76e7af207349802ec1adad2f5",
+    "Fact_Prompt_Design/R/check.R": "69e87cc8104476b05a54fbba566faeab72a3529cfd1bb9f0e713b14ecef9a05a"
+  }
+}

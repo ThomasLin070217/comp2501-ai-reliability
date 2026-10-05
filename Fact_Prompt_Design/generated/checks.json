@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "checks": {
+    "100_unique_original_fact_questions": true,
+    "historical_reference_concerns_not_reintroduced": true,
+    "700_condition_designs": true,
+    "shared_system_identical": true,
+    "no_forced_or_forbidden_search": true,
+    "no_reference_fields_in_model_bundle": true,
+    "mechanism_activation_not_assumed": true,
+    "all_100_stems_targets_templates_sources_and_added_reason_leakage_checks": true,
+    "actual_fields_uncertainty_newlines_and_abstention_preserved": true,
+    "string_boolean_rejected": true,
+    "abstain_answer_conflict_not_silently_rewritten": true,
+    "empty_nonabstaining_answer_rejected": true,
+    "missing_reason_rejected": true,
+    "parallel_branches_keep_identical_initial_and_tool_history": true,
+    "branch_mutation_does_not_change_other_branches": true,
+    "unfilled_peer_placeholder_cannot_become_followup": true,
+    "no_paid_collection_or_model_result_claim": true
+  },
+  "check_groups": 17,
+  "questions_checked": 100,
+  "synthetic_fixtures_not_experimental_data": true,
+  "model_calls": 0,
+  "semantic_review_file": "item_review.json",
+  "limitation": "Prompt/schema review is not a new source-by-source adjudication of all historical references."
+}
