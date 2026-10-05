@@ -1,0 +1,576 @@
+[
+  {
+    "question_id": "CHAMP:P_Combinatorics_18",
+    "family": "Combinatorics",
+    "reference_answer": "5050",
+    "original_reference_solution": "For any c, we know that a+b=99-c.\nThus, there are 99-c+1 different values of (a, b), ranging from (0, 99-c) to (99-c, 0).\nWe know that c can range from 0 to 99.\nThus, the total number of ordered triples is 100+99+...+1=(100+1)*100/2=5050.",
+    "reviewed_argument": "Nonnegative triples summing to 99 are counted by C(101,2)=5050.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 5050,
+      "method": "Enumerate ordered pairs conditional on c=0,...,99."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Combinatorics_20",
+    "family": "Combinatorics",
+    "reference_answer": "87",
+    "original_reference_solution": "We let a_n be the number of ways to tile a 2 x n rectangle.\nFor a 2 x (n+1) rectangle, let 2 be the vertical dimension and n+1 be the horizontal direction.\nWe consider possible ways to extend shorter rectangles to get this one.\nFirst, we could add two 1 x 1 tiles to a new column of an 2 x n rectangle.\nSecond, we could add one 1 x 1 tile and one L-shaped tile to two new columns of an 2 x (n-1) rectangle, and we have four different ways to do so.\nThird, we could add two L-shaped tiles to three new columns of an 2 x (n-2) rectangle, and we have two different ways to do so.\nThus, we have a_(n+1)=a_n+4*a_(n-1)+2*a_(n-2).\nWe have a_1=1 because we can only fill it with two 1 x 1 tiles.\nWe have a_2=5 because we can fill it with only 1 x 1 tiles or with one of each tile, with four different ways.\nWe have a_3=11 because we have one way to fill it with only 1 x 1 tiles, 8 ways with three 1 x 1 tiles and one L-shaped tiles (because there are 8 possible locations for the L-shaped tile in a 2 x 3 rectangle), and 2 ways to fill it with two L-shaped tiles.\nContinuing on, the sequence of a_n is a_4=33 and a_5=87.\nThus, there are 87 ways to fill an 2 x 5 rectangle.",
+    "reviewed_argument": "T_n=T_(n-1)+4T_(n-2)+2T_(n-3), with T_0=1,T_1=1,T_2=5, gives 87. Independent full-board exact-cover enumeration also gives 87.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 87,
+      "method": "Independent exhaustive exact-cover count of monominoes and all four L orientations."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Combinatorics_21",
+    "family": "Combinatorics",
+    "reference_answer": "30",
+    "original_reference_solution": "We paint a face and put it on the bottom, and consider painting the second face.\nWe can paint it on top, the remaining four faces have 4! colorings, but we can rotate the cube four times, which makes four colorings the same, so we 4!/4=6 distinct colorings.\nIf the second face is on the side, we can put it on the front, and the two faces uniquely fix the rotation.\nThus, any coloring of the remaining four faces is distinct, and we have 4!=24 colorings.\nIn total, we have 30 colorings.",
+    "reviewed_argument": "There are 24 rotations. Distinct colours make every stabilizer trivial, so 6!/24=30.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 30,
+      "method": "24 rotations; free action because all colours differ."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Combinatorics_30",
+    "family": "Combinatorics",
+    "reference_answer": "2001000",
+    "original_reference_solution": "For the term x^a*y^b*z^c to appear in the expansion, we must have a+b+c=1999 and a, b, c≥0.\nThus, for any c, we know that a+b=1999-c, and there are 1999-c+1 different values of (a, b), ranging from (0, 1999-c) to (1999-c, 0).\nc can range from 0 to 1999.\nThus, the total number of terms in the expansion is 2000+1999+...+1=(2000+1)*2000/2=2001000.",
+    "reviewed_argument": "Nonnegative exponent triples sum to 1999. Their number is C(2001,2)=2001000.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 2001000,
+      "method": "Enumerate allowed exponent counts for each value of one exponent."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Combinatorics_31",
+    "family": "Combinatorics",
+    "reference_answer": "120",
+    "original_reference_solution": "Consider possible configurations of a row of 10 dots, with 7 being black and 3 being white.\nWe can derive 8 numbers, being the numbers of white dots to the left of the first black dot, in between each black dots, and to the right of the last black dot.\nObviously each number is non-negative and all numbers sum up to 3.\nThus, we can consider this as one possible result of the fight.\nFurthermore, each fight result can also be encoded as a dot configuration.\nSo there are C(10, 7)=C(10, 3)=120 possible results.",
+    "reviewed_argument": "The eight nonnegative dog counts sum to 3, giving C(10,7)=120.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 120,
+      "method": "Recursive enumeration of indistinguishable-cookie allocations."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Combinatorics_38",
+    "family": "Combinatorics",
+    "reference_answer": "240",
+    "original_reference_solution": "For the three children, we can select two boys and one girl, or three boys.\nThere are C(4, 2)*C(6, 1) ways to perform the first selection.\nWe can also select three boys.\nThere are C(4, 3) ways to select three boys.\nFor each selection, there are 3! ways to give the three toys.\nThus, the total number of ways is (C(4, 2)*C(6, 1)+C(4, 3))*3!=(6*6+4)*6=240.",
+    "reviewed_argument": "(C(4,2)*6+C(4,3))*3!=240.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 240,
+      "method": "Exhaustive ordered recipients for three distinct toys."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Combinatorics_40",
+    "family": "Combinatorics",
+    "reference_answer": "144",
+    "original_reference_solution": "We let a_n be the number of ways to tile a 2 x n rectangle.\nFor a 2 x (n+1) rectangle, let 2 be the vertical dimension and n+1 be the horizontal direction.\nThus, it could have one vertical tile in the last column, or two horizontal tiles in the last two columns.\nWithout these new tiles, we have 2 x n or 2 x (n-1) rectangles.\nThus, we have a_(n+1)=a_n+a_(n-1).\nStarting from a_1=1 and a_2=2, we have the sequence of number of ways as 3, 5, 8, 13, 21, 34, 55, 89, 144, with a_11=144.\nThus, there are 144 ways to tile a 2 x 11 rectangle.",
+    "reviewed_argument": "With T_0=T_1=1 and T_n=T_(n-1)+T_(n-2), T_11=F_12=144.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 144,
+      "method": "Exact domino recurrence with T_0=T_1=1."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Combinatorics_5",
+    "family": "Combinatorics",
+    "reference_answer": "144",
+    "original_reference_solution": "For each subset of the set {1, ..., n}, we map it to a length-n string of 0s and 1s, where a digit 1 at i-th place means that i is in the subset.\nThus, the constraint that the subset has no successive numbers means that the string has no two consecutive 1s.\nLet P(n) be the number of such strings of length n.\nWe notice that a length-n string can be constructed from any string of length n-1 by appending 0, or from any string of length n-2 by appending 01, and these two constructions do not share any common string due to the different last digit.\nThus, P(n)=P(n-1)+P(n-2).\nWe have P(1)=2 (0 and 1) and P(2)=3 (00, 01 and 10).\nThus, P(n) for n from 2 to 10 is 5, 8, 13, 21, 34, 55, 89 and 144.\nSo there are 144 such subsets.",
+    "reviewed_argument": "Enumerate all 2^10 subsets or use S_0=1,S_1=2,S_n=S_(n-1)+S_(n-2); the result is 144, including the empty set.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 144,
+      "method": "Exhaustive enumeration of 1024 subsets, including empty set."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Combinatorics_7",
+    "family": "Combinatorics",
+    "reference_answer": "144",
+    "original_reference_solution": "Let a(n) be the number of possible rearrangements (including the original one) for n seats, and consider the movement of the first child in the row.\nIf the first child does not move, we have a(n-1) rearrangements, since children 2 to n move subject to the one-seat constraint.\nIf the first child moves, it can only take the 2nd seat, and the 2nd child must move to the first seat.\nThus, the number of such rearrangements is equal to the number of rearrangements from the 3rd to n-th children, or a(n-2).\nSo we have a(n)=a(n-1)+a(n-2), and starting from a(1)=1 and a(2)=2, we have the sequence of 3, 5, 8, 13, 21, 34, 55, 89, and 144.\nSo there are 144 possible rearrangements.",
+    "reviewed_argument": "Every movement is a disjoint adjacent swap or a fixed seat. T_11=T_10+T_9=144.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 144,
+      "method": "Exact subset DP of all permitted one-seat permutations."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Inequality_13",
+    "family": "Inequality",
+    "reference_answer": "-9",
+    "original_reference_solution": "We have 2(a^2+b^2+c^2-(ab+bc+ac))=(a^2-2ab-b^2)(b^2-2bc-c^2)(a^2-2ac-c^2)=(a-b)^2+(b-c)^2+(a-c)^2≥0.\nSo the smallest value of a^2+b^2+c^2-(ab+bc+ac)-(a+b+c) is -9, achieved at a=b=c=3.",
+    "reviewed_argument": "The full expression is ((a-b)^2+(b-c)^2+(a-c)^2)/2-9>=-9, attained at (3,3,3).",
+    "verification_type": "analytic_bound_and_equality_witness",
+    "computation": {
+      "value": -9,
+      "method": "Feasible equality witness; sum-of-squares identity proves lower bound."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Inequality_15",
+    "family": "Inequality",
+    "reference_answer": "0",
+    "original_reference_solution": "We consider three sequences R=(a^2, b^2, c^2), S=(a, b, c), T=(a, b, c), which are all sorted in the same way.\nThus, both A=a^4+b^4+c^4 and B=a^2*bc+b^2*ac+c^2*ab can be considered as the sum of products of three elements, each selected from one of three sequences.\nThe elements in A are sorted in the same way, while those in B are not necessarily.\nThus, we have A≥B, which means that A-B≥0, with 0 being achieved when a=b=c.\nSo the minimum value is 0.",
+    "reviewed_argument": "Weighted AM-GM gives 2a^4+b^4+c^4>=4a^2bc and its cyclic forms. Adding proves sum a^4>=abc(a+b+c). Equality holds at a=b=c>0.",
+    "verification_type": "analytic_bound_and_equality_witness",
+    "computation": {
+      "value": 0,
+      "method": "Positive equality witness; weighted AM-GM proof establishes global nonnegativity."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Inequality_24",
+    "family": "Inequality",
+    "reference_answer": "0",
+    "original_reference_solution": "The expression can be simplified to (a^4*b+a*b^4)-(a^3*b^2+a^2*b^3)=ab((a^3+b^3)-(a^2*b+a*b^2)).\nLet u=a^3+b^3 and v=a^2*b+a*b^2.\nConsider the two sequences (a^2, b^2) and (a, b) which are sorted in the same way.\nu is the sum of products of elements between these two sequences, and v is the sum of products of elements between the first sequence and the reverse of the second sequence.\nThus, u≥v.\nSo the smallest value of (a+b)(a^4+b^4)-(a^2+b^2)(a^3+b^3) is 0, achieved when a=b.",
+    "reviewed_argument": "The exact factorization is ab(a+b)(a-b)^2>=0. Any a=b>0 attains zero.",
+    "verification_type": "analytic_factorization_and_equality_witness",
+    "computation": {
+      "value": 0,
+      "method": "Positive equality witness plus factorization checks; general factorization is supplied in writing."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Inequality_26",
+    "family": "Inequality",
+    "reference_answer": "0",
+    "original_reference_solution": "Let x=|a|, y=|b|, z=|a+b|, so the expression is z/(1+z)-x/(1+x)-y/(1+y).\nMultiply the expression by (1+x)(1+y)(1+z), we get z(1+x)(1+y)-x(1+y)(1+z)-y(1+x)(1+z)=z+xz+yz+xyz-x-xy-xz-xyz-y-xy-yz-xyz=z-x-y-2xy-xyz.\nWe have |a+b|≤|a|+|b|, so z-x-y≤0.\nWith all other terms being non-negative, we can see that this expression is non-positive.\nThus, the largest value of it is 0, achieved when, for example, a=b=0.",
+    "reviewed_argument": "Put x=|a|,y=|b|,z=|a+b|. Multiplication by the positive denominator (1+x)(1+y)(1+z) gives z-x-y-2xy-xyz<=0. Equality occurs at a=b=0.",
+    "verification_type": "analytic_bound_and_equality_witness",
+    "computation": {
+      "value": 0,
+      "method": "Equality witness; analytic numerator certificate proves global maximum."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Inequality_4",
+    "family": "Inequality",
+    "reference_answer": "2",
+    "original_reference_solution": "We have (x^2+2)/sqrt(x^2+1)=(x^2+1)/sqrt(x^2+1)+1/sqrt(x^2+1)=sqrt(x^2+1)+1/sqrt(x^2+1).\nIn addition, sqrt(x^2+1)+1/sqrt(x^2+1)≥2*sqrt(sqrt(x^2+1)*1/sqrt(x^2+1))=sqrt(1)=1.\nSo the minimum value of sqrt(x^2+1)+1/sqrt(x^2+1) is 2, which can be achieved at x=0.",
+    "reviewed_argument": "t>=1 and t+1/t>=2, with equality at t=1, or x=0.",
+    "verification_type": "analytic_bound_and_equality_witness",
+    "computation": {
+      "value": 2,
+      "method": "Equality witness x=0; analytic AM-GM certificate proves optimality."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Inequality_49",
+    "family": "Inequality",
+    "reference_answer": "0",
+    "original_reference_solution": "We have 2(|x+y-z|+|x-y+z|+|-x+y+z|)=(|x+y-z|+|x-y+z|)+(|x-y+z|+|-x+y+z|)+(|x+y-z|+|-x+y+z|)≥|2x|+|2z|+|2y|=2(|x|+|y|+|z|).\nThus, |x+y-z|+|x-y+z|+|-x+y+z|-|x|-|y|-|z|≥0.\nSo the smallest value is 0, achieved at e.g., x=y=z=0.",
+    "reviewed_argument": "Add |A|+|B|>=2|x|, |A|+|C|>=2|y| and |B|+|C|>=2|z| for A=x+y-z,B=x-y+z,C=-x+y+z. The expression is nonnegative, with equality at x=y=z=0 (also at equal positive values).",
+    "verification_type": "analytic_bound_and_equality_witness",
+    "computation": {
+      "value": 0,
+      "method": "Equality witness; universal lower bound is established by the written triangle-inequality argument."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Inequality_8",
+    "family": "Inequality",
+    "reference_answer": "0",
+    "original_reference_solution": "Let A_1=A_2=...=A_(n+1)=(x_1, x_2, ..., x_n), which are all sorted the same way.\nThus, x_1^(n+1)+x_2^(n+1)+...+x_n^(n+1) is the sum of products of n+1 elements, each selected from one sequence and sorted in the same way.\nWe have x_1*x_2*...*x_n*(x_1+x_2+...+x_n)=(x_1*x_2*...*x_(n-1)*x_n)*x_1+(x_2*x_3*...*x_n*x_1)*x_2+...+(x_3*x_4*...*x_1*x_2)*x_3+...+(x_n*x_1*...*x_(n-2)*x_(n-1))*x_n, which the sum of products of elements, each selected from (x_1, x_2, ..., x_n), (x_2, x_3, ..., x_1), (x_3, x_4, ..., x_2), ..., (x_n, x_1, ..., x_(n-1)), and (x_1, x_2, ..., x_n).\nEach of the sequence is a permutation of A_i, so their sum of products is at most x_1^(n+1)+x_2^(n+1)+...+x_n^(n+1).\nThus, We have x_1^(n+1)+x_2^(n+1)+...+x_n^(n+1)-x_1*x_2*...*x_n*(x_1+x_2+...+x_n)≥0, where 0 is achieved when all x_i's are equal.\nSo the smallest value is 0.",
+    "reviewed_argument": "Let S=sum x_i and P=product x_i. Convexity gives sum x_i^(n+1)>=S^(n+1)/n^n; AM-GM gives PS<=S^(n+1)/n^n. Thus the difference is nonnegative and all x_i=t>0 attain zero.",
+    "verification_type": "analytic_bound_and_equality_witness",
+    "computation": {
+      "value": 0,
+      "method": "Positive equality witnesses; the all-n proof uses convexity and AM-GM, not these finitely many checks."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Number-Theory_12",
+    "family": "Number-Theory",
+    "reference_answer": "76",
+    "original_reference_solution": "We have 10≤a≤99 and since a^2 ends in a, a^2-a ends in 00.\nSo 100 | a(a-1).\nSince gcd(a, a-1)=1, we have one of a and a-1 being a multiple of 4, and the other being a multiple of 25, subject to 10≤a≤99 (or one being a multiple of 100, but this is impossible because a is a two-digit number).\nIf 25 | a and 4 | a-1, the only solution is a=25, as introduced in the question.\nIf 25 | a-1 and  4 | a, the only solution is a=76, with 76^2=5776.\nSo the answer is 76.",
+    "reviewed_argument": "Enumerating a=10,...,99 with a^2 mod 100=a gives exactly 25 and 76; exclude 25.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 76,
+      "method": "Exhaustive search over all allowed two-digit integers."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Number-Theory_13",
+    "family": "Number-Theory",
+    "reference_answer": "11",
+    "original_reference_solution": "Since 36^m always ends in 6 and 5^n always ends in 5, |36^m-5^n| can only end in 1 or 9.\nIf |36^m-5^n|=1, we need 36^m-5^n=1.\n5^n=36^m-1=(6^m)^2-1=(6^m+1)(6^m-1).\nHowever, 6^m+1 is not divisible by 5 since it ends with 7, but 5^n only has prime factors of 5.\nThus, the equation has no solution.\nIf |36^m-5^n|=9, we need 5^n-36^m=9.\nWe have 5^n-36^m mod 6=(-1)^n-0 mod 6=±1, which is not equal to 9 mod 6=3.\nThus, the equation again has no solution.\n|36^m-5^n|=11 can be solved by m=1, n=2.\nSo 11 is the smallest possible value.",
+    "reviewed_argument": "A positive difference can end only in 1 or 9. Magnitude 1 would require 36^m-5^n=1; factoring (6^m-1)(6^m+1) contradicts the prime factors of 5^n. Magnitude 9 requires 5^n-36^m=9, impossible modulo 6. Thus the smallest candidate is 11, attained at m=1,n=2.",
+    "verification_type": "analytic_exclusion_plus_finite_sanity_check",
+    "computation": {
+      "value": 11,
+      "method": "Bounded sanity check only; analytic proof rules out all differences below 11."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Number-Theory_17",
+    "family": "Number-Theory",
+    "reference_answer": "7744",
+    "original_reference_solution": "Let x^2 be the number, which means x^2=1100a+11b=11(100a+b).\nThus, we have 11 | 100a+b.\nSince 100a+b=99a+(a+b) and 11 | 99a, we have 11 | a+b and a+b=11.\nSo we have n^2=11(99a+(a+b))=11^2*(9a+1), which means that 9a+1 must also be a perfect square.\nTrying values of a from 1 to 9, we find a=7 is the only solution.\nThus, b=4 and the number is 7744.",
+    "reviewed_argument": "Exhaustively test squares from 32^2 through 99^2 for the four-digit aabb pattern. Only 88^2=7744 satisfies it.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 7744,
+      "method": "Exhaustive search of all four-digit squares."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Number-Theory_24",
+    "family": "Number-Theory",
+    "reference_answer": "0",
+    "original_reference_solution": "We have 5^4+2^4 | (5^4+2^4)*2^28, which means that 641 | 5^4*2^28+2^32.\nWe have 5*2^7-(-1) | (5*2^7)^4-(-1)^4, which means that 641 | 5^4*2^28-1.\nThus, 641 | (5^4*2^28+2^32)-(5^4*2^28-1), which is 641 | 2^32+1.",
+    "reviewed_argument": "Exact repeated modular squaring gives 2^32 mod 641=640, so the requested remainder is 0.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 0,
+      "method": "Exact modular exponentiation using integers safely below floating-point precision limits."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Number-Theory_27",
+    "family": "Number-Theory",
+    "reference_answer": "0",
+    "original_reference_solution": "We have n/2*9=99...99=10^1980-1.\nThus, n=(10^1980-1)*2/9=(10^990+1)(10^990-1)*2/9.\nSince 991 is a prime number, we have 10^991≡10 mod 991.\nThus, 10^991-10 mod 991=10(10^990-1) mod 991=0.\nSince 991 ∤ 10 and 991 is a prime, we have 991 | 10^990-1.\nSo 991*2 | (10^990-1)*2.\nThus, n mod 1982=0 (as 9 is not a factor of 991).",
+    "reviewed_argument": "Starting with r=0 and applying r=(10r+2) mod 1982 exactly 1980 times returns 0, without storing the enormous integer.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 0,
+      "method": "1980 exact digit-by-digit modular updates; no huge-integer conversion."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Number-Theory_32",
+    "family": "Number-Theory",
+    "reference_answer": "2",
+    "original_reference_solution": "3^105+4^105 mod 11=(3^5)^21 + (4^5)^21 mod 11=1^21+1^21 mod 11=2.",
+    "reviewed_argument": "3^5 mod 11=4^5 mod 11=1, so both 105th powers have remainder 1 and their sum has remainder 2.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 2,
+      "method": "Exact modular exponentiation."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Number-Theory_42",
+    "family": "Number-Theory",
+    "reference_answer": "50",
+    "original_reference_solution": "There are 50 products in total: a_1*a_2*a_3, a_2*a_3*a_4, ..., a_50*a_1*a_2.\nAfter 49 questions, one product is unknown, and suppose that it is a_1*a_2*a_3.\nWe can flip the sign of all a_i with i mod 3≠0 except for a_1, and get the same answer for all 49 products.\nHowever, the product a_1*a_2*a_3 is different, so 49 questions are not sufficient.\nOn the other hand, 50 questions are sufficient, because (a_1*a_2*a_3)(a_2*a_3*a_4)...(a_50*a_1*a_2)=(a_1*a_2*...*a_50)^3=a_1*a_2*...*a_50 when each of a_i is limited to -1 or 1.",
+    "reviewed_argument": "Encode signs over GF(2). Each query row has ones on three consecutive cyclic positions. The 50x50 query matrix has rank 50; the unique coefficient vector representing total parity is all ones, hence all 50 distinct queries are necessary and sufficient. This also excludes an adaptive shortcut: after any proper subset, two sign assignments agree on all observed queries and have different total parity.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 50,
+      "method": "Full-rank 50x50 GF(2) query matrix and all-ones parity representation; written argument gives adaptive lower bound."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Number-Theory_67",
+    "family": "Number-Theory",
+    "reference_answer": "1",
+    "original_reference_solution": "We have n^4+4^n=5 being a prime number when n=1.\nFor n>1, if n is even, obviously n^4+4^n is even and greater than two.\nThus, we only need to consider the case of odd n.\nWe let n=2k+1.\nn^4+4^n=n^4+4^(2k+1)=n^4+4*4^(2k)=n^4+4*2^(4k)=n^4+4*(2^k)^4.\nn^4+4*(2^k)^4=(n^2+2*(2^k)^2+2n(2^k))(n^2+2*(2^k)^2-2n(2^k)).\nThe last expression gives a factorization of n^4+4^n.\nSo n^4+4^n cannot be a prime number for any n>1.\nThus, there is 1 prime number.",
+    "reviewed_argument": "n=1 gives 5. Even n>=2 give even numbers greater than 2. For odd n=2k+1>=3, write b=2^k and use n^4+4b^4=(n^2-2nb+2b^2)(n^2+2nb+2b^2). The first factor=(n-b)^2+b^2>1. Thus only n=1 works.",
+    "verification_type": "analytic_factorization_and_small_integer_checks",
+    "computation": {
+      "value": 1,
+      "method": "Small-n sanity check only; written factorization covers all remaining n through 99."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Number-Theory_71",
+    "family": "Number-Theory",
+    "reference_answer": "7",
+    "original_reference_solution": "We see that |12^m-5^n| cannot be 0 for positive m, n due to different parity.\nSince gcd(12, 5)=1, we have gcd(12^m, 5^n)=1, so 12^m-5^n will not be divisible by factor of 12 or 5 (other than 1), i.e., 2, 3, 4, 5, 6.\nWe first check if |12^m-5^n|=1 has a solution.\nIf 12^m-5^n=1, we have 5^n=12^m-1=(6^m+1)(6^m-1), but 6^m+1 ends in 7 and thus is not divisible by 5.\nSince 5^n only has prime factor of 5, the equation has no solution.\nIf 5^n-12^m=1, we need 5^n mod 3=1, which is true only if n is even.\nThus, let n=2k, we have 12^m=(5^k+1)(5^k-1) and 5^k+1 mod 4=1^k+1 mod 4=2.\nWe have 12^m=2^(2m)*3^m.\nThus, we must have 5^k+1=2*3^v, which means we need 5^k-1=2^(2m-1)3^(m-v).\nSince (5^k+1)-(5^k-1)=2, at most one of them is divisible by 3.\nThus, v=0 or v=m.\nIf v=0, we have 5^k+1=2, which means k=0 and n=2k=0 is not positive.\nIf v=m, we have (5^k+1)-(5^k-1)=2*3^m-2^(2m-1)=2(3^m-4^(m-1))=2.\nSo 3^m-4^(m-1)=1, which is not satisfied for any positive integer m.\nThus, we cannot have |5^n-12^m|.\nSkipping all the impossible values from 2 to 6, we see that |12^m-5^n|=7 can be solved with m=n=1.\nThus, the answer is 7.",
+    "reviewed_argument": "The difference is coprime to 2,3,5, excluding magnitudes 0 and 2 through 6. The equation 12^m-5^n=1 is impossible modulo 4. If 5^n-12^m=1 then n=2k; (5^k-1)(5^k+1)=2^(2m)3^m. Since gcd of the factors is 2 and 5^k+1 has exactly one factor of 2, either 5^k+1=2 (impossible) or 5^k+1=2*3^m and 5^k-1=2^(2m-1). Their difference would imply 3^m-4^(m-1)=1, impossible modulo 3. Magnitude 7 is attained at m=n=1.",
+    "verification_type": "analytic_exclusion_plus_finite_sanity_check",
+    "computation": {
+      "value": 7,
+      "method": "Bounded sanity check only; written modular/factorization proof excludes every smaller value for all positive exponents."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Polynomial_1",
+    "family": "Polynomial",
+    "reference_answer": "0",
+    "original_reference_solution": "We have f(x)=(x-1)^2*q(x)+r(x) where r(x) is a polynomial of degree at most 1 (i.e., r(x)=ax+b).\nThus, f(1)=0=r(1).\nWe have f'(x)=2(x-1)*q(x)+(x-1)^2*q(x)+r'(x), so f'(1)=r'(1)=0.\nSince r(x) has the form of ax+b, we have a+b=0, a=0, so b=0.\nThus, r(x)=0 is the remainder.",
+    "reviewed_argument": "For the polynomial numerator F, F(1)=0 and F'(1)=n(n+1)-n(n+1)=0. Thus (x-1)^2 divides F and the remainder is identically zero.",
+    "verification_type": "analytic_identity_and_polynomial_division_checks",
+    "computation": {
+      "value": 0,
+      "method": "Sample exact divisions support, but do not replace, the all-n derivative proof."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Polynomial_11",
+    "family": "Polynomial",
+    "reference_answer": "20",
+    "original_reference_solution": "We have x_1+x_2=6, x_1*x_2=1.\nDefine u=x_1+x_2, v=x_1*x_2 and s_n=x_1^n+x_2^n.\nThus, we have s_0=2, s_1=6 and s_n=u^s_(n-1)-v*s_(n-2)=6s_(n-1)-s_(n-2).\nModulo 5, we have s_n mod 5=(s_(n-1)-s(n-2) mod 5).\nThe sequence of s_n modulo 5 is 2, 1, 4, 3, 4, 1, 2, 1.\nWe see that the sequence becomes periodic after the occurrence of 2, 1 in the end, with a period of 6.\nIn one period, the remainder of 4 appears 2 times.\nSo for n=61, 62, ..., 120, there are 60 values, or 10 periods, and the remainder of 4 appears 20 times.",
+    "reviewed_argument": "s_0=2,s_1=6,s_n=6s_(n-1)-s_(n-2). Modulo 5 the cycle is 2,1,4,3,4,1, so indices 61 through 120 contain twenty occurrences of 4.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 20,
+      "method": "Exact modular recurrence at every requested index."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Polynomial_17",
+    "family": "Polynomial",
+    "reference_answer": "0",
+    "original_reference_solution": "Since f(x)=x has no real number solution, we have f(x)-x>0 for all x or f(x)<0 for all x.\nConsider the case of f(x)-x>0, which means that f(x)>x for all x.\nThus, f(f(x))>f(x)>x, so f(f(x))-x>0, which means that f(f(x))=x has no real number solution either.\nThe case of f(x)-x<0 is analogous, also with no solution.\nThus, the maximum number of real number solutions of f(f(x))=x is 0.",
+    "reviewed_argument": "The continuous function g(x)=f(x)-x never vanishes, so it has one strict sign on the real line. If f(x)>x everywhere, f(f(x))>f(x)>x; the everywhere-less case is analogous. Therefore there are no real solutions.",
+    "verification_type": "analytic_continuity_proof_not_finite_enumeration",
+    "computation": {
+      "value": 0,
+      "method": "Analytical result from the written continuity proof; not a computational enumeration of polynomials."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Polynomial_23",
+    "family": "Polynomial",
+    "reference_answer": "7",
+    "original_reference_solution": "We have p(x)=x^6+x^5+...+x+1=(x^7-1)/(x-1).\nThus, p(x) | x^7-1.\nLet y=x^7.\nIn addition, since y-1 | y^n-1^n for any n, we have y-1 | p(y)-p(1) for the polynomial p.\nSince p(x) | y-1, we have p(x) | p(y)-p(1).\nThus, the remainder when p(y)=p(x^7) divides p(x) is p(1)=7.",
+    "reviewed_argument": "Modulo p(x), x^7=1 and p(x^7)=p(1)=7. Polynomial long division confirms this.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 7,
+      "method": "Exact coefficient-vector polynomial long division."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Polynomial_24",
+    "family": "Polynomial",
+    "reference_answer": "-1",
+    "original_reference_solution": "Let t=x^3, we have f(x)=t(t+1)(t+2)(t+3)=(t^2+3t)(t^2+3t+2).\nLet u=t^2+3t, we have f(x)=u(u+2)=u^2+2u+1-1=(u+1)^2-1≥-1.\nThus, the minimum value is -1.",
+    "reviewed_argument": "Set t=x^3 and u=t^2+3t. The product is (u+1)^2-1>=-1. Values t=(-3+sqrt(5))/2 or (-3-sqrt(5))/2 give u=-1, and a real cube root exists.",
+    "verification_type": "analytic_bound_and_equality_witness",
+    "computation": {
+      "value": -1,
+      "method": "Attainment at the algebraic witness, checked numerically; analytic completed square proves the bound."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Polynomial_32",
+    "family": "Polynomial",
+    "reference_answer": "5",
+    "original_reference_solution": "We have f(x^5)=x^20+x^15+x^10+x^5+1=(x^20-1)+(x^15-1)+(x^10-1)+(x^5-1)+5.\nWe have x^20-1, x^15-1, x^10-1, x^5-1 all divisible by x^5-1.\nWe also have f(x) | x^5-1 because (x-1)(x^4+x^3+x^2+x+1)=x^5-1.\nThus, (x^20-1)+(x^15-1)+(x^10-1)+(x^5-1) is divisible by f(x).\nSo the remainder of f(x^5) divided by f(x) is 5.",
+    "reviewed_argument": "Modulo f(x), x^5=1, so f(x^5)=f(1)=5. Polynomial long division confirms the constant remainder.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 5,
+      "method": "Exact coefficient-vector polynomial long division."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Polynomial_40",
+    "family": "Polynomial",
+    "reference_answer": "-3",
+    "original_reference_solution": "Let the smallest value be m, so we have a^2+ab+b^2-3a-3b-m≥0.\nConsider the expression as a polynomial in a, which can be written as a^2+(b-3)a+(b^2-3b-m).\nTo ensure that it is always greater than or equal to 0, we need (b-3)^2-4(b^2-3b-m)≤0.\nExpanding the expression out, we get b^2-6b+9-4b^2+12b+4m=-3b^2-6b+9+4m=-3(b^2-2b+1)+12+4m=-3(b-1)^2+12+4m≤0.\nSince -3(b-1)^2≤0, we need 12+4m≤0, which means that m≤-3.\nWe need m to be a value achievable for a^2+ab+b^2-3a-3b, which means that m=-3.",
+    "reviewed_argument": "Put a=1+u,b=1+v. The expression equals u^2+uv+v^2-3, and u^2+uv+v^2=(u+v/2)^2+3v^2/4>=0. The minimum -3 occurs at a=b=1.",
+    "verification_type": "analytic_bound_and_equality_witness",
+    "computation": {
+      "value": -3,
+      "method": "Equality witness; positive-definite quadratic identity proves global minimum."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Polynomial_47",
+    "family": "Polynomial",
+    "reference_answer": "120",
+    "original_reference_solution": "We have f(x)=1-x+x^2-x^3+...+x^8-x^9=(1-x^10)/(1+x).\nSubstituting x=y-1, we have f(x)=(1-(y-1)^10)/y.\nWe have the coefficient C(10, 3)*y^3*(-1)^7=-120 for the term y^3 in (y-1)^10.\nThus, the coefficient a_2 for y^2 in (1-(y-1)^10)/y is -(-120)=120.",
+    "reviewed_argument": "The coefficient of y^3 in the numerator is +120, hence the coefficient of y^2 after division by y is 120.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 120,
+      "method": "Direct binomial expansion of every summand under x=y-1."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Polynomial_50",
+    "family": "Polynomial",
+    "reference_answer": "-5",
+    "original_reference_solution": "For -1 to be a root of multiplicity of more than 1, it needs to be a root of f(x)=x^5−ax^2−ax+1 and f'(x)=5x^4−2ax−a.\nThus, f(-1)=-1-a+a+1=0 and f'(-1)=5+2a-a=0.\nSo we get a=-5.",
+    "reviewed_argument": "f(-1)=0 for all a and f'(-1)=5+a, hence a=-5; the second derivative at -1 is then -10, so multiplicity is exactly two.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": -5,
+      "method": "Solve the affine derivative equation; check both polynomial and derivative at -1."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Sequence_11",
+    "family": "Sequence",
+    "reference_answer": "1",
+    "original_reference_solution": "We have x_(k+1)=x_k^2+x_k=x_k(x_k+1), so 1/x_(k+1)=1/(x_k(x_k+1))=1/x_k-1/(x_k+1).\nThus, 1/(x_k+1)=1/x_k-1/x_(k+1).\nSo 1/(x_1+1)+1/(x_2+1)+1/(x_3+1)+...+1/(x_100+1)=(1/x_1-1/x_2)+(1/x_2-1/x_3)+...+(1/x_100-1/x_101)=1/x_1-1/x_101.\nWe have x_1=1/2, x_2=3/4, x_3=21/16>1.\nSince x_(n+1)=x_n^2+x_n>x_n, we have x_n>1 for all n≥3.\nThus, 1/x_101<1.\nThis means that the integer part of 1/x_1-1/x_101 is 1.",
+    "reviewed_argument": "The exact sum is 2-1/x_101. Since x_3=21/16>1 and the positive sequence increases, 0<1/x_101<1. Thus the finite sum is strictly between 1 and 2, and its floor is 1.",
+    "verification_type": "analytic_strict_bound_avoids_floating_point_rounding",
+    "computation": {
+      "value": 1,
+      "method": "Strict analytic bounds 1<S_100<2; do not round 2-1/x_101 or treat an infinite-precision limit as a finite value."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Sequence_19",
+    "family": "Sequence",
+    "reference_answer": "-1",
+    "original_reference_solution": "We see that the first few terms are 1, 1, -1, -1, -1, 1, -1, 1, 1, -1.\nThe last three terms are the same as the first three terms, and since a_n depends only on the last three terms, the pattern of the first 7 numbers repeats indefinitely.\nThus, a_1964=a_(1964 mod 7)=a_4=-1.",
+    "reviewed_argument": "Iterating the sign recurrence yields the seven-term cycle 1,1,-1,-1,-1,1,-1. Since 1964 mod 7=4, the value is -1.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": -1,
+      "method": "Exact sign recurrence through the requested index."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Sequence_20",
+    "family": "Sequence",
+    "reference_answer": "89",
+    "original_reference_solution": "For permuting n numbers, we see that the number n can either stay at the n-th location, or be swapped with n-1.\nIn the first case, we have a_(n-1) possible choices.\nIn the second case, we have a_(n-2) possible choices.\nThus, we have a_n=a_(n-1)+a_(n-2), with a_1=1, a_2=2.\nSo we have the sequence of a_n be 1, 2, 3, 5, 8, 13, 21, 34, 55, 89.\nThus, a_10=89.",
+    "reviewed_argument": "Allowed permutations consist of fixed positions and disjoint adjacent swaps. The recurrence a_n=a_(n-1)+a_(n-2) gives a_10=89; a matching-count DP confirms it.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 89,
+      "method": "Exact permitted-position permanent by subset DP."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Sequence_21",
+    "family": "Sequence",
+    "reference_answer": "2500",
+    "original_reference_solution": "With m=n, we have a_(2n)+a_0=(a_(2n)+a_(2n))/2.\nSo a_0=0.\nWith n=0, we have a_m+a_m=(a_(2m)+a_0)/2.\nSo a_(2m)=4a_m.\nWith m=n+2, we have a_(2n+2)+a_2=(a_(2n+4)+a_(2n))/2.\nPlugging in a_(2m)=4a_m, we have 4(a_(n+1)+a_1)=4*(a_(n+2)+a_n)/2.\nWith a_1=1, we have a_(n+2)=2a_(n+1)-a_n+2.\nThus, starting from a_0=0, a_1=1, we have the sequence a_0, a_1, a_2, ... to be 0, 1, 4, 9, 16, ...\nWe see that a_n=n^2, which can be shown with a_(n+2)^2=n^2+4n+4=2(n^2+2n+1)-n^2+2=a_(n+1)^2-a_n^2+2.\nThus, a_50=2500.",
+    "reviewed_argument": "Set m=n to get a_0=0 and n=0 to get a_(2m)=4a_m. With m=n+2 obtain a_(n+2)=2a_(n+1)-a_n+2. The initial values then imply a_n=n^2 and a_50=2500.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 2500,
+      "method": "Exact second-difference recurrence; written derivation shows equivalence to the original conditions."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Sequence_28",
+    "family": "Sequence",
+    "reference_answer": "0",
+    "original_reference_solution": "We have v_n-u_n=v_(n-1)/6-u_(n-1)/6=(v_(n-1)-u_(n-1))/6.\nSo the difference of the sequence decreases to 1/6 after each term.\nThus, they converge to the same limit, and L_u-L_v=0.",
+    "reviewed_argument": "d_n=v_n-u_n=d_(n-1)/6. Also 2u_n+3v_n is invariant, so both sequences converge and their limit difference is zero.",
+    "verification_type": "analytic_recurrence_and_exact_coefficient_check",
+    "computation": {
+      "value": 0,
+      "method": "Coefficient identities validate contraction and invariant; limit result follows analytically, not from a rounded simulation."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Sequence_40",
+    "family": "Sequence",
+    "reference_answer": "125",
+    "original_reference_solution": "We note that the condition min(n-|p(i)−i|, |p(i)−i|)≤1 is equivalent to keep each number within its left and right neighbor positions when these numbers are arranged in a circle.\nLet f_n be the number of permutations which satisfies |p(i)−i|≤1 (i.e., not involving the wrap-around along the circle).\nTo permute n numbers, we can fix the location of n at the n-th location, which results in the permutation of n-1 numbers that cannot be wrapped around, or f_(n-1).\nWe can also change the location of n and n-1, or n and 1, and arrange the remaining n-2 numbers without wrap-around.\nThere are f_(n-2) permutations each.\nFinally, we can shift the entire {1, 2, ..., n} sequence clockwise and counterclockwise, which results in two permutations.\nSo a_n=f_(n-1)+2f(n-2)+2.\nTo find f_n, we see that the number n can either stay at the n-th location, or be swapped with n-1.\nIn the first case, we have f_(n-1) possible choices.\nIn the second case, we have f_(n-2) possible choices.\nThus, we have f_n=f_(n-1)+f_(n-2), with f_1=1, f_2=2.\nSo the sequence f_1, f_2, f_3, ... is 1, 2, 3, 5, 8, 13, 21, 34, 55, 89.\nWe have a_10=f_9+2f_8+2=55+2*34+2=125.",
+    "reviewed_argument": "Cycle matchings give 123 possibilities and the two full shifts give two more, for 125. An independent permanent DP over all allowed positions confirms 125.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 125,
+      "method": "Independent permanent DP with circular allowed positions; does not reuse the supplied Fibonacci formula."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  },
+  {
+    "question_id": "CHAMP:P_Sequence_42",
+    "family": "Sequence",
+    "reference_answer": "601",
+    "original_reference_solution": "When there are 2^m people, the first person will be the last person left, because after every round of selection, there will be 2^p people left, with the first person still being the first.\nWhen there are 2^m+k people, we can first select k people, so that we have 2^m left.\nThus, whoever is the first person at that stage will be the last one left.\nIn removing k people, we choose the index 2, 4, 6, ..., 2k.\nSo person 2k+1 is the last person left.\nFor 1324 people, we have 2^m=1024, k=300.\nThus, the last person left is 300*2+1=601.",
+    "reviewed_argument": "For removal of every second person, J(n)=2(n-2^floor(log2(n)))+1. Direct circular elimination independently gives label 601.",
+    "verification_type": "exact_computation_and_argument",
+    "computation": {
+      "value": 601,
+      "method": "Independent circular elimination simulation."
+    },
+    "source_url": "https://github.com/YilunZhou/champ-dataset/tree/bfb6651efb3d91c266413db44e41d9a83ab789e5",
+    "researcher_only": true
+  }
+]

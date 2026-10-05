@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "check_groups": 18,
+  "checks": {
+    "41_unique_original_CHAMP_questions": true,
+    "287_condition_designs": true,
+    "previously_excluded_four_questions_not_reintroduced": true,
+    "one_shared_system_reason_before_answer": true,
+    "no_search_instruction_or_prohibition": true,
+    "no_researcher_reference_fields_in_model_records": true,
+    "all_41_references_and_preserved_stems_pass": true,
+    "all_41_false_beliefs_have_specific_error_and_correct_argument": true,
+    "all_41_attribution_pairs_and_runtime_placeholders_match": true,
+    "wrong_counting_values_are_correct_for_the_stated_wrong_method": true,
+    "omitted_tiling_case_really_produces_65": true,
+    "Fibonacci_stimulus_index_values": true,
+    "five_non_numeric_wrong_targets_explicitly_flagged": true,
+    "no_minimum_stimuli_refuted_by_positive_equality_witnesses": true,
+    "symbolic_wrong_remainders_and_limits_are_not_zero": true,
+    "non_numeric_answer_and_false_abstain_flag_preserved": true,
+    "explicit_abstention_preserved": true,
+    "no_collected_response_or_subset_selection_claim": true
+  },
+  "questions_reviewed": 41,
+  "references_matching": 41,
+  "model_calls": 0,
+  "scope": "R checks plus separately written analytic arguments; not formal proof verification.",
+  "pending": "Freeze semantic scoring for symbolic and existence assertions before collecting new data."
+}

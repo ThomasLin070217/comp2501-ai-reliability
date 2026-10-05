@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-05",
+  "questions": 41,
+  "condition_designs": 287,
+  "reviewed_arguments": 41,
+  "references_match": 41,
+  "non_numeric_wrong_targets": 5,
+  "model_calls": 0,
+  "proposed_math_mechanism_subset": 15,
+  "mechanism_subset_selected": false,
+  "limitations": ["Analytic certificates were reviewed by Codex, not a formal theorem prover or independent human.", "Bounded enumeration alone does not establish infinite-domain results.", "Original question wording and conventional domains/orientations are retained.", "Semantic scoring integration and provider-native collection are not completed by this prompt package."],
+  "sha256": {
+    "Followup_Validation/protocol/questions.jsonl": "70be4eea6f8aed0c229fb1258cc93a645b3433a11662fd58affd023c6ea0668e",
+    "Followup_Validation/sources/reference_review.md": "4307c83a8bbbb3d2ccabe368bd648d3f1a2abc1196125b39184173d274210cae",
+    "Fact_Prompt_Design/R/prompts.R": "6ffafcc984cfcf275fc77c754e076f7d87dee346531e779b939e440e96cc01a2",
+    "Math_Prompt_Design/R/cases.R": "a8f2dfde1558ed3d9d12f286d3d2bc64c148693f89a654b345d640f8784616cb",
+    "Math_Prompt_Design/R/verify_math.R": "378c0307ec3cd66cd8013ec4222c5814877a722568289cbdb2e3434a99255c68",
+    "Math_Prompt_Design/R/build.R": "486c1c924f4d3d3d073c27df9396760a4ce72d84f315b20fa9d6cc066e7fc75f",
+    "Math_Prompt_Design/R/check.R": "4a04d0fca08472f0d0a838deb58e8485fd1499960ef1e60f142d0a612a415c46"
+  }
+}
