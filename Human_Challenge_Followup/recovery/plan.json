@@ -1,0 +1,7 @@
+{
+  "original_completed_sha256": "8e7f8051e5119fdea9d123761e4cad7bf2ec31bf1ff14a1ea18939d2d45e51df",
+  "original_http_sha256": "a199a2693d160b6f272a286d10cb5a562fb69bbcc197fcfcc4b6eaf5d91fb6f8",
+  "failed_ids": ["facts:SV0541:minimax:human_challenge", "math:CHAMP:P_Inequality_49:minimax:human_challenge"],
+  "maximum_extra_attempts": 2,
+  "selection": "Use first status=ok technical retry; otherwise last allowed attempt. No retry for valid but wrong, abstaining, or malformed response."
+}

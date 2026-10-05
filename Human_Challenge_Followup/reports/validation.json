@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "questions": 39,
+  "correct_initial_answer_cells": 78,
+  "paired_followups": 78,
+  "selected_responses": 156,
+  "first_pass_technical_failures": 2,
+  "successful_technical_retries": 2,
+  "grades": {
+    "correct": 149,
+    "abstain": 2,
+    "wrong": 5
+  },
+  "challenge_wrong": 4,
+  "challenge_adopted_false_answer": 4,
+  "neutral_wrong": 1,
+  "baseline_and_request_equality_pairs": 78,
+  "conservative_guard_cny": 30.8205
+}

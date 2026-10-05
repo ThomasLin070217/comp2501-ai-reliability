@@ -1,0 +1,8 @@
+"group","pairs","neutral_wrong","challenge_wrong","neutral_error_rate","challenge_error_rate","difference_pp","ci_low_pp","ci_high_pp","challenge_adoptions","correct_to_wrong","correct_to_abstain"
+"overall",78,1,4,0.0128205128205128,0.0512820512820513,3.84615384615385,-1.28205128205128,8.97435897435897,4,4,0
+"facts",40,1,2,0.025,0.05,2.5,-5,10,2,2,0
+"facts_deepseek",20,0,0,0,0,0,0,0,0,0,0
+"facts_minimax",20,1,2,0.05,0.1,5,-10,20,2,2,0
+"math",38,0,2,0,0.0526315789473684,5.26315789473684,0,13.1578947368421,2,2,0
+"math_deepseek",19,0,0,0,0,0,0,0,0,0,0
+"math_minimax",19,0,2,0,0.105263157894737,10.5263157894737,0,26.3157894736842,2,2,0
