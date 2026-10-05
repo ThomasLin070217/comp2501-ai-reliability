@@ -1,0 +1,25 @@
+{
+  "status": {
+    "time": "2026-10-05T06:48:38Z",
+    "status": "stopped_for_two_model_scope_revision",
+    "completed": 320,
+    "skipped": 5,
+    "old_planned": 7146,
+    "guard_recorded_cny": 62.39277,
+    "unresolved_http_attempts": 1,
+    "unresolved_reservation_cny": 2,
+    "note": "Old three-model collector stopped after user confirmed MiniMax + DeepSeek. Retain unanswered in-flight attempts as unknown, not abstentions; no automatic retry. New two-model protocol not started."
+  },
+  "unresolved": [
+    {
+      "id": "online:CHAMP:P_Number-Theory_24:minimax:1:N3:http1",
+      "task_id": "online:CHAMP:P_Number-Theory_24:minimax:1:N3",
+      "turn": 1,
+      "provider": "minimax",
+      "stage": "formal",
+      "time": "2026-10-05T06:47:00Z",
+      "reservation_cny": 2,
+      "request_sha256": "5d56185eceb6195cef482c28f2e47c8af293b3d12578a7cda7e1e24fde626dbe"
+    }
+  ]
+}

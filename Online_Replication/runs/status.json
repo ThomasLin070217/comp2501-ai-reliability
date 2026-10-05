@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-05T06:48:38Z",
+  "status": "stopped_for_two_model_scope_revision",
+  "completed": 320,
+  "skipped": 5,
+  "old_planned": 7146,
+  "guard_recorded_cny": 62.39277,
+  "unresolved_http_attempts": 1,
+  "unresolved_reservation_cny": 2,
+  "note": "Old three-model collector stopped after user confirmed MiniMax + DeepSeek. Retain unanswered in-flight attempts as unknown, not abstentions; no automatic retry. New two-model protocol not started."
+}
