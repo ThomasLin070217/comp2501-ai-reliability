@@ -1,0 +1,5 @@
+{
+  "collector_sha256": "c0fcda7924906af012337c821857c4bd7cbfac0b555ca4b5540c36166e465dd9",
+  "manifest_sha256": "913057ab1fd44966400570d47cef6c266fe4a7bdca0c48d7ec7b53e4b760e919",
+  "note": "Frozen before first controlled call; all peer material is researcher-scripted."
+}
