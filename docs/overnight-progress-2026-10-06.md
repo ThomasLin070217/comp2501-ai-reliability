@@ -32,3 +32,11 @@ Next gate: audit the shared workspace and current collection status; process ava
 - The 500-question UGMathBench/HKU candidate belongs to another active chat and its first version failed key/solvability/difficulty review. It is not substituted for the collected GSM-Plus v3 MiniMax baselines. The other chat is revising the candidate; this runbook does not edit or collect it.
 - No new model answer or new effect estimate was produced by this documentation revision.
 - The active `comp2501` heartbeat prompt was updated to use the revised runbook as its authority: the fact sample is frozen, v3 and UGMathBench remain separate, and the human misconception comparison starts in the **first** prompt.
+
+## 7 October, 00:07 — T1 R reconstruction of frozen facts
+
+- Inputs: initial 1,000 fact cells and 931 semantic decisions; 70-target recovery decision table; 37-target direct-route review and its later v2 decision; the native `final.json` records for all 40 selected recovery answers; and the frozen snapshot manifest. Hashes are in `Night_Audit_2026-10-06/derived/fact_frozen_rebuilt_R_audit.json`.
+- `Night_Audit_2026-10-06/R/rebuild_fact_freeze.R` independently rebuilt the available-response view in R. All 1,000 rows × 11 columns matched the frozen snapshot; the 33 original-gateway and seven official-endpoint selected answers matched native complete finals.
+- Rebuilt results: DeepSeek 423 correct, 44 wrong, 33 abstain / 500 scoreable (8.80% wrong); MiniMax 354 correct, 78 wrong, 38 abstain / 470 scoreable (16.60% wrong), plus 29 technical gaps and one unscorable. This does not rank models on a matched subset and does not independently verify all reference keys.
+- No new model call was made. The fact freeze remains in force.
+- The same R pass kept self-check conditional: among the original 112 initially wrong answers, 27 corrected, 79 stayed wrong and six abstained; one separate recovered DeepSeek wrong answer stayed wrong. The new R table is `Night_Audit_2026-10-06/derived/fact_selfcheck_conditional_R_summary.csv`. It must not be reported as an all-question post-self-check rate.

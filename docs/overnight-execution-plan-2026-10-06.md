@@ -32,20 +32,20 @@ Updated 7 October 2026, Asia/Shanghai. This is the canonical to-do file for the 
 | Workstream | Current state | Agent action now |
 | --- | --- | --- |
 | Historical self vs cross and post-answer human challenge | Completed supplemental results in `Two_Model_Collection/reports/RESULTS_SUMMARY.md` and `Human_Challenge_Followup/RESULTS.md` | Preserve protocol/uncertainty limits; do not rerun |
-| New facts, 500 questions × two models | **Frozen at available responses** in `Initial_Response_Accuracy_Evaluation/processed/fact_frozen_2026-10-06/`: DeepSeek 500 scoreable, MiniMax 470 scoreable, 29 technical gaps and one unscorable; seven MiniMax replies used a separate official endpoint | R-verify the freeze and provenance; **no new fact calls** unless the user changes this freeze |
+| New facts, 500 questions × two models | **Frozen and independently reconstructed in R**: DeepSeek 500 scoreable, MiniMax 470 scoreable, 29 technical gaps and one unscorable; seven MiniMax replies used a separate official endpoint | Keep original and mixed-route rates separate; **no new fact calls** unless the user changes this freeze |
 | Fact recovery reconciliation | R overlay completed at `Night_Audit_2026-10-06/`; MiniMax direct endpoint stopped on HTTP 402 | Compare the R overlay with the new frozen snapshot; preserve original gateway-only and original 930-answer views |
 | GSM-Plus math v3 | MiniMax 500/500 collected, 479 correct, 17 wrong, two ambiguous prompts and two unscorable answers; DeepSeek matched v3 run not found | Prepare/check DeepSeek's same-question independent initial run; never substitute older v2 or CHAMP/MATH inputs |
 | Mathematics follow-ups | Self/natural/manipulated v3 branches not collected | Start only after the matched v3 baseline and materials pass their gates |
 | UGMathBench/HKU 500 candidate | A **separate** chat is revising it. The first 500 candidate failed key/solvability/difficulty review and is not ready for model collection | Do not use or edit that chat's working bank; it does not replace v3 without an explicit new paired design |
 | Presentation/Feishu/GitHub | Framework exists; current result coverage and Feishu text need reconciliation | Update only from validated R tables and after source files are available; verify pushed state |
 
-## T1 — Verify and package the frozen facts **[IN REVIEW; offline ready]**
+## T1 — Verify and package the frozen facts **[DONE; audit available]**
 
 **Inputs:** `Initial_Response_Accuracy_Evaluation/processed/fact_frozen_2026-10-06/`, raw collection logs, `Night_Audit_2026-10-06/`, and original-gateway score summaries.
 
-- [ ] In R, verify 1,000 unique question × model cells, 500 questions per model, source-route counts, selected raw-response hashes and grade keys. Independently recompute the frozen counts: DeepSeek `423/44/33` among 500; MiniMax `354/78/38` among 470, with 29 technical gaps and one unscorable. Investigate disagreement rather than editing the frozen source.
-- [ ] Rebuild a **canonical R-derived** cell/coverage/summary export from recorded raw answers and saved semantic decisions. Keep the original 930-answer view, the 963-complete original-gateway recovery, and the 970-complete mixed-route view as separately named artifacts. The existing Python-built freeze remains historical evidence, not the claimed R pipeline.
-- [ ] Reconcile neutral self-check outcomes separately: the first 112 initially wrong answers had 27 corrected, 79 still wrong, six abstentions; one newly recovered DeepSeek wrong answer had a separate self-check. Do not call `27/112` a whole-sample self-check error rate.
+- [x] In R, verify 1,000 unique question × model cells, 500 questions per model, source-route counts, selected raw-response hashes and grade keys. Recomputed DeepSeek `423/44/33` among 500; MiniMax `354/78/38` among 470, with 29 technical gaps and one unscorable.
+- [x] Rebuild a **canonical R-derived** cell/summary export from recorded initial answers, saved semantic decisions and 40 verified native recovery finals. All 1,000 rows × 11 columns match the frozen source; see `Night_Audit_2026-10-06/R/rebuild_fact_freeze.R` and its derived files. Keep the original 930-answer view, the 963-complete original-gateway recovery, and the 970-complete mixed-route view separately named. The Python-built freeze remains historical evidence.
+- [x] Reconcile neutral self-check separately: among the original 112 initially wrong answers, 27 corrected, 79 still wrong, six abstained; one newly recovered DeepSeek wrong answer had a separate self-check and remained wrong. Do not call `27/112` a whole-sample self-check error rate.
 
 **Acceptance:** R rerun reproduces all counts and hashes, identifies each missing/unknown task, records key-review limits, and changes no source record. **Stop:** no new fact model calls under the current freeze, even if a quota later renews.
 

@@ -1,0 +1,37 @@
+{
+  "input_sha256": {
+    "Initial_Response_Accuracy_Evaluation/processed/initial_fact_2026-10-06/fact_initial_responses_1000.csv": "1b5894309f9313c9c9662715a46a374c06dc6109e93dacaeeffd5e542448109f",
+    "Initial_Response_Accuracy_Evaluation/processed/initial_fact_2026-10-06/fact_initial_semantic_grades_931.csv": "513a389fa1ccabebdf12c9bec6276e013a1b6040107b1e29e83e41b7fc3f88f6",
+    "Initial_Response_Accuracy_Evaluation/processed/selfcheck_recovery_2026-10-06/fact_recovery_available_review_70.csv": "20adc9b1fe6c8e2d91140cee32ba99ffe6cd1a1e95263e83c1da3a5fa5c85daf",
+    "Initial_Response_Accuracy_Evaluation/processed/selfcheck_recovery_2026-10-06/direct_minimax_available_review_37.csv": "a145cfa77c84933553bf0ef544a3873d586abd1f936d1c1c75e06e603eebf5c6",
+    "Initial_Response_Accuracy_Evaluation/processed/selfcheck_recovery_2026-10-06/direct_minimax_review_decisions_v2.csv": "b47f84521545883f4dd7cfecfdf35cda8917d03166697085d87b4d98354b665e",
+    "Initial_Response_Accuracy_Evaluation/processed/selfcheck_recovery_2026-10-06/wrong_selfcheck_final_review_112.csv": "4bd0ee1f3be7f68184ef4e2b0a4f0e89a5810471c8449568f2af9acb2b2546f6",
+    "Initial_Response_Accuracy_Evaluation/processed/selfcheck_recovery_2026-10-06/recovered_wrong_selfcheck_available.csv": "e7a8d3249ec1dea62924491f965e789a42ae52f02fc50f732c627bc1aefbb1c4",
+    "Initial_Response_Accuracy_Evaluation/processed/fact_frozen_2026-10-06/fact_frozen_responses_1000.csv": "0f430ab6eb706ff3581025ad89602f279680572d32d62d2f0b59fcae5dae866c"
+  },
+  "selected_native_completions": {
+    "original_gateway": 33,
+    "official_first": 6,
+    "official_resumed": 1
+  },
+  "cell_column_disagreements_with_frozen": {
+    "task_id": 0,
+    "eval_id": 0,
+    "question_order": 0,
+    "provider": 0,
+    "source_benchmark": 0,
+    "question_text": 0,
+    "reference_answer": 0,
+    "original_status": 0,
+    "chosen_source": 0,
+    "chosen_grade": 0,
+    "chosen_answer_text": 0
+  },
+  "output_sha256": {
+    "data": "9e45cfc3feb1d11780064d52c3d1da528be43f2c35d08eda97fe00c432e2fb61",
+    "summary": "1a9a77ee5a2c221459a4471ab0c97c9c15a87567adae73cbe5af2bbbecf8a021",
+    "conditional_selfcheck": "0cfbbb805e56fe46925accba7583104656e150226e2ed866f8de311271ba075c"
+  },
+  "original_frozen_sha256": "0f430ab6eb706ff3581025ad89602f279680572d32d62d2f0b59fcae5dae866c",
+  "note": "R reconstruction from original initial cells, semantic decisions and verified native recovery finals. Does not independently verify all benchmark answer keys."
+}
