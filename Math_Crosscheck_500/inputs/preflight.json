@@ -1,0 +1,7 @@
+{
+  "ready": false,
+  "phase": "waiting_for_initial_collection",
+  "expected_initial_tasks": 1000,
+  "index_exists": false,
+  "reason": "No finalized baseline index."
+}
