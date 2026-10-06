@@ -33,10 +33,10 @@ s$rq2_method_comparison <-
 s$rq3_wrong_peer_risk <-
   (controlled & cnd %in% c('baseline', 'C0', 'C1', 'C2', 'C3')) |
   natural | two
-s$rq4_misconception_path <- two | human
+s$rq4_human_misconception <- two | human
 
 stopifnot(all(s$rq1_double_check | s$rq2_method_comparison |
-              s$rq3_wrong_peer_risk | s$rq4_misconception_path))
+              s$rq3_wrong_peer_risk | s$rq4_human_misconception))
 
 role <- rep(NA_character_, nrow(s))
 role[cnd %in% c('baseline', 'N0', 'neutral_initial')] <- 'independent_answer'
@@ -69,10 +69,14 @@ evidence[human] <- 'latest_scripted_human_challenge_supplement'
 stopifnot(!anyNA(evidence))
 s$evidence_group <- evidence
 
-path <- rep('not_rq4', nrow(s))
-path[two] <- 'upstream_false_premise_to_model_a_then_model_b'
-path[human] <- 'correct_answer_then_direct_false_human_challenge'
-s$rq4_path <- path
+component <- rep('not_rq4', nrow(s))
+component[two & cnd %in% c('neutral_initial', 'misconception_initial')] <-
+  'model_a_initial_prompt_comparison'
+component[two & cnd %in% c('A0_AI', 'A0_Human', 'A1_AI', 'A1_Human')] <-
+  'downstream_model_b_exploratory_extension'
+component[two & cnd == 'self_check'] <- 'model_a_context_only'
+component[human] <- 'same_model_correct_answer_then_false_human_challenge'
+s$rq4_component <- component
 
 # Pair key groups parallel branches for the same receiver. Donor links are
 # retained separately because the donor is another model, not a paired arm.
@@ -102,7 +106,7 @@ by_study <- as.list(table(s$experiment))
 rq_rows <- list(rq1 = sum(s$rq1_double_check),
                 rq2 = sum(s$rq2_method_comparison),
                 rq3 = sum(s$rq3_wrong_peer_risk),
-                rq4 = sum(s$rq4_misconception_path))
+                rq4 = sum(s$rq4_human_misconception))
 jsonlite::write_json(list(status = 'passed', source_rows = nrow(d),
   selected_rows = nrow(s), excluded_rows = nrow(d) - nrow(s),
   unique_ids = length(unique(s$observation_id)),

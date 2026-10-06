@@ -151,7 +151,7 @@
     },
     {
       "study": "two_model_facts",
-      "comparison": "neutral_donor_vs_misconception_donor",
+      "comparison": "neutral_vs_false_premise_initial",
       "scheduled_pairs": 100,
       "scorable_pairs": 99,
       "excluded_pairs": 1
@@ -207,7 +207,7 @@
     },
     {
       "study": "two_model_math",
-      "comparison": "neutral_donor_vs_misconception_donor",
+      "comparison": "neutral_vs_false_premise_initial",
       "scheduled_pairs": 60,
       "scorable_pairs": 60,
       "excluded_pairs": 0
@@ -251,10 +251,14 @@
   "focused_checks": {
     "natural_wrong_donor_with_correct_receiver": 94,
     "natural_wrong_donor_final_wrong": 1,
+    "initial_prompt_scorable_pairs": 159,
+    "initial_prompt_neutral_correct": 125,
+    "initial_prompt_correct_to_wrong": 7,
+    "initial_prompt_correct_to_abstain": 1,
     "full_chain_opportunities": 7,
     "full_chain_final_wrong": 0,
     "direct_human_challenge_pairs": 78,
     "direct_human_challenge_final_wrong": 4
   },
-  "csv_sha256": "fdc8e60c1a47850fc5983f1de48f585091dfb44f07bfa3258d5d55c1514d8a8f"
+  "csv_sha256": "569ba2be687adc9335e5590e659e6cfd6b2455d669da45539a626f9fa00adae2"
 }

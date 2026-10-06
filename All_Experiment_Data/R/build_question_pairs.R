@@ -31,7 +31,7 @@ specs <- list(
   c('two_model_facts', 'initial_vs_self', 'neutral_initial', 'self_check', 'RQ1,RQ2'),
   c('two_model_facts', 'self_vs_natural_peer', 'self_check', 'A0_AI', 'RQ1,RQ2,RQ3'),
   c('two_model_facts', 'initial_vs_natural_peer', 'neutral_initial', 'A0_AI', 'RQ1'),
-  c('two_model_facts', 'neutral_donor_vs_misconception_donor', 'neutral_initial',
+  c('two_model_facts', 'neutral_vs_false_premise_initial', 'neutral_initial',
     'misconception_initial', 'RQ4'),
   c('two_model_facts', 'ai_label_vs_human_label', 'A0_AI', 'A0_Human', 'RQ2,RQ4'),
   c('two_model_facts', 'neutral_ai_vs_misconception_ai', 'A0_AI', 'A1_AI', 'RQ4'),
@@ -41,7 +41,7 @@ specs <- list(
   c('two_model_math', 'initial_vs_self', 'neutral_initial', 'self_check', 'RQ1,RQ2'),
   c('two_model_math', 'self_vs_natural_peer', 'self_check', 'A0_AI', 'RQ1,RQ2,RQ3'),
   c('two_model_math', 'initial_vs_natural_peer', 'neutral_initial', 'A0_AI', 'RQ1'),
-  c('two_model_math', 'neutral_donor_vs_misconception_donor', 'neutral_initial',
+  c('two_model_math', 'neutral_vs_false_premise_initial', 'neutral_initial',
     'misconception_initial', 'RQ4'),
   c('two_model_math', 'ai_label_vs_human_label', 'A0_AI', 'A0_Human', 'RQ2,RQ4'),
   c('two_model_math', 'neutral_ai_vs_misconception_ai', 'A0_AI', 'A1_AI', 'RQ4'),
@@ -121,6 +121,9 @@ natural_risk <- subset(pairs,
   experiment %in% c('two_model_facts', 'two_model_math') &
   comparison_id == 'self_vs_natural_peer' &
   receiver_initial_grade == 'correct' & right_donor_grade == 'incorrect')
+initial_misconception <- subset(pairs,
+  comparison_id == 'neutral_vs_false_premise_initial')
+initially_correct <- subset(initial_misconception, left_grade == 'correct')
 chain_opportunities <- subset(pairs,
   comparison_id == 'neutral_ai_vs_misconception_ai' &
   receiver_initial_grade == 'correct' &
@@ -128,6 +131,10 @@ chain_opportunities <- subset(pairs,
 human_pairs <- subset(pairs, experiment == 'human_challenge_followup')
 stopifnot(nrow(natural_risk) == 94L,
           sum(natural_risk$right_wrong) == 1L,
+          nrow(initial_misconception) == 159L,
+          nrow(initially_correct) == 125L,
+          sum(initially_correct$right_wrong) == 7L,
+          sum(initially_correct$right_abstain) == 1L,
           nrow(chain_opportunities) == 7L,
           sum(chain_opportunities$right_wrong) == 0L,
           sum(human_pairs$right_wrong) == 4L)
@@ -140,7 +147,12 @@ jsonlite::write_json(list(status = 'passed', rows = nrow(pairs),
   comparisons = audit,
   focused_checks = list(natural_wrong_donor_with_correct_receiver =
     nrow(natural_risk), natural_wrong_donor_final_wrong =
-    sum(natural_risk$right_wrong), full_chain_opportunities =
+    sum(natural_risk$right_wrong),
+    initial_prompt_scorable_pairs = nrow(initial_misconception),
+    initial_prompt_neutral_correct = nrow(initially_correct),
+    initial_prompt_correct_to_wrong = sum(initially_correct$right_wrong),
+    initial_prompt_correct_to_abstain = sum(initially_correct$right_abstain),
+    full_chain_opportunities =
     nrow(chain_opportunities), full_chain_final_wrong =
     sum(chain_opportunities$right_wrong),
     direct_human_challenge_pairs = nrow(human_pairs),
