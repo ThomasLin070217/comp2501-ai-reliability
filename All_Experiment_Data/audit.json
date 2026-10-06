@@ -1,0 +1,177 @@
+{
+  "status": "passed",
+  "rows": 14095,
+  "unique_observation_ids": 14095,
+  "csv_sha256": "7aceb64e8ed8a3f70cc566600d80148980c908fe7a8027647eec5f9bf9b9e087",
+  "nonempty_question_text": 14095,
+  "nonempty_reference_answer": 14095,
+  "nonempty_response_text": 13959,
+  "nonempty_prompt_last_user": 13959,
+  "cohorts": [
+    {
+      "name": "pilot_deepseek",
+      "rows": 180,
+      "grades": {
+        "correct": 180,
+        "incorrect": 0,
+        "abstain": 0,
+        "unscorable": 0
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "pilot_kimi",
+      "rows": 180,
+      "grades": {
+        "correct": 179,
+        "incorrect": 1,
+        "abstain": 0,
+        "unscorable": 0
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "pilot_minimax",
+      "rows": 180,
+      "grades": {
+        "correct": 180,
+        "incorrect": 0,
+        "abstain": 0,
+        "unscorable": 0
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "peer_development",
+      "rows": 315,
+      "grades": {
+        "correct": 60,
+        "incorrect": 195,
+        "abstain": 60,
+        "unscorable": 0
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "peer_main",
+      "rows": 5040,
+      "grades": {
+        "correct": 1295,
+        "incorrect": 2160,
+        "abstain": 1584,
+        "unscorable": 1
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "math_development",
+      "rows": 126,
+      "grades": {
+        "correct": 106,
+        "incorrect": 19,
+        "abstain": 0,
+        "unscorable": 1
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "math_supplementary",
+      "rows": 546,
+      "grades": {
+        "correct": 486,
+        "incorrect": 43,
+        "abstain": 0,
+        "unscorable": 17
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "Natural_Crosscheck",
+      "rows": 588,
+      "grades": {
+        "correct": 236,
+        "incorrect": 155,
+        "abstain": 173,
+        "unscorable": 24
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "Followup_Validation",
+      "rows": 4032,
+      "grades": {
+        "correct": 1443,
+        "incorrect": 1402,
+        "abstain": 984,
+        "unscorable": 203
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "web_factcheck",
+      "rows": 100,
+      "grades": {
+        "correct": 63,
+        "incorrect": 21,
+        "abstain": 13,
+        "unscorable": 3
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "online_partial",
+      "rows": 320,
+      "grades": {
+        "correct": 0,
+        "incorrect": 0,
+        "abstain": 0,
+        "unscorable": 3
+      },
+      "not_graded": 317
+    },
+    {
+      "name": "two_model_facts",
+      "rows": 1591,
+      "grades": {
+        "correct": 1274,
+        "incorrect": 215,
+        "abstain": 101,
+        "unscorable": 1
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "two_model_math",
+      "rows": 732,
+      "grades": {
+        "correct": 677,
+        "incorrect": 50,
+        "abstain": 0,
+        "unscorable": 5
+      },
+      "not_graded": 0
+    },
+    {
+      "name": "two_model_facts_skipped",
+      "rows": 9,
+      "grades": {
+        "correct": 0,
+        "incorrect": 0,
+        "abstain": 0,
+        "unscorable": 0
+      },
+      "not_graded": 9
+    },
+    {
+      "name": "human_challenge",
+      "rows": 156,
+      "grades": {
+        "correct": 149,
+        "incorrect": 5,
+        "abstain": 2,
+        "unscorable": 0
+      },
+      "not_graded": 0
+    }
+  ]
+}

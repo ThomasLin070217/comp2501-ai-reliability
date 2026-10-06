@@ -1,3 +1,4 @@
 *.pdf binary
 *.pptx binary
 Human_Challenge_Followup/reports/*.csv whitespace=-trailing-space
+All_Experiment_Data/*.csv whitespace=-trailing-space
