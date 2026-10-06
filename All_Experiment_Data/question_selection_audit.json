@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "source_rows": 14095,
+  "selected_rows": 12694,
+  "excluded_rows": 1401,
+  "unique_ids": 12694,
+  "scorable_responses": 12434,
+  "not_requested": 136,
+  "by_study": {
+    "followup_validation": 4032,
+    "human_challenge_followup": 156,
+    "math_supplement_supplementary": 546,
+    "natural_crosscheck": 588,
+    "peer_misleading_main": 5040,
+    "two_model_facts": 1600,
+    "two_model_math": 732
+  },
+  "rq_membership_rows": {
+    "rq1": 7260,
+    "rq2": 12058,
+    "rq3": 10942,
+    "rq4": 2488
+  },
+  "output_sha256": "7bad4dc2d764978c88c8a17fa3aa63b62d90a27efa24c341027fce4b5f64995d"
+}

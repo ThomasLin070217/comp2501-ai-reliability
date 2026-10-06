@@ -2,6 +2,16 @@
 
 最新用户要求（2026-10-06）原话：
 
+> 我们现在可以利用上的数据筛选出来。要能回答我们这些问题的：
+>   1. Can double check decrease the error rate?
+>   2. What kinds of double check is the most effective in practical?
+>   3. When we introducing cross check, is it also possible to introduce mistakes? 当我们用double check的时候，如果另外一个模型的回答出错了，有没有有可能误导本身正确的答案？
+>   4. if human prompts contain preconceived misconceptions, or if one model provides an incorrect answer during cross-checking—could that mislead the system into drawing wrong conclusions?如果prompt含有先入为主的想法导致第一个模型的回答出错，有没有可能误导本身正确的答案，使另一agent double check生成的结果错误？
+
+落实：从14,095条统一任务表以R生成[四问题筛选表](All_Experiment_Data/question_relevant_responses.csv)，含12,694条唯一任务记录；另生成[有效配对表](All_Experiment_Data/question_comparison_pairs.csv)，9,714条比较行，单条回答可能被多个比较复用，不能把比较行当独立回答数。规则、主要/补充证据和R用法见[筛选说明](All_Experiment_Data/QUESTION_SELECTION.md)，重建脚本均在`All_Experiment_Data/R/`。排除旧天花板pilot、开发轮、无复核对照的100题联网测试及已停且大多未评分的迁移轮；原总表和原始记录不变。当前两模型自然self-vs-peer的可评分事实394、数学164对，旧三模型扩样事实578、数学199对。自然错误同伴且接收者初答正确的当前样本有94个条件机会，其中1个跨模型后答错；人类错误前提经过A再到B的完整链有7个条件机会，0个最终答错；另外78对直接模拟人类错误质疑观察到4个质疑分支答错，两种路径不能合并。数值依赖事后语义补全及限定样本，不代表总体概率或普遍最优方法。所有数据加工使用R，保留136个未请求任务于筛选表供覆盖审计，但不计入有效配对分母；正确与弃答均不计错，技术缺失单列。
+
+最新用户要求（2026-10-06）原话：
+
 > 我需要你汇总所有的数据，所有的意思就是，我们现在有的所有数据，汇总在一个csv 里面，方便用R处理
 
 落实：新增[全实验统一回答CSV](All_Experiment_Data/all_experiment_responses.csv)及[R重建脚本](All_Experiment_Data/R/build_all_responses.R)。其范围是仓库当前各轮规范结果或跳过日志中记录的**问题回答任务**，涵盖旧pilot、早期事实与数学开发/正式轮、自然复核、三模型扩样、独立联网事实题、已停止的联网迁移、两模型完成与恢复、模拟人类质疑，共14,095条唯一任务行，保留136个未请求分支，不能把它们当错或弃答。停止采集后的纯计划任务不补成假观察。材料生成、AI判官、探针、单个HTTP重试及搜索工具事件仍在原始文件中，不重复当作独立问题回答。CSV内含来源、原文、参考、模型、条件、提示最后一轮、状态、原/语义评分及可用搜索字段；不能把不同实验直接合并求总体错误率。所有清洗与导出使用R，用户Excel和Word不改。详细纳排界限与字段见[总表说明](All_Experiment_Data/README.md)。
