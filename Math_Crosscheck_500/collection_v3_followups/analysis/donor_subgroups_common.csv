@@ -1,0 +1,5 @@
+"subgroup","n","self_correct","self_wrong","self_abstain","natural_correct","natural_wrong","natural_abstain"
+"mini_wrong_donor_correct",17,10,7,0,14,3,0
+"mini_correct_donor_wrong",2,2,0,0,1,1,0
+"both_initially_wrong",0,0,0,0,0,0,0
+"both_initially_correct",476,474,2,0,476,0,0

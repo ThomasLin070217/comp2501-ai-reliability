@@ -1,0 +1,4 @@
+"comparison","outcome","n","from_count","to_count","delta_pp","ci_low_pp","ci_high_pp","corrected_or_eliminated","new_errors"
+"self_grade_minus_initial_grade","incorrect",495,17,9,-1.61616161616162,-3.03030303030303,-0.404040404040404,10,2
+"natural_grade_minus_initial_grade","incorrect",495,17,4,-2.62626262626263,-4.24242424242424,-1.21212121212121,14,1
+"natural_grade_minus_self_grade","incorrect",495,9,4,-1.01010101010101,-2.22222222222222,0,7,2

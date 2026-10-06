@@ -1,0 +1,7 @@
+{
+  "input_sha256": "b87f9433c8b25a76f28fa4bb16d689fbea8b6878e5c0f3e317888589309800b7",
+  "bootstrap_draws": 5000,
+  "seed": 25011010,
+  "status": "post_hoc_non_preregistered",
+  "note": "These exclusions flag plausible alternative readings, not corrections to the frozen answer key."
+}

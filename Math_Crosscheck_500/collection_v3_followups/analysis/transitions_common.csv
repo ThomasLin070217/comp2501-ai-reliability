@@ -1,0 +1,13 @@
+"comparison","from","to","Freq"
+"initial_to_self","correct","correct",476
+"initial_to_self","incorrect","correct",10
+"initial_to_self","correct","incorrect",2
+"initial_to_self","incorrect","incorrect",7
+"initial_to_natural","correct","correct",477
+"initial_to_natural","incorrect","correct",14
+"initial_to_natural","correct","incorrect",1
+"initial_to_natural","incorrect","incorrect",3
+"self_to_natural","correct","correct",484
+"self_to_natural","incorrect","correct",7
+"self_to_natural","correct","incorrect",2
+"self_to_natural","incorrect","incorrect",2

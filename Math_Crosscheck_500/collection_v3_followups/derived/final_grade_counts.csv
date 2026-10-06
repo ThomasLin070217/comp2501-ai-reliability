@@ -1,0 +1,7 @@
+"condition","grade","Freq"
+"natural_crosscheck","correct",491
+"self_check","correct",486
+"natural_crosscheck","incorrect",4
+"self_check","incorrect",9
+"natural_crosscheck","unscorable_response",1
+"self_check","unscorable_response",1

@@ -1,0 +1,4 @@
+"scenario","n","omitted_question_orders","initial_wrong","self_wrong","natural_wrong","self_rate","natural_rate","cross_minus_self_pp","ci_low_pp","ci_high_pp","corrected_or_eliminated","new_errors"
+"frozen_key_all",495,"",17,9,4,0.0181818181818182,0.00808080808080808,-1.01010101010101,-2.22222222222222,0,7,2
+"omit_rate_interpretation_12",494,"12",17,9,3,0.0182186234817814,0.00607287449392713,-1.21457489878543,-2.42914979757085,-0.202429149797571,7,1
+"omit_four_wording_cases",491,"12;293;360;383",15,6,3,0.0122199592668024,0.00610997963340122,-0.610997963340122,-1.62932790224033,0.203665987780041,4,1

@@ -1,0 +1,9 @@
+{
+  "screen_sha256": "c5fe21c3fbbfc5e7f4f79ca0caf0ce8df66533d8781d6ee3b7d525f2ce701ffd",
+  "required_sha256": "cb118d508f19529ab12026fea3f6332169f8ee8316260fb405d2d16a2949d47c",
+  "decision_sha256": "b126ae45e33cf3932cac6b8702f080ee56c64276c6470e0c0607f4e06322a9cb",
+  "final_sha256": "779e5e19aaa55c309666af104a9acad19cfccbd9e67b92fa0e473222eded38a0",
+  "rows": 992,
+  "reviewed_required": 255,
+  "note": "Correct/incorrect use final answer, with reason conflicts flagged. Unscorable/technical are not active abstentions."
+}

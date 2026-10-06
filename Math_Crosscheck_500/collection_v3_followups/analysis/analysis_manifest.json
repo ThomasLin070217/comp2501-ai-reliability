@@ -1,0 +1,10 @@
+{
+  "initial_sha256": "d2c901b903b22cb9b160d093fa347460e13a31e67840288109717b6e003b23cf",
+  "donor_sha256": "27e6341dbf909d02002f419b91ca4b6a4b75bd9b868119ca662deb2c07aa65eb",
+  "followup_scores_sha256": "779e5e19aaa55c309666af104a9acad19cfccbd9e67b92fa0e473222eded38a0",
+  "planned_matched": 496,
+  "common_scorable": 495,
+  "bootstrap_draws": 5000,
+  "bootstrap_seed": 25011010,
+  "note": "Question-level paired bootstrap on selected GSM-Plus bank. A confidence interval does not cure reference ambiguity or make the sample representative of all AI use."
+}
