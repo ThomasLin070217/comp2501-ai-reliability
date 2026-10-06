@@ -34,7 +34,7 @@ Updated 7 October 2026, Asia/Shanghai. This is the canonical to-do file for the 
 | Historical self vs cross and post-answer human challenge | Completed supplemental results in `Two_Model_Collection/reports/RESULTS_SUMMARY.md` and `Human_Challenge_Followup/RESULTS.md` | Preserve protocol/uncertainty limits; do not rerun |
 | New facts, 500 questions × two models | **Frozen and independently reconstructed in R**: DeepSeek 500 scoreable, MiniMax 470 scoreable, 29 technical gaps and one unscorable; seven MiniMax replies used a separate official endpoint | Keep original and mixed-route rates separate; **no new fact calls** unless the user changes this freeze |
 | Fact recovery reconciliation | R overlay completed at `Night_Audit_2026-10-06/`; MiniMax direct endpoint stopped on HTTP 402 | Compare the R overlay with the new frozen snapshot; preserve original gateway-only and original 930-answer views |
-| GSM-Plus math v3 | MiniMax 500/500 collected, 479 correct, 17 wrong, two ambiguous prompts and two unscorable answers; DeepSeek matched v3 run not found | Prepare/check DeepSeek's same-question independent initial run; never substitute older v2 or CHAMP/MATH inputs |
+| GSM-Plus math v3 | MiniMax 500/500 collected, 479 correct, 17 wrong, two ambiguous prompts and two unscorable answers; DeepSeek v3 task manifest frozen, pilot passed, full initial collection running | Monitor `Math_Crosscheck_500/collection_v3_deepseek/runs/status.json`; do not launch another collector or edit its hashed code |
 | Mathematics follow-ups | Self/natural/manipulated v3 branches not collected | Start only after the matched v3 baseline and materials pass their gates |
 | UGMathBench/HKU 500 candidate | A **separate** chat is revising it. The first 500 candidate failed key/solvability/difficulty review and is not ready for model collection | Do not use or edit that chat's working bank; it does not replace v3 without an explicit new paired design |
 | Presentation/Feishu/GitHub | Framework exists; current result coverage and Feishu text need reconciliation | Update only from validated R tables and after source files are available; verify pushed state |
@@ -49,12 +49,12 @@ Updated 7 October 2026, Asia/Shanghai. This is the canonical to-do file for the 
 
 **Acceptance:** R rerun reproduces all counts and hashes, identifies each missing/unknown task, records key-review limits, and changes no source record. **Stop:** no new fact model calls under the current freeze, even if a quota later renews.
 
-## T2 — Obtain the matched GSM-Plus v3 math initials **[READY after preflight]**
+## T2 — Obtain the matched GSM-Plus v3 math initials **[COLLECTING]**
 
 **Inputs:** `Math_Crosscheck_500/question_review_v3/` and `collection_v3_minimax/`. The main follow-up design is in `Math_Crosscheck_500/EXPERIMENT_V2.md` and `COLLECTION_PLAN_V2.md`, but their v2 hashes are stale for the collected v3 bank; rebind and record the version change before collection.
 
-- [ ] Check the v3 input/key/review hashes, the one corrected source key, 500 unique IDs, MiniMax's 500 raw finals and adjudicated 17/496 error count. Document the 18 source-restoration selection-constraint exceptions; do not pretend the bank still contains 150 missing-premise questions.
-- [ ] Search existing logs for an **identical v3 DeepSeek** run. If absent, freeze 500 DeepSeek tasks with exactly the v3 question text as each fresh conversation's only user message, one reply per question, optional native search, and no key or desired answer in prompts. Run an offline R preflight and small technical pilot before full collection.
+- [x] Check the v3 input/key/review hashes, the one corrected source key, 500 unique IDs, MiniMax's 500 raw finals and adjudicated 17/496 error count. Document the 18 source-restoration selection-constraint exceptions; do not pretend the bank still contains 150 missing-premise questions.
+- [x] Check for an identical v3 DeepSeek run, freeze 500 same-text tasks with no key in the prompt, pass R preflight, and run a two-answer technical pilot. Full collection is running in `collection_v3_deepseek/`; **do not start a second process**. Its status, not this snapshot, determines current coverage.
 - [ ] Save append-only raw attempts and final outcomes. Continue native `pause_turn` only under a frozen same-turn policy; label unresolved/unknown outcomes. After collection, score complete answers in R with numeric equivalence and prompt-ambiguity review, then build the matched baseline index.
 
 **Acceptance:** both models' usable initials join by the exact same v3 ID/text; coverage, exclusions, model/settings/tool provenance and R scores are reproducible. **Stop:** if provider or quota fails, retain partial coverage and continue T1/T4 offline preparation rather than manufacturing 500 pairs.

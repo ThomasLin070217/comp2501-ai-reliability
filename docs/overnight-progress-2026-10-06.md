@@ -41,3 +41,9 @@ Next gate: audit the shared workspace and current collection status; process ava
 - No new model call was made. The fact freeze remains in force.
 - The same R pass kept self-check conditional: among the original 112 initially wrong answers, 27 corrected, 79 stayed wrong and six abstained; one separate recovered DeepSeek wrong answer stayed wrong. The new R table is `Night_Audit_2026-10-06/derived/fact_selfcheck_conditional_R_summary.csv`. It must not be reported as an all-question post-self-check rate.
 - GitHub: the R rebuild, row-level export, summaries, hash audit and updated runbook were pushed in commit `91fd8cd`; unrelated active-chat files were not staged.
+
+## 7 October, 00:16 — T2 DeepSeek v3 initial collection started
+
+- Input: the pinned GSM-Plus v3 500-question bank and existing MiniMax v3 initial records. `Math_Crosscheck_500/collection_v3_deepseek/R/prepare.R` froze 500 DeepSeek task IDs, source/key/review/code hashes, model settings and a randomized first-100 checkpoint. An R preflight checked the credential without printing it or sending a request; all 500 DeepSeek IDs and question texts match the v3 MiniMax bank, with no answer-key field in the task manifest.
+- A two-task technical pilot returned two HTTP 200 `end_turn` replies, both reporting model `deepseek-v4-pro`; no native search was chosen. The provisional usage guard was ¥0.0138, not an invoice. The full collector then resumed from those two tasks. At the first status check: 12/500 task responses logged, zero unknown deliveries, zero native searches; the run was still active. No math answers have been scored yet.
+- Raw attempts, complete provider responses, stop reasons, token/search usage and a live status file are under `Math_Crosscheck_500/collection_v3_deepseek/runs/`. The frozen collector stops on quota/auth errors and does not retry a wrong answer. Incomplete `pause_turn` responses will need a separate same-turn continuation plan before grading.

@@ -1,0 +1,48 @@
+{
+  "title": "COMP2501 Math Initial Response Accuracy, GSM-Plus source-restored v3",
+  "edition": "question_review_v3",
+  "created_at": "2026-10-06 16:15:16 UTC",
+  "model": "deepseek-v4-pro",
+  "provider": "deepseek",
+  "target_responses": 500,
+  "repeats_per_question": 1,
+  "task_order_seed": 25011013,
+  "batches": {
+    "first_100": 100,
+    "remaining_400": 400
+  },
+  "user_message_rule": "Send input_text verbatim as the only user message in a fresh conversation; no added system message or output format.",
+  "tools": {
+    "native_web_search": "available; model chooses whether to use it"
+  },
+  "generation": {
+    "temperature": 0.6,
+    "max_tokens": 2048,
+    "stream": false,
+    "thinking": "disabled",
+    "concurrency_total_max": 2,
+    "concurrency_per_provider_max": 2
+  },
+  "transport": {
+    "max_attempts": 2,
+    "retry_only": "One retry after a known HTTP 5xx response with identical payload.",
+    "unknown_delivery": "Stop collection; reconcile before resending.",
+    "quota": "Stop on HTTP 401, 402, 403 or 429; do not automatically continue after provider failure.",
+    "content_based_retry": false,
+    "abstention": "Retain as an outcome; never retry based on answer content.",
+    "incomplete": "Retain raw stop reason and classify separately; continue same assistant turn only through a frozen native-history continuation protocol."
+  },
+  "cost_tracking": {
+    "monetary_cap": "No new numeric spend cap was specified in this request.",
+    "accounting": "Record actual input/output/cache tokens and native search counts. Calculate a conservative DeepSeek usage guard separately from any invoice; stop on auth or quota failures."
+  },
+  "hashes": {
+    "question_input": "e4560095d39785a981a666e84216ea20375f6d552d75ebefea4902972ae6359d",
+    "scoring_key": "a293a23e52cad88a2ab7366a41748bd638a5e538f9b64b438d88b9d7e4ea4fa1",
+    "review_manifest": "0b4ddbdda366df353604785b1e049b870ce3c2888db99b3977778a0b60a1ebac",
+    "task_manifest": "550635fc917a064359237828df275bc76f8a439532e6d7707078be08d793cfc4",
+    "collector_code": "21ae716d439f544a867fd3892b2b3f87da697fa720f12e55945e0aa314a4e813",
+    "prepare_code": "acf426812a96a2a7c01474ff421dd1dda58eb20a22aedb68f0160d1279254515",
+    "provider_settings": "a849191224b05c58a7172dfa7658b716291f490ad7e1c225e6299c1ce83b2bc5"
+  }
+}
