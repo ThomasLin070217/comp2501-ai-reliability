@@ -125,6 +125,8 @@ At each gate, check the private `runs/status.json`, append-only logs, `derived/g
 
 **Current M1 technical-gap owner:** the separate “COMP2501 数据处理”/PPT chat (`01a1114a-a887-7242-824f-83800b4e218e`) already has in-flight continuations for the four incomplete initial replies. It may finish those exact task continuations and hand their native finals, changed settings, hashes and grades to the M1 owner. The M1 owner must not issue parallel requests for those IDs. The PPT chat is not the owner of M2–M4; its automation is now limited to consuming adjudicated results for the slide deck.
 
+**1:25 local supervision update:** the M1 owner has now independently rederived all 70 originally wrong answers. It recommends moving `OPT500_094` to `prompt_ambiguous`; `OPT500_159` raises a tolerance-policy question. This is a review recommendation, not yet a changed frozen score. The original 70/491 remains the unrevised ledger; excluding only `OPT500_094` would give 69/490, also provisional. Before M2–M4, the owner must apply a documented common scoring rule, audit the 349 provisional correct numeric/boxed matches for answer/explanation conflict, integrate the four technical continuations with route/settings provenance, and publish the final M1 E/C and replayable-session manifest. One directed handoff has been sent to that owner. The PPT chat reports its last continuation still truncated after an 8192-token cap and plans a short-final-answer technical rescue; mark any changed prompt as a separate recovery condition, not an ordinary original-prompt M1 result.
+
 ## Agent handoff record (fill for every resumed turn)
 
 ```text
