@@ -2,6 +2,8 @@
 
 The four-page [presentation companion PDF](output/pdf/COMP2501_evidence_report_2026-10-07.pdf) summarizes the four research questions for LINYUNIAN and PAN ZHENGYU. The [report source](report.md) links to the public, protocol-separated tables and R analyses. The course handout specifies an in-class presentation and proposal; it does not separately require this PDF.
 
+The [presentation notes](PRESENTATION_NOTES.md) allocate the 18-minute talk and prepare short answers to likely questions. Slides 25–30 of the current 30-slide deck are intended as a Q&A appendix.
+
 `build_report_md.R` checks the current public denominators and the local R-audited aggregate release from the private revised mathematics bank before writing `report.md`. It does not publish the private bank. From the repository root, with the private aggregate release available at its documented local path, rebuild with:
 
 ```sh

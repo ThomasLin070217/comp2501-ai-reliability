@@ -26,9 +26,13 @@ stopifnot(nrow(i) == 15L, nrow(m) == 495L,
           sum(h$neutral_grade == 'incorrect') == 1L,
           sum(h$misconception_grade == 'incorrect') == 5L,
           sum(c50$review_grade == 'incorrect') == 0L,
+          p$M1$scoreable$scoreable == 493L,
           p$M1$grades$incorrect == 70L,
+          p$M2$main$scoreable$scoreable == 488L,
           p$M2$main$scoreable$errors == 42L,
+          p$M3$scoreable$scoreable == 69L,
           p$M3$grades$incorrect == 1L,
+          p$M4$main$scoreable$scoreable == 68L,
           p$M4$main$scoreable$errors == 11L)
 
 source <- 'docs/comp2501-evidence-synthesis-2026-10-07.md'
