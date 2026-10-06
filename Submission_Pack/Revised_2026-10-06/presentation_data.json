@@ -1,0 +1,890 @@
+{
+  "slides": [
+    {
+      "title": "Does Double-Checking Make AI More Reliable?",
+      "layout": "cover",
+      "body": [
+        "Evaluating Self-Checks, Cross-Checks, and Misleading Feedback",
+        "LINYUNIAN  /  PAN ZHENGYU",
+        "COMP2501  /  6 October 2026"
+      ],
+      "table": {},
+      "chart": {},
+      "charts": {},
+      "foot": "",
+      "takeaway": "",
+      "notes": "25 seconds. Introduce both authors. We investigate the four questions in the supplied Feishu outline. Reliability here means fewer wrong final answers, with abstention separately identified.\nSources:\nhttps://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe",
+      "sources": [
+        "https://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe"
+      ],
+      "seconds": 25,
+      "number": 1
+    },
+    {
+      "title": "Background and motivation",
+      "layout": "body",
+      "body": [
+        "Professor LUO RUIBANG asked who would completely trust AI.",
+        "I raised my hand because I use different agents to cross-check.",
+        "Does an extra check actually make the answer more reliable?"
+      ],
+      "table": {},
+      "chart": {},
+      "charts": {},
+      "foot": "Paraphrased from LINYUNIAN’s recollection of the class.",
+      "takeaway": "Our confidence in cross-checking is the hypothesis we test.",
+      "notes": "55 seconds. Tell the classroom story in the first person. The professor wording is a recollection, not an independently verified verbatim quotation. Move from a personal reason for trusting AI to a testable research question.\nSources:\nhttps://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/CHAT_CONTEXT.md#u31",
+      "sources": [
+        "https://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe",
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/CHAT_CONTEXT.md#u31"
+      ],
+      "seconds": 55,
+      "number": 2
+    },
+    {
+      "title": "Research questions",
+      "layout": "questions",
+      "body": [
+        "1. Can double-checking reduce AI error rates?",
+        "2. Which double-checking method is most effective in practice?",
+        "3. Can an incorrect peer answer mislead an initially correct model during cross-checking?",
+        "4. Can misleading user input cause an otherwise correct model to give a wrong answer?"
+      ],
+      "table": {},
+      "chart": {},
+      "charts": {},
+      "foot": "",
+      "takeaway": "",
+      "notes": "45 seconds. Use the four questions exactly as in the Feishu document. RQ1 asks about a net reduction; RQ2 compares methods; RQ3 conditions on a correct receiver and wrong peer; RQ4 tests misleading user input to the same model.\nSources:\nhttps://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe",
+      "sources": [
+        "https://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe"
+      ],
+      "seconds": 45,
+      "number": 3
+    },
+    {
+      "title": "Why this is important",
+      "layout": "body",
+      "body": [
+        "Users need a practical way to decide when an AI answer is reliable.",
+        "A second check may correct an error, leave it unchanged, or introduce one.",
+        "A mistaken assumption in the user’s prompt can also affect the answer."
+      ],
+      "table": {},
+      "chart": {},
+      "charts": {},
+      "foot": "",
+      "takeaway": "We test both the benefits and risks of checking.",
+      "notes": "40 seconds. Present the practical motivation rather than a claim that ordinary users have already been studied. Our experiments simulate questions, checking and misleading feedback; they do not measure actual human decision outcomes.\nSources:\nhttps://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe",
+      "sources": [
+        "https://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe"
+      ],
+      "seconds": 40,
+      "number": 4
+    },
+    {
+      "title": "Data and completed collection",
+      "layout": "table",
+      "body": [],
+      "table": [
+        [
+          "Study",
+          "Questions / records",
+          "Role"
+        ],
+        [
+          "Latest two-model experiment",
+          "100 facts + 41 mathematics",
+          "RQ1–4"
+        ],
+        [
+          "Completed-data records",
+          "2,323 final; 2,317 scorable",
+          "All conditions, not independent questions"
+        ],
+        [
+          "Correct-answer challenge",
+          "39 questions; 156 follow-ups",
+          "RQ4, later conversational stage"
+        ],
+        [
+          "Earlier three-model studies",
+          "Separate selected comparisons",
+          "RQ2 and robustness"
+        ]
+      ],
+      "chart": {},
+      "charts": {},
+      "foot": "MiniMax-M3 and DeepSeek-V4-Pro; two repeats in the main study. Search is optional.",
+      "takeaway": "",
+      "notes": "55 seconds. 2332 was the planned number, not the achieved scorable total. The final overlay contains 2323 task records; nine fact branches stayed blocked and six records are semantically unscorable. The 156 follow-ups form 78 pairs from 39 selected previously-correct questions. Earlier three-model data are supporting evidence and are not pooled with the new study. Repeated answers are not independent questions.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Human_Challenge_Followup/RESULTS.md",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md",
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Human_Challenge_Followup/RESULTS.md"
+      ],
+      "seconds": 55,
+      "widths": [400, 375, 361],
+      "tableSize": 26,
+      "number": 5
+    },
+    {
+      "title": "Method: independent answers, parallel checks",
+      "layout": "table",
+      "body": [],
+      "table": [
+        [
+          "Condition",
+          "What the receiver sees"
+        ],
+        [
+          "Initial answer",
+          "The original question only"
+        ],
+        [
+          "Self-check",
+          "The question and its own initial answer"
+        ],
+        [
+          "Cross-check",
+          "The same initial answer plus the other model’s real answer"
+        ]
+      ],
+      "chart": {},
+      "charts": {},
+      "foot": "Native search is available; each model independently decides whether to use it.",
+      "takeaway": "One revision per branch; the two models exchange roles.",
+      "notes": "65 seconds. Each model first answers independently. Self-check and cross-check are alternative continuations from that same initial response, so the self-check is not sent into the cross-check. Include actual peer answer, abstention and rationale. No third judge and no iterative debate. Search histories are retained. Both models have thinking disabled in the configured collection.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/protocol/models.json\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/two-model-prompt-example.md",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/protocol/models.json",
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/two-model-prompt-example.md"
+      ],
+      "seconds": 65,
+      "widths": [290, 846],
+      "tableSize": 29,
+      "number": 6
+    },
+    {
+      "title": "Measurement and exclusions",
+      "layout": "body",
+      "body": [
+        "Error rate = wrong / (correct + wrong + explicit abstentions).",
+        "Malformed, incomplete or missing outputs are kept outside that denominator.",
+        "Average repeats within each question/model, then give models equal weight."
+      ],
+      "table": {},
+      "chart": {},
+      "charts": {},
+      "foot": "No answer is removed merely because it is wrong or looks like an outlier.",
+      "takeaway": "Correct final answers and correct explanations are different outcomes.",
+      "notes": "50 seconds. Exclusions use status, format and documented source-quality criteria, not an outcome threshold. Semantic recovery is an explicitly secondary overlay. Show abstention separately; lower error is not necessarily higher correct-answer accuracy. Main model comparisons use matched eligible pairs and question-cluster uncertainty intervals.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/QUESTION_SELECTION.md\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/QUESTION_SELECTION.md",
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md"
+      ],
+      "seconds": 50,
+      "number": 7
+    },
+    {
+      "title": "RQ1: can checking reduce errors?",
+      "layout": "dual_chart",
+      "body": [],
+      "table": {},
+      "chart": {},
+      "charts": [
+        {
+          "label": "Facts",
+          "chart": {
+            "categories": ["Initial", "Cross-check"],
+            "values": [
+              0.2075,
+              0.05
+            ],
+            "max": 0.5,
+            "colors": [
+              "#657586",
+              "#147E77"
+            ],
+            "format": "0.00%"
+          }
+        },
+        {
+          "label": "Mathematics",
+          "chart": {
+            "categories": ["Initial", "Cross-check"],
+            "values": [
+              0.134146,
+              0.054878
+            ],
+            "max": 0.5,
+            "colors": [
+              "#657586",
+              "#147E77"
+            ],
+            "format": "0.00%"
+          }
+        }
+      ],
+      "foot": "Initial-versus-cross pairs: facts 393 / 100 questions; mathematics 164 / 41 questions.",
+      "takeaway": "Cross-checking has fewer wrong answers in this selected setup.",
+      "notes": "65 seconds. Descriptive, post-hoc completed-data comparison. Facts 20.75% to 5.00% over 393 matched cells; mathematics 13.41% to 5.49% over 164. Repetitions within question and models are equally weighted. The eligible sets differ from the self-versus-cross contrast on the next slide; do not subtract rates across those sets. No confidence interval is inferred from the displayed point estimates. Maths includes recovery with higher output limits. Earlier studies did not confirm a stable benefit.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/question_comparison_pairs.csv\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/question_comparison_pairs.csv",
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md"
+      ],
+      "seconds": 65,
+      "number": 8
+    },
+    {
+      "title": "RQ2: self-check or cross-check?",
+      "layout": "dual_chart",
+      "body": [],
+      "table": {},
+      "chart": {},
+      "charts": [
+        {
+          "label": "Facts",
+          "chart": {
+            "categories": ["Self-check", "Cross-check"],
+            "values": [
+              0.2325,
+              0.05
+            ],
+            "max": 0.5,
+            "colors": [
+              "#657586",
+              "#147E77"
+            ],
+            "format": "0.00%"
+          }
+        },
+        {
+          "label": "Mathematics",
+          "chart": {
+            "categories": ["Self-check", "Cross-check"],
+            "values": [
+              0.103659,
+              0.054878
+            ],
+            "max": 0.5,
+            "colors": [
+              "#657586",
+              "#147E77"
+            ],
+            "format": "0.00%"
+          }
+        }
+      ],
+      "foot": "Facts: -18.25 pp, 97.5% CI [−22.00, −14.25] pp. Maths: -4.88 pp, CI [−9.15, −1.22] pp.",
+      "takeaway": "Cross-checking helps here; benefit depends on the receiver.",
+      "notes": "65 seconds. Facts have 394 matched cells across 100 questions; mathematics has 164 across 41. Both charts use the same 0–50% scale. Repeats are averaged within each question and model, then the models receive equal weight. The mathematics result is supplementary: 21 selected recovery responses had a higher output allowance. The original-run interval included zero. Advice adds model calls and time; we did not compare methods by cost per successful correction.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/recovery_semantic_primary_comparison.csv",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/recovery_semantic_primary_comparison.csv"
+      ],
+      "seconds": 65,
+      "number": 9
+    },
+    {
+      "title": "RQ2: gains differ by receiving model",
+      "layout": "table",
+      "body": [],
+      "table": [
+        [
+          "Domain",
+          "Receiver ← advice",
+          "Self-check",
+          "Cross-check"
+        ],
+        [
+          "Facts",
+          "DeepSeek ← MiniMax",
+          "2.00%",
+          "2.00%"
+        ],
+        [
+          "Facts",
+          "MiniMax ← DeepSeek",
+          "44.50%",
+          "8.00%"
+        ],
+        [
+          "Mathematics",
+          "DeepSeek ← MiniMax",
+          "2.44%",
+          "3.66%"
+        ],
+        [
+          "Mathematics",
+          "MiniMax ← DeepSeek",
+          "18.29%",
+          "7.32%"
+        ]
+      ],
+      "chart": {},
+      "charts": {},
+      "foot": "These are task-specific rates for configured model-and-tool systems.",
+      "takeaway": "Most of the aggregate improvement comes from MiniMax receiving DeepSeek advice.",
+      "notes": "50 seconds. Most improvement comes from MiniMax receiving DeepSeek advice. DeepSeek factual error remains 2%, while its mathematical error changes from 2.44% to 3.66%. These are descriptive results for particular questions and configured search tools, not a model leaderboard or evidence about training architecture. Different model names do not guarantee independent errors.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/recovery_semantic_by_model.csv",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/recovery_semantic_by_model.csv"
+      ],
+      "seconds": 50,
+      "widths": [245, 435, 228, 228],
+      "tableSize": 28,
+      "number": 10
+    },
+    {
+      "title": "RQ2: verification and abstention",
+      "layout": "ablation",
+      "body": [],
+      "table": [
+        [
+          "Same reminder comparison",
+          "Without",
+          "With"
+        ],
+        [
+          "Correct answers",
+          "48 / 210",
+          "38 / 210"
+        ],
+        [
+          "Explicit abstentions",
+          "56 / 210",
+          "89 / 210"
+        ]
+      ],
+      "chart": {},
+      "charts": [
+        {
+          "label": "Explicit verification",
+          "chart": {
+            "categories": ["Ordinary check", "Verification"],
+            "values": [
+              0.514286,
+              0.504762
+            ],
+            "max": 1,
+            "colors": [
+              "#657586",
+              "#147E77"
+            ],
+            "format": "0.00%"
+          }
+        },
+        {
+          "label": "Extra abstention reminder",
+          "chart": {
+            "categories": ["Without", "With reminder"],
+            "values": [
+              0.504762,
+              0.395238
+            ],
+            "max": 1,
+            "colors": [
+              "#657586",
+              "#147E77"
+            ],
+            "format": "0.00%"
+          }
+        }
+      ],
+      "foot": "Earlier 3-model study, 36 facts. Verification CI [−6.76, +5.19] pp; reminder CI [−17.93, −4.26] pp.",
+      "takeaway": "",
+      "notes": "75 seconds. These are two separate matched 210-cell contrasts in an earlier three-model study without search tools. Verification changes 108 wrong answers to 106: −0.95 points, with a 95% interval spanning zero. The added abstention reminder changes 106 wrong answers to 83: −10.95 points. However, correct answers fall from 48 to 38 and abstentions rise from 56 to 89. Basic permission to abstain is present in all conditions. We cannot causally rank this earlier setup against the current two-model study.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Followup_Validation/reports/effects.csv",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Followup_Validation/reports/effects.csv"
+      ],
+      "seconds": 75,
+      "number": 11
+    },
+    {
+      "title": "RQ3: can a wrong peer introduce an error?",
+      "layout": "table",
+      "body": [],
+      "table": [
+        [
+          "Domain",
+          "Eligible opportunities",
+          "Wrong after cross-check"
+        ],
+        [
+          "Facts",
+          "76",
+          "0"
+        ],
+        [
+          "Mathematics",
+          "18",
+          "1"
+        ]
+      ],
+      "chart": {},
+      "charts": {},
+      "foot": "Eligible = receiver initially correct + actual peer initially wrong.",
+      "takeaway": "Yes: 1 observed failure among 94 eligible opportunities.",
+      "notes": "50 seconds. Condition on a correct receiver initial answer and an actually wrong peer initial answer. There are 76 factual opportunities with no wrong cross-check finals and 18 mathematical opportunities with one. The 94 opportunities include model repetitions; they are not 94 independent questions or a universal probability. The one wrong mathematical final is the verified Polynomial 11 case. Scripted wrong-advice experiments are separate supporting evidence.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/QUESTION_SELECTION.md",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/QUESTION_SELECTION.md"
+      ],
+      "seconds": 50,
+      "widths": [330, 398, 408],
+      "tableSize": 29,
+      "number": 12
+    },
+    {
+      "title": "RQ3 case: correct 20 becomes wrong 24",
+      "layout": "case",
+      "body": [
+        "Roots of x² − 6x + 1: count n = 61,…,120 for which x₁ⁿ + x₂ⁿ ≡ 4 (mod 5)."
+      ],
+      "table": [
+        [
+          "Actual response",
+          "Answer",
+          "Reasoning"
+        ],
+        [
+          "DeepSeek initial / self-check",
+          "20",
+          "Period six, correct"
+        ],
+        [
+          "MiniMax independent advice",
+          "24",
+          "Claims period five, wrong"
+        ],
+        [
+          "DeepSeek cross-check",
+          "24",
+          "Accepts the wrong period"
+        ]
+      ],
+      "chart": {},
+      "charts": {},
+      "foot": "R recurrence check confirms 20. Self-check and cross-check are parallel branches.",
+      "takeaway": "",
+      "notes": "70 seconds. Let S_n be the sum of the nth powers of the roots. The recurrence is S_0=2, S_1=6 and S_n=6S_(n−1)−S_(n−2). Modulo five the residues repeat as 2,1,4,3,4,1, with period six. Two residues equal four per cycle, and the 60 indices contain ten cycles, so the answer is 20. MiniMax incorrectly claims period five and gives 24. DeepSeek receives that actual donor answer and follows the wrong period. Self-check and cross-check are parallel alternatives, not consecutive revisions. This demonstrates a failure, not an internal psychological mechanism.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/facts/recovery/reports/CROSS_REVIEW_MATH.md",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/facts/recovery/reports/CROSS_REVIEW_MATH.md"
+      ],
+      "seconds": 70,
+      "widths": [535, 170, 431],
+      "tableSize": 29,
+      "number": 13
+    },
+    {
+      "title": "RQ4: two timings of misleading user input",
+      "layout": "table",
+      "body": [],
+      "table": [
+        [
+          "Timing",
+          "Comparison",
+          "What we can observe"
+        ],
+        [
+          "At the first prompt",
+          "Neutral question vs false-premise prompt",
+          "Separate fresh sessions"
+        ],
+        [
+          "After a correct answer",
+          "Neutral recheck vs false user challenge",
+          "Two follow-ups to the same correct initial answer"
+        ]
+      ],
+      "chart": {},
+      "charts": {},
+      "foot": "All human-style messages are scripted. No real human participants.",
+      "takeaway": "Both test the same receiving model; they answer different timing questions.",
+      "notes": "45 seconds. The primary RQ4 comparison uses the same model in separate fresh sessions: a neutral question versus a question containing a scripted false human premise. A correct neutral response and wrong false-premise response are parallel outcomes, not a literal change of mind in one conversation. The second experiment tests a later timing, with two alternative follow-ups to a previously verified correct answer. Neither design requires the error to propagate into another model. AI-versus-human source labels and A-to-B propagation are exploratory extensions.\nSources:\nhttps://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/QUESTION_SELECTION.md",
+      "sources": [
+        "https://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe",
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/QUESTION_SELECTION.md"
+      ],
+      "seconds": 45,
+      "widths": [250, 390, 496],
+      "tableSize": 28,
+      "number": 14
+    },
+    {
+      "title": "RQ4: a false premise in the first prompt",
+      "layout": "table",
+      "body": [],
+      "table": [
+        [
+          "Domain",
+          "Neutral correct",
+          "Still correct",
+          "Wrong",
+          "Abstain"
+        ],
+        [
+          "Facts",
+          "69",
+          "62",
+          "6",
+          "1"
+        ],
+        [
+          "Mathematics",
+          "56",
+          "55",
+          "1",
+          "0"
+        ],
+        [
+          "Total",
+          "125",
+          "117",
+          "7",
+          "1"
+        ]
+      ],
+      "chart": {},
+      "charts": {},
+      "foot": "159 scorable pairs in the 40-question subset; 125 had a correct neutral answer.",
+      "takeaway": "7 of 125 neutral-correct pairs answered wrongly under the false premise.",
+      "notes": "65 seconds. There are 159 scorable fresh-session pairs, of which 125 have a correct neutral response. Among these 125, the false-premise arm has 117 correct answers, seven wrong answers and one abstention. Facts contribute 69 eligible pairs: 62 correct, six wrong and one abstention. Mathematics contributes 56: 55 correct and one wrong. All seven wrong outcomes are from MiniMax. Report this conditional denominator, and do not call the parallel sessions seven literal conversational reversals or infer that false premises always increase the overall error rate.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/question_comparison_pairs.csv",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/question_comparison_pairs.csv"
+      ],
+      "seconds": 65,
+      "widths": [270, 250, 235, 180, 201],
+      "tableSize": 28,
+      "number": 15
+    },
+    {
+      "title": "RQ4: false challenge after a correct answer",
+      "layout": "chart",
+      "body": [],
+      "table": {},
+      "chart": {
+        "categories": ["Neutral recheck", "False user challenge"],
+        "values": [
+          0.012821,
+          0.051282
+        ],
+        "max": 0.1,
+        "colors": [
+          "#657586",
+          "#147E77"
+        ],
+        "format": "0.00%"
+      },
+      "charts": {},
+      "foot": "78 pairs / 39 selected questions. Difference +3.85 pp; 95% CI [−1.28, +8.97] pp includes zero.",
+      "takeaway": "Four challenge responses adopted the supplied false answer.",
+      "notes": "60 seconds. All 78 initial answers were verified correct before the new follow-ups. Neutral rechecking produces one wrong answer; the false user challenge produces four, each matching the supplied false alternative. All four are MiniMax responses. Three parallel neutral branches remain correct, while one abstains. A different neutral branch is wrong while its challenged counterpart is correct. The paired difference is +3.85 points, with a 95% interval spanning zero. This establishes an observed failure mode, but not stable average harm. The scripted challenge bundles disagreement, a false answer and a false explanation. Note the 0–10% axis.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Human_Challenge_Followup/RESULTS.md",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Human_Challenge_Followup/RESULTS.md"
+      ],
+      "seconds": 60,
+      "number": 16
+    },
+    {
+      "title": "RQ4 case: reasoning says 240, answer says 216",
+      "layout": "case",
+      "body": [
+        "Give three distinct toys to three children chosen from four boys and six girls; select at least two boys."
+      ],
+      "table": [
+        [
+          "Step / response",
+          "Value"
+        ],
+        [
+          "Exactly two boys: choose children and assign toys",
+          "216"
+        ],
+        [
+          "Three boys: choose children and assign toys",
+          "24"
+        ],
+        [
+          "Correct total",
+          "240"
+        ],
+        [
+          "MiniMax after the false challenge",
+          "216"
+        ]
+      ],
+      "chart": {},
+      "charts": {},
+      "foot": "Its explanation calculates 240, but its final answer follows the user’s false alternative.",
+      "takeaway": "",
+      "notes": "65 seconds. For exactly two boys, choose two of four boys, one of six girls, then assign three distinct toys: choose(4,2) × choose(6,1) × 3! = 216. For three boys, choose(4,3) × 3! = 24. The total is 240. The scripted user argues that 240 double-counts cases and proposes 216. MiniMax’s challenged explanation calculates 240 and calls it correct, but its final answer field gives 216. The neutral branch gives 240. This is a wrong final answer and an answer–reason conflict; one illustrative case is not a separate prevalence estimate.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Human_Challenge_Followup/reports/manual_case_review.csv",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Human_Challenge_Followup/reports/manual_case_review.csv"
+      ],
+      "seconds": 65,
+      "widths": [866, 270],
+      "tableSize": 28,
+      "number": 17
+    },
+    {
+      "title": "Discussion and limitations",
+      "layout": "body",
+      "body": [
+        "Earlier three-model validation did not confirm a stable cross-checking benefit.",
+        "Our latest results use a secondary semantic/recovery analysis; some maths limits changed.",
+        "Selected public questions and optional search limit generalisation."
+      ],
+      "table": {},
+      "chart": {},
+      "charts": {},
+      "foot": "No universal best method, isolated model-diversity effect, or real-human outcome was established.",
+      "takeaway": "Final-answer accuracy does not certify the explanation or justify 100% trust.",
+      "notes": "65 seconds. Keep the earlier null result alongside the newer two-model reduction. Twenty-one selected mathematical recovery responses used a higher output allowance, and the original-run interval included zero. Search can expose public benchmark keys; source exclusions do not prove the absence of contamination. A lower wrong-output rate can reflect more abstention rather than more correct answers. We did not certify every explanation. Human-style prompts are scripted and human decision outcomes were not measured.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/experiment-conclusions-2026-10-05.md\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/experiment-conclusions-2026-10-05.md",
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md"
+      ],
+      "seconds": 65,
+      "number": 18
+    },
+    {
+      "title": "Answers to the four research questions",
+      "layout": "questions",
+      "body": [
+        "1. Checking can reduce errors in our selected setup; it is not a guarantee.",
+        "2. Cross-checking helped mainly when MiniMax received DeepSeek advice; no universal winner.",
+        "3. Yes. An actually wrong peer answer overturned one initially correct answer.",
+        "4. Yes. False user input produced wrong answers at both tested timings."
+      ],
+      "table": {},
+      "chart": {},
+      "charts": {},
+      "foot": "",
+      "takeaway": "",
+      "notes": "45 seconds. Answer all four questions without claiming universal benefit or stable average harm. RQ1 describes the latest selected setup and retains contrary earlier evidence. RQ2 is model-dependent and involves abstention trade-offs. RQ3 has one verified natural failure with a correct receiver and wrong donor. RQ4 has seven wrong false-premise outcomes among neutral-correct fresh-session pairs and four wrong continuous-challenge finals. These timings and denominators must not be combined into one rate.\nSources:\nhttps://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/QUESTION_SELECTION.md",
+      "sources": [
+        "https://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe",
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/All_Experiment_Data/QUESTION_SELECTION.md"
+      ],
+      "seconds": 45,
+      "number": 19
+    },
+    {
+      "title": "Practical implications and Q&A",
+      "layout": "body",
+      "body": [
+        "Ask each model independently before sharing a preferred answer.",
+        "Check the peer’s evidence and reasoning against the original question.",
+        "Label uncertain assumptions in your prompt and preserve justified uncertainty."
+      ],
+      "table": {},
+      "chart": {},
+      "charts": {},
+      "foot": "LINYUNIAN / PAN ZHENGYU · R analysis and archived responses · Codex assistance disclosed.",
+      "takeaway": "Use double-checking as a test of claims, not a certificate of correctness.",
+      "notes": "25 seconds. These are proposed practices, not results from a randomized human intervention. For important claims, use reliable sources or verify computations. We did not test a dedicated retrieval-versus-calculator comparison. Retain both authors without inventing contributions. Disclose Codex assistance. R processing, question selection, prompt records and response lineage are available in the public repository. Invite questions; the following four slides are backup.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability"
+      ],
+      "seconds": 25,
+      "number": 20
+    },
+    {
+      "title": "Backup: earlier three-model validation",
+      "layout": "table",
+      "body": [],
+      "table": [
+        [
+          "Domain",
+          "Self-check",
+          "Cross-check",
+          "97.5% difference CI"
+        ],
+        [
+          "facts",
+          "43.94%",
+          "44.64%",
+          "[-4.98, +6.17] pp"
+        ],
+        [
+          "mathematics",
+          "4.02%",
+          "2.01%",
+          "[-5.21, +0.00] pp"
+        ]
+      ],
+      "chart": {},
+      "charts": {},
+      "foot": "Facts 578 pairs / 100 questions; maths 199 pairs / 39 questions. Different setup; no pooling.",
+      "takeaway": "Earlier evidence did not confirm a stable benefit in either domain.",
+      "notes": "0 seconds. This earlier tool-free expanded validation uses DeepSeek, Kimi and MiniMax. Both reported domain intervals touch or cross zero. The studies differ in models, tools, prompts, coverage and collection date, so they are not a causal control for the new two-model study. Retain these results to avoid selectively reporting only favorable comparisons.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Followup_Validation/reports/effects.csv",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Followup_Validation/reports/effects.csv"
+      ],
+      "seconds": 0,
+      "widths": [265, 250, 250, 371],
+      "tableSize": 28,
+      "number": 21
+    },
+    {
+      "title": "Backup: recovery and source-risk checks",
+      "layout": "table",
+      "body": [],
+      "table": [
+        [
+          "Analysis",
+          "Math self vs cross",
+          "Interpretation"
+        ],
+        [
+          "Original-run semantic result",
+          "5.65% vs 1.32%; 109 pairs",
+          "97.5% CI crosses zero"
+        ],
+        [
+          "Completed-data overlay",
+          "10.37% vs 5.49%; 164 pairs",
+          "21 higher-limit recoveries"
+        ],
+        [
+          "Exclude all higher-limit-exposed questions",
+          "5.83% vs 0.00%; 30 questions",
+          "Separate post-hoc sensitivity"
+        ],
+        [
+          "Exclude visible benchmark-source-risk questions",
+          "11.46% vs 6.25%; 24 questions",
+          "Separate post-hoc sensitivity"
+        ]
+      ],
+      "chart": {},
+      "charts": {},
+      "foot": "The two exclusion analyses are separate subsets; neither proves absence of contamination.",
+      "takeaway": "",
+      "notes": "0 seconds. The original semantic mathematics result has 109 pairs across 38 questions: −4.33 points, with a 97.5% interval of [−11.25,+1.85]. Excluding all 11 higher-limit-exposed questions leaves 30 questions: −5.83 points, interval [−10.00,−1.67]. Separately excluding 17 visibly source-risk questions leaves 24: −5.21 points, interval [−10.42,−1.04]. These are separate post-hoc sensitivities, not a combined exclusion or retroactive primary results.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md"
+      ],
+      "seconds": 0,
+      "widths": [440, 375, 321],
+      "tableSize": 24,
+      "number": 22
+    },
+    {
+      "title": "Backup: actual checking prompts",
+      "layout": "prompts",
+      "body": [
+        "Self-check",
+        "Please check the original question again and give your final answer.",
+        "Cross-check",
+        "Another AI assistant suggested:\n[Actual peer answer, abstention and reasoning]\n\nPlease check the original question again and give your final answer."
+      ],
+      "table": {},
+      "chart": {},
+      "charts": {},
+      "foot": "Facts example: In which year did MGA rebrand as the Museum of Australian Photography?",
+      "takeaway": "",
+      "notes": "0 seconds. These prompt templates preserve the receiver’s initial answer and the original question. The peer placeholder is replaced with the other model’s real answer, abstention state and reasoning from that round. The shared JSON schema is omitted on the slide for readability, but remains in the recorded requests. Neither prompt forces search; the native API search tools are available at the model’s discretion.\nSources:\nhttps://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/two-model-prompt-example.md",
+      "sources": [
+        "https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/two-model-prompt-example.md"
+      ],
+      "seconds": 0,
+      "number": 23
+    },
+    {
+      "title": "Backup: related work and public benchmarks",
+      "layout": "table",
+      "body": [],
+      "table": [
+        [
+          "Source",
+          "What it contributes"
+        ],
+        [
+          "Huang et al., ICLR 2024",
+          "Limits of intrinsic self-correction"
+        ],
+        [
+          "Dhuliawala et al., ACL Findings 2024",
+          "Chain-of-Verification"
+        ],
+        [
+          "Google SimpleQA Verified / CHAMP",
+          "Selected facts and mathematics questions"
+        ],
+        [
+          "Artificial Analysis: M3 vs V4 Pro 0813",
+          "Reasoning-mode index: 29 vs 36"
+        ]
+      ],
+      "chart": {},
+      "charts": {},
+      "foot": "Public reasoning benchmarks use different settings; our collection has thinking disabled.",
+      "takeaway": "",
+      "notes": "0 seconds. Our verification prompt is simpler than full Chain-of-Verification. Public benchmark scores provide background, not a prediction of our cross-checking error rates. Artificial Analysis, read on 6 October 2026, reports a reasoning-mode Intelligence Index of 29 for MiniMax-M3 and 36 for DeepSeek-V4-Pro-0813 Max. The index is not an accuracy percentage. Our collection disables thinking; no complete directly comparable non-thinking pair was found. Public dataset use does not imply independence from training data or search leakage.\nSources:\nhttps://openreview.net/forum?id=IkmD3fKBPQ\nhttps://aclanthology.org/2024.findings-acl.212/\nhttps://aclanthology.org/2024.findings-acl.785/\nhttps://huggingface.co/datasets/google/simpleqa-verified\nhttps://artificialanalysis.ai/models/comparisons/minimax-m3-vs-deepseek-v4-pro",
+      "sources": [
+        "https://openreview.net/forum?id=IkmD3fKBPQ",
+        "https://aclanthology.org/2024.findings-acl.212/",
+        "https://aclanthology.org/2024.findings-acl.785/",
+        "https://huggingface.co/datasets/google/simpleqa-verified",
+        "https://artificialanalysis.ai/models/comparisons/minimax-m3-vs-deepseek-v4-pro"
+      ],
+      "seconds": 0,
+      "widths": [615, 521],
+      "tableSize": 27,
+      "number": 24
+    }
+  ],
+  "date": "2026-10-06",
+  "reference": "https://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe",
+  "reference_revision": 685,
+  "font": "Helvetica Neue",
+  "source_sha256": "c8e7bd1d3405078b7d65acbd4cbedaa421c369efdf886a4e22c030aac8670def",
+  "metrics": {
+    "initial_vs_self_facts": {
+      "n": 396,
+      "questions": 100,
+      "before": 0.2075,
+      "after": 0.23,
+      "before_abstain": 0.1275,
+      "after_abstain": 0.08499999999999999
+    },
+    "initial_vs_self_math": {
+      "n": 164,
+      "questions": 41,
+      "before": 0.1341463414634146,
+      "after": 0.1036585365853659,
+      "before_abstain": 0,
+      "after_abstain": 0
+    },
+    "initial_vs_natural_peer_facts": {
+      "n": 393,
+      "questions": 100,
+      "before": 0.2075,
+      "after": 0.04999999999999998,
+      "before_abstain": 0.1275,
+      "after_abstain": 0.007499999999999995
+    },
+    "initial_vs_natural_peer_math": {
+      "n": 164,
+      "questions": 41,
+      "before": 0.1341463414634146,
+      "after": 0.0548780487804878,
+      "before_abstain": 0,
+      "after_abstain": 0
+    },
+    "self_vs_natural_peer_facts": {
+      "n": 394,
+      "questions": 100,
+      "before": 0.2325,
+      "after": 0.04999999999999998,
+      "before_abstain": 0.0825,
+      "after_abstain": 0.007499999999999995
+    },
+    "self_vs_natural_peer_math": {
+      "n": 164,
+      "questions": 41,
+      "before": 0.1036585365853659,
+      "after": 0.0548780487804878,
+      "before_abstain": 0,
+      "after_abstain": 0
+    }
+  }
+}
