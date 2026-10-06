@@ -11,3 +11,8 @@ Time zone: Asia/Shanghai. Execution plan: [overnight-execution-plan-2026-10-06.m
 - The presentation framework is committed, while newer datasets and artifacts are local and not yet all on GitHub. Feishu presentation text has not been updated to the current protocol and results.
 
 Next gate: audit the shared workspace and current collection status; process available fact records in R, while avoiding duplicate requests or edits to another active chat's files.
+
+## 6 October, 23:37 — plan published and monitor started
+
+- The execution plan and this log were committed as `ed6b36b` and pushed to `origin/main`. Only these two files were included in that commit; the other chats' uncommitted datasets and presentation edits remain local.
+- The thread heartbeat `COMP2501 夜间推进与早晨报告` is active. It checks the plan every 15 minutes, records material progress, stays quiet on unchanged status, and is instructed to report around 09:00 on 7 October before pausing itself.
