@@ -1,0 +1,11 @@
+"domain","case_class","matched_cells","unique_questions","cross_correct","cross_wrong","cross_abstain","cross_error_rate","cross_non_correct_rate","error_correction_rate","error_elimination_including_abstention_rate","correct_to_wrong_rate"
+"facts","initial_wrong__peer_correct",76,59,63,11,2,0.144736842105263,0.171052631578947,0.828947368421053,0.855263157894737,
+"facts","initial_correct__peer_wrong",0,0,0,0,0,,,,,
+"facts","both_correct",69,54,69,0,0,0,0,,,
+"facts","both_wrong",1,1,0,1,0,1,1,,,
+"facts","other_including_abstention",50,41,46,3,1,0.06,0.08,,,
+"math","initial_wrong__peer_correct",18,14,14,4,0,0.222222222222222,0.222222222222222,0.777777777777778,0.777777777777778,
+"math","initial_correct__peer_wrong",0,0,0,0,0,,,,,
+"math","both_correct",62,36,62,0,0,0,0,,,
+"math","both_wrong",2,1,0,2,0,1,1,,,
+"math","other_including_abstention",0,0,0,0,0,,,,,

@@ -1,0 +1,3 @@
+"domain","matched_cells","unique_questions","initial_wrong","cross_wrong","initial_abstain","cross_abstain","wrong_to_correct","wrong_to_abstain","new_wrong_from_non_error","net_fewer_wrong","count_based_relative_error_reduction","count_based_error_reduction_pp","question_weighted_initial_error_rate","question_weighted_cross_error_rate","question_weighted_error_reduction_pp","question_weighted_initial_non_correct_rate","question_weighted_cross_non_correct_rate"
+"facts",196,100,77,15,49,3,63,2,3,62,0.805194805194805,31.6326530612245,0.395,0.08,31.5,0.645,0.095
+"math",82,41,20,6,0,0,14,0,0,14,0.7,17.0731707317073,0.24390243902439,0.0731707317073171,17.0731707317073,0.24390243902439,0.0731707317073171

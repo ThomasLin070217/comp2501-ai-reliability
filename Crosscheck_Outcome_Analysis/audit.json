@@ -1,0 +1,10 @@
+{
+  "source": "All_Experiment_Data/question_comparison_pairs.csv",
+  "source_sha256": "569ba2be687adc9335e5590e659e6cfd6b2455d669da45539a626f9fa00adae2",
+  "analysis": "Post-hoc descriptive MiniMax initial-vs-natural-cross comparison, completed-data semantic/recovery overlay.",
+  "conditional_denominator": "Eligible question x MiniMax x repetition cells. Repetitions are not independent questions.",
+  "overall_weighting": "Question-weighted rates average repeats within question. Count-based rates are separately labelled; the two coincide for the complete mathematics pairs.",
+  "missing_risk_evidence": "No naturally incorrect DeepSeek donor following a correct MiniMax initial answer in this eligible set. Risk is unestimated, not zero.",
+  "synthetic_wrong_peer": "Proposed controlled extension. No fabricated donor response is in these observed-data exports; no new model calls.",
+  "original_scoring_changed": false
+}
