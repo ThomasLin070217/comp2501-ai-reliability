@@ -1,6 +1,7 @@
 # COMP2501 presentation package — 7 October 2026
 
-Project: **Can We Trust AI More After Cross-Checking?**  
+Project: **Can We Trust AI More After Cross-Checking?**
+
 Presenters: **LINYUNIAN and PAN ZHENGYU**
 
 | File | Purpose |
