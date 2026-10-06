@@ -54,5 +54,6 @@ The four-page evidence report is now available at
 and was published in Git commit `d0b73eb`. It covers GSM-Plus v3, the
 private revised-math aggregates and the fact-study limitations. The older
 `Submission_Pack/report.Rmd`, `report.md`, `report.html` and
-`COMP2501_report.pdf` are historical 2026-10-04 artifacts. A PDF export of
-this final slide deck has not yet been made.
+`COMP2501_report.pdf` are historical 2026-10-04 artifacts. A 30-page PDF
+backup of the final slide deck is now available at
+`output/COMP2501_presentation_FINAL_RESULTS_GSMPLUS_2026-10-07_v8.pdf`.
