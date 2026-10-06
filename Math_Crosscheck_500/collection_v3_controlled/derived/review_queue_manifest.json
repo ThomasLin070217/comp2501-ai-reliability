@@ -1,0 +1,9 @@
+{
+  "manifest_sha256": "913057ab1fd44966400570d47cef6c266fe4a7bdca0c48d7ec7b53e4b760e919",
+  "initial_sha256": "d2c901b903b22cb9b160d093fa347460e13a31e67840288109717b6e003b23cf",
+  "paired_self_sha256": "b76c55a13d6dee29a079b47cc935c97163ee6cd77ad6969850cbb5356cdb3c9c",
+  "queue_sha256": "ae7006a5d163a6abd2a0a7cd4ecbe4742fa9e5ce57d43cab79eb6240a280f94f",
+  "rows": 50,
+  "technical": 0,
+  "note": "All 50 responses require full-text semantic review."
+}

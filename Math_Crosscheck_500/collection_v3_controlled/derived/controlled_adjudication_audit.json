@@ -1,0 +1,6 @@
+{
+  "queue_sha256": "ae7006a5d163a6abd2a0a7cd4ecbe4742fa9e5ce57d43cab79eb6240a280f94f",
+  "score_sha256": "8f2a92e46b26cfe4fc39c61d60aa8b9d8adc4b3cf131b45e179fb7d1a8f20d1c",
+  "review_method": "All 50 original questions and full replies read by Codex.",
+  "note": "Zero observed errors on a selected initially correct set does not prove that scripted wrong peers are harmless."
+}
