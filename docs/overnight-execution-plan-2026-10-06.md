@@ -59,10 +59,12 @@ Updated 7 October 2026, Asia/Shanghai. This is the canonical to-do file for the 
 
 **Acceptance:** both models' usable initials join by the exact same v3 ID/text; coverage, exclusions, model/settings/tool provenance and R scores are reproducible. **Stop:** if provider or quota fails, retain partial coverage and continue T1/T4 offline preparation rather than manufacturing 500 pairs.
 
-## T3 — Run self, natural cross, and wrong-peer branches **[BLOCKED on T2]**
+## T3 — Run self, natural cross, and wrong-peer branches **[SELF/NATURAL FROZEN; CONTROLLED MATERIALS PENDING]**
 
-- [ ] Freeze branch manifests from the **same MiniMax initial conversation**. `self`: neutral request to reconsider. `natural_cross`: paste DeepSeek's actual independent answer/explanation with a neutral request to check the original problem. Keep full donor text and abstention status. Never run one branch after another.
-- [ ] For a predeclared subset of verified-correct MiniMax initials, build `synthetic_wrong_peer`: false target + plausible false explanation, each independently checked and marked as scripted. Freeze the selected subset/materials before seeing any branch result. Do not call this a natural DeepSeek error.
+The v3 implementation is staged with an explicit amendment to the broader v2 design: the 496-eligible-question self/natural schedule is frozen in `collection_v3_followups/` and may be collected now, while the controlled wrong-peer branch is a separate preselected 50-question component. The 50 IDs and 20/15/15 category quotas were frozen after the two-answer *technical* pilot and before reading any follow-up answer text or effects. Its materials must be independently checked and frozen before **its** first model call. Do not compare a subsequently selected controlled subset to a different self subset or call the smaller controlled sample a 479-question census.
+
+- [x] Freeze branch manifests from the **same MiniMax initial conversation**. `self`: neutral request to reconsider. `natural_cross`: paste DeepSeek's actual independent answer/explanation with a neutral request to check the original problem. Keep full donor text and abstention status. Never run one branch after another. The R prepare and collector preflight passed; two included pilot branches completed technically.
+- [ ] For the predeclared 50 verified-correct MiniMax initials, build `synthetic_wrong_peer`: false target + plausible false explanation, each independently checked and marked as scripted. Freeze its materials before its first call. Do not call this a natural DeepSeek error.
 - [ ] Collect/score each eligible branch in R; record every baseline→final transition, especially wrong→correct, wrong→abstain, correct→wrong, and abstain→wrong. Review all induced-error cases against raw text. Report common-set self vs natural rates and controlled wrong-peer risk on their **own** denominators.
 
 **Acceptance:** branch provenance and matching are auditable; common-set rates, conditional correction, wrong-target adoption and uncertainty reproduce from R. **Stop:** no follow-ups when donor initials or synthetic materials are missing/unverified.

@@ -1,0 +1,14 @@
+{
+  "selection_sha256": "c65a442c85930348e5b8cff5a951b15d1cc5ea91326f0f1ca30669deedd097cc",
+  "mini_scores_sha256": "d2c901b903b22cb9b160d093fa347460e13a31e67840288109717b6e003b23cf",
+  "key_sha256": "a293a23e52cad88a2ab7366a41748bd638a5e538f9b64b438d88b9d7e4ea4fa1",
+  "seed": 25011012,
+  "count": 50,
+  "strata": {
+    "distraction insertion": 20,
+    "problem understanding": 15,
+    "restored source problem": 15
+  },
+  "selection_time_rule": "After independent initials and after two technical pilot responses, before inspecting any follow-up answer text or scoring effects.",
+  "note": "Selection only; no wrong answer or reasoning is approved. Do not run controlled branch until materials are reviewed and frozen."
+}
