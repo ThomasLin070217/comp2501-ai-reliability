@@ -1,0 +1,17 @@
+{
+  "audit_kind": "read_only_reconciliation_no_regrading",
+  "frozen_sha256": "0f430ab6eb706ff3581025ad89602f279680572d32d62d2f0b59fcae5dae866c",
+  "reopened_sha256": "02d92576bb479eefa61d4466040d5b1366fc94c392e48529be2c9afc5b1cf5d7",
+  "source_manifest_sha256": "c023328f23fb741cb0dd4caaee3b9b0a6b0f11ae6150ccc7b27352b2c946bbae",
+  "manifest_referenced_files_verified": 45,
+  "cells": 1000,
+  "unique_questions": 500,
+  "frozen_scoreable": 970,
+  "reopened_scoreable": 996,
+  "reopened_task_cells": 30,
+  "newly_scoreable": 26,
+  "remaining_minimax_technical": 4,
+  "selected_reopened_task_ids": ["fact500:FS_86d923cd30:minimax:single", "fact500:FS_e224d894c7:minimax:single", "fact500:FS_8cdf5713f5:minimax:single", "fact500:FS_1c49bc30d9:minimax:single", "fact500:FS_73115594cd:minimax:single", "fact500:FS_6ceefff184:minimax:single", "fact500:FS_8e3d55f0e4:minimax:single", "fact500:FS_d1137a45e0:minimax:single", "fact500:FS_717c598464:minimax:single", "fact500:FS_1c4dd1974f:minimax:single", "fact500:FS_19d36768ee:minimax:single", "fact500:FS_4a8904f72a:minimax:single", "fact500:FS_4a40c72257:minimax:single", "fact500:FS_4260b3ee9f:minimax:single", "fact500:FS_751e31f86e:minimax:single", "fact500:FS_f1a0f25bc6:minimax:single", "fact500:FS_065cfbf906:minimax:single", "fact500:FS_1d9b7f7f6a:minimax:single", "fact500:FS_024af995fd:minimax:single", "fact500:FS_9a050d2862:minimax:single", "fact500:FS_301d998cb6:minimax:single", "fact500:FS_9c071d9520:minimax:single", "fact500:FS_af4f7af11f:minimax:single", "fact500:FS_d7d490bdfb:minimax:single", "fact500:FS_f2cf7f9b49:minimax:single", "fact500:FS_c0397193a7:minimax:single", "fact500:FS_e16235c9d5:minimax:single", "fact500:FS_dbb7842792:minimax:single", "fact500:FS_e0771d9463:minimax:single", "fact500:FS_303a334eb8:minimax:single"],
+  "selected_newly_scoreable_task_ids": ["fact500:FS_e224d894c7:minimax:single", "fact500:FS_8cdf5713f5:minimax:single", "fact500:FS_73115594cd:minimax:single", "fact500:FS_6ceefff184:minimax:single", "fact500:FS_8e3d55f0e4:minimax:single", "fact500:FS_d1137a45e0:minimax:single", "fact500:FS_717c598464:minimax:single", "fact500:FS_1c4dd1974f:minimax:single", "fact500:FS_19d36768ee:minimax:single", "fact500:FS_4a40c72257:minimax:single", "fact500:FS_751e31f86e:minimax:single", "fact500:FS_f1a0f25bc6:minimax:single", "fact500:FS_065cfbf906:minimax:single", "fact500:FS_1d9b7f7f6a:minimax:single", "fact500:FS_024af995fd:minimax:single", "fact500:FS_9a050d2862:minimax:single", "fact500:FS_301d998cb6:minimax:single", "fact500:FS_9c071d9520:minimax:single", "fact500:FS_af4f7af11f:minimax:single", "fact500:FS_d7d490bdfb:minimax:single", "fact500:FS_f2cf7f9b49:minimax:single", "fact500:FS_c0397193a7:minimax:single", "fact500:FS_e16235c9d5:minimax:single", "fact500:FS_dbb7842792:minimax:single", "fact500:FS_e0771d9463:minimax:single", "fact500:FS_303a334eb8:minimax:single"],
+  "caveat": "Preserves original semantic grades and route provenance. Does not independently recheck every fact answer or reference key. The reopened view contains earlier official-route supplements as well as HKU-route recoveries."
+}

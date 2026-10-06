@@ -1,0 +1,12 @@
+"provider","frozen_grade","reopened_grade","Freq"
+"deepseek","abstain","abstain",33
+"minimax","abstain","abstain",38
+"minimax","technical_incomplete","abstain",1
+"deepseek","correct","correct",423
+"minimax","correct","correct",354
+"minimax","technical_incomplete","correct",13
+"minimax","unscorable","correct",1
+"deepseek","incorrect","incorrect",44
+"minimax","incorrect","incorrect",78
+"minimax","technical_incomplete","incorrect",11
+"minimax","technical_incomplete","technical_incomplete",4

@@ -1,0 +1,8 @@
+"provider","grade","Freq","scoreable_n","error_rate"
+"deepseek","abstain",33,500,
+"deepseek","correct",423,500,
+"deepseek","incorrect",44,500,0.088
+"minimax","abstain",39,496,
+"minimax","correct",368,496,
+"minimax","incorrect",89,496,0.179435483870968
+"minimax","technical_incomplete",4,496,
