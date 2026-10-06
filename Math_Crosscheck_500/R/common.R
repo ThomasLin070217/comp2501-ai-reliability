@@ -2,7 +2,7 @@ suppressPackageStartupMessages({library(jsonlite); library(digest)})
 mc_root <- 'Math_Crosscheck_500'
 mc_args <- function(args=commandArgs(trailingOnly=TRUE)) {
   out <- list(index=file.path(mc_root,'inputs/baseline_index.csv'),
-              questions='Reasoning_Math_500/model_inputs_500.csv', materials=NULL)
+              questions=file.path(mc_root,'question_review_v2/model_inputs_500.csv'), materials=NULL)
   if(length(args) %% 2L) stop('Arguments must be --index, --questions or --materials followed by a path.')
   if(length(args)) for(i in seq(1,length(args),by=2)) {
     key <- sub('^--','',args[i])
@@ -15,8 +15,19 @@ mc_json <- function(x,p) write_json(x,p,auto_unbox=TRUE,pretty=TRUE,null='null')
 mc_hash <- function(p) digest(file=p,algo='sha256')
 mc_read_csv <- function(p) read.csv(p,stringsAsFactors=FALSE,check.names=FALSE,na.strings=character())
 mc_check <- function(index,questions) {
+  reviewed_path <- file.path(mc_root,'question_review_v2/model_inputs_500.csv')
+  if(identical(questions,reviewed_path)) {
+    manifest <- fromJSON(file.path(mc_root,'question_review_v2/review_manifest.json'),simplifyVector=FALSE)
+    for(p in names(manifest$sha256)) if(!identical(mc_hash(p),manifest$sha256[[p]]))
+      stop('Reviewed bank or source evidence changed after the review freeze: ',p)
+    plan <- fromJSON(file.path(mc_root,'protocol/v2/plan_freeze.json'),simplifyVector=FALSE)
+    for(p in names(plan$sha256)) if(!identical(mc_hash(p),plan$sha256[[p]]))
+      stop('The v2 offline protocol changed after its design freeze: ',p)
+  } else stop('This study is bound to the reviewed v2 bank. A different bank requires an explicit protocol amendment.')
   if(!file.exists(index)) return(list(ready=FALSE,phase='waiting_for_initial_collection',
-    expected_initial_tasks=1000L,index_exists=FALSE,reason='No finalized baseline index.'))
+    expected_initial_tasks=1000L,index_exists=FALSE,reason='No finalized baseline index.',
+    question_bank_sha256=mc_hash(questions),
+    scoring_key_sha256=mc_hash(file.path(mc_root,'question_review_v2/scoring_key_500.csv'))))
   if(!file.exists(questions)) stop('The actual frozen question input file is required.')
   b <- mc_read_csv(index); q <- mc_read_csv(questions)
   needed <- c('question_id','question_text','family_id','model','initial_record_id','origin',
@@ -75,5 +86,6 @@ mc_check <- function(index,questions) {
     natural_incorrect_peer_opportunities=sum(natural & mm$grade=='correct' & ds$grade=='incorrect'),
     controlled_correct_initial_candidates=sum(mm$grade=='correct'),
     missing_or_unscorable_initial_tasks=sum(!scorable),
-    index_sha256=mc_hash(index),question_bank_sha256=mc_hash(questions))
+    index_sha256=mc_hash(index),question_bank_sha256=mc_hash(questions),
+    scoring_key_sha256=mc_hash(file.path(mc_root,'question_review_v2/scoring_key_500.csv')))
 }

@@ -1,0 +1,63 @@
+{
+  "status": "design_candidate_not_live_adapter_certification",
+  "provenance": "Model IDs/endpoints read from local Two_Model_Collection/protocol/models.json; 2048-token/native-search settings from local fact collector. No claim of current public pricing or provider capability verification.",
+  "minimax": {
+    "settings_id": "math_v2_minimax",
+    "endpoint": "http://www.bio8.cs.hku.hk:8080/v1/messages",
+    "model": "MiniMax-M3",
+    "generation": {
+      "temperature": 0.6,
+      "max_tokens": 2048,
+      "thinking": {
+        "type": "disabled"
+      },
+      "stream": false
+    }
+  },
+  "deepseek": {
+    "settings_id": "math_v2_deepseek",
+    "endpoint": "https://api.deepseek.com/anthropic/v1/messages",
+    "model": "deepseek-v4-pro",
+    "generation": {
+      "temperature": 0.6,
+      "max_tokens": 2048,
+      "thinking": {
+        "type": "disabled"
+      },
+      "stream": false
+    }
+  },
+  "proposed_native_tools": [
+    {
+      "type": "web_search_20250305",
+      "name": "web_search"
+    }
+  ],
+  "prompt_policy": "Fresh session; one user message containing exact input_text only; no extra system message. No answer key or peer advice.",
+  "concurrency": {
+    "total_max": 4,
+    "per_provider_max": 2
+  },
+  "transport": {
+    "connect_timeout_seconds": 20,
+    "request_timeout_seconds": 240,
+    "max_attempts_per_task": 2,
+    "max_pause_turn_continuations": 3,
+    "retry_only": "Known transient transport failure or 5xx; identical payload. Unknown in-flight outcome needs reconciliation. Never retry a completed wrong answer or abstention."
+  },
+  "gate": {
+    "before_initial": "Certify actual native-tool adapter against local replay fixtures; resolve budget/quota cap from applicable current authorization; freeze live collector and effective settings before any model calls.",
+    "before_followup": "All 1000 baseline tasks terminal, scored and frozen; all controlled materials reviewed and frozen before any follow-up response is inspected."
+  },
+  "expenditure": {
+    "status": "No new paid calls made; exact total cap is unresolved in this design artifact",
+    "currency": "CNY",
+    "total_cap": null,
+    "guard_only_deepseek_per_million": {
+      "input": 20,
+      "output": 50
+    },
+    "minimax_note": "Course quota, price unknown; zero in older config is not proof of free unlimited use",
+    "estimate_formula": "Sum input_tokens*input_guard + output_tokens*output_guard, divide by 1e6; add native-tool costs if charged; record authoritative provider invoice separately."
+  }
+}

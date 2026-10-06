@@ -1,0 +1,20 @@
+{
+  "edition": "review_v2_2026-10-06",
+  "reviewer": "Codex AI-assisted; not independent human review",
+  "n_questions": 500,
+  "changed_items": 51,
+  "changed_questions": 47,
+  "changed_keys": 7,
+  "no_model_requests": true,
+  "license": "CC BY-SA 4.0; adapted from GSM-Plus v1",
+  "sha256": {
+    "Reasoning_Math_500/model_inputs_500.csv": "a2ce862f019758e88ff2535922638f788e4509404f58af23dff283a5ae2792ca",
+    "Reasoning_Math_500/scoring_key_500.csv": "92bdc650bf733ccec0e6e769f517363bb7edce8c58286454860b52512cccb6f4",
+    "Reasoning_Math_500/selection_manifest.json": "5df4805bac2924e2214f9c751d2dbcf75dcbc02ff608f46b2418caffc9c81c8d",
+    "Math_Crosscheck_500/question_review_v2/model_inputs_500.csv": "14626f7f63a9f5fe881168e712ee87921dfb89e679bd28ca3ce384375b7738ae",
+    "Math_Crosscheck_500/question_review_v2/scoring_key_500.csv": "00894db2a0f4de691db32f37b4e230c76d895380a9e70fc23d6096d59750471d",
+    "Math_Crosscheck_500/question_review_v2/first_batch_100.csv": "aa2645e4457d24819b156e367d2e0cc3882c7e169b6397747cf6e9e3bc998c2f",
+    "Math_Crosscheck_500/question_review_v2/revisions.csv": "f027a601e70f2c8498c48d8eb3f57d46d935fb3a8e7f2a4fb1a85b95106c3087",
+    "Math_Crosscheck_500/question_review_v2/review_ledger.csv": "e71682fc5b952979604da09d88318f1002955dad97cdeea7ebbd682a12fc28d7"
+  }
+}

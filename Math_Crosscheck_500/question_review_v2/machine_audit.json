@@ -1,0 +1,26 @@
+{
+  "status": "file_and_arithmetic_checked_not_full_mathematical_proof",
+  "questions": 500,
+  "distinct_base_problems": 500,
+  "categories": {
+    "critical thinking": 150,
+    "distraction insertion": 200,
+    "problem understanding": 150
+  },
+  "numeric_reference_answers": 350,
+  "missing_information_reference_answers": 150,
+  "first_batch_categories": {
+    "critical thinking": 30,
+    "distraction insertion": 40,
+    "problem understanding": 30
+  },
+  "source_equations": 993,
+  "equations_consistent": 993,
+  "equations_mismatched": 0,
+  "equations_not_checked": 0,
+  "source_final_mismatch": 0,
+  "input_sha256": "a2ce862f019758e88ff2535922638f788e4509404f58af23dff283a5ae2792ca",
+  "key_sha256": "92bdc650bf733ccec0e6e769f517363bb7edce8c58286454860b52512cccb6f4",
+  "manifest_sha256": "5df4805bac2924e2214f9c751d2dbcf75dcbc02ff608f46b2418caffc9c81c8d",
+  "source_sha256": "885c279bfa9cde767ea23f79fd462d566fa0dbf6af9f2dcf30c75aa94f3d4041"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "offline_design_frozen_execution_not_started",
+  "edition": "review_v2_2026-10-06",
+  "seed": 25011011,
+  "initial_tasks": 1000,
+  "self_check_target": 500,
+  "natural_crosscheck_target": 500,
+  "manipulated_target": "C = number of initially correct MiniMax responses with approved materials; at most 500",
+  "sha256": {
+    "Math_Crosscheck_500/question_review_v2/model_inputs_500.csv": "14626f7f63a9f5fe881168e712ee87921dfb89e679bd28ca3ce384375b7738ae",
+    "Math_Crosscheck_500/question_review_v2/scoring_key_500.csv": "00894db2a0f4de691db32f37b4e230c76d895380a9e70fc23d6096d59750471d",
+    "Math_Crosscheck_500/question_review_v2/review_manifest.json": "82bf317c28adabc56a37b3e4c28836191c615ce6349fe46c9b69f4645b3710ad",
+    "Math_Crosscheck_500/protocol/prompts.json": "f273be3fe9429774bab74dd396da00d42666aa24551eaad8ee7541a57c061f9c",
+    "Math_Crosscheck_500/protocol/v2/initial_tasks_1000.csv": "e0aaff07f0cff2341158b3e77a6734d80a3380366a70d96aa3d59ab8767bbc16",
+    "Math_Crosscheck_500/protocol/v2/collection_settings_candidate.json": "00e978f7ac780f598f1838c1713a352f1ec23dc225aa6fa36ccb8f7bd662ecd2",
+    "Math_Crosscheck_500/R/certify_plan.R": "4e7164d1ca469108b783fd91023dec98bdb008929655aeeeadf07431c9d55a02",
+    "Math_Crosscheck_500/R/common.R": "392d2a0ba255e7a9da2e8173b42700411ad62d26970dfcc00009f94b57fffa3e",
+    "Math_Crosscheck_500/R/preflight.R": "07d010cf48e712920edb202aa15773bb8e39036f8e0ca76058f1c1a4bd450588",
+    "Math_Crosscheck_500/R/prepare.R": "7187bc7faf1e3923c2d49e5aec3df004fbed8693f0a30061b2c970db3d4c4d1d",
+    "Math_Crosscheck_500/R/build_reviewed_bank.R": "7dfa343107aee71c15405d6511284c2afaadb6d3f8f0744412ce1f617eb0b5dd",
+    "Math_Crosscheck_500/R/prepare_initial_plan.R": "d1cc22ebec846cac7000464a0186b97954e4a3e74d6df835c46187ca64fa9105",
+    "Math_Crosscheck_500/EXPERIMENT_V2.md": "eba9dc9c4be6f39417325a5ceba4eeb3a3a427e3517908a1d1a23589bf1a6dae",
+    "Math_Crosscheck_500/COLLECTION_PLAN_V2.md": "68f92584e47bacbcc3c5ec9e66e6a11cbfabaa08017b3857b23906f394639aa2"
+  }
+}

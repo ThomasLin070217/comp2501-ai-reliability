@@ -2,13 +2,15 @@
 
 Status: designed; waiting for the newly collected mathematics baselines. No follow-up requests have been made for this study.
 
+**6 October 2026 review update:** use [EXPERIMENT_V2.md](EXPERIMENT_V2.md) and [COLLECTION_PLAN_V2.md](COLLECTION_PLAN_V2.md), with the [reviewed v2 bank](question_review_v2/README.md). The original candidate bank is preserved, but 51 items required pre-collection repair, including seven reference changes. `R/preflight.R` now binds the reviewed input and key hashes. The frozen offline plan contains 1,000 initial tasks; no new model calls were made during this review/design request. The detailed original protocol below still applies where it does not conflict with v2.
+
 ## Authorization and scope
 
 The user requested, on 6 October 2026:
 
 > 那你重新设计一下这轮实验吧，等我们的数学的数据收集完了就来做这个实验。 数学的会有500条minimax 的独立回答 和500条deepseek的独立回答（都是初始回答）
 
-The implementation below uses MiniMax as the receiving model and DeepSeek as the natural donor. These roles are a design choice based on the preceding discussion. The 1,000 initial answers are existing/upcoming inputs, not another 1,000 calls to make. Both models must have independently answered the **same 500 question texts**, once per model. Do not silently substitute historical CHAMP/MATH runs or facts collection outputs. The current candidate bank is `Reasoning_Math_500/` (GSM-Plus); bind the actual frozen bank and collection manifest after the other collection finishes. Its selection manifest currently identifies 500 distinct base problems and distraction, critical-thinking, and problem-understanding strata. If the upstream bank changes, document the change before follow-up collection.
+The implementation below uses MiniMax as the receiving model and DeepSeek as the natural donor. These roles are a design choice based on the preceding discussion. The 1,000 initial answers are existing/upcoming inputs, not another 1,000 calls to duplicate. Both models must have independently answered the **same reviewed 500 question texts**, once per model. Do not silently substitute historical CHAMP/MATH runs, original unreviewed texts or facts collection outputs. The bound bank is `question_review_v2/`, adapted from the original `Reasoning_Math_500/` GSM-Plus subset. It has 500 distinct base problems and distraction, critical-thinking, and problem-understanding strata. If the upstream collector used another edition, reconcile it before follow-up collection.
 
 This request authorizes starting the follow-up after mathematics collection is complete. It does not authorize changing or restarting that separate baseline collection. Use a thread heartbeat to check for completion and continue this study. No additional human-challenge branch or reverse-direction DeepSeek receiver study is included here.
 

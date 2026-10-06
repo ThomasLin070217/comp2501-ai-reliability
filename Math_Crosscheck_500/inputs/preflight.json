@@ -3,5 +3,7 @@
   "phase": "waiting_for_initial_collection",
   "expected_initial_tasks": 1000,
   "index_exists": false,
-  "reason": "No finalized baseline index."
+  "reason": "No finalized baseline index.",
+  "question_bank_sha256": "14626f7f63a9f5fe881168e712ee87921dfb89e679bd28ca3ce384375b7738ae",
+  "scoring_key_sha256": "00894db2a0f4de691db32f37b4e230c76d895380a9e70fc23d6096d59750471d"
 }
