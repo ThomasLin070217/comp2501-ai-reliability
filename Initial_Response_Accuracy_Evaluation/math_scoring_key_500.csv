@@ -1,0 +1,501 @@
+"eval_id","source_record_id","reference_answer","source_benchmark","subject","difficulty"
+"MATH_test_number_theory_317","test/number_theory/317","6","Hendrycks MATH test","number_theory",5
+"MATH_test_algebra_1136","test/algebra/1136","33","Hendrycks MATH test","algebra",4
+"MATH_test_geometry_308","test/geometry/308","3\pi-\frac{\sqrt{3}}{2}","Hendrycks MATH test","geometry",5
+"CHAMP_CHAMP_P_Polynomial_1","CHAMP:P_Polynomial_1","0","CHAMP existing formal set","Polynomial",
+"MATH_test_intermediate_algebra_53","test/intermediate_algebra/53","[-3,-2] \cup [0,1]","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_intermediate_algebra_41","test/intermediate_algebra/41","-\frac{1}{2}","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_algebra_249","test/algebra/249","9","Hendrycks MATH test","algebra",4
+"MATH_test_algebra_309","test/algebra/309","4(3-x)(3+x)","Hendrycks MATH test","algebra",5
+"MATH_test_algebra_853","test/algebra/853","20","Hendrycks MATH test","algebra",5
+"MATH_test_geometry_387","test/geometry/387","\frac{\sqrt{3}}{2}","Hendrycks MATH test","geometry",3
+"MATH_test_number_theory_85","test/number_theory/85","\text{Friday}","Hendrycks MATH test","number_theory",3
+"MATH_test_number_theory_196","test/number_theory/196","4","Hendrycks MATH test","number_theory",2
+"MATH_test_number_theory_100","test/number_theory/100","1200_7","Hendrycks MATH test","number_theory",3
+"MATH_test_intermediate_algebra_624","test/intermediate_algebra/624","x^2-5","Hendrycks MATH test","intermediate_algebra",1
+"CHAMP_CHAMP_P_Number_Theory_24","CHAMP:P_Number-Theory_24","0","CHAMP existing formal set","Number-Theory",
+"MATH_test_algebra_306","test/algebra/306","(-16,-4)","Hendrycks MATH test","algebra",3
+"MATH_test_prealgebra_685","test/prealgebra/685","1","Hendrycks MATH test","prealgebra",2
+"MATH_test_algebra_370","test/algebra/370","4000","Hendrycks MATH test","algebra",1
+"MATH_test_intermediate_algebra_840","test/intermediate_algebra/840","12\pi","Hendrycks MATH test","intermediate_algebra",2
+"MATH_test_number_theory_116","test/number_theory/116","1101_4","Hendrycks MATH test","number_theory",4
+"MATH_test_prealgebra_519","test/prealgebra/519","510","Hendrycks MATH test","prealgebra",1
+"MATH_test_precalculus_122","test/precalculus/122","(-7,10)","Hendrycks MATH test","precalculus",5
+"MATH_test_precalculus_416","test/precalculus/416","\sqrt{2} + \sqrt{6}","Hendrycks MATH test","precalculus",3
+"MATH_test_algebra_149","test/algebra/149","4","Hendrycks MATH test","algebra",1
+"MATH_test_counting_and_probability_84","test/counting_and_probability/84","28800","Hendrycks MATH test","counting_and_probability",5
+"MATH_test_precalculus_145","test/precalculus/145","0","Hendrycks MATH test","precalculus",2
+"MATH_test_algebra_784","test/algebra/784","\frac{5}{2}","Hendrycks MATH test","algebra",2
+"MATH_test_intermediate_algebra_140","test/intermediate_algebra/140","990","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_algebra_42","test/algebra/42","2","Hendrycks MATH test","algebra",2
+"MATH_test_algebra_604","test/algebra/604","(4,5)","Hendrycks MATH test","algebra",5
+"MATH_test_intermediate_algebra_735","test/intermediate_algebra/735","(-\frac{3}{2},6)","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_algebra_220","test/algebra/220","7","Hendrycks MATH test","algebra",4
+"MATH_test_counting_and_probability_268","test/counting_and_probability/268","60","Hendrycks MATH test","counting_and_probability",2
+"MATH_test_algebra_381","test/algebra/381","143","Hendrycks MATH test","algebra",2
+"MATH_test_algebra_1049","test/algebra/1049","4","Hendrycks MATH test","algebra",5
+"MATH_test_algebra_558","test/algebra/558","3","Hendrycks MATH test","algebra",1
+"MATH_test_precalculus_404","test/precalculus/404","\frac{1}{2}","Hendrycks MATH test","precalculus",5
+"MATH_test_intermediate_algebra_586","test/intermediate_algebra/586","7","Hendrycks MATH test","intermediate_algebra",2
+"MATH_test_counting_and_probability_18","test/counting_and_probability/18","\frac{161}{36}","Hendrycks MATH test","counting_and_probability",5
+"MATH_test_number_theory_255","test/number_theory/255","729","Hendrycks MATH test","number_theory",2
+"MATH_test_prealgebra_195","test/prealgebra/195","10","Hendrycks MATH test","prealgebra",4
+"MATH_test_prealgebra_370","test/prealgebra/370","132","Hendrycks MATH test","prealgebra",4
+"MATH_test_intermediate_algebra_423","test/intermediate_algebra/423","[-4,0)","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_counting_and_probability_259","test/counting_and_probability/259","\frac{295}{396}","Hendrycks MATH test","counting_and_probability",5
+"MATH_test_intermediate_algebra_881","test/intermediate_algebra/881","7","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_geometry_349","test/geometry/349","102","Hendrycks MATH test","geometry",4
+"MATH_test_prealgebra_373","test/prealgebra/373","105","Hendrycks MATH test","prealgebra",3
+"MATH_test_precalculus_499","test/precalculus/499","\frac{4036082}{4036081}","Hendrycks MATH test","precalculus",5
+"MATH_test_counting_and_probability_34","test/counting_and_probability/34","47","Hendrycks MATH test","counting_and_probability",3
+"MATH_test_intermediate_algebra_646","test/intermediate_algebra/646","4","Hendrycks MATH test","intermediate_algebra",4
+"CHAMP_CHAMP_P_Combinatorics_7","CHAMP:P_Combinatorics_7","144","CHAMP existing formal set","Combinatorics",
+"MATH_test_prealgebra_734","test/prealgebra/734","336","Hendrycks MATH test","prealgebra",3
+"MATH_test_intermediate_algebra_30","test/intermediate_algebra/30","1+274i","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_intermediate_algebra_418","test/intermediate_algebra/418","6","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_algebra_534","test/algebra/534","56","Hendrycks MATH test","algebra",3
+"MATH_test_number_theory_528","test/number_theory/528","2","Hendrycks MATH test","number_theory",2
+"MATH_test_algebra_1137","test/algebra/1137","\frac{15\sqrt{7}}{14}","Hendrycks MATH test","algebra",5
+"MATH_test_counting_and_probability_46","test/counting_and_probability/46","\dfrac{49}{54}","Hendrycks MATH test","counting_and_probability",5
+"MATH_test_number_theory_4","test/number_theory/4","1440","Hendrycks MATH test","number_theory",5
+"MATH_test_algebra_54","test/algebra/54","69","Hendrycks MATH test","algebra",5
+"MATH_test_intermediate_algebra_890","test/intermediate_algebra/890","-\frac{9}{4}","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_precalculus_517","test/precalculus/517","\frac{3 \pi}{4}","Hendrycks MATH test","precalculus",1
+"MATH_test_intermediate_algebra_377","test/intermediate_algebra/377","-3","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_precalculus_513","test/precalculus/513","180^\circ","Hendrycks MATH test","precalculus",2
+"MATH_test_precalculus_373","test/precalculus/373","\frac{1}{9}","Hendrycks MATH test","precalculus",5
+"MATH_test_algebra_19","test/algebra/19","187.5","Hendrycks MATH test","algebra",1
+"MATH_test_algebra_753","test/algebra/753","13","Hendrycks MATH test","algebra",4
+"MATH_test_geometry_301","test/geometry/301","7","Hendrycks MATH test","geometry",5
+"MATH_test_algebra_154","test/algebra/154","8","Hendrycks MATH test","algebra",1
+"MATH_test_counting_and_probability_207","test/counting_and_probability/207","0","Hendrycks MATH test","counting_and_probability",4
+"MATH_test_intermediate_algebra_397","test/intermediate_algebra/397","3","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_precalculus_9","test/precalculus/9","\frac{37}{11}","Hendrycks MATH test","precalculus",4
+"MATH_test_intermediate_algebra_862","test/intermediate_algebra/862","28","Hendrycks MATH test","intermediate_algebra",1
+"MATH_test_intermediate_algebra_40","test/intermediate_algebra/40","\frac{\sqrt{6}}{6}","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_algebra_672","test/algebra/672","17","Hendrycks MATH test","algebra",2
+"MATH_test_algebra_207","test/algebra/207","16","Hendrycks MATH test","algebra",1
+"MATH_test_algebra_821","test/algebra/821","2\sqrt{10}","Hendrycks MATH test","algebra",3
+"MATH_test_prealgebra_662","test/prealgebra/662","144","Hendrycks MATH test","prealgebra",3
+"MATH_test_number_theory_481","test/number_theory/481","12","Hendrycks MATH test","number_theory",5
+"MATH_test_counting_and_probability_167","test/counting_and_probability/167","4","Hendrycks MATH test","counting_and_probability",2
+"MATH_test_intermediate_algebra_614","test/intermediate_algebra/614","\frac{4}{5}","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_algebra_436","test/algebra/436","0","Hendrycks MATH test","algebra",2
+"MATH_test_geometry_220","test/geometry/220","72\pi\sqrt{3}","Hendrycks MATH test","geometry",4
+"MATH_test_algebra_65","test/algebra/65","6","Hendrycks MATH test","algebra",1
+"MATH_test_prealgebra_43","test/prealgebra/43","80","Hendrycks MATH test","prealgebra",1
+"MATH_test_prealgebra_418","test/prealgebra/418","1","Hendrycks MATH test","prealgebra",2
+"MATH_test_prealgebra_650","test/prealgebra/650","157","Hendrycks MATH test","prealgebra",5
+"MATH_test_counting_and_probability_420","test/counting_and_probability/420","90","Hendrycks MATH test","counting_and_probability",2
+"MATH_test_algebra_218","test/algebra/218","-9","Hendrycks MATH test","algebra",3
+"MATH_test_intermediate_algebra_64","test/intermediate_algebra/64","\sqrt{2}","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_intermediate_algebra_62","test/intermediate_algebra/62","3","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_prealgebra_660","test/prealgebra/660","78","Hendrycks MATH test","prealgebra",3
+"MATH_test_intermediate_algebra_129","test/intermediate_algebra/129","\frac{7}{5} + \frac{1}{5} i.","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_counting_and_probability_441","test/counting_and_probability/441","\frac{1}{2}","Hendrycks MATH test","counting_and_probability",4
+"MATH_test_number_theory_13","test/number_theory/13","12","Hendrycks MATH test","number_theory",5
+"MATH_test_prealgebra_810","test/prealgebra/810","10","Hendrycks MATH test","prealgebra",3
+"MATH_test_geometry_154","test/geometry/154","20","Hendrycks MATH test","geometry",1
+"MATH_test_intermediate_algebra_902","test/intermediate_algebra/902","\frac{1}{11}","Hendrycks MATH test","intermediate_algebra",1
+"MATH_test_algebra_432","test/algebra/432","3","Hendrycks MATH test","algebra",3
+"MATH_test_precalculus_365","test/precalculus/365","12","Hendrycks MATH test","precalculus",5
+"MATH_test_prealgebra_107","test/prealgebra/107","\frac{2}{3}","Hendrycks MATH test","prealgebra",3
+"MATH_test_prealgebra_847","test/prealgebra/847","55","Hendrycks MATH test","prealgebra",2
+"MATH_test_intermediate_algebra_412","test/intermediate_algebra/412","-14","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_prealgebra_309","test/prealgebra/309","61","Hendrycks MATH test","prealgebra",1
+"MATH_test_geometry_421","test/geometry/421","3","Hendrycks MATH test","geometry",4
+"MATH_test_geometry_362","test/geometry/362","32","Hendrycks MATH test","geometry",4
+"MATH_test_geometry_244","test/geometry/244","216","Hendrycks MATH test","geometry",3
+"MATH_test_number_theory_461","test/number_theory/461","216","Hendrycks MATH test","number_theory",3
+"MATH_test_prealgebra_109","test/prealgebra/109","16","Hendrycks MATH test","prealgebra",5
+"MATH_test_precalculus_347","test/precalculus/347","\frac{56}{5}","Hendrycks MATH test","precalculus",2
+"MATH_test_number_theory_10","test/number_theory/10","10","Hendrycks MATH test","number_theory",4
+"MATH_test_algebra_18","test/algebra/18","3","Hendrycks MATH test","algebra",3
+"MATH_test_prealgebra_329","test/prealgebra/329"," \frac{1}{13}","Hendrycks MATH test","prealgebra",5
+"MATH_test_counting_and_probability_92","test/counting_and_probability/92","50","Hendrycks MATH test","counting_and_probability",4
+"MATH_test_intermediate_algebra_647","test/intermediate_algebra/647","x^2-10x+41","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_algebra_415","test/algebra/415","2","Hendrycks MATH test","algebra",5
+"MATH_test_precalculus_247","test/precalculus/247","152","Hendrycks MATH test","precalculus",2
+"MATH_test_intermediate_algebra_734","test/intermediate_algebra/734","\frac{99}{100}","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_prealgebra_192","test/prealgebra/192","162","Hendrycks MATH test","prealgebra",5
+"MATH_test_number_theory_115","test/number_theory/115","\text{Sunday}","Hendrycks MATH test","number_theory",3
+"CHAMP_CHAMP_P_Polynomial_11","CHAMP:P_Polynomial_11","20","CHAMP existing formal set","Polynomial",
+"MATH_test_algebra_82","test/algebra/82","14","Hendrycks MATH test","algebra",2
+"MATH_test_prealgebra_775","test/prealgebra/775","1","Hendrycks MATH test","prealgebra",3
+"MATH_test_counting_and_probability_313","test/counting_and_probability/313","\frac{8}{17}","Hendrycks MATH test","counting_and_probability",3
+"MATH_test_algebra_1149","test/algebra/1149","4","Hendrycks MATH test","algebra",5
+"CHAMP_CHAMP_P_Polynomial_24","CHAMP:P_Polynomial_24","-1","CHAMP existing formal set","Polynomial",
+"MATH_test_number_theory_68","test/number_theory/68","2","Hendrycks MATH test","number_theory",5
+"MATH_test_geometry_28","test/geometry/28","9","Hendrycks MATH test","geometry",5
+"MATH_test_intermediate_algebra_664","test/intermediate_algebra/664","2","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_prealgebra_274","test/prealgebra/274","30","Hendrycks MATH test","prealgebra",5
+"MATH_test_prealgebra_869","test/prealgebra/869","1","Hendrycks MATH test","prealgebra",3
+"CHAMP_CHAMP_P_Sequence_11","CHAMP:P_Sequence_11","1","CHAMP existing formal set","Sequence",
+"MATH_test_intermediate_algebra_2","test/intermediate_algebra/2","43","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_geometry_348","test/geometry/348","\frac{1120}{81}","Hendrycks MATH test","geometry",5
+"MATH_test_algebra_378","test/algebra/378","\left[\frac{1}{2}, \frac{4}{3}\right]","Hendrycks MATH test","algebra",5
+"MATH_test_counting_and_probability_114","test/counting_and_probability/114","5040","Hendrycks MATH test","counting_and_probability",2
+"MATH_test_geometry_92","test/geometry/92","18","Hendrycks MATH test","geometry",1
+"MATH_test_algebra_844","test/algebra/844","\frac{121}{25}","Hendrycks MATH test","algebra",5
+"MATH_test_precalculus_227","test/precalculus/227","\frac{2}{3}","Hendrycks MATH test","precalculus",5
+"MATH_test_geometry_419","test/geometry/419","4\sqrt{13}","Hendrycks MATH test","geometry",5
+"MATH_test_number_theory_246","test/number_theory/246","0","Hendrycks MATH test","number_theory",2
+"CHAMP_CHAMP_P_Combinatorics_18","CHAMP:P_Combinatorics_18","5050","CHAMP existing formal set","Combinatorics",
+"MATH_test_algebra_164","test/algebra/164","-11 + 27i","Hendrycks MATH test","algebra",3
+"MATH_test_counting_and_probability_394","test/counting_and_probability/394","149","Hendrycks MATH test","counting_and_probability",2
+"MATH_test_prealgebra_503","test/prealgebra/503","0","Hendrycks MATH test","prealgebra",3
+"MATH_test_intermediate_algebra_487","test/intermediate_algebra/487","2","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_counting_and_probability_292","test/counting_and_probability/292","21","Hendrycks MATH test","counting_and_probability",1
+"MATH_test_number_theory_31","test/number_theory/31","9","Hendrycks MATH test","number_theory",3
+"MATH_test_counting_and_probability_277","test/counting_and_probability/277","\frac{80}{243}","Hendrycks MATH test","counting_and_probability",5
+"MATH_test_prealgebra_609","test/prealgebra/609","\text{MAKE}","Hendrycks MATH test","prealgebra",5
+"MATH_test_counting_and_probability_120","test/counting_and_probability/120","3003","Hendrycks MATH test","counting_and_probability",2
+"MATH_test_prealgebra_71","test/prealgebra/71","563.51","Hendrycks MATH test","prealgebra",2
+"MATH_test_intermediate_algebra_166","test/intermediate_algebra/166","6\sqrt3","Hendrycks MATH test","intermediate_algebra",3
+"CHAMP_CHAMP_P_Combinatorics_40","CHAMP:P_Combinatorics_40","144","CHAMP existing formal set","Combinatorics",
+"MATH_test_number_theory_103","test/number_theory/103","13","Hendrycks MATH test","number_theory",5
+"MATH_test_algebra_1173","test/algebra/1173","-4","Hendrycks MATH test","algebra",5
+"MATH_test_algebra_434","test/algebra/434","-48","Hendrycks MATH test","algebra",5
+"CHAMP_CHAMP_P_Number_Theory_32","CHAMP:P_Number-Theory_32","2","CHAMP existing formal set","Number-Theory",
+"MATH_test_prealgebra_320","test/prealgebra/320","0.4","Hendrycks MATH test","prealgebra",2
+"MATH_test_algebra_743","test/algebra/743","2","Hendrycks MATH test","algebra",5
+"MATH_test_precalculus_50","test/precalculus/50","\frac{1}{3}","Hendrycks MATH test","precalculus",5
+"MATH_test_counting_and_probability_466","test/counting_and_probability/466","12","Hendrycks MATH test","counting_and_probability",4
+"MATH_test_prealgebra_299","test/prealgebra/299","1","Hendrycks MATH test","prealgebra",2
+"MATH_test_prealgebra_636","test/prealgebra/636","448","Hendrycks MATH test","prealgebra",4
+"MATH_test_counting_and_probability_307","test/counting_and_probability/307","6435","Hendrycks MATH test","counting_and_probability",2
+"MATH_test_algebra_909","test/algebra/909","2","Hendrycks MATH test","algebra",3
+"MATH_test_algebra_1010","test/algebra/1010","37","Hendrycks MATH test","algebra",4
+"CHAMP_CHAMP_P_Combinatorics_30","CHAMP:P_Combinatorics_30","2001000","CHAMP existing formal set","Combinatorics",
+"MATH_test_intermediate_algebra_307","test/intermediate_algebra/307","\frac{1-\sqrt{5}}{2}","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_intermediate_algebra_349","test/intermediate_algebra/349","87","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_geometry_29","test/geometry/29","31","Hendrycks MATH test","geometry",2
+"MATH_test_counting_and_probability_340","test/counting_and_probability/340","20160","Hendrycks MATH test","counting_and_probability",5
+"MATH_test_precalculus_84","test/precalculus/84","-27","Hendrycks MATH test","precalculus",3
+"MATH_test_algebra_43","test/algebra/43","16","Hendrycks MATH test","algebra",4
+"MATH_test_intermediate_algebra_348","test/intermediate_algebra/348","3","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_counting_and_probability_319","test/counting_and_probability/319","330","Hendrycks MATH test","counting_and_probability",2
+"MATH_test_number_theory_241","test/number_theory/241","89","Hendrycks MATH test","number_theory",4
+"MATH_test_intermediate_algebra_594","test/intermediate_algebra/594","1,2","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_intermediate_algebra_193","test/intermediate_algebra/193","-668i","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_counting_and_probability_51","test/counting_and_probability/51","\frac{7}{72}","Hendrycks MATH test","counting_and_probability",5
+"MATH_test_intermediate_algebra_120","test/intermediate_algebra/120","1209","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_prealgebra_409","test/prealgebra/409","7","Hendrycks MATH test","prealgebra",4
+"MATH_test_precalculus_440","test/precalculus/440","\frac{7}{8}","Hendrycks MATH test","precalculus",4
+"MATH_test_prealgebra_333","test/prealgebra/333","3","Hendrycks MATH test","prealgebra",2
+"MATH_test_algebra_734","test/algebra/734","697","Hendrycks MATH test","algebra",5
+"CHAMP_CHAMP_P_Number_Theory_12","CHAMP:P_Number-Theory_12","76","CHAMP existing formal set","Number-Theory",
+"MATH_test_intermediate_algebra_535","test/intermediate_algebra/535","117649","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_geometry_191","test/geometry/191","48^\circ","Hendrycks MATH test","geometry",3
+"MATH_test_geometry_399","test/geometry/399","(2,5)","Hendrycks MATH test","geometry",5
+"MATH_test_algebra_45","test/algebra/45","6+9i","Hendrycks MATH test","algebra",3
+"MATH_test_precalculus_22","test/precalculus/22","\begin{pmatrix} 48/65 \\ 6/65 \end{pmatrix}","Hendrycks MATH test","precalculus",3
+"MATH_test_algebra_914","test/algebra/914","4","Hendrycks MATH test","algebra",5
+"MATH_test_algebra_724","test/algebra/724","107","Hendrycks MATH test","algebra",4
+"MATH_test_precalculus_16","test/precalculus/16","-1","Hendrycks MATH test","precalculus",5
+"MATH_test_algebra_910","test/algebra/910","135","Hendrycks MATH test","algebra",4
+"MATH_test_counting_and_probability_226","test/counting_and_probability/226","1","Hendrycks MATH test","counting_and_probability",4
+"MATH_test_prealgebra_763","test/prealgebra/763","20\%","Hendrycks MATH test","prealgebra",1
+"MATH_test_number_theory_137","test/number_theory/137","8","Hendrycks MATH test","number_theory",4
+"MATH_test_number_theory_140","test/number_theory/140","4","Hendrycks MATH test","number_theory",5
+"MATH_test_prealgebra_762","test/prealgebra/762","3,\!250","Hendrycks MATH test","prealgebra",4
+"MATH_test_geometry_346","test/geometry/346","\frac{\sqrt{39}}{8}","Hendrycks MATH test","geometry",3
+"MATH_test_counting_and_probability_417","test/counting_and_probability/417","210\text{ ways}","Hendrycks MATH test","counting_and_probability",3
+"MATH_test_algebra_997","test/algebra/997","-\dfrac{4}{25}","Hendrycks MATH test","algebra",3
+"MATH_test_precalculus_280","test/precalculus/280","1","Hendrycks MATH test","precalculus",2
+"MATH_test_intermediate_algebra_44","test/intermediate_algebra/44","x = \frac{3}{2}","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_precalculus_120","test/precalculus/120","\begin{pmatrix} 2 & -3 \\ 0 & 3 \end{pmatrix}","Hendrycks MATH test","precalculus",3
+"MATH_test_intermediate_algebra_143","test/intermediate_algebra/143","\left[0,\frac{343}{27}\right]","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_algebra_711","test/algebra/711","8","Hendrycks MATH test","algebra",2
+"MATH_test_intermediate_algebra_321","test/intermediate_algebra/321","(-\infty,5) \cup (5,\infty)","Hendrycks MATH test","intermediate_algebra",2
+"MATH_test_counting_and_probability_323","test/counting_and_probability/323","120","Hendrycks MATH test","counting_and_probability",1
+"MATH_test_number_theory_238","test/number_theory/238","76","Hendrycks MATH test","number_theory",2
+"MATH_test_algebra_537","test/algebra/537","4","Hendrycks MATH test","algebra",4
+"MATH_test_prealgebra_599","test/prealgebra/599","\frac{9}{56}","Hendrycks MATH test","prealgebra",4
+"MATH_test_number_theory_368","test/number_theory/368","2","Hendrycks MATH test","number_theory",1
+"MATH_test_counting_and_probability_398","test/counting_and_probability/398","5","Hendrycks MATH test","counting_and_probability",3
+"MATH_test_number_theory_59","test/number_theory/59","201","Hendrycks MATH test","number_theory",4
+"MATH_test_algebra_547","test/algebra/547","\frac{1023}{1024}","Hendrycks MATH test","algebra",4
+"MATH_test_geometry_476","test/geometry/476","\frac{\sqrt{2}}{2}","Hendrycks MATH test","geometry",3
+"MATH_test_intermediate_algebra_243","test/intermediate_algebra/243","1","Hendrycks MATH test","intermediate_algebra",2
+"MATH_test_prealgebra_92","test/prealgebra/92","10","Hendrycks MATH test","prealgebra",2
+"MATH_test_algebra_670","test/algebra/670","100\%","Hendrycks MATH test","algebra",5
+"MATH_test_precalculus_171","test/precalculus/171","0","Hendrycks MATH test","precalculus",1
+"CHAMP_CHAMP_P_Inequality_26","CHAMP:P_Inequality_26","0","CHAMP existing formal set","Inequality",
+"MATH_test_algebra_1155","test/algebra/1155","7.5","Hendrycks MATH test","algebra",3
+"MATH_test_algebra_626","test/algebra/626","\frac{128}{75}","Hendrycks MATH test","algebra",5
+"CHAMP_CHAMP_P_Combinatorics_21","CHAMP:P_Combinatorics_21","30","CHAMP existing formal set","Combinatorics",
+"MATH_test_precalculus_3","test/precalculus/3","45^\circ, 135^\circ","Hendrycks MATH test","precalculus",4
+"MATH_test_precalculus_42","test/precalculus/42","60^\circ","Hendrycks MATH test","precalculus",2
+"MATH_test_geometry_432","test/geometry/432","54","Hendrycks MATH test","geometry",2
+"MATH_test_number_theory_141","test/number_theory/141","3","Hendrycks MATH test","number_theory",3
+"MATH_test_prealgebra_367","test/prealgebra/367","2","Hendrycks MATH test","prealgebra",3
+"MATH_test_intermediate_algebra_659","test/intermediate_algebra/659","3, 5, 7","Hendrycks MATH test","intermediate_algebra",2
+"MATH_test_number_theory_337","test/number_theory/337","49","Hendrycks MATH test","number_theory",2
+"MATH_test_prealgebra_782","test/prealgebra/782","3024","Hendrycks MATH test","prealgebra",3
+"MATH_test_number_theory_69","test/number_theory/69","5636","Hendrycks MATH test","number_theory",3
+"MATH_test_precalculus_215","test/precalculus/215","\frac{3}{2} + \frac{3}{2} i","Hendrycks MATH test","precalculus",5
+"MATH_test_number_theory_427","test/number_theory/427","687","Hendrycks MATH test","number_theory",4
+"CHAMP_CHAMP_P_Number_Theory_42","CHAMP:P_Number-Theory_42","50","CHAMP existing formal set","Number-Theory",
+"MATH_test_intermediate_algebra_145","test/intermediate_algebra/145","36","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_algebra_146","test/algebra/146","36","Hendrycks MATH test","algebra",2
+"MATH_test_intermediate_algebra_714","test/intermediate_algebra/714","\frac{1}{2004!}","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_algebra_118","test/algebra/118","-8","Hendrycks MATH test","algebra",1
+"MATH_test_algebra_421","test/algebra/421","\frac15","Hendrycks MATH test","algebra",5
+"MATH_test_algebra_1098","test/algebra/1098","22","Hendrycks MATH test","algebra",4
+"MATH_test_counting_and_probability_377","test/counting_and_probability/377"," \frac{7}{15}","Hendrycks MATH test","counting_and_probability",3
+"MATH_test_precalculus_297","test/precalculus/297","120^\circ","Hendrycks MATH test","precalculus",5
+"MATH_test_intermediate_algebra_707","test/intermediate_algebra/707","-\sqrt{11}-1","Hendrycks MATH test","intermediate_algebra",2
+"CHAMP_CHAMP_P_Sequence_19","CHAMP:P_Sequence_19","-1","CHAMP existing formal set","Sequence",
+"MATH_test_prealgebra_222","test/prealgebra/222","\frac{4}{9}","Hendrycks MATH test","prealgebra",4
+"MATH_test_intermediate_algebra_89","test/intermediate_algebra/89","496","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_algebra_1172","test/algebra/1172","\frac{11}{2}","Hendrycks MATH test","algebra",4
+"CHAMP_CHAMP_P_Sequence_42","CHAMP:P_Sequence_42","601","CHAMP existing formal set","Sequence",
+"MATH_test_algebra_7","test/algebra/7","7","Hendrycks MATH test","algebra",4
+"MATH_test_algebra_226","test/algebra/226","3","Hendrycks MATH test","algebra",3
+"MATH_test_intermediate_algebra_627","test/intermediate_algebra/627","40","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_precalculus_266","test/precalculus/266","6","Hendrycks MATH test","precalculus",2
+"MATH_test_intermediate_algebra_174","test/intermediate_algebra/174","4","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_geometry_323","test/geometry/323","1\frac{12}{13}","Hendrycks MATH test","geometry",5
+"MATH_test_intermediate_algebra_441","test/intermediate_algebra/441","-4","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_algebra_325","test/algebra/325","7","Hendrycks MATH test","algebra",2
+"MATH_test_number_theory_42","test/number_theory/42","18 \text{ integers}","Hendrycks MATH test","number_theory",4
+"MATH_test_intermediate_algebra_792","test/intermediate_algebra/792","3","Hendrycks MATH test","intermediate_algebra",2
+"MATH_test_number_theory_423","test/number_theory/423","2","Hendrycks MATH test","number_theory",3
+"MATH_test_prealgebra_99","test/prealgebra/99","20","Hendrycks MATH test","prealgebra",2
+"MATH_test_algebra_87","test/algebra/87","-5","Hendrycks MATH test","algebra",3
+"MATH_test_number_theory_340","test/number_theory/340","127","Hendrycks MATH test","number_theory",1
+"MATH_test_algebra_611","test/algebra/611","6","Hendrycks MATH test","algebra",2
+"MATH_test_number_theory_222","test/number_theory/222","0","Hendrycks MATH test","number_theory",4
+"MATH_test_precalculus_187","test/precalculus/187","2^{2005}","Hendrycks MATH test","precalculus",4
+"MATH_test_algebra_514","test/algebra/514","2x-1","Hendrycks MATH test","algebra",3
+"MATH_test_prealgebra_541","test/prealgebra/541","666000","Hendrycks MATH test","prealgebra",2
+"MATH_test_prealgebra_635","test/prealgebra/635","90","Hendrycks MATH test","prealgebra",3
+"MATH_test_algebra_857","test/algebra/857","180","Hendrycks MATH test","algebra",2
+"MATH_test_precalculus_430","test/precalculus/430","(3 \sqrt{3}, -9, -2)","Hendrycks MATH test","precalculus",3
+"MATH_test_precalculus_395","test/precalculus/395","-128 - 128 \sqrt{3} i","Hendrycks MATH test","precalculus",3
+"MATH_test_counting_and_probability_443","test/counting_and_probability/443","\frac{52}{3}","Hendrycks MATH test","counting_and_probability",5
+"MATH_test_number_theory_272","test/number_theory/272","5","Hendrycks MATH test","number_theory",5
+"MATH_test_prealgebra_729","test/prealgebra/729","1584","Hendrycks MATH test","prealgebra",4
+"CHAMP_CHAMP_P_Polynomial_32","CHAMP:P_Polynomial_32","5","CHAMP existing formal set","Polynomial",
+"MATH_test_number_theory_415","test/number_theory/415","72","Hendrycks MATH test","number_theory",5
+"MATH_test_number_theory_363","test/number_theory/363","1","Hendrycks MATH test","number_theory",2
+"MATH_test_geometry_291","test/geometry/291","40","Hendrycks MATH test","geometry",5
+"MATH_test_intermediate_algebra_567","test/intermediate_algebra/567","81","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_algebra_10","test/algebra/10","\frac{x+2}{7}","Hendrycks MATH test","algebra",4
+"MATH_test_precalculus_529","test/precalculus/529","\frac{2}{5}","Hendrycks MATH test","precalculus",1
+"MATH_test_number_theory_386","test/number_theory/386","2","Hendrycks MATH test","number_theory",3
+"MATH_test_algebra_112","test/algebra/112","15","Hendrycks MATH test","algebra",1
+"MATH_test_algebra_392","test/algebra/392","5","Hendrycks MATH test","algebra",5
+"MATH_test_algebra_41","test/algebra/41","0","Hendrycks MATH test","algebra",2
+"MATH_test_intermediate_algebra_850","test/intermediate_algebra/850","49","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_prealgebra_50","test/prealgebra/50","\dfrac{3}{50}","Hendrycks MATH test","prealgebra",4
+"MATH_test_number_theory_99","test/number_theory/99","2743","Hendrycks MATH test","number_theory",4
+"MATH_test_number_theory_504","test/number_theory/504","4","Hendrycks MATH test","number_theory",2
+"CHAMP_CHAMP_P_Sequence_21","CHAMP:P_Sequence_21","2500","CHAMP existing formal set","Sequence",
+"MATH_test_algebra_281","test/algebra/281","2","Hendrycks MATH test","algebra",3
+"MATH_test_precalculus_323","test/precalculus/323","\left( -\frac{1}{4}, -2 \right)","Hendrycks MATH test","precalculus",3
+"MATH_test_intermediate_algebra_677","test/intermediate_algebra/677","6","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_number_theory_127","test/number_theory/127","3","Hendrycks MATH test","number_theory",4
+"CHAMP_CHAMP_P_Combinatorics_20","CHAMP:P_Combinatorics_20","87","CHAMP existing formal set","Combinatorics",
+"MATH_test_algebra_352","test/algebra/352","2","Hendrycks MATH test","algebra",4
+"CHAMP_CHAMP_P_Inequality_49","CHAMP:P_Inequality_49","0","CHAMP existing formal set","Inequality",
+"MATH_test_intermediate_algebra_650","test/intermediate_algebra/650","15","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_intermediate_algebra_184","test/intermediate_algebra/184","6","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_intermediate_algebra_626","test/intermediate_algebra/626","\frac{10}{81}","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_algebra_983","test/algebra/983","(1,1)","Hendrycks MATH test","algebra",1
+"MATH_test_prealgebra_508","test/prealgebra/508","12\sqrt{35}","Hendrycks MATH test","prealgebra",5
+"MATH_test_precalculus_500","test/precalculus/500","(-11,-10,-7)","Hendrycks MATH test","precalculus",4
+"CHAMP_CHAMP_P_Inequality_24","CHAMP:P_Inequality_24","0","CHAMP existing formal set","Inequality",
+"MATH_test_algebra_655","test/algebra/655","\text{June 20}","Hendrycks MATH test","algebra",2
+"MATH_test_prealgebra_60","test/prealgebra/60","127","Hendrycks MATH test","prealgebra",4
+"MATH_test_counting_and_probability_183","test/counting_and_probability/183","30","Hendrycks MATH test","counting_and_probability",4
+"CHAMP_CHAMP_P_Inequality_4","CHAMP:P_Inequality_4","2","CHAMP existing formal set","Inequality",
+"MATH_test_geometry_250","test/geometry/250","\frac{1}{5}","Hendrycks MATH test","geometry",3
+"MATH_test_number_theory_5","test/number_theory/5","6","Hendrycks MATH test","number_theory",4
+"MATH_test_precalculus_271","test/precalculus/271","\frac{5}{9}","Hendrycks MATH test","precalculus",4
+"MATH_test_intermediate_algebra_124","test/intermediate_algebra/124","\text{even}","Hendrycks MATH test","intermediate_algebra",2
+"MATH_test_algebra_77","test/algebra/77","-7","Hendrycks MATH test","algebra",4
+"MATH_test_precalculus_362","test/precalculus/362","251","Hendrycks MATH test","precalculus",4
+"MATH_test_counting_and_probability_309","test/counting_and_probability/309","\dfrac{1904}{6561}","Hendrycks MATH test","counting_and_probability",5
+"MATH_test_intermediate_algebra_186","test/intermediate_algebra/186","2x^2 - 2x + 3","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_algebra_1090","test/algebra/1090","5","Hendrycks MATH test","algebra",4
+"MATH_test_intermediate_algebra_248","test/intermediate_algebra/248","4","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_counting_and_probability_289","test/counting_and_probability/289","\frac{59}{125}","Hendrycks MATH test","counting_and_probability",5
+"MATH_test_algebra_692","test/algebra/692","19","Hendrycks MATH test","algebra",4
+"CHAMP_CHAMP_P_Inequality_15","CHAMP:P_Inequality_15","0","CHAMP existing formal set","Inequality",
+"CHAMP_CHAMP_P_Combinatorics_38","CHAMP:P_Combinatorics_38","240","CHAMP existing formal set","Combinatorics",
+"MATH_test_intermediate_algebra_198","test/intermediate_algebra/198","\frac{1}{3}","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_counting_and_probability_1","test/counting_and_probability/1","4","Hendrycks MATH test","counting_and_probability",4
+"MATH_test_precalculus_426","test/precalculus/426","159","Hendrycks MATH test","precalculus",5
+"MATH_test_number_theory_319","test/number_theory/319","8","Hendrycks MATH test","number_theory",5
+"MATH_test_prealgebra_794","test/prealgebra/794","1020","Hendrycks MATH test","prealgebra",4
+"MATH_test_counting_and_probability_40","test/counting_and_probability/40","90","Hendrycks MATH test","counting_and_probability",4
+"MATH_test_intermediate_algebra_740","test/intermediate_algebra/740","\frac{1}{18}","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_intermediate_algebra_117","test/intermediate_algebra/117","5","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_number_theory_218","test/number_theory/218","5","Hendrycks MATH test","number_theory",1
+"MATH_test_intermediate_algebra_817","test/intermediate_algebra/817","(45x + 28)(x + 2)","Hendrycks MATH test","intermediate_algebra",1
+"MATH_test_algebra_628","test/algebra/628","\frac 43","Hendrycks MATH test","algebra",5
+"MATH_test_intermediate_algebra_106","test/intermediate_algebra/106","\frac{5}{13}","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_intermediate_algebra_314","test/intermediate_algebra/314","104","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_precalculus_73","test/precalculus/73","\begin{pmatrix} 2 & 0 \\ -3 & 5 \end{pmatrix}","Hendrycks MATH test","precalculus",2
+"MATH_test_counting_and_probability_35","test/counting_and_probability/35","\frac{2}{17}","Hendrycks MATH test","counting_and_probability",3
+"MATH_test_intermediate_algebra_798","test/intermediate_algebra/798","\text{(B)}","Hendrycks MATH test","intermediate_algebra",2
+"MATH_test_counting_and_probability_344","test/counting_and_probability/344","3","Hendrycks MATH test","counting_and_probability",3
+"MATH_test_prealgebra_438","test/prealgebra/438","7","Hendrycks MATH test","prealgebra",1
+"MATH_test_algebra_361","test/algebra/361","8","Hendrycks MATH test","algebra",2
+"MATH_test_prealgebra_127","test/prealgebra/127","90","Hendrycks MATH test","prealgebra",3
+"MATH_test_algebra_631","test/algebra/631","1","Hendrycks MATH test","algebra",5
+"MATH_test_number_theory_384","test/number_theory/384","1","Hendrycks MATH test","number_theory",3
+"MATH_test_number_theory_426","test/number_theory/426","0","Hendrycks MATH test","number_theory",4
+"CHAMP_CHAMP_P_Number_Theory_67","CHAMP:P_Number-Theory_67","1","CHAMP existing formal set","Number-Theory",
+"MATH_test_prealgebra_857","test/prealgebra/857","24","Hendrycks MATH test","prealgebra",3
+"MATH_test_precalculus_421","test/precalculus/421","-49","Hendrycks MATH test","precalculus",2
+"MATH_test_intermediate_algebra_188","test/intermediate_algebra/188","440","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_algebra_311","test/algebra/311","0","Hendrycks MATH test","algebra",2
+"MATH_test_intermediate_algebra_10","test/intermediate_algebra/10","50","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_intermediate_algebra_79","test/intermediate_algebra/79","8","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_algebra_1015","test/algebra/1015","-1","Hendrycks MATH test","algebra",4
+"MATH_test_precalculus_290","test/precalculus/290","(15,-29)","Hendrycks MATH test","precalculus",1
+"MATH_test_prealgebra_315","test/prealgebra/315","\frac{27}{128}","Hendrycks MATH test","prealgebra",2
+"CHAMP_CHAMP_P_Sequence_28","CHAMP:P_Sequence_28","0","CHAMP existing formal set","Sequence",
+"MATH_test_algebra_1024","test/algebra/1024","920.25","Hendrycks MATH test","algebra",4
+"MATH_test_algebra_1017","test/algebra/1017","1","Hendrycks MATH test","algebra",2
+"MATH_test_number_theory_312","test/number_theory/312","108","Hendrycks MATH test","number_theory",5
+"MATH_test_intermediate_algebra_629","test/intermediate_algebra/629","3","Hendrycks MATH test","intermediate_algebra",4
+"CHAMP_CHAMP_P_Sequence_20","CHAMP:P_Sequence_20","89","CHAMP existing formal set","Sequence",
+"MATH_test_precalculus_101","test/precalculus/101","\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}","Hendrycks MATH test","precalculus",3
+"MATH_test_prealgebra_210","test/prealgebra/210","1001","Hendrycks MATH test","prealgebra",2
+"MATH_test_geometry_367","test/geometry/367","\frac{17}{2}","Hendrycks MATH test","geometry",3
+"MATH_test_prealgebra_269","test/prealgebra/269","8","Hendrycks MATH test","prealgebra",2
+"MATH_test_algebra_796","test/algebra/796","11","Hendrycks MATH test","algebra",3
+"MATH_test_algebra_783","test/algebra/783","(0,1]","Hendrycks MATH test","algebra",5
+"MATH_test_geometry_99","test/geometry/99","(9, 3)","Hendrycks MATH test","geometry",2
+"MATH_test_algebra_804","test/algebra/804","18","Hendrycks MATH test","algebra",3
+"MATH_test_algebra_836","test/algebra/836","-56","Hendrycks MATH test","algebra",3
+"MATH_test_algebra_15","test/algebra/15","\frac{11}{2}","Hendrycks MATH test","algebra",5
+"MATH_test_counting_and_probability_155","test/counting_and_probability/155","\frac{1}{16}","Hendrycks MATH test","counting_and_probability",1
+"MATH_test_number_theory_401","test/number_theory/401","4","Hendrycks MATH test","number_theory",2
+"MATH_test_algebra_1106","test/algebra/1106","4","Hendrycks MATH test","algebra",5
+"MATH_test_geometry_100","test/geometry/100","\frac{1}{16}","Hendrycks MATH test","geometry",4
+"MATH_test_intermediate_algebra_505","test/intermediate_algebra/505","\frac{161}{400}","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_intermediate_algebra_356","test/intermediate_algebra/356","(-\infty,4)","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_precalculus_14","test/precalculus/14","\text{(E)}","Hendrycks MATH test","precalculus",3
+"MATH_test_precalculus_139","test/precalculus/139","\begin{pmatrix} 3 & 6 \\ 2 & 7 \end{pmatrix}","Hendrycks MATH test","precalculus",2
+"MATH_test_algebra_289","test/algebra/289","81\text{ teachers}","Hendrycks MATH test","algebra",2
+"MATH_test_intermediate_algebra_239","test/intermediate_algebra/239","\frac{4}{9}","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_algebra_221","test/algebra/221","x = 4","Hendrycks MATH test","algebra",4
+"MATH_test_prealgebra_150","test/prealgebra/150","6","Hendrycks MATH test","prealgebra",4
+"MATH_test_intermediate_algebra_853","test/intermediate_algebra/853","2","Hendrycks MATH test","intermediate_algebra",2
+"MATH_test_geometry_193","test/geometry/193","6","Hendrycks MATH test","geometry",4
+"MATH_test_prealgebra_464","test/prealgebra/464","200","Hendrycks MATH test","prealgebra",5
+"MATH_test_precalculus_243","test/precalculus/243","y = 2x + 3","Hendrycks MATH test","precalculus",5
+"MATH_test_precalculus_372","test/precalculus/372","-\frac{7}{9}","Hendrycks MATH test","precalculus",3
+"MATH_test_precalculus_157","test/precalculus/157","78 \pi","Hendrycks MATH test","precalculus",4
+"MATH_test_algebra_1164","test/algebra/1164","(-1,8)","Hendrycks MATH test","algebra",5
+"MATH_test_prealgebra_756","test/prealgebra/756","90","Hendrycks MATH test","prealgebra",5
+"MATH_test_intermediate_algebra_260","test/intermediate_algebra/260","B, C","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_algebra_643","test/algebra/643","28","Hendrycks MATH test","algebra",2
+"MATH_test_prealgebra_715","test/prealgebra/715","53","Hendrycks MATH test","prealgebra",4
+"MATH_test_algebra_282","test/algebra/282","2","Hendrycks MATH test","algebra",5
+"MATH_test_prealgebra_460","test/prealgebra/460","3","Hendrycks MATH test","prealgebra",3
+"CHAMP_CHAMP_P_Polynomial_50","CHAMP:P_Polynomial_50","-5","CHAMP existing formal set","Polynomial",
+"MATH_test_algebra_996","test/algebra/996","78","Hendrycks MATH test","algebra",5
+"MATH_test_intermediate_algebra_205","test/intermediate_algebra/205","-3","Hendrycks MATH test","intermediate_algebra",2
+"MATH_test_geometry_309","test/geometry/309","50","Hendrycks MATH test","geometry",4
+"MATH_test_prealgebra_617","test/prealgebra/617","37","Hendrycks MATH test","prealgebra",1
+"CHAMP_CHAMP_P_Inequality_13","CHAMP:P_Inequality_13","-9","CHAMP existing formal set","Inequality",
+"MATH_test_precalculus_49","test/precalculus/49","2 \sqrt{2} + \sqrt{6}","Hendrycks MATH test","precalculus",4
+"MATH_test_algebra_499","test/algebra/499","7","Hendrycks MATH test","algebra",3
+"MATH_test_counting_and_probability_163","test/counting_and_probability/163","36","Hendrycks MATH test","counting_and_probability",1
+"MATH_test_prealgebra_515","test/prealgebra/515","97","Hendrycks MATH test","prealgebra",3
+"MATH_test_prealgebra_84","test/prealgebra/84","6","Hendrycks MATH test","prealgebra",3
+"MATH_test_number_theory_517","test/number_theory/517","41","Hendrycks MATH test","number_theory",5
+"MATH_test_intermediate_algebra_23","test/intermediate_algebra/23","9,-7","Hendrycks MATH test","intermediate_algebra",3
+"CHAMP_CHAMP_P_Number_Theory_13","CHAMP:P_Number-Theory_13","11","CHAMP existing formal set","Number-Theory",
+"MATH_test_intermediate_algebra_43","test/intermediate_algebra/43","89","Hendrycks MATH test","intermediate_algebra",3
+"MATH_test_algebra_856","test/algebra/856","\frac{8}{45}","Hendrycks MATH test","algebra",4
+"MATH_test_counting_and_probability_284","test/counting_and_probability/284","1","Hendrycks MATH test","counting_and_probability",2
+"MATH_test_number_theory_471","test/number_theory/471","9","Hendrycks MATH test","number_theory",3
+"MATH_test_algebra_1068","test/algebra/1068","-10","Hendrycks MATH test","algebra",3
+"MATH_test_prealgebra_73","test/prealgebra/73","162","Hendrycks MATH test","prealgebra",5
+"MATH_test_algebra_466","test/algebra/466","7.5","Hendrycks MATH test","algebra",1
+"MATH_test_precalculus_445","test/precalculus/445","\frac{11}{20}","Hendrycks MATH test","precalculus",3
+"MATH_test_intermediate_algebra_648","test/intermediate_algebra/648","\text{even}","Hendrycks MATH test","intermediate_algebra",1
+"MATH_test_prealgebra_521","test/prealgebra/521","\sqrt{53}","Hendrycks MATH test","prealgebra",4
+"MATH_test_prealgebra_74","test/prealgebra/74","7","Hendrycks MATH test","prealgebra",3
+"MATH_test_algebra_485","test/algebra/485","30","Hendrycks MATH test","algebra",2
+"MATH_test_algebra_340","test/algebra/340","3","Hendrycks MATH test","algebra",3
+"MATH_test_algebra_216","test/algebra/216","19","Hendrycks MATH test","algebra",3
+"MATH_test_precalculus_480","test/precalculus/480","0","Hendrycks MATH test","precalculus",3
+"MATH_test_intermediate_algebra_380","test/intermediate_algebra/380","\pi","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_prealgebra_432","test/prealgebra/432","4","Hendrycks MATH test","prealgebra",2
+"MATH_test_algebra_875","test/algebra/875","15","Hendrycks MATH test","algebra",3
+"MATH_test_geometry_168","test/geometry/168","60^\circ","Hendrycks MATH test","geometry",2
+"CHAMP_CHAMP_P_Combinatorics_31","CHAMP:P_Combinatorics_31","120","CHAMP existing formal set","Combinatorics",
+"MATH_test_precalculus_447","test/precalculus/447","9 + 11i","Hendrycks MATH test","precalculus",2
+"MATH_test_number_theory_413","test/number_theory/413","35","Hendrycks MATH test","number_theory",5
+"MATH_test_algebra_36","test/algebra/36","(-\sqrt{3}, \sqrt{3})","Hendrycks MATH test","algebra",5
+"MATH_test_algebra_1038","test/algebra/1038","11","Hendrycks MATH test","algebra",4
+"MATH_test_prealgebra_451","test/prealgebra/451","6","Hendrycks MATH test","prealgebra",3
+"MATH_test_precalculus_329","test/precalculus/329","-59","Hendrycks MATH test","precalculus",1
+"MATH_test_algebra_85","test/algebra/85","129","Hendrycks MATH test","algebra",4
+"MATH_test_prealgebra_592","test/prealgebra/592","15","Hendrycks MATH test","prealgebra",5
+"MATH_test_algebra_1171","test/algebra/1171","350","Hendrycks MATH test","algebra",1
+"MATH_test_intermediate_algebra_600","test/intermediate_algebra/600","2039191","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_algebra_998","test/algebra/998","(3,-3)","Hendrycks MATH test","algebra",4
+"MATH_test_intermediate_algebra_277","test/intermediate_algebra/277","175","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_counting_and_probability_437","test/counting_and_probability/437","21","Hendrycks MATH test","counting_and_probability",3
+"MATH_test_counting_and_probability_60","test/counting_and_probability/60","1050","Hendrycks MATH test","counting_and_probability",4
+"MATH_test_prealgebra_674","test/prealgebra/674","\frac{11}{13}","Hendrycks MATH test","prealgebra",5
+"MATH_test_precalculus_335","test/precalculus/335","\begin{pmatrix} 1/\sqrt{2} & 1/\sqrt{2} \\ -1/\sqrt{2} & 1/\sqrt{2} \end{pmatrix}","Hendrycks MATH test","precalculus",4
+"MATH_test_number_theory_157","test/number_theory/157","13","Hendrycks MATH test","number_theory",4
+"MATH_test_algebra_28","test/algebra/28","5","Hendrycks MATH test","algebra",5
+"MATH_test_algebra_20","test/algebra/20","18","Hendrycks MATH test","algebra",5
+"MATH_test_intermediate_algebra_478","test/intermediate_algebra/478","\frac{2x-7}{(x+1)(x-2)}","Hendrycks MATH test","intermediate_algebra",4
+"MATH_test_algebra_470","test/algebra/470","-5","Hendrycks MATH test","algebra",4
+"MATH_test_algebra_399","test/algebra/399","4","Hendrycks MATH test","algebra",1
+"CHAMP_CHAMP_P_Number_Theory_17","CHAMP:P_Number-Theory_17","7744","CHAMP existing formal set","Number-Theory",
+"MATH_test_prealgebra_346","test/prealgebra/346","70","Hendrycks MATH test","prealgebra",2
+"MATH_test_algebra_386","test/algebra/386","-4","Hendrycks MATH test","algebra",3
+"CHAMP_CHAMP_P_Sequence_40","CHAMP:P_Sequence_40","125","CHAMP existing formal set","Sequence",
+"MATH_test_intermediate_algebra_544","test/intermediate_algebra/544","(3,-3,1)","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_number_theory_439","test/number_theory/439","35","Hendrycks MATH test","number_theory",5
+"MATH_test_algebra_204","test/algebra/204","8","Hendrycks MATH test","algebra",2
+"MATH_test_number_theory_418","test/number_theory/418","352","Hendrycks MATH test","number_theory",4
+"MATH_test_algebra_451","test/algebra/451","-1","Hendrycks MATH test","algebra",3
+"MATH_test_algebra_455","test/algebra/455","(1,3)","Hendrycks MATH test","algebra",4
+"CHAMP_CHAMP_P_Number_Theory_71","CHAMP:P_Number-Theory_71","7","CHAMP existing formal set","Number-Theory",
+"MATH_test_prealgebra_255","test/prealgebra/255","36","Hendrycks MATH test","prealgebra",5
+"MATH_test_precalculus_327","test/precalculus/327","-8 + 2i","Hendrycks MATH test","precalculus",4
+"MATH_test_prealgebra_593","test/prealgebra/593","15","Hendrycks MATH test","prealgebra",3
+"MATH_test_prealgebra_349","test/prealgebra/349","36^\circ","Hendrycks MATH test","prealgebra",4
+"MATH_test_prealgebra_421","test/prealgebra/421","17","Hendrycks MATH test","prealgebra",5
+"MATH_test_intermediate_algebra_341","test/intermediate_algebra/341","y = x^2 + 2","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_prealgebra_55","test/prealgebra/55","26\pi","Hendrycks MATH test","prealgebra",5
+"MATH_test_number_theory_510","test/number_theory/510","2","Hendrycks MATH test","number_theory",3
+"CHAMP_CHAMP_P_Polynomial_23","CHAMP:P_Polynomial_23","7","CHAMP existing formal set","Polynomial",
+"CHAMP_CHAMP_P_Inequality_8","CHAMP:P_Inequality_8","0","CHAMP existing formal set","Inequality",
+"MATH_test_algebra_69","test/algebra/69","-2","Hendrycks MATH test","algebra",4
+"MATH_test_intermediate_algebra_164","test/intermediate_algebra/164","2","Hendrycks MATH test","intermediate_algebra",2
+"MATH_test_geometry_54","test/geometry/54","(2,4)","Hendrycks MATH test","geometry",2
+"MATH_test_counting_and_probability_382","test/counting_and_probability/382","9240","Hendrycks MATH test","counting_and_probability",4
+"MATH_test_intermediate_algebra_48","test/intermediate_algebra/48","8,-112","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_prealgebra_807","test/prealgebra/807","75^\circ","Hendrycks MATH test","prealgebra",4
+"MATH_test_algebra_825","test/algebra/825","25","Hendrycks MATH test","algebra",3
+"CHAMP_CHAMP_P_Combinatorics_5","CHAMP:P_Combinatorics_5","144","CHAMP existing formal set","Combinatorics",
+"MATH_test_prealgebra_94","test/prealgebra/94","1.4","Hendrycks MATH test","prealgebra",5
+"CHAMP_CHAMP_P_Polynomial_47","CHAMP:P_Polynomial_47","120","CHAMP existing formal set","Polynomial",
+"CHAMP_CHAMP_P_Polynomial_17","CHAMP:P_Polynomial_17","0","CHAMP existing formal set","Polynomial",
+"MATH_test_prealgebra_502","test/prealgebra/502","192","Hendrycks MATH test","prealgebra",3
+"MATH_test_counting_and_probability_264","test/counting_and_probability/264","\frac{47}{1001}","Hendrycks MATH test","counting_and_probability",5
+"MATH_test_intermediate_algebra_754","test/intermediate_algebra/754","\frac{1}{2 - x}","Hendrycks MATH test","intermediate_algebra",5
+"MATH_test_prealgebra_308","test/prealgebra/308"," 5","Hendrycks MATH test","prealgebra",4
+"MATH_test_algebra_693","test/algebra/693","288","Hendrycks MATH test","algebra",1
+"CHAMP_CHAMP_P_Number_Theory_27","CHAMP:P_Number-Theory_27","0","CHAMP existing formal set","Number-Theory",
+"MATH_test_prealgebra_203","test/prealgebra/203","1","Hendrycks MATH test","prealgebra",2
+"MATH_test_prealgebra_39","test/prealgebra/39","41","Hendrycks MATH test","prealgebra",1
+"CHAMP_CHAMP_P_Polynomial_40","CHAMP:P_Polynomial_40","-3","CHAMP existing formal set","Polynomial",
+"MATH_test_prealgebra_423","test/prealgebra/423","24.1","Hendrycks MATH test","prealgebra",1
+"MATH_test_number_theory_329","test/number_theory/329","22","Hendrycks MATH test","number_theory",5
+"MATH_test_precalculus_36","test/precalculus/36","50^\circ","Hendrycks MATH test","precalculus",5
