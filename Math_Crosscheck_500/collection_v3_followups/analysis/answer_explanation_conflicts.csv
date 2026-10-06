@@ -1,0 +1,7 @@
+"task_id","question_order","condition","final_grade","grade_evidence"
+"math_v3:GSMPLUS_V1_02551:self_check",418,"self_check","incorrect","Final 90 but 30+90+3=123; arithmetic and explanation contradict final."
+"math_v3:GSMPLUS_V1_09302:self_check",290,"self_check","incorrect","Final 3; explanation states 26-3=3, but key is 23."
+"math_v3:GSMPLUS_V1_04056:natural_crosscheck",168,"natural_crosscheck","correct","Final 144 dollars; explanation incorrectly says pair covers one paw, but numerical result and pairs calculation are correct."
+"math_v3:GSMPLUS_V1_04264:self_check",104,"self_check","correct","Final 25 years under frozen reading; earlier response derives 9 under another reading and unsupported search claim, so explanation conflict/ambiguity flagged."
+"math_v3:GSMPLUS_V1_01648:self_check",271,"self_check","correct","Final 98 score; text calls five counted scores four but equation and result are correct."
+"math_v3:GSMPLUS_V1_07455:natural_crosscheck",336,"natural_crosscheck","correct","Final 50; text first says a 50-year-old cannot have 20-year-old son, then correctly notes it is possible, so explanation conflict flagged."
