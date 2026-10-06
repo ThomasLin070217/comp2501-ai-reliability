@@ -1,0 +1,11 @@
+{
+  "old_sha256": "02d92576bb479eefa61d4466040d5b1366fc94c392e48529be2c9afc5b1cf5d7",
+  "new_sha256": "5c7d095ee5b7ff703df6ab661beed26db7b42d11c2645163431ca7bc01d70ac6",
+  "manifest_sha256": "1c83bd854b45814e279579bc2d226e6c42afa9e6427000ac6861212c7407b954",
+  "review_sha256": "8f860189f365a906838f61c699843ab47587b8c77b5b72b43380a838b9b0f2b5",
+  "verified_manifest_file_hashes": 11,
+  "unchanged_cells": 996,
+  "changed_cells": 4,
+  "comparability": "Supplemented MiniMax 500 is mixed-protocol: three cells disabled native search and one also changed the user prompt. Retain prior 496 view.",
+  "limitation": "Four provided fact reference keys were not independently re-researched here."
+}
