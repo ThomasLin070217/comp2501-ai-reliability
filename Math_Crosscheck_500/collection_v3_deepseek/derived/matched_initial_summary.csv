@@ -1,0 +1,4 @@
+"view","question_cells","minimax_correct","minimax_incorrect","deepseek_correct","deepseek_incorrect","both_incorrect","mini_wrong_deep_right","mini_right_deep_wrong"
+"all_500",500,479,17,496,2,0,17,2
+"common_scorable_frozen_key",496,479,17,494,2,0,17,2
+"common_scorable_exclude_posthoc_ambiguous_12",495,478,17,494,1,0,17,1

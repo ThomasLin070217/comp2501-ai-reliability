@@ -1,0 +1,8 @@
+{
+  "minimax_score_sha256": "d2c901b903b22cb9b160d093fa347460e13a31e67840288109717b6e003b23cf",
+  "deepseek_score_sha256": "27e6341dbf909d02002f419b91ca4b6a4b75bd9b868119ca662deb2c07aa65eb",
+  "rows": 500,
+  "common_scorable": 496,
+  "same_id_order_and_question": true,
+  "note": "MiniMax and DeepSeek are independent initials; no cross-check effect is measured here."
+}

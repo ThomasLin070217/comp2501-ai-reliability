@@ -15,4 +15,14 @@ Rscript Math_Crosscheck_500/collection_v3_deepseek/R/collect.R --pilot 2
 Rscript Math_Crosscheck_500/collection_v3_deepseek/R/collect.R
 ```
 
-The two-task pilot returned two complete HTTP 200 `end_turn` answers with the expected `deepseek-v4-pro` model identity. It used no native searches and its provisional usage guard was ¥0.0138. Full collection then resumed from those same two tasks. **Receiving a reply is not a correctness judgment**: answer scoring and the matched MiniMax–DeepSeek baseline index come after collection, in R. Do not report an error rate from the collection status alone.
+The two-task pilot returned two complete HTTP 200 `end_turn` answers with the expected `deepseek-v4-pro` model identity. Full collection resumed from those same two tasks and ended with 500/500 complete answers, no unknown deliveries or empty outputs, and one native search call. The conservative usage guard reached ¥3.3991; the actual charge is unknown.
+
+The R grading workflow is:
+
+```sh
+Rscript Math_Crosscheck_500/collection_v3_deepseek/R/export_scoring_queue.R
+Rscript Math_Crosscheck_500/collection_v3_deepseek/R/adjudicate_initials.R
+Rscript Math_Crosscheck_500/collection_v3_deepseek/R/build_matched_baseline.R
+```
+
+The first script is a **screen**, not a semantic grade: the last number in a response can be a trailing irrelevant detail. All 45 screen/key discordances were read against the full answer; a fixed random 60 of the 455 screen-positive replies were audited. The frozen-key grade is 496 correct, 2 incorrect and 2 prompt-ambiguous, hence 2/498 wrong among scoreable answers. One of those two errors (question 12) has a plausible alternate commission interpretation. It remains wrong under the pre-existing key, while an exclusion sensitivity is explicitly tabulated. These are Codex-assisted judgments, not independent human grades or proof that every explanation is sound. The matched table joins the 500 identical questions answered independently by MiniMax and DeepSeek; it **does not itself measure a cross-check effect**. See `derived/` for raw-aligned grades, audit sample, exception notes, hashes and matched counts.

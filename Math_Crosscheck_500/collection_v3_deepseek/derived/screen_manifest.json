@@ -1,0 +1,10 @@
+{
+  "task_sha256": "550635fc917a064359237828df275bc76f8a439532e6d7707078be08d793cfc4",
+  "completed_sha256": "fab64c7d358dc9daeef93da9aeeb8fd061562fe50139071526ccf7131136b4bc",
+  "key_sha256": "a293a23e52cad88a2ab7366a41748bd638a5e538f9b64b438d88b9d7e4ea4fa1",
+  "records": 500,
+  "status_counts": {
+    "ok": 500
+  },
+  "note": "Numeric/abstention screen is a review queue, not final accuracy."
+}

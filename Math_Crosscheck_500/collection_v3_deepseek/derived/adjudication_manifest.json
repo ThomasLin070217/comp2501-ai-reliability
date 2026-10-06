@@ -1,0 +1,14 @@
+{
+  "input_sha256": "42adf41d711222bd734f3eb1349e5d13dcf27e933dc9d3b3ed4413c012b80264",
+  "output_sha256": "27e6341dbf909d02002f419b91ca4b6a4b75bd9b868119ca662deb2c07aa65eb",
+  "grade_counts": {
+    "correct": 496,
+    "incorrect": 2,
+    "unscorable_prompt_ambiguous": 2
+  },
+  "screen_positive": 455,
+  "sampled_positive": 60,
+  "reviewed_discordances": 45,
+  "post_hoc_ambiguity_sensitivity_order": 12,
+  "note": "Numerical screen is not a proof of every explanation. The primary grade follows the frozen key; order 12 is a sensitivity exclusion."
+}

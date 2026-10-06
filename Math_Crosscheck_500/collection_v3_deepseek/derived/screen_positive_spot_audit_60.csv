@@ -1,0 +1,788 @@
+"eval_id","question_order","model_response","reference_answer_used","grade"
+"GSMPLUS_V1_05272",8,"Let's break this down step by step.
+
+1. **Rice cooking time** = 30 minutes.
+
+2. **Pork cooking time** = rice + 20 minutes = 30 + 20 = 50 minutes.
+
+3. **Beans cooking time** = half the combined cooking time of pork and rice.
+
+   Combined pork + rice = 50 + 30 = 80 minutes.  
+   Half of that = 80 ÷ 2 = 40 minutes.
+
+4. **Total cooking time** = rice + pork + beans = 30 + 50 + 40 = **120 minutes**.
+
+So, it took **120 minutes** to cook all the food.",120,"correct"
+"GSMPLUS_V1_01855",66,"Let's break this down step by step.
+
+**Monday:**
+- Robert collects 20 shells.
+- Kylie collects 5 more than Robert: 20 + 5 = **25 shells**.
+
+**Tuesday:**
+- Kylie collects twice as many as she did on Monday: 25 × 2 = **50 shells**.
+
+**Answer:** Kylie collects **50 shells** on Tuesday.",50,"correct"
+"GSMPLUS_V1_04896",65,"Let me break this down step by step.
+
+**Step 1: Understand the timeline**
+- Initial funding: $100,000 for the first 5 months.
+- This means $100,000 total for 5 months, so $20,000 per month.
+
+**Step 2: How long did the research actually take?**
+- It took 10 times longer than 5 months.
+- 5 × 10 = 50 months total.
+
+**Step 3: Funding after the first 5 months**
+- The first 5 months: $20,000/month.
+- Every month after those first 5 (months 6 through 50) took 50% more funding per month.
+- 50% more than $20,000 = $20,000 × 1.5 = $30,000/month.
+
+**Step 4: Calculate total cost**
+- First 5 months: 5 × $20,000 = $100,000
+- Remaining months: 50 − 5 = 45 months
+- 45 × $30,000 = $1,350,000
+
+**Step 5: Total**
+- $100,000 + $1,350,000 = **$1,450,000**
+
+**Answer:** His research cost **$1,450,000**.",1450000,"correct"
+"GSMPLUS_V1_08278",53,"Ted spends:
+
+- Books: 3 × $16 = $48
+- Pencils: 3 × $6 = $18
+
+Total spent = $48 + $18 = **$66**",66,"correct"
+"GSMPLUS_V1_05478",35,"Let me solve this step by step.
+
+- Total time available: **30 minutes**
+- Time spent walking to the library: **6 minutes**
+- Time spent walking to the fire station: **13 minutes**
+
+Total time spent so far: 6 + 13 = **19 minutes**
+
+Time left: 30 − 19 = **11 minutes**
+
+**Answer: 11 minutes**",11,"correct"
+"GSMPLUS_V1_00119",19,"Let's solve this step by step.
+
+**Step 1: Contemporary dance students**
+- 20% of 20 students = 0.20 × 20 = **4 students**
+
+**Step 2: Remaining students**
+- 20 − 4 = **16 students**
+
+**Step 3: Jazz dance students**
+- 25% of the remaining 16 = 0.25 × 16 = **4 students**
+
+**Step 4: Hip-hop dance students**
+- Remaining after contemporary and jazz = 16 − 4 = **12 students**
+
+**Step 5: Percentage of entire class in hip-hop**
+- 12 out of 20 = 12 ÷ 20 = 0.60 = **60%**
+
+**Answer:** 60% of the entire students enrolled in hip-hop dance.",60,"correct"
+"GSMPLUS_V1_00952",70,"The first day had **2 containers × 5 vehicles = 10 vehicles**.
+
+The total became **30 vehicles**, so the second day added:
+
+**30 − 10 = 20 vehicles**
+
+Since each container holds 5 vehicles:
+
+**20 ÷ 5 = 4 containers**
+
+So, **4 containers** were imported on the second day.",4,"correct"
+"GSMPLUS_V1_04751",24,"The beanstalk starts at 4 feet and doubles every day. Mark's window is 20 feet off the ground.
+
+- Day 0: 4 feet
+- Day 1: 8 feet
+- Day 2: 16 feet
+- Day 3: 32 feet
+
+After 3 days, the beanstalk is 32 feet tall, which is taller than 20 feet.
+
+**Answer: 3 days**
+
+(Note: The sunflower information doesn't affect this answer.)",3,"correct"
+"GSMPLUS_V1_05064",4,"Let me solve this step by step.
+
+- Snowflake stamps: 16
+- Truck stamps: 16 + 3 = 19
+- Rose stamps: 19 - 9 = 10
+
+Total: 16 + 19 + 10 = **45 stamps**",45,"correct"
+"GSMPLUS_V1_02008",45,"Let's solve this step by step.
+
+**Total students:** 3 classes × 20 students = 60 students
+
+**School is 50% boys, 50% girls:**  
+- Girls = 30  
+- Boys = 30
+
+**Girls in first class:** 15  
+**Girls in second class:** 12  
+**Girls in third class:** 30 − 15 − 12 = 3
+
+**Students in third class:** 20  
+**Boys in third class:** 20 − 3 = 17
+
+**Answer:** 17 boys",17,"correct"
+"GSMPLUS_V1_08327",56,"Let's solve this step by step.
+
+**Monday:** 425 letters.
+
+**Tuesday:** 17 more than one-fifth of Monday.
+
+- One-fifth of Monday: 425 ÷ 5 = 85
+- Tuesday: 85 + 17 = 102 letters.
+
+**Wednesday:** 5 more than twice as many as Tuesday.
+
+- Twice Tuesday: 102 × 2 = 204
+- Wednesday: 204 + 5 = 209 letters.
+
+**Total Monday–Wednesday:**
+
+425 + 102 + 209 = **736 letters**.",736,"correct"
+"GSMPLUS_V1_06751",62,"Let me solve this step by step.
+
+**Starting money:**
+- Craig has 2 twenty-dollar bills = 2 × $20 = **$40**
+
+**Spending:**
+- 6 squirt guns at $2 each = 6 × $2 = $12
+- 3 packs of water balloons at $3 each = 3 × $3 = $9
+- Total spending = $12 + $9 = **$21**
+
+**Coupon:**
+- The $3 coupon is expired, so it cannot be used.
+
+**Money left:**
+- $40 − $21 = **$19**
+
+Craig has **$19 left**.",19,"correct"
+"GSMPLUS_V1_06311",6,"John needs $100 more.
+
+Here's the breakdown:
+
+- Trip cost: $300
+- School covers half: $300 ÷ 2 = $150
+- John's share: $300 - $150 = $150
+- John already has: $50
+- Amount missing: $150 - $50 = **$100**",100,"correct"
+"GSMPLUS_V1_02423",274,"Let's work through this step by step.
+
+1. Annika started with **$50**.
+2. She spent **half of it** on food and snacks:  
+   $50 ÷ 2 = **$25** spent.
+3. She spent an additional **$10** on rides:  
+   $25 + $10 = **$35** total spent.
+4. Money left:  
+   $50 − $35 = **$15**.
+
+She didn't buy the $50 dress, so no additional money was spent.
+
+**Annika has $15 left.**",15,"correct"
+"GSMPLUS_V1_05912",201,"Let's solve this step by step.
+
+- Clara has 20 books.
+- Clara has two times as many books as Steven, so Steven has 20 ÷ 2 = **10 books**.
+- Alice has 6 more books than Steven, so Alice has 10 + 6 = **16 books**.
+
+Now, how many more books does Clara have than Alice?
+
+20 − 16 = **4 books**.
+
+**Answer: 4 books**",4,"correct"
+"GSMPLUS_V1_05742",435,"6 pencils × $0.50 = $3.00  
+8 erasers × $0.25 = $2.00  
+
+Total cost = $3.00 + $2.00 = $5.00  
+
+Change from $10 = $10.00 − $5.00 = **$5.00**",5,"correct"
+"GSMPLUS_V1_10494",218,"Let me solve this step by step.
+
+1. **Requirement**: 3 feet of rope for every foot of dock
+2. **Dock length**: 200 feet
+3. **Total rope needed**: 200 × 3 = 600 feet
+4. **Already has**: 6 feet
+5. **Needs to acquire**: 600 − 6 = 594 feet
+
+The supervisor needs to acquire **594 feet** of rope.",594,"correct"
+"GSMPLUS_V1_07871",346,"Let me work through this.
+
+- Sophie's boots are size 5.
+- Charlie's boots are five times the size of Sophie's: 5 × 5 = size 25.
+
+Average shoe size = (5 + 25) / 2 = 30 / 2 = **15**.
+
+The gloves and their $20 cost are irrelevant.
+
+**Answer: 15**",15,"correct"
+"GSMPLUS_V1_07583",236,"Let's break this down step by step:
+
+1. Jasmine starts with **15 stickers**.
+2. She lost **7 stickers** during playtime:  
+   15 − 7 = **8 stickers** left.
+3. Her teacher gave her another **5 stickers**:  
+   8 + 5 = **13 stickers**.
+
+(The detail about 7 being animal images doesn't change the total count.)
+
+**Jasmine has 13 stickers at the end.**",13,"correct"
+"GSMPLUS_V1_07782",191,"Let's work through this step by step.
+
+1. **Total boxes purchased:** 1 dozen = 12 boxes.
+2. **Boxes gifted:**
+   - Mother: 2 boxes
+   - Sibling: 2 boxes
+   - Total gifted: 4 boxes
+3. **Boxes remaining after gifts:** 12 − 4 = 8 boxes.
+4. **Oranges remaining:** 8 boxes × 20 oranges = 160 oranges.
+5. **Kept for herself:** a quarter of 160 = 40 oranges.
+6. **Sold:** 160 − 40 = 120 oranges.
+
+**Mrs. Harrington sold 120 oranges.**",120,"correct"
+"GSMPLUS_V1_03966",415,"Charisma works 8 hours a day, and she takes a 5-minute walk every hour.
+
+So each day, she walks: 8 × 5 = 40 minutes.
+
+Over 5 days, she walks: 40 × 5 = **200 minutes**.",200,"correct"
+"GSMPLUS_V1_07703",405,"Let me break this down.
+
+- Supplies cost: $400
+- Tickets cost 50% more than supplies: 50% of $400 = $200, so tickets = $400 + $200 = $600
+- The souvenirs ($50) were given up, so they don't count.
+
+**Total travel cost = supplies + tickets = $400 + $600 = $1,000**
+
+So the travel costs **$1,000**.",1000,"correct"
+"GSMPLUS_V1_06191",328,"Anthony started with 50 pencils.
+
+1. He gave **1/2** to Brandon:  
+   50 × 1/2 = 25 pencils given away  
+   Remaining: 50 − 25 = **25 pencils**
+
+2. He gave **3/5** of the remaining pencils to Charlie:  
+   25 × 3/5 = 15 pencils given away  
+   Remaining: 25 − 15 = **10 pencils**
+
+Anthony kept **10 pencils**.",10,"correct"
+"GSMPLUS_V1_05303",146,"Let's work through Gus's spending.
+
+- 2 bags of chips at $2 each = $4
+- Bucket of fried chicken = $8
+- Bottle of soda = $1
+- Apple pie = ?
+
+Total spent = $20
+
+So: $4 + $8 + $1 + pie = $20
+
+$13 + pie = $20
+
+Pie = $7
+
+The $10 he finds on the way home doesn't affect the cost of the pie.
+
+**The apple pie costs $7.**",7,"correct"
+"GSMPLUS_V1_05088",282,"Let's work through this step by step.
+
+**Total cost:** $60  
+**Total classes:** 10  
+**Cost per class if he attends all:** $60 ÷ 10 = $6 per class
+
+His parents won't sign him up again if the cost ends up being **more than $10 per class**.
+
+So we need to find how many classes he can miss while keeping the cost per class at or below $10.
+
+If he misses classes, the cost per class is:
+
+$60 ÷ (number of classes attended)
+
+We need:
+
+$60 ÷ (classes attended) ≤ $10
+
+That means:
+
+classes attended ≥ $60 ÷ $10 = 6
+
+So he must attend **at least 6 classes** to keep the cost at or below $10 per class.
+
+If there are 10 total classes and he must attend at least 6, he can miss:
+
+10 − 6 = **4 classes**
+
+**Answer:** He can miss up to **4 classes** before his parents won't sign him up again.",4,"correct"
+"GSMPLUS_V1_07223",219,"William bought:
+
+- 5 notebooks × $1.50 = $7.50
+- 1 ballpen = $0.50
+
+Total = $7.50 + $0.50 = **$8.00**
+
+The $2 coupon was expired, so he couldn't use it.
+
+**William spent $8.00 in all.**",8,"correct"
+"GSMPLUS_V1_10376",126,"Let me calculate the total step by step.
+
+**Ellen:**
+- Leggings: $100
+- Photo frame: $5
+- Ellen's total: $100 + $5 = **$105**
+
+**Lani:**
+- Sunglasses: $30
+- Two bathrobes at $100 each: 2 × $100 = $200
+- Lani's total: $30 + $200 = **$230**
+
+**Total spent:**
+$105 + $230 = **$335**
+
+They spent **$335** in all.",335,"correct"
+"GSMPLUS_V1_06663",160,"Let me work through this step by step.
+
+**Eva:**
+- Eva has saved $20.00 after buying a $1.00 candy bar.
+- So before buying the candy bar, Eva had $20.00 + $1.00 = $21.00.
+
+**Anthony:**
+- Anthony has saved $10.00 more than Eva, despite lending $2.00 to a friend.
+- Anthony's saved amount = Eva's saved amount + $10.00 = $20.00 + $10.00 = $30.00.
+- (The $2.00 lent to a friend is already accounted for in ""despite lending"" — meaning his saved amount is $30.00 even after lending.)
+
+**Roy:**
+- Roy has saved 40% more than Anthony, even after spending $5.00 on a comic book.
+- 40% more than Anthony's $30.00 = $30.00 × 1.40 = $42.00.
+- This is Roy's amount after spending $5.00, so Roy currently has **$42.00**.
+
+**Answer: Roy has $42.00.**",42,"correct"
+"GSMPLUS_V1_06799",441,"The farmer has 900 eggs, and each tray holds 30 eggs.
+
+Number of trays = 900 ÷ 30 = **30 trays**
+
+Price per tray = $2.5
+
+Total earnings = 30 × $2.5 = **$75**
+
+The farmer will earn **$75**. (The apples don't affect the answer since he's not selling them today.)",75,"correct"
+"GSMPLUS_V1_08967",149,"Let's solve this step by step.
+
+1. **Distance one way**: 2 hours × 70 mph = **140 miles**
+
+2. **Round trip**: 140 × 2 = **280 miles per visit**
+
+3. **Visits per month**: 2 visits
+
+4. **Total miles per month**: 280 × 2 = **560 miles**
+
+**John drives 560 miles a month visiting his parents.**",560,"correct"
+"GSMPLUS_V1_00232",409,"Let me solve this step by step.
+
+- Total trip: 60 miles
+- First stop: after 20 miles
+- Second stop: 15 miles before the end, so at 60 − 15 = 45 miles
+
+Distance between first and second stops:
+
+45 − 20 = **25 miles**",25,"correct"
+"GSMPLUS_V1_00182",230,"Let's break it down:
+
+- **First 3 clients**: each buys 1 DVD → 3 × 1 = **3 DVDs**
+- **Next 2 clients**: each buys 2 DVDs → 2 × 2 = **4 DVDs**
+- **Last 3 clients**: buy 0 DVDs → **0 DVDs**
+
+Total DVDs sold: **3 + 4 + 0 = 7 DVDs**
+
+**Answer: 7 DVDs**",7,"correct"
+"GSMPLUS_V1_03879",193,"Let me solve this step by step.
+
+**Step 1: Find how many oranges Stetson ate.**
+They picked 60 oranges, and Stetson ate 2/5 of them:
+
+2/5 × 60 = 24 oranges
+
+**Step 2: Calculate the money for oranges.**
+Stetson gives up $10 per orange:
+
+24 × $10 = $240
+
+**Step 3: Apples.**
+He ate no apples, so $0 from apples.
+
+**Total money given up: $240.**
+
+Stetson gave up **$240**.",240,"correct"
+"GSMPLUS_V1_00424",112,"Let me solve this step by step.
+
+1. **Weight from comic books:** Each comic book weighs 1/4 pound. Removing 30 comic books removes:
+   - 30 × 1/4 = 30/4 = 7.5 pounds
+
+2. **Remaining weight to remove:** He needs to remove 15 pounds total.
+   - 15 − 7.5 = 7.5 pounds left to remove
+
+3. **Weight from toys:** Each toy weighs 1/2 pound. To remove 7.5 pounds:
+   - 7.5 ÷ 1/2 = 7.5 × 2 = 15 toys
+
+**Answer: Uriah needs to remove 15 toys.**",15,"correct"
+"GSMPLUS_V1_05439",497,"Let's break this down.
+
+**Step 1: Find hash browns per potato**
+
+6 potatoes → 36 hash browns  
+So 1 potato → 36 ÷ 6 = **6 hash browns**
+
+**Step 2: Calculate hash browns from 96 potatoes**
+
+96 potatoes × 6 hash browns per potato = **576 hash browns**
+
+The french fries info is irrelevant to this question.
+
+**Answer: 576 hash browns**",576,"correct"
+"GSMPLUS_V1_10232",348,"Let's solve this step by step.
+
+**Step 1: Find the total seashells found.**
+- Tom: 214
+- Nancy: 432
+- Benny: 86
+
+214 + 432 + 86 = 732 seashells
+
+**Step 2: Subtract the cracked seashells.**
+- Cracked: 67
+
+732 − 67 = 665
+
+**Answer:** They found **665 good seashells** together.",665,"correct"
+"GSMPLUS_V1_08599",130,"Let's break this down:
+
+- Teddy has three 500-piece puzzles, so each puzzle has 500 pieces.
+- In one hour, he places:
+  1. Half the pieces of one puzzle: 500 ÷ 2 = 250 pieces
+  2. All the pieces of another puzzle: 500 pieces
+
+Total pieces placed = 250 + 500 = **750 pieces**.",750,"correct"
+"GSMPLUS_V1_09856",416,"The mean is the sum of all scores divided by the number of scores.
+
+**Step 1: Add the scores**
+
+50 + 80 + 80 + 60 + 40 + 90 + 100 + 70 + 60 = 630
+
+**Step 2: Count the scores**
+
+There are 9 scores.
+
+**Step 3: Divide**
+
+630 ÷ 9 = 70
+
+**Answer:** Sally's mean score is **70**.",70,"correct"
+"GSMPLUS_V1_00479",206,"There are **6 clusters × 20 raspberries = 120 raspberries**, plus **67 individual raspberries**.
+
+120 + 67 = **187 raspberries** total.
+
+(The strawberries don't count toward the raspberry total.)",187,"correct"
+"GSMPLUS_V1_08494",153,"Let's solve this step by step.
+
+Let:
+- **B** = time Betsy spent (in minutes)
+- **D** = time Donovan spent (in minutes)
+
+From the problem:
+
+1. **B = D + 18** (Betsy spent 18 minutes more than Donovan)
+2. **B + D = 98** (total time spent)
+
+Substitute the first equation into the second:
+
+**(D + 18) + D = 98**
+
+**2D + 18 = 98**
+
+**2D = 80**
+
+**D = 40**
+
+Now find Betsy's time:
+
+**B = D + 18 = 40 + 18 = 58**
+
+**Answer: Betsy's contribution was 58 minutes.**",58,"correct"
+"GSMPLUS_V1_03062",464,"Let me calculate this step by step.
+
+**Axel:**
+- Silver pesos: 50
+- Gold pesos: 80
+- Total: 50 + 80 = 130 pesos
+
+**Anna:**
+- Silver pesos: double Axel's = 2 × 50 = 100
+- Gold pesos: 40 more than Axel = 80 + 40 = 120
+- Total: 100 + 120 = 220 pesos
+
+**Combined total:**
+130 + 220 = **350 pesos**
+
+They both hold a combined total of **350 pesos**.",350,"correct"
+"GSMPLUS_V1_07086",179,"Let's work through this:
+
+- **Tuesday**: 125 chimichangas
+- **Wednesday**: 125 chimichangas
+- **Friday**: double Wednesday's output = 2 × 125 = 250 chimichangas
+
+Total = 125 + 125 + 250 = **500 chimichangas**",500,"correct"
+"GSMPLUS_V1_02182",225,"Let me calculate the total cost and change.
+
+Cocoa: $4.20  
+Laundry detergent: $9.45  
+Pasta: $1.35  
+
+Total = $4.20 + $9.45 + $1.35 = $15.00
+
+Change = $20.00 − $15.00 = **$5.00**
+
+The store clerk returns **$5.00** as change.",5,"correct"
+"GSMPLUS_V1_06928",434,"Let's solve this step by step.
+
+1. **Red cars:** 12
+2. **Green cars:** 2 fewer than red = 12 − 2 = 10
+3. **Blue cars:** 3 times the green cars = 3 × 10 = 30
+4. **Total so far (red + green + blue):** 12 + 10 + 30 = 52
+
+The rink has 75 cars total, so:
+
+**Yellow cars:** 75 − 52 = 23
+
+The rink has **23 yellow cars**.",23,"correct"
+"GSMPLUS_V1_01758",161,"Let's work through this step by step.
+
+**Naomi's score** = 68 points.
+
+**Yuri's score** = half of Naomi's score + 10  
+Half of 68 = 34  
+34 + 10 = **44 points**.
+
+**Brianna's score** = Naomi's score + 17  
+68 + 17 = **85 points**.
+
+**Total so far** (Naomi + Yuri + Brianna):  
+68 + 44 + 85 = **197 points**.
+
+**Combined total** = 251 points.
+
+**Jojo's score** = 251 − 197 = **54 points**.
+
+So, Jojo scored **54 points**. ✅",54,"correct"
+"GSMPLUS_V1_09031",465,"Let's work through this step by step.
+
+- Liam is **16 years old now**.
+- Two years ago, Liam was **14 years old**.
+- Two years ago, Liam's age was **twice Vince's age**.
+
+So two years ago, Vince was:
+
+14 ÷ 2 = **7 years old**
+
+Now, two years later, Vince is:
+
+7 + 2 = **9 years old**
+
+**Answer: Vince is 9 years old now.**",9,"correct"
+"GSMPLUS_V1_07855",478,"Let's break this down step by step.
+
+**Thursday:**
+- Crawfish: 3 pounds
+- Crab: 5 pounds
+
+**Friday:** 4 times as much of each species
+- Crawfish: 3 × 4 = 12 pounds
+- Crab: 5 × 4 = 20 pounds
+
+**Saturday:** half as much of each species as Friday
+- Crawfish: 12 ÷ 2 = 6 pounds
+- Crab: 20 ÷ 2 = 10 pounds
+
+**Total crawfish:**
+3 + 12 + 6 = 21 pounds
+
+**Servings of crawfish** (1 serving = 3 pounds):
+21 ÷ 3 = **7 servings**
+
+So Joe has **7 servings** of crawfish.",7,"correct"
+"GSMPLUS_V1_02175",471,"Let me calculate this step by step.
+
+**Per house:**
+- 3 bedrooms × 2 windows each = 6 windows in bedrooms
+- Plus 4 additional windows = 6 + 4 = 10 windows per house
+
+**For 2 houses:**
+- 10 windows × 2 houses = **20 total windows**
+
+There are **20 total windows** between the houses.",20,"correct"
+"GSMPLUS_V1_10310",199,"Let me calculate this step by step.
+
+**Meditation:**
+- 15 minutes in the morning + 15 minutes at night = 30 minutes per day
+- Over 4 weeks (28 days): 30 × 28 = 840 minutes
+
+**Yoga:**
+- 1 hour = 60 minutes, 5 times per week
+- Per week: 60 × 5 = 300 minutes
+- Over 4 weeks: 300 × 4 = 1,200 minutes
+
+**Total:**
+- 840 + 1,200 = 2,040 minutes
+
+That's 2,040 minutes, which equals **34 hours** over the four-week period.",34,"correct"
+"GSMPLUS_V1_03111",195,"James delivers 66 messages to Ms. Thompson.
+
+To Mr. Yu, he delivers 1/3 as many as to Ms. Thompson:
+66 ÷ 3 = 22 messages
+
+Total messages:
+66 + 22 = **88 messages**",88,"correct"
+"GSMPLUS_V1_02927",260,"Let's solve this step by step.
+
+1. **Girls**: 6
+2. **Boys**: twice as many as girls → 6 × 2 = 12
+3. **Kids** (boys + girls): 12 + 6 = **18**
+
+**Answer: 18 kids**",18,"correct"
+"GSMPLUS_V1_10047",188,"Let's break this down step by step.
+
+**Water needs:**
+
+- 4 plants need **half a cup** each:  
+  4 × ½ = **2 cups**
+
+- 8 plants need **1 cup** each:  
+  8 × 1 = **8 cups**
+
+- The rest of the plants:  
+  Total plants = 20  
+  Plants already accounted for = 4 + 8 = 12  
+  Remaining = 20 − 12 = **8 plants**
+
+- Those 8 plants need **a quarter cup** each:  
+  8 × ¼ = **2 cups**
+
+**Total water:**
+
+2 + 8 + 2 = **12 cups**
+
+Crista needs **12 cups of water** every day for her plants.",12,"correct"
+"GSMPLUS_V1_05334",492,"Let's work through this step by step.
+
+**1. Kassidy's money**  
+Kassidy has 3/4 of Aurelia's $120:  
+3/4 × 120 = 90  
+Kassidy has **$90**.
+
+**2. Rayna's money**  
+Rayna has $60 more than Kassidy:  
+90 + 60 = 150  
+Rayna has **$150**.
+
+**3. Total pooled money**  
+120 + 90 + 150 = **$360**
+
+**4. Distributed evenly among 3 people**  
+360 ÷ 3 = **$120**
+
+Each person would receive **$120**.",120,"correct"
+"GSMPLUS_V1_10327",338,"Let's solve this step by step.
+
+**1. Small sunflower seeds:**
+- 1 dozen = 12 seeds
+- 3 dozen = 3 × 12 = **36 seeds**
+
+**2. Large sunflower seeds:**
+- 50% more than small = 36 × 1.5 = **54 seeds**
+
+**3. Total seeds:**
+- 36 + 54 = **90 seeds**
+
+The light absorption information doesn't affect the seed count.
+
+**Answer: 90 sunflower seeds altogether.**",90,"correct"
+"GSMPLUS_V1_00054",255,"Let's work through this step by step.
+
+- **Seattle**: 20 sheep
+- **Charleston**: 4 × Seattle = 4 × 20 = **80 sheep**
+- **Toulouse**: 2 × Charleston = 2 × 80 = **160 sheep**
+
+**Total** = 20 + 80 + 160 = **260 sheep**",260,"correct"
+"GSMPLUS_V1_09496",350,"Sam ran:
+
+- **Monday, Wednesday, Friday:** 3 days × 3 miles = 9 miles
+- **Tuesday, Thursday:** 2 days × 5 miles = 10 miles
+
+**Total:** 9 + 10 = **19 miles**",19,"correct"
+"GSMPLUS_V1_08904",128,"Let's solve this step by step.
+
+**Total apples:** 12 kg
+
+- **Peter (Pierre)** wants a quarter:  
+  \( \frac{1}{4} \times 12 = 3 \) kg
+
+- **Paul** wants a third:  
+  \( \frac{1}{3} \times 12 = 4 \) kg
+
+**Total taken by Pierre and Paul:**  
+\( 3 + 4 = 7 \) kg
+
+**Left for Jacques (James):**  
+\( 12 - 7 = 5 \) kg
+
+**Answer:** James will have **5 kg** of apples left.",5,"correct"
+"GSMPLUS_V1_10406",485,"Let me calculate this step by step.
+
+**Days open per week:**
+- Josh is closed on Sunday and Wednesday.
+- So he works: Monday, Tuesday, Thursday, Friday, Saturday = **5 days per week**.
+
+**Cars serviced daily:** 3 vehicles
+
+**Earnings per car:** $4
+
+**Daily earnings:** 3 × $4 = $12
+
+**Weekly earnings:** 5 days × $12 = $60
+
+**Two-week earnings:** 2 × $60 = **$120**
+
+Josh earns **$120** over a period of two weeks.",120,"correct"
+"GSMPLUS_V1_09207",315,"Let's solve this step by step:
+
+1. Patricia starts with **30 roses**.
+2. She gives **24 roses** to her mother:  
+   30 − 24 = **6 roses** left.
+3. She sees 50 tulips but **doesn't pick any**, so no change.
+4. She buys **15 more roses**:  
+   6 + 15 = **21 roses**.
+
+**Patricia now has 21 roses.**",21,"correct"
+"GSMPLUS_V1_05630",391,"Let me solve this step by step.
+
+**Step 1: Figure out the number of people.**
+
+- Larry + 7 other males = 8 males total
+- 6 females
+
+**Step 2: Dumplings per person.**
+
+- Each female had 3 dumplings.
+- Each male had one more than each female, so each male had 4 dumplings.
+
+**Step 3: Calculate total dumplings.**
+
+- Males: 8 × 4 = 32
+- Females: 6 × 3 = 18
+
+**Step 4: Add them together.**
+
+32 + 18 = 50
+
+**Answer:** Larry made **50 dumplings**.",50,"correct"
