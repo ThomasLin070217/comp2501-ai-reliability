@@ -1,0 +1,16 @@
+{
+  "input_files": [
+    "Night_Audit_2026-10-06/derived/fact_direct_supplement_resumed_summary.csv",
+    "Night_Audit_2026-10-06/derived/fact_last_four/source_separated_counts.csv",
+    "Math_Crosscheck_500/collection_v3_followups/analysis/paired_common_scorable.csv",
+    "Math_Crosscheck_500/collection_v3_human_first/derived/deepseek_first_prompt_pairs_50.csv"
+  ],
+  "input_sha256": {
+    "Night_Audit_2026-10-06/derived/fact_direct_supplement_resumed_summary.csv": "c40976cf08cc1fc702b5c9e4edb6feedb66caae85d559ca242b1ce4d2f032b46",
+    "Night_Audit_2026-10-06/derived/fact_last_four/source_separated_counts.csv": "b7d186923e8419cc2561d29fa9f7d5d0d093da0ba41fb17c1507ac8415648ee8",
+    "Math_Crosscheck_500/collection_v3_followups/analysis/paired_common_scorable.csv": "b87f9433c8b25a76f28fa4bb16d689fbea8b6878e5c0f3e317888589309800b7",
+    "Math_Crosscheck_500/collection_v3_human_first/derived/deepseek_first_prompt_pairs_50.csv": "e60fa3675d0b145e22edc0213d1b8b680fa2f59153a6726d7507ed0acece7a08"
+  },
+  "rows": 11,
+  "note": "Rows are protocol-specific. No across-version or across-domain pooled rate is estimated."
+}
