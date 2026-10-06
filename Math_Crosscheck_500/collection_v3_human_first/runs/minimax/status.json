@@ -1,0 +1,12 @@
+{
+  "state": "finished",
+  "updated_at": "2026-10-06T19:18:50Z",
+  "provider": "minimax",
+  "planned": 100,
+  "completed": 100,
+  "remaining": 0,
+  "http_attempts": 100,
+  "known_http_responses": 100,
+  "native_search_calls": 1,
+  "monetary_cost": "Not established; raw usage is retained."
+}

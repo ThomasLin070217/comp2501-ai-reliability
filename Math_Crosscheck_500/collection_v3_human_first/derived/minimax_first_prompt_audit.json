@@ -1,0 +1,10 @@
+{
+  "tasks_sha256": "ebe567bce2c8530e7bc86ba5655da4a6aefac507bd576b6750df881b2140519e",
+  "completed_sha256": "b34bdbc429111b42d06a01324aefb944ab9c06fb48fabfa718de373b8369f779",
+  "queue_sha256": "d8040bc2a131828cf3aca99f157b8a8aa57715a838be63daaafad59a67c3526c",
+  "key_sha256": "d2c901b903b22cb9b160d093fa347460e13a31e67840288109717b6e003b23cf",
+  "score_sha256": "92f2cfc09d1193c329692d0e488d4e04ff06ebc9539c2bbd6520a056b419a99f",
+  "pairs_sha256": "e7e74116115a9637c5e9e02581f09d1205a20bef2ce9e00692e901a307cd098f",
+  "summary_sha256": "4144275d87466c9a826eadca6774e50ce719680be5a87c4ea189fdd7606aa348",
+  "method": "All 100 full replies read by Codex; frozen-key score; wrong answer only numerator; ambiguous-question exclusion post-hoc; exact two-sided discordance test."
+}
