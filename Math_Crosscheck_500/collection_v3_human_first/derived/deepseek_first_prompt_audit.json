@@ -1,0 +1,7 @@
+{
+  "tasks_sha256": "ebe567bce2c8530e7bc86ba5655da4a6aefac507bd576b6750df881b2140519e",
+  "completed_sha256": "05eda8ec7bc1fcd47fcb23b79e9df97701d1e98d592d1f12c9f07e62fe0889a8",
+  "key_sha256": "27e6341dbf909d02002f419b91ca4b6a4b75bd9b868119ca662deb2c07aa65eb",
+  "score_sha256": "63f257ecb47b2793bf08641742d42636fefb6c300cda418c200873410046850b",
+  "note": "Codex-assisted scoring. Primary uses frozen key. Ambiguity exclusions are post-hoc and must be labelled."
+}
