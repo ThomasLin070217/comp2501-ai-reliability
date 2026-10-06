@@ -2,6 +2,8 @@
 
 **交叉检查之后，我们能更信任 AI 吗？**
 
+**最新复核与结论：[英文综合结论](docs/experiment-conclusions-2026-10-05.md) · [跨实验R复算结果](docs/cross_experiment_audit_2026-10-05.json) · [逐条评分核对](Human_Challenge_Followup/reports/full_audit_rows.csv)。** 当前两模型实验的2,323条记录已重新核对结果计数和自然配对错误率；新增156条连续对话回答的最终答案评分全部与原始响应一致。具体解释质量问题和不能推广的边界见综合结论。
+
 **2026-10-05 新补充：[正确初答受到错误人类质疑](Human_Challenge_Followup/README.md) · [英文结果](Human_Challenge_Followup/RESULTS.md) · [错误率柱状图](Human_Challenge_Followup/reports/error_rates.png)。** 39题、两个模型、78条已核实正确的初答，各分为中性复核与模拟人类错误质疑，共156条有效后续回答。错误率1/78→4/78，配对差+3.8个百分点，95%题簇区间[−1.3,+9.0]；四条错误质疑分支均采纳了给出的错误答案。它证明这种情况在样本中**确实发生**，但目前不能证明稳定的平均增错效应。新补充已单独存档，当前PPT/PDF尚未合入这一轮。
 
 [新版总体实验架构：完成项、缺口与两小时计划](docs/experiment-architecture-v2.md)。课堂动机是检验多模型cross-check是否值得额外信任。A自然交叉检查、B错误建议、C结构化核验均已完成；新版PPT/PDF已按新总标题和课堂开场改版。

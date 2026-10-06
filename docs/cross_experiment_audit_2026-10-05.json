@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "scope": "Current two-model completed-data semantic overlay and separately designed human-challenge follow-up; historical pilot cohorts are not pooled.",
+  "two_model": {
+    "facts": {
+      "domain": "facts",
+      "responses": 1591,
+      "grade_counts": {
+        "correct": 1274,
+        "incorrect": 215,
+        "abstain": 101,
+        "unscorable": 1
+      },
+      "matched_pairs": 394,
+      "independent_questions": 100,
+      "receiving_model_means": [
+        {
+          "model": "deepseek",
+          "self_error": 0.02,
+          "cross_error": 0.02
+        },
+        {
+          "model": "minimax",
+          "self_error": 0.445,
+          "cross_error": 0.08
+        }
+      ],
+      "equal_model_means": {
+        "self_error": 0.2325,
+        "cross_error": 0.05,
+        "difference": -0.1825
+      }
+    },
+    "math": {
+      "domain": "math",
+      "responses": 732,
+      "grade_counts": {
+        "correct": 677,
+        "incorrect": 50,
+        "abstain": 0,
+        "unscorable": 5
+      },
+      "matched_pairs": 164,
+      "independent_questions": 41,
+      "receiving_model_means": [
+        {
+          "model": "deepseek",
+          "self_error": 0.0244,
+          "cross_error": 0.0366
+        },
+        {
+          "model": "minimax",
+          "self_error": 0.1829,
+          "cross_error": 0.0732
+        }
+      ],
+      "equal_model_means": {
+        "self_error": 0.1037,
+        "cross_error": 0.0549,
+        "difference": -0.0488
+      }
+    }
+  },
+  "two_model_selected_responses": 2323,
+  "two_model_semantically_scorable": 2317,
+  "human_challenge_responses": 156,
+  "human_challenge_full_final_grade_agreement": 156
+}

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "selected": 156,
+  "raw_http_attempts": 158,
+  "false_targets_wrong": 39,
+  "questions": 39,
+  "correct_baselines_independent": 78,
+  "baseline_grade_counts": {
+    "correct": 156
+  },
+  "final_grades_agree": 156,
+  "final_grades_disagree": 0,
+  "final_grade_disagreement_ids": [],
+  "raw_text_and_search_counts_reconciled": true,
+  "native_search_calls": 19
+}
