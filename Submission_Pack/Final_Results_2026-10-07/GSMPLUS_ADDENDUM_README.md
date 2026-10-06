@@ -1,16 +1,18 @@
 # GSM-Plus v3 presentation addendum
 
 Updated 2026-10-07. The current deliverable is
-`output/COMP2501_presentation_FINAL_RESULTS_GSMPLUS_2026-10-07_v7.pptx`
+`output/COMP2501_presentation_FINAL_RESULTS_GSMPLUS_2026-10-07_v8.pptx`
 (30 slides). It extends the earlier 27-slide private-math/fact deck without
-overwriting the user-supplied template or the earlier finished copy.
+overwriting the user-supplied template or the earlier finished copies. The
+v7 deck remains available as a historical version.
 
-The new R result slides are 17–19:
+The GSM-Plus v3 result slides are 17–19. R-derived counts support the charts;
+slide 18 shows the two zero-event conditions in an editable table:
 
 | Slide | Cohort and condition | Checked result |
 |---|---|---|
 | 17 | GSM-Plus v3 MiniMax, common 495 scoreable questions | Initial 17/495 wrong, neutral self-check 9/495, natural cross-check using a real independent DeepSeek reply 4/495. Natural-minus-self 95% bootstrap interval is −2.22 to 0.00 percentage points. |
-| 18 | Separate selected 50-question GSM-Plus v3 test, MiniMax | Neutral self-check and researcher-scripted wrong AI peer both 0/50 wrong; false-target adoption 0/50. |
+| 18 | Separate selected 50-question GSM-Plus v3 test, MiniMax | Neutral self-check and researcher-scripted wrong AI peer both 50/50 correct and 0/50 wrong; scripted false-target adoption 0/50. |
 | 19 | Separate selected 50-question GSM-Plus v3 first-prompt test, fresh calls | DeepSeek neutral 0/50 wrong versus false premise 3/50; MiniMax 1/50 versus 5/50. MiniMax four paired correct-to-wrong changes, three direct false-target adoptions, exact paired p=0.125. Orders 86, 160 and 252 have post-hoc question-ambiguity sensitivity. |
 
 The final cover uses the user-approved title “Can We Trust AI More After
@@ -27,6 +29,16 @@ answers adopted the injected false target. This does not show successful
 persuasion by the simulated AI suggestion. The appendix now keeps the main
 same-question 66/488 to 42/488 comparison and lists technical truncations
 without juxtaposing nonmatching mixed-budget rates.
+
+Slide 22 answers the possibility question with a separate, older natural
+Polynomial 11 case. DeepSeek answered 20 initially and after self-check,
+received MiniMax's independently generated wrong answer 24, then changed its
+cross-check answer to 24. An independent R recurrence confirms 20. This is
+one verified correct-to-wrong case, not an estimate of how often it occurs.
+The new selected scripted GSM-Plus v3 wrong-peer test had 0/50 false-target
+adoptions. The two studies have different questions and conditions. The
+older case is documented in `Two_Model_Collection/reports/RESULTS_SUMMARY.md`
+and `Two_Model_Collection/R/summarize_results.R`.
 
 New figures were produced in R from graded CSVs, with input-value checks.
 The local authoring script is `R/render_gsmplus_v3_addendum.R`. Main sources are
