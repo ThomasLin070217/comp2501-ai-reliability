@@ -1,75 +1,93 @@
-# COMP2501 overnight execution plan
+# COMP2501 agent runbook: next tasks and morning handoff
 
-Prepared 6 October 2026, Asia/Shanghai. Work window: tonight through the morning report around 09:00 on 7 October. This is an execution checklist, not a statement that unfinished experiments have produced results.
+Updated 7 October 2026, Asia/Shanghai. This is the canonical to-do file for the overnight heartbeat. The live status is in [`overnight-progress-2026-10-06.md`](overnight-progress-2026-10-06.md); the status below is a snapshot, not a substitute for checking the files again. Aim to hand over an evidence-backed report around 09:00 on 7 October. If a step is blocked, finish independent work and report the block instead of inventing data.
 
-## Rules for every step
+## Start every agent run here
 
-- Read `AGENTS.md` and the full `CHAT_CONTEXT.md` before work. Use R for data cleaning, scoring, statistics, plots, and report exports. Preserve original prompts, responses, keys, failures, and hashes.
-- Keep the historical paired study, the new fact 500-question collection, the GSM-Plus mathematics v3 collection, and the UGMathBench candidate as separate datasets. Never pool different interfaces or question banks into one headline rate.
-- A response is an error only when its final answer is actually wrong. Report correct, incorrect, and explicit abstention separately. Exclude technical failure, unknown delivery, ambiguity, and unscorable text from the error-rate denominator, with their counts visible.
-- Before new model calls, verify the frozen bank, prompts, model identity, native search configuration, task IDs, quota, and recovery state. Stop on authentication, quota, or unknown-delivery errors. Do not retry because an answer is wrong. Do not persist credentials.
-- Other chats are editing this shared repository. Read their status and integrate completed outputs, but do not overwrite their working files or duplicate their requests. Commit only a reviewed set of files; never commit credentials, `node_modules`, or unrelated work.
-- Record each completed milestone in `docs/overnight-progress-2026-10-06.md`: time, input version/hash, operations, denominators, result, limitations, artifact paths, and Git commit if pushed. Mark an impediment instead of inventing a result.
+1. Read `AGENTS.md`, the **entire** `CHAT_CONTEXT.md`, this file, and the progress log. Inspect Git status and the current status/manifest files before editing or calling a model.
+2. Check whether another chat owns or is actively editing the same workstream. Reuse completed records; do not launch a duplicate collection or overwrite its files. Work in a distinct output directory and stage only reviewed files in Git.
+3. Pick the first **ready** unchecked task below. Record its input versions/hashes and a bounded next milestone. Skip tasks already complete. A stale `running` status is not proof of a live process; use logs and task records to decide.
+4. On each meaningful result, append to the progress log: local time, input version/hash, unique questions, task/pair denominator, correct/incorrect/abstain/technical counts, conclusion and limits, files, and pushed commit. Quiet checks do not need a message.
 
-## Current state at plan freeze
+### Non-negotiable rules
 
-| Workstream | State | Evidence / gate |
+- **All current data processing uses R:** cleaning, joins, answer scoring, statistics, bootstrap, figures, and report-data exports. Historical Python outputs remain for provenance, but must not be presented as the new R analysis. Other languages may lay out the PPT/PDF only after R has produced the numbers and charts.
+- Keep these datasets separate: historical paired experiments; the new fact 500 × 2 collection; GSM-Plus mathematics **v3**; and the separate UGMathBench/HKU candidate. Do not pool their response rows or model routes into one rate.
+- `N = correct + incorrect + explicit_abstain`. `error_rate = incorrect/N`; `noncorrect_rate = (incorrect + explicit_abstain)/N`. Show abstention separately. Technical failure, unknown delivery, prompt ambiguity, and unscorable response are neither wrong nor abstention and stay visible outside `N`. Correctly identifying an actually underdetermined question is **correct**, not abstention.
+- Make paired claims only on the same question × receiving model × repetition with both required conditions scoreable. Report unique questions separately from response or pair counts. Average repeated answers within question/model before model means; do not treat repeated calls as independent questions.
+- Do not force search in the prompt. Each model may choose its native web-search tool. Record whether it searched. Preserve full requests, native tool history, responses, stop reasons, parameters, usage, task IDs, and hashes. Retry only a documented technical failure under the frozen protocol, never an incorrect answer. Stop affected calls on 401/402/429 or unknown delivery; do not switch endpoint/model silently.
+- Keep API credentials and authorization links out of the repository, logs, slides, and user messages. Never stage another chat's unreviewed files, `node_modules`, or unrelated changes. Before a Feishu edit, use the personal profile and verify it with `lark-cli whoami --profile personal` as required by the global user instructions.
+
+## What each research question requires
+
+| Question | Primary evidence to produce | What it must not be confused with |
 | --- | --- | --- |
-| Historical paired self vs cross study | Done; supplementary mathematics recovery has a protocol change | `Two_Model_Collection/reports/RESULTS_SUMMARY.md` |
-| Human false-challenge follow-up | Done as a *post-answer* challenge, not a first-prompt misconception test | `Human_Challenge_Followup/RESULTS.md` |
-| Fact 500-question initial collection | Partial recovery and scoring in another active chat; the user's later instruction there resumed fact completion. MiniMax currently hits HTTP 402 | `Initial_Response_Accuracy_Evaluation/processed/selfcheck_recovery_2026-10-06/` and collection status logs |
-| GSM-Plus math v3 MiniMax initials | 500/500 collected; 496 scored, 17 incorrect | `Math_Crosscheck_500/collection_v3_minimax/` |
-| GSM-Plus math v3 DeepSeek initials | Not found; paired follow-ups not started | Gate: same v3 IDs and independent answers |
-| UGMathBench 500 candidate | Being constructed in another chat; no scored model run. Separate supplement until its source keys and protocol are frozen | `HKU_Undergrad_Math_100/benchmark_only_500/` |
-| Presentation and Feishu document | Framework/older results exist; latest experiment coverage not reconciled | `Submission_Pack/`, Feishu COMP2501 Presentation |
+| RQ1: Does double-checking decrease wrong-answer probability? | Same-baseline paired `initial`, neutral `self`, and natural `cross` final-answer counts and error rates, by facts vs math | A raw count of all API replies or a comparison on different question subsets |
+| RQ2: Which practical check works best? | On the common scorable set, compare initial/self/natural; report cost/coverage, abstention, and correctness separately | Claiming one method universally wins from a selected benchmark |
+| RQ3: Can a wrong AI peer introduce an error? | Natural initially-correct receiver + actually-wrong independent donor subgroup, plus a separately labelled controlled synthetic-wrong-peer branch; inspect each correct→wrong case | Calling scripted false material an actual DeepSeek reply or generalizing a single example into a population rate |
+| RQ4: Can a person's false preconceived idea mislead the **first** answer? | Fresh-conversation neutral first prompt vs first prompt containing a scripted false user interpretation, on the same question/model | The completed **post-answer** human-challenge study; no real human participants were recruited |
 
-## 1. Finish the available fact-data audit
+## Snapshot and ownership gate
 
-1. Freeze a read-only inventory of the original 1,000 cells and every recovery route. Reconcile the original 930 scoreable answers, the original-gateway recoveries, and the direct-endpoint recoveries by task ID and final response hash. Investigate any count disagreement between README files before publishing an updated total.
-2. Use R to grade all newly complete answers against the saved keys. Review ambiguous dates/names and every changed label against the raw response. Keep original-gateway and official-endpoint views separate because their tool execution may differ.
-3. Export R-ready per-cell data, coverage and status table, model/source counts, and numerator/denominator for error, accuracy, and abstention. For unresolved MiniMax tasks, report the 402 block and do not run new calls until a functioning quota is independently verified.
-4. Separately reconcile the neutral self-checks for newly recovered initially wrong answers. Do not turn a conditional wrong-answer follow-up into an all-question self-check rate.
+| Workstream | Current state | Agent action now |
+| --- | --- | --- |
+| Historical self vs cross and post-answer human challenge | Completed supplemental results in `Two_Model_Collection/reports/RESULTS_SUMMARY.md` and `Human_Challenge_Followup/RESULTS.md` | Preserve protocol/uncertainty limits; do not rerun |
+| New facts, 500 questions × two models | **Frozen at available responses** in `Initial_Response_Accuracy_Evaluation/processed/fact_frozen_2026-10-06/`: DeepSeek 500 scoreable, MiniMax 470 scoreable, 29 technical gaps and one unscorable; seven MiniMax replies used a separate official endpoint | R-verify the freeze and provenance; **no new fact calls** unless the user changes this freeze |
+| Fact recovery reconciliation | R overlay completed at `Night_Audit_2026-10-06/`; MiniMax direct endpoint stopped on HTTP 402 | Compare the R overlay with the new frozen snapshot; preserve original gateway-only and original 930-answer views |
+| GSM-Plus math v3 | MiniMax 500/500 collected, 479 correct, 17 wrong, two ambiguous prompts and two unscorable answers; DeepSeek matched v3 run not found | Prepare/check DeepSeek's same-question independent initial run; never substitute older v2 or CHAMP/MATH inputs |
+| Mathematics follow-ups | Self/natural/manipulated v3 branches not collected | Start only after the matched v3 baseline and materials pass their gates |
+| UGMathBench/HKU 500 candidate | A **separate** chat is revising it. The first 500 candidate failed key/solvability/difficulty review and is not ready for model collection | Do not use or edit that chat's working bank; it does not replace v3 without an explicit new paired design |
+| Presentation/Feishu/GitHub | Framework exists; current result coverage and Feishu text need reconciliation | Update only from validated R tables and after source files are available; verify pushed state |
 
-**Done when:** every available complete answer has a review label, technical/unknown tasks are explicit, both route-specific summaries reproduce from R, and the old frozen result is unchanged.
+## T1 — Verify and package the frozen facts **[IN REVIEW; offline ready]**
 
-## 2. Complete the matched mathematics initials
+**Inputs:** `Initial_Response_Accuracy_Evaluation/processed/fact_frozen_2026-10-06/`, raw collection logs, `Night_Audit_2026-10-06/`, and original-gateway score summaries.
 
-1. Use the already frozen GSM-Plus v3 bank for its existing 500 MiniMax initials. Validate the 500 IDs, key overlay, and 17/496 current error count from raw records.
-2. Check whether DeepSeek has already answered the identical v3 bank in another run. If not, prepare one independent fresh-conversation answer per v3 question, with the same user question and native optional search. Freeze task order/configuration and run a small technical preflight before full collection.
-3. Save each request, response, native tool history, stop reason, usage, and task ID. Recover only permitted technical failures; do not repeat a wrong answer. Score complete DeepSeek answers in R and generate the matched baseline index.
-4. Treat the concurrently developed 500-question UGMathBench bank as a separate candidate. It cannot replace the already collected v3 MiniMax half of a matched experiment without starting a new paired collection for both models.
+- [ ] In R, verify 1,000 unique question × model cells, 500 questions per model, source-route counts, selected raw-response hashes and grade keys. Independently recompute the frozen counts: DeepSeek `423/44/33` among 500; MiniMax `354/78/38` among 470, with 29 technical gaps and one unscorable. Investigate disagreement rather than editing the frozen source.
+- [ ] Rebuild a **canonical R-derived** cell/coverage/summary export from recorded raw answers and saved semantic decisions. Keep the original 930-answer view, the 963-complete original-gateway recovery, and the 970-complete mixed-route view as separately named artifacts. The existing Python-built freeze remains historical evidence, not the claimed R pipeline.
+- [ ] Reconcile neutral self-check outcomes separately: the first 112 initially wrong answers had 27 corrected, 79 still wrong, six abstentions; one newly recovered DeepSeek wrong answer had a separate self-check. Do not call `27/112` a whole-sample self-check error rate.
 
-**Done when:** both model initials are keyed to the same v3 questions and a reproducible R preflight confirms which pairs are usable. If quota or source quality blocks this, report the exact coverage rather than claiming 500 matched pairs.
+**Acceptance:** R rerun reproduces all counts and hashes, identifies each missing/unknown task, records key-review limits, and changes no source record. **Stop:** no new fact model calls under the current freeze, even if a quota later renews.
 
-## 3. Run the double-check branches
+## T2 — Obtain the matched GSM-Plus v3 math initials **[READY after preflight]**
 
-1. For every eligible MiniMax initial, branch from the same initial conversation into: (a) neutral self-check and (b) natural cross-check using DeepSeek's independently obtained actual answer. Do not label synthetic text as DeepSeek output.
-2. For MiniMax initially correct cases, construct a separate, clearly logged *synthetic* wrong peer answer and rationale. Verify the supplied target is false before calls, freeze all materials, then run the controlled misleading-peer branch.
-3. Keep the initial, donor, and final response IDs linked. Score all finals in R with correct/incorrect/abstain/technical states; inspect every correct-to-wrong transition against the raw text.
+**Inputs:** `Math_Crosscheck_500/question_review_v3/` and `collection_v3_minimax/`. The main follow-up design is in `Math_Crosscheck_500/EXPERIMENT_V2.md` and `COLLECTION_PLAN_V2.md`, but their v2 hashes are stale for the collected v3 bank; rebind and record the version change before collection.
 
-**Done when:** branch coverage and valid matched denominators are known, and R can reproduce self vs natural cross and wrong-peer transitions. If complete collection is infeasible overnight, analyze only the frozen completed subset and label it interim.
+- [ ] Check the v3 input/key/review hashes, the one corrected source key, 500 unique IDs, MiniMax's 500 raw finals and adjudicated 17/496 error count. Document the 18 source-restoration selection-constraint exceptions; do not pretend the bank still contains 150 missing-premise questions.
+- [ ] Search existing logs for an **identical v3 DeepSeek** run. If absent, freeze 500 DeepSeek tasks with exactly the v3 question text as each fresh conversation's only user message, one reply per question, optional native search, and no key or desired answer in prompts. Run an offline R preflight and small technical pilot before full collection.
+- [ ] Save append-only raw attempts and final outcomes. Continue native `pause_turn` only under a frozen same-turn policy; label unresolved/unknown outcomes. After collection, score complete answers in R with numeric equivalence and prompt-ambiguity review, then build the matched baseline index.
 
-## 4. Test misconceptions in the *first* human prompt
+**Acceptance:** both models' usable initials join by the exact same v3 ID/text; coverage, exclusions, model/settings/tool provenance and R scores are reproducible. **Stop:** if provider or quota fails, retain partial coverage and continue T1/T4 offline preparation rather than manufacturing 500 pairs.
 
-1. This is distinct from the existing post-answer false-challenge study. Define a selected set of questions with verified keys and an earlier correct model answer; record selection before new calls. For each question/model, create two fresh independent first prompts: neutral question and the same question prefaced by one scripted, explicitly false human interpretation/answer with a short rationale.
-2. Keep question wording, model settings, search availability, and grading rule matched. Validate every false premise and avoid accidentally supplying the correct answer in either prompt. Freeze prompts and randomized task order before collection.
-3. Score the paired finals in R, including abstention and failures. Report neutral-correct to misconception-wrong examples and the paired error difference with question-level uncertainty. Do not describe scripted text as real human participants or infer which phrase caused the effect.
+## T3 — Run self, natural cross, and wrong-peer branches **[BLOCKED on T2]**
 
-**Done when:** a frozen prompt set, raw paired responses, R grading, and a clearly bounded conclusion exist. If this cannot be completed reliably by morning, leave the research question open rather than substituting the post-answer challenge result.
+- [ ] Freeze branch manifests from the **same MiniMax initial conversation**. `self`: neutral request to reconsider. `natural_cross`: paste DeepSeek's actual independent answer/explanation with a neutral request to check the original problem. Keep full donor text and abstention status. Never run one branch after another.
+- [ ] For a predeclared subset of verified-correct MiniMax initials, build `synthetic_wrong_peer`: false target + plausible false explanation, each independently checked and marked as scripted. Freeze the selected subset/materials before seeing any branch result. Do not call this a natural DeepSeek error.
+- [ ] Collect/score each eligible branch in R; record every baseline→final transition, especially wrong→correct, wrong→abstain, correct→wrong, and abstain→wrong. Review all induced-error cases against raw text. Report common-set self vs natural rates and controlled wrong-peer risk on their **own** denominators.
 
-## 5. Analyze and audit all four research questions
+**Acceptance:** branch provenance and matching are auditable; common-set rates, conditional correction, wrong-target adoption and uncertainty reproduce from R. **Stop:** no follow-ups when donor initials or synthetic materials are missing/unverified.
 
-1. Use R to make separate tables for domain, receiving model, condition, unique questions, completed pairs, and correct/incorrect/abstain/technical counts. Average repetitions within question/model before model-level summaries where applicable.
-2. For each comparison, calculate wrong-answer probability and paired differences. Show correct-to-wrong and wrong-to-correct counts and their source condition. Use uncertainty intervals for population-level claims; keep descriptive case examples separate.
-3. Cross-check each plotted numerator and denominator against the row-level data and recalculate all headline percentages. Audit explanation-quality claims separately from final-answer correctness. Document source-key corrections and sensitivity analyses.
+## T4 — Test false ideas in the first human prompt **[DESIGN READY; collection not started]**
 
-**Done when:** a reviewer can trace every sentence in the conclusions to a named CSV, R script, and experiment protocol.
+- [ ] Select and freeze questions with checked keys and an earlier correct model answer. State that this is a conditional selected sample. For each selected question × model, make two **fresh independent** prompts: neutral = original question verbatim; misconception = `I think the answer is {verified_false_answer} because {verified_false_reason}. {original_question} What do you think?` Do not mention search or JSON. Validate that the false answer is indeed wrong and that the original question is unchanged.
+- [ ] Freeze selection, actual prompt text, ordering, model/settings/search availability, scoring rule, and stopping rule in an R-built manifest **before** collecting. Keep this independent from the existing post-answer challenge; its 78 pairs cannot be reused as first-prompt responses.
+- [ ] Score both first answers in R; report all selected pairs, eligible/scorable pairs, neutral-correct→misconception-wrong cases, the paired error difference and abstentions. Keep scripted-user attribution explicit. If a route fails, preserve the partial fixed sample rather than selecting replacement questions after seeing outcomes.
 
-## 6. Build the morning submission snapshot
+**Acceptance:** frozen paired prompts, raw replies, R-ready grades and an appropriately limited conclusion. **Stop:** do not infer which element of the combined false-answer-plus-reason prompt caused the effect.
 
-1. Update the English report, PPT/PDF, chart captions, and Feishu presentation text from the same R result tables. Replace placeholders only with completed results; mark unfinished work explicitly. Reconcile the title and method language with the actual bank, model, and number of responses.
-2. Check slides visually, confirm LINYUNIAN and PAN ZHENGYU, verify source/citation and course deliverable requirements, and distinguish historical results from new runs.
-3. Review the Git diff, keep unrelated active-chat edits out of the commit, and push the validated project files to GitHub. Verify the remote revision and include its commit in the progress log.
-4. At approximately 09:00 Asia/Shanghai, give the user a concise report: completed work, per-question conclusions with exact denominators, unresolved quota/coverage issues, artifacts and GitHub state, and the next necessary decision. Stop the night monitor after that report.
+## T5 — Analyze and quality-check RQ1–RQ4 **[AFTER relevant data]**
 
-**Done when:** the morning report is supported by synchronized, inspectable artifacts. A partial result is still a valid report if it clearly states what remains unfinished.
+- [ ] Generate separate R tables for experiment version, domain, model, condition, unique questions, completed task cells, valid paired units, C/I/A, technical gaps, and exclusion reasons. Compute rates on both common and clearly labelled available-case sets where justified.
+- [ ] Use question/family-cluster uncertainty for paired rate differences, and show discordant transition counts. Keep historical primary results distinct from token-limit recovery or post-hoc sensitivity estimates. Do not infer internal model mechanisms from outputs alone.
+- [ ] Audit each headline number and R-generated chart against row-level CSVs; inspect every correct→wrong example and a fixed sample of remaining scores. Track answer/explanation conflicts separately from final-answer errors.
+
+**Acceptance:** every claim has a named CSV row set, R script, exact numerator/denominator and protocol version. Missing evidence becomes a limitation, not a positive claim.
+
+## T6 — Presentation, external sync, and morning report **[AFTER validated tables]**
+
+- [ ] Update the English report and R-based figures first, then PPT/PDF and the [Feishu presentation](https://vcng7a3g4ga3.feishu.cn/docx/SeW0dsKH0oCQOexFK1ecWWCnnSe?from=from_copylink). Correct the Feishu claims about model/repetition counts and align the title with *Can We Trust AI More After Cross-Checking?*. Replace placeholders only with completed data, not zeros or projected results.
+- [ ] Visually check slides, chart type, citations, names **LINYUNIAN** and **PAN ZHENGYU**, and current Moodle deliverable requirements if accessible. Distinguish facts from math and historical from new runs; no unsupported universal or causal claim.
+- [ ] Review Git status, test/rebuild touched artifacts, scan staged files for secrets, commit only this workstream's validated files and push. Verify remote commit and log it. Keep active-chat untracked work out of the commit unless that chat has finished and its outputs have been reviewed.
+- [ ] Around 09:00 Asia/Shanghai, give the user a self-contained morning report: what is complete, RQ1–RQ4 evidence with denominators and limits, what remains blocked or uncollected, linked artifacts, and GitHub sync state. Pause this overnight automation after the report; do not keep notifying on unchanged status.
+
+**Acceptance:** a reviewer can open the report, R data/figures, raw provenance and PPT and find the same claims. A candid partial handoff is preferable to a fabricated complete package.

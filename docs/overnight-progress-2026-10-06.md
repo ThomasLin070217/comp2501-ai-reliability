@@ -24,3 +24,11 @@ Next gate: audit the shared workspace and current collection status; process ava
 - New **separate official-endpoint overlay**, reproduced by `Night_Audit_2026-10-06/R/reconcile_fact_direct_resume.R`: DeepSeek 44/500 wrong (8.80%); MiniMax 78/470 wrong (16.60%), with 354 correct, 38 abstain, 29 technical incomplete and 1 unscorable. The old initial and original-gateway summaries are unchanged. These are different scored subsets and the MiniMax supplement used another endpoint, so this is not a matched model comparison.
 - Block: MiniMax's resumed collection status is `stopped_quota`, HTTP 402, with 31 tasks unattempted in that invocation. No new model call was made in this audit.
 - GitHub: the R script, derived overlay, audit hashes, and explanation were pushed in commit `1c756f2`; the other active chats' files were not included.
+
+## 7 October, 00:00 — agent runbook revised
+
+- The existing overnight plan was rewritten in place as an executable agent runbook so the active heartbeat keeps reading the same path. It now states the four research questions' required evidence, prerequisite gates, exact dataset versions, stop conditions, R-only analysis rule, acceptance criteria, and morning handoff format.
+- Current fact collection is frozen at the **available** 1,000 cells: 500 DeepSeek and 470 MiniMax scoreable, with 29 MiniMax technical gaps and one unscorable. The frozen file uses seven separately labelled official-endpoint MiniMax completions. T1 is therefore an offline R verification/export; no new fact calls are scheduled.
+- The 500-question UGMathBench/HKU candidate belongs to another active chat and its first version failed key/solvability/difficulty review. It is not substituted for the collected GSM-Plus v3 MiniMax baselines. The other chat is revising the candidate; this runbook does not edit or collect it.
+- No new model answer or new effect estimate was produced by this documentation revision.
+- The active `comp2501` heartbeat prompt was updated to use the revised runbook as its authority: the fact sample is frozen, v3 and UGMathBench remain separate, and the human misconception comparison starts in the **first** prompt.
