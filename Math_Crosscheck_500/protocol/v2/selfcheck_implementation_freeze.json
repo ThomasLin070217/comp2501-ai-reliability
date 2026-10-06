@@ -1,0 +1,11 @@
+{
+  "status": "implementation_frozen_offline_only",
+  "sha256": {
+    "Math_Crosscheck_500/R/selfcheck_runtime.R": "8cb5cf4f05268830aefebd6c7197329008b2a0dfaaf2ace0d4305ee53c59ed98",
+    "Math_Crosscheck_500/R/run_selfcheck.R": "eb8052ac250828d1eb1821118072084ab931815e3471bf4f0be09d9bc8f645c7",
+    "Math_Crosscheck_500/R/test_selfcheck.R": "513e82cc5727f282b33bf4620ac197a9f05252278a3367cbec87aa4c3df9165e",
+    "Math_Crosscheck_500/SELF_CHECK_WORKFLOW.md": "0fd07db5ac31d53fb03357e97d66a1803b3470fdba4c93dc766549e69be0da33",
+    "Math_Crosscheck_500/protocol/v2/selfcheck_transport.example.json": "6a0d0be217d121b8e3a63854693b280250350e07157d4ccae4bdd1afc5aa0ea8",
+    "Math_Crosscheck_500/protocol/v2/plan_freeze.json": "f2d266fc601db304b56277ed0a0b474209f482b275eb9d1b903cd4cc9dfe0352"
+  }
+}

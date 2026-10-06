@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "checks": 41,
+  "check_names": ["complete native history retained", "exact original parameters retained", "only neutral suffix appended", "eligible correct", "eligible incorrect", "eligible abstention", "reject changed self prompt", "reject authentication in replay", "reject chained follow-up baseline", "completed task is not sent twice", "no automatic semantic grading", "grading handoff preserves raw text", "response-to-final crash recovery without dispatch", "reject payload tampering", "pause continues without another user message", "paused native blocks retained", "bounded same-turn continuation", "pause cap is three continuations", "one transient retry and no answer-dependent retry", "transient retry cap", "truncation remains incomplete", "client tool is not fabricated", "malformed output is technical missing", "malformed content block is technical missing", "stop on HTTP 401", "no retry on HTTP 401", "stop on HTTP 403", "no retry on HTTP 403", "stop on HTTP 429", "no retry on HTTP 429", "unknown delivery stops", "unknown delivery is not resent", "crash-before-response prevents dispatch", "continuation respects remaining reservation cap", "joint task order cannot be bypassed", "absent baseline waits", "absolute CLI path works outside repository", "full 1000-initial preparation succeeds", "full freeze has exactly 500 self,500 natural,1 controlled", "all frozen self payloads append exact neutral message", "frozen config tampering fails"],
+  "provider_requests": 0,
+  "fixture_scope": "Temporary synthetic fixture only; removed after tests.",
+  "tested_at": "2026-10-06T13:34:05Z"
+}

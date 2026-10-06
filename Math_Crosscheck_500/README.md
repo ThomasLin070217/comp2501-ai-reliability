@@ -2,6 +2,8 @@
 
 Status: designed; waiting for the newly collected mathematics baselines. No follow-up requests have been made for this study.
 
+**Callable workflow:** [SELF_CHECK_WORKFLOW.md](SELF_CHECK_WORKFLOW.md) documents the implemented Self-check worker and CLI, including offline verification and execution gates. The user's latest instruction allows whichever implementation language is efficient; this module reuses existing R libraries. The original R-only wording below records the earlier design, not a continuing restriction. Default execution dispatches only Self-check tasks and respects the joint randomized schedule; explicit joint scope can run the already-designed three-condition study. No real mathematics baseline or follow-up calls were made during implementation.
+
 **6 October 2026 review update:** use [EXPERIMENT_V2.md](EXPERIMENT_V2.md) and [COLLECTION_PLAN_V2.md](COLLECTION_PLAN_V2.md), with the [reviewed v2 bank](question_review_v2/README.md). The original candidate bank is preserved, but 51 items required pre-collection repair, including seven reference changes. `R/preflight.R` now binds the reviewed input and key hashes. The frozen offline plan contains 1,000 initial tasks; no new model calls were made during this review/design request. The detailed original protocol below still applies where it does not conflict with v2.
 
 ## Authorization and scope

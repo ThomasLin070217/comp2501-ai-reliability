@@ -1,0 +1,12 @@
+{
+  "protocol": "anthropic",
+  "endpoint": "http://www.bio8.cs.hku.hk:8080/v1/messages",
+  "model": "MiniMax-M3",
+  "api_key_env": "MINIMAX_API_KEY",
+  "adapter_verified": false,
+  "adapter_evidence_file": "",
+  "authorization_source": "",
+  "guard_unit": "course_quota_http_requests",
+  "max_total_guard_units": null,
+  "reservation_per_http": 1
+}
