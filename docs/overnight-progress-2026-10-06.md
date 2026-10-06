@@ -16,3 +16,10 @@ Next gate: audit the shared workspace and current collection status; process ava
 
 - The execution plan and this log were committed as `ed6b36b` and pushed to `origin/main`. Only these two files were included in that commit; the other chats' uncommitted datasets and presentation edits remain local.
 - The thread heartbeat `COMP2501 夜间推进与早晨报告` is active. It checks the plan every 15 minutes, records material progress, stays quiet on unchanged status, and is instructed to report around 09:00 on 7 October before pausing itself.
+
+## 6 October, 23:52 — fact supplement discrepancy reconciled
+
+- Input: the frozen 1,000 fact cells; original-gateway recovery view; MiniMax official-endpoint supplement; later `direct_minimax_review_decisions_v2.csv`; and the raw resumed final for `fact500:FS_77c95f87fd:minimax:single`. Source file hashes are in `Night_Audit_2026-10-06/derived/fact_direct_supplement_resumed_audit.json`.
+- Finding: the prior official-endpoint summary contained six direct-route graded responses; the later review and raw final establish a seventh, an explicit abstention, previously counted as technical incomplete. A prose addendum's statement of four graded direct responses is also stale; the decisions CSV has seven (4 correct, 1 incorrect, 2 abstain).
+- New **separate official-endpoint overlay**, reproduced by `Night_Audit_2026-10-06/R/reconcile_fact_direct_resume.R`: DeepSeek 44/500 wrong (8.80%); MiniMax 78/470 wrong (16.60%), with 354 correct, 38 abstain, 29 technical incomplete and 1 unscorable. The old initial and original-gateway summaries are unchanged. These are different scored subsets and the MiniMax supplement used another endpoint, so this is not a matched model comparison.
+- Block: MiniMax's resumed collection status is `stopped_quota`, HTTP 402, with 31 tasks unattempted in that invocation. No new model call was made in this audit.

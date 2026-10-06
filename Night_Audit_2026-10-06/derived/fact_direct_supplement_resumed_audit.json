@@ -1,0 +1,16 @@
+{
+  "source_sha256": "17a7f5ea919d5892098888487a9c1535bf7a761d4b6dca76cd1d6d82c340e160",
+  "decisions_sha256": "b47f84521545883f4dd7cfecfdf35cda8917d03166697085d87b4d98354b665e",
+  "new_raw_final_sha256": "5691873247e5e2a7e2a7538915336229cbb16bf6325c4130e170988cc7f61b99",
+  "newly_completed_task": "fact500:FS_77c95f87fd:minimax:single",
+  "newly_completed_status": "complete_end_turn",
+  "newly_completed_grade": "abstain",
+  "direct_route_graded": {
+    "correct": 4,
+    "incorrect": 1,
+    "abstain": 2
+  },
+  "distinct_direct_route_graded": 7,
+  "total_scored_cells": 970,
+  "note": "Official-endpoint supplement is separate from the frozen original HKU-gateway analysis."
+}
