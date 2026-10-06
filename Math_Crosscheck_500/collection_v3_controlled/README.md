@@ -1,0 +1,7 @@
+# Scripted wrong AI peer, GSM-Plus v3
+
+This is a controlled **simulated** peer-advice branch on 50 MiniMax questions whose independent initial answer was correct. The 50 IDs and 20/15/15 category allocation were selected with a fixed R seed before any follow-up answer text or effect was examined. Each wrong target and short erroneous explanation was then checked against the original question and scoring key. No material is an actual DeepSeek response; the natural DeepSeek branch is separately collected in `collection_v3_followups/`.
+
+The frozen request starts with the same MiniMax initial conversation used in self/natural checking, then appends the standard peer wrapper containing one scripted answer. The 50 payloads, task order, source and material hashes are in `protocol/`. No controlled response has yet been requested. The reviewer was Codex; this is AI-assisted checking, without independent human adjudication. The first materials draft contained an inconsistent wrong percentage for question order 152; the retained draft is labelled `_draft1`, while the corrected final material and hash are the only version bound to this protocol.
+
+After collection, compare correct→wrong and wrong-target adoption on these 50 same-baseline units, alongside their self-check outcomes. Report the numerator and denominator and read every induced-error raw response. This selected risk test does not estimate the frequency of wrong independent DeepSeek advice.
