@@ -1,0 +1,9 @@
+"condition","wrong","denominator","metric","rate"
+"Initial full bank",70,493,"observed",0.141987829614604
+"Initial on full self pair",66,488,"observed",0.135245901639344
+"Self on full self pair",42,488,"observed",0.0860655737704918
+"Self on cross pair",32,63,"observed",0.507936507936508
+"Cross on cross pair",8,63,"observed",0.126984126984127
+"Self on selected correct pair",1,68,"observed",0.0147058823529412
+"AI advice on selected correct pair",0,68,"observed",0
+"User challenge on selected correct pair",10,68,"observed",0.147058823529412
