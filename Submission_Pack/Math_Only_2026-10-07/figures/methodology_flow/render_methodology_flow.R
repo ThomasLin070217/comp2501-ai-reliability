@@ -67,19 +67,19 @@ draw <- function() {
 
   # Three short comparison lanes.
   panel(42, 246, 484, 568, "#F2F7FC", blue,
-        "RQ1  ·  SELF-CHECK", "493 scoreable answers")
+        "SELF-CHECK", "All 493 scoreable answers")
   panel(558, 246, 484, 568, "#EFF9F7", teal,
-        "RQ2  ·  CROSS-CHECK", "70 initial errors")
+        "CROSS-CHECK", "70 initially wrong answers")
   panel(1074, 246, 484, 568, "#FFF8F2", amber,
-        "RQ3 + RQ4  ·  WRONG INPUT", "Random 70 of 423 correct")
+        "MISLEADING INPUT", "Random 70 of 423 initially correct")
 
   # Intake and grading, with one-to-many fork.
   node(60, 44, 350, 112, "500 math questions",
        "Revised benchmark", navy, "#FFFFFF", 21, 16)
-  node(468, 44, 350, 112, "MiniMax (M1)",
+  node(468, 44, 350, 112, "MiniMax",
        "Initial answer", navy, "#FFFFFF", 21, 16)
-  node(876, 44, 662, 112, "Score M1",
-       "70 wrong  ·  423 correct  ·  7 excluded",
+  node(876, 44, 662, 112, "initial_error_rate",
+       "70 / 493 wrong  ·  7 excluded",
        navy, "#FFFFFF", 21, 16)
   arrow_line(410, 100, 459, 100, navy)
   arrow_line(818, 100, 867, 100, navy)
@@ -89,46 +89,48 @@ draw <- function() {
   arrow_line(800, 199, 800, 242, teal)
   arrow_line(1316, 199, 1316, 242, amber)
 
-  # M2 covers the full scoreable initial cohort.
-  node(73, 365, 422, 112, "MiniMax (M2)",
-       "Self-check", blue,
+  # Self-check covers the full scoreable initial cohort.
+  node(73, 365, 422, 112, "MiniMax self-check",
+       "Reviews its own answer", blue,
        "#FFFFFF", 21, 16)
   arrow_line(284, 482, 284, 594, blue)
-  node(73, 602, 422, 112, "M1 vs M2",
-       "Error rate  ·  n = 488", blue,
+  node(73, 602, 422, 112, "selfcheck_error_rate",
+       "Compared with initial  ·  n = 488", blue,
        "#FFFFFF", 20, 16)
 
-  # Real independent DeepSeek reply, followed by MiniMax C1.
-  node(589, 335, 422, 111, "DeepSeek (B1)",
+  # Real independent DeepSeek reply, followed by MiniMax cross-check.
+  node(589, 335, 422, 111, "DeepSeek",
        "Independent answer", teal,
        "#FFFFFF", 20, 16)
   arrow_line(800, 451, 800, 474, teal)
-  node(589, 482, 422, 111, "MiniMax (C1)",
-       "Reads B1; rechecks M1", teal,
+  node(589, 482, 422, 111, "MiniMax cross-check",
+       "Reads DeepSeek's answer", teal,
        "#FFFFFF", 20, 16)
   arrow_line(800, 598, 800, 621, teal)
-  node(589, 629, 422, 122, "Compare M2 vs C1",
-       "Correction rate  ·  n = 63", teal,
+  node(589, 629, 422, 122, "crosscheck_error_rate",
+       "Initially wrong cases  ·  n = 63", teal,
        "#FFFFFF", 20, 16)
 
-  # Two simulated feedback conditions on the same 70 correct M1 answers.
+  # Two simulated feedback conditions on the same 70 correct initial answers.
   plain_line(1316, 403, 1316, 445, amber)
   plain_line(1211, 445, 1421, 445, amber)
   arrow_line(1211, 445, 1211, 479, amber)
   arrow_line(1421, 445, 1421, 479, red)
-  node(1105, 487, 205, 117, "M3 · AI", "Wrong advice", amber,
+  node(1105, 487, 205, 117, "AI advice", "Wrong answer", amber,
        "#FFFFFF", 18, 14)
-  node(1322, 487, 205, 117, "M4 · HUMAN", "Wrong challenge", red,
+  node(1322, 487, 205, 117, "User challenge", "Wrong answer", red,
        "#FFFFFF", 18, 14)
   plain_line(1211, 604, 1211, 643, amber)
   plain_line(1421, 604, 1421, 643, red)
   plain_line(1211, 643, 1421, 643, amber)
   arrow_line(1316, 643, 1316, 655, amber)
-  node(1105, 663, 422, 112, "M2 vs M3 vs M4",
-       "New-error rate  ·  n = 68", amber,
-       "#FFFFFF", 19, 15)
+  rect(1105, 655, 422, 135, "#FFFFFF", line, 15)
+  rect(1105, 655, 7, 135, amber, amber, 2, 0)
+  txt(1127, 683, "ai_prompt_error_rate", 17, navy, TRUE, "left")
+  txt(1127, 720, "human_prompt_error_rate", 17, navy, TRUE, "left")
+  txt(1127, 758, "68 matched cases", 14, slate, FALSE, "left")
 
-  txt(800, 858, "M3/M4 are simulated; B1 is a real model answer.", 15, muted)
+  txt(800, 858, "AI and user feedback are simulated; DeepSeek gives a real independent answer.", 15, muted)
 }
 
 pdf(file.path(out_dir, "comp2501_methodology_flow.pdf"),
