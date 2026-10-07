@@ -16,6 +16,8 @@ d <- read.csv(deepseek, stringsAsFactors = FALSE)
 h <- read.csv(minimax, stringsAsFactors = FALSE)
 c50 <- read.csv(controlled, stringsAsFactors = FALSE)
 p <- fromJSON(private_summary)
+latest_m3m4 <- fromJSON('../Math_Benchmark_500_Private_2026-10-06/natural_crosscheck_2026-10-07/analysis/m3_m4_latest_summary.json')
+latest_cross <- fromJSON('../Math_Benchmark_500_Private_2026-10-06/natural_crosscheck_2026-10-07/analysis/conditional_crosscheck_summary_v1.json')
 stopifnot(nrow(i) == 15L, nrow(m) == 495L,
           sum(m$initial_grade == 'incorrect') == 17L,
           sum(m$self_grade == 'incorrect') == 9L,
@@ -33,7 +35,14 @@ stopifnot(nrow(i) == 15L, nrow(m) == 495L,
           p$M3$scoreable$scoreable == 69L,
           p$M3$grades$incorrect == 1L,
           p$M4$main$scoreable$scoreable == 68L,
-          p$M4$main$scoreable$errors == 11L)
+          p$M4$main$scoreable$errors == 11L,
+          latest_m3m4$m3$correct == 69L,
+          latest_m3m4$m3$incorrect == 0L,
+          latest_m3m4$m4$incorrect == 10L,
+          latest_m3m4$m4_wrong_target_adopted == 10L,
+          latest_cross$m2_c1_paired_n == 63L,
+          latest_cross$m2_correct_on_pair == 31L,
+          latest_cross$c1_correct_on_pair == 55L)
 
 source <- 'docs/comp2501-evidence-synthesis-2026-10-07.md'
 x <- readLines(source, warn = FALSE)
@@ -49,7 +58,7 @@ insert_before <- function(lines, heading, addition) {
   stopifnot(length(where) == 1L)
   append(lines, addition, after = where - 1L)
 }
-x <- insert_before(x, '^### 2\\. Which practical', c(
+x <- insert_before(x, '^### 2\\. Which double-checking method', c(
   '',
   '![](../../Math_Crosscheck_500/collection_v3_followups/analysis/figures/v3_wrong_answer_rates.png)',
   '',
@@ -67,7 +76,7 @@ header <- c('---',
   'subtitle: "COMP2501 evidence report"',
   'author: "LINYUNIAN and PAN ZHENGYU"',
   'date: "7 October 2026"',
-  'geometry: margin=0.68in',
+  'geometry: margin=0.62in',
   'fontsize: 10pt',
   'colorlinks: true',
   'urlcolor: blue',

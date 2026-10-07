@@ -3,7 +3,7 @@ title: "Can We Trust AI More After Cross-Checking?"
 subtitle: "COMP2501 evidence report"
 author: "LINYUNIAN and PAN ZHENGYU"
 date: "7 October 2026"
-geometry: margin=0.68in
+geometry: margin=0.62in
 fontsize: 10pt
 colorlinks: true
 urlcolor: blue
@@ -24,7 +24,7 @@ The study contains several **different** data collections. Do not add their rows
 
 ## Results aligned to the four research questions
 
-### 1. Can double-checking decrease the error rate?
+### 1. Can double-checking reduce AI error rates?
 
 **Yes, in the measured matched samples, while individual correct answers can still be damaged.** On 495 identical, scorable GSM-Plus v3 questions, MiniMax was wrong on **17/495 (3.43%)** initial answers, **9/495 (1.82%)** after a neutral self-check, and **4/495 (0.81%)** after a separate natural cross-check using DeepSeek's independently generated reply. Each follow-up branched from the same MiniMax initial conversation. Relative to initial, the paired question-bootstrap differences were **−1.62 percentage points** for self-check (95% interval −3.03 to −0.40) and **−2.63 points** for natural cross-check (−4.24 to −1.21). Self-check corrected/eliminated ten initial errors but introduced two new ones; natural cross-check corrected/eliminated fourteen and introduced one. See the [495-row matched table](https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Math_Crosscheck_500/collection_v3_followups/analysis/paired_common_scorable.csv) and [R effect table](https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Math_Crosscheck_500/collection_v3_followups/analysis/paired_error_effects.csv).
 
@@ -37,21 +37,25 @@ For facts, the newer 500-question collection currently supports **initial-answer
 
 *Figure 1. The correct answer and an explicit abstention are both nonwrong; these 495 matched questions have no explicit abstentions.*
 
-### 2. Which practical check works best?
+### 2. Which double-checking method is most effective in practice?
 
 **We cannot establish a universal winner.** In the GSM-Plus v3 matched sample, natural cross-check has a lower observed wrong-answer rate than self-check (4/495 vs 9/495). Its paired difference is **−1.01 points**, but the 95% question-bootstrap interval **[−2.22, 0.00]** reaches zero. After a labelled, post-hoc exclusion of four wording-sensitive questions, the difference is −0.61 points with an interval **[−1.63, +0.20]**. The v3 baseline is unusually strong (17/495 wrong), limiting how much either method can improve it. A separate historical fact/math comparison is reported in [its own methods and result summary](https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md); its receiving models, repeated calls and technical-recovery overlay differ, so it cannot simply be pooled with this v3 comparison.
 
 In practice, the best choice depends on the question and available evidence. Our experiment compares two **model-only conversational checks**; it does not rank independent source verification, web evidence quality or calculation tools against them. Optional native search was available to each model, but the prompts did not require it. A correct number does not prove that the model actually verified its source or every reasoning step.
 
-### 3. Can a wrong AI peer introduce an error during cross-checking?
+In the revised mathematics bank used by the current presentation, natural cross-check corrected **55/63** initially wrong answers versus **31/63** after self-check on the same scoreable questions. That is a targeted correction comparison, not an overall ranking: initially correct answers were not sent through this natural cross-check branch.
+
+### 3. Can an incorrect peer answer mislead an initially correct model during cross-checking?
 
 **It can happen, but the new natural v3 sample did not yield a clean estimate of the risk.** In its 495 matched questions, only **two** had a correct MiniMax initial answer and a wrong independent DeepSeek answer. MiniMax rejected one false donor answer. It accepted the other donor's $900 commission result rather than the frozen $450 key, but the question's commission-rate wording allows a plausible alternative reading; we do not count that as an unambiguous induced error. The [natural-case review](https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/docs/gsmplus-v3-results-card-2026-10-07.md) documents both. The older natural cross-check study contains a verified **Polynomial 11** example: DeepSeek first and self-check answered 20, a wrong MiniMax donor answered 24, and DeepSeek changed its cross-check final answer to 24; an independent recurrence calculation supports 20. That is an observed possibility, not an incidence estimate for everyday conversations. See the [historical report](https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Two_Model_Collection/reports/RESULTS_SUMMARY.md).
 
 We separately tested **researcher-scripted** false AI advice on 50 v3 questions selected because MiniMax's earlier answer was correct. MiniMax's final answer was wrong on **0/50**, and it adopted the scripted false target on **0/50**. Neutral self-check was also wrong on **0/50** of those same questions. The [50-row reviewed controlled scores](https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Math_Crosscheck_500/collection_v3_controlled/derived/controlled_scores_50.csv) describe this selected prompt condition; zero observed events do not establish immunity to wrong peers.
 
-The separate private revised-bank M3/M4 test also began with **the same 70 initially correct MiniMax answers** and the same false answer/reason per question. At the original output budget, the simulated AI-framed suggestion produced **1/69 wrong** but **0 false-target adoptions**; the lone wrong result was a bad decimal for an otherwise correct exact expression. This is not evidence that the false AI suggestion persuaded the model. The simulated user challenge produced **11/68 wrong**, with **10 false-target adoptions**. On 68 common scorable pairs, the error counts are 1 versus 11. The prompts differ in wording as well as claimed source, so the difference cannot be assigned to an “AI” versus “human” identity effect. Neither source was an actual person or independent AI in these scripted branches.
+The current revised-bank AI-framed condition used researcher-written false advice on **70 initially correct MiniMax answers**. Its latest approved selection had **0/69 wrong** among scoreable follow-ups and **0 false-target adoptions**. A separate AI-only 70-question extension had **1/70 wrong** from an arithmetic slip, again without adopting the false target. Neither scripted condition is a direct test of a real, independently generated wrong peer answer given to an initially correct MiniMax answer; the current mathematics presentation therefore leaves this RQ open. The historical Polynomial 11 case above is separate evidence of possibility.
 
-### 4. Can a false human preconception in the **first** prompt mislead the first answer?
+### 4. Can misleading user input cause an otherwise correct model to give a wrong answer?
+
+The current revised-bank presentation tests a **scripted challenge after a correct initial answer**. On 68 jointly scoreable cases, the user-framed challenge produced **10/68 wrong** final answers versus **1/68** after neutral self-check; all ten wrong answers adopted the supplied false target. The user input was written by researchers, not supplied by recruited participants. This post-answer condition differs from the independent first-prompt test below, and its wording also differs from the AI-framed condition.
 
 **Yes, we observed individual correct→wrong cases under a scripted false premise.** We selected 50 questions on which both models had previously answered correctly, then sent each model two *new, independent first prompts*: the neutral original question, and the same question preceded by a researcher-written false answer and explanation attributed to the user. No previous answer was passed into either fresh conversation. Among the 50 pairs per model, DeepSeek had **0/50** wrong neutral answers and **3/50** wrong false-premise answers (+6 points; one direct adoption of the supplied wrong answer). MiniMax had **1/50** wrong neutral answers and **5/50** wrong false-premise answers (+8 points; four neutral-correct→false-premise-wrong transitions and three direct false-target adoptions). All 100 MiniMax replies were read in full; its raw records and [100-row R adjudication](https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Math_Crosscheck_500/collection_v3_human_first/derived/minimax_first_prompt_scores_100.csv) are preserved. The [R bar chart](https://github.com/ThomasLin070217/comp2501-ai-reliability/blob/main/Math_Crosscheck_500/collection_v3_human_first/analysis/figures/first_prompt_wrong_answer_rates.png) shows only wrong-answer probability with exact numerators/denominators.
 
