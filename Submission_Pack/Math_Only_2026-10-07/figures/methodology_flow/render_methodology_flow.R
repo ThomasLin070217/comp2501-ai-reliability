@@ -65,21 +65,21 @@ panel <- function(x, y, w, h, fill, accent, heading, subtitle) {
 draw <- function() {
   grid.newpage()
 
-  # Three comparison lanes.
+  # Three short comparison lanes.
   panel(42, 246, 484, 568, "#F2F7FC", blue,
-        "RQ1  ·  SELF-CHECK", "All 493 scoreable initial answers")
+        "RQ1  ·  SELF-CHECK", "493 scoreable answers")
   panel(558, 246, 484, 568, "#EFF9F7", teal,
-        "RQ2  ·  NATURAL CROSS-CHECK", "70 initially wrong answers")
+        "RQ2  ·  CROSS-CHECK", "70 initial errors")
   panel(1074, 246, 484, 568, "#FFF8F2", amber,
-        "RQ3 + RQ4  ·  WRONG FEEDBACK", "70 sampled from 423 initially correct")
+        "RQ3 + RQ4  ·  WRONG INPUT", "Random 70 of 423 correct")
 
   # Intake and grading, with one-to-many fork.
   node(60, 44, 350, 112, "500 math questions",
        "Revised benchmark", navy, "#FFFFFF", 21, 16)
   node(468, 44, 350, 112, "MiniMax (M1)",
-       "Generates the initial answer", navy, "#FFFFFF", 21, 16)
-  node(876, 44, 662, 112, "Grade the initial answers",
-       "493 scoreable: 70 wrong, 423 correct  ·  7 excluded",
+       "Initial answer", navy, "#FFFFFF", 21, 16)
+  node(876, 44, 662, 112, "Score M1",
+       "70 wrong  ·  423 correct  ·  7 excluded",
        navy, "#FFFFFF", 21, 16)
   arrow_line(410, 100, 459, 100, navy)
   arrow_line(818, 100, 867, 100, navy)
@@ -89,54 +89,46 @@ draw <- function() {
   arrow_line(800, 199, 800, 242, teal)
   arrow_line(1316, 199, 1316, 242, amber)
 
-  # M2 covers the scoreable initial cohort and is the common comparator.
-  node(73, 351, 422, 120, "MiniMax (M2)",
-       "Neutral review of its own\nM1 answer", blue,
+  # M2 covers the full scoreable initial cohort.
+  node(73, 365, 422, 112, "MiniMax (M2)",
+       "Self-check", blue,
        "#FFFFFF", 21, 16)
-  arrow_line(284, 476, 284, 541, blue)
-  node(73, 548, 422, 124, "Compare M1 vs M2",
-       "488 matched cases\nOverall error-rate change", blue,
+  arrow_line(284, 482, 284, 594, blue)
+  node(73, 602, 422, 112, "M1 vs M2",
+       "Error rate  ·  n = 488", blue,
        "#FFFFFF", 20, 16)
-  rect(73, 708, 422, 69, "#E4EFF8", NA, 11)
-  txt(284, 740, "M2 also supplies the comparator\nfor the selected RQ2-4 cases", 14, blue)
 
-  # Real independent DeepSeek reply, followed by the MiniMax C1 branch.
+  # Real independent DeepSeek reply, followed by MiniMax C1.
   node(589, 335, 422, 111, "DeepSeek (B1)",
-       "Answers the original question\nindependently", teal,
+       "Independent answer", teal,
        "#FFFFFF", 20, 16)
   arrow_line(800, 451, 800, 474, teal)
   node(589, 482, 422, 111, "MiniMax (C1)",
-       "Reads the real B1 reply;\nrechecks its M1 answer", teal,
+       "Reads B1; rechecks M1", teal,
        "#FFFFFF", 20, 16)
   arrow_line(800, 598, 800, 621, teal)
   node(589, 629, 422, 122, "Compare M2 vs C1",
-       "63 matched initial errors\nCorrection rate", teal,
+       "Correction rate  ·  n = 63", teal,
        "#FFFFFF", 20, 16)
 
-  # Researcher-scripted misinformation after an initially correct M1 answer.
-  node(1105, 335, 422, 99, "Fixed random sample: 70",
-       "Same M1 answer in both branches", amber,
-       "#FFFFFF", 19, 15)
-  plain_line(1316, 434, 1316, 468, amber)
-  plain_line(1211, 468, 1421, 468, amber)
-  arrow_line(1211, 468, 1211, 489, amber)
-  arrow_line(1421, 468, 1421, 489, red)
-  node(1105, 497, 205, 117, "M3 · AI", "Scripted wrong\nAI advice", amber,
+  # Two simulated feedback conditions on the same 70 correct M1 answers.
+  plain_line(1316, 403, 1316, 445, amber)
+  plain_line(1211, 445, 1421, 445, amber)
+  arrow_line(1211, 445, 1211, 479, amber)
+  arrow_line(1421, 445, 1421, 479, red)
+  node(1105, 487, 205, 117, "M3 · AI", "Wrong advice", amber,
        "#FFFFFF", 18, 14)
-  node(1322, 497, 205, 117, "M4 · HUMAN", "Scripted wrong\nuser challenge", red,
+  node(1322, 487, 205, 117, "M4 · HUMAN", "Wrong challenge", red,
        "#FFFFFF", 18, 14)
-  plain_line(1211, 614, 1211, 643, amber)
-  plain_line(1421, 614, 1421, 643, red)
+  plain_line(1211, 604, 1211, 643, amber)
+  plain_line(1421, 604, 1421, 643, red)
   plain_line(1211, 643, 1421, 643, amber)
   arrow_line(1316, 643, 1316, 655, amber)
-  node(1105, 663, 422, 112, "Compare M2 / M3 / M4",
-       "68 matched cases\nNew errors and false-target adoption", amber,
+  node(1105, 663, 422, 112, "M2 vs M3 vs M4",
+       "New-error rate  ·  n = 68", amber,
        "#FFFFFF", 19, 15)
 
-  # Small limitation, separated from the pathways.
-  txt(800, 858,
-      "M3/M4 use researcher-written prompts; only B1 is a real independent model answer.",
-      15, muted)
+  txt(800, 858, "M3/M4 are simulated; B1 is a real model answer.", 15, muted)
 }
 
 pdf(file.path(out_dir, "comp2501_methodology_flow.pdf"),
