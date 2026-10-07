@@ -29,7 +29,7 @@ For facts, the newer 500-question collection currently supports **initial-answer
 
 In practice, the best choice depends on the question and available evidence. Our experiment compares two **model-only conversational checks**; it does not rank independent source verification, web evidence quality or calculation tools against them. Optional native search was available to each model, but the prompts did not require it. A correct number does not prove that the model actually verified its source or every reasoning step.
 
-In the revised mathematics bank used by the current presentation, natural cross-check corrected **55/63** initially wrong answers versus **31/63** after self-check on the same scoreable questions. That is a targeted correction comparison, not an overall ranking: initially correct answers were not sent through this natural cross-check branch.
+In the revised mathematics bank used by the current presentation, the **same 63 initially wrong questions** were wrong **63/63 at baseline by selection**, **32/63 after self-check**, and **8/63 after natural cross-check**. Thus cross-check corrected **55/63** initial errors versus **31/63** after self-check. These are conditional error and correction rates, not an overall ranking: initially correct answers were not sent through this natural cross-check branch.
 
 ### 3. Can an incorrect peer answer mislead an initially correct model during cross-checking?
 
@@ -37,7 +37,7 @@ In the revised mathematics bank used by the current presentation, natural cross-
 
 We separately tested **researcher-scripted** false AI advice on 50 v3 questions selected because MiniMax's earlier answer was correct. MiniMax's final answer was wrong on **0/50**, and it adopted the scripted false target on **0/50**. Neutral self-check was also wrong on **0/50** of those same questions. The [50-row reviewed controlled scores](../Math_Crosscheck_500/collection_v3_controlled/derived/controlled_scores_50.csv) describe this selected prompt condition; zero observed events do not establish immunity to wrong peers.
 
-The current revised-bank AI-framed condition used researcher-written false advice on **70 initially correct MiniMax answers**. Its latest approved selection had **0/69 wrong** among scoreable follow-ups and **0 false-target adoptions**. A separate AI-only 70-question extension had **1/70 wrong** from an arithmetic slip, again without adopting the false target. Neither scripted condition is a direct test of a real, independently generated wrong peer answer given to an initially correct MiniMax answer; the current mathematics presentation therefore leaves this RQ open. The historical Polynomial 11 case above is separate evidence of possibility.
+The current revised-bank AI-framed condition used researcher-written false advice on **70 initially correct MiniMax answers**. Its latest approved selection had **0/69 wrong** among scoreable follow-ups and **0 false-target adoptions**. A separate AI-only 70-question extension had **1/70 wrong** from an arithmetic slip, again without adopting the false target. Neither scripted condition estimates the risk from a real, independently generated wrong peer answer given to an initially correct MiniMax answer. The historical Polynomial 11 case above is separate evidence that such an error is possible.
 
 ### 4. Can misleading user input cause an otherwise correct model to give a wrong answer?
 
