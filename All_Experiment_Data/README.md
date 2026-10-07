@@ -6,6 +6,10 @@ For the current four research questions, use the [question-specific selection an
 
 This is an **append-only research inventory, not a pooled statistical sample**. The studies used different questions, models, tools, prompts, dates, and eligibility rules. In particular, `online_replication_partial` was stopped early and has no finalized semantic grades for its 317 normally completed records; tasks planned for after that stop are not observations and are not padded into this table. Earlier development and pilot responses are retained for provenance, not merged into later formal effect estimates. Source-material generation, AI-judge calls, acquisition probes, duplicate archived snapshots, aggregate tables, and individual web-search/tool events are not question-answer observations and are not rows in this CSV. Their original files remain available in the named study folders.
 
+### Public release, 8 October 2026
+
+The current public release is [`../Public_Data_Release_2026-10-08/`](../Public_Data_Release_2026-10-08/). Its 14,174-row response inventory withholds question, answer-key, prompt, and response text for six local university-exam/workbook questions whose redistribution was not cleared, while retaining non-sensitive outcome metadata. The complete local working inventory remains an internal source and should not be uploaded as-is. Use the public release's README and R script for reproducible current results.
+
 | Experiment (`experiment`) | Rows |
 |---|---:|
 | `pilot_2026_09_30` | 540 |

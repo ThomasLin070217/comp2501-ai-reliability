@@ -1,0 +1,66 @@
+{
+  "release_version": "2026-10-08",
+  "note": "This canonical summary separates the primary-route M1/M2 comparison from the later mixed-route supplement. The six local exam/workbook questions are never exposed item-by-item.",
+  "primary_route_full_bank": {
+    "planned_ids": 500,
+    "matched_scoreable": 488,
+    "initial_wrong": 66,
+    "self_check_wrong": 42,
+    "wrong_to_correct": 32,
+    "correct_to_wrong": 8
+  },
+  "primary_route_public_items": {
+    "comparison": "Public-source revised math M1 vs M2",
+    "denominator": 482,
+    "initial_wrong": 66,
+    "self_check_wrong": 42,
+    "wrong_to_correct": 32,
+    "correct_to_wrong": 8,
+    "initial_error_rate": 0.1369,
+    "self_check_error_rate": 0.0871
+  },
+  "supplemented_mixed_route_full_bank": {
+    "matched_scoreable": 491,
+    "initial_wrong": 68,
+    "self_check_wrong": 43,
+    "wrong_to_correct": 33,
+    "correct_to_wrong": 8
+  },
+  "supplemented_mixed_route_public_items": {
+    "comparison": "Supplemented mixed-route revised math M1 vs M2, public-source only",
+    "denominator": 485,
+    "initial_wrong": 68,
+    "self_check_wrong": 43,
+    "wrong_to_correct": 33,
+    "correct_to_wrong": 8,
+    "initial_error_rate": 0.1402,
+    "self_check_error_rate": 0.0887
+  },
+  "cross_check_on_selected_initial_errors": {
+    "matched_scoreable": 63,
+    "self_check_wrong": 32,
+    "actual_deepseek_cross_check_wrong": 8,
+    "note": "Conditional on initially wrong cases; not a whole-bank error-rate comparison."
+  },
+  "revised_math_final_induction": {
+    "matched_items": 70,
+    "m3_scoreable": 69,
+    "m3_wrong": 0,
+    "m3_false_target_adoptions": 0,
+    "m4_scoreable": 69,
+    "m4_wrong": 10,
+    "m4_false_target_adoptions": 10,
+    "note": "Researcher-scripted AI and user messages; latest cohort replaces OPT500_299 with OPT500_430."
+  },
+  "additional_ai_induction_extension_public": {
+    "planned": 70,
+    "public_scoreable": 69,
+    "wrong": 1,
+    "false_target_adoptions": 0,
+    "note": "A separate non-overlapping cohort; one local-source case is excluded from item-level release."
+  },
+  "excluded_sources": {
+    "local_exam_or_workbook_items": 6,
+    "item_text_and_linked_response_text": "withheld"
+  }
+}

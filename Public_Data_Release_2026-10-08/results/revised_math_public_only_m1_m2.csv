@@ -1,0 +1,2 @@
+"comparison","denominator","initial_wrong","self_check_wrong","wrong_to_correct","correct_to_wrong","initial_error_rate","self_check_error_rate"
+"Public-source revised math M1 vs M2",482,66,42,32,8,0.136929460580913,0.0871369294605809

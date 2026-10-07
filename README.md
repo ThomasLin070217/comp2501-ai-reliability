@@ -2,7 +2,11 @@
 
 **交叉检查之后，我们能更信任 AI 吗？**
 
-**全部实验回答总表：[14,095条统一CSV](All_Experiment_Data/all_experiment_responses.csv) · [字段、范围与R读取说明](All_Experiment_Data/README.md)。** 各轮数据同表保存，但分析时仍须按实验筛选和使用原配对规则。
+> **Public data and final results (8 Oct 2026):** Start with [Public Data Release](Public_Data_Release_2026-10-08/README.md). It contains the public-safe 14,174-row response inventory, source-licensed question sets, item-level answers and scores, prompt tasks, R reproduction scripts, result tables, and current presentation/report exports. Six local exam/workbook questions and their linked response text are withheld because redistribution was not cleared; the full-sample aggregate is retained with an explicit public-only comparison.
+
+> The sections below preserve the project’s earlier research log and may contain superseded counts or conclusions. For reusable data and the final results, use the dated Public Data Release above.
+
+**Historical experiment inventory:** [14,095-row baseline CSV](All_Experiment_Data/all_experiment_responses.csv) · [field and scope notes](All_Experiment_Data/README.md). For the current public-safe inventory and results, use the release above; do not treat this historical baseline as the latest dataset.
 
 **四个研究问题的分析数据：[筛选后的回答](All_Experiment_Data/question_relevant_responses.csv) · [有效配对比较](All_Experiment_Data/question_comparison_pairs.csv) · [纳入规则与R用法](All_Experiment_Data/QUESTION_SELECTION.md)。** 历史实验与最新两模型结果保留独立标签，不能合算总体错误率。
 
