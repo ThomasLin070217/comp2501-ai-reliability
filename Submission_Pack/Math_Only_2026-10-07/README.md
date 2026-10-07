@@ -1,4 +1,6 @@
-当前推荐使用 [v15 演示稿](output/COMP2501_presentation_REVISED_MATH_2026-10-07_v15_ALIGNED_RQs.pptx)，共 28 页。第 16 页新增同一批 63 道初答错误题的错误率轨迹：初答 63/63、自行复核 32/63、自然跨模型复核 8/63；旁边以绿色单独显示纠错率 31/63 与 55/63。第 21–23 页逐一对应下列原版研究问题：RQ1 展示 488 题总体自行复核效果；RQ2 同时展示 63 题条件错误率和纠错率，保留无法给总体方法排名的限制；RQ3 区分一例历史真实错误同伴诱导与本轮脚本 AI 建议；RQ4 展示 68 题脚本用户质疑。全部图表由 [R 脚本](R/render_rq_alignment_v15.R) 从审核后的安全汇总生成，数字未改。原 v14 保留。
+当前推荐使用 [v16 演示稿](output/COMP2501_presentation_REVISED_MATH_2026-10-07_v16_PRESENTATION_FIXES.pptx)；[28 页 PDF 备份](output/COMP2501_presentation_REVISED_MATH_2026-10-07_v16_PRESENTATION_FIXES.pdf)。RQ1 结论页分开显示两个分母：488 道共同可评分题的初答 66/488、 自行复核 42/488 错；另一个仅选取初答错误题的 63 道子样本为初答 63/63、自行复核 32/63、交叉复核 8/63 错。8/63 不能解释成全部 488 题的交叉复核错误率。四个研究问题原文未改，问题页字体字号统一；限制页删除 Interpretation，改为居中单栏。演示页中的方法名统一为“cross-check”，不再加“natural”。图表和安全聚合数由 [R 脚本](R/render_rq_alignment_v16.R) 生成；本轮未新增采集或修改判分。
+
+上一版 [v15](output/COMP2501_presentation_REVISED_MATH_2026-10-07_v15_ALIGNED_RQs.pptx) 保留。其第 16 页已展示 63 道初答错误题的错误率轨迹和纠错率；第 21–23 页分别讨论四个研究问题。以下为历史记录。
 
 四个研究问题的原文为：
 

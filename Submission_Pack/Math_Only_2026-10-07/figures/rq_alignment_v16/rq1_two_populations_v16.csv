@@ -1,0 +1,6 @@
+"panel","condition","wrong","denominator","wrong_answer_rate"
+"overall","initial",66,488,0.135245901639344
+"overall","self_check",42,488,0.0860655737704918
+"selected_initial_errors","initial",63,63,1
+"selected_initial_errors","self_check",32,63,0.507936507936508
+"selected_initial_errors","cross_check",8,63,0.126984126984127

@@ -2,7 +2,7 @@
 
 The four-page [presentation companion PDF](output/pdf/COMP2501_evidence_report_2026-10-07_v3_ALIGNED_RQs.pdf) uses the four research questions exactly as approved by the user, and summarizes their evidence and limits for LINYUNIAN and PAN ZHENGYU. The [report source](report.md) links to the public, protocol-separated tables and R analyses. The course handout specifies an in-class presentation and proposal; it does not separately require this PDF.
 
-The [presentation notes](PRESENTATION_NOTES.md) were written for an earlier 30-slide deck. For the revised mathematics presentation, use the [28-slide v15 deck](../Math_Only_2026-10-07/output/COMP2501_presentation_REVISED_MATH_2026-10-07_v15_ALIGNED_RQs.pptx) and its embedded speaker notes.
+The [presentation notes](PRESENTATION_NOTES.md) were written for an earlier 30-slide deck. For the revised mathematics presentation, use the [28-slide v16 deck](../Math_Only_2026-10-07/output/COMP2501_presentation_REVISED_MATH_2026-10-07_v16_PRESENTATION_FIXES.pptx) and its embedded speaker notes. Its [PDF backup](../Math_Only_2026-10-07/output/COMP2501_presentation_REVISED_MATH_2026-10-07_v16_PRESENTATION_FIXES.pdf) has the same 28 slides.
 
 `build_report_md.R` checks the current public denominators and the local R-audited aggregate release from the private revised mathematics bank before writing `report.md`. It does not publish the private bank. From the repository root, with the private aggregate release available at its documented local path, rebuild with:
 
