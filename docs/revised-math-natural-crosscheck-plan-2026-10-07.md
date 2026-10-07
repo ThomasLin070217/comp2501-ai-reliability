@@ -8,6 +8,8 @@ Use the existing private revised 500-question mathematics bank as the sole mathe
 
 The missing natural condition requires (B1) an independent DeepSeek answer to each original question and (C1) a MiniMax follow-up that sees B1's actual visible answer. It takes **up to 500 B1 tasks and up to 493 C1 tasks**. The 493 are the currently scorable and replayable M1 baselines; the final denominator will be the overlap with complete, scoreable M2 and C1 replies, and must be recalculated rather than assumed to be 488.
 
+**User-approved phasing:** Freeze the full 500-question B1 target list and 493-question C1 eligibility before any new calls. Execute the 70 M1-incorrect questions first (B1, then C1 where B1 is complete), followed by B1 on the remaining 430 questions and C1 on up to 423 M1-correct questions. The seven other M1 questions receive B1 but are not eligible for C1. Randomize within each frozen phase. Do not change prompts, parameters, selection or scoring after the first phase. Its interim result estimates correction **conditional on M1 being wrong**, not the overall error rate; the final paired comparison requires both phases.
+
 ## Freeze before requests
 
 1. Record SHA-256 hashes for the private question text, reference keys, M1 replay transcripts, M1 adjudications, M2 payloads and M2 adjudications. Preserve the four M1 native-continuation cases as a labelled stratum; run a sensitivity analysis excluding them.
@@ -17,7 +19,7 @@ The missing natural condition requires (B1) an independent DeepSeek answer to ea
 
 ## Collection sequence
 
-1. Run a small B1 technical pilot under the frozen protocol and retain those tasks in the full sample. Check identity, search handling, complete stop reason and raw logging; do not tune based on mathematical correctness. Then collect the remaining independent B1 answers. Save every request, response, search/tool event, stop reason and hash.
+1. Run a small B1 technical pilot inside the frozen 70-question first phase and retain those tasks in the full sample. Check identity, search handling, complete stop reason and raw logging; do not tune based on mathematical correctness. Collect and score B1/C1 for that phase, then proceed with the remaining 430 B1 and up to 423 C1 tasks under the same frozen protocol. Save every request, response, search/tool event, stop reason and hash.
 2. Grade B1 replies against the frozen key with semantic review of disagreements and key ambiguity. Keep correct, incorrect and explicit abstention separate. A complete reply can be passed to C1 even if its answer is wrong or abstaining; technical failures must not be treated as answers.
 3. Construct each C1 request by replaying the **same complete M1 native conversation used for M2**, then appending the frozen peer wrapper and B1 visible reply. C1 must not inherit M2, M3 or M4 output. Preserve MiniMax's M2 generation and native-search settings. Randomize C1 order independently of answer grades; run a technical pilot included in the frozen schedule, then collect all eligible C1 tasks.
 4. Stop affected requests on 401/402/403/429, unknown delivery or unresolved protocol mismatch. Retry only according to the frozen technical policy, never because a response is incorrect, unpersuasive or abstaining. Record gaps and any changed-budget continuation separately.
