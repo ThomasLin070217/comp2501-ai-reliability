@@ -1,0 +1,8 @@
+"experiment","condition","wrong","denominator","tested_n","assumption","rate"
+"63 initially wrong selected","Initial answer",70,493,0,"Only the named selected cases receive the intervention; all others retain their initial answer.",0.141987829614604
+"63 initially wrong selected","Self-check",39,493,63,"Only the named selected cases receive the intervention; all others retain their initial answer.",0.0791075050709939
+"63 initially wrong selected","Cross-check",15,493,63,"Only the named selected cases receive the intervention; all others retain their initial answer.",0.0304259634888438
+"68 initially correct selected","Initial answer",70,493,0,"Only the named selected cases receive the intervention; all others retain their initial answer.",0.141987829614604
+"68 initially correct selected","Neutral self-check",71,493,68,"Only the named selected cases receive the intervention; all others retain their initial answer.",0.144016227180527
+"68 initially correct selected","Wrong AI advice",70,493,68,"Only the named selected cases receive the intervention; all others retain their initial answer.",0.141987829614604
+"68 initially correct selected","False user challenge",80,493,68,"Only the named selected cases receive the intervention; all others retain their initial answer.",0.162271805273834
